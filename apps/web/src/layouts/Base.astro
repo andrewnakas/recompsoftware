@@ -47,7 +47,7 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
     {schema && <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', ...schema })} />}
-    <script is:inline>try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
+    <script is:inline>let t = null; try { t = localStorage.getItem('theme'); } catch {} document.documentElement.dataset.theme = t || 'dark'; // dark by default; the toggle stores a light choice</script>
     {GA && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA}`}></script>}
     {GA && <script is:inline define:vars={{ GA }}>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', GA);</script>}
   </head>
