@@ -32,7 +32,8 @@ let failed = 0;
 for (let i = 0; i < list.length; i += 25) {
   const chunk = list.slice(i, i + 25);
   const q = `{ ${chunk.map(([, [o, n]], k) => `r${k}: repository(owner: ${JSON.stringify(o)}, name: ${JSON.stringify(n)}) { stargazerCount pushedAt isArchived latestRelease { tagName publishedAt } defaultBranchRef { target { ... on Commit { history(since: ${JSON.stringify(since)}) { totalCount } } } } }`).join('\n')} }`;
-  const j = await gql(q);
+  let j = await gql(q);
+  for (let t = 0; t < 2 && !j.data; t++) { await new Promise((r) => setTimeout(r, 5000)); j = await gql(q); } // big histories sometimes time out
   chunk.forEach(([key], k) => {
     const r = j.data?.[`r${k}`];
     if (!r) { failed++; return; }
@@ -46,13 +47,15 @@ for (let i = 0; i < list.length; i += 25) {
 
 // Until real snapshots exist, count recent stars from the newest stargazer pages (REST star+json gives starred_at;
 // GraphQL stargazers is refused for fine-grained tokens). REST pagination stops at 40k stars.
+let starsBlocked = false; // once refused or rate-limited, stop asking for the rest
 async function recentStars(key, stars) {
+  if (starsBlocked) return { recent7: null, recent30: null };
   const last = Math.ceil(stars / 100);
   if (!stars || last > 400) return { recent7: null, recent30: null };
   const times = [];
   for (let page = last; page >= Math.max(1, last - 2); page--) {
     const r = await fetch(`https://api.github.com/repos/${key}/stargazers?per_page=100&page=${page}`, { headers: { Authorization: `bearer ${token}`, Accept: 'application/vnd.github.star+json', 'User-Agent': 'recompsoftware' } });
-    if (!r.ok) return { recent7: null, recent30: null }; // 403 for fine-grained PATs: deltas wait for real snapshots
+    if (!r.ok) { if (r.status === 403 || r.status === 429) starsBlocked = true; return { recent7: null, recent30: null }; } // 403 for fine-grained PATs: deltas wait for real snapshots
     const j = await r.json();
     times.push(...j.map((x) => Date.parse(x.starred_at)));
     if (Math.min(...j.map((x) => Date.parse(x.starred_at))) < Date.now() - 30 * 864e5) break;

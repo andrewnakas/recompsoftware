@@ -1748,5 +1748,795 @@
       "https://easyrpg.org/player/"
     ],
     "checked": "2026-10-13"
+  },
+  {
+    "slug": "openwebview2loader",
+    "name": "OpenWebView2Loader",
+    "category": "apps",
+    "subject": "Microsoft WebView2Loader",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "ISC",
+    "repo": "https://github.com/jchv/OpenWebView2Loader",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jchv"
+    ],
+    "started": "2020-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open reimplementation of the WebView2Loader library that aims for feature parity with the original, for projects that cannot use the official NuGet binary.",
+    "tags": [
+      "webview2",
+      "windows",
+      "library"
+    ],
+    "sources": [
+      "https://github.com/jchv/OpenWebView2Loader"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "sq8l",
+    "name": "SQ8L 64-bit port",
+    "category": "apps",
+    "subject": "SQ8L (Ensoniq SQ-80 emulation)",
+    "originalPlatform": "Windows",
+    "originalYear": 2006,
+    "method": "lift",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/sq8l-revival/SQ8L",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sq8l-revival"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Faithful 64-bit rebuild of Siegfried Kullmann's free 32-bit Delphi SQ-80 emulation, delivered as VST, AU, CLAP and LV2 plugins.",
+    "tags": [
+      "sq-80",
+      "vst",
+      "audio-plugin"
+    ],
+    "sources": [
+      "https://github.com/sq8l-revival/SQ8L"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "rnc-propack-source",
+    "name": "RNC ProPack Source",
+    "category": "apps",
+    "subject": "RNC ProPack compression tool",
+    "originalPlatform": "MS-DOS",
+    "originalYear": null,
+    "method": "non-matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/lab313ru/rnc_propack_source",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "lab313ru"
+    ],
+    "started": "2017-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Decompiled source of the RNC ProPack compression tool widely used in old games.",
+    "tags": [
+      "rnc",
+      "compression",
+      "decompiled"
+    ],
+    "sources": [
+      "https://github.com/lab313ru/rnc_propack_source"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "launchback",
+    "name": "LaunchBack",
+    "category": "apps",
+    "subject": "macOS Launchpad (pre-Tahoe)",
+    "originalPlatform": "macOS",
+    "originalYear": 2011,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/trey-a-12/LaunchBack",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "trey-a-12"
+    ],
+    "started": "2025-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0.0-initial",
+      "date": "2025-06-22"
+    },
+    "targets": [
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Free Swift app that recreates the fullscreen Launchpad app grid that Apple removed in macOS 26 Tahoe.",
+    "tags": [
+      "macos",
+      "launchpad",
+      "swift"
+    ],
+    "sources": [
+      "https://github.com/trey-a-12/LaunchBack",
+      "https://github.com/trey-a-12/LaunchBack/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "libxpc",
+    "name": "libxpc",
+    "category": "apps",
+    "subject": "Apple XPC library",
+    "originalPlatform": "macOS",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2015, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/jceel/libxpc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jceel"
+    ],
+    "started": "2015-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source reimplementation of Apple's XPC inter-process communication library. Abandoned since 2015.",
+    "tags": [
+      "apple",
+      "xpc",
+      "library"
+    ],
+    "sources": [
+      "https://github.com/jceel/libxpc"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "vivid-wallpaper",
+    "name": "Vivid",
+    "category": "apps",
+    "subject": "Wallpaper Engine",
+    "originalPlatform": "Windows",
+    "originalYear": 2018,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README states the project uses vibe coding (repo README)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/ayasa520/Vivid",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ayasa520"
+    ],
+    "started": "2026-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0.12",
+      "date": "2026-10-13"
+    },
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source reimplementation of Wallpaper Engine for Linux. Its README says it is written with vibe coding.",
+    "tags": [
+      "wallpaper",
+      "linux",
+      "desktop"
+    ],
+    "sources": [
+      "https://github.com/ayasa520/Vivid",
+      "https://github.com/ayasa520/Vivid/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "dmusic-reimpl",
+    "name": "dmusic",
+    "category": "apps",
+    "subject": "Microsoft DirectMusic API",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/GothicKit/dmusic",
+    "website": "https://dm.gothickit.dev/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "GothicKit"
+    ],
+    "started": "2024-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Incomplete modern reimplementation of Microsoft's DirectMusic adaptive soundtrack API, motivated by games such as Gothic II.",
+    "tags": [
+      "directmusic",
+      "directx",
+      "audio",
+      "gothic"
+    ],
+    "sources": [
+      "https://github.com/GothicKit/dmusic"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "rvt-rs",
+    "name": "rvt-rs",
+    "category": "apps",
+    "subject": "Autodesk Revit file formats",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md present in repo root (GitHub)",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/DrunkOnJava/rvt-rs",
+    "website": "https://drunkonjava.github.io/rvt-rs/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "DrunkOnJava"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.4.0",
+      "date": "2026-09-28"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Clean-room Rust and Python toolkit that reads Autodesk Revit project and family files without Revit, extracting metadata and schema.",
+    "tags": [
+      "revit",
+      "bim",
+      "file-format",
+      "clean-room"
+    ],
+    "sources": [
+      "https://github.com/DrunkOnJava/rvt-rs",
+      "https://github.com/DrunkOnJava/rvt-rs/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "apple-ii-desktop",
+    "name": "Apple II DeskTop",
+    "category": "apps",
+    "subject": "Apple II DeskTop (ProDOS GUI)",
+    "originalPlatform": "Apple II",
+    "originalYear": 1985,
+    "method": "non-matching-decomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/a2stuff/a2d",
+    "website": "https://a2desktop.com",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "a2stuff"
+    ],
+    "started": "2017-08",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.5",
+      "date": "2025-11-13"
+    },
+    "targets": [
+      "Apple II"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Annotated disassembly of the Apple II DeskTop Finder-style GUI together with enhancements, distributed as disk images.",
+    "tags": [
+      "apple-ii",
+      "prodos",
+      "gui",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/a2stuff/a2d",
+      "https://github.com/a2stuff/a2d/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "luxon-server",
+    "name": "Luxon Server",
+    "category": "apps",
+    "subject": "Photon Realtime server",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "BSD-3-Clause",
+    "repo": "https://github.com/niansa/LuxonServer",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "niansa"
+    ],
+    "started": "2026-02",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.5",
+      "date": "2026-10-09"
+    },
+    "targets": [
+      "Linux",
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Clean-room reimplementation of the Photon Realtime server, intended as a drop-in replacement for the official one for multiplayer games.",
+    "tags": [
+      "server",
+      "photon",
+      "networking",
+      "revival"
+    ],
+    "sources": [
+      "https://github.com/niansa/LuxonServer",
+      "https://github.com/niansa/LuxonServer/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "butterscotch",
+    "name": "Butterscotch",
+    "category": "apps",
+    "subject": "GameMaker: Studio runner (YoYo Runner)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/ButterscotchRunner/Butterscotch",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ButterscotchRunner"
+    ],
+    "started": "2026-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Open-source reimplementation of the GameMaker: Studio runner for running exported games, noting it may behave differently from the original runner.",
+    "tags": [
+      "gamemaker",
+      "runner",
+      "reimplementation"
+    ],
+    "sources": [
+      "https://github.com/ButterscotchRunner/Butterscotch"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "wycliffe",
+    "name": "wycliffe",
+    "category": "apps",
+    "subject": "Dante audio-over-IP protocol",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2014, predates AI coding tools (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/jsharkey/wycliffe",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jsharkey"
+    ],
+    "started": "2014-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Clean-room implementation of the Dante digital audio networking protocol for interoperability. Not updated since 2015.",
+    "tags": [
+      "dante",
+      "audio",
+      "protocol",
+      "networking"
+    ],
+    "sources": [
+      "https://github.com/jsharkey/wycliffe"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "paper-rs",
+    "name": "paper-rs",
+    "category": "apps",
+    "subject": "Paper (design canvas app)",
+    "originalPlatform": "Web",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README mentions Claude/Codex agents in its workflow (GitHub)",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/michaelshimeles/paper-rs",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "michaelshimeles"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Native Rust infinite-canvas design and whiteboard app, reimplemented clean-room from the behaviour of the Paper design tool, using wgpu and egui.",
+    "tags": [
+      "design",
+      "canvas",
+      "rust",
+      "egui"
+    ],
+    "sources": [
+      "https://github.com/michaelshimeles/paper-rs"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "open-pocket",
+    "name": "Open Pocket",
+    "category": "apps",
+    "subject": "Pocket (read-it-later service)",
+    "originalPlatform": "Web",
+    "originalYear": 2007,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/open-pocket/open-pocket",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "open-pocket"
+    ],
+    "started": "2021-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Attempt at a clean-room open source implementation of Mozilla's Pocket service, started after the shutdown announcement of July 2025.",
+    "tags": [
+      "pocket",
+      "read-later",
+      "clean-room"
+    ],
+    "sources": [
+      "https://github.com/open-pocket/open-pocket"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "felinesystem2",
+    "name": "FelineSystem2",
+    "category": "apps",
+    "subject": "CatSystem2 visual novel engine",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/kokseen1/FelineSystem2",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "kokseen1"
+    ],
+    "started": "2022-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source remake of the CatSystem2 visual novel engine with a browser demo; idle since 2023.",
+    "tags": [
+      "visual-novel",
+      "engine",
+      "catsystem2"
+    ],
+    "sources": [
+      "https://github.com/kokseen1/FelineSystem2"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "pash",
+    "name": "Pash",
+    "category": "apps",
+    "subject": "Windows PowerShell",
+    "originalPlatform": "Windows",
+    "originalYear": 2006,
+    "method": "rewrite",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2012, predates AI coding tools (GitHub)",
+    "licence": "BSD-3-Clause",
+    "repo": "https://github.com/Pash-Project/Pash",
+    "website": "https://groups.google.com/group/pash-project",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Pash-Project"
+    ],
+    "started": "2012-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source reimplementation of Windows PowerShell for the Mono runtime. Archived since 2019.",
+    "tags": [
+      "powershell",
+      "shell",
+      "mono",
+      "dotnet"
+    ],
+    "sources": [
+      "https://github.com/Pash-Project/Pash"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "spacebar-server",
+    "name": "Spacebar server",
+    "category": "apps",
+    "subject": "Discord backend",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/spacebarchat/server",
+    "website": "https://spacebar.chat",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "spacebarchat"
+    ],
+    "started": "2020-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Self-hostable reimplementation of the Discord backend and its API in TypeScript.",
+    "tags": [
+      "discord",
+      "server",
+      "typescript",
+      "protocol"
+    ],
+    "sources": [
+      "https://github.com/spacebarchat/server"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "bottle-fever",
+    "name": "bottle-fever",
+    "category": "apps",
+    "subject": "Fever RSS aggregator API",
+    "originalPlatform": "Web",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2013, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/rcarmo/bottle-fever",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "rcarmo"
+    ],
+    "started": "2013-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Clean-room clone of the Fever RSS aggregator that focuses on reproducing its API.",
+    "tags": [
+      "rss",
+      "fever",
+      "api"
+    ],
+    "sources": [
+      "https://github.com/rcarmo/bottle-fever"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "librw",
+    "name": "librw",
+    "category": "apps",
+    "subject": "RenderWare Graphics engine",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2014, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/aap/librw",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "aap"
+    ],
+    "started": "2014-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Reimplementation of the RenderWare Graphics engine, widely used by GTA reimplementation efforts.",
+    "tags": [
+      "renderware",
+      "gta",
+      "graphics"
+    ],
+    "sources": [
+      "https://github.com/aap/librw"
+    ],
+    "checked": "2026-10-14"
   }
 ]

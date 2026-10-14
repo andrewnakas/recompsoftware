@@ -30,3 +30,11 @@ Owner's own logged-in Chrome, read-only, human pace, only when a sweep is starte
 ## Log
 - 2026-10-13: scaffold, all v1 pages, validate/fetch-stats/sweep scripts, CI workflow. First Discord sweep (REA, ArtCraft). First news (Xbox Labs, FigCraft, Smash recomp, GoldenEye 100%). Catalogue research done: 299 projects (170 games, 36 apps, 27 os, 28 preservation, 38 tools), 50 history events, lineage. 408 pages build, 0 errors; phone layout checked headlessly (`node scripts/shots.mjs` → .cache/shots/sheet.png). Local commit 98e0b6d.
 - Open: 11 owner clean-room builds run the retail program on EmulatorJS (DK64, Conker, BT, MP1-3, Yoshi, 1080, Stadium 2, Wave Race, SMB) — notes say so; owner to decide if they belong on the Play shelf. Star deltas need 7 days of snapshots (fine-grained PAT can't read stargazer dates). 8 history/lineage slugs lack entries (mame, doom, quake, quake-3, openrct2, rt64, zapd).
+- 2026-10-14: GA4 live (G-VB7864XCBM, default in Base.astro). Owner: the 11 retail-program clean rooms stay on the Play shelf. Catalogue grown 317 → 1572 (games 869, tools 421, os 97, preservation 130, apps 55):
+  - `scripts/intel/harvest.mjs` gathers candidates from GitHub searches and scene lists (2,470 at 25+ stars), written to `.cache/harvest.json`.
+  - `enrich.mjs` adds latest release, the README head and AI signals (CLAUDE.md/AGENTS.md, README wording).
+  - 8 write-up agents applied `.cache/new/BRIEF.md`.
+  - `merge-new.mjs` appends the results and skips repos already tracked.
+  - Hand review dropped retail-text/unidentified/DRM-adjacent entries and duplicate mirrors, and relabelled 18 entries from README AI statements.
+  - Provenance rule: CLAUDE.md/AGENTS.md or a README statement → ai-assisted; "almost entirely AI" → ai-generated; repo created before 2023 → human-led; explicit no-AI policy → human-led; otherwise unknown.
+  - The 10+ star round-2 pool (`.cache/harvest-r2.json`) is unreviewed. Next growth: run the same pipeline on it.

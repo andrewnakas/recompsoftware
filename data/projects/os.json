@@ -1200,5 +1200,2969 @@
       "https://fex-emu.com"
     ],
     "checked": "2026-10-13"
+  },
+  {
+    "slug": "wine-assembly",
+    "name": "Wine-Assembly",
+    "category": "os",
+    "subject": "Windows 98 / Win32 applications",
+    "originalPlatform": "Windows",
+    "originalYear": 1998,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md present in the repo root (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/vgrichina/berrry-wine",
+    "website": "https://berrry.wine",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "vgrichina"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Browser-based Windows 98 environment written in WebAssembly text, with an x86 emulator and a Win32 API layer that runs unmodified executables without an OS image.",
+    "tags": [
+      "win32",
+      "wasm",
+      "emulator"
+    ],
+    "sources": [
+      "https://github.com/vgrichina/berrry-wine"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "saturnus",
+    "name": "Saturnus",
+    "category": "os",
+    "subject": "Horizon microkernel (Nintendo Switch)",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2017,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/vbe0201/Saturnus",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "vbe0201"
+    ],
+    "started": "2021-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source reimplementation of the Horizon RTOS microkernel used by the Nintendo Switch.",
+    "tags": [
+      "switch",
+      "kernel",
+      "horizon"
+    ],
+    "sources": [
+      "https://github.com/vbe0201/Saturnus"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "n64wasm",
+    "name": "N64 Wasm",
+    "category": "os",
+    "subject": "Nintendo 64",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1996,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/nbarkhina/N64Wasm",
+    "website": "https://www.neilb.net/n64wasm/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "nbarkhina"
+    ],
+    "started": "2021-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "N64 emulator that runs in the browser, a WebAssembly port of the RetroArch ParaLLEl core.",
+    "tags": [
+      "n64",
+      "emulator",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/nbarkhina/N64Wasm"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "flycast-wasm",
+    "name": "Flycast WASM",
+    "category": "os",
+    "subject": "Sega Dreamcast",
+    "originalPlatform": "Sega Dreamcast",
+    "originalYear": 1998,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/nasomers/flycast-wasm",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "nasomers"
+    ],
+    "started": "2026-02",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0",
+      "date": "2026-08-01"
+    },
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Browser build of the Flycast Dreamcast emulator with a custom SH4-to-WebAssembly JIT recompiler. Needs the user's own game images.",
+    "tags": [
+      "dreamcast",
+      "emulator",
+      "webassembly",
+      "flycast"
+    ],
+    "sources": [
+      "https://github.com/nasomers/flycast-wasm",
+      "https://github.com/nasomers/flycast-wasm/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "femto8",
+    "name": "femto8",
+    "category": "os",
+    "subject": "PICO-8 fantasy console",
+    "originalPlatform": "PICO-8",
+    "originalYear": 2015,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/benbaker76/femto8",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "benbaker76"
+    ],
+    "started": "2023-12",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0.00",
+      "date": "2025-12-19"
+    },
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Reimplementation of the PICO-8 fantasy console for embedded devices with little CPU and memory.",
+    "tags": [
+      "pico-8",
+      "emulator",
+      "embedded"
+    ],
+    "sources": [
+      "https://github.com/benbaker76/femto8",
+      "https://github.com/benbaker76/femto8/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "mikage-dev",
+    "name": "Mikage Developer Edition",
+    "category": "os",
+    "subject": "Nintendo 3DS",
+    "originalPlatform": "Nintendo 3DS",
+    "originalYear": 2011,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/mikage-emu/mikage-dev",
+    "website": "https://mikage.app",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mikage-emu"
+    ],
+    "started": "2024-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Developer edition of the Mikage Nintendo 3DS emulator, built with CMake and Conan. The repository documents little beyond build steps.",
+    "tags": [
+      "3ds",
+      "emulator",
+      "recompilation"
+    ],
+    "sources": [
+      "https://github.com/mikage-emu/mikage-dev"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "mirage-switch-firmware",
+    "name": "Mirage",
+    "category": "os",
+    "subject": "Nintendo Switch firmware (Horizon)",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2017,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/mirage-rs/Mirage",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mirage-rs"
+    ],
+    "started": "2019-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Rust reimplementation of the Nintendo Switch firmware, including a kernel bootstrap. Inactive since early 2020.",
+    "tags": [
+      "switch",
+      "horizon",
+      "kernel",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/mirage-rs/Mirage"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "gamegirl",
+    "name": "GameGirl",
+    "category": "os",
+    "subject": "Game Boy, Game Boy Color and Game Boy Advance",
+    "originalPlatform": "Game Boy",
+    "originalYear": 1989,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/aurelilia/gamegirl",
+    "website": "https://gg.elia.garden",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "aurelilia"
+    ],
+    "started": "2022-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Rust emulator and debugger for the Game Boy, Game Boy Color and Game Boy Advance.",
+    "tags": [
+      "gameboy",
+      "gba",
+      "emulator",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/aurelilia/gamegirl"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "lunii-re",
+    "name": "Lunii.RE",
+    "category": "os",
+    "subject": "Lunii StoryTeller firmware (STM32)",
+    "originalPlatform": "Embedded",
+    "originalYear": null,
+    "method": "non-matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/o-daneel/Lunii.RE",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "o-daneel"
+    ],
+    "started": "2023-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Ghidra-based analysis of the STM32 firmware of the Lunii StoryTeller story box, including its ciphers. Inactive since 2023.",
+    "tags": [
+      "firmware",
+      "ghidra",
+      "stm32",
+      "lunii"
+    ],
+    "sources": [
+      "https://github.com/o-daneel/Lunii.RE"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "nupsx",
+    "name": "nuPSX",
+    "category": "os",
+    "subject": "PlayStation",
+    "originalPlatform": "PlayStation",
+    "originalYear": 1994,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/maxpoletaev/nupsx",
+    "website": "https://maxpoletaev.github.io/nupsx/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "maxpoletaev"
+    ],
+    "started": "2025-05",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.5.0",
+      "date": "2026-09-09"
+    },
+    "targets": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Experimental PlayStation 1 emulator and debugger written in Zig as a learning project.",
+    "tags": [
+      "playstation",
+      "emulator",
+      "zig"
+    ],
+    "sources": [
+      "https://github.com/maxpoletaev/nupsx",
+      "https://github.com/maxpoletaev/nupsx/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "nes-game-genie-disassembly",
+    "name": "NES Game Genie disassembly",
+    "category": "os",
+    "subject": "NES Game Genie cheat cartridge ROM",
+    "originalPlatform": "NES",
+    "originalYear": 1990,
+    "method": "matching-decomp",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/qalle2/nes-gg-disassembly",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "qalle2"
+    ],
+    "started": "2018-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "NES"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Annotated disassembly of the Game Genie cartridge ROM for the NES that reassembles with ASM6. The project moved to Codeberg and this GitHub copy is archived.",
+    "tags": [
+      "nes",
+      "game-genie",
+      "disassembly",
+      "firmware"
+    ],
+    "sources": [
+      "https://github.com/qalle2/nes-gg-disassembly"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "asahi-neural-engine",
+    "name": "Asahi Neural Engine driver",
+    "category": "os",
+    "subject": "Apple Neural Engine (ANE)",
+    "originalPlatform": "Apple Silicon",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/eiln/ane",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "eiln"
+    ],
+    "started": "2022-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Reverse-engineered Linux kernel driver, userspace library and Python bindings for the Apple Neural Engine. Not updated since 2024.",
+    "tags": [
+      "apple",
+      "ane",
+      "linux",
+      "driver"
+    ],
+    "sources": [
+      "https://github.com/eiln/ane"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "deecy",
+    "name": "Deecy",
+    "category": "os",
+    "subject": "Sega Dreamcast",
+    "originalPlatform": "Dreamcast",
+    "originalYear": 1998,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/Senryoku/Deecy",
+    "website": "https://senryoku.github.io/Deecy/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Senryoku"
+    ],
+    "started": "2023-12",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.6.3",
+      "date": "2026-09-09"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Experimental Dreamcast emulator written in Zig that runs titles such as Soul Calibur and Grandia II.",
+    "tags": [
+      "dreamcast",
+      "emulator",
+      "zig"
+    ],
+    "sources": [
+      "https://github.com/Senryoku/Deecy",
+      "https://github.com/Senryoku/Deecy/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "cmd-for-unix",
+    "name": "cmd",
+    "category": "os",
+    "subject": "Windows cmd.exe command interpreter",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/ChenPi11/cmd",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ChenPi11"
+    ],
+    "started": "2026-08",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "0.1.0",
+      "date": "2026-08-05"
+    },
+    "targets": [
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Reimplementation of the Windows cmd.exe command interpreter that runs on Unix-like systems using only libc and POSIX APIs.",
+    "tags": [
+      "cmd",
+      "shell",
+      "windows",
+      "unix"
+    ],
+    "sources": [
+      "https://github.com/ChenPi11/cmd",
+      "https://github.com/ChenPi11/cmd/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "f3dex2",
+    "name": "F3DEX2 microcode disassemblies",
+    "category": "os",
+    "subject": "F3DEX2 and F3DZEX2 N64 RSP microcode",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": null,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/Mr-Wiseguy/f3dex2",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Mr-Wiseguy"
+    ],
+    "started": "2020-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Nintendo 64"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Matching and mostly documented disassemblies of the F3DEX2 and F3DZEX2 graphics microcode family used by N64 games.",
+    "tags": [
+      "n64",
+      "rsp",
+      "microcode",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/Mr-Wiseguy/f3dex2"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "wasm-nes",
+    "name": "wasm-nes",
+    "category": "os",
+    "subject": "Nintendo Entertainment System",
+    "originalPlatform": "NES",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/kabukki/wasm-nes",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "kabukki"
+    ],
+    "started": "2021-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "NES emulator written in Rust and compiled to WebAssembly. Inactive since 2022.",
+    "tags": [
+      "nes",
+      "emulator",
+      "webassembly",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/kabukki/wasm-nes"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "ndsbios",
+    "name": "ndsbios",
+    "category": "os",
+    "subject": "Nintendo DS BIOS (ARM7 and ARM9)",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2004,
+    "method": "matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/PikalaxALT/ndsbios",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "PikalaxALT"
+    ],
+    "started": "2020-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Nintendo DS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Disassembly of the Nintendo DS ARM7 and ARM9 BIOS that reassembles to the original images.",
+    "tags": [
+      "nds",
+      "bios",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/PikalaxALT/ndsbios"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "ocelot",
+    "name": "Ocelot",
+    "category": "os",
+    "subject": "Game Boy and Game Boy Color",
+    "originalPlatform": "Game Boy",
+    "originalYear": 1989,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md present in the repo root (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/pixel-clover/ocelot",
+    "website": "https://pixel-clover.github.io/ocelot/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "pixel-clover"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.3.2.0",
+      "date": "2026-08-01"
+    },
+    "targets": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Game Boy and Game Boy Color emulator written in Haskell.",
+    "tags": [
+      "gameboy",
+      "emulator",
+      "haskell"
+    ],
+    "sources": [
+      "https://github.com/pixel-clover/ocelot",
+      "https://github.com/pixel-clover/ocelot/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "crater",
+    "name": "crater",
+    "category": "os",
+    "subject": "Sega Game Gear",
+    "originalPlatform": "Game Gear",
+    "originalYear": 1990,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2014, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/earwig/crater",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "earwig"
+    ],
+    "started": "2014-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Game Gear emulator written in C with a bundled Z80 assembler and disassembler. Inactive since 2019.",
+    "tags": [
+      "game-gear",
+      "emulator",
+      "z80"
+    ],
+    "sources": [
+      "https://github.com/earwig/crater"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "wasmboy",
+    "name": "WasmBoy",
+    "category": "os",
+    "subject": "Game Boy / Game Boy Color",
+    "originalPlatform": "Game Boy",
+    "originalYear": 1989,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/torch2424/wasmboy",
+    "website": "https://wasmboy.app/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "torch2424"
+    ],
+    "started": "2018-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Game Boy and Game Boy Color emulator library written in AssemblyScript for WebAssembly, with Preact and Svelte demos.",
+    "tags": [
+      "gameboy",
+      "emulator",
+      "webassembly"
+    ],
+    "sources": [
+      "https://github.com/torch2424/wasmboy"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "gameboy-rs",
+    "name": "raphamorim/gameboy",
+    "category": "os",
+    "subject": "Game Boy",
+    "originalPlatform": "Game Boy",
+    "originalYear": 1989,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "MPL-2.0",
+    "repo": "https://github.com/raphamorim/gameboy",
+    "website": "https://raphamorim.io/gameboy",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "raphamorim"
+    ],
+    "started": "2022-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web",
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Game Boy emulator in Rust that runs in a terminal, the browser via WebAssembly, or as a desktop app.",
+    "tags": [
+      "gameboy",
+      "emulator",
+      "rust",
+      "webassembly"
+    ],
+    "sources": [
+      "https://github.com/raphamorim/gameboy"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "binjgb",
+    "name": "binjgb",
+    "category": "os",
+    "subject": "Game Boy / Game Boy Color",
+    "originalPlatform": "Game Boy",
+    "originalYear": 1989,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/binji/binjgb",
+    "website": "https://binji.github.io/binjgb/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "binji"
+    ],
+    "started": "2016-05",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1.11",
+      "date": "2021-08-21"
+    },
+    "targets": [
+      "Web",
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Game Boy and Game Boy Color emulator in C with a WebAssembly build, partial Super Game Boy support and a focus on accuracy.",
+    "tags": [
+      "gameboy",
+      "emulator",
+      "webassembly"
+    ],
+    "sources": [
+      "https://github.com/binji/binjgb",
+      "https://github.com/binji/binjgb/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "halfix",
+    "name": "Halfix",
+    "category": "os",
+    "subject": "x86 PCs",
+    "originalPlatform": "PC",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/nepx/halfix",
+    "website": "https://nepx.github.io/halfix-demo/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "nepx"
+    ],
+    "started": "2019-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Portable x86 PC emulator in C99 that runs legacy operating systems natively or in the browser via WebAssembly. Last updated in 2022.",
+    "tags": [
+      "x86",
+      "emulator",
+      "webassembly"
+    ],
+    "sources": [
+      "https://github.com/nepx/halfix"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "washingtondc",
+    "name": "WashingtonDC",
+    "category": "os",
+    "subject": "Sega Dreamcast",
+    "originalPlatform": "Dreamcast",
+    "originalYear": 1998,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/washingtondc-emu/washingtondc",
+    "website": "http://www.washemu.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "washingtondc-emu"
+    ],
+    "started": "2016-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux",
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open source Dreamcast emulator written in C. Last updated in 2023.",
+    "tags": [
+      "dreamcast",
+      "emulator"
+    ],
+    "sources": [
+      "https://github.com/washingtondc-emu/washingtondc"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "nulldc4wii",
+    "name": "NullDC4Wii",
+    "category": "os",
+    "subject": "Sega Dreamcast",
+    "originalPlatform": "Dreamcast",
+    "originalYear": 1998,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README mentions ChatGPT/Codex/Claude and AI-generated code (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/BenoitAdam/nullDC4Wii",
+    "website": "https://benoitadam.github.io/nullDC4Wii/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "BenoitAdam"
+    ],
+    "started": "2026-01",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "alpha0.77",
+      "date": "2026-09-19"
+    },
+    "targets": [
+      "Wii"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Dreamcast emulator for the Wii, forked from nullDCe and in alpha.",
+    "tags": [
+      "dreamcast",
+      "wii",
+      "emulator"
+    ],
+    "sources": [
+      "https://github.com/BenoitAdam/nullDC4Wii",
+      "https://github.com/BenoitAdam/nullDC4Wii/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "raze-2",
+    "name": "R.A.Z.E.",
+    "category": "os",
+    "subject": "ZX Spectrum",
+    "originalPlatform": "ZX Spectrum",
+    "originalYear": 1982,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/rodrigorc/raze",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "rodrigorc"
+    ],
+    "started": "2019-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "ZX Spectrum emulator in Rust and WebAssembly with a live browser version.",
+    "tags": [
+      "zx-spectrum",
+      "emulator",
+      "rust",
+      "webassembly"
+    ],
+    "sources": [
+      "https://github.com/rodrigorc/raze"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "scd-bios-disassembly",
+    "name": "Sega CD BIOS disassembly",
+    "category": "os",
+    "subject": "Sega CD BIOS (US, v2.00W)",
+    "originalPlatform": "Sega CD",
+    "originalYear": 1992,
+    "method": "non-matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2015, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/DarkMorford/scd-bios-disassembly",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "DarkMorford"
+    ],
+    "started": "2015-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Fully commented disassembly of the North American Sega CD BIOS version 2.00W. Last updated in 2016.",
+    "tags": [
+      "sega-cd",
+      "bios",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/DarkMorford/scd-bios-disassembly"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "nes-rust",
+    "name": "nes-rust",
+    "category": "os",
+    "subject": "Nintendo Entertainment System",
+    "originalPlatform": "NES",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/takahirox/nes-rust",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "takahirox"
+    ],
+    "started": "2018-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web",
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "NES emulator written in Rust that compiles to WebAssembly and has an online demo.",
+    "tags": [
+      "nes",
+      "emulator",
+      "rust",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/takahirox/nes-rust"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "dawngb",
+    "name": "DawnGB",
+    "category": "os",
+    "subject": "Game Boy and Game Boy Color",
+    "originalPlatform": "Game Boy Color",
+    "originalYear": 1998,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/akatsuki105/dawngb",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "akatsuki105"
+    ],
+    "started": "2023-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web",
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Game Boy and Game Boy Color emulator written in Go that also runs in the browser.",
+    "tags": [
+      "game-boy",
+      "emulator",
+      "go",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/akatsuki105/dawngb"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "wataboy",
+    "name": "WATaBoy",
+    "category": "os",
+    "subject": "Game Boy",
+    "originalPlatform": "Game Boy",
+    "originalYear": 1989,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/EnergeticBark/WATaBoy",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "EnergeticBark"
+    ],
+    "started": "2025-10",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-07-14"
+    },
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "High-accuracy Game Boy emulator that JIT-compiles SM83 code to WebAssembly so it runs across platforms in the browser.",
+    "tags": [
+      "game-boy",
+      "emulator",
+      "wasm",
+      "jit"
+    ],
+    "sources": [
+      "https://github.com/EnergeticBark/WATaBoy",
+      "https://github.com/EnergeticBark/WATaBoy/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "rpcemu-wasm",
+    "name": "RPCEmu-WASM",
+    "category": "os",
+    "subject": "Acorn Risc PC",
+    "originalPlatform": "Acorn Risc PC",
+    "originalYear": 1994,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/GMH-Code/RPCEmu",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "GMH-Code"
+    ],
+    "started": "2023-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "WebAssembly port of the RPCEmu Risc PC emulator that runs RISC OS releases in a browser; idle since 2023.",
+    "tags": [
+      "risc-os",
+      "emulator",
+      "wasm",
+      "acorn"
+    ],
+    "sources": [
+      "https://github.com/GMH-Code/RPCEmu"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "boxedwine",
+    "name": "Boxedwine",
+    "category": "os",
+    "subject": "32-bit Windows programs via Wine",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/danoon2/Boxedwine",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "danoon2"
+    ],
+    "started": "2020-05",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "26R1.0",
+      "date": "2026-04-22"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Emulator that runs 32-bit Windows applications by emulating the CPU and Linux kernel under a 32-bit Wine build.",
+    "tags": [
+      "wine",
+      "emulator",
+      "windows"
+    ],
+    "sources": [
+      "https://github.com/danoon2/Boxedwine",
+      "https://github.com/danoon2/Boxedwine/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "vamigaweb",
+    "name": "vAmigaWeb",
+    "category": "os",
+    "subject": "Commodore Amiga",
+    "originalPlatform": "Amiga",
+    "originalYear": 1985,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/vAmigaWeb/vAmigaWeb",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "vAmigaWeb"
+    ],
+    "started": "2021-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Amiga emulator that runs in the browser and on iPad, iPhone and Android.",
+    "tags": [
+      "amiga",
+      "emulator",
+      "web"
+    ],
+    "sources": [
+      "https://github.com/vAmigaWeb/vAmigaWeb"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "libevmu",
+    "name": "libElysianVMU",
+    "category": "os",
+    "subject": "Sega Dreamcast Visual Memory Unit",
+    "originalPlatform": "Dreamcast",
+    "originalYear": 1998,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/gyrovorbis/libevmu",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "gyrovorbis"
+    ],
+    "started": "2023-07",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.6.1",
+      "date": "2023-11-16"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "C library that emulates the Dreamcast VMU as a standalone core for embedding in other emulators.",
+    "tags": [
+      "dreamcast",
+      "vmu",
+      "emulator"
+    ],
+    "sources": [
+      "https://github.com/gyrovorbis/libevmu",
+      "https://github.com/gyrovorbis/libevmu/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "cor64",
+    "name": "cor64",
+    "category": "os",
+    "subject": "Nintendo 64",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1996,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/bdragoncore/cor64",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "bdragoncore"
+    ],
+    "started": "2019-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Work-in-progress N64 emulator written in C# as a free-time project.",
+    "tags": [
+      "n64",
+      "emulator",
+      "csharp"
+    ],
+    "sources": [
+      "https://github.com/bdragoncore/cor64"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "aksiksi-gbc",
+    "name": "gbc",
+    "category": "os",
+    "subject": "Game Boy Color",
+    "originalPlatform": "Game Boy Color",
+    "originalYear": 1998,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/aksiksi/gbc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "aksiksi"
+    ],
+    "started": "2020-12",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1",
+      "date": "2021-01-29"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Game Boy Color emulator written in Rust as a learning project, with a web build.",
+    "tags": [
+      "game-boy-color",
+      "emulator",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/aksiksi/gbc",
+      "https://github.com/aksiksi/gbc/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "ds-anywhere",
+    "name": "DS Anywhere",
+    "category": "os",
+    "subject": "Nintendo DS",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2004,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/brxxn/ds-anywhere",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "brxxn"
+    ],
+    "started": "2024-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Browser-based Nintendo DS emulator built by compiling a melonDS fork to WebAssembly with Emscripten.",
+    "tags": [
+      "nds",
+      "emulator",
+      "wasm",
+      "melonds"
+    ],
+    "sources": [
+      "https://github.com/brxxn/ds-anywhere"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "opendoja",
+    "name": "openDoJa",
+    "category": "os",
+    "subject": "NTT DoCoMo DoJa 5.1 Java runtime",
+    "originalPlatform": "DoCoMo feature phones",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/GrenderG/openDoJa",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "GrenderG"
+    ],
+    "started": "2026-03",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.2.5",
+      "date": "2026-05-28"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Desktop-focused clean-room reimplementation of the DoJa 5.1 runtime and its APIs, for running i-appli mobile games on a PC.",
+    "tags": [
+      "doja",
+      "iappli",
+      "j2me",
+      "mobile"
+    ],
+    "sources": [
+      "https://github.com/GrenderG/openDoJa",
+      "https://github.com/GrenderG/openDoJa/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "skoolkid-rom",
+    "name": "ZX Spectrum ROM disassembly",
+    "category": "os",
+    "subject": "ZX Spectrum ROM",
+    "originalPlatform": "ZX Spectrum",
+    "originalYear": 1982,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/skoolkid/rom",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "skoolkid"
+    ],
+    "started": "2016-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Annotated disassembly of the ZX Spectrum ROM, produced with SkoolKit.",
+    "tags": [
+      "zx-spectrum",
+      "rom",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/skoolkid/rom"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "bios-8088",
+    "name": "bios-8088",
+    "category": "os",
+    "subject": "8088 PC BIOS",
+    "originalPlatform": "IBM PC",
+    "originalYear": 1981,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/ricardoquesada/bios-8088",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ricardoquesada"
+    ],
+    "started": "2017-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Disassembled BIOS images from 8088-era PCs.",
+    "tags": [
+      "bios",
+      "8088",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/ricardoquesada/bios-8088"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "voland",
+    "name": "Voland",
+    "category": "os",
+    "subject": "Nintendo Switch",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2017,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in repo root (https://github.com/voland-emu/Voland)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/voland-emu/Voland",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "voland-emu"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web",
+      "Windows",
+      "Linux",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early-stage Nintendo Switch emulator with the browser as its primary target, plus native apps. Needs the user's own keys and games.",
+    "tags": [
+      "switch",
+      "emulator",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/voland-emu/Voland"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "skyemu",
+    "name": "SkyEmu",
+    "category": "os",
+    "subject": "Game Boy, Game Boy Color, Game Boy Advance and DS",
+    "originalPlatform": "Nintendo handhelds",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root (https://github.com/skylersaleh/SkyEmu)",
+    "licence": "MIT",
+    "repo": "https://github.com/skylersaleh/SkyEmu",
+    "website": "http://skyemu.app",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "skylersaleh"
+    ],
+    "started": "2021-05",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v5",
+      "date": "2026-02-12"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Android",
+      "iOS",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Low-level emulator for the Game Boy family and DS, with accurate GBA emulation and upscaling options.",
+    "tags": [
+      "emulator",
+      "gba",
+      "gameboy",
+      "nintendo-ds"
+    ],
+    "sources": [
+      "https://github.com/skylersaleh/SkyEmu",
+      "https://github.com/skylersaleh/SkyEmu/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "uv-k5-firmware",
+    "name": "UV-K5 open firmware",
+    "category": "os",
+    "subject": "Quansheng UV-K5 radio firmware v2.1.27",
+    "originalPlatform": "Embedded",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/DualTachyon/uv-k5-firmware",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "DualTachyon"
+    ],
+    "started": "2023-08",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "dtmf-squelch-fix",
+      "date": "2023-10-29"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open reimplementation of the Quansheng UV-K5 handheld radio firmware. Archived.",
+    "tags": [
+      "firmware",
+      "radio",
+      "embedded"
+    ],
+    "sources": [
+      "https://github.com/DualTachyon/uv-k5-firmware",
+      "https://github.com/DualTachyon/uv-k5-firmware/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "mednes",
+    "name": "MedNES",
+    "category": "os",
+    "subject": "Nintendo Entertainment System",
+    "originalPlatform": "NES",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/wpmed92/MedNES",
+    "website": "https://wpmed92.github.io",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "wpmed92"
+    ],
+    "started": "2019-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Cycle-accurate NES emulator written in C++. No commits since mid-2022.",
+    "tags": [
+      "emulator",
+      "nes",
+      "cpp"
+    ],
+    "sources": [
+      "https://github.com/wpmed92/MedNES"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "wii-ipl",
+    "name": "Wii Menu decompilation",
+    "category": "os",
+    "subject": "Wii Menu (IPL)",
+    "originalPlatform": "Wii",
+    "originalYear": 2006,
+    "method": "non-matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/koopthekoopa/wii-ipl",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "koopthekoopa"
+    ],
+    "started": "2024-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Fan decompilation of the Wii Menu.",
+    "tags": [
+      "wii",
+      "decomp",
+      "system-menu"
+    ],
+    "sources": [
+      "https://github.com/koopthekoopa/wii-ipl"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "oot-gc",
+    "name": "OoT GameCube emulator decompilation",
+    "category": "os",
+    "subject": "Ocarina of Time (JP-CE) GameCube emulator",
+    "originalPlatform": "GameCube",
+    "originalYear": 2003,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/zeldaret/oot-gc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "zeldaret"
+    ],
+    "started": "2024-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of the Nintendo GameCube emulator that runs Ocarina of Time on the JP collector's edition disc.",
+    "tags": [
+      "gamecube",
+      "decomp",
+      "zelda",
+      "emulator"
+    ],
+    "sources": [
+      "https://github.com/zeldaret/oot-gc"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "zx-rom-disassemblies",
+    "name": "ZX Spectrum, ZX80 and ZX81 ROM disassemblies",
+    "category": "os",
+    "subject": "Sinclair ZX80, ZX81 and ZX Spectrum ROMs",
+    "originalPlatform": "Sinclair",
+    "originalYear": 1980,
+    "method": "matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/ZXSpectrumVault/rom-disassemblies",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ZXSpectrumVault"
+    ],
+    "started": "2018-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Disassemblies of the Sinclair ZX Spectrum, ZX80 and ZX81 ROMs.",
+    "tags": [
+      "zx-spectrum",
+      "rom",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/ZXSpectrumVault/rom-disassemblies"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "nulldc-rust",
+    "name": "nullDC-rust",
+    "category": "os",
+    "subject": "Sega Dreamcast",
+    "originalPlatform": "Dreamcast",
+    "originalYear": 1998,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/skmp/nullDC-rust",
+    "website": "https://nulldc.emudev.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "skmp"
+    ],
+    "started": "2025-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early-stage Dreamcast emulator being written in Rust.",
+    "tags": [
+      "emulator",
+      "dreamcast",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/skmp/nullDC-rust"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "sandopolis",
+    "name": "Sandopolis",
+    "category": "os",
+    "subject": "Sega Genesis, Sega CD, Master System, Game Gear and SG-1000",
+    "originalPlatform": "Sega consoles",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root (https://github.com/pixel-clover/sandopolis)",
+    "licence": "MIT",
+    "repo": "https://github.com/pixel-clover/sandopolis",
+    "website": "https://pixel-clover.github.io/sandopolis/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "pixel-clover"
+    ],
+    "started": "2026-02",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1.0-alpha.9",
+      "date": "2026-09-22"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Portable multi-system Sega emulator written in Zig.",
+    "tags": [
+      "emulator",
+      "sega",
+      "zig"
+    ],
+    "sources": [
+      "https://github.com/pixel-clover/sandopolis",
+      "https://github.com/pixel-clover/sandopolis/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "dolsdk2001",
+    "name": "Dolphin SDK 2001 decompilation",
+    "category": "os",
+    "subject": "Dolphin SDK libraries (May 2001)",
+    "originalPlatform": "GameCube",
+    "originalYear": 2001,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/doldecomp/dolsdk2001",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "doldecomp"
+    ],
+    "started": "2024-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of the 5-23-2001 Dolphin SDK libraries.",
+    "tags": [
+      "gamecube",
+      "sdk",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/doldecomp/dolsdk2001"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "super-disc-bios",
+    "name": "Super Disc BIOS disassembly",
+    "category": "os",
+    "subject": "SFX-100 prototype BIOS",
+    "originalPlatform": "SNES",
+    "originalYear": 1992,
+    "method": "matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/SteveMaddison/super_disc_bios",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "SteveMaddison"
+    ],
+    "started": "2019-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Annotated disassembly of the prototype BIOS cartridge for the unreleased SFX-100 Super Disc add-on.",
+    "tags": [
+      "snes",
+      "bios",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/SteveMaddison/super_disc_bios"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "mz700-js",
+    "name": "MZ-700 JS",
+    "category": "os",
+    "subject": "Sharp MZ-700",
+    "originalPlatform": "Sharp MZ-700",
+    "originalYear": 1982,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/takamin/mz700-js",
+    "website": "https://takamin.github.io/mz700-js/emu.html",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "takamin"
+    ],
+    "started": "2016-05",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.0.4",
+      "date": "2016-05-09"
+    },
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Full JavaScript emulator for the Sharp MZ-700 computer.",
+    "tags": [
+      "emulator",
+      "mz-700",
+      "javascript"
+    ],
+    "sources": [
+      "https://github.com/takamin/mz700-js",
+      "https://github.com/takamin/mz700-js/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "bottleship",
+    "name": "BottleShip",
+    "category": "os",
+    "subject": "Classic x86 Windows games (Win32, DirectDraw, Direct3D)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md present in repo root, indicating AI agent workflow (GitHub)",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/jenissimo/bottleship",
+    "website": "https://bottleship.happydog.games",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jenissimo"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.7.0",
+      "date": "2026-10-08"
+    },
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Browser engine that loads real x86 Windows executables and reimplements Win32, COM and DirectDraw/Direct3D on WebGPU and WebAudio.",
+    "tags": [
+      "hle",
+      "windows",
+      "webgpu",
+      "preservation"
+    ],
+    "sources": [
+      "https://github.com/jenissimo/bottleship",
+      "https://github.com/jenissimo/bottleship/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "saltynes",
+    "name": "SaltyNES",
+    "category": "os",
+    "subject": "Nintendo Entertainment System",
+    "originalPlatform": "Nintendo Entertainment System",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/workhorsy/SaltyNES",
+    "website": "https://workhorsy.org/SaltyNES/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "workhorsy"
+    ],
+    "started": "2017-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "NES emulator compiled to WebAssembly, forked from a Native Client C++ version that traces back to the vNES Java emulator.",
+    "tags": [
+      "nes",
+      "emulator",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/workhorsy/SaltyNES"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "panda3ds",
+    "name": "Panda3DS",
+    "category": "os",
+    "subject": "Nintendo 3DS",
+    "originalPlatform": "Nintendo 3DS",
+    "originalYear": 2011,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/wheremyfoodat/Panda3DS",
+    "website": "https://panda3ds.com/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "wheremyfoodat"
+    ],
+    "started": "2022-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.9",
+      "date": "2024-12-25"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "High-level-emulation Nintendo 3DS emulator that reimplements the console OS services rather than running the original firmware.",
+    "tags": [
+      "3ds",
+      "emulator",
+      "hle"
+    ],
+    "sources": [
+      "https://github.com/wheremyfoodat/Panda3DS",
+      "https://github.com/wheremyfoodat/Panda3DS/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "tetanes",
+    "name": "TetaNES",
+    "category": "os",
+    "subject": "Nintendo Entertainment System",
+    "originalPlatform": "Nintendo Entertainment System",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md present in repo root, indicating AI agent workflow (GitHub)",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/lukexor/tetanes",
+    "website": "https://lukeworks.tech/tetanes-web",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "lukexor"
+    ],
+    "started": "2019-04",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "tetanes-v0.17.0",
+      "date": "2026-09-07"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Cross-platform NES emulator written in Rust using wgpu, with a WebAssembly build.",
+    "tags": [
+      "nes",
+      "emulator",
+      "rust",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/lukexor/tetanes",
+      "https://github.com/lukexor/tetanes/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "openscope-2c53t",
+    "name": "OpenScope 2C53T",
+    "category": "os",
+    "subject": "FNIRSI 2C53T oscilloscope firmware",
+    "originalPlatform": "Embedded (ARM Cortex-M4)",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md present in repo root, indicating AI agent workflow (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/DavidClawson/OpenScope-2C53T",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "DavidClawson"
+    ],
+    "started": "2026-03",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.4.1",
+      "date": "2026-10-05"
+    },
+    "targets": [
+      "FNIRSI 2C53T"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Replacement firmware for a handheld oscilloscope, multimeter and signal generator, developed from reverse engineering the stock firmware.",
+    "tags": [
+      "firmware",
+      "embedded",
+      "oscilloscope"
+    ],
+    "sources": [
+      "https://github.com/DavidClawson/OpenScope-2C53T",
+      "https://github.com/DavidClawson/OpenScope-2C53T/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "gba-bios-disassembly",
+    "name": "GBA BIOS disassembly",
+    "category": "os",
+    "subject": "Game Boy Advance BIOS",
+    "originalPlatform": "Game Boy Advance",
+    "originalYear": 2001,
+    "method": "matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/camthesaxman/gba_bios",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "camthesaxman"
+    ],
+    "started": "2017-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Game Boy Advance"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Disassembly of the Game Boy Advance BIOS that assembles back to a file with the original checksum.",
+    "tags": [
+      "gba",
+      "bios",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/camthesaxman/gba_bios"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "lrusso-playstation",
+    "name": "PlayStation Emulator (lrusso)",
+    "category": "os",
+    "subject": "Sony PlayStation",
+    "originalPlatform": "PlayStation",
+    "originalYear": 1994,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/lrusso/PlayStation",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "lrusso"
+    ],
+    "started": "2023-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "PlayStation emulator in JavaScript and WebAssembly derived from WasmPSX, adding sound, mute control and full-window rendering.",
+    "tags": [
+      "playstation",
+      "emulator",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/lrusso/PlayStation"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "sms-bioses",
+    "name": "SMS BIOS disassemblies",
+    "category": "os",
+    "subject": "Sega Master System, Game Gear and SF-7000 BIOS",
+    "originalPlatform": "Sega Master System",
+    "originalYear": 1986,
+    "method": "non-matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2015, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/maxim-zhao/smsbioses",
+    "website": "http://www.smspower.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "maxim-zhao"
+    ],
+    "started": "2015-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Disassemblies of the built-in boot ROMs of Sega 8-bit systems, which initialise the hardware and check for a valid game.",
+    "tags": [
+      "sega",
+      "bios",
+      "z80",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/maxim-zhao/smsbioses"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "win386-disassembly",
+    "name": "Windows/386 2.03 disassembly",
+    "category": "os",
+    "subject": "Windows/386 2.03",
+    "originalPlatform": "MS-DOS",
+    "originalYear": 1987,
+    "method": "non-matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/BHTY/WIN386",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "BHTY"
+    ],
+    "started": "2025-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Disassembly of Microsoft Windows/386 2.03; the README is empty so details come from the repository description.",
+    "tags": [
+      "windows",
+      "disassembly",
+      "x86"
+    ],
+    "sources": [
+      "https://github.com/BHTY/WIN386"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "potatis",
+    "name": "Potatis",
+    "category": "os",
+    "subject": "Nintendo Entertainment System",
+    "originalPlatform": "NES",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/henrikpersson/potatis",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "henrikpersson"
+    ],
+    "started": "2022-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web",
+      "Android"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "NES and MOS 6502 emulator in Rust with SDL, WebAssembly, Android and embedded front-ends.",
+    "tags": [
+      "nes",
+      "emulator",
+      "rust",
+      "6502"
+    ],
+    "sources": [
+      "https://github.com/henrikpersson/potatis"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "rustynes",
+    "name": "RustyNES",
+    "category": "os",
+    "subject": "Nintendo Entertainment System",
+    "originalPlatform": "NES",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/bokuweb/rustynes",
+    "website": "https://bokuweb.github.io/rustynes/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "bokuweb"
+    ],
+    "started": "2017-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "NES emulator written in Rust and compiled to WebAssembly. Archived.",
+    "tags": [
+      "nes",
+      "emulator",
+      "rust",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/bokuweb/rustynes"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "libreultra",
+    "name": "libreultra",
+    "category": "os",
+    "subject": "libultra (Nintendo 64 SDK library)",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": null,
+    "method": "matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/n64decomp/libreultra",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "n64decomp"
+    ],
+    "started": "2019-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Matching decompilation of libultra, the library most Nintendo 64 games link against.",
+    "tags": [
+      "n64",
+      "libultra",
+      "matching"
+    ],
+    "sources": [
+      "https://github.com/n64decomp/libreultra"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "reicast",
+    "name": "reicast",
+    "category": "os",
+    "subject": "Sega Dreamcast",
+    "originalPlatform": "Dreamcast",
+    "originalYear": 1998,
+    "method": "rewrite",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2013, predates AI coding tools (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/skmp/reicast-emulator",
+    "website": "https://reicast.emudev.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "skmp"
+    ],
+    "started": "2013-12",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "r20.04",
+      "date": "2020-04-02"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Android"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Multiplatform Dreamcast emulator. The project is archived.",
+    "tags": [
+      "dreamcast",
+      "emulator",
+      "sega"
+    ],
+    "sources": [
+      "https://github.com/skmp/reicast-emulator",
+      "https://github.com/skmp/reicast-emulator/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "boytacean",
+    "name": "Boytacean",
+    "category": "os",
+    "subject": "Game Boy",
+    "originalPlatform": "Game Boy",
+    "originalYear": 1989,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo root",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/joamag/boytacean",
+    "website": "https://boytacean.joao.me",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "joamag"
+    ],
+    "started": "2022-11",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "0.13.2",
+      "date": "2026-07-27"
+    },
+    "targets": [
+      "Web",
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Game Boy emulator written in Rust with WebAssembly support.",
+    "tags": [
+      "game-boy",
+      "emulator",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/joamag/boytacean",
+      "https://github.com/joamag/boytacean/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "dendy",
+    "name": "Dendy",
+    "category": "os",
+    "subject": "Nintendo Entertainment System / Famicom",
+    "originalPlatform": "NES",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/maxpoletaev/dendy",
+    "website": "https://maxpoletaev.github.io/dendy/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "maxpoletaev"
+    ],
+    "started": "2023-04",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0.0",
+      "date": "2024-01-26"
+    },
+    "targets": [
+      "Web",
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "NES emulator written in Go with peer-to-peer rollback netplay and a WebAssembly build.",
+    "tags": [
+      "nes",
+      "emulator",
+      "go",
+      "netplay"
+    ],
+    "sources": [
+      "https://github.com/maxpoletaev/dendy",
+      "https://github.com/maxpoletaev/dendy/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "re-nfpii",
+    "name": "re_nfpii",
+    "category": "os",
+    "subject": "Wii U nn_nfp library (amiibo)",
+    "originalPlatform": "Wii U",
+    "originalYear": 2012,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/GaryOderNichts/re_nfpii",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "GaryOderNichts"
+    ],
+    "started": "2022-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.3.0",
+      "date": "2023-08-02"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Reimplementation of the Wii U nn_nfp library for research and amiibo emulation.",
+    "tags": [
+      "wiiu",
+      "amiibo",
+      "nfp"
+    ],
+    "sources": [
+      "https://github.com/GaryOderNichts/re_nfpii",
+      "https://github.com/GaryOderNichts/re_nfpii/releases"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "pac-man-emulator",
+    "name": "Pac-Man Emulator",
+    "category": "os",
+    "subject": "Pac-Man arcade hardware",
+    "originalPlatform": "Arcade",
+    "originalYear": 1980,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/Justin-Credible/pac-man-emulator",
+    "website": "https://www.justin-credible.net/2020/08/24/pac-man-emulator/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Justin-Credible"
+    ],
+    "started": "2020-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Emulator for the Pac-Man arcade machine (Zilog Z80) running on desktop platforms and Xbox One.",
+    "tags": [
+      "pac-man",
+      "arcade",
+      "z80",
+      "emulator"
+    ],
+    "sources": [
+      "https://github.com/Justin-Credible/pac-man-emulator"
+    ],
+    "checked": "2026-10-14"
+  },
+  {
+    "slug": "biostation",
+    "name": "Biostation",
+    "category": "os",
+    "subject": "PlayStation 2 BIOS",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2000,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Ravenslofty/biostation",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Ravenslofty"
+    ],
+    "started": "2018-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Clean-room reimplementation of the PS2 BIOS.",
+    "tags": [
+      "ps2",
+      "bios",
+      "clean-room"
+    ],
+    "sources": [
+      "https://github.com/Ravenslofty/biostation"
+    ],
+    "checked": "2026-10-14"
   }
 ]
