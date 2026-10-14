@@ -1,0 +1,1588 @@
+[
+  {
+    "slug": "ghidra",
+    "name": "Ghidra",
+    "category": "tools",
+    "subject": "Multi-architecture native binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/NationalSecurityAgency/ghidra",
+    "website": "https://ghidra-sre.org/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "NationalSecurityAgency"
+    ],
+    "started": null,
+    "firstRelease": "2019-03",
+    "latestRelease": {
+      "version": "Ghidra_12.1.4_build",
+      "date": "2026-09-21"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source reverse engineering suite from the NSA with a disassembler, decompiler and scripting; first published at RSA Conference 2019.",
+    "tags": [
+      "disassembler",
+      "decompiler",
+      "reverse-engineering"
+    ],
+    "sources": [
+      "https://github.com/NationalSecurityAgency/ghidra",
+      "https://github.com/NationalSecurityAgency/ghidra/releases/latest",
+      "https://en.wikipedia.org/wiki/Ghidra"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "ida",
+    "name": "IDA Pro",
+    "category": "tools",
+    "subject": "Multi-architecture native binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "proprietary",
+    "repo": null,
+    "website": "https://hex-rays.com/ida-pro",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Hex-Rays",
+      "Ilfak Guilfanov"
+    ],
+    "started": "1990",
+    "firstRelease": "1991-05",
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Long-running commercial interactive disassembler; the Hex-Rays decompiler add-on followed in 2007. Proprietary, listed as a link only.",
+    "tags": [
+      "disassembler",
+      "decompiler",
+      "proprietary"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Interactive_Disassembler",
+      "https://sensepost.com/blog/2007/introducing-hex-rays/",
+      "https://hex-rays.com/ida-pro"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "binary-ninja",
+    "name": "Binary Ninja",
+    "category": "tools",
+    "subject": "Multi-architecture native binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "proprietary",
+    "repo": "https://github.com/Vector35/binaryninja-api",
+    "website": "https://binary.ninja/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Vector35"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "stable/6.0.10601",
+      "date": "2026-09-03"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Commercial reverse engineering platform built around layered intermediate languages; its public API, examples and plugin interface are MIT-licensed on GitHub.",
+    "tags": [
+      "disassembler",
+      "decompiler",
+      "proprietary"
+    ],
+    "sources": [
+      "https://github.com/Vector35/binaryninja-api",
+      "https://github.com/Vector35/binaryninja-api/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "radare2",
+    "name": "radare2",
+    "category": "tools",
+    "subject": "Multi-architecture native binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "unknown",
+    "repo": "https://github.com/radareorg/radare2",
+    "website": "https://www.radare.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "radareorg"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "6.2.4",
+      "date": "2026-10-05"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Command-line, UNIX-style reverse engineering framework with disassembly, debugging, patching and scripting.",
+    "tags": [
+      "disassembler",
+      "debugger",
+      "cli"
+    ],
+    "sources": [
+      "https://github.com/radareorg/radare2",
+      "https://github.com/radareorg/radare2/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "rizin",
+    "name": "Rizin",
+    "category": "tools",
+    "subject": "Multi-architecture native binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "LGPL-3.0",
+    "repo": "https://github.com/rizinorg/rizin",
+    "website": "https://rizin.re",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "rizinorg"
+    ],
+    "started": "2020-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.9.1",
+      "date": "2026-06-29"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Reverse engineering framework and CLI that began as a fork of radare2, focused on usability and a stable API.",
+    "tags": [
+      "disassembler",
+      "cli"
+    ],
+    "sources": [
+      "https://github.com/rizinorg/rizin",
+      "https://github.com/rizinorg/rizin/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "cutter",
+    "name": "Cutter",
+    "category": "tools",
+    "subject": "Multi-architecture native binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/rizinorg/cutter",
+    "website": "https://cutter.re",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "rizinorg"
+    ],
+    "started": "2017-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v2.5.0",
+      "date": "2026-06-30"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Free graphical reverse engineering platform powered by Rizin, with optional decompiler plugins.",
+    "tags": [
+      "disassembler",
+      "gui"
+    ],
+    "sources": [
+      "https://github.com/rizinorg/cutter",
+      "https://github.com/rizinorg/cutter/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "retdec",
+    "name": "RetDec",
+    "category": "tools",
+    "subject": "x86, ARM, MIPS, PowerPC and other machine code",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "MIT",
+    "repo": "https://github.com/avast/retdec",
+    "website": "https://retdec.com/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "avast"
+    ],
+    "started": "2017-12",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v5.0",
+      "date": "2022-12-08"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Retargetable machine-code decompiler built on LLVM, open-sourced by Avast; the latest release is from 2022.",
+    "tags": [
+      "decompiler",
+      "llvm"
+    ],
+    "sources": [
+      "https://github.com/avast/retdec",
+      "https://github.com/avast/retdec/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "splat",
+    "name": "splat",
+    "category": "tools",
+    "subject": "N64, PS1, PS2 and other MIPS ROMs/binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "MIT",
+    "repo": "https://github.com/ethteck/splat",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ethteck"
+    ],
+    "started": "2020-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Binary splitting tool that carves a ROM or executable into assembly, data and asset segments as the starting point for a decomp.",
+    "tags": [
+      "splitter",
+      "mips",
+      "decomp-tooling"
+    ],
+    "sources": [
+      "https://github.com/ethteck/splat"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "asm-differ",
+    "name": "asm-differ",
+    "category": "tools",
+    "subject": "Compiled object code in matching decomps",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "Unlicense",
+    "repo": "https://github.com/simonlindholm/asm-differ",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "simonlindholm"
+    ],
+    "started": "2019-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Script that diffs the assembly of a rebuilt function against the original so decompilers can see what still mismatches.",
+    "tags": [
+      "diff",
+      "matching-decomp"
+    ],
+    "sources": [
+      "https://github.com/simonlindholm/asm-differ"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "decomp-permuter",
+    "name": "decomp-permuter",
+    "category": "tools",
+    "subject": "C source in matching decomps",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "MIT",
+    "repo": "https://github.com/simonlindholm/decomp-permuter",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "simonlindholm"
+    ],
+    "started": "2019-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Randomly rewrites C functions and scores the compiled output to find variants that match the target binary.",
+    "tags": [
+      "matching-decomp",
+      "search"
+    ],
+    "sources": [
+      "https://github.com/simonlindholm/decomp-permuter"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "objdiff",
+    "name": "objdiff",
+    "category": "tools",
+    "subject": "Object files in decomp projects (MIPS, PowerPC, ARM, x86)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/encounter/objdiff",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "encounter"
+    ],
+    "started": "2022-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v3.8.2",
+      "date": "2026-09-29"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Local GUI and CLI tool that diffs object files function by function and reports progress for decomp projects.",
+    "tags": [
+      "diff",
+      "matching-decomp",
+      "progress"
+    ],
+    "sources": [
+      "https://github.com/encounter/objdiff",
+      "https://github.com/encounter/objdiff/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "decomp-me",
+    "name": "decomp.me",
+    "category": "tools",
+    "subject": "Functions from matching decomp projects",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "MIT",
+    "repo": "https://github.com/decompme/decomp.me",
+    "website": "https://decomp.me",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "decompme"
+    ],
+    "started": "2021-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Collaborative website where people share \"scratches\" of single functions and iterate on C until it compiles to matching assembly.",
+    "tags": [
+      "web",
+      "matching-decomp",
+      "collaboration"
+    ],
+    "sources": [
+      "https://github.com/decompme/decomp.me"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "decomp-dev",
+    "name": "decomp.dev",
+    "category": "tools",
+    "subject": "Decomp project progress reports",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/encounter/decomp.dev",
+    "website": "https://decomp.dev",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "encounter"
+    ],
+    "started": "2024-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Progress-tracking website and GitHub bot that charts how much of each participating decomp project is matched.",
+    "tags": [
+      "web",
+      "progress"
+    ],
+    "sources": [
+      "https://github.com/encounter/decomp.dev"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "m2c",
+    "name": "m2c (formerly mips_to_c)",
+    "category": "tools",
+    "subject": "MIPS, PowerPC, ARM and SuperH assembly",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/matt-kempster/m2c",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "matt-kempster"
+    ],
+    "started": "2018-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Decompiler that turns assembly into a first-draft C function for matching decomp work; originally named mips_to_c.",
+    "tags": [
+      "decompiler",
+      "mips",
+      "matching-decomp"
+    ],
+    "sources": [
+      "https://github.com/matt-kempster/m2c"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "n64recomp",
+    "name": "N64: Recompiled",
+    "category": "tools",
+    "subject": "N64 MIPS binaries",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "MIT",
+    "repo": "https://github.com/N64Recomp/N64Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Mr-Wiseguy"
+    ],
+    "started": "2022-11",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "mod-tool-release",
+      "date": "2025-05-04"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Static recompiler that translates N64 game code into C so it can be compiled into native executables; also ships a mod tool.",
+    "tags": [
+      "n64",
+      "static-recomp"
+    ],
+    "sources": [
+      "https://github.com/N64Recomp/N64Recomp",
+      "https://github.com/N64Recomp/N64Recomp/releases/latest",
+      "https://www.timeextension.com/news/2024/05/new-tool-allows-n64-games-to-be-played-with-ray-tracing-uncapped-frame-rates-and-ultrawide-support"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "n64modernruntime",
+    "name": "N64ModernRuntime",
+    "category": "tools",
+    "subject": "N64 OS/libultra calls in ported games",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/N64Recomp/N64ModernRuntime",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "N64Recomp"
+    ],
+    "started": "2024-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Runtime library that stands in for the N64 operating system and hardware for recompiled or traditionally ported games.",
+    "tags": [
+      "n64",
+      "runtime"
+    ],
+    "sources": [
+      "https://github.com/N64Recomp/N64ModernRuntime"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "xenonrecomp",
+    "name": "XenonRecomp",
+    "category": "tools",
+    "subject": "Xbox 360 PowerPC executables",
+    "originalPlatform": "Xbox 360",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/hedge-dev/XenonRecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "hedge-dev",
+      "Skyth"
+    ],
+    "started": "2024-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Static recompiler that converts Xbox 360 PowerPC code into C++ for native builds; used for Unleashed Recompiled.",
+    "tags": [
+      "xbox-360",
+      "static-recomp",
+      "powerpc"
+    ],
+    "sources": [
+      "https://github.com/hedge-dev/XenonRecomp",
+      "https://www.timeextension.com/news/2025/03/this-new-unofficial-pc-port-of-sonic-unleashed-could-be-the-best-version-of-the-game-yet"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "xenosrecomp",
+    "name": "XenosRecomp",
+    "category": "tools",
+    "subject": "Xbox 360 Xenos GPU shaders",
+    "originalPlatform": "Xbox 360",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/hedge-dev/XenosRecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "hedge-dev",
+      "Skyth"
+    ],
+    "started": "2024-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Converts Xbox 360 shader binaries into HLSL, the shader half of the hedge-dev recompilation toolchain.",
+    "tags": [
+      "xbox-360",
+      "shaders"
+    ],
+    "sources": [
+      "https://github.com/hedge-dev/XenosRecomp",
+      "https://www.timeextension.com/news/2025/03/this-new-unofficial-pc-port-of-sonic-unleashed-could-be-the-best-version-of-the-game-yet"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "ps2recomp",
+    "name": "PS2Recomp",
+    "category": "tools",
+    "subject": "PS2 Emotion Engine (MIPS R5900) executables",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/ran-j/PS2Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ran-j"
+    ],
+    "started": "2025-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Experimental static recompiler and runtime aiming to turn PlayStation 2 executables into native programs.",
+    "tags": [
+      "ps2",
+      "static-recomp",
+      "mips"
+    ],
+    "sources": [
+      "https://github.com/ran-j/PS2Recomp"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "rexglue",
+    "name": "ReXGlue SDK",
+    "category": "tools",
+    "subject": "Xbox 360 executables",
+    "originalPlatform": "Xbox 360",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/rexglue/rexglue-sdk",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "rexglue"
+    ],
+    "started": "2026-01",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.10.0",
+      "date": "2026-08-21"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Xbox 360 recompilation runtime and toolkit used by several 2026 community ports.",
+    "tags": [
+      "xbox-360",
+      "static-recomp",
+      "runtime"
+    ],
+    "sources": [
+      "https://github.com/rexglue/rexglue-sdk",
+      "https://github.com/rexglue/rexglue-sdk/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "gcrecomp",
+    "name": "GCRecomp (GameCubeRecompiled)",
+    "category": "tools",
+    "subject": "GameCube PowerPC DOL executables",
+    "originalPlatform": "GameCube",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/KaiserGranatapfel/GameCubeRecompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "KaiserGranatapfel"
+    ],
+    "started": "2025-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Experimental project that statically recompiles GameCube DOL code into Rust plus a minimal runtime, inspired by N64: Recompiled.",
+    "tags": [
+      "gamecube",
+      "static-recomp",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/KaiserGranatapfel/GameCubeRecompiled"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "torch",
+    "name": "Torch",
+    "category": "tools",
+    "subject": "Game assets in ROMs (N64 and others)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/HarbourMasters/Torch",
+    "website": "https://torch.net64.dev/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "HarbourMasters"
+    ],
+    "started": "2023-09",
+    "firstRelease": "2024-04",
+    "latestRelease": {
+      "version": "v1.0.0",
+      "date": "2024-04-08"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Generic asset extractor and processor used by Harbour Masters ports to pull assets from a user-supplied ROM.",
+    "tags": [
+      "assets",
+      "extractor",
+      "harbour-masters"
+    ],
+    "sources": [
+      "https://github.com/HarbourMasters/Torch",
+      "https://github.com/HarbourMasters/Torch/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "libultraship",
+    "name": "libultraship",
+    "category": "tools",
+    "subject": "Decompiled N64 games being ported to PC",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "MIT",
+    "repo": "https://github.com/Kenix3/libultraship",
+    "website": "http://libultraship.com/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Kenix3",
+      "HarbourMasters"
+    ],
+    "started": "2022-11",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "2.0.0.0",
+      "date": "2026-08-15"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Shared porting layer (rendering, audio, input, resource loading) behind Harbour Masters PC ports such as Ship of Harkinian.",
+    "tags": [
+      "n64",
+      "porting",
+      "harbour-masters"
+    ],
+    "sources": [
+      "https://github.com/Kenix3/libultraship",
+      "https://github.com/Kenix3/libultraship/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "decomp-toolkit",
+    "name": "decomp-toolkit (dtk)",
+    "category": "tools",
+    "subject": "GameCube and Wii PowerPC executables",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/encounter/decomp-toolkit",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "encounter"
+    ],
+    "started": "2022-11",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.8.4",
+      "date": "2026-09-09"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Toolkit for splitting, analysing and relinking GameCube/Wii DOL and REL files in matching decomps.",
+    "tags": [
+      "gamecube",
+      "wii",
+      "powerpc",
+      "decomp-tooling"
+    ],
+    "sources": [
+      "https://github.com/encounter/decomp-toolkit",
+      "https://github.com/encounter/decomp-toolkit/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "ppc2cpp",
+    "name": "ppc2cpp",
+    "category": "tools",
+    "subject": "32-bit PowerPC binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/em-eight/ppc2cpp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "em-eight"
+    ],
+    "started": "2023-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.1-rc1",
+      "date": "2024-02-13"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Reverse engineering tool for 32-bit PowerPC code aimed at translating it to C++.",
+    "tags": [
+      "powerpc",
+      "lifter"
+    ],
+    "sources": [
+      "https://github.com/em-eight/ppc2cpp",
+      "https://github.com/em-eight/ppc2cpp/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "remill",
+    "name": "Remill",
+    "category": "tools",
+    "subject": "x86, AMD64, AArch64 and SPARC machine code",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/lifting-bits/remill",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "lifting-bits",
+      "Trail of Bits"
+    ],
+    "started": "2015-10",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v6.0.1",
+      "date": "2026-04-21"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Library that lifts machine-code instructions to LLVM bitcode, the base of several binary lifters.",
+    "tags": [
+      "lifter",
+      "llvm"
+    ],
+    "sources": [
+      "https://github.com/lifting-bits/remill",
+      "https://github.com/lifting-bits/remill/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "mcsema",
+    "name": "McSema",
+    "category": "tools",
+    "subject": "x86, AMD64, AArch64 and SPARC executables",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/lifting-bits/mcsema",
+    "website": "https://www.trailofbits.com/expertise/mcsema",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "lifting-bits",
+      "Trail of Bits"
+    ],
+    "started": "2014-07",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v3.0.26",
+      "date": "2021-04-01"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Framework that lifted whole executables to LLVM bitcode using Remill; the repository is archived.",
+    "tags": [
+      "lifter",
+      "llvm"
+    ],
+    "sources": [
+      "https://github.com/lifting-bits/mcsema",
+      "https://github.com/lifting-bits/mcsema/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "llm4decompile",
+    "name": "LLM4Decompile",
+    "category": "tools",
+    "subject": "x86-64 Linux binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/albertan017/LLM4Decompile",
+    "website": "https://aclanthology.org/2024.emnlp-main.203",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "albertan017"
+    ],
+    "started": "2024-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open research family of large language models that decompile binaries to C, published with an EMNLP 2024 paper.",
+    "tags": [
+      "llm",
+      "decompiler",
+      "research"
+    ],
+    "sources": [
+      "https://github.com/albertan017/LLM4Decompile",
+      "https://arxiv.org/abs/2403.05286"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "reveng-ai",
+    "name": "RevEng.AI",
+    "category": "tools",
+    "subject": "Native binaries (AI-assisted analysis)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "proprietary",
+    "repo": "https://github.com/RevEngAI/sdk-python",
+    "website": "https://reveng.ai",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "RevEngAI"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v4.72.2",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Commercial AI binary-analysis service with plugins for common disassemblers; the GitHub repo is its MIT Python SDK.",
+    "tags": [
+      "llm",
+      "proprietary",
+      "service"
+    ],
+    "sources": [
+      "https://github.com/RevEngAI/sdk-python",
+      "https://github.com/RevEngAI/sdk-python/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "frida",
+    "name": "Frida",
+    "category": "tools",
+    "subject": "Running processes on desktop and mobile OSes",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "unknown",
+    "repo": "https://github.com/frida/frida",
+    "website": "https://frida.re",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "frida"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "17.23.3",
+      "date": "2026-10-09"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Dynamic instrumentation toolkit that injects scripts into live processes to trace and hook functions.",
+    "tags": [
+      "dynamic-analysis",
+      "instrumentation"
+    ],
+    "sources": [
+      "https://github.com/frida/frida",
+      "https://github.com/frida/frida/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "x64dbg",
+    "name": "x64dbg",
+    "category": "tools",
+    "subject": "Windows x86 and x64 user-mode programs",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "unknown",
+    "repo": "https://github.com/x64dbg/x64dbg",
+    "website": "http://x64dbg.com",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "x64dbg"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "2026.05.27",
+      "date": "2026-05-27"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source user-mode debugger for Windows aimed at reverse engineering and malware analysis.",
+    "tags": [
+      "debugger",
+      "windows"
+    ],
+    "sources": [
+      "https://github.com/x64dbg/x64dbg",
+      "https://github.com/x64dbg/x64dbg/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "imhex",
+    "name": "ImHex",
+    "category": "tools",
+    "subject": "Binary files and data formats",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/WerWolv/ImHex",
+    "website": "https://imhex.werwolv.net/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "WerWolv"
+    ],
+    "started": "2020-11",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.38.1",
+      "date": "2025-12-21"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Hex editor for reverse engineers with a pattern language for describing and visualising file formats.",
+    "tags": [
+      "hex-editor",
+      "file-formats"
+    ],
+    "sources": [
+      "https://github.com/WerWolv/ImHex",
+      "https://github.com/WerWolv/ImHex/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "spimdisasm",
+    "name": "spimdisasm",
+    "category": "tools",
+    "subject": "MIPS binaries (N64, PS1, PS2, IRIX)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "MIT",
+    "repo": "https://github.com/Decompollaborate/spimdisasm",
+    "website": "https://pypi.org/project/spimdisasm/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Decompollaborate"
+    ],
+    "started": "2021-11",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.42.4",
+      "date": "2026-08-06"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "MIPS disassembler that emits re-assemblable assembly with symbol tracking; used as the disassembly backend for splat.",
+    "tags": [
+      "disassembler",
+      "mips",
+      "decomp-tooling"
+    ],
+    "sources": [
+      "https://github.com/Decompollaborate/spimdisasm",
+      "https://github.com/Decompollaborate/spimdisasm/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "ido-static-recomp",
+    "name": "ido-static-recomp",
+    "category": "tools",
+    "subject": "SGI IRIX IDO 5.3/7.1 compiler binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "none",
+    "repo": "https://github.com/decompals/ido-static-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "decompals"
+    ],
+    "started": "2020-08",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.2",
+      "date": "2024-11-12"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Statically recompiles the original IRIX IDO compiler so matching N64 decomps can build with it on modern systems.",
+    "tags": [
+      "compiler",
+      "static-recomp",
+      "n64"
+    ],
+    "sources": [
+      "https://github.com/decompals/ido-static-recomp",
+      "https://github.com/decompals/ido-static-recomp/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "angr",
+    "name": "angr",
+    "category": "tools",
+    "subject": "Multi-architecture native binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained by a credited human team since before 2023 (repo history / project site).",
+    "licence": "BSD-2-Clause",
+    "repo": "https://github.com/angr/angr",
+    "website": "http://angr.io",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "angr"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Python binary-analysis platform with symbolic execution, control-flow recovery and a decompiler.",
+    "tags": [
+      "binary-analysis",
+      "symbolic-execution",
+      "python"
+    ],
+    "sources": [
+      "https://github.com/angr/angr"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "rea",
+    "name": "REA",
+    "category": "tools",
+    "subject": "Native binaries, JavaScript/Electron apps, .NET assemblies and websites",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/morluto/rea",
+    "website": "https://rea.tools",
+    "discord": "https://discord.gg/GkcryMnJDM",
+    "subreddit": null,
+    "team": [
+      "morluto"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "rea-agents-6.4.0",
+      "date": "2026-10-11"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Toolkit that connects AI coding agents (or a terminal) to local inspection tools, using an existing Ghidra, IDA or Hopper install for native code and reporting evidence for each conclusion.",
+    "tags": [
+      "agents",
+      "llm",
+      "reverse-engineering"
+    ],
+    "sources": [
+      "https://github.com/morluto/rea",
+      "https://github.com/morluto/rea/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "eleven",
+    "name": "Eleven",
+    "category": "tools",
+    "subject": "macOS apps, binaries, shaders and models",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/Zfinix/eleven",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Zfinix"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.3",
+      "date": "2026-10-13"
+    },
+    "targets": [
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Agent-first macOS reverse engineering workbench running analysis on Ghidra through REA; any ACP agent can rename, annotate and propose patches, which the human accepts or declines.",
+    "tags": [
+      "agents",
+      "llm",
+      "macos",
+      "ghidra"
+    ],
+    "sources": [
+      "https://github.com/Zfinix/eleven",
+      "https://github.com/Zfinix/eleven/releases/latest"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "jsdecloak",
+    "name": "JSDecloak",
+    "category": "tools",
+    "subject": "Obfuscated JavaScript",
+    "originalPlatform": "Web",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/RAZKOM/JSDecloak",
+    "website": "https://jsdecloak.razkom.com/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "RAZKOM"
+    ],
+    "started": "2026-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "In-browser JavaScript deobfuscation workbench that formats code, runs Webcrack, Synchrony or Wakaru, and does binding-aware renaming.",
+    "tags": [
+      "javascript",
+      "deobfuscation",
+      "web"
+    ],
+    "sources": [
+      "https://github.com/RAZKOM/JSDecloak"
+    ],
+    "checked": "2026-10-13"
+  }
+]

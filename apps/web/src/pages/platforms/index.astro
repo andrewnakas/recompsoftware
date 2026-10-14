@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import { platforms } from '../../lib/data';
+const list = platforms();
+---
+<Base title="Decomps & recomps by platform" description="Decompilation, recompilation and clean-room projects grouped by the original platform: N64, Xbox 360, PS2, GameCube, Windows and more.">
+  <PageHead kicker="Platforms" title="By platform" />
+  <section class="wrap"><ul class="pl">{list.map((p) => <li><a href={`/platforms/${p.slug}/`}>{p.name}</a> <span class="meta">{p.list.length}</span></li>)}</ul></section>
+</Base>
+<style>.pl { columns: 3 220px; padding-left: 1.1rem; } .pl li { padding: 0.25rem 0; }</style>

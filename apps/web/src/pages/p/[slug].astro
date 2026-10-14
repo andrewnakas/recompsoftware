@@ -1,0 +1,143 @@
+---
+import Base from '../../layouts/Base.astro';
+import Badges from '../../components/Badges.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import {
+  projects, statsFor, statsDate, lineage, history, news, formatDate, fmtNum, CATEGORIES, METHOD_LABEL,
+  PROVENANCE_LABEL, TIER_LABEL, slugify, type Project,
+} from '../../lib/data';
+
+export function getStaticPaths() {
+  return projects().map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+const { p } = Astro.props as { p: Project };
+const s = statsFor(p);
+const cat = CATEGORIES.find((c) => c.id === p.category)!;
+const all = projects();
+const find = (slug: string) => all.find((x) => x.slug === slug);
+const edges = lineage();
+const parents = edges.filter((e) => e.slug === p.slug).flatMap((e) => e.parents.map((x) => ({ rel: e.relation, p: find(x) }))).filter((x) => x.p);
+const children = edges.filter((e) => e.parents.includes(p.slug)).map((e) => ({ rel: e.relation, p: find(e.slug) })).filter((x) => x.p);
+const events = history().flatMap((era) => era.events).filter((e) => e.projects?.includes(p.slug));
+const items = news().filter((n) => n.projects?.includes(p.slug)).slice(0, 8);
+const related = all.filter((x) => x.slug !== p.slug && x.category === p.category && (x.originalPlatform === p.originalPlatform || x.tags.some((t) => p.tags.includes(t)))).slice(0, 6);
+const release = s?.release ?? p.latestRelease;
+const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
+const verb = p.method === 'static-recomp' ? 'recompiled' : p.method.includes('decomp') ? 'decompiled' : p.method === 'clean-room' ? 'rebuilt clean-room' : 'rebuilt';
+const description = `${p.name}: ${p.summary} Status, ${PROVENANCE_LABEL[p.provenance].toLowerCase()} provenance, licence, latest release and live GitHub activity.`.slice(0, 300);
+const schema = {
+  '@type': 'SoftwareSourceCode', name: p.name, description: p.summary, codeRepository: p.repo ?? undefined,
+  license: p.licence, programmingLanguage: undefined, url: `https://recompsoftware.com/p/${p.slug}/`,
+  author: p.team.map((t) => ({ '@type': 'Person', name: t })),
+};
+---
+<Base title={p.name} description={description} type="article" schema={schema}>
+  <article class="wrap proj">
+    <p class="crumbs"><a href="/">Recomp</a> / <a href={`/${p.category}/`}>{cat.label}</a> / <a href={`/platforms/${slugify(p.originalPlatform)}/`}>{p.originalPlatform}</a></p>
+    <h1>{p.name}</h1>
+    <p class="lede">{p.summary}</p>
+    <Badges p={p} full />
+
+    <div class="cta btns">
+      {p.playable && (p.playable.launch === 'tab'
+        ? <a class="btn primary" href={p.playable.url} target="_blank" rel="noopener" data-track="play_click" data-item={p.slug}>▶ Play in browser</a>
+        : <a class="btn primary" href={`/play/${p.slug}/`} data-track="play_click" data-item={p.slug}>▶ Play in browser</a>)}
+      {p.repo && <a class="btn" href={p.repo} rel="noopener" data-track="repo_click" data-item={p.slug}>Source code</a>}
+      {p.website && <a class="btn" href={p.website} rel="noopener">Website</a>}
+      {p.discord && <a class="btn" href={p.discord} rel="noopener">Discord</a>}
+      {p.subreddit && <a class="btn" href={p.subreddit} rel="noopener">Reddit</a>}
+    </div>
+
+    <section class="stats" aria-label="Activity">
+      <div><span class="k">Stars</span><span class="v">{s ? fmtNum(s.stars) : '—'}</span>{s?.starsWeek != null && <span class="d">+{s.starsWeek} this week</span>}</div>
+      <div><span class="k">Commits, 30 days</span><span class="v">{s?.commits30 ?? '—'}</span></div>
+      <div><span class="k">Latest release</span><span class="v">{release ? release.version : '—'}</span>{release?.date && <span class="d">{formatDate(release.date.slice(0, 10))}</span>}</div>
+      <div><span class="k">Last push</span><span class="v">{s?.pushedAt ? formatDate(s.pushedAt.slice(0, 10)) : '—'}</span>{s?.archived && <span class="d">archived</span>}</div>
+      {p.progress != null && <div><span class="k">Progress</span><span class="v">{p.progress}%</span>{p.progressSource && <a class="d" href={p.progressSource} rel="noopener">{host(p.progressSource)}</a>}</div>}
+    </section>
+    {s && <p class="meta">GitHub figures as of {statsDate()}, refreshed daily.</p>}
+
+    <div class="cols">
+      <section class="facts">
+        <h2>Facts</h2>
+        <dl>
+          <dt>Original</dt><dd>{p.subject}{p.originalYear && ` (${p.originalYear})`}</dd>
+          <dt>Platform</dt><dd><a href={`/platforms/${slugify(p.originalPlatform)}/`}>{p.originalPlatform}</a></dd>
+          <dt>Method</dt><dd>{METHOD_LABEL[p.method]}</dd>
+          <dt>Provenance</dt><dd>{PROVENANCE_LABEL[p.provenance]}{p.provenanceNote && <span class="note"> · {p.provenanceNote}</span>} <a class="note" href="/about/#labels">what this means</a></dd>
+          <dt>Status</dt><dd>{p.status}{p.progress != null && ` · ${p.progress}%`}</dd>
+          <dt>Licence</dt><dd>{p.licence}</dd>
+          {p.team.length > 0 && <><dt>Team</dt><dd>{p.team.join(', ')}</dd></>}
+          {p.started && <><dt>Started</dt><dd>{p.started}</dd></>}
+          {p.firstRelease && <><dt>First release</dt><dd>{p.firstRelease}</dd></>}
+          {p.targets.length > 0 && <><dt>Runs on</dt><dd>{p.targets.join(', ')}</dd></>}
+          <dt>Needs the original</dt><dd>{p.needsOriginal ? 'Yes: you supply your own legally obtained copy' : 'No'}</dd>
+        </dl>
+      </section>
+      <section>
+        <h2>How to get it legally</h2>
+        {p.playable ? (
+          <p><strong>{TIER_LABEL[p.playable.tier]}.</strong> {p.playable.note}</p>
+        ) : p.needsOriginal ? (
+          <p>This project ships code only. Build or download it from the official repository, then supply data from a copy of <em>{p.subject}</em> you own. Recomp never links to ROMs, discs or game data.</p>
+        ) : (
+          <p>Download it from the official repository{p.website ? ' or website' : ''}. No original files are needed.</p>
+        )}
+        <p>This project was {verb}{p.team.length > 0 && <> by {p.team.slice(0, 3).join(', ')}{p.team.length > 3 && ' and others'}</>}. Facts last checked {p.checked}.</p>
+      </section>
+    </div>
+
+    {(parents.length > 0 || children.length > 0) && (
+      <section>
+        <h2>Lineage</h2>
+        <ul class="lin">
+          {parents.map((x) => <li><span class="meta">{x.rel.replace(/-/g, ' ')}</span> <a href={`/p/${x.p!.slug}/`}>{x.p!.name}</a></li>)}
+          {children.map((x) => <li><a href={`/p/${x.p!.slug}/`}>{x.p!.name}</a> <span class="meta">{x.rel.replace(/-/g, ' ')} this</span></li>)}
+        </ul>
+      </section>
+    )}
+
+    {(events.length > 0 || items.length > 0) && (
+      <section>
+        <h2>Timeline</h2>
+        <ol class="tl">
+          {[...events.map((e) => ({ date: e.date, title: e.title, source: e.source })), ...items.map((n) => ({ date: n.date, title: n.title, source: n.source }))]
+            .sort((a, b) => b.date.localeCompare(a.date))
+            .map((e) => <li><time class="meta">{formatDate(e.date)}</time> <a href={e.source} rel="noopener">{e.title}</a></li>)}
+        </ol>
+      </section>
+    )}
+
+    <section>
+      <h2>Sources</h2>
+      <ul class="src">{p.sources.map((u) => <li><a href={u} rel="noopener">{u}</a></li>)}</ul>
+      <p class="meta">Something wrong or out of date? <a href={`https://github.com/andrewnakas/recomp-hub/issues/new?title=${encodeURIComponent('Correction: ' + p.name)}`}>Send a correction</a>.</p>
+    </section>
+
+    {related.length > 0 && (
+      <section>
+        <div class="rule-head"><h2>Related</h2><a href={`/${p.category}/`}>All {cat.label.toLowerCase()} →</a></div>
+        <div class="grid">{related.map((r) => <ProjectCard p={r} />)}</div>
+      </section>
+    )}
+  </article>
+</Base>
+<style>
+  .proj { padding-top: 2rem; }
+  .proj h1 { margin-bottom: 0.6rem; }
+  .cta { margin: 1.4rem 0; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); border-top: 1px solid var(--ink); border-bottom: 1px solid var(--line); margin-top: 1.5rem; }
+  .stats div { padding: 0.8rem 0.8rem 0.8rem 0; display: grid; gap: 0.1rem; }
+  .k { font: 500 0.72rem var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-faint); }
+  .v { font: 700 1.5rem/1.2 var(--font-display); }
+  .d { font: 0.78rem var(--font-mono); color: var(--accent); }
+  .cols { display: grid; gap: 0 3rem; }
+  @media (min-width: 900px) { .cols { grid-template-columns: 1fr 1fr; } }
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1.2rem; margin: 0; }
+  dt { font: 500 0.8rem/1.6 var(--font-mono); color: var(--ink-faint); }
+  dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+  @media (max-width: 520px) { dl { grid-template-columns: 1fr; gap: 0 0; } dd { margin-bottom: 0.6rem; } }
+  .note { color: var(--ink-faint); font-size: 0.88rem; }
+  .lin, .tl, .src { padding-left: 1.1rem; }
+  .src { overflow-wrap: anywhere; font-size: 0.9rem; }
+</style>

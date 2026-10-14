@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import { lineage, projects } from '../lib/data';
+const all = projects();
+const name = (s: string) => all.find((p) => p.slug === s);
+const edges = lineage();
+// Group children under each parent: "what was built on what".
+const parents = [...new Set(edges.flatMap((e) => e.parents))]
+  .map((slug) => ({ slug, p: name(slug), kids: edges.filter((e) => e.parents.includes(slug)) }))
+  .sort((a, b) => b.kids.length - a.kids.length);
+const link = (s: string) => { const p = name(s); return p ? `<a href="/p/${s}/">${p.name}</a>` : s; };
+---
+<Base title="Tool lineage: what each recomp and decomp is built on" description="Which recompiler, decomp toolchain or library each project is built on, forked from or inspired by.">
+  <PageHead kicker="Lineage" title="Built on the shoulders of" lede="Static recompilers, decomp toolchains and shared libraries, and the projects that grew out of each." />
+  <section class="wrap tree">
+    {parents.map((g) => (
+      <section>
+        <h2>{g.p ? <a href={`/p/${g.slug}/`}>{g.p.name}</a> : g.slug}</h2>
+        <ul>{g.kids.map((k) => <li><Fragment set:html={link(k.slug)} /> <span class="meta">{k.relation.replace(/-/g, ' ')}</span></li>)}</ul>
+      </section>
+    ))}
+  </section>
+</Base>
+<style>
+  .tree { display: grid; gap: 0 2.5rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+  .tree h2 { font-size: 1.3rem; border-top: 1px solid var(--ink); padding-top: 0.6rem; margin-top: 1.5rem; }
+  .tree ul { padding-left: 1.1rem; margin: 0; }
+</style>

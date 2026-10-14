@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import Catalog from '../../components/Catalog.astro';
+import { platforms, projects, type Project } from '../../lib/data';
+export function getStaticPaths() {
+  const all = projects();
+  return platforms().map((p) => ({ params: { slug: p.slug }, props: { name: p.name, list: all.filter((x) => x.originalPlatform === p.name) } }));
+}
+const { name, list } = Astro.props as { name: string; list: Project[] };
+const recomps = list.filter((p) => p.method === 'static-recomp').length;
+const decomps = list.filter((p) => p.method.includes('decomp')).length;
+---
+<Base title={`${name} decomps, recomps & ports`} description={`Every ${name} decompilation (${decomps}), static recompilation (${recomps}) and clean-room project Recomp tracks, with live GitHub activity.`}>
+  <PageHead crumbs={[{ href: '/platforms/', label: 'Platforms' }]} title={`${name}`} lede={`${list.length} projects: ${decomps} decompilations, ${recomps} static recompilations, and the rest ports, rewrites and clean-room builds.`} />
+  <section class="wrap"><Catalog list={list} showCategory /></section>
+</Base>

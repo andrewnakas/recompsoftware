@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import ListTable from '../components/ListTable.astro';
+import { projects, statsDate } from '../lib/data';
+const list = projects().filter((p) => p.category === 'games' && (p.method === 'static-recomp' || p.tags.includes('recomp')));
+const year = new Date().getFullYear();
+---
+<Base title={`Recompiled games list (${year}): every static recomp PC port`} description={`All ${list.length} statically recompiled games: N64 Recompiled ports, XenonRecomp, PS2 and more, with status, latest release and who made them. Updated daily.`}>
+  <PageHead kicker="List" title="Every recompiled game" lede={`${list.length} static recompilations: native ports produced by translating the original machine code into C/C++, like Zelda 64: Recompiled and Unleashed Recompiled. You need your own copy of each game unless a build is marked playable. Updated daily; GitHub data as of ${statsDate() ?? 'the next refresh'}.`}>
+    <p><a href="/what-is-a-recomp/">What is a recomp, and how is it different from a decomp?</a></p>
+  </PageHead>
+  <section class="wrap"><ListTable list={list} /></section>
+</Base>

@@ -1,0 +1,231 @@
+[
+  {
+    "slug": "zelda64recomp",
+    "parents": [
+      "n64recomp",
+      "n64modernruntime",
+      "mm-decomp",
+      "rt64"
+    ],
+    "relation": "built-on"
+  },
+  {
+    "slug": "banjo-recompiled",
+    "parents": [
+      "n64recomp",
+      "n64modernruntime",
+      "banjo-kazooie-decomp",
+      "rt64"
+    ],
+    "relation": "built-on"
+  },
+  {
+    "slug": "unleashed-recompiled",
+    "parents": [
+      "xenonrecomp",
+      "xenosrecomp"
+    ],
+    "relation": "built-on"
+  },
+  {
+    "slug": "unleashed-recompiled",
+    "parents": [
+      "n64recomp"
+    ],
+    "relation": "inspired-by"
+  },
+  {
+    "slug": "xenonrecomp",
+    "parents": [
+      "n64recomp"
+    ],
+    "relation": "inspired-by"
+  },
+  {
+    "slug": "xenosrecomp",
+    "parents": [
+      "n64recomp"
+    ],
+    "relation": "inspired-by"
+  },
+  {
+    "slug": "gcrecomp",
+    "parents": [
+      "n64recomp"
+    ],
+    "relation": "inspired-by"
+  },
+  {
+    "slug": "ship-of-harkinian",
+    "parents": [
+      "oot-decomp",
+      "libultraship"
+    ],
+    "relation": "built-on"
+  },
+  {
+    "slug": "ship-of-harkinian",
+    "parents": [
+      "torch"
+    ],
+    "relation": "uses-tool"
+  },
+  {
+    "slug": "2ship2harkinian",
+    "parents": [
+      "libultraship"
+    ],
+    "relation": "built-on"
+  },
+  {
+    "slug": "starship",
+    "parents": [
+      "sf64-decomp",
+      "libultraship"
+    ],
+    "relation": "built-on"
+  },
+  {
+    "slug": "starship",
+    "parents": [
+      "torch",
+      "asm-differ"
+    ],
+    "relation": "uses-tool"
+  },
+  {
+    "slug": "spaghettikart",
+    "parents": [
+      "libultraship"
+    ],
+    "relation": "built-on"
+  },
+  {
+    "slug": "spaghettikart",
+    "parents": [
+      "torch"
+    ],
+    "relation": "uses-tool"
+  },
+  {
+    "slug": "sm64ex",
+    "parents": [
+      "sm64-decomp"
+    ],
+    "relation": "fork-of"
+  },
+  {
+    "slug": "sm64ex",
+    "parents": [
+      "sm64ex"
+    ],
+    "relation": "fork-of"
+  },
+  {
+    "slug": "sm64-decomp",
+    "parents": [
+      "ido-static-recomp"
+    ],
+    "relation": "uses-tool"
+  },
+  {
+    "slug": "perfect-dark-port",
+    "parents": [
+      "perfect-dark-decomp"
+    ],
+    "relation": "built-on"
+  },
+  {
+    "slug": "perfect-dark-decomp",
+    "parents": [
+      "splat",
+      "ido-static-recomp"
+    ],
+    "relation": "uses-tool"
+  },
+  {
+    "slug": "banjo-kazooie-decomp",
+    "parents": [
+      "splat",
+      "asm-differ"
+    ],
+    "relation": "uses-tool"
+  },
+  {
+    "slug": "oot-decomp",
+    "parents": [
+      "asm-differ",
+      "decomp-permuter"
+    ],
+    "relation": "uses-tool"
+  },
+  {
+    "slug": "mm-decomp",
+    "parents": [
+      "asm-differ",
+      "decomp-permuter",
+      "zapd"
+    ],
+    "relation": "uses-tool"
+  },
+  {
+    "slug": "tp-decomp",
+    "parents": [
+      "decomp-toolkit",
+      "objdiff"
+    ],
+    "relation": "uses-tool"
+  },
+  {
+    "slug": "decomp-me",
+    "parents": [
+      "m2c",
+      "objdiff"
+    ],
+    "relation": "uses-tool"
+  },
+  {
+    "slug": "splat",
+    "parents": [
+      "spimdisasm"
+    ],
+    "relation": "uses-tool"
+  },
+  {
+    "slug": "rizin",
+    "parents": [
+      "radare2"
+    ],
+    "relation": "fork-of"
+  },
+  {
+    "slug": "cutter",
+    "parents": [
+      "rizin"
+    ],
+    "relation": "built-on"
+  },
+  {
+    "slug": "mcsema",
+    "parents": [
+      "remill"
+    ],
+    "relation": "built-on"
+  },
+  {
+    "slug": "rea",
+    "parents": [
+      "ghidra",
+      "ida"
+    ],
+    "relation": "uses-tool"
+  },
+  {
+    "slug": "eleven",
+    "parents": [
+      "rea",
+      "ghidra"
+    ],
+    "relation": "built-on"
+  }
+]

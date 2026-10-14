@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+const faq = [
+  ['What is a recomp?', 'A static recompilation ("recomp") translates a program\'s compiled machine code, instruction by instruction, into C or C++ ahead of time, then compiles that for a modern machine. The result is a native port without an emulator at run time. N64: Recompiled (behind Zelda 64: Recompiled) and XenonRecomp (behind Unleashed Recompiled) are the best-known recompilers.'],
+  ['What is a decomp?', 'A decompilation ("decomp") is the slow, mostly human job of writing readable C that compiles back into the original binary. A matching decomp produces a byte-for-byte identical executable, which proves the source is faithful. Projects like the Super Mario 64 and Ocarina of Time decomps took years.'],
+  ['How are they different?', 'A recomp is fast and mostly automatic, but the output is machine-shaped code that is hard to read or change deeply. A decomp is slow but gives real, understandable source that people can port, fix and mod freely. Many projects combine both: a recomp to ship sooner, a decomp to understand the game.'],
+  ['What is a clean-room reimplementation?', 'A program rewritten from scratch by people working from documentation and observed behaviour, not from the original code. ReactOS, Wine and VectorCraft (an Illustrator-style editor) work this way, and so do engine rewrites like OpenMW.'],
+  ['Is any of this legal?', 'The projects listed here distribute their own code and tools, never the original game or program data. To play most of them you supply a copy you own. The few builds playable on this site either regenerate all assets themselves, or use data that is freely licensed, and each says which.'],
+  ['What do the labels mean?', 'Every entry carries a provenance label (human-led, AI-assisted, AI-generated, or not stated), taken from what the project itself says. See the about page for the rules.'],
+];
+---
+<Base title="What is a recomp? Decompilation vs recompilation explained" description="Static recompilation vs decompilation vs clean-room reimplementation, in plain words: how Zelda 64: Recompiled, the SM64 decomp and Wine differ, and what is legal." schema={{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }}>
+  <PageHead kicker="Explainer" title="What is a recomp?" lede="Three ways people bring old software to new machines, and why the difference matters." />
+  <section class="wrap prose">
+    {faq.map(([q, a]) => <><h2>{q}</h2><p>{a}</p></>)}
+    <h2>Where to go next</h2>
+    <ul>
+      <li><a href="/recompiled-games-list/">The recompiled games list</a></li>
+      <li><a href="/decompiled-games-list/">The decompiled games list</a></li>
+      <li><a href="/tools/">The tools behind them</a> and <a href="/lineage/">who built on what</a></li>
+      <li><a href="/history/">The history of the scene</a></li>
+    </ul>
+  </section>
+</Base>

@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import Badges from '../../components/Badges.astro';
+import { projects, TIER_LABEL, type Project } from '../../lib/data';
+export function getStaticPaths() {
+  return projects().filter((p) => p.playable && p.playable.launch === 'frame').map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+const { p } = Astro.props as { p: Project };
+const pl = p.playable!;
+---
+<Base title={`Play ${p.name} in your browser`} description={`Play ${p.name} in a browser tab. ${TIER_LABEL[pl.tier]}: ${pl.note}`}>
+  <section class="wrap play">
+    <p class="crumbs"><a href="/play/">Play</a> / <a href={`/p/${p.slug}/`}>{p.name}</a></p>
+    <div class="head"><h1>{p.name}</h1><Badges p={p} /></div>
+    <div class="stage">
+      <iframe id="game" src={pl.url} title={p.name} allow="autoplay; fullscreen; gamepad; cross-origin-isolated" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="btns bar">
+      <button class="btn small" id="fs" type="button">Fullscreen</button>
+      <a class="btn small" href={pl.url} target="_blank" rel="noopener">Open in its own tab</a>
+      <a class="btn small" href={`/p/${p.slug}/`}>About this project</a>
+    </div>
+    <p class="meta">{TIER_LABEL[pl.tier]}. {pl.note}</p>
+  </section>
+</Base>
+<script>
+  document.getElementById('fs')?.addEventListener('click', () => document.getElementById('game')?.requestFullscreen?.());
+  const g = (window as any).gtag; if (g) g('event', 'boot_start', { item: location.pathname });
+</script>
+<style>
+  .play { padding-top: 1.5rem; }
+  .head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1.5rem; }
+  .head h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); margin: 0.4rem 0; }
+  .stage { aspect-ratio: 4 / 3; max-height: 78vh; width: 100%; background: #000; border: 1px solid var(--ink); }
+  .stage iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .bar { margin: 0.8rem 0; }
+</style>

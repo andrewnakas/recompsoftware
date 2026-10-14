@@ -1,0 +1,1223 @@
+[
+  {
+    "slug": "ruffle",
+    "name": "Ruffle",
+    "category": "preservation",
+    "subject": "Adobe Flash Player",
+    "originalPlatform": "Web",
+    "originalYear": 1996,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Community project since 2019",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/ruffle-rs/ruffle",
+    "website": "https://ruffle.rs",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ruffle-rs"
+    ],
+    "started": "2019",
+    "firstRelease": "2020-09",
+    "latestRelease": {
+      "version": "v0.7.1",
+      "date": "2026-10-07"
+    },
+    "targets": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": {
+      "tier": "software",
+      "url": "https://ruffle.rs/demo/",
+      "launch": "tab",
+      "note": "MIT OR Apache-2.0; the project's own hosted demo"
+    },
+    "summary": "Flash Player emulator in Rust that runs SWF content natively and in browsers through WebAssembly, so old Flash games and animations keep working.",
+    "tags": [
+      "flash",
+      "swf",
+      "wasm",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/ruffle-rs/ruffle",
+      "https://github.com/ruffle-rs/ruffle/blob/master/LICENSE.md",
+      "https://ruffle.rs"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "flashpoint-archive",
+    "name": "Flashpoint Archive",
+    "category": "preservation",
+    "subject": "Web games and animations (Flash, Shockwave, Unity Web and more)",
+    "originalPlatform": "Web",
+    "originalYear": null,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Started by BlueMaxima in 2018",
+    "licence": "MIT",
+    "repo": "https://github.com/FlashpointProject/launcher",
+    "website": "https://flashpointarchive.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "FlashpointProject",
+      "BlueMaxima"
+    ],
+    "started": "2018",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "14.0.3",
+      "date": "2025-10-29"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Large preservation archive and launcher that keeps web games and animations from defunct browser plugins playable offline.",
+    "tags": [
+      "flash",
+      "shockwave",
+      "web-games",
+      "archive"
+    ],
+    "sources": [
+      "https://github.com/FlashpointProject/launcher",
+      "https://flashpointarchive.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "lightspark",
+    "name": "Lightspark",
+    "category": "preservation",
+    "subject": "Adobe Flash Player",
+    "originalPlatform": "Web",
+    "originalYear": 1996,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Community project since 2009",
+    "licence": "LGPL-3.0",
+    "repo": "https://github.com/lightspark/lightspark",
+    "website": "http://lightspark.github.io/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "lightspark"
+    ],
+    "started": "2009",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "0.9.0",
+      "date": "2025-02-16"
+    },
+    "targets": [
+      "Linux",
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source Flash Player implementation in C++ with ActionScript 3 support.",
+    "tags": [
+      "flash",
+      "swf",
+      "actionscript"
+    ],
+    "sources": [
+      "https://github.com/lightspark/lightspark",
+      "http://lightspark.github.io/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "oldweb-today",
+    "name": "oldweb.today",
+    "category": "preservation",
+    "subject": "Historic web browsers",
+    "originalPlatform": "Web",
+    "originalYear": null,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Webrecorder / Rhizome project",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/oldweb-today/oldweb-today",
+    "website": "https://oldweb.today",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Webrecorder",
+      "ikreymer"
+    ],
+    "started": "2015",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Runs emulated vintage browsers in your own browser, connected to web archives so old sites appear as they once did.",
+    "tags": [
+      "web-archive",
+      "browsers",
+      "emulation"
+    ],
+    "sources": [
+      "https://github.com/oldweb-today/oldweb-today",
+      "https://oldweb.today"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "emularity",
+    "name": "The Emularity",
+    "category": "preservation",
+    "subject": "In-browser emulators",
+    "originalPlatform": "Web",
+    "originalYear": null,
+    "method": "emulation-hosted",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Built for the Internet Archive's software collection",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/db48x/emularity",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "db48x",
+      "Internet Archive"
+    ],
+    "started": "2015",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "JavaScript loader that embeds browser emulators such as MAME and DOSBox ports in a web page; it powers the Internet Archive's in-browser software.",
+    "tags": [
+      "emulation",
+      "browser",
+      "internet-archive"
+    ],
+    "sources": [
+      "https://github.com/db48x/emularity"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "internet-archive-software",
+    "name": "Internet Archive Software Collection",
+    "category": "preservation",
+    "subject": "Historic software of all kinds",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Curated by Internet Archive staff and volunteers",
+    "licence": "unknown",
+    "repo": null,
+    "website": "https://archive.org/details/software",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Internet Archive",
+      "Jason Scott"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Internet Archive's software collection, with many historic programs and games runnable in the browser through emulation.",
+    "tags": [
+      "archive",
+      "emulation",
+      "library"
+    ],
+    "sources": [
+      "https://archive.org/details/software"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "software-heritage",
+    "name": "Software Heritage",
+    "category": "preservation",
+    "subject": "Source code",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Inria-founded nonprofit initiative (2016) backed by UNESCO",
+    "licence": "unknown",
+    "repo": null,
+    "website": "https://www.softwareheritage.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Software Heritage",
+      "Inria"
+    ],
+    "started": "2016",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Universal archive that collects and preserves the source code and history of publicly available software.",
+    "tags": [
+      "source-code",
+      "archive"
+    ],
+    "sources": [
+      "https://www.softwareheritage.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "video-game-history-foundation",
+    "name": "Video Game History Foundation",
+    "category": "preservation",
+    "subject": "Video game history materials",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Nonprofit founded by Frank Cifaldi in 2017",
+    "licence": "unknown",
+    "repo": null,
+    "website": "https://gamehistory.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Video Game History Foundation"
+    ],
+    "started": "2017",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Nonprofit that preserves and makes available video game development materials, magazines and history for research.",
+    "tags": [
+      "games",
+      "library",
+      "history"
+    ],
+    "sources": [
+      "https://gamehistory.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "macintosh-garden",
+    "name": "Macintosh Garden",
+    "category": "preservation",
+    "subject": "Classic Macintosh software",
+    "originalPlatform": "Macintosh",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Community-run abandonware site",
+    "licence": "unknown",
+    "repo": null,
+    "website": "https://macintoshgarden.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Macintosh Garden community"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Community archive cataloguing classic Mac games and applications as abandonware; copyright status varies by title.",
+    "tags": [
+      "mac",
+      "abandonware",
+      "archive"
+    ],
+    "sources": [
+      "https://macintoshgarden.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "pretendo-network",
+    "name": "Pretendo Network",
+    "category": "preservation",
+    "subject": "Nintendo Network (Wii U / 3DS online services)",
+    "originalPlatform": "Wii U / 3DS",
+    "originalYear": 2012,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Open-source community project since 2018",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/PretendoNetwork",
+    "website": "https://pretendo.network",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "PretendoNetwork"
+    ],
+    "started": "2018",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Wii U",
+      "3DS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Replacement servers for Nintendo Network, rebuilt from the protocol, so Wii U and 3DS online features keep working after Nintendo's shutdown.",
+    "tags": [
+      "nintendo",
+      "online",
+      "server",
+      "wii-u",
+      "3ds"
+    ],
+    "sources": [
+      "https://github.com/PretendoNetwork",
+      "https://github.com/PretendoNetwork/account",
+      "https://pretendo.network"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "wiimmfi",
+    "name": "Wiimmfi",
+    "category": "preservation",
+    "subject": "Nintendo Wi-Fi Connection",
+    "originalPlatform": "Wii / DS",
+    "originalYear": 2005,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Run by the Wiimm and Leseratte team since 2014",
+    "licence": "unknown",
+    "repo": null,
+    "website": "https://wiimmfi.de",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Wiimm",
+      "Leseratte"
+    ],
+    "started": "2014",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Wii",
+      "DS",
+      "DSi"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Closed-source replacement for Nintendo Wi-Fi Connection that keeps online play alive for hundreds of Wii and DS games.",
+    "tags": [
+      "nintendo",
+      "online",
+      "wfc",
+      "wii",
+      "ds"
+    ],
+    "sources": [
+      "https://wiimmfi.de"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "wiilink-wfc",
+    "name": "WiiLink WFC",
+    "category": "preservation",
+    "subject": "Nintendo Wi-Fi Connection",
+    "originalPlatform": "Wii / DS",
+    "originalYear": 2005,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "WiiLink team, started 2023",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/WiiLink24/wfc-server",
+    "website": "https://wfc.wiilink.ca",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "WiiLink24"
+    ],
+    "started": "2023",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Wii",
+      "DS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Open-source server replacement for Nintendo Wi-Fi Connection, run by the WiiLink team.",
+    "tags": [
+      "nintendo",
+      "online",
+      "wfc",
+      "wii"
+    ],
+    "sources": [
+      "https://github.com/WiiLink24/wfc-server",
+      "https://wfc.wiilink.ca"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "wiilink",
+    "name": "WiiLink",
+    "category": "preservation",
+    "subject": "Wii channels (WiiConnect24 services)",
+    "originalPlatform": "Wii",
+    "originalYear": 2006,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Community project since 2020 (absorbed RiiConnect24)",
+    "licence": "MPL-2.0",
+    "repo": "https://github.com/WiiLink24",
+    "website": "https://www.wiilink.ca",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "WiiLink24"
+    ],
+    "started": "2020",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "Patcher v3.0.0",
+      "date": "2026-10-02"
+    },
+    "targets": [
+      "Wii",
+      "Wii U"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Revives discontinued Wii channels and WiiConnect24 services with replacement servers and a patcher.",
+    "tags": [
+      "nintendo",
+      "wii",
+      "channels",
+      "online"
+    ],
+    "sources": [
+      "https://github.com/WiiLink24",
+      "https://github.com/WiiLink24/WiiLink24-Patcher",
+      "https://www.wiilink.ca"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "altwfc",
+    "name": "AltWFC (dwc_network_server_emulator)",
+    "category": "preservation",
+    "subject": "Nintendo Wi-Fi Connection",
+    "originalPlatform": "Wii / DS",
+    "originalYear": 2005,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Community project started 2014",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/barronwaffles/dwc_network_server_emulator",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "barronwaffles"
+    ],
+    "started": "2014",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Self-hostable emulator of the Nintendo Wi-Fi Connection servers for DS and Wii games, released after the 2014 shutdown.",
+    "tags": [
+      "nintendo",
+      "online",
+      "wfc",
+      "server"
+    ],
+    "sources": [
+      "https://github.com/barronwaffles/dwc_network_server_emulator"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "insignia",
+    "name": "Insignia",
+    "category": "preservation",
+    "subject": "Xbox Live 1.0",
+    "originalPlatform": "Xbox",
+    "originalYear": 2002,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": null,
+    "website": "https://insignia.live",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Insignia"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Xbox"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Closed-source revival service that brings Xbox Live matchmaking and online play back to original Xbox games.",
+    "tags": [
+      "xbox",
+      "xbox-live",
+      "online"
+    ],
+    "sources": [
+      "https://insignia.live"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "xlink-kai",
+    "name": "XLink Kai",
+    "category": "preservation",
+    "subject": "System link / LAN play on consoles",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Team XLink, running since 2003",
+    "licence": "unknown",
+    "repo": null,
+    "website": "https://www.teamxlink.co.uk",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Team XLink"
+    ],
+    "started": "2003",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Tunnelling service that carries console system-link and LAN traffic over the internet so local multiplayer games can be played online.",
+    "tags": [
+      "online",
+      "lan",
+      "tunnel",
+      "consoles"
+    ],
+    "sources": [
+      "https://www.teamxlink.co.uk"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "openspy",
+    "name": "OpenSpy",
+    "category": "preservation",
+    "subject": "GameSpy online services",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/openspy/openspy-core",
+    "website": "https://openspy.net",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "openspy"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Consoles"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Replacement for GameSpy's master servers and services that restores multiplayer to games orphaned by the 2014 shutdown.",
+    "tags": [
+      "gamespy",
+      "online",
+      "server"
+    ],
+    "sources": [
+      "https://github.com/openspy/openspy-core",
+      "https://openspy.net"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "dreampi",
+    "name": "DreamPi",
+    "category": "preservation",
+    "subject": "Sega Dreamcast online (dial-up)",
+    "originalPlatform": "Dreamcast",
+    "originalYear": 1999,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "By Luke Benstead (Kazade)",
+    "licence": "MIT",
+    "repo": "https://github.com/Kazade/dreampi",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Kazade"
+    ],
+    "started": "2015",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v2.1",
+      "date": "2026-09-11"
+    },
+    "targets": [
+      "Raspberry Pi"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Raspberry Pi daemon that answers a Dreamcast's dial-up modem and bridges it to the internet for revived online games.",
+    "tags": [
+      "dreamcast",
+      "online",
+      "modem"
+    ],
+    "sources": [
+      "https://github.com/Kazade/dreampi"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "newserv",
+    "name": "newserv",
+    "category": "preservation",
+    "subject": "Phantasy Star Online servers",
+    "originalPlatform": "Dreamcast / GameCube / Xbox / PC",
+    "originalYear": 2000,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "By Martin Michelsen (fuzziqersoftware)",
+    "licence": "MIT",
+    "repo": "https://github.com/fuzziqersoftware/newserv",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "fuzziqersoftware"
+    ],
+    "started": "2018",
+    "firstRelease": "2022-03",
+    "latestRelease": {
+      "version": "v2026-09-02",
+      "date": "2026-09-03"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Phantasy Star Online game server and proxy covering most versions of the game, plus reverse-engineering tools.",
+    "tags": [
+      "pso",
+      "server",
+      "sega"
+    ],
+    "sources": [
+      "https://github.com/fuzziqersoftware/newserv"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "neohabitat",
+    "name": "NeoHabitat",
+    "category": "preservation",
+    "subject": "Lucasfilm's Habitat",
+    "originalPlatform": "Commodore 64",
+    "originalYear": 1986,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Revival led by Habitat's co-creator F. Randall Farmer",
+    "licence": "MIT",
+    "repo": "https://github.com/frandallfarmer/neohabitat",
+    "website": "http://neohabitat.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "frandallfarmer",
+      "Museum of Art and Digital Entertainment"
+    ],
+    "started": "2017",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "Stable-2020-09-08",
+      "date": "2020-09-08"
+    },
+    "targets": [
+      "Commodore 64 (emulated)"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Revival of the 1986 online world Habitat, with a rebuilt server that original Commodore 64 clients connect to.",
+    "tags": [
+      "mmo",
+      "c64",
+      "lucasfilm"
+    ],
+    "sources": [
+      "https://github.com/frandallfarmer/neohabitat",
+      "http://neohabitat.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "trinitycore",
+    "name": "TrinityCore",
+    "category": "preservation",
+    "subject": "World of Warcraft servers",
+    "originalPlatform": "Windows / Mac",
+    "originalYear": 2004,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Open-source MMO framework since 2008",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/TrinityCore/TrinityCore",
+    "website": "http://www.trinitycore.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TrinityCore"
+    ],
+    "started": "2008",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "TDB335.26091",
+      "date": "2026-09-09"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Open-source MMORPG server framework that emulates World of Warcraft's server side for several client versions.",
+    "tags": [
+      "mmo",
+      "wow",
+      "server-emulator"
+    ],
+    "sources": [
+      "https://github.com/TrinityCore/TrinityCore",
+      "http://www.trinitycore.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "cmangos",
+    "name": "CMaNGOS",
+    "category": "preservation",
+    "subject": "World of Warcraft (Classic era) servers",
+    "originalPlatform": "Windows / Mac",
+    "originalYear": 2004,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Continuation of MaNGOS (2005)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/cmangos/mangos-classic",
+    "website": "http://cmangos.net",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "cmangos"
+    ],
+    "started": "2005",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Continued MaNGOS server emulator focused on accurate World of Warcraft Classic-era gameplay.",
+    "tags": [
+      "mmo",
+      "wow",
+      "server-emulator"
+    ],
+    "sources": [
+      "https://github.com/cmangos/mangos-classic",
+      "http://cmangos.net"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "landsandboat",
+    "name": "LandSandBoat",
+    "category": "preservation",
+    "subject": "Final Fantasy XI servers",
+    "originalPlatform": "PC / PS2 / Xbox 360",
+    "originalYear": 2002,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Continues DarkStar Project / Topaz lineage",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/LandSandBoat/server",
+    "website": "https://landsandboat.github.io/server/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "LandSandBoat"
+    ],
+    "started": "2021",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Server emulator for Final Fantasy XI, continuing the earlier DarkStar and Topaz projects.",
+    "tags": [
+      "mmo",
+      "ffxi",
+      "server-emulator"
+    ],
+    "sources": [
+      "https://github.com/LandSandBoat/server",
+      "https://landsandboat.github.io/server/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "darkflame-universe",
+    "name": "Darkflame Universe",
+    "category": "preservation",
+    "subject": "LEGO Universe servers",
+    "originalPlatform": "Windows",
+    "originalYear": 2010,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Volunteer team; released 2021",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/DarkflameUniverse/DarkflameServer",
+    "website": "https://www.darkflameuniverse.org/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "DarkflameUniverse"
+    ],
+    "started": "2021",
+    "firstRelease": "2021-12",
+    "latestRelease": {
+      "version": "v3.3.1",
+      "date": "2026-06-06"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Server emulator that brings back LEGO Universe, the MMO shut down in 2012, for players with the original client.",
+    "tags": [
+      "mmo",
+      "lego",
+      "server-emulator"
+    ],
+    "sources": [
+      "https://github.com/DarkflameUniverse/DarkflameServer",
+      "https://www.darkflameuniverse.org/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "swgemu",
+    "name": "SWGEmu",
+    "category": "preservation",
+    "subject": "Star Wars Galaxies servers",
+    "originalPlatform": "Windows",
+    "originalYear": 2003,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Community project since 2004",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/swgemu/Core3",
+    "website": "https://www.swgemu.com",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "swgemu"
+    ],
+    "started": "2004",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Server emulator recreating Star Wars Galaxies as it played before the 2005 combat overhaul.",
+    "tags": [
+      "mmo",
+      "star-wars",
+      "server-emulator"
+    ],
+    "sources": [
+      "https://github.com/swgemu/Core3",
+      "https://www.swgemu.com"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "dirtsand",
+    "name": "DirtSand",
+    "category": "preservation",
+    "subject": "Myst Online: Uru Live servers",
+    "originalPlatform": "Windows",
+    "originalYear": 2003,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "H-uru community project",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/H-uru/dirtsand",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "H-uru"
+    ],
+    "started": "2011",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Open-source server for Myst Online: Uru Live and the Plasma engine, used by community shards.",
+    "tags": [
+      "mmo",
+      "myst",
+      "uru",
+      "server"
+    ],
+    "sources": [
+      "https://github.com/H-uru/dirtsand"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "openrsc",
+    "name": "Open RuneScape Classic",
+    "category": "preservation",
+    "subject": "RuneScape Classic",
+    "originalPlatform": "Web (Java)",
+    "originalYear": 2001,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Community project",
+    "licence": "AGPL-3.0",
+    "repo": "https://gitlab.com/openrsc/openrsc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Open-RSC"
+    ],
+    "started": "2018",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Server and client framework that recreates RuneScape Classic after Jagex closed the original in 2018.",
+    "tags": [
+      "mmo",
+      "runescape",
+      "server-emulator"
+    ],
+    "sources": [
+      "https://gitlab.com/openrsc/openrsc",
+      "https://github.com/Open-RSC/Core-Framework"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "impostor",
+    "name": "Impostor",
+    "category": "preservation",
+    "subject": "Among Us servers",
+    "originalPlatform": "Multi",
+    "originalYear": 2018,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Community project since 2020",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Impostor/Impostor",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Impostor"
+    ],
+    "started": "2020",
+    "firstRelease": "2020-09",
+    "latestRelease": {
+      "version": "v1.10.9",
+      "date": "2026-10-06"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Open-source reimplementation of the Among Us game server for private and modded hosting.",
+    "tags": [
+      "among-us",
+      "server",
+      "protocol"
+    ],
+    "sources": [
+      "https://github.com/Impostor/Impostor"
+    ],
+    "checked": "2026-10-13"
+  }
+]

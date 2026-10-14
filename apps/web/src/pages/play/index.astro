@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { projects, TIER_LABEL, type Playable } from '../../lib/data';
+const list = projects().filter((p) => p.playable);
+const tiers: { id: Playable['tier']; blurb: string }[] = [
+  { id: 'cleanroom', blurb: 'Every texture, sound and model regenerated, so no retail assets ship and nothing needs to be supplied. Most run on decompiled or recompiled code; some run the original program code on an emulator core, and each says which.' },
+  { id: 'software', blurb: 'Freely licensed operating systems and apps running in the browser through WebAssembly.' },
+  { id: 'free', blurb: 'Originals whose data is freely licensed or freeware (shareware episodes and the like).' },
+  { id: 'byo', blurb: 'The engine runs here, you pick a file you own. It stays on your device and is never uploaded.' },
+];
+---
+<Base title="Play decompiled & recompiled games in your browser" description={`${list.length} decompiled, recompiled and clean-room builds you can run in a browser tab, each labelled with its licence and how it was made.`}>
+  <PageHead kicker="Play" title="Play in your browser" lede="Every build says what it contains, its licence, and how it was made." />
+  {tiers.map((t) => {
+    const l = list.filter((p) => p.playable!.tier === t.id);
+    return l.length > 0 && (
+      <section class="section wrap">
+        <div class="rule-head"><h2>{TIER_LABEL[t.id]}</h2><span class="meta">{l.length}</span></div>
+        <p class="lede">{t.blurb}</p>
+        <div class="grid">{l.map((p) => <ProjectCard p={p} note={p.playable!.note} />)}</div>
+      </section>
+    );
+  })}
+</Base>

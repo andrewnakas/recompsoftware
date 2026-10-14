@@ -1,0 +1,1204 @@
+[
+  {
+    "slug": "reactos",
+    "name": "ReactOS",
+    "category": "os",
+    "subject": "Microsoft Windows NT (Server 2003 era)",
+    "originalPlatform": "PC",
+    "originalYear": 1993,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Volunteer project since 1996 (reactos.org)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/reactos/reactos",
+    "website": "https://reactos.org/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ReactOS Project"
+    ],
+    "started": "1996",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "0.4.16",
+      "date": "2026-08-29"
+    },
+    "targets": [
+      "x86",
+      "x86-64"
+    ],
+    "needsOriginal": false,
+    "playable": {
+      "tier": "software",
+      "url": "https://copy.sh/v86/?profile=reactos",
+      "launch": "tab",
+      "note": "GPL-2.0; ReactOS image hosted by v86 (BSD-2-Clause)"
+    },
+    "summary": "Free operating system written from scratch to be binary-compatible with Windows NT drivers and applications.",
+    "tags": [
+      "windows",
+      "nt",
+      "kernel"
+    ],
+    "sources": [
+      "https://github.com/reactos/reactos",
+      "https://reactos.org/",
+      "https://copy.sh/v86/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "wine",
+    "name": "Wine",
+    "category": "os",
+    "subject": "Microsoft Windows API",
+    "originalPlatform": "Windows",
+    "originalYear": 1985,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Volunteer and CodeWeavers-backed project since 1993",
+    "licence": "LGPL-2.1-or-later",
+    "repo": "https://gitlab.winehq.org/wine/wine",
+    "website": "https://www.winehq.org/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Wine project",
+      "CodeWeavers"
+    ],
+    "started": "1993",
+    "firstRelease": "2008-06",
+    "latestRelease": {
+      "version": "wine-11.19",
+      "date": "2026-10-02"
+    },
+    "targets": [
+      "Linux",
+      "macOS",
+      "FreeBSD"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Compatibility layer that reimplements the Windows API so Windows programs run on POSIX systems without a Windows licence.",
+    "tags": [
+      "windows",
+      "win32",
+      "compatibility-layer"
+    ],
+    "sources": [
+      "https://gitlab.winehq.org/wine/wine",
+      "https://github.com/wine-mirror/wine",
+      "https://www.winehq.org/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "darling",
+    "name": "Darling",
+    "category": "os",
+    "subject": "Apple macOS (Darwin userland)",
+    "originalPlatform": "Mac",
+    "originalYear": 2001,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Volunteer project since 2012",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/darlinghq/darling",
+    "website": "https://www.darlinghq.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "darlinghq"
+    ],
+    "started": "2012",
+    "firstRelease": "2019-08",
+    "latestRelease": {
+      "version": "v0.1.20260608",
+      "date": "2026-06-09"
+    },
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Translation layer that runs macOS command-line and some GUI programs on Linux by reimplementing Darwin and macOS frameworks.",
+    "tags": [
+      "macos",
+      "darwin",
+      "compatibility-layer"
+    ],
+    "sources": [
+      "https://github.com/darlinghq/darling",
+      "https://www.darlinghq.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "haiku",
+    "name": "Haiku",
+    "category": "os",
+    "subject": "BeOS",
+    "originalPlatform": "PC",
+    "originalYear": 1995,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Volunteer project since 2001 (haiku-os.org)",
+    "licence": "MIT",
+    "repo": "https://github.com/haiku/haiku",
+    "website": "https://www.haiku-os.org/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Haiku, Inc.",
+      "Haiku Project"
+    ],
+    "started": "2001",
+    "firstRelease": "2009-09",
+    "latestRelease": {
+      "version": "R1/beta6",
+      "date": "2026-08-26"
+    },
+    "targets": [
+      "x86",
+      "x86-64"
+    ],
+    "needsOriginal": false,
+    "playable": {
+      "tier": "software",
+      "url": "https://copy.sh/v86/?profile=haiku",
+      "launch": "tab",
+      "note": "MIT; Haiku image hosted by v86 (BSD-2-Clause)"
+    },
+    "summary": "Open-source operating system that recreates BeOS and stays compatible with its applications.",
+    "tags": [
+      "beos",
+      "desktop-os"
+    ],
+    "sources": [
+      "https://github.com/haiku/haiku",
+      "https://www.haiku-os.org/get-haiku/",
+      "https://copy.sh/v86/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "freedos",
+    "name": "FreeDOS",
+    "category": "os",
+    "subject": "MS-DOS",
+    "originalPlatform": "PC",
+    "originalYear": 1981,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Started by Jim Hall in 1994",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/FDOS/kernel",
+    "website": "https://www.freedos.org/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "FreeDOS Project"
+    ],
+    "started": "1994",
+    "firstRelease": "2006-09",
+    "latestRelease": {
+      "version": "1.4",
+      "date": null
+    },
+    "targets": [
+      "x86"
+    ],
+    "needsOriginal": false,
+    "playable": {
+      "tier": "software",
+      "url": "https://copy.sh/v86/?profile=freedos",
+      "launch": "tab",
+      "note": "GPL-2.0; FreeDOS image hosted by v86 (BSD-2-Clause)"
+    },
+    "summary": "Complete MS-DOS-compatible operating system for running classic DOS software and games.",
+    "tags": [
+      "dos",
+      "ms-dos"
+    ],
+    "sources": [
+      "https://github.com/FDOS/kernel",
+      "https://www.freedos.org/download/",
+      "https://copy.sh/v86/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "aros",
+    "name": "AROS Research Operating System",
+    "category": "os",
+    "subject": "AmigaOS 3.1",
+    "originalPlatform": "Amiga",
+    "originalYear": 1985,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Volunteer project since 1995",
+    "licence": "APL-1.1",
+    "repo": "https://github.com/aros-development-team/AROS",
+    "website": "http://www.aros.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "AROS Development Team"
+    ],
+    "started": "1995",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "x86",
+      "x86-64",
+      "68k",
+      "ARM",
+      "PowerPC"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Portable reimplementation of the AmigaOS 3.1 APIs that runs natively on PCs and as a replacement Kickstart on Amigas.",
+    "tags": [
+      "amiga",
+      "amigaos"
+    ],
+    "sources": [
+      "https://github.com/aros-development-team/AROS",
+      "http://www.aros.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "emutos",
+    "name": "EmuTOS",
+    "category": "os",
+    "subject": "Atari TOS",
+    "originalPlatform": "Atari ST",
+    "originalYear": 1985,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Volunteer project since 2001",
+    "licence": "GPL-2.0-or-later",
+    "repo": "https://github.com/emutos/emutos",
+    "website": "https://emutos.sourceforge.io/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "EmuTOS team"
+    ],
+    "started": "2001",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Atari ST/STe/TT/Falcon",
+      "Amiga",
+      "ColdFire"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Free replacement for the Atari ST TOS ROM, usable in emulators and on real Atari and compatible hardware.",
+    "tags": [
+      "atari",
+      "tos",
+      "firmware",
+      "rom"
+    ],
+    "sources": [
+      "https://github.com/emutos/emutos",
+      "https://emutos.sourceforge.io/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "openbios-psx",
+    "name": "OpenBIOS (PCSX-Redux)",
+    "category": "os",
+    "subject": "PlayStation BIOS",
+    "originalPlatform": "PlayStation",
+    "originalYear": 1994,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Part of the PCSX-Redux / Nugget projects",
+    "licence": "MIT",
+    "repo": "https://github.com/pcsx-redux/nugget",
+    "website": "https://pcsx-redux.consoledev.net",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "grumpycoders",
+      "pcsx-redux"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "PlayStation",
+      "PCSX-Redux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source replacement for the original PlayStation's BIOS, developed with the PCSX-Redux emulator.",
+    "tags": [
+      "psx",
+      "bios",
+      "firmware"
+    ],
+    "sources": [
+      "https://github.com/pcsx-redux/nugget/tree/main/openbios",
+      "https://github.com/grumpycoders/pcsx-redux"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "cxbx-reloaded",
+    "name": "Cxbx-Reloaded",
+    "category": "os",
+    "subject": "Original Xbox kernel and system software",
+    "originalPlatform": "Xbox",
+    "originalYear": 2001,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Long-running community project",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded-legacy",
+    "website": "https://cxbx-reloaded.co.uk",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Cxbx-Reloaded"
+    ],
+    "started": "2016",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux (Wine)"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Xbox emulator that reimplements the console's kernel and libraries at a high level so games run on Windows.",
+    "tags": [
+      "xbox",
+      "hle",
+      "kernel",
+      "emulator"
+    ],
+    "sources": [
+      "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded-legacy",
+      "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded",
+      "https://cxbx-reloaded.co.uk"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "xemu",
+    "name": "xemu",
+    "category": "os",
+    "subject": "Original Xbox",
+    "originalPlatform": "Xbox",
+    "originalYear": 2001,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Built by Matt Borgerson and contributors on QEMU",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/xemu-project/xemu",
+    "website": "https://xemu.app",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mborgerson",
+      "xemu-project"
+    ],
+    "started": "2020",
+    "firstRelease": "2022-04",
+    "latestRelease": {
+      "version": "v0.8.136",
+      "date": "2026-06-08"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Low-level original Xbox emulator based on QEMU that runs the console's own system software.",
+    "tags": [
+      "xbox",
+      "emulator",
+      "qemu"
+    ],
+    "sources": [
+      "https://github.com/xemu-project/xemu",
+      "https://xemu.app"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "cromwell",
+    "name": "Cromwell",
+    "category": "os",
+    "subject": "Original Xbox BIOS",
+    "originalPlatform": "Xbox",
+    "originalYear": 2001,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Xbox Linux project era",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/XboxDev/cromwell",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "XboxDev"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "build-20250529-86f5473",
+      "date": "2025-05-29"
+    },
+    "targets": [
+      "Xbox"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Free, legal BIOS replacement for the original Xbox, written to boot Linux without Microsoft code.",
+    "tags": [
+      "xbox",
+      "bios",
+      "firmware"
+    ],
+    "sources": [
+      "https://github.com/XboxDev/cromwell"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "xenia-canary",
+    "name": "Xenia Canary",
+    "category": "os",
+    "subject": "Xbox 360 kernel and system software",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2005,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Continuation of Ben Vanik's Xenia research project (2013)",
+    "licence": "BSD-3-Clause",
+    "repo": "https://github.com/xenia-canary/xenia-canary",
+    "website": "https://xenia.jp",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "xenia-canary"
+    ],
+    "started": "2013",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Xbox 360 emulator that reimplements the console's kernel and system libraries at a high level; Canary is the actively updated fork.",
+    "tags": [
+      "xbox-360",
+      "hle",
+      "kernel",
+      "emulator"
+    ],
+    "sources": [
+      "https://github.com/xenia-canary/xenia-canary",
+      "https://github.com/xenia-project/xenia"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "atmosphere",
+    "name": "Atmosphère",
+    "category": "os",
+    "subject": "Nintendo Switch Horizon OS components",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2017,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Led by SciresM since 2018",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/Atmosphere-NX/Atmosphere",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "SciresM",
+      "Atmosphere-NX"
+    ],
+    "started": "2018",
+    "firstRelease": "2018-10",
+    "latestRelease": {
+      "version": "1.12.0",
+      "date": "2026-09-27"
+    },
+    "targets": [
+      "Nintendo Switch"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Custom firmware that replaces many Horizon OS system modules and the kernel with open reimplementations.",
+    "tags": [
+      "switch",
+      "firmware",
+      "kernel"
+    ],
+    "sources": [
+      "https://github.com/Atmosphere-NX/Atmosphere"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "mini",
+    "name": "MINI",
+    "category": "os",
+    "subject": "Wii IOS (Starlet firmware)",
+    "originalPlatform": "Wii",
+    "originalYear": 2006,
+    "method": "clean-room",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Team Twiizers / fail0verflow, BootMii era (2008-2009)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/fail0verflow/mini",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "fail0verflow",
+      "Team Twiizers"
+    ],
+    "started": "2008",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Wii"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Minimal open replacement for the Wii's IOS firmware on the Starlet coprocessor, part of the BootMii project.",
+    "tags": [
+      "wii",
+      "ios",
+      "firmware",
+      "bootmii"
+    ],
+    "sources": [
+      "https://github.com/fail0verflow/mini"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "asahi-linux",
+    "name": "Asahi Linux",
+    "category": "os",
+    "subject": "Apple Silicon Macs (M1/M2 hardware)",
+    "originalPlatform": "Mac",
+    "originalYear": 2020,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Founded by Hector Martin in 2020",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/AsahiLinux/m1n1",
+    "website": "https://asahilinux.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "AsahiLinux"
+    ],
+    "started": "2020",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "m1n1 v1.9.9",
+      "date": "2026-10-02"
+    },
+    "targets": [
+      "Apple Silicon Macs"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Project that reverse engineers Apple Silicon hardware, including its GPU, to run Linux natively; m1n1 is its bootloader and research tool.",
+    "tags": [
+      "apple-silicon",
+      "linux",
+      "drivers",
+      "gpu"
+    ],
+    "sources": [
+      "https://github.com/AsahiLinux/m1n1",
+      "https://github.com/AsahiLinux/linux",
+      "https://asahilinux.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "system7-reimplementation",
+    "name": "System7",
+    "category": "os",
+    "subject": "Apple Macintosh System 7",
+    "originalPlatform": "Macintosh",
+    "originalYear": 1991,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says it began as an AI-assisted reverse-engineering research project and ships CLAUDE.md",
+    "licence": "MIT",
+    "repo": "https://github.com/Kelsidavis/System7",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Kelsidavis"
+    ],
+    "started": "2025-09",
+    "firstRelease": "2025-12",
+    "latestRelease": {
+      "version": "v0.1.2350-bd7e84d9",
+      "date": "2026-10-03"
+    },
+    "targets": [
+      "x86 (GRUB2/Multiboot2)",
+      "QEMU"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Experimental bootable reimplementation of classic Mac OS System 7 for x86 PCs, documented through reverse-engineering notes.",
+    "tags": [
+      "mac",
+      "classic-mac-os",
+      "system-7"
+    ],
+    "sources": [
+      "https://github.com/Kelsidavis/System7"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "executor",
+    "name": "Executor",
+    "category": "os",
+    "subject": "Classic Mac OS Toolbox",
+    "originalPlatform": "Macintosh",
+    "originalYear": 1984,
+    "method": "clean-room",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "ARDI commercial product from the 1990s, later open-sourced by Clifford T. Matthews",
+    "licence": "MIT",
+    "repo": "https://github.com/ctm/executor",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ctm",
+      "ARDI"
+    ],
+    "started": "1990",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Classic Mac emulator that ran 68k Mac applications by reimplementing the Macintosh Toolbox instead of using Apple ROMs.",
+    "tags": [
+      "mac",
+      "toolbox",
+      "68k"
+    ],
+    "sources": [
+      "https://github.com/ctm/executor"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "advanced-mac-substitute",
+    "name": "Advanced Mac Substitute",
+    "category": "os",
+    "subject": "Classic Mac OS (68K Toolbox)",
+    "originalPlatform": "Macintosh",
+    "originalYear": 1984,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "By Josh Juran (jjuran)",
+    "licence": "none",
+    "repo": "https://github.com/jjuran/metamage_1",
+    "website": "https://www.v68k.org/advanced-mac-substitute/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jjuran"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Reimplementation of the 68K Mac OS Toolbox that runs classic Mac applications without Apple's ROM or system software.",
+    "tags": [
+      "mac",
+      "toolbox",
+      "68k"
+    ],
+    "sources": [
+      "https://github.com/jjuran/metamage_1",
+      "https://www.v68k.org/advanced-mac-substitute/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "v86",
+    "name": "v86",
+    "category": "os",
+    "subject": "x86 PC hardware",
+    "originalPlatform": "PC",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "By Fabian (copy), 2013",
+    "licence": "BSD-2-Clause",
+    "repo": "https://github.com/copy/v86",
+    "website": "https://copy.sh/v86/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "copy"
+    ],
+    "started": "2013",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "x86 PC emulator that JIT-compiles guest code to WebAssembly and boots DOS, Linux, BSD and other systems in the browser.",
+    "tags": [
+      "x86",
+      "wasm",
+      "browser",
+      "emulator"
+    ],
+    "sources": [
+      "https://github.com/copy/v86",
+      "https://copy.sh/v86/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "infinite-mac",
+    "name": "Infinite Mac",
+    "category": "os",
+    "subject": "Classic Mac OS and early Mac OS X",
+    "originalPlatform": "Macintosh",
+    "originalYear": 1984,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "By Mihai Parparita, 2021",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/mihaip/infinite-mac",
+    "website": "https://infinitemac.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mihaip"
+    ],
+    "started": "2021",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Browser-based collection of classic Macintosh systems running in WebAssembly ports of Basilisk II, SheepShaver, Mini vMac and others.",
+    "tags": [
+      "mac",
+      "wasm",
+      "browser"
+    ],
+    "sources": [
+      "https://github.com/mihaip/infinite-mac",
+      "https://infinitemac.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "basilisk-ii",
+    "name": "Basilisk II and SheepShaver",
+    "category": "os",
+    "subject": "68k and PowerPC Macintosh",
+    "originalPlatform": "Macintosh",
+    "originalYear": 1984,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Christian Bauer's emulators, maintained by kanjitalk755",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/kanjitalk755/macemu",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "kanjitalk755",
+      "cebix"
+    ],
+    "started": "1997",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Maintained fork of the Basilisk II (68k) and SheepShaver (PowerPC) Mac emulators, which need an original Mac ROM.",
+    "tags": [
+      "mac",
+      "emulator",
+      "68k",
+      "powerpc"
+    ],
+    "sources": [
+      "https://github.com/kanjitalk755/macemu"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "osfree",
+    "name": "osFree",
+    "category": "os",
+    "subject": "IBM OS/2",
+    "originalPlatform": "PC",
+    "originalYear": 1987,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Volunteer project",
+    "licence": "none",
+    "repo": "https://github.com/osfree-project/osfree",
+    "website": "http://osfree.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "osfree-project"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "x86"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Effort to build an open-source OS/2-compatible operating system, starting with its user-mode parts.",
+    "tags": [
+      "os2",
+      "ibm"
+    ],
+    "sources": [
+      "https://github.com/osfree-project/osfree",
+      "http://osfree.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "samba",
+    "name": "Samba",
+    "category": "os",
+    "subject": "Microsoft SMB/CIFS and Active Directory protocols",
+    "originalPlatform": "Windows",
+    "originalYear": 1983,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Started by Andrew Tridgell in 1992",
+    "licence": "GPL-3.0",
+    "repo": "https://git.samba.org/samba.git",
+    "website": "https://www.samba.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Samba Team"
+    ],
+    "started": "1992",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "4.25.0",
+      "date": null
+    },
+    "targets": [
+      "Linux",
+      "BSD",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Reverse-engineered implementation of Windows file and print sharing and Active Directory domain services.",
+    "tags": [
+      "smb",
+      "networking",
+      "active-directory"
+    ],
+    "sources": [
+      "https://www.samba.org",
+      "https://github.com/samba-team/samba"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "ntfs-3g",
+    "name": "NTFS-3G",
+    "category": "os",
+    "subject": "Microsoft NTFS file system",
+    "originalPlatform": "Windows",
+    "originalYear": 1993,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Linux-NTFS project lineage",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/tuxera/ntfs-3g",
+    "website": "https://www.tuxera.com/company/open-source",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Tuxera"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "2026.9.28",
+      "date": "2026-09-29"
+    },
+    "targets": [
+      "Linux",
+      "macOS",
+      "BSD"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Read/write NTFS driver built from reverse engineering of the on-disk format, running in user space via FUSE.",
+    "tags": [
+      "ntfs",
+      "filesystem",
+      "driver"
+    ],
+    "sources": [
+      "https://github.com/tuxera/ntfs-3g",
+      "https://www.tuxera.com/company/open-source"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "mono",
+    "name": "Mono",
+    "category": "os",
+    "subject": "Microsoft .NET Framework",
+    "originalPlatform": "Windows",
+    "originalYear": 2002,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Started by Ximian (Miguel de Icaza) in 2001",
+    "licence": "MIT",
+    "repo": "https://github.com/mono/mono",
+    "website": "https://www.mono-project.com",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Mono Project"
+    ],
+    "started": "2001",
+    "firstRelease": "2004-06",
+    "latestRelease": null,
+    "targets": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source implementation of the .NET runtime and class libraries, built from the ECMA standards; development has since moved on.",
+    "tags": [
+      "dotnet",
+      "runtime",
+      "clr"
+    ],
+    "sources": [
+      "https://github.com/mono/mono",
+      "https://www.mono-project.com"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "box64",
+    "name": "Box64",
+    "category": "os",
+    "subject": "x86-64 Linux userland binaries",
+    "originalPlatform": "PC",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "By ptitSeb",
+    "licence": "MIT",
+    "repo": "https://github.com/ptitSeb/box64",
+    "website": "https://box86.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ptitSeb"
+    ],
+    "started": "2020",
+    "firstRelease": "2021-11",
+    "latestRelease": {
+      "version": "v0.4.4",
+      "date": "2026-08-02"
+    },
+    "targets": [
+      "Linux ARM64",
+      "Linux RISC-V",
+      "Linux LoongArch"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Dynamic recompiler that runs x86-64 Linux programs on ARM64 and RISC-V, forwarding library calls to native libraries.",
+    "tags": [
+      "dynarec",
+      "x86-64",
+      "arm64"
+    ],
+    "sources": [
+      "https://github.com/ptitSeb/box64",
+      "https://box86.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "fex-emu",
+    "name": "FEX",
+    "category": "os",
+    "subject": "x86 and x86-64 Linux binaries",
+    "originalPlatform": "PC",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Open-source team since 2020",
+    "licence": "MIT",
+    "repo": "https://github.com/FEX-Emu/FEX",
+    "website": "https://fex-emu.com",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "FEX-Emu"
+    ],
+    "started": "2020",
+    "firstRelease": "2021-02",
+    "latestRelease": {
+      "version": "FEX-2610",
+      "date": "2026-10-07"
+    },
+    "targets": [
+      "Linux ARM64"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Usermode x86 and x86-64 emulator for ARM64 Linux with a JIT and library thunking, used to run PC games on ARM.",
+    "tags": [
+      "dynarec",
+      "x86-64",
+      "arm64"
+    ],
+    "sources": [
+      "https://github.com/FEX-Emu/FEX",
+      "https://fex-emu.com"
+    ],
+    "checked": "2026-10-13"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "_rules": "Read as the owner's agent in their logged-in Chrome, at human pace, only when a sweep is started. Notes go to data/inbox/<date>-discord.md as leads to verify. Never publish members-only messages verbatim or attribute them without the author's OK; public stories cite a public source (release, repo, post). No token extraction, no headless scraping.",
+  "servers": [
+    { "name": "REA: Reverse Engineering Community", "project": "https://github.com/morluto/rea", "channels": ["showcase", "side-projects", "forum-discussion"], "lastSweep": "2026-10-13" },
+    { "name": "ArtCraft", "project": "https://getartcraft.com/apps", "note": "storytold: VectorCraft, PhotoCraft, FigCraft and the other Craft apps", "joined": "2026-10-13", "channels": ["announcements", "craft-apps", "vectorcraft", "photocraft", "filmcraft", "effectcraft", "technical-development", "game-development"], "lastSweep": "2026-10-13" }
+  ],
+  "candidates": ["SideStore", "Steam Deck", "EA Skate Modding", "XR Hub"]
+}

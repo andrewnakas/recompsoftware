@@ -1,0 +1,42 @@
+[
+  {
+    "date": "2026-10-13",
+    "kind": "industry",
+    "title": "Microsoft forms Xbox Labs to explore decompilation, recompilation and AI-assisted ports",
+    "body": "An internal memo from Xbox CEO Asha Sharma sets up a small team under CTO Scott Van Vliet to experiment with decompiled and recompiled games, citing community ports to Apple Silicon and to browsers via WebAssembly and WebGPU. Microsoft says it will experiment in public and share tools, while its IP protections stay in place. No products have been announced yet.",
+    "source": "https://www.notebookcheck.net/Microsoft-launches-Xbox-Labs-to-support-recomp-projects.1423607.0.html",
+    "projects": []
+  },
+  {
+    "date": "2026-10-13",
+    "kind": "release",
+    "title": "ArtCraft releases FigCraft, an interface design tool rebuilt in Rust",
+    "body": "The team behind VectorCraft and PhotoCraft added FigCraft, an open-source interface design and prototyping app in the vein of Figma, to its Craft suite of clean-room creative tools.",
+    "source": "https://getartcraft.com/apps/figcraft",
+    "projects": [
+      "figcraft",
+      "vectorcraft",
+      "photocraft"
+    ]
+  },
+  {
+    "date": "2026-10-12",
+    "kind": "announcement",
+    "title": "Super Smash Bros. N64 recomp announced, with Smash Remix support",
+    "body": "SrBananaMan64 and Boopie restarted a stalled 2024 port as a fresh N64Recomp project, explicitly positioned as human-made. It ships no Nintendo assets, so players supply their own copy; no release date yet.",
+    "source": "https://www.timeextension.com/news/2026/10/super-smash-bros-for-n64-is-getting-a-non-ai-slop-recomp-with-smash-remix-support",
+    "projects": [
+      "n64recomp"
+    ]
+  },
+  {
+    "date": "2026-08",
+    "kind": "milestone",
+    "title": "GoldenEye 007 decomp reaches 100% matching",
+    "body": "After about nine years of work, the GoldenEye 007 decompilation reports fully matching source code across all categories on its progress tracker.",
+    "source": "https://www.timeextension.com/news/2026/08/after-9-years-of-work-goldeneye-007-n64-is-now-100percent-decompiled",
+    "projects": [
+      "goldeneye-decomp"
+    ]
+  }
+]

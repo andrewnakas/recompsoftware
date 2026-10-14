@@ -1,0 +1,145 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  schema?: Record<string, unknown>;
+}
+const SITE = 'https://recompsoftware.com';
+const { title, description = 'Recomp tracks every decompilation, static recompilation and clean-room rebuild of games and software: live GitHub trends, history, and builds you can play in the browser.', image = '/og/default.png', type = 'website', schema } = Astro.props;
+const fullTitle = title === 'Recomp' ? 'Recomp: decompiled & recompiled games and software, tracked live' : `${title} · Recomp`;
+const path = Astro.url.pathname;
+const nav = [
+  { href: '/games/', label: 'Games' },
+  { href: '/apps/', label: 'Apps' },
+  { href: '/os/', label: 'OS' },
+  { href: '/tools/', label: 'Tools' },
+  { href: '/preservation/', label: 'Preservation' },
+  { href: '/trending/', label: 'Trending' },
+  { href: '/history/', label: 'History' },
+  { href: '/news/', label: 'News' },
+];
+const GA = import.meta.env.PUBLIC_GA_ID;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content="Recomp" />
+    <meta property="og:image" content={new URL(image, SITE)} />
+    <meta property="og:url" content={new URL(path, SITE)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0d100f" />
+    <link rel="canonical" href={new URL(path, SITE)} />
+    <link rel="alternate" type="application/rss+xml" title="Recomp news" href="/news/rss.xml" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    {schema && <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', ...schema })} />}
+    <script is:inline>try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
+    {GA && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA}`}></script>}
+    {GA && <script is:inline define:vars={{ GA }}>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', GA);</script>}
+  </head>
+  <body>
+    <a class="skip visually-hidden" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="/" aria-label="Recomp home"><span class="br">&lt;</span>recomp<span class="br">/&gt;</span></a>
+        <nav aria-label="Main">
+          {nav.map((n) => <a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a>)}
+        </nav>
+        <div class="actions">
+          <a class="play" href="/play/" aria-current={path.startsWith('/play/') ? 'page' : undefined}>▶ Play</a>
+          <a class="find" href="/projects/" aria-label="All projects">All projects</a>
+          <button class="theme" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 1.5v11a5.5 5.5 0 0 1 0-11z"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main"><slot /></main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="cols">
+          <div class="about">
+            <p class="logo"><span class="br">&lt;</span>recomp<span class="br">/&gt;</span></p>
+            <p>A community tracker for decompilation, recompilation, clean-room and preservation projects. Every entry is labelled with how it was made and who made it. Not affiliated with any publisher or project. No ROMs, disc images or ripped assets are hosted or linked.</p>
+          </div>
+          <nav aria-label="Catalogue">
+            <p class="h">Catalogue</p>
+            <a href="/games/">Games</a><a href="/apps/">Apps</a><a href="/os/">OS &amp; system</a><a href="/tools/">RE tooling</a><a href="/preservation/">Preservation</a><a href="/platforms/">Platforms</a>
+          </nav>
+          <nav aria-label="Lists">
+            <p class="h">Lists</p>
+            <a href="/recompiled-games-list/">Recompiled games list</a><a href="/decompiled-games-list/">Decompiled games list</a><a href="/trending/">Trending</a><a href="/play/">Play in browser</a>
+          </nav>
+          <nav aria-label="Learn">
+            <p class="h">Learn</p>
+            <a href="/what-is-a-recomp/">What is a recomp?</a><a href="/history/">History</a><a href="/lineage/">Tool lineage</a><a href="/news/">News</a><a href="/about/">About &amp; labels</a>
+          </nav>
+          <nav aria-label="Network">
+            <p class="h">Network</p>
+            <a href="https://decompgames.com">decompgames</a><a href="https://skatemods.com">skatemods</a><a href="https://aigamemashups.com">aigamemashups</a><a href="https://github.com/andrewnakas/recomp-hub">Source &amp; corrections</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.querySelector('.theme')?.addEventListener('click', () => {
+        const root = document.documentElement;
+        const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+        root.dataset.theme = dark ? 'light' : 'dark';
+        try { localStorage.setItem('theme', root.dataset.theme); } catch {}
+      });
+      document.addEventListener('click', (e) => {
+        const a = (e.target as HTMLElement).closest<HTMLElement>('[data-track]');
+        const g = (window as any).gtag;
+        if (a && g) g('event', a.dataset.track, { item: a.dataset.item });
+      });
+    </script>
+  </body>
+</html>
+
+<style>
+  .site-header { background: var(--bg); border-bottom: 1px solid var(--ink); position: sticky; top: 0; z-index: 10; }
+  .bar { display: flex; align-items: center; gap: 0.5rem 1.75rem; min-height: 56px; flex-wrap: wrap; }
+  .logo { font: 700 1.35rem/1 var(--font-mono); letter-spacing: -0.03em; color: var(--ink); text-decoration: none; padding: 0.25rem 0; }
+  .logo .br { color: var(--accent); }
+  nav[aria-label='Main'] { display: flex; gap: 1.25rem; order: 3; width: 100%; overflow-x: auto; padding-bottom: 0.5rem; scrollbar-width: none; }
+  nav[aria-label='Main'] a { color: var(--ink-soft); text-decoration: none; font-weight: 500; font-size: 0.95rem; white-space: nowrap; padding: 0.15rem 0; border-bottom: 2px solid transparent; }
+  nav[aria-label='Main'] a:hover { color: var(--ink); }
+  nav[aria-label='Main'] a[aria-current='page'] { color: var(--ink); border-bottom-color: var(--accent); }
+  .actions { margin-left: auto; display: flex; align-items: center; gap: 1rem; font-size: 0.92rem; }
+  .actions a { color: var(--ink); text-decoration: none; font-weight: 500; }
+  .actions a:hover { color: var(--accent); }
+  .actions .play { background: var(--accent); color: var(--accent-ink); padding: 0.3rem 0.75rem; border-radius: var(--radius); font-weight: 700; }
+  .actions .play:hover { background: var(--ink); color: var(--bg); }
+  .find { font-family: var(--font-mono); font-size: 0.85rem; }
+  .theme { display: grid; place-items: center; width: 30px; height: 30px; border: 0; background: none; color: var(--ink-soft); cursor: pointer; padding: 0; }
+  @media (max-width: 1079px) { nav[aria-label='Main'] { mask-image: linear-gradient(to right, #000 85%, transparent); padding-right: 2rem; } }
+  @media (max-width: 520px) { .find { display: none; } .bar { column-gap: 0.75rem; } }
+  @media (min-width: 1080px) { nav[aria-label='Main'] { order: 0; width: auto; padding: 0; } }
+  .skip:focus { position: fixed; left: 1rem; top: 1rem; width: auto; height: auto; clip: auto; z-index: 99; background: var(--ink); color: var(--bg); padding: 0.5rem 1rem; }
+  .site-footer { border-top: 1px solid var(--ink); margin-top: 5rem; padding: 2rem 0 3rem; font-size: 0.9rem; }
+  .cols { display: grid; gap: 1.5rem 2rem; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  .about { grid-column: 1 / -1; max-width: 56ch; }
+  @media (min-width: 960px) { .cols { grid-template-columns: 2fr repeat(4, 1fr); } .about { grid-column: auto; } }
+  .about p { color: var(--ink-soft); margin: 0.5rem 0 0; }
+  .about .logo { font-size: 1.1rem; margin: 0; }
+  .cols nav { display: flex; flex-direction: column; gap: 0.3rem; }
+  .cols nav a { color: var(--ink-soft); text-decoration: none; }
+  .cols nav a:hover { color: var(--accent); }
+  .h { font: 500 0.75rem var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-faint); margin: 0 0 0.3rem; }
+</style>

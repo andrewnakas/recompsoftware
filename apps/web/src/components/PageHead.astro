@@ -1,0 +1,16 @@
+---
+interface Props { kicker?: string; title: string; lede?: string; crumbs?: { href: string; label: string }[] }
+const { kicker, title, lede, crumbs } = Astro.props;
+---
+<header class="ph wrap">
+  {crumbs && <p class="crumbs">{crumbs.map((c, i) => <>{i > 0 && ' / '}<a href={c.href}>{c.label}</a></>)}</p>}
+  {kicker && <p class="meta kicker">{kicker}</p>}
+  <h1>{title}</h1>
+  {lede && <p class="lede">{lede}</p>}
+  <slot />
+</header>
+<style>
+  .ph { padding-top: 2.5rem; padding-bottom: 1rem; }
+  .kicker { text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin: 0 0 0.6rem; }
+  .crumbs { margin: 0 0 1rem; }
+</style>

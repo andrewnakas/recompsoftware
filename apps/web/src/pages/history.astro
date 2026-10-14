@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import Timeline from '../components/Timeline.astro';
+import { history } from '../lib/data';
+const eras = history();
+const n = eras.reduce((a, e) => a + e.events.length, 0);
+---
+<Base title="History of decompilation, recompilation & preservation" description="From disassembly and source releases to matching decomps, static recompilers and the 2026 AI-recomp debate: a sourced timeline of the scene.">
+  <PageHead kicker="History" title="How we got here" lede={`${n} sourced milestones, from the first disassemblies to matching decomps, static recompilers and the arguments of today. Every event links to where it is documented.`} />
+  <section class="wrap"><Timeline groups={eras} /></section>
+</Base>

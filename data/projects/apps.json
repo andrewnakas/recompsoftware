@@ -1,0 +1,1752 @@
+[
+  {
+    "slug": "vectorcraft",
+    "name": "VectorCraft",
+    "category": "apps",
+    "subject": "Adobe Illustrator",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 1987,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships AGENTS.md and CLAUDE.md that run coding agents through an autonomous build protocol (https://github.com/storytold/vectorcraft/blob/main/AGENTS.md)",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/storytold/vectorcraft",
+    "website": "https://getartcraft.com/apps/vectorcraft",
+    "discord": "https://discord.gg/artcraft",
+    "subreddit": null,
+    "team": [
+      "storytold",
+      "ArtCraft"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.10.0",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "FreeBSD",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Vector illustration app aiming for Illustrator workflow parity, written from public documentation only in pure Rust; releases include native builds and a self-hostable WebAssembly build (no hosted copy found).",
+    "tags": [
+      "rust",
+      "wasm",
+      "craft-apps",
+      "vector",
+      "illustration"
+    ],
+    "sources": [
+      "https://github.com/storytold/vectorcraft",
+      "https://github.com/storytold/vectorcraft/releases/latest",
+      "https://github.com/storytold/vectorcraft/blob/main/AGENTS.md",
+      "https://getartcraft.com/apps/vectorcraft"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "photocraft",
+    "name": "PhotoCraft",
+    "category": "apps",
+    "subject": "Adobe Photoshop",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 1990,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships AGENTS.md and CLAUDE.md that run coding agents through an autonomous build protocol (https://github.com/storytold/photocraft/blob/main/AGENTS.md)",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/storytold/photocraft",
+    "website": "https://getartcraft.com/apps/photocraft",
+    "discord": "https://discord.gg/artcraft",
+    "subreddit": null,
+    "team": [
+      "storytold",
+      "ArtCraft"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.8.2",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "FreeBSD",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Layer-based image editor with masks, type and PSD support that follows the Photoshop workflow; the engine and UI also compile to WebAssembly.",
+    "tags": [
+      "rust",
+      "wasm",
+      "craft-apps",
+      "image-editor",
+      "psd",
+      "raster"
+    ],
+    "sources": [
+      "https://github.com/storytold/photocraft",
+      "https://github.com/storytold/photocraft/releases/latest",
+      "https://github.com/storytold/photocraft/blob/main/AGENTS.md",
+      "https://getartcraft.com/apps/photocraft"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "filmcraft",
+    "name": "FilmCraft",
+    "category": "apps",
+    "subject": "Adobe Premiere Pro",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 1991,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships AGENTS.md and CLAUDE.md that run coding agents through an autonomous build protocol (https://github.com/storytold/filmcraft/blob/main/AGENTS.md)",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/storytold/filmcraft",
+    "website": "https://getartcraft.com/apps/filmcraft",
+    "discord": "https://discord.gg/artcraft",
+    "subreddit": null,
+    "team": [
+      "storytold",
+      "ArtCraft"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.7.2",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "FreeBSD",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Nonlinear video editor with colour and sound tools modelled on the Premiere Pro workflow; each release also ships a browser build as a zip.",
+    "tags": [
+      "rust",
+      "wasm",
+      "craft-apps",
+      "video",
+      "nle"
+    ],
+    "sources": [
+      "https://github.com/storytold/filmcraft",
+      "https://github.com/storytold/filmcraft/releases/latest",
+      "https://github.com/storytold/filmcraft/blob/main/AGENTS.md",
+      "https://getartcraft.com/apps/filmcraft"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "pdfcraft",
+    "name": "PdfCraft",
+    "category": "apps",
+    "subject": "Adobe Acrobat",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 1993,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships AGENTS.md and CLAUDE.md that run coding agents through an autonomous build protocol (https://github.com/storytold/pdfcraft/blob/main/AGENTS.md)",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/storytold/pdfcraft",
+    "website": "https://getartcraft.com/apps/pdfcraft",
+    "discord": "https://discord.gg/artcraft",
+    "subreddit": null,
+    "team": [
+      "storytold",
+      "ArtCraft"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.7.1",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "FreeBSD",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "PDF reader and editor targeting Acrobat Pro's offline feature set; the project calls itself alpha.",
+    "tags": [
+      "rust",
+      "wasm",
+      "craft-apps",
+      "pdf",
+      "documents"
+    ],
+    "sources": [
+      "https://github.com/storytold/pdfcraft",
+      "https://github.com/storytold/pdfcraft/releases/latest",
+      "https://github.com/storytold/pdfcraft/blob/main/AGENTS.md",
+      "https://getartcraft.com/apps/pdfcraft"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "wordcraft",
+    "name": "WordCraft",
+    "category": "apps",
+    "subject": "Microsoft Word",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 1983,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships AGENTS.md and CLAUDE.md that run coding agents through an autonomous build protocol (https://github.com/storytold/wordcraft/blob/main/AGENTS.md)",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/storytold/wordcraft",
+    "website": "https://getartcraft.com/apps/wordcraft",
+    "discord": "https://discord.gg/artcraft",
+    "subreddit": null,
+    "team": [
+      "storytold",
+      "ArtCraft"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.6.1",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "FreeBSD",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Word processor with a ribbon-and-styles workflow modelled on Microsoft Word, built from scratch in Rust.",
+    "tags": [
+      "rust",
+      "wasm",
+      "craft-apps",
+      "office",
+      "word-processor"
+    ],
+    "sources": [
+      "https://github.com/storytold/wordcraft",
+      "https://github.com/storytold/wordcraft/releases/latest",
+      "https://github.com/storytold/wordcraft/blob/main/AGENTS.md",
+      "https://getartcraft.com/apps/wordcraft"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "deckcraft",
+    "name": "DeckCraft",
+    "category": "apps",
+    "subject": "Microsoft PowerPoint",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 1987,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships AGENTS.md and CLAUDE.md that run coding agents through an autonomous build protocol (https://github.com/storytold/deckcraft/blob/main/AGENTS.md)",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/storytold/deckcraft",
+    "website": "https://getartcraft.com/apps/deckcraft",
+    "discord": "https://discord.gg/artcraft",
+    "subreddit": null,
+    "team": [
+      "storytold",
+      "ArtCraft"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.6.1",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "FreeBSD",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Presentation and slide-show editor that follows the PowerPoint workflow, written in Rust.",
+    "tags": [
+      "rust",
+      "wasm",
+      "craft-apps",
+      "office",
+      "presentations"
+    ],
+    "sources": [
+      "https://github.com/storytold/deckcraft",
+      "https://github.com/storytold/deckcraft/releases/latest",
+      "https://github.com/storytold/deckcraft/blob/main/AGENTS.md",
+      "https://getartcraft.com/apps/deckcraft"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "gridcraft",
+    "name": "GridCraft",
+    "category": "apps",
+    "subject": "Microsoft Excel",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 1985,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships AGENTS.md and CLAUDE.md that run coding agents through an autonomous build protocol (https://github.com/storytold/gridcraft/blob/main/AGENTS.md)",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/storytold/gridcraft",
+    "website": "https://getartcraft.com/apps/gridcraft",
+    "discord": "https://discord.gg/artcraft",
+    "subreddit": null,
+    "team": [
+      "storytold",
+      "ArtCraft"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.6.1",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "FreeBSD",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Spreadsheet application that follows the Excel workflow, written in Rust for desktop and browser.",
+    "tags": [
+      "rust",
+      "wasm",
+      "craft-apps",
+      "office",
+      "spreadsheet"
+    ],
+    "sources": [
+      "https://github.com/storytold/gridcraft",
+      "https://github.com/storytold/gridcraft/releases/latest",
+      "https://github.com/storytold/gridcraft/blob/main/AGENTS.md",
+      "https://getartcraft.com/apps/gridcraft"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "cadcraft",
+    "name": "CADCraft",
+    "category": "apps",
+    "subject": "Autodesk AutoCAD",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 1982,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships AGENTS.md and CLAUDE.md that run coding agents through an autonomous build protocol (https://github.com/storytold/cadcraft/blob/main/AGENTS.md)",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/storytold/cadcraft",
+    "website": "https://getartcraft.com/apps/cadcraft",
+    "discord": "https://discord.gg/artcraft",
+    "subreddit": null,
+    "team": [
+      "storytold",
+      "ArtCraft"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.6.2",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "FreeBSD",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "2D drafting and CAD tool with an AutoCAD-style command line, object snaps and layers, written in Rust.",
+    "tags": [
+      "rust",
+      "wasm",
+      "craft-apps",
+      "cad",
+      "drafting"
+    ],
+    "sources": [
+      "https://github.com/storytold/cadcraft",
+      "https://github.com/storytold/cadcraft/releases/latest",
+      "https://github.com/storytold/cadcraft/blob/main/AGENTS.md",
+      "https://getartcraft.com/apps/cadcraft"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "soundcraft",
+    "name": "SoundCraft",
+    "category": "apps",
+    "subject": "Avid Pro Tools",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 1991,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships AGENTS.md and CLAUDE.md that run coding agents through an autonomous build protocol (https://github.com/storytold/soundcraft/blob/main/AGENTS.md)",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/storytold/soundcraft",
+    "website": "https://getartcraft.com/apps/soundcraft",
+    "discord": "https://discord.gg/artcraft",
+    "subreddit": null,
+    "team": [
+      "storytold",
+      "ArtCraft"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.6.1",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "FreeBSD",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Audio recording, editing and mixing workstation modelled on Pro Tools' edit and mix windows, in Rust.",
+    "tags": [
+      "rust",
+      "wasm",
+      "craft-apps",
+      "audio",
+      "daw"
+    ],
+    "sources": [
+      "https://github.com/storytold/soundcraft",
+      "https://github.com/storytold/soundcraft/releases/latest",
+      "https://github.com/storytold/soundcraft/blob/main/AGENTS.md",
+      "https://getartcraft.com/apps/soundcraft"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "figcraft",
+    "name": "FigCraft",
+    "category": "apps",
+    "subject": "Figma",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 2016,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships AGENTS.md and CLAUDE.md that run coding agents through an autonomous build protocol (https://github.com/storytold/figcraft/blob/main/AGENTS.md)",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/storytold/figcraft",
+    "website": "https://getartcraft.com/apps/figcraft",
+    "discord": "https://discord.gg/artcraft",
+    "subreddit": null,
+    "team": [
+      "storytold",
+      "ArtCraft"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.5.1",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "FreeBSD",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Interface design and prototyping tool following Figma's workflow, with interactions, variables and flows, in Rust.",
+    "tags": [
+      "rust",
+      "wasm",
+      "craft-apps",
+      "ui-design",
+      "prototyping"
+    ],
+    "sources": [
+      "https://github.com/storytold/figcraft",
+      "https://github.com/storytold/figcraft/releases/latest",
+      "https://github.com/storytold/figcraft/blob/main/AGENTS.md",
+      "https://getartcraft.com/apps/figcraft"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "designcraft",
+    "name": "DesignCraft",
+    "category": "apps",
+    "subject": "Adobe InDesign",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 1999,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships AGENTS.md and CLAUDE.md that run coding agents through an autonomous build protocol (https://github.com/storytold/designcraft/blob/main/AGENTS.md)",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/storytold/designcraft",
+    "website": "https://getartcraft.com/apps/designcraft",
+    "discord": "https://discord.gg/artcraft",
+    "subreddit": null,
+    "team": [
+      "storytold",
+      "ArtCraft"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.7.1",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "FreeBSD",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Page layout and publishing editor that follows the InDesign workflow, written in Rust.",
+    "tags": [
+      "rust",
+      "wasm",
+      "craft-apps",
+      "desktop-publishing",
+      "layout"
+    ],
+    "sources": [
+      "https://github.com/storytold/designcraft",
+      "https://github.com/storytold/designcraft/releases/latest",
+      "https://github.com/storytold/designcraft/blob/main/AGENTS.md",
+      "https://getartcraft.com/apps/designcraft"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "effectcraft",
+    "name": "EffectCraft",
+    "category": "apps",
+    "subject": "Adobe After Effects",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 1993,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships AGENTS.md and CLAUDE.md that run coding agents through an autonomous build protocol (https://github.com/storytold/effectcraft/blob/main/AGENTS.md)",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/storytold/effectcraft",
+    "website": "https://getartcraft.com/apps/effectcraft",
+    "discord": "https://discord.gg/artcraft",
+    "subreddit": null,
+    "team": [
+      "storytold",
+      "ArtCraft"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.9.2",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "FreeBSD",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Motion graphics and compositing tool that follows the After Effects workflow, written in Rust.",
+    "tags": [
+      "rust",
+      "wasm",
+      "craft-apps",
+      "motion-graphics",
+      "compositing"
+    ],
+    "sources": [
+      "https://github.com/storytold/effectcraft",
+      "https://github.com/storytold/effectcraft/releases/latest",
+      "https://github.com/storytold/effectcraft/blob/main/AGENTS.md",
+      "https://getartcraft.com/apps/effectcraft"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "lightcraft",
+    "name": "LightCraft",
+    "category": "apps",
+    "subject": "Adobe Lightroom",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 2007,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships AGENTS.md and CLAUDE.md that run coding agents through an autonomous build protocol (https://github.com/storytold/lightcraft/blob/main/AGENTS.md)",
+    "licence": "MIT OR Apache-2.0",
+    "repo": "https://github.com/storytold/lightcraft",
+    "website": "https://getartcraft.com/apps/lightcraft",
+    "discord": "https://discord.gg/artcraft",
+    "subreddit": null,
+    "team": [
+      "storytold",
+      "ArtCraft"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.7.1",
+      "date": "2026-10-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "FreeBSD",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Photo library and non-destructive raw development tool that follows the Lightroom workflow, written in Rust.",
+    "tags": [
+      "rust",
+      "wasm",
+      "craft-apps",
+      "photo",
+      "raw"
+    ],
+    "sources": [
+      "https://github.com/storytold/lightcraft",
+      "https://github.com/storytold/lightcraft/releases/latest",
+      "https://github.com/storytold/lightcraft/blob/main/AGENTS.md",
+      "https://getartcraft.com/apps/lightcraft"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "projectorrays",
+    "name": "ProjectorRays",
+    "category": "apps",
+    "subject": "Macromedia/Adobe Director (Shockwave)",
+    "originalPlatform": "Windows/Mac OS",
+    "originalYear": 1988,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Volunteer project started 2017 (GitHub history)",
+    "licence": "MPL-2.0",
+    "repo": "https://github.com/ProjectorRays/ProjectorRays",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ProjectorRays"
+    ],
+    "started": "2017",
+    "firstRelease": "2023-03",
+    "latestRelease": {
+      "version": "v0.2.0",
+      "date": "2023-10-30"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompiler that turns protected Director movies and Shockwave files back into editable movies with readable Lingo source.",
+    "tags": [
+      "director",
+      "shockwave",
+      "lingo",
+      "decompiler"
+    ],
+    "sources": [
+      "https://github.com/ProjectorRays/ProjectorRays"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "dirplayer-rs",
+    "name": "DirPlayer",
+    "category": "apps",
+    "subject": "Adobe Shockwave Player",
+    "originalPlatform": "Web",
+    "originalYear": 1995,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/igorlira/dirplayer-rs",
+    "website": "http://dirplayer-rs.s3-website-us-west-2.amazonaws.com/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "igorlira"
+    ],
+    "started": "2024-04",
+    "firstRelease": "2024-07",
+    "latestRelease": {
+      "version": "v0.8.1",
+      "date": "2026-08-18"
+    },
+    "targets": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": {
+      "tier": "software",
+      "url": "http://dirplayer-rs.s3-website-us-west-2.amazonaws.com/",
+      "launch": "tab",
+      "note": "GPL-3.0; the project's own hosted demo"
+    },
+    "summary": "Shockwave Player emulator in Rust and WebAssembly, with a browser extension and polyfill that bring Director web games back to modern browsers, plus a Lingo debugging app.",
+    "tags": [
+      "shockwave",
+      "director",
+      "wasm",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/igorlira/dirplayer-rs",
+      "http://dirplayer-rs.s3-website-us-west-2.amazonaws.com/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "schism-tracker",
+    "name": "Schism Tracker",
+    "category": "apps",
+    "subject": "Impulse Tracker",
+    "originalPlatform": "MS-DOS",
+    "originalYear": 1995,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Community project since 2003",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/schismtracker/schismtracker",
+    "website": "https://schismtracker.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "schismtracker"
+    ],
+    "started": "2003",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "20260524",
+      "date": "2026-05-24"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Re-creation of the Impulse Tracker music editor's interface and playback for modern systems.",
+    "tags": [
+      "tracker",
+      "music",
+      "impulse-tracker"
+    ],
+    "sources": [
+      "https://github.com/schismtracker/schismtracker",
+      "https://schismtracker.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "milkytracker",
+    "name": "MilkyTracker",
+    "category": "apps",
+    "subject": "Fasttracker II",
+    "originalPlatform": "MS-DOS",
+    "originalYear": 1994,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Long-running volunteer project",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/milkytracker/MilkyTracker",
+    "website": "https://milkytracker.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "milkytracker"
+    ],
+    "started": "2005",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.05.01",
+      "date": "2024-11-28"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Cross-platform music tracker that reproduces the look and module compatibility of Fasttracker II.",
+    "tags": [
+      "tracker",
+      "music",
+      "xm"
+    ],
+    "sources": [
+      "https://github.com/milkytracker/MilkyTracker",
+      "https://milkytracker.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "ft2-clone",
+    "name": "Fasttracker 2 clone",
+    "category": "apps",
+    "subject": "Fasttracker II",
+    "originalPlatform": "MS-DOS",
+    "originalYear": 1994,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Written by 8bitbubsy",
+    "licence": "BSD-3-Clause",
+    "repo": "https://github.com/8bitbubsy/ft2-clone",
+    "website": "https://16-bits.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "8bitbubsy"
+    ],
+    "started": "2016",
+    "firstRelease": "2019-12",
+    "latestRelease": {
+      "version": "v2.25",
+      "date": "2026-10-02"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Highly accurate C re-creation of Fasttracker II's editor, replayer and quirks.",
+    "tags": [
+      "tracker",
+      "music",
+      "xm"
+    ],
+    "sources": [
+      "https://github.com/8bitbubsy/ft2-clone",
+      "https://16-bits.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "pt2-clone",
+    "name": "ProTracker 2 clone",
+    "category": "apps",
+    "subject": "ProTracker 2",
+    "originalPlatform": "Amiga",
+    "originalYear": 1991,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Written by 8bitbubsy",
+    "licence": "BSD-3-Clause",
+    "repo": "https://github.com/8bitbubsy/pt2-clone",
+    "website": "https://16-bits.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "8bitbubsy"
+    ],
+    "started": "2019",
+    "firstRelease": "2019-12",
+    "latestRelease": {
+      "version": "v1.92",
+      "date": "2026-07-24"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Re-creation of the Amiga ProTracker 2 module editor, including emulation of the Amiga's audio output.",
+    "tags": [
+      "tracker",
+      "music",
+      "amiga"
+    ],
+    "sources": [
+      "https://github.com/8bitbubsy/pt2-clone",
+      "https://16-bits.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "webamp",
+    "name": "Webamp",
+    "category": "apps",
+    "subject": "Winamp 2",
+    "originalPlatform": "Windows",
+    "originalYear": 1998,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Started by Jordan Eldredge (captbaritone) in 2014",
+    "licence": "MIT",
+    "repo": "https://github.com/captbaritone/webamp",
+    "website": "https://webamp.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "captbaritone"
+    ],
+    "started": "2014",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": {
+      "tier": "software",
+      "url": "https://webamp.org",
+      "launch": "tab",
+      "note": "MIT; links to the project's own hosted site"
+    },
+    "summary": "Winamp 2 rebuilt in JavaScript for the browser, with classic skin support, playlist and equaliser; embeddable as an npm package.",
+    "tags": [
+      "winamp",
+      "music-player",
+      "skins",
+      "web"
+    ],
+    "sources": [
+      "https://github.com/captbaritone/webamp",
+      "https://webamp.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "jspaint",
+    "name": "JS Paint",
+    "category": "apps",
+    "subject": "Microsoft Paint",
+    "originalPlatform": "Windows",
+    "originalYear": 1985,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Created by Isaiah Odhner (1j01) in 2014",
+    "licence": "MIT",
+    "repo": "https://github.com/1j01/jspaint",
+    "website": "https://jspaint.app",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "1j01"
+    ],
+    "started": "2014",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.1.0",
+      "date": "2026-04-10"
+    },
+    "targets": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": {
+      "tier": "software",
+      "url": "https://jspaint.app",
+      "launch": "tab",
+      "note": "MIT"
+    },
+    "summary": "Web remake of classic MS Paint that copies its tools and look, adding extras such as unlimited undo and multi-user editing.",
+    "tags": [
+      "paint",
+      "ms-paint",
+      "web"
+    ],
+    "sources": [
+      "https://github.com/1j01/jspaint",
+      "https://jspaint.app"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "123elf",
+    "name": "Lotus 1-2-3 for Linux (123elf)",
+    "category": "apps",
+    "subject": "Lotus 1-2-3 Release 3 for UNIX",
+    "originalPlatform": "UNIX",
+    "originalYear": 1989,
+    "method": "lift",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "By Tavis Ormandy, 2022",
+    "licence": "none",
+    "repo": "https://github.com/taviso/123elf",
+    "website": "https://lock.cmpxchg8b.com/linux123.html",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "taviso"
+    ],
+    "started": "2022-05",
+    "firstRelease": "2022-06",
+    "latestRelease": {
+      "version": "v1.0.0rc4",
+      "date": "2023-03-28"
+    },
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Converts the System V COFF objects of Lotus 1-2-3 for UNIX into ELF and links them against compatibility shims so the spreadsheet runs natively on Linux.",
+    "tags": [
+      "lotus",
+      "spreadsheet",
+      "binary-port",
+      "coff"
+    ],
+    "sources": [
+      "https://github.com/taviso/123elf",
+      "https://lock.cmpxchg8b.com/linux123.html"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "wpunix",
+    "name": "WordPerfect for UNIX (wpunix)",
+    "category": "apps",
+    "subject": "WordPerfect 8 for UNIX",
+    "originalPlatform": "UNIX",
+    "originalYear": 1999,
+    "method": "lift",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "By Tavis Ormandy, 2022",
+    "licence": "none",
+    "repo": "https://github.com/taviso/wpunix",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "taviso"
+    ],
+    "started": "2022-07",
+    "firstRelease": "2022-08",
+    "latestRelease": {
+      "version": "v0.13",
+      "date": "2023-01-08"
+    },
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Build scripts and binary patches that make the terminal version of WordPerfect for UNIX run on modern Linux.",
+    "tags": [
+      "wordperfect",
+      "word-processor",
+      "binary-patch"
+    ],
+    "sources": [
+      "https://github.com/taviso/wpunix"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "vipercard",
+    "name": "ViperCard",
+    "category": "apps",
+    "subject": "Apple HyperCard",
+    "originalPlatform": "Macintosh",
+    "originalYear": 1987,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "By Ben Fisher, started 2017",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/moltenform/vipercard",
+    "website": "https://www.vipercard.net",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "moltenform"
+    ],
+    "started": "2017",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": {
+      "tier": "software",
+      "url": "https://www.vipercard.net",
+      "launch": "tab",
+      "note": "GPL-3.0; the project's own hosted site"
+    },
+    "summary": "Browser rewrite of HyperCard with stacks, cards and a HyperTalk-style scripting language.",
+    "tags": [
+      "hypercard",
+      "hypertalk",
+      "web"
+    ],
+    "sources": [
+      "https://github.com/moltenform/vipercard",
+      "https://www.vipercard.net"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "apache-poi",
+    "name": "Apache POI",
+    "category": "apps",
+    "subject": "Microsoft Office file formats",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Apache Software Foundation project since 2001",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/apache/poi",
+    "website": "https://poi.apache.org/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Apache Software Foundation"
+    ],
+    "started": "2001",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Java"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Java library that reads and writes Word, Excel, PowerPoint, Visio and Outlook files, including the legacy binary formats it originally reverse engineered.",
+    "tags": [
+      "office-formats",
+      "xls",
+      "doc",
+      "java"
+    ],
+    "sources": [
+      "https://github.com/apache/poi",
+      "https://poi.apache.org/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "libredwg",
+    "name": "LibreDWG",
+    "category": "apps",
+    "subject": "AutoCAD DWG format",
+    "originalPlatform": "Windows",
+    "originalYear": 1982,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "GNU project",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/LibreDWG/libredwg",
+    "website": "https://savannah.gnu.org/projects/libredwg/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "GNU"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "0.14",
+      "date": "2026-06-27"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "GNU library and command-line tools to read and write AutoCAD DWG drawings, built from format documentation and reverse engineering.",
+    "tags": [
+      "cad",
+      "dwg",
+      "file-format"
+    ],
+    "sources": [
+      "https://github.com/LibreDWG/libredwg",
+      "https://savannah.gnu.org/projects/libredwg/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "butterchurn",
+    "name": "Butterchurn",
+    "category": "apps",
+    "subject": "MilkDrop (Winamp visualiser)",
+    "originalPlatform": "Windows",
+    "originalYear": 2001,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "By Jordan Berg, 2018",
+    "licence": "MIT",
+    "repo": "https://github.com/jberg/butterchurn",
+    "website": "https://butterchurnviz.com/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jberg"
+    ],
+    "started": "2018",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": {
+      "tier": "software",
+      "url": "https://butterchurnviz.com/",
+      "launch": "tab",
+      "note": "MIT; the project's own hosted site"
+    },
+    "summary": "WebGL implementation of the MilkDrop music visualiser that runs existing presets in the browser.",
+    "tags": [
+      "milkdrop",
+      "visualizer",
+      "webgl"
+    ],
+    "sources": [
+      "https://github.com/jberg/butterchurn",
+      "https://butterchurnviz.com/"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "projectm",
+    "name": "projectM",
+    "category": "apps",
+    "subject": "MilkDrop (Winamp visualiser)",
+    "originalPlatform": "Windows",
+    "originalYear": 2001,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Community project since 2003",
+    "licence": "LGPL-2.1",
+    "repo": "https://github.com/projectM-visualizer/projectm",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "projectM-visualizer"
+    ],
+    "started": "2003",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v4.1.8",
+      "date": "2026-10-06"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Cross-platform library that reimplements MilkDrop so its presets can drive visualisations in many media players.",
+    "tags": [
+      "milkdrop",
+      "visualizer",
+      "opengl"
+    ],
+    "sources": [
+      "https://github.com/projectM-visualizer/projectm"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "nuked-sc55",
+    "name": "Nuked-SC55",
+    "category": "apps",
+    "subject": "Roland SC-55 Sound Canvas",
+    "originalPlatform": "Hardware",
+    "originalYear": 1991,
+    "method": "emulation-hosted",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "By nukeykt",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/nukeykt/Nuked-SC55",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "nukeykt"
+    ],
+    "started": "2024-02",
+    "firstRelease": "2024-04",
+    "latestRelease": {
+      "version": "final",
+      "date": "2026-09-12"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Low-level emulator of the Roland SC-55 MIDI module that runs the unit's own firmware to reproduce its sound exactly; the repo is now archived.",
+    "tags": [
+      "midi",
+      "synth",
+      "roland",
+      "firmware"
+    ],
+    "sources": [
+      "https://github.com/nukeykt/Nuked-SC55"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "munt",
+    "name": "Munt (mt32emu)",
+    "category": "apps",
+    "subject": "Roland MT-32 / CM-32L",
+    "originalPlatform": "Hardware",
+    "originalYear": 1987,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Long-running volunteer project",
+    "licence": "LGPL-2.1-or-later",
+    "repo": "https://github.com/munt/munt",
+    "website": "http://munt.sourceforge.net/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "munt"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Software synthesiser library and drivers that emulate the Roland MT-32 family, used by DOSBox and ScummVM for period-correct game music.",
+    "tags": [
+      "midi",
+      "synth",
+      "roland",
+      "mt-32"
+    ],
+    "sources": [
+      "https://github.com/munt/munt",
+      "https://github.com/munt/munt/tree/master/mt32emu"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "dexed",
+    "name": "Dexed",
+    "category": "apps",
+    "subject": "Yamaha DX7",
+    "originalPlatform": "Hardware",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "By Pascal Gauthier (asb2m10)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/asb2m10/dexed",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "asb2m10"
+    ],
+    "started": "2013",
+    "firstRelease": "2016-01",
+    "latestRelease": {
+      "version": "v1.0.1",
+      "date": "2025-11-29"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "FM synthesiser plugin that models the DX7's sound engine and loads its original sysex patch banks.",
+    "tags": [
+      "synth",
+      "fm",
+      "yamaha",
+      "plugin"
+    ],
+    "sources": [
+      "https://github.com/asb2m10/dexed"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "mathics",
+    "name": "Mathics",
+    "category": "apps",
+    "subject": "Wolfram Mathematica (Wolfram Language)",
+    "originalPlatform": "Multi",
+    "originalYear": 1988,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Volunteer project predating AI coding tools",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Mathics3/mathics-core",
+    "website": "https://mathics.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Mathics3"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "10.0.1",
+      "date": "2026-05-07"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Free interpreter for the Wolfram Language written in Python on top of SymPy and mpmath.",
+    "tags": [
+      "math",
+      "cas",
+      "wolfram-language"
+    ],
+    "sources": [
+      "https://github.com/Mathics3/mathics-core",
+      "https://mathics.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "gnu-octave",
+    "name": "GNU Octave",
+    "category": "apps",
+    "subject": "MATLAB language",
+    "originalPlatform": "Multi",
+    "originalYear": 1984,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "GNU project since 1988",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/gnu-octave/octave",
+    "website": "https://octave.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "GNU"
+    ],
+    "started": "1988",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "release-11-3-0",
+      "date": "2026-07-10"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "High-level numerical computing language and environment that runs most MATLAB scripts unchanged.",
+    "tags": [
+      "math",
+      "matlab",
+      "numerics"
+    ],
+    "sources": [
+      "https://github.com/gnu-octave/octave",
+      "https://octave.org"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "qb64-pe",
+    "name": "QB64 Phoenix Edition",
+    "category": "apps",
+    "subject": "Microsoft QuickBASIC / QBasic",
+    "originalPlatform": "MS-DOS",
+    "originalYear": 1985,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Community fork of QB64 (2022)",
+    "licence": "unknown",
+    "repo": "https://github.com/QB64-Phoenix-Edition/QB64pe",
+    "website": "https://www.qb64phoenix.com",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "QB64-Phoenix-Edition"
+    ],
+    "started": "2022",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v4.7.0-GLFW",
+      "date": "2026-09-26"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Compiler and IDE that keeps QuickBASIC/QBasic source compatibility while producing native 64-bit programs.",
+    "tags": [
+      "basic",
+      "compiler",
+      "ide"
+    ],
+    "sources": [
+      "https://github.com/QB64-Phoenix-Edition/QB64pe",
+      "https://www.qb64phoenix.com"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "opengmk",
+    "name": "OpenGMK",
+    "category": "apps",
+    "subject": "GameMaker 8 (Classic) runner",
+    "originalPlatform": "Windows",
+    "originalYear": 2007,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Started 2019",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/OpenGMK/OpenGMK",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "OpenGMK"
+    ],
+    "started": "2019",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Rust rewrite of the GameMaker Classic runner that plays existing GameMaker 8 executables, with a decompiler and a TAS framework.",
+    "tags": [
+      "gamemaker",
+      "runtime",
+      "rust",
+      "tas"
+    ],
+    "sources": [
+      "https://github.com/OpenGMK/OpenGMK"
+    ],
+    "checked": "2026-10-13"
+  },
+  {
+    "slug": "easyrpg-player",
+    "name": "EasyRPG Player",
+    "category": "apps",
+    "subject": "RPG Maker 2000/2003 runtime",
+    "originalPlatform": "Windows",
+    "originalYear": 2000,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Community project since 2007",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/EasyRPG/Player",
+    "website": "https://easyrpg.org/player/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "EasyRPG"
+    ],
+    "started": "2007",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "0.8.1.1",
+      "date": "2025-06-02"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Free interpreter that runs RPG Maker 2000/2003 games on many platforms without the original runtime.",
+    "tags": [
+      "rpg-maker",
+      "interpreter",
+      "engine"
+    ],
+    "sources": [
+      "https://github.com/EasyRPG/Player",
+      "https://easyrpg.org/player/"
+    ],
+    "checked": "2026-10-13"
+  }
+]

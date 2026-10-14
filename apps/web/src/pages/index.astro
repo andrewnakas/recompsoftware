@@ -1,0 +1,86 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { projects, CATEGORIES, heat, statsFor, statsDate, news, history, formatDate, TIER_LABEL } from '../lib/data';
+
+const all = projects();
+const hot = [...all].filter((p) => heat(p) > 0).sort((a, b) => heat(b) - heat(a)).slice(0, 6);
+const releaseOf = (p: (typeof all)[number]) => statsFor(p)?.release ?? p.latestRelease;
+const releases = all.filter((p) => releaseOf(p)?.date).sort((a, b) => releaseOf(b)!.date.localeCompare(releaseOf(a)!.date)).slice(0, 8);
+const playable = all.filter((p) => p.playable).slice(0, 6);
+const latestNews = news().slice(0, 5);
+const milestones = history().flatMap((e) => e.events).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 5);
+const count = (c: string) => all.filter((p) => p.category === c).length;
+const playCount = all.filter((p) => p.playable).length;
+---
+<Base title="Recomp">
+  <section class="hero wrap">
+    <p class="meta kicker">Decomp · Recomp · Clean-room · Preservation</p>
+    <h1>Every game and program being rebuilt from its binary, tracked live.</h1>
+    <p class="lede">Recomp follows {all.length} decompilation, static recompilation, clean-room and preservation projects: what's hot on GitHub this week, what just shipped, how each was made, and {playCount} you can run in your browser right now.</p>
+    <div class="btns">
+      <a class="btn primary" href="/trending/">What's trending</a>
+      <a class="btn" href="/play/">Play in browser</a>
+      <a class="btn" href="/what-is-a-recomp/">What is a recomp?</a>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="sections">
+      {CATEGORIES.map((c) => (
+        <a class="sec" href={`/${c.id}/`}><span class="n">{count(c.id)}</span><span class="l">{c.label}</span><span class="b">{c.blurb}</span></a>
+      ))}
+    </div>
+  </section>
+
+  {hot.length > 0 && (
+    <section class="section wrap">
+      <div class="rule-head"><h2>Hot this week</h2><a href="/trending/">Full board →</a></div>
+      <div class="grid">{hot.map((p) => <ProjectCard p={p} />)}</div>
+      <p class="meta">Ranked by star growth, commits and recent releases. GitHub data as of {statsDate()}.</p>
+    </section>
+  )}
+
+  <section class="section wrap two">
+    <div>
+      <div class="rule-head"><h2>New releases</h2></div>
+      <ol class="rel">
+        {releases.map((p) => <li><a href={`/p/${p.slug}/`}>{p.name}</a> <span class="meta">{releaseOf(p)!.version} · {formatDate(releaseOf(p)!.date.slice(0, 10))}</span></li>)}
+      </ol>
+    </div>
+    <div>
+      <div class="rule-head"><h2>{latestNews.length ? 'News' : 'Milestones'}</h2><a href={latestNews.length ? '/news/' : '/history/'}>More →</a></div>
+      <ol class="rel">
+        {(latestNews.length ? latestNews : milestones).map((n) => <li><a href={n.source} rel="noopener">{n.title}</a> <span class="meta">{formatDate(n.date)}</span></li>)}
+      </ol>
+    </div>
+  </section>
+
+  {playable.length > 0 && (
+    <section class="section wrap">
+      <div class="rule-head"><h2>Play in your browser</h2><a href="/play/">All {playCount} →</a></div>
+      <div class="grid">{playable.map((p) => <ProjectCard p={p} note={`${TIER_LABEL[p.playable!.tier]}. ${p.summary}`} />)}</div>
+    </section>
+  )}
+
+  <section class="section wrap">
+    <div class="callout">
+      <p><strong>Labelled honestly.</strong> Every entry says how it was made: human-led, AI-assisted or AI-generated, as stated by the project, plus its licence and whether you need your own copy of the original. <a href="/about/#labels">How the labels work</a>.</p>
+    </div>
+  </section>
+</Base>
+<style>
+  .hero { padding-top: 3.5rem; padding-bottom: 1rem; }
+  .hero h1 { max-width: 20ch; }
+  .kicker { text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); }
+  .sections { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); border-top: 1px solid var(--ink); }
+  .sec { display: grid; gap: 0.2rem; padding: 1rem 1rem 1.2rem 0; color: inherit; text-decoration: none; border-bottom: 1px solid var(--line); }
+  .sec:hover .l { color: var(--accent); }
+  .n { font: 700 2.2rem/1 var(--font-display); }
+  .l { font-weight: 600; }
+  .b { font-size: 0.85rem; color: var(--ink-faint); }
+  .two { display: grid; gap: 0 3rem; }
+  @media (min-width: 900px) { .two { grid-template-columns: 1fr 1fr; } }
+  .rel { list-style: none; padding: 0; margin: 0; }
+  .rel li { padding: 0.45rem 0; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+</style>

@@ -1,0 +1,535 @@
+[
+  {
+    "id": "roots",
+    "label": "Roots: disassemblers, source drops and the law (1990-1999)",
+    "blurb": "Commercial disassemblers appear, courts and lawmakers carve out room for reverse engineering, and id Software starts the habit of opening old engines.",
+    "events": [
+      {
+        "date": "1991-05-21",
+        "title": "IDA, the Interactive Disassembler, is released",
+        "body": "Ilfak Guilfanov's interactive disassembler ships after a year of work. It becomes the standard commercial tool for reading machine code for the next three decades.",
+        "who": "Ilfak Guilfanov",
+        "source": "https://en.wikipedia.org/wiki/Interactive_Disassembler",
+        "projects": [
+          "ida"
+        ]
+      },
+      {
+        "date": "1991",
+        "title": "EU Software Directive allows decompilation for interoperability",
+        "body": "The European Union's 1991 software directive explicitly permits decompiling a program when it is needed to make independent software work with it, giving European reverse engineers a statutory footing.",
+        "who": "European Union",
+        "source": "https://en.wikipedia.org/wiki/Decompiler",
+        "projects": []
+      },
+      {
+        "date": "1992-10-20",
+        "title": "Sega v. Accolade: disassembly can be fair use",
+        "body": "The US Ninth Circuit rules that disassembling a program to understand its functional interfaces can be fair use when there is no other way to get at those ideas. The decision underpins much later US reverse engineering.",
+        "who": "US Court of Appeals, Ninth Circuit",
+        "source": "https://en.wikipedia.org/wiki/Sega_v._Accolade",
+        "projects": []
+      },
+      {
+        "date": "1993",
+        "title": "The Wine project starts",
+        "body": "Bob Amstadt and Eric Youngdale begin Wine, a clean reimplementation of the Windows API so Windows programs can run on Unix-like systems.",
+        "who": "Bob Amstadt, Eric Youngdale",
+        "source": "https://en.wikipedia.org/wiki/Wine_(software)",
+        "projects": [
+          "wine"
+        ]
+      },
+      {
+        "date": "1994",
+        "title": "Cristina Cifuentes' thesis on reverse compilation",
+        "body": "Cifuentes' PhD thesis \"Reverse Compilation Techniques\" lays out the structure of a general-purpose decompiler, an academic reference point for later decompilers.",
+        "who": "Cristina Cifuentes",
+        "source": "https://en.wikipedia.org/wiki/Decompiler",
+        "projects": []
+      },
+      {
+        "date": "1996",
+        "title": "\"Abandonware\" gets its name",
+        "body": "Peter Ringering coins the term for software no longer sold or supported; an Abandonware Ring of sites forms in early 1997 to share such games, drawing industry cease-and-desist letters later that year.",
+        "who": "Peter Ringering",
+        "source": "https://en.wikipedia.org/wiki/Abandonware",
+        "projects": []
+      },
+      {
+        "date": "1997-02-05",
+        "title": "MAME 0.1 is released",
+        "body": "The Multiple Arcade Machine Emulator project publishes its first version, starting a long effort to document and preserve arcade hardware in code. MAME later became free software in 2016.",
+        "who": "MAMEDev",
+        "source": "https://www.mamedev.org/history.html",
+        "projects": [
+          "mame"
+        ]
+      },
+      {
+        "date": "1997-12-23",
+        "title": "id Software releases the Doom source code",
+        "body": "John Carmack publishes the Doom source code (the copy id later put on GitHub is GPL 2.0), which spawns decades of source ports and shows a game can outlive its platform through its code.",
+        "who": "id Software, John Carmack",
+        "source": "https://github.com/id-Software/DOOM",
+        "projects": [
+          "doom"
+        ]
+      },
+      {
+        "date": "1998-02",
+        "title": "ReactOS development begins",
+        "body": "After the stalled FreeWin95 effort, developers restart as ReactOS: an open-source operating system aiming for binary compatibility with Windows NT, written without Microsoft code.",
+        "who": "ReactOS developers",
+        "source": "https://en.wikipedia.org/wiki/ReactOS",
+        "projects": [
+          "reactos"
+        ]
+      },
+      {
+        "date": "1998-10",
+        "title": "Home of the Underdogs opens",
+        "body": "Sarinee Achavanuntakul launches an abandonware archive with reviews and downloads for thousands of out-of-print PC games, an early model for community game preservation.",
+        "who": "Sarinee Achavanuntakul",
+        "source": "https://en.wikipedia.org/wiki/Home_of_the_Underdogs",
+        "projects": []
+      },
+      {
+        "date": "1998-10-28",
+        "title": "DMCA signed into US law",
+        "body": "The Digital Millennium Copyright Act adds anti-circumvention rules that shape how preservationists and reverse engineers can handle protected software, and later becomes the usual tool for takedowns of fan ports.",
+        "who": "US Congress",
+        "source": "https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act",
+        "projects": []
+      },
+      {
+        "date": "1999-12-21",
+        "title": "Quake engine source released under the GPL",
+        "body": "id Software opens the Quake engine, continuing the practice of releasing engine code once a game's commercial life winds down.",
+        "who": "id Software, John Carmack",
+        "source": "https://en.wikipedia.org/wiki/Quake_engine",
+        "projects": [
+          "quake"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "reimplementation",
+    "label": "Reimplementations and real decompilers (2000-2012)",
+    "blurb": "Emulation gets legal cover, fans rebuild whole games from scratch, and decompilation becomes a commercial product.",
+    "events": [
+      {
+        "date": "2000-02-10",
+        "title": "Sony v. Connectix upholds reverse engineering for emulation",
+        "body": "The Ninth Circuit finds that copying Sony's BIOS while reverse engineering it to build the Virtual Game Station emulator was fair use, building on Sega v. Accolade.",
+        "who": "US Court of Appeals, Ninth Circuit",
+        "source": "https://en.wikipedia.org/wiki/Sony_Computer_Entertainment,_Inc._v._Connectix_Corp.",
+        "projects": []
+      },
+      {
+        "date": "2001-09",
+        "title": "ScummVM begins",
+        "body": "Ludvig Strigeus starts a reimplementation of LucasArts' SCUMM adventure engine, later joined by Vincent Hamm; it grows into a host for many classic adventure engines.",
+        "who": "Ludvig Strigeus, Vincent Hamm",
+        "source": "https://en.wikipedia.org/wiki/ScummVM",
+        "projects": [
+          "scummvm"
+        ]
+      },
+      {
+        "date": "2004-03-06",
+        "title": "OpenTTD 0.1",
+        "body": "Ludvig Strigeus releases a re-engineered Transport Tycoon Deluxe, converted from the 1994 assembly original to C, which becomes a long-lived open-source game.",
+        "who": "Ludvig Strigeus",
+        "source": "https://en.wikipedia.org/wiki/OpenTTD",
+        "projects": [
+          "openttd"
+        ]
+      },
+      {
+        "date": "2005-08-19",
+        "title": "Quake III Arena source released",
+        "body": "Following a QuakeCon 2005 announcement, id Tech 3 is released under the GPL.",
+        "who": "id Software, John Carmack",
+        "source": "https://en.wikipedia.org/wiki/Id_Tech_3",
+        "projects": [
+          "quake-3"
+        ]
+      },
+      {
+        "date": "2007-09",
+        "title": "Hex-Rays Decompiler launches",
+        "body": "Hex-Rays introduces a commercial decompiler plugin for IDA that turns machine code into C-like pseudocode, making decompilation an everyday reverse engineering tool.",
+        "who": "Hex-Rays",
+        "source": "https://sensepost.com/blog/2007/introducing-hex-rays/",
+        "projects": [
+          "ida"
+        ]
+      },
+      {
+        "date": "2008-06-17",
+        "title": "Wine 1.0",
+        "body": "Fifteen years after it started, Wine reaches version 1.0.",
+        "who": "Wine project",
+        "source": "https://en.wikipedia.org/wiki/Wine_(software)",
+        "projects": [
+          "wine"
+        ]
+      },
+      {
+        "date": "2012-04",
+        "title": "pret's Pokémon disassemblies on GitHub",
+        "body": "The pokecrystal disassembly repository goes up on GitHub, part of the pret group's work to rebuild Game Boy Pokémon games as assembly that reassembles into the original ROMs.",
+        "who": "pret",
+        "source": "https://github.com/pret/pokecrystal",
+        "projects": [
+          "pokecrystal-disasm",
+          "pokered-disasm"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "archives",
+    "label": "Archives in the browser (2013-2018)",
+    "blurb": "Preservation moves online and fans start rebuilding classic PC games from their binaries.",
+    "events": [
+      {
+        "date": "2013-12",
+        "title": "Internet Archive opens the Console Living Room",
+        "body": "The Internet Archive adds hundreds of early console games playable in the browser through the JSMESS emulator, as part of its historical software collection.",
+        "who": "Internet Archive",
+        "source": "https://www.engadget.com/2013/12/30/internet-archive-uploads-retro-games-to-play-online-for-free/",
+        "projects": []
+      },
+      {
+        "date": "2014-04-02",
+        "title": "OpenRCT2 development starts",
+        "body": "Ted \"IntelOrca\" John begins an open-source recreation of RollerCoaster Tycoon 2 in C++, which still needs the original game's data to run.",
+        "who": "Ted John (IntelOrca)",
+        "source": "https://en.wikipedia.org/wiki/OpenRCT2",
+        "projects": [
+          "openrct2"
+        ]
+      },
+      {
+        "date": "2017-03",
+        "title": "Ghidra's existence revealed",
+        "body": "The WikiLeaks Vault 7 documents first reveal that the NSA has an internal reverse engineering framework called Ghidra.",
+        "who": "WikiLeaks",
+        "source": "https://en.wikipedia.org/wiki/Ghidra",
+        "projects": [
+          "ghidra"
+        ]
+      },
+      {
+        "date": "2018",
+        "title": "Devilution reconstructs Diablo's source",
+        "body": "Using symbol information left on the Japanese PlayStation release and a hidden debug build, contributors rebuild Diablo's source code; DevilutionX later carries it to modern systems.",
+        "who": "GalaXyHaXz, diasurgical",
+        "source": "https://github.com/diasurgical/devilution",
+        "projects": [
+          "devilution",
+          "devilutionx"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "decomp-boom",
+    "label": "The matching-decomp boom (2019-2023)",
+    "blurb": "Free professional tooling arrives and N64 decompilations that rebuild byte-identical ROMs turn into native PC ports.",
+    "events": [
+      {
+        "date": "2019-03-05",
+        "title": "NSA releases Ghidra",
+        "body": "Ghidra is released for free at the RSA Conference, with source on GitHub about a month later, giving everyone a capable decompiler without an IDA licence.",
+        "who": "National Security Agency",
+        "source": "https://en.wikipedia.org/wiki/Ghidra",
+        "projects": [
+          "ghidra"
+        ]
+      },
+      {
+        "date": "2019-06",
+        "title": "Super Mario 64 decompilation goes public",
+        "body": "The n64decomp group publishes a C decompilation of Super Mario 64 that rebuilds matching ROMs, an early large N64 matching decomp and a template for many that follow.",
+        "who": "n64decomp",
+        "source": "https://github.com/n64decomp/sm64",
+        "projects": [
+          "sm64-decomp"
+        ]
+      },
+      {
+        "date": "2020-05-06",
+        "title": "Ars Technica explains the N64 decomp scene",
+        "body": "A widely read feature describes how hobbyists turn N64 binaries back into compilable C, prompted by a playable PC port of Super Mario 64 built on the decomp.",
+        "who": "Ars Technica",
+        "source": "https://arstechnica.com/gaming/2020/05/beyond-emulation-the-massive-effort-to-reverse-engineer-n64-source-code/",
+        "projects": [
+          "sm64-decomp",
+          "sm64ex"
+        ]
+      },
+      {
+        "date": "2020-05-09",
+        "title": "Nintendo targets the Super Mario 64 PC port",
+        "body": "Takedown notices go after sites hosting compiled builds of the fan PC port and videos of it; the source-only decomp itself stays up.",
+        "who": "Nintendo",
+        "source": "https://www.nintendolife.com/news/2020/05/nintendo_cracks_down_on_the_super_mario_64_pc_port",
+        "projects": [
+          "sm64ex",
+          "sm64-decomp"
+        ]
+      },
+      {
+        "date": "2020-11-19",
+        "title": "Internet Archive preserves Flash with Ruffle",
+        "body": "Ahead of Flash Player's end of life at the close of 2020, the Internet Archive starts playing Flash animations and games in the browser through the Rust-based Ruffle emulator.",
+        "who": "Internet Archive, Ruffle",
+        "source": "https://blog.archive.org/2020/11/19/flash-animations-live-forever-at-the-internet-archive/",
+        "projects": [
+          "ruffle"
+        ]
+      },
+      {
+        "date": "2021-02-19",
+        "title": "Take-Two DMCA takes down re3",
+        "body": "Take-Two files a DMCA notice against re3, the reverse-engineered GTA III code, and GitHub disables the whole fork network; Take-Two follows with legal action in September 2021.",
+        "who": "Take-Two Interactive, GitHub",
+        "source": "https://github.com/github/dmca/blob/master/2021/02/2021-02-19-take-two.md",
+        "projects": [
+          "re3"
+        ]
+      },
+      {
+        "date": "2021-06",
+        "title": "decomp.me appears",
+        "body": "A collaborative website for matching decompilation goes up, letting people share single-function \"scratches\" and work on them together in the browser.",
+        "who": "decompme",
+        "source": "https://github.com/decompme/decomp.me",
+        "projects": [
+          "decomp-me"
+        ]
+      },
+      {
+        "date": "2021-11-27",
+        "title": "Ocarina of Time code fully decompiled",
+        "body": "The Zelda Reverse Engineering Team reports that all of Ocarina of Time's game code has been turned into C, opening the way to ports and mods.",
+        "who": "Zelda Reverse Engineering Team (ZRET)",
+        "source": "https://www.videogameschronicle.com/news/zelda-64-has-been-fully-decompiled-potentially-opening-the-door-for-mods-and-ports/",
+        "projects": [
+          "oot-decomp"
+        ]
+      },
+      {
+        "date": "2022-03-18",
+        "title": "Asahi Linux alpha",
+        "body": "The first public Asahi Linux alpha installs on M1-series Macs, aimed at developers and power users.",
+        "who": "Asahi Linux",
+        "source": "https://asahilinux.org/2022/03/asahi-linux-alpha-release/",
+        "projects": [
+          "asahi-linux"
+        ]
+      },
+      {
+        "date": "2022-03",
+        "title": "Ship of Harkinian released",
+        "body": "Harbour Masters release an unofficial native PC port of Ocarina of Time built on the OoT decompilation; players supply their own ROM for the assets.",
+        "who": "Harbour Masters",
+        "source": "https://www.dsogaming.com/news/the-second-unofficial-pc-port-of-the-legend-of-zelda-ocarina-of-time-is-available-for-download/",
+        "projects": [
+          "ship-of-harkinian",
+          "oot-decomp",
+          "libultraship"
+        ]
+      },
+      {
+        "date": "2022-04-03",
+        "title": "OpenGOAL's first release",
+        "body": "The OpenGOAL project, which decompiles Jak and Daxter's GOAL code and rebuilds the game natively for PC, publishes its first tagged release.",
+        "who": "open-goal",
+        "source": "https://github.com/open-goal/jak-project/releases/tag/v0.0.1",
+        "projects": [
+          "opengoal"
+        ]
+      },
+      {
+        "date": "2022-10-17",
+        "title": "Perfect Dark decompilation reported complete",
+        "body": "Ryan Dwyer's Perfect Dark decompilation covers the NTSC versions of the game, a prerequisite for the later native port.",
+        "who": "Ryan Dwyer",
+        "source": "https://videogameschronicle.com/news/perfect-dark-has-been-fully-decompiled-making-pc-ports-and-mods-possible",
+        "projects": [
+          "perfect-dark-decomp",
+          "perfect-dark-port"
+        ]
+      },
+      {
+        "date": "2023-07-10",
+        "title": "Study: 87% of classic games are out of print",
+        "body": "A Video Game History Foundation and Software Preservation Network survey finds that 87% of classic US-released games are not commercially available.",
+        "who": "Video Game History Foundation, Software Preservation Network",
+        "source": "https://gamehistory.org/87percent/",
+        "projects": []
+      }
+    ]
+  },
+  {
+    "id": "recomp",
+    "label": "Recompilation goes mainstream (2024-2025)",
+    "blurb": "Static recompilers make native ports possible without a finished decomp, and LLMs enter decompilation research.",
+    "events": [
+      {
+        "date": "2024-03-08",
+        "title": "LLM4Decompile paper",
+        "body": "Researchers publish open language models trained to decompile binaries to C, one of the first widely cited LLM decompilers.",
+        "who": "Hanzhuo Tan, Qi Luo, Jing Li, Yuqun Zhang",
+        "source": "https://arxiv.org/abs/2403.05286",
+        "projects": [
+          "llm4decompile"
+        ]
+      },
+      {
+        "date": "2024-05-10",
+        "title": "N64: Recompiled and Zelda 64: Recompiled",
+        "body": "Mr-Wiseguy releases a static recompiler for N64 code together with a native PC port of Majora's Mask built with it; the player supplies the ROM.",
+        "who": "Mr-Wiseguy",
+        "source": "https://www.timeextension.com/news/2024/05/new-tool-allows-n64-games-to-be-played-with-ray-tracing-uncapped-frame-rates-and-ultrawide-support",
+        "projects": [
+          "n64recomp",
+          "zelda64recomp"
+        ]
+      },
+      {
+        "date": "2024-05-27",
+        "title": "2 Ship 2 Harkinian 1.0",
+        "body": "Harbour Masters' decomp-based Majora's Mask PC port ships its first release, weeks after the recompiled version.",
+        "who": "Harbour Masters",
+        "source": "https://github.com/HarbourMasters/2ship2harkinian/releases/tag/1.0.0",
+        "projects": [
+          "2ship2harkinian",
+          "libultraship"
+        ]
+      },
+      {
+        "date": "2024-08",
+        "title": "decomp.dev progress site",
+        "body": "A shared progress site and GitHub bot starts tracking how far participating decomp projects have matched.",
+        "who": "encounter",
+        "source": "https://github.com/encounter/decomp.dev",
+        "projects": [
+          "decomp-dev"
+        ]
+      },
+      {
+        "date": "2024-12-22",
+        "title": "Starship, a Star Fox 64 PC port",
+        "body": "Harbour Masters release Starship, a native Star Fox 64 port built on the SF64 decompilation and libultraship.",
+        "who": "Harbour Masters",
+        "source": "https://github.com/HarbourMasters/Starship/releases/tag/v1.0.0",
+        "projects": [
+          "starship",
+          "sf64-decomp",
+          "libultraship"
+        ]
+      },
+      {
+        "date": "2025-02-27",
+        "title": "EA releases classic Command & Conquer source",
+        "body": "Electronic Arts publishes GPL source for Tiberian Dawn, Red Alert, Renegade and Generals/Zero Hour for preservation, without game assets.",
+        "who": "Electronic Arts",
+        "source": "https://games.slashdot.org/story/25/02/27/2144203/ea-releases-source-code-for-old-command-and-conquer-games",
+        "projects": []
+      },
+      {
+        "date": "2025-03-01",
+        "title": "Unleashed Recompiled and XenonRecomp",
+        "body": "A static recompilation of the Xbox 360 Sonic Unleashed ships as a native PC port, using the XenonRecomp and XenosRecomp tools and inspired by N64: Recompiled.",
+        "who": "hedge-dev (Skyth, Sajid)",
+        "source": "https://github.com/hedge-dev/UnleashedRecomp/releases/tag/v1.0.0",
+        "projects": [
+          "unleashed-recompiled",
+          "xenonrecomp",
+          "xenosrecomp"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ai-era",
+    "label": "Completion and the AI debate (2026)",
+    "blurb": "Long-running decomps finish while AI-generated \"recomps\" flood in and the community starts labelling human-made work.",
+    "events": [
+      {
+        "date": "2026-01-24",
+        "title": "Banjo: Recompiled 1.0",
+        "body": "A native PC port of Banjo-Kazooie built with N64: Recompiled on top of the Banjo-Kazooie decompilation reaches 1.0.",
+        "who": "BanjoRecomp (DarioSamo and team)",
+        "source": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.0",
+        "projects": [
+          "banjo-recompiled",
+          "n64recomp",
+          "banjo-kazooie-decomp"
+        ]
+      },
+      {
+        "date": "2026-07-21",
+        "title": "AI-assisted Mario Kart Wii recomp stirs debate",
+        "body": "The announcement of a statically recompiled Mario Kart Wii port that openly uses AI coding agents splits the community over code quality and maintainability.",
+        "who": "Patchzyy",
+        "source": "https://www.timeextension.com/news/2026/07/this-sucks-ass-mario-kart-wii-is-getting-an-ai-assisted-recomp-and-some-people-arent-happy",
+        "projects": []
+      },
+      {
+        "date": "2026-08-17",
+        "title": "GoldenEye 007 reaches 100% decompiled",
+        "body": "The GoldenEye decompilation reports 100% for the US, Japanese and PAL versions after years of work; builds still need a user-supplied ROM.",
+        "who": "Kholdfuzion and contributors",
+        "source": "https://www.timeextension.com/news/2026/08/after-9-years-of-work-goldeneye-007-n64-is-now-100percent-decompiled",
+        "projects": [
+          "goldeneye-decomp"
+        ]
+      },
+      {
+        "date": "2026-10-01",
+        "title": "A list of human-made decomps and recomps",
+        "body": "X user Funky90sLion starts a public document cataloguing decomp and recomp projects made without generative AI, covered by Retro Dodo the next day.",
+        "who": "Funky90sLion, Retro Dodo",
+        "source": "https://retrododo.com/a-list-of-human-made-decomps-recomps-has-arrived-to-filter-out-ai-projects/",
+        "projects": []
+      },
+      {
+        "date": "2026-10-03",
+        "title": "Banjo: Recompiled lead calls AI ports \"a race to the bottom\"",
+        "body": "DarioSamo distances his team from an AI-generated Banjo-Tooie recomp and criticises reuse of his team's work in that way.",
+        "who": "DarioSamo",
+        "source": "https://www.videogameschronicle.com/news/banjo-kazooie-pc-port-decomp-developer-says-ai-generated-pc-ports-are-a-race-to-the-bottom-and-disrespectful/",
+        "projects": [
+          "banjo-recompiled"
+        ]
+      },
+      {
+        "date": "2026-10-05",
+        "title": "Recomp developers push back on \"slopcomps\"",
+        "body": "Kotaku reports on the backlash against vibe-coded N64 ports, with the Zelda and Banjo recomp teams restating their no-AI policies.",
+        "who": "Kotaku",
+        "source": "https://kotaku.com/zelda-and-banjo-recompiled-devs-go-to-war-with-ai-vibe-coded-slopcomps-2000739936",
+        "projects": [
+          "zelda64recomp",
+          "banjo-recompiled",
+          "n64recomp"
+        ]
+      },
+      {
+        "date": "2026-10-07",
+        "title": "Beetle Adventure Racing decomp team objects to AI recomp",
+        "body": "Synamax says his volunteer team's in-progress Beetle Adventure Racing decomp was taken and \"finished\" with an LLM without consent, and commits to finishing a human-made version.",
+        "who": "Synamax",
+        "source": "https://www.timeextension.com/features/its-insulting-and-hurtful-beetle-adventure-racing-decomp-dev-kicks-back-against-the-rise-of-ai-recomps",
+        "projects": []
+      }
+    ]
+  }
+]

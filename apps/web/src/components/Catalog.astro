@@ -1,0 +1,59 @@
+---
+// Filterable list: filters run client-side on data-* attributes of each card.
+import ProjectCard from './ProjectCard.astro';
+import { CATEGORIES, METHOD_LABEL, PROVENANCE_LABEL, type Project } from '../lib/data';
+interface Props { list: Project[]; showCategory?: boolean }
+const { list, showCategory = false } = Astro.props;
+const methods = [...new Set(list.map((p) => p.method))];
+const platforms = [...new Set(list.map((p) => p.originalPlatform))].sort();
+const provs = [...new Set(list.map((p) => p.provenance))];
+---
+<div class="catalog">
+  <form class="filters" role="search" onsubmit="return false">
+    <input type="search" name="q" placeholder={`Search ${list.length} projects…`} aria-label="Search" />
+    {showCategory && (
+      <select name="cat" aria-label="Section"><option value="">All sections</option>{CATEGORIES.map((c) => <option value={c.id}>{c.label}</option>)}</select>
+    )}
+    <select name="method" aria-label="Method"><option value="">Any method</option>{methods.map((m) => <option value={m}>{METHOD_LABEL[m]}</option>)}</select>
+    {platforms.length > 1 && <select name="platform" aria-label="Platform"><option value="">Any platform</option>{platforms.map((m) => <option value={m}>{m}</option>)}</select>}
+    <select name="prov" aria-label="Made by"><option value="">Any provenance</option>{provs.map((m) => <option value={m}>{PROVENANCE_LABEL[m]}</option>)}</select>
+    <label class="chk"><input type="checkbox" name="play" /> Playable here</label>
+    <select name="sort" aria-label="Sort"><option value="stars">Most stars</option><option value="name">A–Z</option></select>
+  </form>
+  <p class="meta count" aria-live="polite"></p>
+  <div class="grid list">{list.map((p) => <ProjectCard p={p} />)}</div>
+</div>
+<script>
+  for (const root of document.querySelectorAll<HTMLElement>('.catalog')) {
+    const form = root.querySelector('form')!;
+    const grid = root.querySelector<HTMLElement>('.list')!;
+    const cards = [...grid.querySelectorAll<HTMLElement>('.pc')];
+    const count = root.querySelector('.count')!;
+    const params = new URLSearchParams(location.search);
+    for (const [k, v] of params) { const el = form.elements.namedItem(k) as HTMLInputElement | null; if (el) el.type === 'checkbox' ? (el.checked = v === '1') : (el.value = v); }
+    const apply = () => {
+      const f = new FormData(form);
+      const q = String(f.get('q') ?? '').toLowerCase().trim();
+      const want: Record<string, string> = { cat: String(f.get('cat') ?? ''), method: String(f.get('method') ?? ''), platform: String(f.get('platform') ?? ''), prov: String(f.get('prov') ?? '') };
+      const play = f.get('play') === 'on';
+      let n = 0;
+      for (const c of cards) {
+        const ok = (!q || c.dataset.q!.includes(q)) && Object.entries(want).every(([k, v]) => !v || c.dataset[k] === v) && (!play || c.dataset.play === '1');
+        c.hidden = !ok; if (ok) n++;
+      }
+      const sort = String(f.get('sort'));
+      cards.sort((a, b) => sort === 'name' ? a.dataset.name!.localeCompare(b.dataset.name!) : Number(b.dataset.stars) - Number(a.dataset.stars)).forEach((c) => grid.append(c));
+      count.textContent = `${n} of ${cards.length} shown`;
+      const g = (window as any).gtag; if (q && g) g('event', 'search', { search_term: q });
+    };
+    form.addEventListener('input', apply);
+    apply();
+  }
+</script>
+<style>
+  .filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0 0.5rem; }
+  .filters input[type='search'] { flex: 1 1 260px; }
+  .filters input[type='search'], .filters select { font: inherit; font-size: 0.92rem; padding: 0.45rem 0.6rem; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--bg-raised); color: var(--ink); min-width: 0; }
+  .chk { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; }
+  .count { margin: 0 0 1rem; }
+</style>

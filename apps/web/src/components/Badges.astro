@@ -1,0 +1,17 @@
+---
+import { METHOD_LABEL, PROVENANCE_LABEL, type Project } from '../lib/data';
+interface Props { p: Project; full?: boolean }
+const { p, full = false } = Astro.props;
+const provClass = { 'human-led': 'ok', 'ai-assisted': 'warn', 'ai-generated': 'bad', unknown: '' }[p.provenance];
+const statusClass = p.status === 'released' || p.status === 'complete' ? 'ok' : p.status === 'wip' ? 'accent' : '';
+---
+<span class="badges">
+  <span class="chip plain method">{METHOD_LABEL[p.method] ?? p.method}</span>
+  <span class={`chip ${provClass}`} title={p.provenanceNote ?? 'How the project was made, as stated by the project'}>{PROVENANCE_LABEL[p.provenance]}</span>
+  {full && <span class={`chip ${statusClass}`}>{p.status}{p.progress != null && ` · ${p.progress}%`}</span>}
+  {p.playable && <span class="chip accent">playable</span>}
+</span>
+<style>
+  .badges { display: inline-flex; flex-wrap: wrap; gap: 0.35rem 0.8rem; }
+  .method { border: 1px solid var(--line-strong); padding: 0 0.35rem; border-radius: var(--radius-sm); }
+</style>

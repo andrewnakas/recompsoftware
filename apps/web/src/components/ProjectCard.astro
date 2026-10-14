@@ -1,0 +1,22 @@
+---
+import Badges from './Badges.astro';
+import { statsFor, fmtNum, type Project } from '../lib/data';
+interface Props { p: Project; note?: string }
+const { p, note } = Astro.props;
+const s = statsFor(p);
+---
+<a class="card pc" href={`/p/${p.slug}/`}
+   data-cat={p.category} data-method={p.method} data-prov={p.provenance} data-platform={p.originalPlatform}
+   data-play={p.playable ? '1' : '0'} data-stars={s?.stars ?? 0} data-name={p.name.toLowerCase()}
+   data-q={`${p.name} ${p.subject} ${p.originalPlatform} ${p.tags.join(' ')} ${p.team.join(' ')}`.toLowerCase()}>
+  <p class="meta">{p.originalPlatform}{p.originalYear && ` · ${p.originalYear}`}{s && <> · ★ {fmtNum(s.stars)}</>}{s?.starsWeek ? <span class="up"> +{s.starsWeek} this week</span> : null}</p>
+  <h3>{p.name}</h3>
+  {p.subject && p.subject !== p.name && <p class="subj">{p.subject}</p>}
+  <p>{note ?? p.summary}</p>
+  <div class="b"><Badges p={p} /></div>
+</a>
+<style>
+  .subj { font-size: 0.85rem !important; color: var(--ink-faint) !important; margin-bottom: 0.3rem !important; }
+  .b { margin-top: 0.6rem; }
+  .up { color: var(--accent); }
+</style>

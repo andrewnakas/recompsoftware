@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+---
+<Base title="About Recomp & how entries are labelled" description="What Recomp is, how projects are labelled (method, provenance, licence), what we will and will not host, and how to send corrections.">
+  <PageHead kicker="About" title="About Recomp" lede="A community tracker for the people taking software apart and putting it back together." />
+  <section class="wrap prose">
+    <p>Recomp catalogues decompilations, static recompilations, clean-room reimplementations and preservation projects across games, apps, operating systems and tools. Data comes from each project's own repository and announcements, GitHub activity is refreshed daily, and news is checked by a person before it appears.</p>
+    <h2 id="labels">How the labels work</h2>
+    <ul>
+      <li><strong>Method</strong>: matching decomp, decompilation, static recomp, clean-room, rewrite, source port, binary lift, emulation-hosted, or tool.</li>
+      <li><strong>Provenance</strong>: <em>Human-led</em> when the project says so or predates AI coding tools; <em>AI-assisted</em> when the authors say they used AI coding tools while directing the work; <em>AI-generated</em> when most of the code is described as machine-written; <em>Not stated</em> otherwise. We take the label from the project's own words and link the source. Projects can ask us to change it.</li>
+      <li><strong>Licence</strong>: from the repository's licence file.</li>
+      <li><strong>Needs the original</strong>: whether you must supply your own copy.</li>
+    </ul>
+    <p>Some builds in the catalogue, including the "clean-room" entries on the Play page, were made by this site's author with AI coding agents. They are labelled AI-assisted like everything else.</p>
+    <h2 id="hosting">What we host</h2>
+    <p>The Play page frames builds published elsewhere: clean-room builds whose assets are all regenerated (each states whether it runs decompiled code or the original program code), freely licensed or freeware data, free operating systems and apps, and engines that run a file you pick from your own device without uploading it. We never host or link ROMs, disc images or ripped game assets.</p>
+    <h2 id="corrections">Corrections & takedowns</h2>
+    <p>Open an issue on <a href="https://github.com/andrewnakas/recomp-hub/issues">GitHub</a>. Project maintainers who want their entry changed or removed will be answered first.</p>
+    <h2>Network</h2>
+    <p>Sister sites: <a href="https://decompgames.com">decompgames</a> (playable catalogue), <a href="https://skatemods.com">skatemods</a>, <a href="https://aigamemashups.com">aigamemashups</a>.</p>
+  </section>
+</Base>

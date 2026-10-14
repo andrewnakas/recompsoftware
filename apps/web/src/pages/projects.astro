@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import Catalog from '../components/Catalog.astro';
+import { projects } from '../lib/data';
+const list = projects();
+---
+<Base title="All projects" description={`Every decompilation, recompilation, clean-room and preservation project Recomp tracks: ${list.length} entries, searchable and filterable.`}>
+  <PageHead kicker="Catalogue" title="All projects" lede="Search by name, platform, team or tag. Filter by method, provenance, and whether it runs right here in your browser." />
+  <section class="wrap"><Catalog list={list} showCategory /></section>
+</Base>

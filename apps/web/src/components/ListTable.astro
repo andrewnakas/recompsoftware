@@ -1,0 +1,25 @@
+---
+// SEO list page body: one table per original platform.
+import { statsFor, fmtNum, PROVENANCE_LABEL, formatDate, type Project } from '../lib/data';
+interface Props { list: Project[] }
+const { list } = Astro.props;
+const groups = [...new Set(list.map((p) => p.originalPlatform))]
+  .map((pl) => ({ pl, items: list.filter((p) => p.originalPlatform === pl).sort((a, b) => (a.originalYear ?? 0) - (b.originalYear ?? 0)) }))
+  .sort((a, b) => b.items.length - a.items.length);
+---
+<nav class="jump meta">{groups.map((g) => <a href={`#${g.pl.replace(/\W+/g, '-')}`}>{g.pl} ({g.items.length})</a>)}</nav>
+{groups.map((g) => (
+  <section id={g.pl.replace(/\W+/g, '-')}>
+    <h2>{g.pl}</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Project</th><th>Original</th><th>Status</th><th>Made</th><th>Latest</th><th>Stars</th></tr></thead>
+      <tbody>{g.items.map((p) => { const s = statsFor(p); const r = s?.release ?? p.latestRelease; return (
+        <tr><td><a href={`/p/${p.slug}/`}>{p.name}</a>{p.playable && <span class="chip accent"> playable</span>}</td><td>{p.subject}{p.originalYear && <span class="meta"> {p.originalYear}</span>}</td><td>{p.status}{p.progress != null && ` ${p.progress}%`}</td><td>{PROVENANCE_LABEL[p.provenance]}</td><td>{r ? <>{r.version}<br /><span class="meta">{formatDate(r.date.slice(0, 10))}</span></> : '—'}</td><td>{s ? fmtNum(s.stars) : '—'}</td></tr>
+      ); })}</tbody>
+    </table></div>
+  </section>
+))}
+<style>
+  .jump { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; margin-bottom: 1rem; }
+  h2 { border-top: 1px solid var(--ink); padding-top: 0.6rem; }
+</style>

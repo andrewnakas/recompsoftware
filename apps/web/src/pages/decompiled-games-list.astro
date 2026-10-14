@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import ListTable from '../components/ListTable.astro';
+import { projects, statsDate } from '../lib/data';
+const list = projects().filter((p) => p.category === 'games' && p.method.includes('decomp'));
+const done = list.filter((p) => p.status === 'complete' || p.progress === 100).length;
+const year = new Date().getFullYear();
+---
+<Base title={`Decompiled games list (${year}): every game decomp and its progress`} description={`${list.length} game decompilation projects with their matching progress, ${done} complete, plus the PC ports built on them. Updated daily.`}>
+  <PageHead kicker="List" title="Every decompiled game" lede={`${list.length} decompilations of games, ${done} of them complete. A matching decomp rebuilds C source that compiles back to the exact original binary; ports like Ship of Harkinian are built on top. GitHub data as of ${statsDate() ?? 'the next refresh'}.`} />
+  <section class="wrap"><ListTable list={list} /></section>
+</Base>
