@@ -1712,5 +1712,50 @@
     "sources": [
       "https://github.com/NEstelami/ZAPD"
     ]
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Maintained since 2021-03, before AI coding tools (GitHub repo history).",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "2.0.115",
+      "date": "2026-09-29"
+    },
+    "needsOriginal": false,
+    "playable": null,
+    "checked": "2026-10-14",
+    "slug": "jd-gui-duo",
+    "name": "JD-GUI Duo",
+    "category": "tools",
+    "subject": "Java bytecode (.class / .jar)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/nbauma109/jd-gui-duo",
+    "team": [
+      "nbauma109"
+    ],
+    "started": "2021-03",
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "summary": "Desktop Java decompiler front end, a JD-GUI successor that lets you switch between several decompiler engines (JD-Core, CFR, Procyon, Fernflower, Vineflower, Jadx) on the same class.",
+    "tags": [
+      "java",
+      "decompiler"
+    ],
+    "sources": [
+      "https://github.com/nbauma109/jd-gui-duo",
+      "https://github.com/nbauma109/jd-gui-duo/releases/latest"
+    ]
   }
 ]

@@ -7695,5 +7695,442 @@
     "sources": [
       "https://github.com/OpenRCT2/OpenRCT2"
     ]
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "category": "games",
+    "repo": "https://github.com/alphanu1/daytona-arcade-recomp",
+    "sources": [
+      "https://github.com/alphanu1/daytona-arcade-recomp"
+    ],
+    "slug": "daytona-usa-recomp",
+    "name": "Daytona USA static recompilation",
+    "subject": "Daytona USA",
+    "originalPlatform": "Arcade (Sega Model 2)",
+    "originalYear": 1993,
+    "method": "static-recomp",
+    "status": "wip",
+    "licence": "BSD-3-Clause",
+    "team": [
+      "alphanu1"
+    ],
+    "started": "2026-09",
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Android",
+      "iOS",
+      "PS Vita"
+    ],
+    "summary": "Translates the Model 2 board's i960 main program and its TGP geometry code into portable C++ and reimplements the graphics hardware natively, checking results against MAME; needs the user's own ROM set and has ports to phones and the Vita.",
+    "tags": [
+      "arcade",
+      "sega",
+      "model-2",
+      "racing"
+    ]
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": "2025-07",
+    "latestRelease": {
+      "version": "nightly_7417276",
+      "date": "2026-10-14"
+    },
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "category": "games",
+    "repo": "https://github.com/opentestdriveunlimited/OpenTestDriveUnlimited",
+    "sources": [
+      "https://github.com/opentestdriveunlimited/OpenTestDriveUnlimited",
+      "https://github.com/opentestdriveunlimited/OpenTestDriveUnlimited/releases/latest"
+    ],
+    "slug": "opentdu",
+    "name": "Open Test Drive Unlimited (OpenTDU)",
+    "subject": "Test Drive Unlimited",
+    "originalPlatform": "Windows",
+    "originalYear": 2007,
+    "method": "rewrite",
+    "status": "wip",
+    "licence": "none",
+    "team": [
+      "opentdu"
+    ],
+    "started": "2025-05",
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "summary": "A new Vulkan-based client for the PC version of Test Drive Unlimited, rebuilt game mode by game mode from the original; it runs on top of an owned install's data and aims at modern-system fixes and cross-platform support.",
+    "tags": [
+      "racing",
+      "open-world",
+      "reimplementation"
+    ]
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README: \"This project was made almost exclusively with AI\" (Claude via Claude Code, directed, tested and reviewed by a human).",
+    "website": null,
+    "discord": "https://discord.gg/DhrgdYqdcY",
+    "subreddit": null,
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "beta_3",
+      "date": "2026-10-14"
+    },
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "category": "games",
+    "repo": "https://github.com/peiikai/LASRecomp",
+    "sources": [
+      "https://github.com/peiikai/LASRecomp",
+      "https://github.com/peiikai/LASRecomp/releases/latest"
+    ],
+    "slug": "las-recomp",
+    "name": "LAS Recomp",
+    "subject": "The Legend of Zelda: Link's Awakening (2019)",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2019,
+    "method": "static-recomp",
+    "status": "wip",
+    "licence": "MIT",
+    "team": [
+      "peiikai"
+    ],
+    "started": "2026-10",
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "summary": "Beta static recompilation of the Switch Link's Awakening remake that performs the recompile locally from the user's v1.0.0 game files, adding unlocked aspect ratios, remapping and a built-in randomizer.",
+    "tags": [
+      "switch",
+      "zelda",
+      "randomizer"
+    ]
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "website": "https://valps.github.io/gta2-re-hub/",
+    "discord": "https://discord.gg/4mTfhQKNQM",
+    "subreddit": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "category": "games",
+    "repo": "https://github.com/CriminalRETeam/gta2_re",
+    "sources": [
+      "https://github.com/CriminalRETeam/gta2_re"
+    ],
+    "slug": "gta2-re",
+    "name": "GTA2 RE",
+    "subject": "Grand Theft Auto 2",
+    "originalPlatform": "Windows",
+    "originalYear": 1999,
+    "method": "matching-decomp",
+    "status": "wip",
+    "licence": "none",
+    "team": [
+      "CriminalRETeam"
+    ],
+    "started": "2024-09",
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "summary": "Reimplements the PC GTA2 10.5 executable function by function, compiled with Visual C++ 6 to match the original code, and can run either standalone or patched into the retail exe.",
+    "tags": [
+      "gta",
+      "pc",
+      "msvc6"
+    ]
+  },
+  {
+    "progress": null,
+    "progressSource": "https://opentoshi.net/progress/Barnyard.svg",
+    "provenance": "human-led",
+    "provenanceNote": "Repository created 2022-08, before AI coding tools were common (GitHub repo history).",
+    "website": "https://opentoshi.net/OpenBarnyard/docs/",
+    "discord": "https://discord.gg/j7vbsNP4my",
+    "subreddit": null,
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "speedrunhelper",
+      "date": "2025-03-04"
+    },
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "category": "games",
+    "repo": "https://github.com/InfiniteC0re/OpenBarnyard",
+    "sources": [
+      "https://github.com/InfiniteC0re/OpenBarnyard",
+      "https://github.com/InfiniteC0re/OpenBarnyard/releases/latest"
+    ],
+    "slug": "openbarnyard",
+    "name": "OpenBarnyard",
+    "subject": "Barnyard (and the TOSHI 2.0 engine)",
+    "originalPlatform": "Windows",
+    "originalYear": 2006,
+    "method": "non-matching-decomp",
+    "status": "wip",
+    "licence": "unknown",
+    "team": [
+      "InfiniteC0re",
+      "AdventureT"
+    ],
+    "started": "2022-08",
+    "targets": [
+      "Windows"
+    ],
+    "summary": "Decompiles the PC Barnyard game together with Blue Tongue's in-house TOSHI 2.0 engine into buildable C++, with public API docs and a progress tracker.",
+    "tags": [
+      "pc",
+      "engine",
+      "toshi"
+    ]
+  },
+  {
+    "progress": 0.48,
+    "progressSource": "https://github.com/Caesar0007/NFSHS-PSX-decomp",
+    "provenance": "ai-assisted",
+    "provenanceNote": "README addresses AI agents directly: \"If you're an agent resuming after /compact, open it [METHODOLOGY.md] before touching anything.\"",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "category": "games",
+    "repo": "https://github.com/Caesar0007/NFSHS-PSX-decomp",
+    "sources": [
+      "https://github.com/Caesar0007/NFSHS-PSX-decomp"
+    ],
+    "slug": "nfshs-psx-decomp",
+    "name": "nfs4-decomp",
+    "subject": "Need for Speed: High Stakes",
+    "originalPlatform": "PlayStation",
+    "originalYear": 1999,
+    "method": "matching-decomp",
+    "status": "wip",
+    "licence": "proprietary",
+    "team": [
+      "Caesar0007"
+    ],
+    "started": "2026-06",
+    "targets": [
+      "PlayStation"
+    ],
+    "summary": "Early byte-matching decompilation of the PSX High Stakes executable using splat, the original PsyQ compiler with maspsx, and objdiff; the repo is all-rights-reserved, with one authorized port maintained separately.",
+    "tags": [
+      "psx",
+      "nfs",
+      "racing",
+      "decomp-dev"
+    ]
+  },
+  {
+    "progress": null,
+    "progressSource": "https://decomp.dev/Raikaru/Persona4-Decompilation",
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "category": "games",
+    "repo": "https://github.com/Raikaru/Persona4-Decompilation",
+    "sources": [
+      "https://github.com/Raikaru/Persona4-Decompilation"
+    ],
+    "slug": "persona4-decomp",
+    "name": "Persona 4 Decompilation",
+    "subject": "Shin Megami Tensei: Persona 4",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2008,
+    "method": "matching-decomp",
+    "status": "wip",
+    "licence": "none",
+    "team": [
+      "Raikaru"
+    ],
+    "started": "2026-07",
+    "targets": [
+      "PlayStation 2"
+    ],
+    "summary": "Work-in-progress matching decompilation of the US PS2 executable, rebuilding a hash-identical ELF from C plus not-yet-decompiled assembly; not a PC port.",
+    "tags": [
+      "ps2",
+      "atlus",
+      "rpg",
+      "decomp-dev"
+    ]
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Started 2018, before AI coding tools (GitHub repo history).",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "category": "games",
+    "repo": "https://github.com/Herringway/ebsrc",
+    "sources": [
+      "https://github.com/Herringway/ebsrc"
+    ],
+    "slug": "ebsrc",
+    "name": "ebsrc",
+    "subject": "EarthBound / Mother 2",
+    "originalPlatform": "SNES",
+    "originalYear": 1994,
+    "method": "matching-decomp",
+    "status": "wip",
+    "licence": "none",
+    "team": [
+      "Herringway"
+    ],
+    "started": "2018-09",
+    "targets": [
+      "SNES"
+    ],
+    "summary": "A buildable disassembly that reassembles the US EarthBound, its 1995 localization prototype and Japanese Mother 2 from a user's ROM, intended to grow into a C decompilation.",
+    "tags": [
+      "snes",
+      "earthbound",
+      "disassembly"
+    ]
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "website": "https://goopie.xyz/#/library/eternalsonata",
+    "discord": "https://discord.gg/DJe2pXMH7S",
+    "subreddit": null,
+    "firstRelease": "2026-08",
+    "latestRelease": {
+      "version": "v1.2.6",
+      "date": "2026-10-13"
+    },
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "category": "games",
+    "repo": "https://github.com/birabittoh/EternalSonataReprise",
+    "sources": [
+      "https://github.com/birabittoh/EternalSonataReprise",
+      "https://github.com/birabittoh/EternalSonataReprise/releases/latest"
+    ],
+    "slug": "eternal-sonata-reprise",
+    "name": "Eternal Sonata Reprise",
+    "subject": "Eternal Sonata",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2007,
+    "method": "static-recomp",
+    "status": "released",
+    "licence": "MIT",
+    "team": [
+      "birabittoh"
+    ],
+    "started": "2026-06",
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "summary": "Recompiles the Xbox 360 Eternal Sonata executable to native x86-64 through a ReXGlue SDK fork, with a host runtime for mods and overlays; players extract their own disc on first run.",
+    "tags": [
+      "xbox-360",
+      "rpg",
+      "rexglue"
+    ]
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": "2026-09",
+    "latestRelease": {
+      "version": "v0.5.8",
+      "date": "2026-10-13"
+    },
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "category": "games",
+    "repo": "https://github.com/antoxa2584x/nfsu2-sw",
+    "sources": [
+      "https://github.com/antoxa2584x/nfsu2-sw",
+      "https://github.com/antoxa2584x/nfsu2-sw/releases/latest"
+    ],
+    "slug": "nfsu2-switch",
+    "name": "NFSU2 for Switch",
+    "subject": "Need for Speed: Underground 2",
+    "originalPlatform": "Xbox",
+    "originalYear": 2004,
+    "method": "static-recomp",
+    "status": "wip",
+    "licence": "none",
+    "team": [
+      "antoxa2584x"
+    ],
+    "started": "2026-09",
+    "targets": [
+      "Nintendo Switch",
+      "Linux"
+    ],
+    "summary": "Lifts the original Xbox NFSU2 executable to C with xboxrecomp and runs it as Switch homebrew or on Linux, with Vulkan/OpenGL renderers, widescreen and split screen; menus and races work, some rendering modes remain.",
+    "tags": [
+      "xbox",
+      "nfs",
+      "racing",
+      "switch-homebrew"
+    ]
   }
 ]
