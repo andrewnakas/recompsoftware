@@ -1584,5 +1584,133 @@
       "https://github.com/RAZKOM/JSDecloak"
     ],
     "checked": "2026-10-13"
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": null,
+    "website": "https://www.mamedev.org",
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "slug": "mame",
+    "name": "MAME",
+    "category": "tools",
+    "subject": "Arcade and computer hardware",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "provenance": "human-led",
+    "licence": "GPL-2.0-or-later",
+    "repo": "https://github.com/mamedev/mame",
+    "team": [
+      "MAMEdev"
+    ],
+    "started": "1997",
+    "latestRelease": {
+      "version": "mame0289",
+      "date": "2026-07-30"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "summary": "The multi-system emulator whose goal is to document hardware by emulating it; one of the longest-running preservation projects in software.",
+    "tags": [
+      "emulation",
+      "preservation"
+    ],
+    "sources": [
+      "https://github.com/mamedev/mame"
+    ]
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": null,
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "needsOriginal": false,
+    "playable": null,
+    "checked": "2026-10-14",
+    "slug": "rt64",
+    "name": "RT64",
+    "category": "tools",
+    "subject": "N64 graphics (RDP) rendering",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "provenance": "human-led",
+    "licence": "MIT",
+    "repo": "https://github.com/rt64/rt64",
+    "team": [
+      "rt64"
+    ],
+    "started": "2024",
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "summary": "An N64 graphics renderer with widescreen, high frame rate and enhancement support, used by Zelda 64: Recompiled and other N64Recomp ports.",
+    "tags": [
+      "n64",
+      "renderer",
+      "recomp"
+    ],
+    "sources": [
+      "https://github.com/rt64/rt64"
+    ]
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": null,
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "slug": "zapd",
+    "name": "ZAPD",
+    "category": "tools",
+    "subject": "Zelda 64 asset extraction",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "provenance": "human-led",
+    "licence": "MIT",
+    "repo": "https://github.com/NEstelami/ZAPD",
+    "team": [
+      "zeldaret"
+    ],
+    "started": "2019",
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "summary": "Zelda Asset Processor for Decomp: extracts and rebuilds assets for the Ocarina of Time and Majora's Mask decompilations.",
+    "tags": [
+      "n64",
+      "zelda",
+      "decomp-tooling"
+    ],
+    "sources": [
+      "https://github.com/NEstelami/ZAPD"
+    ]
   }
 ]

@@ -10,7 +10,7 @@ One JSON array per section in `data/projects/<category>.json`. Facts and links o
   "subject": "The Legend of Zelda: Majora's Mask", // the original software (tools: what it targets, e.g. "N64 MIPS binaries")
   "originalPlatform": "Nintendo 64",       // platform of the original ("Windows", "Xbox 360", "Multi")
   "originalYear": 2000,                    // year the original came out (null for tools)
-  "method": "static-recomp",               // matching-decomp | non-matching-decomp | static-recomp | clean-room | rewrite | source-port | lift | emulation-hosted | tool
+  "method": "static-recomp",               // matching-decomp | non-matching-decomp | static-recomp | clean-room | rewrite | source-port | source-release | lift | emulation-hosted | tool
   "status": "released",                    // released | complete | wip | stalled | archived
   "progress": null,                        // 0-100 if the project publishes a % (matching decomp), else null
   "progressSource": null,                  // URL of that %

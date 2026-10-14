@@ -7527,5 +7527,173 @@
       "https://decompgames.com/games/skate-3/"
     ],
     "checked": "2026-10-13"
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": null,
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "slug": "doom",
+    "name": "DOOM source release",
+    "category": "games",
+    "subject": "DOOM",
+    "originalPlatform": "MS-DOS",
+    "originalYear": 1993,
+    "method": "source-release",
+    "status": "complete",
+    "provenance": "human-led",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/id-Software/DOOM",
+    "team": [
+      "id Software"
+    ],
+    "started": "1997",
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "summary": "id Software's release of the Linux DOOM engine source in 1997, relicensed under the GPL in 1999. Nearly every Doom source port descends from it.",
+    "tags": [
+      "doom",
+      "fps",
+      "source-release"
+    ],
+    "sources": [
+      "https://github.com/id-Software/DOOM"
+    ]
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": null,
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "slug": "quake",
+    "name": "Quake source release",
+    "category": "games",
+    "subject": "Quake",
+    "originalPlatform": "MS-DOS",
+    "originalYear": 1996,
+    "method": "source-release",
+    "status": "complete",
+    "provenance": "human-led",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/id-Software/Quake",
+    "team": [
+      "id Software"
+    ],
+    "started": "1999",
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "summary": "The Quake engine source, released by id Software under the GPL in 1999; the base for QuakeSpasm, ioquake-style ports and many engines.",
+    "tags": [
+      "quake",
+      "fps",
+      "source-release"
+    ],
+    "sources": [
+      "https://github.com/id-Software/Quake"
+    ]
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": null,
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "slug": "quake-3",
+    "name": "Quake III Arena source release",
+    "category": "games",
+    "subject": "Quake III Arena",
+    "originalPlatform": "Windows",
+    "originalYear": 1999,
+    "method": "source-release",
+    "status": "complete",
+    "provenance": "human-led",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/id-Software/Quake-III-Arena",
+    "team": [
+      "id Software"
+    ],
+    "started": "2005",
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "summary": "id Software's GPL release of the id Tech 3 engine and game code in 2005, which ioquake3 and many later games are built on.",
+    "tags": [
+      "quake",
+      "fps",
+      "source-release"
+    ],
+    "sources": [
+      "https://github.com/id-Software/Quake-III-Arena"
+    ]
+  },
+  {
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": null,
+    "website": "https://openrct2.io",
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "needsOriginal": true,
+    "playable": null,
+    "checked": "2026-10-14",
+    "slug": "openrct2",
+    "name": "OpenRCT2",
+    "category": "games",
+    "subject": "RollerCoaster Tycoon 2",
+    "originalPlatform": "Windows",
+    "originalYear": 2002,
+    "method": "rewrite",
+    "status": "released",
+    "provenance": "human-led",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/OpenRCT2/OpenRCT2",
+    "team": [
+      "OpenRCT2 team"
+    ],
+    "started": "2014",
+    "latestRelease": {
+      "version": "v0.5.6",
+      "date": "2026-10-10"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Android"
+    ],
+    "summary": "An open-source reimplementation of RollerCoaster Tycoon 2 that began by reverse engineering the original executable function by function, now fully native with multiplayer and new features.",
+    "tags": [
+      "simulation",
+      "reimplementation"
+    ],
+    "sources": [
+      "https://github.com/OpenRCT2/OpenRCT2"
+    ]
   }
 ]

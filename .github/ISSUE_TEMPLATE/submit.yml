@@ -1,0 +1,23 @@
+name: Submit a project
+description: A decomp, recomp, clean-room rebuild, RE tool or preservation project we are missing
+title: "Add: "
+labels: [submission]
+body:
+  - type: input
+    id: repo
+    attributes: { label: Repository or website }
+    validations: { required: true }
+  - type: dropdown
+    id: section
+    attributes: { label: Section, options: [Games, Apps & creative tools, OS & system, RE tooling, Preservation & revivals] }
+    validations: { required: true }
+  - type: dropdown
+    id: made
+    attributes:
+      label: How was it made?
+      description: "As the project itself states it. Every entry is labelled; see https://recompsoftware.com/about/#labels"
+      options: [Human-led, AI-assisted, AI-generated, Not stated]
+    validations: { required: true }
+  - type: textarea
+    id: notes
+    attributes: { label: Anything else, description: "Release links, Discord, what makes it notable" }

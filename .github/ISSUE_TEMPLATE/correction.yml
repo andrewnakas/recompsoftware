@@ -1,0 +1,22 @@
+name: Correction
+description: Something on a project page is wrong or out of date
+title: "Correction: "
+labels: [correction]
+body:
+  - type: input
+    id: page
+    attributes: { label: Page, description: "The recompsoftware.com URL", placeholder: "https://recompsoftware.com/p/..." }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What is wrong, description: "And what it should say" }
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: Source, description: "A public link that shows the right fact (repo, release, announcement)" }
+    validations: { required: true }
+  - type: checkboxes
+    id: maintainer
+    attributes:
+      label: Are you a maintainer of this project?
+      options: [{ label: "Yes, I work on it (maintainer requests are handled first)" }]

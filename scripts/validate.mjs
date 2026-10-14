@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const DATA = process.env.RECOMP_DATA ?? path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../data');
 const CATS = ['games', 'apps', 'os', 'tools', 'preservation'];
-const METHODS = ['matching-decomp', 'non-matching-decomp', 'static-recomp', 'clean-room', 'rewrite', 'source-port', 'lift', 'emulation-hosted', 'tool'];
+const METHODS = ['matching-decomp', 'non-matching-decomp', 'static-recomp', 'clean-room', 'rewrite', 'source-port', 'source-release', 'lift', 'emulation-hosted', 'tool'];
 const PROV = ['human-led', 'ai-assisted', 'ai-generated', 'unknown'];
 const STATUS = ['released', 'complete', 'wip', 'stalled', 'archived'];
 const TIERS = ['cleanroom', 'free', 'byo', 'software'];

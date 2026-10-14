@@ -1,0 +1,41 @@
+---
+// Auto digest: everything that shipped, moved or was reported in the last 7 days, from stats + news.
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import { projects, statsFor, statsDate, news, formatDate, heat } from '../lib/data';
+const asOf = statsDate() ?? new Date().toISOString().slice(0, 10);
+const cut = new Date(Date.parse(asOf) - 7 * 864e5).toISOString().slice(0, 10);
+const all = projects();
+const releases = all
+  .map((p) => ({ p, r: statsFor(p)?.release ?? p.latestRelease }))
+  .filter((x) => x.r?.date && x.r.date.slice(0, 10) >= cut)
+  .sort((a, b) => b.r!.date.localeCompare(a.r!.date));
+const stories = news().filter((n) => n.date >= cut);
+const busiest = [...all].filter((p) => (statsFor(p)?.commits30 ?? 0) > 0).sort((a, b) => heat(b) - heat(a)).slice(0, 8);
+const added = all.filter((p) => p.checked >= cut).length;
+---
+<Base title={`This week in decomp & recomp (${formatDate(asOf)})`} description={`${releases.length} releases and ${stories.length} stories from decompilation, recompilation and preservation projects in the week to ${formatDate(asOf)}.`}>
+  <PageHead kicker="Weekly" title="This week" lede={`The week to ${formatDate(asOf)}: ${releases.length} releases, ${stories.length} stories, ${added} catalogue entries added or re-checked.`}>
+    <p class="meta"><a href="/news/rss.xml">RSS</a></p>
+  </PageHead>
+  {stories.length > 0 && (
+    <section class="wrap section">
+      <div class="rule-head"><h2>Stories</h2><a href="/news/">All news →</a></div>
+      <ul class="l">{stories.map((n) => <li><a href={n.source} rel="noopener">{n.title}</a><p>{n.body}</p></li>)}</ul>
+    </section>
+  )}
+  <section class="wrap section">
+    <div class="rule-head"><h2>Releases</h2></div>
+    {releases.length === 0 && <p>No tagged releases this week.</p>}
+    <ul class="l">{releases.map(({ p, r }) => <li><a href={`/p/${p.slug}/`}>{p.name}</a> <span class="meta">{r!.version} · {formatDate(r!.date.slice(0, 10))}</span></li>)}</ul>
+  </section>
+  <section class="wrap section">
+    <div class="rule-head"><h2>Most active</h2><a href="/trending/">Trending →</a></div>
+    <ul class="l">{busiest.map((p) => <li><a href={`/p/${p.slug}/`}>{p.name}</a> <span class="meta">{statsFor(p)?.commits30} commits in 30 days</span></li>)}</ul>
+  </section>
+</Base>
+<style>
+  .l { list-style: none; padding: 0; margin: 0; max-width: 80ch; }
+  .l li { border-bottom: 1px solid var(--line); padding: 0.55rem 0; }
+  .l p { margin: 0.2rem 0 0; color: var(--ink-soft); }
+</style>

@@ -7,7 +7,7 @@ const DATA = process.env.RECOMP_DATA ?? path.resolve(process.cwd(), '../../data'
 export type Category = 'games' | 'apps' | 'os' | 'tools' | 'preservation';
 export type Method =
   | 'matching-decomp' | 'non-matching-decomp' | 'static-recomp' | 'clean-room' | 'rewrite'
-  | 'source-port' | 'lift' | 'emulation-hosted' | 'tool';
+  | 'source-port' | 'source-release' | 'lift' | 'emulation-hosted' | 'tool';
 export type Provenance = 'human-led' | 'ai-assisted' | 'ai-generated' | 'unknown';
 
 export interface Playable { tier: 'cleanroom' | 'free' | 'byo' | 'software'; url: string; launch: 'frame' | 'tab'; note: string }
@@ -43,7 +43,7 @@ export const CATEGORIES: { id: Category; label: string; blurb: string }[] = [
 
 export const METHOD_LABEL: Record<Method, string> = {
   'matching-decomp': 'Matching decomp', 'non-matching-decomp': 'Decompilation', 'static-recomp': 'Static recomp',
-  'clean-room': 'Clean-room', rewrite: 'Rewrite', 'source-port': 'Source port', lift: 'Binary lift',
+  'clean-room': 'Clean-room', rewrite: 'Rewrite', 'source-port': 'Source port', 'source-release': 'Official source release', lift: 'Binary lift',
   'emulation-hosted': 'Emulation-hosted', tool: 'Tool',
 };
 export const PROVENANCE_LABEL: Record<Provenance, string> = {

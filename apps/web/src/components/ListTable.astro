@@ -14,7 +14,7 @@ const groups = [...new Set(list.map((p) => p.originalPlatform))]
     <div class="table-wrap"><table>
       <thead><tr><th>Project</th><th>Original</th><th>Status</th><th>Made</th><th>Latest</th><th>Stars</th></tr></thead>
       <tbody>{g.items.map((p) => { const s = statsFor(p); const r = s?.release ?? p.latestRelease; return (
-        <tr><td><a href={`/p/${p.slug}/`}>{p.name}</a>{p.playable && <span class="chip accent"> playable</span>}</td><td>{p.subject}{p.originalYear && <span class="meta"> {p.originalYear}</span>}</td><td>{p.status}{p.progress != null && ` ${p.progress}%`}</td><td>{PROVENANCE_LABEL[p.provenance]}</td><td>{r ? <>{r.version}<br /><span class="meta">{formatDate(r.date.slice(0, 10))}</span></> : '—'}</td><td>{s ? fmtNum(s.stars) : '—'}</td></tr>
+        <tr><td><a href={`/p/${p.slug}/`}>{p.name}</a>{p.playable && <span class="chip accent"> playable</span>}</td><td>{p.subject}{p.originalYear && <span class="meta"> {p.originalYear}</span>}</td><td>{p.status}{p.progress != null && ` ${p.progress}%`}</td><td>{PROVENANCE_LABEL[p.provenance]}</td><td>{r ? <>{r.version}<br />{r.date && <span class="meta">{formatDate(r.date.slice(0, 10))}</span>}</> : '—'}</td><td>{s ? fmtNum(s.stars) : '—'}</td></tr>
       ); })}</tbody>
     </table></div>
   </section>

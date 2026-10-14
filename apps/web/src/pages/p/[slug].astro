@@ -31,7 +31,7 @@ const schema = {
   author: p.team.map((t) => ({ '@type': 'Person', name: t })),
 };
 ---
-<Base title={p.name} description={description} type="article" schema={schema}>
+<Base title={p.name} description={description} type="article" schema={schema} image={`/og/p-${p.slug}.png`}>
   <article class="wrap proj">
     <p class="crumbs"><a href="/">Recomp</a> / <a href={`/${p.category}/`}>{cat.label}</a> / <a href={`/platforms/${slugify(p.originalPlatform)}/`}>{p.originalPlatform}</a></p>
     <h1>{p.name}</h1>
@@ -111,7 +111,7 @@ const schema = {
     <section>
       <h2>Sources</h2>
       <ul class="src">{p.sources.map((u) => <li><a href={u} rel="noopener">{u}</a></li>)}</ul>
-      <p class="meta">Something wrong or out of date? <a href={`https://github.com/andrewnakas/recomp-hub/issues/new?title=${encodeURIComponent('Correction: ' + p.name)}`}>Send a correction</a>.</p>
+      <p class="meta">Something wrong or out of date? <a href={`https://github.com/andrewnakas/recomp-hub/issues/new?template=correction.yml&title=${encodeURIComponent("Correction: " + p.name)}&page=${encodeURIComponent(`https://recompsoftware.com/p/${p.slug}/`)}`}>Send a correction</a>.</p>
     </section>
 
     {related.length > 0 && (
