@@ -18,7 +18,11 @@ Site: recompsoftware.com (owner bought only this one; recompiledsoftware.com was
 ## Discord rules
 Owner's own logged-in Chrome, read-only, human pace, only when a sweep is started. Nothing from members-only channels published verbatim or attributed; public stories cite public links.
 
-## Owner to-do
+## Live (2026-10-14)
+- recompsoftware.com + www on Cloudflare Workers static assets. GitHub Actions (secrets CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID set) snapshots stats daily 05:23 UTC, rebuilds/deploys every 6 h, pings Bing IndexNow. First manual run 38526184109 green.
+- Google Search Console: URL-prefix property https://recompsoftware.com/ verified by meta tag (Base.astro; do not remove), sitemap submitted (427 pages). Property is in the Google account signed in to Chrome.
+
+## Owner to-do (old)
 - Cloudflare: add both zones; Namecheap nameservers → Cloudflare; Pages project `recompsoftware`; custom domain; www → apex.
 - GitHub: `andrewnakas/recompsoftware` (public), secrets CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID.
 - GA4 property → set `PUBLIC_GA_ID` in the Pages build env / workflow.

@@ -23,8 +23,8 @@ jobs:
     env:
       CF_TOKEN_SET: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with: { node-version: 22, cache: npm, cache-dependency-path: apps/web/package-lock.json }
       - name: Snapshot GitHub stats
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '23 5 * * *'
