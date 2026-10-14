@@ -1,0 +1,16 @@
+// Static site served as Workers static assets (no server code). Deploy: npm run build && npx wrangler@4 deploy
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "recompsoftware",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page",
+    "html_handling": "force-trailing-slash"
+  },
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "recompsoftware.com", "custom_domain": true },
+    { "pattern": "www.recompsoftware.com", "custom_domain": true }
+  ]
+}

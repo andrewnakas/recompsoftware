@@ -13,7 +13,7 @@ Site: recompsoftware.com (owner bought only this one; recompiledsoftware.com was
 ## Commands
 - `node scripts/validate.mjs` · `node scripts/fetch-stats.mjs` · `node scripts/intel/sweep.mjs --days 7`
 - `cd apps/web && npm run build` · preview: `npx astro preview`
-- Deploy (owner-run until a permission rule exists): `npx wrangler@4 pages deploy dist --project-name recompsoftware --branch main`
+- Deploy: `cd apps/web && npm run build && npx wrangler@4 deploy` (Workers static assets, config apps/web/wrangler.jsonc; live preview https://recompsoftware.andrew-nakas.workers.dev). Do NOT use `wrangler pages project create`: it rewrote the Astro config to an SSR adapter.
 
 ## Discord rules
 Owner's own logged-in Chrome, read-only, human pace, only when a sweep is started. Nothing from members-only channels published verbatim or attributed; public stories cite public links.
