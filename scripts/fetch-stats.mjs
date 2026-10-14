@@ -22,7 +22,7 @@ const list = [...repos.entries()].slice(0, limit);
 const since = new Date(Date.now() - 30 * 864e5).toISOString();
 
 async function gql(query) {
-  const r = await fetch('https://api.github.com/graphql', { method: 'POST', headers: { Authorization: `bearer ${token}`, 'User-Agent': 'recomp-hub' }, body: JSON.stringify({ query }) });
+  const r = await fetch('https://api.github.com/graphql', { method: 'POST', headers: { Authorization: `bearer ${token}`, 'User-Agent': 'recompsoftware' }, body: JSON.stringify({ query }) });
   const j = await r.json();
   return j;
 }
@@ -51,7 +51,7 @@ async function recentStars(key, stars) {
   if (!stars || last > 400) return { recent7: null, recent30: null };
   const times = [];
   for (let page = last; page >= Math.max(1, last - 2); page--) {
-    const r = await fetch(`https://api.github.com/repos/${key}/stargazers?per_page=100&page=${page}`, { headers: { Authorization: `bearer ${token}`, Accept: 'application/vnd.github.star+json', 'User-Agent': 'recomp-hub' } });
+    const r = await fetch(`https://api.github.com/repos/${key}/stargazers?per_page=100&page=${page}`, { headers: { Authorization: `bearer ${token}`, Accept: 'application/vnd.github.star+json', 'User-Agent': 'recompsoftware' } });
     if (!r.ok) return { recent7: null, recent30: null }; // 403 for fine-grained PATs: deltas wait for real snapshots
     const j = await r.json();
     times.push(...j.map((x) => Date.parse(x.starred_at)));

@@ -1,6 +1,6 @@
 # Recomp hub — STATUS
 
-Site: recompsoftware.com (canonical) + recompiledsoftware.com (301 → canonical). Plan: `C:\Users\andre\.claude\plans\joyful-swimming-heron.md`.
+Site: recompsoftware.com (owner bought only this one; recompiledsoftware.com was never registered). GitHub: andrewnakas/recompsoftware. Plan: `C:\Users\andre\.claude\plans\joyful-swimming-heron.md`.
 
 ## Layout
 - `apps/web` — Astro 5 static site (theme forked from skatemods; accent phosphor green). `npm run build` = validate + astro build → `apps/web/dist`.
@@ -19,8 +19,8 @@ Site: recompsoftware.com (canonical) + recompiledsoftware.com (301 → canonical
 Owner's own logged-in Chrome, read-only, human pace, only when a sweep is started. Nothing from members-only channels published verbatim or attributed; public stories cite public links.
 
 ## Owner to-do
-- Cloudflare: add both zones; Namecheap nameservers → Cloudflare; Pages project `recompsoftware`; custom domain; Redirect Rule recompiledsoftware.com/* → https://recompsoftware.com/$1 (301).
-- GitHub: create `andrewnakas/recomp-hub` (public), secrets CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID.
+- Cloudflare: add both zones; Namecheap nameservers → Cloudflare; Pages project `recompsoftware`; custom domain; www → apex.
+- GitHub: `andrewnakas/recompsoftware` (public), secrets CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID.
 - GA4 property → set `PUBLIC_GA_ID` in the Pages build env / workflow.
 
 ## Log
