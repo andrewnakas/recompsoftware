@@ -85,6 +85,23 @@ export const platforms = () => {
   return [...m.entries()].map(([name, list]) => ({ name, slug: slugify(name), list })).sort((a, b) => b.list.length - a.list.length);
 };
 
+/** One page per original game with 2+ projects (decomp + recomp + ports of the same title). */
+export const gameKey = (subject: string) => slugify(subject.replace(/\s*\([^)]*\)/g, '').replace(/[’']/g, ''));
+let hubCache: { slug: string; name: string; list: Project[]; platform: string; year: number | null }[] | null = null;
+export const gameHubs = () => {
+  if (hubCache) return hubCache;
+  const m = new Map<string, Project[]>();
+  for (const p of projects()) if (p.category === 'games') { const k = gameKey(p.subject); if (k) m.set(k, [...(m.get(k) ?? []), p]); }
+  hubCache = [...m.entries()].filter(([, list]) => list.length >= 2).map(([slug, list]) => {
+    const names = list.map((p) => p.subject.replace(/\s*\([^)]*\)/g, '').trim());
+    const count = (n: string) => names.filter((x) => x === n).length;
+    const name = [...names].sort((a, b) => count(b) - count(a) || a.length - b.length)[0];
+    return { slug, name, list, platform: list[0].originalPlatform, year: list.find((p) => p.originalYear)?.originalYear ?? null };
+  }).sort((a, b) => b.list.length - a.list.length || a.name.localeCompare(b.name));
+  return hubCache;
+};
+export const hubFor = (p: Project) => (p.category === 'games' ? gameHubs().find((h) => h.slug === gameKey(p.subject)) : undefined);
+
 /** "Heat": star velocity + recent release + commits, for the trend board. */
 export function heat(p: Project): number {
   const s = statsFor(p);

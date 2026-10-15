@@ -4,7 +4,7 @@ import Badges from '../../components/Badges.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
 import {
   projects, statsFor, statsDate, lineage, history, news, formatDate, fmtNum, CATEGORIES, METHOD_LABEL,
-  PROVENANCE_LABEL, TIER_LABEL, slugify, type Project,
+  PROVENANCE_LABEL, TIER_LABEL, slugify, hubFor, type Project,
 } from '../../lib/data';
 
 export function getStaticPaths() {
@@ -20,7 +20,9 @@ const parents = edges.filter((e) => e.slug === p.slug).flatMap((e) => e.parents.
 const children = edges.filter((e) => e.parents.includes(p.slug)).map((e) => ({ rel: e.relation, p: find(e.slug) })).filter((x) => x.p);
 const events = history().flatMap((era) => era.events).filter((e) => e.projects?.includes(p.slug));
 const items = news().filter((n) => n.projects?.includes(p.slug)).slice(0, 8);
-const related = all.filter((x) => x.slug !== p.slug && x.category === p.category && (x.originalPlatform === p.originalPlatform || x.tags.some((t) => p.tags.includes(t)))).slice(0, 6);
+const hub = hubFor(p);
+const sameGame = hub ? hub.list.filter((x) => x.slug !== p.slug) : [];
+const related = [...sameGame, ...all.filter((x) => x.slug !== p.slug && !sameGame.includes(x) && x.category === p.category && (x.originalPlatform === p.originalPlatform || x.tags.some((t) => p.tags.includes(t))))].slice(0, 6);
 const release = s?.release ?? p.latestRelease;
 const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
 const verb = p.method === 'static-recomp' ? 'recompiled' : p.method.includes('decomp') ? 'decompiled' : p.method === 'clean-room' ? 'rebuilt clean-room' : 'rebuilt';
@@ -37,6 +39,7 @@ const schema = {
     <h1>{p.name}</h1>
     <p class="lede">{p.summary}</p>
     <Badges p={p} full />
+    {hub && <p class="hub-link"><a href={`/game/${hub.slug}/`}>All {hub.list.length} {hub.name} projects compared →</a></p>}
 
     <div class="cta btns">
       {p.playable && (p.playable.launch === 'tab'
@@ -123,6 +126,7 @@ const schema = {
   </article>
 </Base>
 <style>
+  .hub-link { margin: 0.8rem 0 0; font-weight: 600; }
   .proj { padding-top: 2rem; }
   .proj h1 { margin-bottom: 0.6rem; }
   .cta { margin: 1.4rem 0; }

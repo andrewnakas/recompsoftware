@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import PageHead from '../components/PageHead.astro';
 import Catalog from '../components/Catalog.astro';
-import { CATEGORIES, projects, type Category } from '../lib/data';
+import { CATEGORIES, projects, gameHubs, type Category } from '../lib/data';
 
 export function getStaticPaths() {
   return CATEGORIES.map((c) => ({ params: { cat: c.id } }));
@@ -19,6 +19,8 @@ const titles: Record<Category, string> = {
 };
 ---
 <Base title={titles[id]} description={`${c.blurb} ${list.length} projects tracked, with live GitHub activity and provenance labels.`}>
-  <PageHead kicker={c.label} title={titles[id]} lede={c.blurb} />
+  <PageHead kicker={c.label} title={titles[id]} lede={c.blurb}>
+    {id === 'games' && <p class="meta">Popular: {gameHubs().slice(0, 8).map((h, i) => <>{i > 0 && ' · '}<a href={`/game/${h.slug}/`}>{h.name}</a></>)} · <a href="/game/">all {gameHubs().length} games compared →</a></p>}
+  </PageHead>
   <section class="wrap"><Catalog list={list} /></section>
 </Base>

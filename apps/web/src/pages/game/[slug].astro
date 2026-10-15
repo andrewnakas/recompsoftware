@@ -1,0 +1,57 @@
+---
+// One page per original game: every decomp, recomp, port and clean-room build of the same title, compared.
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import { gameHubs, statsFor, fmtNum, formatDate, METHOD_LABEL, PROVENANCE_LABEL, slugify, type Project } from '../../lib/data';
+
+export function getStaticPaths() {
+  return gameHubs().map((h) => ({ params: { slug: h.slug }, props: { h } }));
+}
+const { h } = Astro.props as { h: ReturnType<typeof gameHubs>[number] };
+const stars = (p: Project) => statsFor(p)?.stars ?? 0;
+const list = [...h.list].sort((a, b) => Number(!!b.playable) - Number(!!a.playable) || stars(b) - stars(a));
+const n = (f: (p: Project) => boolean) => list.filter(f).length;
+const decomps = n((p) => p.method.includes('decomp'));
+const recomps = n((p) => p.method === 'static-recomp');
+const ports = list.length - decomps - recomps;
+const pc = list.filter((p) => (p.status === 'released' || p.status === 'complete') && p.targets.some((t) => /windows|linux|mac/i.test(t)) && p.method !== 'matching-decomp');
+const web = list.filter((p) => p.playable);
+const join = (xs: string[]) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs.at(-1)}`);
+const pcAnswer = pc.length
+  ? `Yes. ${join(pc.slice(0, 4).map((p) => p.name))} ${pc.length === 1 ? 'runs' : 'run'} natively on PC${pc.some((p) => p.needsOriginal) ? ', using data from your own copy of the original game' : ''}.`
+  : `Not as a finished native port yet. ${list.length} community projects are working on ${h.name}; the table below shows how far each has got.`;
+const legal = list.some((p) => p.needsOriginal)
+  ? `These projects publish code only. Where a build needs game data, you supply it from a copy of ${h.name} you own; Recomp never links to game files.`
+  : `These projects do not need files from the original game.`;
+const playHere = web.length ? ` You can also play ${web[0].name} in your browser on Recomp.` : '';
+const faq = [
+  { q: `Can I play ${h.name} on PC?`, a: pcAnswer + playHere },
+  { q: `Is there a ${h.name} decompilation?`, a: decomps ? `Yes: ${join(list.filter((p) => p.method.includes('decomp')).map((p) => p.name))}.` : `Not one Recomp tracks yet. The projects here are ${recomps ? 'recompilations' : 'ports'} and rewrites.` },
+  { q: `Is it legal?`, a: legal },
+];
+const title = `${h.name} decomp, recomp & PC ports`;
+const description = `Every ${h.name} decompilation, static recompilation and port compared: ${list.length} projects, their status, AI provenance, platforms and live GitHub activity.`;
+const schema = { '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
+---
+<Base title={title} description={description} schema={schema}>
+  <PageHead crumbs={[{ href: '/games/', label: 'Games' }, { href: '/game/', label: 'By game' }, { href: `/platforms/${slugify(h.platform)}/`, label: h.platform }]} title={title}
+    lede={`${list.length} community projects rebuild ${h.name}${h.year ? ` (${h.platform}, ${h.year})` : ''}: ${decomps} decompilation${decomps === 1 ? '' : 's'}, ${recomps} static recompilation${recomps === 1 ? '' : 's'} and ${ports} port${ports === 1 ? '' : 's'}, rewrite${ports === 1 ? '' : 's'} or clean-room build${ports === 1 ? '' : 's'}.`}>
+    {web.length > 0 && <p class="btns"><a class="btn primary" href={web[0].playable!.launch === 'tab' ? web[0].playable!.url : `/play/${web[0].slug}/`} data-track="play_click" data-item={web[0].slug}>▶ Play {web[0].name} in your browser</a></p>}
+  </PageHead>
+  <section class="wrap">
+    <div class="table-wrap"><table>
+      <thead><tr><th>Project</th><th>Type</th><th>Status</th><th>Runs on</th><th>Needs the game</th><th>Made</th><th>Latest</th><th>Stars</th></tr></thead>
+      <tbody>{list.map((p) => { const s = statsFor(p); const r = s?.release ?? p.latestRelease; return (
+        <tr><td><a href={`/p/${p.slug}/`}>{p.name}</a>{p.playable && <span class="chip accent"> playable</span>}</td><td>{METHOD_LABEL[p.method]}</td><td>{p.status}{p.progress != null && ` ${p.progress}%`}</td><td>{p.targets.join(', ') || '—'}</td><td>{p.needsOriginal ? 'Yes' : 'No'}</td><td>{PROVENANCE_LABEL[p.provenance]}</td><td>{r ? <>{r.version}{r.date && <><br /><span class="meta">{formatDate(r.date.slice(0, 10))}</span></>}</> : '—'}</td><td>{s ? fmtNum(s.stars) : '—'}</td></tr>
+      ); })}</tbody>
+    </table></div>
+  </section>
+  <section class="wrap section faq">
+    {faq.map((f) => <><h2>{f.q}</h2><p>{f.a}</p></>)}
+    <p class="meta">Spotted a missing project? <a href="https://github.com/andrewnakas/recompsoftware/issues/new?template=submit.yml" rel="noopener">Submit it</a>.</p>
+  </section>
+</Base>
+<style>
+  .faq { max-width: 75ch; }
+  .faq h2 { font-size: 1.15rem; margin: 1.4rem 0 0.3rem; }
+</style>

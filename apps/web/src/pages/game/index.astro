@@ -1,0 +1,17 @@
+---
+// Index of games with more than one decomp / recomp / port.
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import { gameHubs } from '../../lib/data';
+const hubs = gameHubs();
+---
+<Base title="Games with decomps, recomps & PC ports, by game" description={`${hubs.length} games with more than one community decompilation, recompilation or port, each compared on one page.`}>
+  <PageHead crumbs={[{ href: '/games/', label: 'Games' }]} title="By game" lede={`${hubs.length} games have more than one community project. Each page compares them: which ones are finished, what they run on and whether you need the original.`} />
+  <section class="wrap">
+    <ul class="hubs">{hubs.map((h) => <li><a href={`/game/${h.slug}/`}>{h.name}</a> <span class="meta">{h.platform}{h.year && ` · ${h.year}`} · {h.list.length} projects</span></li>)}</ul>
+  </section>
+</Base>
+<style>
+  .hubs { list-style: none; padding: 0; margin: 0; columns: 2 22rem; column-gap: 2rem; }
+  .hubs li { break-inside: avoid; border-bottom: 1px solid var(--line); padding: 0.45rem 0; }
+</style>
