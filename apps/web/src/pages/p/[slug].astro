@@ -24,6 +24,8 @@ const hub = hubFor(p);
 const sameGame = hub ? hub.list.filter((x) => x.slug !== p.slug) : [];
 const related = [...sameGame, ...all.filter((x) => x.slug !== p.slug && !sameGame.includes(x) && x.category === p.category && (x.originalPlatform === p.originalPlatform || x.tags.some((t) => p.tags.includes(t))))].slice(0, 6);
 const release = s?.release ?? p.latestRelease;
+// Search visitors mostly want the build: link the latest GitHub release directly.
+const dl = release && p.repo && /github\.com\//.test(p.repo) ? `${p.repo.replace(/\/$/, '').replace(/\.git$/, '')}/releases/latest` : null;
 const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
 const verb = p.method === 'static-recomp' ? 'recompiled' : p.method.includes('decomp') ? 'decompiled' : p.method === 'clean-room' ? 'rebuilt clean-room' : 'rebuilt';
 const description = `${p.name}: ${p.summary} Status, ${PROVENANCE_LABEL[p.provenance].toLowerCase()} provenance, licence, latest release and live GitHub activity.`.slice(0, 300);
@@ -45,6 +47,7 @@ const schema = {
       {p.playable && (p.playable.launch === 'tab'
         ? <a class="btn primary" href={p.playable.url} target="_blank" rel="noopener" data-track="play_click" data-item={p.slug}>▶ Play in browser</a>
         : <a class="btn primary" href={`/play/${p.slug}/`} data-track="play_click" data-item={p.slug}>▶ Play in browser</a>)}
+      {dl && <a class={`btn${p.playable ? '' : ' primary'}`} href={dl} rel="noopener" data-track="download_click" data-item={p.slug}>⬇ Download {release!.version}</a>}
       {p.repo && <a class="btn" href={p.repo} rel="noopener" data-track="repo_click" data-item={p.slug}>Source code</a>}
       {p.website && <a class="btn" href={p.website} rel="noopener">Website</a>}
       {p.discord && <a class="btn" href={p.discord} rel="noopener">Discord</a>}
