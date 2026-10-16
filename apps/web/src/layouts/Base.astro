@@ -49,7 +49,8 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
     {schema && <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', ...schema })} />}
     <script is:inline>let t = null; try { t = localStorage.getItem('theme'); } catch {} document.documentElement.dataset.theme = t || 'dark'; // dark by default; the toggle stores a light choice</script>
     {GA && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA}`}></script>}
-    {GA && <script is:inline define:vars={{ GA }}>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', GA);</script>}
+    {/* define:vars wraps the script in a function, so gtag goes on window for the click tracker below */}
+    {GA && <script is:inline define:vars={{ GA }}>window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer.push(arguments); }; gtag('js', new Date()); gtag('config', GA);</script>}
   </head>
   <body>
     <a class="skip visually-hidden" href="#main">Skip to content</a>

@@ -1,17 +1,61 @@
 ---
+// One list page per original platform ("N64 decomps & recomps"), grouped by how each project was made.
 import Base from '../../layouts/Base.astro';
 import PageHead from '../../components/PageHead.astro';
-import Catalog from '../../components/Catalog.astro';
-import { platforms, projects, type Project } from '../../lib/data';
+import ListTable from '../../components/ListTable.astro';
+import { platforms, projects, statsFor, statsDate, gameHubs, shortName, CATEGORIES, type Project } from '../../lib/data';
 export function getStaticPaths() {
   const all = projects();
   return platforms().map((p) => ({ params: { slug: p.slug }, props: { name: p.name, list: all.filter((x) => x.originalPlatform === p.name) } }));
 }
 const { name, list } = Astro.props as { name: string; list: Project[] };
-const recomps = list.filter((p) => p.method === 'static-recomp').length;
-const decomps = list.filter((p) => p.method.includes('decomp')).length;
+const short = shortName(name);
+const year = new Date().getFullYear();
+const byStars = (a: Project, b: Project) => (statsFor(b)?.stars ?? 0) - (statsFor(a)?.stars ?? 0);
+const games = list.filter((p) => p.category === 'games');
+const recomps = games.filter((p) => p.method === 'static-recomp');
+const decomps = games.filter((p) => p.method.includes('decomp'));
+const ports = games.filter((p) => !recomps.includes(p) && !decomps.includes(p));
+const groups = [
+  { pl: 'Static recompilations', items: recomps },
+  { pl: 'Decompilations', items: decomps },
+  { pl: 'Ports, rewrites & clean-room builds', items: ports },
+  ...CATEGORIES.filter((c) => c.id !== 'games').map((c) => ({ pl: c.label, items: list.filter((p) => p.category === c.id) })),
+].filter((g) => g.items.length).map((g) => ({ ...g, items: [...g.items].sort(byStars) }));
+const pc = games.filter((p) => (p.status === 'released' || p.status === 'complete') && p.targets.some((t) => /windows|linux|mac/i.test(t)) && p.method !== 'matching-decomp').sort(byStars);
+const playable = list.filter((p) => p.playable);
+const hubs = gameHubs().filter((h) => h.platform === name).slice(0, 12);
+const gamey = games.length >= list.length / 2;
+const join = (xs: string[]) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs.at(-1)}`);
+const title = gamey ? `${short} decomps, recomps & PC ports: full list (${year})` : `${name} decomps, recomps & reimplementations (${year})`;
+const description = `All ${list.length} ${name} projects Recomp tracks: ${recomps.length} static recompilations, ${decomps.length} decompilations and ${ports.length} ports and clean-room builds${gamey ? '' : ', plus software and tools'}, ranked by GitHub stars and updated daily.`;
+const faq = gamey ? [
+  { q: `Can I play ${short} games natively on PC?`, a: pc.length ? `Yes, for ${pc.length} game${pc.length === 1 ? '' : 's'} so far, including ${join(pc.slice(0, 5).map((p) => p.name))}. Most need data from your own copy of the original game.` : `Not as finished native ports yet; the ${games.length} projects below show how far each has got.` },
+  { q: `What is the difference between a ${short} decomp and a recomp?`, a: `A decompilation rewrites the game's machine code as readable C that rebuilds the original; a static recompilation translates the machine code mechanically into C/C++ that runs natively. Recomps arrive faster; decomps are easier to mod and port.` },
+  { q: `Are these ${short} projects legal?`, a: `They publish code only, and the ones that need game data ask you to supply it from a copy you own. Recomp never links to ROMs, ISOs or game files.` },
+] : [];
+const schema = faq.length ? { '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) } : undefined;
 ---
-<Base title={`${name} decomps, recomps & ports`} description={`Every ${name} decompilation (${decomps}), static recompilation (${recomps}) and clean-room project Recomp tracks, with live GitHub activity.`}>
-  <PageHead crumbs={[{ href: '/platforms/', label: 'Platforms' }]} title={`${name}`} lede={`${list.length} projects: ${decomps} decompilations, ${recomps} static recompilations, and the rest ports, rewrites and clean-room builds.`} />
-  <section class="wrap"><Catalog list={list} showCategory /></section>
+<Base title={title} description={description} schema={schema}>
+  <PageHead crumbs={[{ href: '/platforms/', label: 'Platforms' }]} title={`${name} decomps & recomps`}
+    lede={`${list.length} community projects rebuild ${name} software: ${recomps.length} static recompilation${recomps.length === 1 ? '' : 's'}, ${decomps.length} decompilation${decomps.length === 1 ? '' : 's'} and ${ports.length} port${ports.length === 1 ? '' : 's'}, rewrites and clean-room builds${list.length > games.length ? `, plus ${list.length - games.length} apps, tools and preservation projects` : ''}. Most-starred first; GitHub data as of ${statsDate() ?? 'the next refresh'}.`}>
+    <p class="btns">
+      {playable.length > 0 && <a class="btn primary" href="/play/">▶ {playable.length} playable in your browser</a>}
+      <a class="btn" href="/what-is-a-recomp/">Decomp vs recomp</a>
+    </p>
+  </PageHead>
+  <section class="wrap">
+    {hubs.length > 0 && <p class="hubs"><span class="meta">Compare by game:</span> {hubs.map((h) => <a href={`/game/${h.slug}/`}>{h.name} <span class="meta">{h.list.length}</span></a>)}</p>}
+    <ListTable list={list} groups={groups} />
+  </section>
+  {faq.length > 0 && (
+    <section class="wrap section faq">
+      {faq.map((f) => <><h2>{f.q}</h2><p>{f.a}</p></>)}
+    </section>
+  )}
 </Base>
+<style>
+  .hubs { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; margin: 0 0 1.4rem; }
+  .faq { max-width: 75ch; }
+  .faq h2 { font-size: 1.15rem; margin: 1.4rem 0 0.3rem; }
+</style>

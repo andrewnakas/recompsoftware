@@ -1,0 +1,28 @@
+---
+// Tiles linking the per-console list pages, busiest consoles first (games only; PC platforms excluded).
+import { platforms, shortName } from '../lib/data';
+interface Props { limit?: number }
+const { limit = 12 } = Astro.props;
+const list = platforms()
+  .map((p) => ({ ...p, games: p.list.filter((x) => x.category === 'games') }))
+  .filter((p) => p.games.length >= 3 && !/^(Windows|MS-DOS|Multi|PC|Linux|Web|Android)/.test(p.name))
+  .sort((a, b) => b.games.length - a.games.length)
+  .slice(0, limit);
+const n = (p: (typeof list)[number], f: (m: string) => boolean) => p.games.filter((x) => f(x.method)).length;
+---
+<div class="consoles">
+  {list.map((p) => (
+    <a class="con" href={`/platforms/${p.slug}/`}>
+      <span class="s">{shortName(p.name)}</span>
+      <span class="c meta">{n(p, (m) => m === 'static-recomp')} recomps · {n(p, (m) => m.includes('decomp'))} decomps</span>
+    </a>
+  ))}
+</div>
+<style>
+  .consoles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.6rem; }
+  .con { display: grid; gap: 0.15rem; padding: 0.7rem 0.8rem; border: 1px solid var(--line); border-radius: 6px; color: inherit; text-decoration: none; transition: border-color 0.15s; }
+  .con:hover { border-color: var(--accent); }
+  .con:hover .s { color: var(--accent); }
+  .s { font: 700 1.15rem/1.2 var(--font-display); }
+  .c { font-size: 0.75rem; }
+</style>

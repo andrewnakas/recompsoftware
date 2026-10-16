@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import ConsoleStrip from '../components/ConsoleStrip.astro';
 import { projects, CATEGORIES, heat, statsFor, statsDate, news, history, formatDate, TIER_LABEL } from '../lib/data';
 
 const all = projects();
@@ -31,6 +32,11 @@ const playCount = all.filter((p) => p.playable).length;
         <a class="sec" href={`/${c.id}/`}><span class="n">{count(c.id)}</span><span class="l">{c.label}</span><span class="b">{c.blurb}</span></a>
       ))}
     </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="rule-head"><h2>By console</h2><a href="/platforms/">All platforms →</a></div>
+    <ConsoleStrip />
   </section>
 
   {hot.length > 0 && (

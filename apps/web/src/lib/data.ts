@@ -85,6 +85,14 @@ export const platforms = () => {
   return [...m.entries()].map(([name, list]) => ({ name, slug: slugify(name), list })).sort((a, b) => b.list.length - a.list.length);
 };
 
+/** The short name people search with ("N64 recomp", "PS2 decomp"). */
+export const PLATFORM_SHORT: Record<string, string> = {
+  'Nintendo 64': 'N64', PlayStation: 'PS1', 'PlayStation 2': 'PS2', 'PlayStation 3': 'PS3', 'PlayStation 4': 'PS4',
+  'PlayStation Portable': 'PSP', 'Game Boy Advance': 'GBA', 'Game Boy Color': 'GBC', 'Nintendo DS': 'DS', 'Nintendo 3DS': '3DS',
+  'Nintendo Switch': 'Switch', 'MS-DOS': 'DOS',
+};
+export const shortName = (platform: string) => PLATFORM_SHORT[platform] ?? platform;
+
 /** One page per original game with 2+ projects (decomp + recomp + ports of the same title). */
 export const gameKey = (subject: string) => slugify(subject.replace(/\s*\([^)]*\)/g, '').replace(/[’']/g, ''));
 let hubCache: { slug: string; name: string; list: Project[]; platform: string; year: number | null }[] | null = null;

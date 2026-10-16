@@ -1,5 +1,43 @@
 [
   {
+    "date": "2026-10-15",
+    "kind": "release",
+    "title": "Halo 64 runs Halo: Combat Evolved multiplayer on a Nintendo 64",
+    "body": "Halo's decompiled game code from OpenCE, compiled for the N64 with a new renderer on libdragon and tiny3d: four-player split screen, bots and a Firefight mode on Expansion Pak hardware. The maps are converted from your own Xbox copy; v0.2.0 must be built from source.",
+    "source": "https://github.com/JackTulli/halo-64",
+    "projects": [
+      "halo-64",
+      "opence"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "kind": "industry",
+    "title": "r/emulation stops accepting posts about individual recomp ports",
+    "body": "The subreddit's moderators now remove release posts for single static-recompilation ports and point them to r/recomps; posts about new recompilation libraries and major developments are still welcome. Projects written mostly by AI must carry an \"AI-assisted\" flair.",
+    "source": "https://www.reddit.com/r/emulation/comments/1x6rvvz/rule_changes_static_recompilationbased_ports/",
+    "projects": []
+  },
+  {
+    "date": "2026-10-15",
+    "kind": "industry",
+    "title": "decomp.dev is sunsetting its public index",
+    "body": "The progress tracker's maintainer has turned off the main index and new project sign-ups; existing project pages and history stay up. The post cites AI-driven abuse: forks \"finished\" by AI without meaningful work, rushed ports built on other teams' decompilations, and a leaderboard that had become a numbers game.",
+    "source": "https://decomp.dev/",
+    "projects": []
+  },
+  {
+    "date": "2026-10-16",
+    "kind": "release",
+    "title": "Let's Go Recomp brings Pokémon: Let's Go, Eevee! to Windows as a native port",
+    "body": "A static recompilation of the Switch game's v1.0.0 code, built on the LAS Recomp runtime that was made for Link's Awakening. It renders up to 4K with SMAA, keeps the original 30 fps, supports mouse and controllers and ships no game files: you supply your own extracted copy.",
+    "source": "https://github.com/raulzrrs/letsgo-recomp",
+    "projects": [
+      "letsgo-recomp",
+      "las-recomp"
+    ]
+  },
+  {
     "date": "2026-10-13",
     "kind": "industry",
     "title": "Microsoft forms Xbox Labs to explore decompilation, recompilation and AI-assisted ports",

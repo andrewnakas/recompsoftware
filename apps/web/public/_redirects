@@ -1,0 +1,27 @@
+# Platform names merged 2026-10-15 (scripts/normalize-platforms.mjs)
+/platforms/super-nintendo/ /platforms/snes/ 301
+/platforms/super-nintendo /platforms/snes/ 301
+/platforms/super-famicom/ /platforms/snes/ 301
+/platforms/super-famicom /platforms/snes/ 301
+/platforms/sega-genesis/ /platforms/mega-drive-genesis/ 301
+/platforms/sega-genesis /platforms/mega-drive-genesis/ 301
+/platforms/mega-drive/ /platforms/mega-drive-genesis/ 301
+/platforms/mega-drive /platforms/mega-drive-genesis/ 301
+/platforms/nintendo-gamecube/ /platforms/gamecube/ 301
+/platforms/nintendo-gamecube /platforms/gamecube/ 301
+/platforms/nintendo-entertainment-system/ /platforms/nes/ 301
+/platforms/nintendo-entertainment-system /platforms/nes/ 301
+/platforms/sega-dreamcast/ /platforms/dreamcast/ 301
+/platforms/sega-dreamcast /platforms/dreamcast/ 301
+/platforms/macintosh/ /platforms/classic-mac-os/ 301
+/platforms/macintosh /platforms/classic-mac-os/ 301
+/platforms/mac-os/ /platforms/classic-mac-os/ 301
+/platforms/mac-os /platforms/classic-mac-os/ 301
+/platforms/mac-os-classic/ /platforms/classic-mac-os/ 301
+/platforms/mac-os-classic /platforms/classic-mac-os/ 301
+/platforms/j2me-nokia-s40/ /platforms/j2me-phones/ 301
+/platforms/j2me-nokia-s40 /platforms/j2me-phones/ 301
+/platforms/windows-mac-os/ /platforms/windows-macos/ 301
+/platforms/windows-mac-os /platforms/windows-macos/ 301
+/platforms/windows-mac/ /platforms/windows-macos/ 301
+/platforms/windows-mac /platforms/windows-macos/ 301

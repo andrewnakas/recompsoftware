@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import PageHead from '../components/PageHead.astro';
 import ListTable from '../components/ListTable.astro';
+import ConsoleStrip from '../components/ConsoleStrip.astro';
 import { projects, statsDate } from '../lib/data';
 const list = projects().filter((p) => p.category === 'games' && (p.method === 'static-recomp' || p.tags.includes('recomp')));
 const year = new Date().getFullYear();
@@ -11,4 +12,5 @@ const year = new Date().getFullYear();
     <p><a href="/what-is-a-recomp/">What is a recomp, and how is it different from a decomp?</a></p>
   </PageHead>
   <section class="wrap"><ListTable list={list} /></section>
+  <section class="wrap section"><h2>Full lists by console</h2><p class="meta">Every decomp, recomp and port for each console, ranked by stars.</p><ConsoleStrip limit={18} /></section>
 </Base>

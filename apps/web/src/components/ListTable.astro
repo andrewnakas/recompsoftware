@@ -1,9 +1,10 @@
 ---
 // SEO list page body: one table per original platform.
 import { statsFor, fmtNum, PROVENANCE_LABEL, formatDate, type Project } from '../lib/data';
-interface Props { list: Project[] }
+// Grouped by original platform unless the page passes its own groups (e.g. by method on a platform page).
+interface Props { list: Project[]; groups?: { pl: string; items: Project[] }[] }
 const { list } = Astro.props;
-const groups = [...new Set(list.map((p) => p.originalPlatform))]
+const groups = Astro.props.groups ?? [...new Set(list.map((p) => p.originalPlatform))]
   .map((pl) => ({ pl, items: list.filter((p) => p.originalPlatform === pl).sort((a, b) => (a.originalYear ?? 0) - (b.originalYear ?? 0)) }))
   .sort((a, b) => b.items.length - a.items.length);
 ---

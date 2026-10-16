@@ -18,7 +18,7 @@
     "topic:game-preservation",
     "topic:server-emulator"
   ],
-  "reddit": ["emulation", "N64", "REGames", "ReverseEngineering", "decompilation", "SBCGaming", "retrogaming", "linux_gaming", "SteamDeck", "programming", "rust", "opensource", "gamedev"],
+  "reddit": ["recomps", "emulation", "N64", "REGames", "ReverseEngineering", "decompilation", "SBCGaming", "retrogaming", "linux_gaming", "SteamDeck", "programming", "rust", "opensource", "gamedev"],
   "rss": [
     { "name": "Time Extension", "url": "https://www.timeextension.com/feeds/latest" },
     { "name": "Retro Dodo", "url": "https://retrododo.com/feed/" },

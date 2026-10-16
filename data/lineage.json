@@ -227,5 +227,19 @@
       "ghidra"
     ],
     "relation": "built-on"
+  },
+  {
+    "slug": "letsgo-recomp",
+    "parents": [
+      "las-recomp"
+    ],
+    "relation": "built-on"
+  },
+  {
+    "slug": "halo-64",
+    "parents": [
+      "opence"
+    ],
+    "relation": "built-on"
   }
 ]
