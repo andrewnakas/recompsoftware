@@ -7482,53 +7482,6 @@
     "checked": "2026-10-13"
   },
   {
-    "slug": "skate3-cleanroom",
-    "name": "Skate 3 (clean room)",
-    "category": "games",
-    "subject": "Skate 3",
-    "originalPlatform": "Xbox 360",
-    "originalYear": 2010,
-    "method": "clean-room",
-    "status": "wip",
-    "progress": null,
-    "progressSource": null,
-    "provenance": "ai-assisted",
-    "provenanceNote": "Built by the site owner with AI coding agents; assets regenerated, no retail data",
-    "licence": "none",
-    "repo": "https://github.com/andrewnakas/skate3-cleanroom",
-    "website": "https://decompgames.com/games/skate-3/",
-    "discord": null,
-    "subreddit": null,
-    "team": [
-      "andrewnakas"
-    ],
-    "started": "2026-09",
-    "firstRelease": null,
-    "latestRelease": null,
-    "targets": [
-      "Web"
-    ],
-    "needsOriginal": false,
-    "playable": {
-      "tier": "cleanroom",
-      "url": "https://andrewnakas.github.io/skate3-cleanroom/",
-      "launch": "frame",
-      "note": "ROM-free: assets regenerated, taint scan 0"
-    },
-    "summary": "Skate 3 on a from-scratch Rust and Bevy engine running in WebGPU, with seven parks rebuilt from regenerated textures, sounds and meshes, two original maps and online rooms for up to ten players.",
-    "tags": [
-      "xbox360",
-      "cleanroom",
-      "browser"
-    ],
-    "sources": [
-      "https://github.com/andrewnakas/skate3-cleanroom",
-      "https://andrewnakas.github.io/skate3-cleanroom/",
-      "https://decompgames.com/games/skate-3/"
-    ],
-    "checked": "2026-10-13"
-  },
-  {
     "progress": null,
     "progressSource": null,
     "provenanceNote": null,
