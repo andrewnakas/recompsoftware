@@ -39,3 +39,12 @@ Owner's own logged-in Chrome, read-only, human pace, only when a sweep is starte
   - Provenance rule: CLAUDE.md/AGENTS.md or a README statement → ai-assisted; "almost entirely AI" → ai-generated; repo created before 2023 → human-led; explicit no-AI policy → human-led; otherwise unknown.
   - The 10+ star round-2 pool (`.cache/harvest-r2.json`) is unreviewed. Next growth: run the same pipeline on it.
 - 2026-10-15: GA4 = property "RecompSoftware" (account ChessGPT, a410684060p558977824). Week 1: 121 sessions, ~50% Google organic, top landings /, /recompiled-games-list, /p/ps2-web-recomp. Shipped: Download button (download_click), console list pages on /platforms/<slug>/ (normalize-platforms.mjs + _redirects), ConsoleStrip, news sweep (decomp.dev sunset, r/emulation recomp rule), +letsgo-recomp, +halo-64, r/recomps in feeds. Fixed: gtag was not global, so no custom click event had ever reached GA. Open: mark play_click/download_click as key events once they appear in GA; owner merges decompgames#4 + aimashups#16 (footer links).
+
+## 2026-10-17/18: "make it amazing" pass (deployed, commit 42fc72c)
+- Covers: scripts/fetch-media.mjs → data/media.json + public/thumbs (899 of ~2,218 repos; CI refreshes Mondays). Cover.astro falls back to platform-hued tiles.
+- Home hero mosaic + "Just shipped" ticker; project page header image + sparkline; trending growth from data/stats snapshots (works before 7 days exist).
+- Lineage: scripts/derive-lineage.mjs → data/lineage-derived.json (run by hand after harvests); force-laid SVG graph.
+- Catalogue 1,574 → 2,232; news 8 → 33; /submit/ + issue templates (submit-project, correction).
+- OG cards now JPEG with the project picture.
+- Open calls for owner: win7-dwm-decomp (MS source sensitivity), live-service server emulators (runuo etc.), umk3-ios-decomp ai-generated vs ai-assisted, twisted-metal/driveclub provenance unknown.
+- Build is now ~2,580 pages / ~7 min; run it detached (RAM pressure killed one run).
