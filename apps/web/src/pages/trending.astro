@@ -2,10 +2,12 @@
 import Base from '../layouts/Base.astro';
 import PageHead from '../components/PageHead.astro';
 import Badges from '../components/Badges.astro';
-import { projects, heat, statsFor, statsDate, fmtNum, formatDate } from '../lib/data';
-const ranked = projects().map((p) => ({ p, s: statsFor(p), h: heat(p) })).filter((x) => x.s).sort((a, b) => b.h - a.h);
+import Cover from '../components/Cover.astro';
+import Spark from '../components/Spark.astro';
+import { projects, heat, statsFor, statsDate, fmtNum, formatDate, growth, growthLabel } from '../lib/data';
+const ranked = projects().map((p) => ({ p, s: statsFor(p), h: heat(p), g: growth(p) })).filter((x) => x.s).sort((a, b) => b.h - a.h);
 const top = ranked.slice(0, 50);
-const fastest = ranked.filter((x) => x.s!.starsWeek != null).sort((a, b) => (b.s!.starsWeek ?? 0) - (a.s!.starsWeek ?? 0)).slice(0, 10);
+const fastest = ranked.filter((x) => (x.g?.delta ?? 0) > 0).sort((a, b) => b.g!.delta - a.g!.delta).slice(0, 10);
 const busiest = [...ranked].sort((a, b) => (b.s!.commits30 ?? 0) - (a.s!.commits30 ?? 0)).slice(0, 10);
 ---
 <Base title="Trending decomp & recomp projects" description="Which decompilation, recompilation and clean-room projects are moving right now: star growth, commit activity and new releases, refreshed daily from GitHub.">
@@ -13,16 +15,16 @@ const busiest = [...ranked].sort((a, b) => (b.s!.commits30 ?? 0) - (a.s!.commits
   <section class="wrap two">
     <div><div class="rule-head"><h2>Fastest-growing</h2></div>
       {fastest.length === 0 && <p class="meta">Star growth appears once a week of daily snapshots has built up.</p>}
-      <ol class="mini">{fastest.map(({ p, s }) => <li><a href={`/p/${p.slug}/`}>{p.name}</a><span class="meta">+{s!.starsWeek ?? 0} ★ this week</span></li>)}</ol></div>
+      <ol class="mini fast">{fastest.map(({ p, g }) => <li><a class="fl" href={`/p/${p.slug}/`}><span class="th"><Cover p={p} /></span><span>{p.name}<br /><span class="meta">{growthLabel(g!)}</span></span></a><Spark p={p} w={96} h={28} /></li>)}</ol></div>
     <div><div class="rule-head"><h2>Most active</h2></div>
       <ol class="mini">{busiest.map(({ p, s }) => <li><a href={`/p/${p.slug}/`}>{p.name}</a><span class="meta">{s!.commits30 ?? 0} commits / 30 d</span></li>)}</ol></div>
   </section>
   <section class="section wrap">
     <div class="rule-head"><h2>The board</h2></div>
     <div class="table-wrap"><table>
-      <thead><tr><th>#</th><th>Project</th><th>Stars</th><th>7 d</th><th>30 d</th><th>Commits 30 d</th><th>Latest release</th></tr></thead>
-      <tbody>{top.map(({ p, s }, i) => (
-        <tr><td class="meta">{i + 1}</td><td><a href={`/p/${p.slug}/`}>{p.name}</a><br /><Badges p={p} /></td><td>{fmtNum(s!.stars)}</td><td>{s!.starsWeek != null ? `+${s!.starsWeek}` : '—'}</td><td>{s!.starsMonth != null ? `+${s!.starsMonth}` : '—'}</td><td>{s!.commits30 ?? '—'}</td><td>{s!.release ? <>{s!.release.version}<br /><span class="meta">{formatDate(s!.release.date.slice(0, 10))}</span></> : '—'}</td></tr>
+      <thead><tr><th>#</th><th>Project</th><th>Stars</th><th>Growth</th><th>Trend</th><th>30 d</th><th>Commits 30 d</th><th>Latest release</th></tr></thead>
+      <tbody>{top.map(({ p, s, g }, i) => (
+        <tr><td class="meta">{i + 1}</td><td><a href={`/p/${p.slug}/`}>{p.name}</a><br /><Badges p={p} /></td><td>{fmtNum(s!.stars)}</td><td>{g ? growthLabel(g).replace(' ★', '') : '—'}</td><td><Spark p={p} w={90} h={24} /></td><td>{s!.starsMonth != null ? `+${s!.starsMonth}` : '—'}</td><td>{s!.commits30 ?? '—'}</td><td>{s!.release ? <>{s!.release.version}<br /><span class="meta">{formatDate(s!.release.date.slice(0, 10))}</span></> : '—'}</td></tr>
       ))}</tbody>
     </table></div>
   </section>
@@ -33,4 +35,10 @@ const busiest = [...ranked].sort((a, b) => (b.s!.commits30 ?? 0) - (a.s!.commits
   .mini { padding-left: 1.4rem; margin: 0; }
   .mini li { padding: 0.35rem 0; border-bottom: 1px solid var(--line); }
   .mini li { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .fast li { align-items: center; }
+  .fl { display: flex; min-width: 0; align-items: center; gap: 0.7rem; text-decoration: none; }
+  .fl:hover { text-decoration: underline; }
+  .th { display: block; width: 72px; flex: none; }
+  .th :global(.cover) { border-radius: 4px; }
+  .th :global(.gp) { font-size: 0.9rem !important; } .th :global(.gs) { display: none; } .th :global(.gen) { padding: 0.3rem 0.4rem; }
 </style>

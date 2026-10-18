@@ -5497,5 +5497,3374 @@
       "https://github.com/kadrim/Syndicate2012PSE/releases"
     ],
     "checked": "2026-10-14"
+  },
+  {
+    "slug": "spikewall",
+    "name": "spikewall",
+    "category": "preservation",
+    "subject": "Sonic Runners",
+    "originalPlatform": "iOS / Android",
+    "originalYear": 2015,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "LGPL-2.1",
+    "repo": "https://github.com/Ramen2X/spikewall",
+    "website": "https://sonicrunners.com",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Ramen2X"
+    ],
+    "started": "2022-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "ASP.NET server for the defunct 2015 mobile game Sonic Runners that aims to match the original server closely; used by the Sonic Runners Revival project.",
+    "tags": [
+      "sonic",
+      "server-emulator",
+      "mobile"
+    ],
+    "sources": [
+      "https://github.com/Ramen2X/spikewall"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "arclight-soulworker",
+    "name": "Arclight",
+    "category": "preservation",
+    "subject": "SoulWorker",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/Rawaho/Arclight",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Rawaho"
+    ],
+    "started": "2018-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Server emulator for the action MMORPG SoulWorker targeting the Korean client.",
+    "tags": [
+      "soulworker",
+      "server-emulator",
+      "mmorpg"
+    ],
+    "sources": [
+      "https://github.com/Rawaho/Arclight"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "relentlesszero",
+    "name": "RelentlessZero",
+    "category": "preservation",
+    "subject": "Scrolls",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 2014,
+    "method": "clean-room",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2014, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Rawaho/RelentlessZero",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Rawaho"
+    ],
+    "started": "2014-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Archived server emulator for Mojang's card game Scrolls, supporting the 1.4.x client.",
+    "tags": [
+      "scrolls",
+      "mojang",
+      "server-emulator"
+    ],
+    "sources": [
+      "https://github.com/Rawaho/RelentlessZero"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "girl-alone-revival",
+    "name": "girl-alone-revival",
+    "category": "preservation",
+    "subject": "Girl Alone",
+    "originalPlatform": "Android",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/timschneeb/girl-alone-revival",
+    "website": "https://ga.0001002.xyz",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "timschneeb"
+    ],
+    "started": "2024-11",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.0.0",
+      "date": "2024-11-10"
+    },
+    "targets": [
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Client patches and a replacement server that let the discontinued always-online game Girl Alone run again on Android.",
+    "tags": [
+      "android",
+      "server-emulator",
+      "revival"
+    ],
+    "sources": [
+      "https://github.com/timschneeb/girl-alone-revival",
+      "https://github.com/timschneeb/girl-alone-revival/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "gemnet",
+    "name": "Gemnet",
+    "category": "preservation",
+    "subject": "Rumble Fighter / Gem Fighter",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/Primitheus/Gemnet",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Primitheus"
+    ],
+    "started": "2023-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Server emulator for Rumble Fighter (Gem Fighter) covering inventory, shops, lobbies, training and boss modes, with ProudNet P2P emulation.",
+    "tags": [
+      "rumble-fighter",
+      "server-emulator",
+      "mmo"
+    ],
+    "sources": [
+      "https://github.com/Primitheus/Gemnet"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "d3b-emu",
+    "name": "d3b-emu",
+    "category": "preservation",
+    "subject": "Diablo III Beta (0.3.0.7447)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/Crypto137/d3b-emu",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Crypto137"
+    ],
+    "started": "2023-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Server emulator for the Diablo III beta client 0.3.0.7447, based on 2011-era mooege with backported and new features on .NET 8.",
+    "tags": [
+      "diablo",
+      "server-emulator",
+      "beta"
+    ],
+    "sources": [
+      "https://github.com/Crypto137/d3b-emu"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "kakia-lime-odyssey-server",
+    "name": "Lime Odyssey Server Emulator",
+    "category": "preservation",
+    "subject": "Lime Odyssey (Korean CBT3)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Sziadan/kakia-lime-odyssey-server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Sziadan"
+    ],
+    "started": "2024-12",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "release-20251102-025001",
+      "date": "2025-11-02"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": ".NET private server emulator for the Korean closed-beta-3 client of the MMORPG Lime Odyssey.",
+    "tags": [
+      "lime-odyssey",
+      "server-emulator",
+      "mmorpg"
+    ],
+    "sources": [
+      "https://github.com/Sziadan/kakia-lime-odyssey-server",
+      "https://github.com/Sziadan/kakia-lime-odyssey-server/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "sabine",
+    "name": "Sabine",
+    "category": "preservation",
+    "subject": "Ragnarok Online (early versions)",
+    "originalPlatform": "Windows",
+    "originalYear": 2002,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/NoCode-NoLife/Sabine",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "NoCode-NoLife"
+    ],
+    "started": "2022-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Open-source server emulator for early versions of Ragnarok Online, aimed at preservation and learning.",
+    "tags": [
+      "ragnarok-online",
+      "server-emulator",
+      "mmorpg"
+    ],
+    "sources": [
+      "https://github.com/NoCode-NoLife/Sabine"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "uberstrok",
+    "name": "UberStrok",
+    "category": "preservation",
+    "subject": "UberStrike",
+    "originalPlatform": "Windows / Web",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/FICTURE7/uberstrok",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "FICTURE7"
+    ],
+    "started": "2018-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Archived server emulator for the shut-down FPS UberStrike, built on the Photon SDK.",
+    "tags": [
+      "uberstrike",
+      "server-emulator",
+      "fps"
+    ],
+    "sources": [
+      "https://github.com/FICTURE7/uberstrok"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "go-metin2-server",
+    "name": "go-metin2-server",
+    "category": "preservation",
+    "subject": "Metin2 servers (TMP4-era client)",
+    "originalPlatform": "Windows",
+    "originalYear": 2004,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo describe agent workflow (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/MikelCalvo/go-metin2-server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "MikelCalvo"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Work-in-progress clean-room Metin2 server emulator in Go aimed at TMP4-era client compatibility, built in playable milestones.",
+    "tags": [
+      "metin2",
+      "mmo",
+      "server-emulator",
+      "go"
+    ],
+    "sources": [
+      "https://github.com/MikelCalvo/go-metin2-server"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "roseau-habbo",
+    "name": "Roseau",
+    "category": "preservation",
+    "subject": "Habbo Hotel v1 (2001 client)",
+    "originalPlatform": "Web",
+    "originalYear": 2001,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/Quackster/Roseau",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Quackster"
+    ],
+    "started": "2017-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Java server emulator for the 2001 v1 revision of the Habbo Hotel client, built on Netty.",
+    "tags": [
+      "habbo",
+      "server-emulator",
+      "java"
+    ],
+    "sources": [
+      "https://github.com/Quackster/Roseau"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "alcatraz-server",
+    "name": "Alcatraz",
+    "category": "preservation",
+    "subject": "Driver: San Francisco online services",
+    "originalPlatform": "Windows",
+    "originalYear": 2011,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/ReHamster/AlcatrazServer",
+    "website": "http://alcatraz.drivermadness.net",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ReHamster"
+    ],
+    "started": "2021-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Replacement online backend for the PC Driver San Francisco that mimics the Quazal Rendez-Vous services and Net-Z protocol.",
+    "tags": [
+      "driver",
+      "quazal",
+      "server-emulator"
+    ],
+    "sources": [
+      "https://github.com/ReHamster/AlcatrazServer"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "rice-drift-city",
+    "name": "Rice",
+    "category": "preservation",
+    "subject": "Drift City",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2014, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/amPerl/RiceEmu",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "amPerl"
+    ],
+    "started": "2014-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "C# server emulator for the racing MMO Drift City targeting the last US client.",
+    "tags": [
+      "drift-city",
+      "server-emulator",
+      "mmo"
+    ],
+    "sources": [
+      "https://github.com/amPerl/RiceEmu"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "omega-maplestory",
+    "name": "omega",
+    "category": "preservation",
+    "subject": "MapleStory v83",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/jonnylin13/omega",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jonnylin13"
+    ],
+    "started": "2019-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "TypeScript MapleStory v83 server emulator with login, channel and shop services split into separate processes; sidelined for a successor project.",
+    "tags": [
+      "maplestory",
+      "server-emulator",
+      "typescript"
+    ],
+    "sources": [
+      "https://github.com/jonnylin13/omega"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "wower",
+    "name": "wower",
+    "category": "preservation",
+    "subject": "World of Warcraft (WotLK 3.0.8) servers",
+    "originalPlatform": "Windows",
+    "originalYear": 2008,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2008, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/mks-m/wower",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mks-m"
+    ],
+    "started": "2008-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Erlang World of Warcraft server emulator for client 3.0.8 with logon and realm servers, character handling and world entry.",
+    "tags": [
+      "wow",
+      "server-emulator",
+      "erlang"
+    ],
+    "sources": [
+      "https://github.com/mks-m/wower"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "skysaga-emulation",
+    "name": "SkySaga Emulation R&D",
+    "category": "preservation",
+    "subject": "SkySaga: Infinite Isles",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/EDITzDev/SkySaga",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "EDITzDev"
+    ],
+    "started": "2024-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Research server emulator for the cancelled online game SkySaga: Infinite Isles, currently targeting client version 10414.",
+    "tags": [
+      "skysaga",
+      "server-emulator",
+      "mmo"
+    ],
+    "sources": [
+      "https://github.com/EDITzDev/SkySaga"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mascotsociety",
+    "name": "Pet Society Server Emulator",
+    "category": "preservation",
+    "subject": "Playfish's Pet Society",
+    "originalPlatform": "Web",
+    "originalYear": 2008,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README disclaimer says most protocol code was written with AI assistance",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/DexterX12/mascotsociety",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "DexterX12"
+    ],
+    "started": "2025-12",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1.3",
+      "date": "2025-12-28"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Python server emulator that brings back the closed Facebook game Pet Society, building on the earlier Nofil2000 emulator.",
+    "tags": [
+      "flash",
+      "facebook-games",
+      "server-emulator"
+    ],
+    "sources": [
+      "https://github.com/DexterX12/mascotsociety",
+      "https://github.com/DexterX12/mascotsociety/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mro-server",
+    "name": "MRO Server",
+    "category": "preservation",
+    "subject": "Metal Rage Online",
+    "originalPlatform": "Windows",
+    "originalYear": 2009,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/shanzenos/MRO-Server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "shanzenos"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Node.js server emulator restoring online play for the shut-down mech shooter Metal Rage Online, built on Ennuo's earlier prototype.",
+    "tags": [
+      "server-emulator",
+      "online",
+      "mech"
+    ],
+    "sources": [
+      "https://github.com/shanzenos/MRO-Server"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "eco-server-emulator",
+    "name": "EcoServerEmulator",
+    "category": "preservation",
+    "subject": "Emil Chronicle Online",
+    "originalPlatform": "Windows",
+    "originalYear": 2005,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/cm-MMK-2/EcoServerEmulator",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "cm-MMK-2"
+    ],
+    "started": "2018-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Test-grade server emulator for Emil Chronicle Online covering login, character creation and movement, written for the game's last client version.",
+    "tags": [
+      "mmorpg",
+      "server-emulator",
+      "eco"
+    ],
+    "sources": [
+      "https://github.com/cm-MMK-2/EcoServerEmulator"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "avatarstar-cbt",
+    "name": "AvatarStarCBT",
+    "category": "preservation",
+    "subject": "Avatar Star (2013 closed beta)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/AeonLucid/AvatarStarCBT",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "AeonLucid"
+    ],
+    "started": "2024-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Work-in-progress private server for the 2013 closed beta of the online game Avatar Star, with notes on its custom Lua build.",
+    "tags": [
+      "mmo",
+      "server-emulator",
+      "beta"
+    ],
+    "sources": [
+      "https://github.com/AeonLucid/AvatarStarCBT"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "bfbc2-masterserver",
+    "name": "BFBC2 Master Server Emulator",
+    "category": "preservation",
+    "subject": "Battlefield: Bad Company 2",
+    "originalPlatform": "Windows",
+    "originalYear": 2010,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/GrzybDev/BFBC2_MasterServer",
+    "website": "https://bfbc2.grzyb.app",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "GrzybDev"
+    ],
+    "started": "2024-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Replacement master server for Battlefield: Bad Company 2 built from captured traffic, so clients and servers can run without EA's retired backend.",
+    "tags": [
+      "battlefield",
+      "server-emulator",
+      "multiplayer"
+    ],
+    "sources": [
+      "https://github.com/GrzybDev/BFBC2_MasterServer"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ubi-gs",
+    "name": "ubi-gs",
+    "category": "preservation",
+    "subject": "Ubisoft Game Service / Ubi.com network (ca. 2000-2005 titles)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/michal-kapala/ubi-gs",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "michal-kapala"
+    ],
+    "started": "2022-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Python emulators for the servers behind Ubisoft's early-2000s Game Service SDK and Ubi.com network, covering online config, auth and lobby protocols.",
+    "tags": [
+      "ubisoft",
+      "server-emulator",
+      "online",
+      "protocols"
+    ],
+    "sources": [
+      "https://github.com/michal-kapala/ubi-gs"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dump-xbox-dvd",
+    "name": "dump-xbox-dvd",
+    "category": "preservation",
+    "subject": "Original Xbox game discs (XGD)",
+    "originalPlatform": "Xbox",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/JayFoxRox/dump-xbox-dvd",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "JayFoxRox"
+    ],
+    "started": "2017-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Experimental tool for dumping original Xbox game discs to Redump standards using Kreon-firmware drives; the author warns it is not yet ready for real preservation work.",
+    "tags": [
+      "xbox",
+      "disc-dumping",
+      "redump"
+    ],
+    "sources": [
+      "https://github.com/JayFoxRox/dump-xbox-dvd"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "honk-backend",
+    "name": "Honk backend",
+    "category": "preservation",
+    "subject": "Honk (real-time messaging app)",
+    "originalPlatform": "iOS",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says Codex reviewed commits and Claude was consulted on architecture (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/m1guelpf/honk-backend",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "m1guelpf"
+    ],
+    "started": "2026-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Clean-room rewrite of the backend for Honk, a real-time messaging app shut down in 2023, so surviving copies of the iOS client can work again.",
+    "tags": [
+      "revival",
+      "server-emulator",
+      "ios",
+      "messaging"
+    ],
+    "sources": [
+      "https://github.com/m1guelpf/honk-backend"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "troposphir",
+    "name": "Troposphir",
+    "category": "preservation",
+    "subject": "Atmosphir",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/Troposphir/troposphir",
+    "website": "http://atmosphir.com/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Troposphir",
+      "kevson",
+      "kroltan",
+      "AtmoEntity"
+    ],
+    "started": "2016-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Reverse-engineered replacement server that powers the community revival of the platformer Atmosphir after its official service closed.",
+    "tags": [
+      "revival",
+      "server-emulator",
+      "atmosphir"
+    ],
+    "sources": [
+      "https://github.com/Troposphir/troposphir"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "evos",
+    "name": "EvoS",
+    "category": "preservation",
+    "subject": "Atlas Reactor",
+    "originalPlatform": "Windows",
+    "originalYear": 2016,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/MaxtorCoder/EvoS",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "MaxtorCoder"
+    ],
+    "started": "2019-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "C# server emulator for the tactics game Atlas Reactor, whose official servers were shut down.",
+    "tags": [
+      "atlas-reactor",
+      "server-emulator",
+      "revival"
+    ],
+    "sources": [
+      "https://github.com/MaxtorCoder/EvoS"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "gunbound-java",
+    "name": "GunBound Java Emulator",
+    "category": "preservation",
+    "subject": "GunBound: Thor's Hammer",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/kyll3r/GunBound-Java",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "kyll3r"
+    ],
+    "started": "2025-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Java and Netty server emulator for the classic Thor's Hammer version of GunBound, recreating login, rooms and matches for original clients.",
+    "tags": [
+      "gunbound",
+      "server-emulator",
+      "netty"
+    ],
+    "sources": [
+      "https://github.com/kyll3r/GunBound-Java"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "nio2so",
+    "name": "nio2so",
+    "category": "preservation",
+    "subject": "The Sims Online (pre-alpha / play-test builds)",
+    "originalPlatform": "Windows",
+    "originalYear": 2002,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/JDrocks450/nio2so",
+    "website": "https://tcrf.net/Proto:The_Sims_Online",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "JDrocks450"
+    ],
+    "started": "2023-11",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.1_beta.1",
+      "date": "2026-10-01"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Server emulator that lets an unmodified pre-alpha or play-test client of The Sims Online run as it did around May 2002; a continuation of niotso.",
+    "tags": [
+      "sims-online",
+      "server-emulator",
+      "prototype"
+    ],
+    "sources": [
+      "https://github.com/JDrocks450/nio2so",
+      "https://github.com/JDrocks450/nio2so/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "wild-ones-emu",
+    "name": "Wild Ones Emu",
+    "category": "preservation",
+    "subject": "Wild Ones (Playdom social game)",
+    "originalPlatform": "Web (Flash)",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/drwcx/Wild-Ones",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "drwcx"
+    ],
+    "started": "2017-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Server emulator for the 2011 client of the Flash game Wild Ones, which once ran the Wild Ones Private Wars revival and was published after that project closed.",
+    "tags": [
+      "flash",
+      "server-emulator",
+      "revival"
+    ],
+    "sources": [
+      "https://github.com/drwcx/Wild-Ones"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "chaos-server-dark-ages",
+    "name": "Chaos",
+    "category": "preservation",
+    "subject": "Dark Ages",
+    "originalPlatform": "Windows",
+    "originalYear": 1999,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in repo root (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/Sichii/Chaos-Server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Sichii"
+    ],
+    "started": "2017-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Configurable private server emulator for the Nexon/KRU MMORPG Dark Ages, written in C# with separate documentation.",
+    "tags": [
+      "mmorpg",
+      "server-emulator",
+      "dark-ages"
+    ],
+    "sources": [
+      "https://github.com/Sichii/Chaos-Server"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "kirov-server-emulator",
+    "name": "Kirov (C&C Server Emulator)",
+    "category": "preservation",
+    "subject": "Command & Conquer 3, Kane's Wrath and Red Alert 3 online services",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/sokie/kirov-server-emulator",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sokie"
+    ],
+    "started": "2026-01",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.1.3",
+      "date": "2026-03-22"
+    },
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Python server emulator that implements the GameSpy and EA backend protocols needed for online multiplayer in Command & Conquer 3, Kane's Wrath, Red Alert 3 and related titles.",
+    "tags": [
+      "gamespy",
+      "server-emulator",
+      "command-and-conquer"
+    ],
+    "sources": [
+      "https://github.com/sokie/kirov-server-emulator",
+      "https://github.com/sokie/kirov-server-emulator/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "uosl",
+    "name": "UOSL",
+    "category": "preservation",
+    "subject": "Ultima Online: Shattered Legacy (1996 pre-alpha)",
+    "originalPlatform": "Windows",
+    "originalYear": 1996,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2014, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/fpw/uosl",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "fpw"
+    ],
+    "started": "2014-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Java client, server emulator and data-file explorer for Ultima Online: Shattered Legacy, the 1996 pre-alpha of Ultima Online.",
+    "tags": [
+      "ultima-online",
+      "server-emulator",
+      "mmorpg"
+    ],
+    "sources": [
+      "https://github.com/fpw/uosl"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "accd-acc-server",
+    "name": "accd",
+    "category": "preservation",
+    "subject": "Assetto Corsa Competizione dedicated server",
+    "originalPlatform": "Windows",
+    "originalYear": 2019,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "BSD-2-Clause",
+    "repo": "https://github.com/renaudallard/assettocorsa_competizione_server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "renaudallard"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "0.3.270",
+      "date": "2026-09-28"
+    },
+    "targets": [
+      "Linux",
+      "OpenBSD",
+      "FreeBSD"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Clean-room C reimplementation of the Assetto Corsa Competizione dedicated server that unmodified clients can race on, running natively on Linux and BSD without Wine or Kunos binaries, plus a live telemetry feed.",
+    "tags": [
+      "racing",
+      "dedicated-server",
+      "clean-room"
+    ],
+    "sources": [
+      "https://github.com/renaudallard/assettocorsa_competizione_server",
+      "https://github.com/renaudallard/assettocorsa_competizione_server/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "habbokt",
+    "name": "habbokt",
+    "category": "preservation",
+    "subject": "Habbo Hotel (v31)",
+    "originalPlatform": "Web (Shockwave)",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/ultraviolet-jordan/habbokt",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ultraviolet-jordan"
+    ],
+    "started": "2022-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Kotlin private server for the v31 Habbo Hotel client.",
+    "tags": [
+      "habbo",
+      "server-emulator",
+      "kotlin"
+    ],
+    "sources": [
+      "https://github.com/ultraviolet-jordan/habbokt"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "runuo",
+    "name": "RunUO",
+    "category": "preservation",
+    "subject": "Ultima Online",
+    "originalPlatform": "Windows",
+    "originalYear": 1997,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/RunUO-Team/RunUO",
+    "website": "https://www.runuo.com",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "RunUO-Team"
+    ],
+    "started": "2025-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v3.1",
+      "date": "2025-09-18"
+    },
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Long-running C# Ultima Online server emulator, founded in 2002 and the base of many player-run shards.",
+    "tags": [
+      "ultima-online",
+      "server-emulator",
+      "mmorpg"
+    ],
+    "sources": [
+      "https://github.com/RunUO-Team/RunUO",
+      "https://github.com/RunUO-Team/RunUO/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "reoserv",
+    "name": "REOSERV",
+    "category": "preservation",
+    "subject": "Endless Online",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/sorokya/reoserv",
+    "website": "https://reoserv.net",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sorokya"
+    ],
+    "started": "2021-02",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.16.1",
+      "date": "2026-04-16"
+    },
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Rust server emulator for the MMORPG Endless Online.",
+    "tags": [
+      "endless-online",
+      "server-emulator",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/sorokya/reoserv",
+      "https://github.com/sorokya/reoserv/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ms2ex",
+    "name": "MS2EX",
+    "category": "preservation",
+    "subject": "MapleStory 2",
+    "originalPlatform": "Windows",
+    "originalYear": 2015,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/sgessa/ms2ex",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sgessa"
+    ],
+    "started": "2021-01",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.4.0",
+      "date": "2026-09-30"
+    },
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "MapleStory 2 server emulator written in Elixir, aimed at bringing back the game after its official shutdown.",
+    "tags": [
+      "maplestory-2",
+      "server-emulator",
+      "elixir"
+    ],
+    "sources": [
+      "https://github.com/sgessa/ms2ex",
+      "https://github.com/sgessa/ms2ex/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "rbse-club-penguin",
+    "name": "RBSE",
+    "category": "preservation",
+    "subject": "Club Penguin (AS2 client)",
+    "originalPlatform": "Web (Flash)",
+    "originalYear": 2005,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/fantasyhacking/RBSE",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "fantasyhacking"
+    ],
+    "started": "2017-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Discontinued Ruby server emulator for the ActionScript 2 era Club Penguin client.",
+    "tags": [
+      "club-penguin",
+      "server-emulator",
+      "flash"
+    ],
+    "sources": [
+      "https://github.com/fantasyhacking/RBSE"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "amazing-core",
+    "name": "Amazing Core",
+    "category": "preservation",
+    "subject": "Amazing World (Ganz)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/dv1x3r/amazing-core",
+    "website": "https://amazingcore.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "dv1x3r"
+    ],
+    "started": "2021-03",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.3.1",
+      "date": "2026-06-18"
+    },
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Go server emulator for Amazing World, the Ganz MMO that closed in 2018, with a web admin dashboard, asset tooling and a TCP game server.",
+    "tags": [
+      "mmo",
+      "server-emulator",
+      "revival"
+    ],
+    "sources": [
+      "https://github.com/dv1x3r/amazing-core",
+      "https://github.com/dv1x3r/amazing-core/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "project-edn-exteel",
+    "name": "Project EDN server",
+    "category": "preservation",
+    "subject": "Exteel",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/yes-but-also-no/project-edn-server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "yes-but-also-no"
+    ],
+    "started": "2020-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Bare-bones C# server emulator for the closed mech shooter Exteel, provided as-is and no longer maintained.",
+    "tags": [
+      "exteel",
+      "server-emulator",
+      "revival"
+    ],
+    "sources": [
+      "https://github.com/yes-but-also-no/project-edn-server"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "qpang-essence-emulator",
+    "name": "QPang Essence Emulator",
+    "category": "preservation",
+    "subject": "QPang (2012-03-14 client)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/Deluze/qpang-essence-emulator",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Deluze"
+    ],
+    "started": "2021-05",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1",
+      "date": "2023-09-12"
+    },
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Archived C++ server emulator for the 2012 QPang client; the author warns it contains exploits and should be used only for research.",
+    "tags": [
+      "qpang",
+      "server-emulator",
+      "shooter"
+    ],
+    "sources": [
+      "https://github.com/Deluze/qpang-essence-emulator",
+      "https://github.com/Deluze/qpang-essence-emulator/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "legacyshell",
+    "name": "LegacyShell",
+    "category": "preservation",
+    "subject": "Shell Shockers (legacy versions)",
+    "originalPlatform": "Web",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo root (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/onlypuppy7/LegacyShell",
+    "website": "https://legacyshell.com/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "onlypuppy7"
+    ],
+    "started": "2024-08",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.0.4-alpha",
+      "date": "2024-11-17"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Reverse-engineered reimplementation of the Shell Shockers web game's backend and client servers for running older versions, with extra features.",
+    "tags": [
+      "web-game",
+      "server-emulator",
+      "shell-shockers"
+    ],
+    "sources": [
+      "https://github.com/onlypuppy7/LegacyShell",
+      "https://github.com/onlypuppy7/LegacyShell/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "minerva-cabal",
+    "name": "Minerva",
+    "category": "preservation",
+    "subject": "Cabal Online servers (Episode 18)",
+    "originalPlatform": "Windows",
+    "originalYear": 2005,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/programmerzlp/Minerva",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "programmerzlp"
+    ],
+    "started": "2018-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Pre-alpha C# server emulator for Cabal Online Episode 18, with login, channel and master servers backed by MariaDB.",
+    "tags": [
+      "server-emulator",
+      "cabal-online",
+      "mmorpg"
+    ],
+    "sources": [
+      "https://github.com/programmerzlp/Minerva"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "alter-pangya",
+    "name": "Alter-Pangya",
+    "category": "preservation",
+    "subject": "PangYa (GB.852 client)",
+    "originalPlatform": "Windows",
+    "originalYear": 2004,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/hex-agon/alter-pangya",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "hex-agon"
+    ],
+    "started": "2020-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Kotlin server emulator for the PangYa GB.852 client; practice mode and room equipment work so far.",
+    "tags": [
+      "server-emulator",
+      "pangya",
+      "golf"
+    ],
+    "sources": [
+      "https://github.com/hex-agon/alter-pangya"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "protohack",
+    "name": "protoHack",
+    "category": "preservation",
+    "subject": "Hack (1981-82 pre-release source)",
+    "originalPlatform": "UNIX",
+    "originalYear": null,
+    "method": "source-port",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/Critlist/protoHack",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Critlist"
+    ],
+    "started": "2026-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Restoration of Jay Fenlason's early 1981-82 Hack source tree so it builds and runs on modern Linux, predating the known distributed releases.",
+    "tags": [
+      "roguelike",
+      "hack",
+      "software-history"
+    ],
+    "sources": [
+      "https://github.com/Critlist/protoHack"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "maketsx",
+    "name": "makeTSX",
+    "category": "preservation",
+    "subject": "MSX cassette tapes",
+    "originalPlatform": "MSX",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/nataliapc/makeTSX",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "nataliapc"
+    ],
+    "started": "2019-02",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.8.4b",
+      "date": "2020-06-05"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Converter that turns WAV recordings of MSX cassette tapes into TSX tape image files for preservation and emulators.",
+    "tags": [
+      "msx",
+      "tape",
+      "preservation"
+    ],
+    "sources": [
+      "https://github.com/nataliapc/makeTSX",
+      "https://github.com/nataliapc/makeTSX/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "orba-protocol",
+    "name": "orba-protocol",
+    "category": "preservation",
+    "subject": "Artiphon Orba",
+    "originalPlatform": "Hardware",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/holofermes/orba-protocol",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "holofermes"
+    ],
+    "started": "2026-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Reverse-engineered control protocol for the Artiphon Orba synth plus Python and JavaScript libraries, so the device stays usable after the vendor shut down.",
+    "tags": [
+      "protocol",
+      "midi",
+      "hardware",
+      "abandonware"
+    ],
+    "sources": [
+      "https://github.com/holofermes/orba-protocol"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "xrunuo",
+    "name": "XRunUO",
+    "category": "preservation",
+    "subject": "Ultima Online servers",
+    "originalPlatform": "Windows",
+    "originalYear": 1997,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2015, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/xrunuo/xrunuo",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "xrunuo"
+    ],
+    "started": "2015-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "C# Ultima Online server emulator forked from RunUO in 2005 by a former free-shard team, adding Stygian Abyss support and targeting .NET Core.",
+    "tags": [
+      "server-emulator",
+      "ultima-online",
+      "mmorpg"
+    ],
+    "sources": [
+      "https://github.com/xrunuo/xrunuo"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "re-light-llsif",
+    "name": "re:Light",
+    "category": "preservation",
+    "subject": "Love Live! School Idol Festival",
+    "originalPlatform": "iOS / Android",
+    "originalYear": 2013,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/Salaron/sunlight",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Salaron"
+    ],
+    "started": "2023-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "ASP.NET server emulator for the discontinued mobile rhythm game Love Live! School Idol Festival.",
+    "tags": [
+      "server-emulator",
+      "llsif",
+      "rhythm"
+    ],
+    "sources": [
+      "https://github.com/Salaron/sunlight"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "firesinging-aoeo",
+    "name": "Firesinging",
+    "category": "preservation",
+    "subject": "Age of Empires Online",
+    "originalPlatform": "Windows",
+    "originalYear": 2011,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/firesinging/server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "firesinging"
+    ],
+    "started": "2017-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "SuperSocket-based C# server emulator that recreates the shut-down online services of Age of Empires Online.",
+    "tags": [
+      "server-emulator",
+      "age-of-empires-online",
+      "revival"
+    ],
+    "sources": [
+      "https://github.com/firesinging/server"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mw2-ps3-server",
+    "name": "MW2 PS3 Server",
+    "category": "preservation",
+    "subject": "Call of Duty: Modern Warfare 2 (PS3) online services",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2009,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/elliot1377/mw2-ps3-server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "elliot1377"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0.1",
+      "date": "2026-10-06"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Community replacement for the shut-down DemonWare servers of Modern Warfare 2 on PS3, usable with RPCS3 or real consoles; MW3 is partly supported.",
+    "tags": [
+      "demonware",
+      "call-of-duty",
+      "ps3",
+      "revival"
+    ],
+    "sources": [
+      "https://github.com/elliot1377/mw2-ps3-server",
+      "https://github.com/elliot1377/mw2-ps3-server/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "spirit-maplestory",
+    "name": "Spirit",
+    "category": "preservation",
+    "subject": "MapleStory v176",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/Bratah123/Spirit",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Bratah123"
+    ],
+    "started": "2020-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "MapleStory server emulator for client version 176, written in Python.",
+    "tags": [
+      "maplestory",
+      "server-emulator",
+      "python"
+    ],
+    "sources": [
+      "https://github.com/Bratah123/Spirit"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mammoth-cpps",
+    "name": "Mammoth",
+    "category": "preservation",
+    "subject": "Club Penguin (pre-CPIP client)",
+    "originalPlatform": "Web",
+    "originalYear": 2005,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/wizguin/mammoth",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "wizguin"
+    ],
+    "started": "2023-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Server emulator in TypeScript for the pre-CPIP Club Penguin client, the successor to the author's Slippers project.",
+    "tags": [
+      "club-penguin",
+      "server-emulator",
+      "typescript"
+    ],
+    "sources": [
+      "https://github.com/wizguin/mammoth"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "pes6j",
+    "name": "pes6j",
+    "category": "preservation",
+    "subject": "Pro Evolution Soccer 6 online",
+    "originalPlatform": "Windows",
+    "originalYear": 2006,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2014, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/pinfake/pes6j",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "pinfake"
+    ],
+    "started": "2014-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Reverse-engineered Pro Evolution Soccer 6 online server emulator in Java, written after the official service was shut down.",
+    "tags": [
+      "pes6",
+      "server-emulator",
+      "java"
+    ],
+    "sources": [
+      "https://github.com/pinfake/pes6j"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mozart-encore",
+    "name": "Mozart.Encore",
+    "category": "preservation",
+    "subject": "O2Jam",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/SirusDoma/Mozart.Encore",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "SirusDoma"
+    ],
+    "started": "2025-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v7.2.0",
+      "date": "2026-09-13"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Cross-platform C# reimplementation of O2Jam game servers supporting several client versions, built on the author's Encore TCP framework.",
+    "tags": [
+      "o2jam",
+      "server-emulator",
+      "rhythm"
+    ],
+    "sources": [
+      "https://github.com/SirusDoma/Mozart.Encore",
+      "https://github.com/SirusDoma/Mozart.Encore/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dreamconstraint",
+    "name": "DreamConstraint",
+    "category": "preservation",
+    "subject": "Sega Dreamcast online authentication",
+    "originalPlatform": "Dreamcast",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/patapancakes/dreamconstraint",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "patapancakes"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Replacement authentication server that exploits weak SSL checks in Dreamcast games so many titles can reach revival servers with only a custom DNS, without boot discs or codes.",
+    "tags": [
+      "dreamcast",
+      "online",
+      "revival"
+    ],
+    "sources": [
+      "https://github.com/patapancakes/dreamconstraint"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dreamdump",
+    "name": "dreamdump",
+    "category": "preservation",
+    "subject": "Sega Dreamcast GD-ROM discs",
+    "originalPlatform": "Dreamcast",
+    "originalYear": null,
+    "method": "tool",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/MoriGM/dreamdump",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "MoriGM"
+    ],
+    "started": "2025-08",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "0.5.0",
+      "date": "2026-07-22"
+    },
+    "targets": [
+      "Linux",
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Small Go tool for dumping Dreamcast discs on Linux and Windows with supported drives; development moved to Codeberg.",
+    "tags": [
+      "dreamcast",
+      "dumping",
+      "preservation"
+    ],
+    "sources": [
+      "https://github.com/MoriGM/dreamdump",
+      "https://github.com/MoriGM/dreamdump/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "spider-riders-online-server",
+    "name": "Spider Riders Online Server",
+    "category": "preservation",
+    "subject": "Spider Riders: Battle for Arachna",
+    "originalPlatform": "Web (Flash)",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/chorman0773/Spider-Riders-Online-Server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "chorman0773"
+    ],
+    "started": "2020-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Node.js attempt to emulate the server side of the defunct Flash game Spider Riders: Battle for Arachna; the game file must be supplied separately.",
+    "tags": [
+      "flash",
+      "server-emulator",
+      "preservation"
+    ],
+    "sources": [
+      "https://github.com/chorman0773/Spider-Riders-Online-Server"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "phatac",
+    "name": "PhatAC",
+    "category": "preservation",
+    "subject": "Asheron's Call",
+    "originalPlatform": "Windows",
+    "originalYear": 1999,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/derandark/PhatAC",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "derandark"
+    ],
+    "started": "2017-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Server emulator for Asheron's Call updated for Throne of Destiny-era clients, run locally against the user's own game files.",
+    "tags": [
+      "asherons-call",
+      "server-emulator",
+      "mmo"
+    ],
+    "sources": [
+      "https://github.com/derandark/PhatAC"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "luni-universe-server",
+    "name": "LUNI",
+    "category": "preservation",
+    "subject": "LEGO Universe",
+    "originalPlatform": "Windows",
+    "originalYear": 2010,
+    "method": "clean-room",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2015, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/LUNIServer/UniverseServer",
+    "website": "https://xiphosia.wordpress.com/the-luni-archive/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "LUNIServer"
+    ],
+    "started": "2015-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early, now defunct LEGO Universe server emulator in C++; archived and marked by its authors as not for use.",
+    "tags": [
+      "lego-universe",
+      "server-emulator",
+      "mmo"
+    ],
+    "sources": [
+      "https://github.com/LUNIServer/UniverseServer"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "odk-darkemu",
+    "name": "ODK-DarkEmu",
+    "category": "preservation",
+    "subject": "DarkEden",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2015, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/cardoso/ODK-DarkEmu",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "cardoso"
+    ],
+    "started": "2015-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Learning-project server emulator for the MMORPG DarkEden in C#, with a working login server and partial game server.",
+    "tags": [
+      "darkeden",
+      "server-emulator",
+      "mmo"
+    ],
+    "sources": [
+      "https://github.com/cardoso/ODK-DarkEmu"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "sinner-firefall",
+    "name": "SINner",
+    "category": "preservation",
+    "subject": "Firefall",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/themeldingwars/SINner",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "themeldingwars"
+    ],
+    "started": "2019-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Server emulator for the shut-down online shooter Firefall, from The Melding Wars community.",
+    "tags": [
+      "firefall",
+      "server-emulator",
+      "mmo"
+    ],
+    "sources": [
+      "https://github.com/themeldingwars/SINner"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "decompfrontier-server",
+    "name": "Decompfrontier Server",
+    "category": "preservation",
+    "subject": "Brave Frontier",
+    "originalPlatform": "Android",
+    "originalYear": 2013,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/decompfrontier/server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "decompfrontier"
+    ],
+    "started": "2023-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Experimental C++ emulation of the official Brave Frontier game server for client v2.19.6.0, intended for an offline mod release.",
+    "tags": [
+      "brave-frontier",
+      "server-emulator",
+      "mobile"
+    ],
+    "sources": [
+      "https://github.com/decompfrontier/server"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "stealth-server",
+    "name": "Stealth Server",
+    "category": "preservation",
+    "subject": "Stealth Bastard Deluxe and Stealth Inc 2 community levels",
+    "originalPlatform": "Windows",
+    "originalYear": 2012,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/heatray/stealth-server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "heatray"
+    ],
+    "started": "2022-10",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v6",
+      "date": "2025-02-21"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "PowerShell-based replacement for the community level server used by Stealth Bastard Deluxe and Stealth Inc. 2.",
+    "tags": [
+      "stealth-inc",
+      "server-emulator",
+      "levels"
+    ],
+    "sources": [
+      "https://github.com/heatray/stealth-server",
+      "https://github.com/heatray/stealth-server/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "holomorph",
+    "name": "holomorph",
+    "category": "preservation",
+    "subject": "Dofus",
+    "originalPlatform": "Windows",
+    "originalYear": 2004,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2015, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/scalexm/holomorph",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "scalexm"
+    ],
+    "started": "2015-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Dofus server emulator written in Rust.",
+    "tags": [
+      "dofus",
+      "server-emulator",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/scalexm/holomorph"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "luserver",
+    "name": "luserver",
+    "category": "preservation",
+    "subject": "LEGO Universe",
+    "originalPlatform": "Windows",
+    "originalYear": 2010,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/lcdr/luserver",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "lcdr"
+    ],
+    "started": "2020-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Python LEGO Universe server by lcdr, formerly used for the lcdr Universe community server.",
+    "tags": [
+      "lego-universe",
+      "server-emulator",
+      "python"
+    ],
+    "sources": [
+      "https://github.com/lcdr/luserver"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mhserveremu2013",
+    "name": "MHServerEmu2013",
+    "category": "preservation",
+    "subject": "Marvel Heroes (2013)",
+    "originalPlatform": "Windows",
+    "originalYear": 2013,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/Crypto137/MHServerEmu2013",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Crypto137"
+    ],
+    "started": "2025-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Server emulator for the original 2013 version of Marvel Heroes, targeting client 1.10.0.643; a separate project from MHServerEmu for later versions.",
+    "tags": [
+      "marvel-heroes",
+      "server-emulator",
+      "mmo"
+    ],
+    "sources": [
+      "https://github.com/Crypto137/MHServerEmu2013"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "rakuen-last-origin",
+    "name": "Rakuen",
+    "category": "preservation",
+    "subject": "Last Origin (Japanese WebGL version)",
+    "originalPlatform": "Web",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/eai04191/rakuen",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "eai04191"
+    ],
+    "started": "2022-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "From-scratch mock server that lets the Japanese WebGL client of Last Origin start offline, mainly to read story scenarios and character data; archived.",
+    "tags": [
+      "last-origin",
+      "server-emulator",
+      "offline"
+    ],
+    "sources": [
+      "https://github.com/eai04191/rakuen"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "qserver-qpang",
+    "name": "QServer",
+    "category": "preservation",
+    "subject": "QPang (Manga Fighters)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/AnimeShooter/QServer",
+    "website": "https://animeshooter.com/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "AnimeShooter"
+    ],
+    "started": "2021-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Private server for the defunct shooter QPang, also known as Manga Fighters, open-sourced as a learning resource after its hosted revival lost its players.",
+    "tags": [
+      "qpang",
+      "server-emulator",
+      "shooter"
+    ],
+    "sources": [
+      "https://github.com/AnimeShooter/QServer"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "gdox",
+    "name": "gdox",
+    "category": "preservation",
+    "subject": "Original Xbox, Xbox 360, GameCube and Wii discs",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/korzewarrior/gdox",
+    "website": "https://gdox.korze.org/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "korzewarrior"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.3.1",
+      "date": "2026-10-14"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Tool that reads original game discs through specific supported optical drives to play them via emulators, and makes preservation images of original Xbox discs.",
+    "tags": [
+      "xbox",
+      "discs",
+      "preservation"
+    ],
+    "sources": [
+      "https://github.com/korzewarrior/gdox",
+      "https://github.com/korzewarrior/gdox/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "gwent-beta-restoration",
+    "name": "Unofficial Gwent Beta Restoration",
+    "category": "preservation",
+    "subject": "Gwent: The Witcher Card Game beta 0.9.24.3.432",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/Somnia41205/Unofficial-Gwent-Beta-0.9.24.3.432-Private-Server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Somnia41205"
+    ],
+    "started": "2026-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0.2a",
+      "date": "2026-06-18"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Reverse-engineered replacement server for the Gwent beta client 0.9.24.3.432, routing its calls through nginx and Python to restore online, LAN and single-player play.",
+    "tags": [
+      "gwent",
+      "private-server",
+      "preservation"
+    ],
+    "sources": [
+      "https://github.com/Somnia41205/Unofficial-Gwent-Beta-0.9.24.3.432-Private-Server",
+      "https://github.com/Somnia41205/Unofficial-Gwent-Beta-0.9.24.3.432-Private-Server/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "corexuo",
+    "name": "CorexUO",
+    "category": "preservation",
+    "subject": "Ultima Online servers",
+    "originalPlatform": "Windows",
+    "originalYear": 1997,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/CorexUO/CorexUO",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "CorexUO"
+    ],
+    "started": "2020-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Ultima Online server emulator derived from RunUO, updated to newer .NET tooling with era-based configuration.",
+    "tags": [
+      "ultima-online",
+      "server-emulator",
+      "runuo"
+    ],
+    "sources": [
+      "https://github.com/CorexUO/CorexUO"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "pylus",
+    "name": "PyLUS",
+    "category": "preservation",
+    "subject": "LEGO Universe servers",
+    "originalPlatform": "Windows",
+    "originalYear": 2010,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/luxaritas/PyLUS",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "luxaritas"
+    ],
+    "started": "2018-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "LEGO Universe server emulator written in Python, part of the LUS projects effort to bring back the closed MMO.",
+    "tags": [
+      "lego-universe",
+      "server-emulator",
+      "python"
+    ],
+    "sources": [
+      "https://github.com/luxaritas/PyLUS"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "grooveserver",
+    "name": "GrooveServer",
+    "category": "preservation",
+    "subject": "DJMAX Online servers (Chinese client)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README says Claude AI was given full autonomy over the project from the start",
+    "licence": "none",
+    "repo": "https://github.com/MDashK/GrooveServer",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "MDashK"
+    ],
+    "started": "2026-08",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0.0",
+      "date": "2026-08-30"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Proof-of-concept private server for the Chinese DJMAX Online client in C#/.NET 8, enabling offline free, course and ranking modes; multiplayer battles are not implemented.",
+    "tags": [
+      "djmax",
+      "private-server",
+      "rhythm"
+    ],
+    "sources": [
+      "https://github.com/MDashK/GrooveServer",
+      "https://github.com/MDashK/GrooveServer/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "booma-server",
+    "name": "Booma.Server",
+    "category": "preservation",
+    "subject": "Phantasy Star Online: Blue Burst",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/HelloKitty/Booma.Server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "HelloKitty"
+    ],
+    "started": "2020-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "C#/.NET server emulator backend for Phantasy Star Online: Blue Burst, built on the Booma.Proxy emulation library and GladNet4.",
+    "tags": [
+      "pso",
+      "server-emulator",
+      "csharp"
+    ],
+    "sources": [
+      "https://github.com/HelloKitty/Booma.Server"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "critters-server",
+    "name": "Critters",
+    "category": "preservation",
+    "subject": "Box Critters servers",
+    "originalPlatform": "Web",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/Sxip/critters",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Sxip"
+    ],
+    "started": "2020-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "TypeScript server implementation for Box Critters with multiplayer, a small REST API for accounts and early plugin support.",
+    "tags": [
+      "box-critters",
+      "server",
+      "typescript"
+    ],
+    "sources": [
+      "https://github.com/Sxip/critters"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mgmse",
+    "name": "mgmse",
+    "category": "preservation",
+    "subject": "GameSpy master servers",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/haekb/mgmse",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "haekb"
+    ],
+    "started": "2020-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "PHP master server emulator that began as a GameSpy v1 replacement and handles basic query and publishing services alongside custom features.",
+    "tags": [
+      "gamespy",
+      "master-server",
+      "php"
+    ],
+    "sources": [
+      "https://github.com/haekb/mgmse"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dessego",
+    "name": "DeSSE Go",
+    "category": "preservation",
+    "subject": "Demon's Souls servers",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2009,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/danmrichards/dessego",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "danmrichards"
+    ],
+    "started": "2020-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Demon's Souls server emulator written in Go with SQLite storage, based on the packet analysis of the earlier DeSSE project.",
+    "tags": [
+      "demons-souls",
+      "ps3",
+      "server-emulator",
+      "go"
+    ],
+    "sources": [
+      "https://github.com/danmrichards/dessego"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "apypos-server",
+    "name": "Apypos",
+    "category": "preservation",
+    "subject": "Monster Hunter Explore",
+    "originalPlatform": "iOS / Android",
+    "originalYear": 2015,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in repo root (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/Forgotten-MH/apypos-server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Forgotten-MH"
+    ],
+    "started": "2025-10",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-07-13"
+    },
+    "targets": [
+      "Linux",
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Server emulator for the shut-down mobile game Monster Hunter Explore, covering its encrypted HTTP API, Socket.IO multiplayer and resource archive serving.",
+    "tags": [
+      "monster-hunter",
+      "server-emulator",
+      "mobile"
+    ],
+    "sources": [
+      "https://github.com/Forgotten-MH/apypos-server",
+      "https://github.com/Forgotten-MH/apypos-server/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "tanki-2014-server",
+    "name": "Tanki 2014 server",
+    "category": "preservation",
+    "subject": "Tanki Online (2014 client)",
+    "originalPlatform": "Web (Flash)",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/juhe1/tanki_2014_server_public",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "juhe1"
+    ],
+    "started": "2023-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "0.1.0",
+      "date": "2026-04-21"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Unfinished server for the 2014 Flash client of Tanki Online, released by its author mainly as reference documentation.",
+    "tags": [
+      "tanki-online",
+      "server-emulator",
+      "flash"
+    ],
+    "sources": [
+      "https://github.com/juhe1/tanki_2014_server_public",
+      "https://github.com/juhe1/tanki_2014_server_public/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "hisp",
+    "name": "HISP",
+    "category": "preservation",
+    "subject": "Horse Isle: The Secret Land of Horses",
+    "originalPlatform": "Web (Flash)",
+    "originalYear": 2007,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/islehorse/HISP",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "islehorse"
+    ],
+    "started": "2020-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v2.5",
+      "date": "2026-06-22"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Server emulator for the Flash MMORPG Horse Isle, implementing login, chat, moderation and most in-game systems.",
+    "tags": [
+      "horse-isle",
+      "server-emulator",
+      "flash",
+      "mmorpg"
+    ],
+    "sources": [
+      "https://github.com/islehorse/HISP",
+      "https://github.com/islehorse/HISP/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "garlemald-server",
+    "name": "Garlemald Server",
+    "category": "preservation",
+    "subject": "Final Fantasy XIV v1.23b (1.0)",
+    "originalPlatform": "Windows",
+    "originalYear": 2010,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo root (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/swstegall/Garlemald-Server",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "swstegall"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1.6",
+      "date": "2026-06-12"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Rust port of Project Meteor Server, a private-server emulator for the original 2010 release of Final Fantasy XIV, with lobby, world and map services driving the upstream Lua scripts.",
+    "tags": [
+      "ffxiv",
+      "server-emulator",
+      "rust",
+      "mmorpg"
+    ],
+    "sources": [
+      "https://github.com/swstegall/Garlemald-Server",
+      "https://github.com/swstegall/Garlemald-Server/releases"
+    ],
+    "checked": "2026-10-17"
   }
 ]

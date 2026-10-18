@@ -1,5 +1,5 @@
 # Daily: snapshot GitHub stats for every tracked repo, commit them, build, deploy as Workers static assets (worker: recompsoftware, apps/web/wrangler.jsonc).
-# Every 6 hours: rebuild + deploy (picks up new data commits). Needs secrets CLOUDFLARE_API_TOKEN (Workers Scripts: Edit) + CLOUDFLARE_ACCOUNT_ID;
+# Mondays: refresh project pictures (scripts/fetch-media.mjs). Every 6 hours: rebuild + deploy (picks up new data commits). Needs secrets CLOUDFLARE_API_TOKEN (Workers Scripts: Edit) + CLOUDFLARE_ACCOUNT_ID;
 # without them the build still runs and only the deploy is skipped.
 name: site
 
@@ -35,6 +35,14 @@ jobs:
           git add data/stats && git commit -m "stats: $(date -u +%F)" && git push || echo "no stats change"
       - run: npm ci
         working-directory: apps/web
+      - name: Refresh project pictures (Mondays; only changed pictures are re-made)
+        if: github.event_name == 'workflow_dispatch' || (github.event.schedule == '23 5 * * *' && github.event_name == 'schedule')
+        env: { GITHUB_TOKEN: '${{ github.token }}' }
+        run: |
+          if [ "$(date -u +%u)" = 1 ] || [ "${{ github.event_name }}" = workflow_dispatch ]; then
+            node scripts/fetch-media.mjs
+            git add data/media.json apps/web/public/thumbs && git commit -m "media: $(date -u +%F)" && git push || echo "no media change"
+          fi
       - run: npm run build
         working-directory: apps/web
       - name: Deploy

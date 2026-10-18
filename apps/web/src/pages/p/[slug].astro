@@ -2,9 +2,11 @@
 import Base from '../../layouts/Base.astro';
 import Badges from '../../components/Badges.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
+import Cover from '../../components/Cover.astro';
+import Spark from '../../components/Spark.astro';
 import {
   projects, statsFor, statsDate, lineage, history, news, formatDate, fmtNum, CATEGORIES, METHOD_LABEL,
-  PROVENANCE_LABEL, TIER_LABEL, slugify, hubFor, type Project,
+  PROVENANCE_LABEL, TIER_LABEL, slugify, hubFor, mediaFor, growth, growthLabel, type Project,
 } from '../../lib/data';
 
 export function getStaticPaths() {
@@ -24,6 +26,8 @@ const hub = hubFor(p);
 const sameGame = hub ? hub.list.filter((x) => x.slug !== p.slug) : [];
 const related = [...sameGame, ...all.filter((x) => x.slug !== p.slug && !sameGame.includes(x) && x.category === p.category && (x.originalPlatform === p.originalPlatform || x.tags.some((t) => p.tags.includes(t))))].slice(0, 6);
 const release = s?.release ?? p.latestRelease;
+const media = mediaFor(p);
+const g = growth(p);
 // Search visitors mostly want the build: link the latest GitHub release directly.
 const dl = release && p.repo && /github\.com\//.test(p.repo) ? `${p.repo.replace(/\/$/, '').replace(/\.git$/, '')}/releases/latest` : null;
 const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
@@ -35,27 +39,35 @@ const schema = {
   author: p.team.map((t) => ({ '@type': 'Person', name: t })),
 };
 ---
-<Base title={p.name} description={description} type="article" schema={schema} image={`/og/p-${p.slug}.png`}>
+<Base title={p.name} description={description} type="article" schema={schema} image={`/og/p-${p.slug}.jpg`}>
   <article class="wrap proj">
-    <p class="crumbs"><a href="/">Recomp</a> / <a href={`/${p.category}/`}>{cat.label}</a> / <a href={`/platforms/${slugify(p.originalPlatform)}/`}>{p.originalPlatform}</a></p>
-    <h1>{p.name}</h1>
-    <p class="lede">{p.summary}</p>
-    <Badges p={p} full />
-    {hub && <p class="hub-link"><a href={`/game/${hub.slug}/`}>All {hub.list.length} {hub.name} projects compared →</a></p>}
+    <div class="top">
+      <div class="intro">
+        <p class="crumbs"><a href="/">Recomp</a> / <a href={`/${p.category}/`}>{cat.label}</a> / <a href={`/platforms/${slugify(p.originalPlatform)}/`}>{p.originalPlatform}</a></p>
+        <h1>{p.name}</h1>
+        <p class="lede">{p.summary}</p>
+        <Badges p={p} full />
+        {hub && <p class="hub-link"><a href={`/game/${hub.slug}/`}>All {hub.list.length} {hub.name} projects compared →</a></p>}
 
-    <div class="cta btns">
-      {p.playable && (p.playable.launch === 'tab'
-        ? <a class="btn primary" href={p.playable.url} target="_blank" rel="noopener" data-track="play_click" data-item={p.slug}>▶ Play in browser</a>
-        : <a class="btn primary" href={`/play/${p.slug}/`} data-track="play_click" data-item={p.slug}>▶ Play in browser</a>)}
-      {dl && <a class={`btn${p.playable ? '' : ' primary'}`} href={dl} rel="noopener" data-track="download_click" data-item={p.slug}>⬇ Download {release!.version}</a>}
-      {p.repo && <a class="btn" href={p.repo} rel="noopener" data-track="repo_click" data-item={p.slug}>Source code</a>}
-      {p.website && <a class="btn" href={p.website} rel="noopener">Website</a>}
-      {p.discord && <a class="btn" href={p.discord} rel="noopener">Discord</a>}
-      {p.subreddit && <a class="btn" href={p.subreddit} rel="noopener">Reddit</a>}
+        <div class="cta btns">
+          {p.playable && (p.playable.launch === 'tab'
+            ? <a class="btn primary" href={p.playable.url} target="_blank" rel="noopener" data-track="play_click" data-item={p.slug}>▶ Play in browser</a>
+            : <a class="btn primary" href={`/play/${p.slug}/`} data-track="play_click" data-item={p.slug}>▶ Play in browser</a>)}
+          {dl && <a class={`btn${p.playable ? '' : ' primary'}`} href={dl} rel="noopener" data-track="download_click" data-item={p.slug}>⬇ Download {release!.version}</a>}
+          {p.repo && <a class="btn" href={p.repo} rel="noopener" data-track="repo_click" data-item={p.slug}>Source code</a>}
+          {p.website && <a class="btn" href={p.website} rel="noopener">Website</a>}
+          {p.discord && <a class="btn" href={p.discord} rel="noopener">Discord</a>}
+          {p.subreddit && <a class="btn" href={p.subreddit} rel="noopener">Reddit</a>}
+        </div>
+      </div>
+      <figure class="shot">
+        <Cover p={p} eager large />
+        {media?.thumb && <figcaption class="meta">Image: the project's own {media.kind === 'social' ? 'GitHub preview' : 'README'}{p.repo && <> · <a href={p.repo} rel="noopener">source</a></>}</figcaption>}
+      </figure>
     </div>
 
     <section class="stats" aria-label="Activity">
-      <div><span class="k">Stars</span><span class="v">{s ? fmtNum(s.stars) : '—'}</span>{s?.starsWeek != null && <span class="d">+{s.starsWeek} this week</span>}</div>
+      <div><span class="k">Stars</span><span class="v">{s ? fmtNum(s.stars) : '—'}</span>{g && <span class="d">{growthLabel(g)}</span>}<Spark p={p} /></div>
       <div><span class="k">Commits, 30 days</span><span class="v">{s?.commits30 ?? '—'}</span></div>
       <div><span class="k">Latest release</span><span class="v">{release ? release.version : '—'}</span>{release?.date && <span class="d">{formatDate(release.date.slice(0, 10))}</span>}</div>
       <div><span class="k">Last push</span><span class="v">{s?.pushedAt ? formatDate(s.pushedAt.slice(0, 10)) : '—'}</span>{s?.archived && <span class="d">archived</span>}</div>
@@ -89,7 +101,7 @@ const schema = {
         ) : (
           <p>Download it from the official repository{p.website ? ' or website' : ''}. No original files are needed.</p>
         )}
-        <p>This project was {verb}{p.team.length > 0 && <> by {p.team.slice(0, 3).join(', ')}{p.team.length > 3 && ' and others'}</>}. Facts last checked {p.checked}.</p>
+        <p>This project was {verb}{p.team.length > 0 && <> by {p.team.slice(0, 3).join(', ')}{p.team.length > 3 && ' and others'}</>}. Facts last checked {p.checked}. <a class="note" href={`https://github.com/andrewnakas/recompsoftware/issues/new?template=correction.yml&title=${encodeURIComponent(`[fix] ${p.name}`)}&page=${encodeURIComponent(`https://recompsoftware.com/p/${p.slug}/`)}`} rel="noopener" data-track="correction_click" data-item={p.slug}>Suggest a correction</a></p>
       </section>
     </div>
 
@@ -129,6 +141,12 @@ const schema = {
   </article>
 </Base>
 <style>
+  .top { display: grid; gap: 1.2rem 2.5rem; align-items: start; }
+  @media (min-width: 900px) { .top { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); } .shot { margin-top: 2rem; } }
+  .intro > :global(h1) { margin-top: 0.3rem; }
+  .shot { margin: 0; }
+  .shot figcaption { margin-top: 0.4rem; }
+  .shot :global(.cover) { box-shadow: 0 18px 50px -20px rgb(0 0 0 / 0.6); }
   .hub-link { margin: 0.8rem 0 0; font-weight: 600; }
   .proj { padding-top: 2rem; }
   .proj h1 { margin-bottom: 0.6rem; }

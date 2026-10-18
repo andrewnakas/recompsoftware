@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import { projects } from '../lib/data';
+const ISSUES = 'https://github.com/andrewnakas/recompsoftware/issues/new';
+const n = projects().length;
+---
+<Base title="Submit a project or correction" description="Suggest a decompilation, recompilation, clean-room rebuild, RE tool or preservation project for Recomp, or correct an entry. Every submission is checked by hand.">
+  <PageHead kicker="Community" title="Add a project" lede={`Recomp tracks ${n} projects and misses plenty. Tell us about one, or fix an entry. Every submission is checked by hand against the project's own pages, and nothing goes live unverified.`} />
+  <section class="wrap section">
+    <form class="sub" id="sub">
+      <label>Source repository or website<input name="repo" type="url" required placeholder="https://github.com/owner/repo" /></label>
+      <p class="meta dup" hidden></p>
+      <label>What it rebuilds<input name="original" required placeholder="Super Mario 64 (Nintendo 64, 1996)" /></label>
+      <label>How was it made, as the project states it
+        <select name="provenance"><option>Human-led</option><option>AI-assisted</option><option>AI-generated</option><option selected>Not stated / not sure</option></select>
+      </label>
+      <label>Anything else (optional)<textarea name="notes" rows="3" placeholder="Releases, browser build, Discord, who leads it"></textarea></label>
+      <div class="btns">
+        <button class="btn primary" type="submit">Continue on GitHub →</button>
+        <a class="btn" href={`${ISSUES}?template=correction.yml`} data-track="correction_click">Correct an entry instead</a>
+      </div>
+      <p class="meta">This opens a prefilled GitHub issue (free account needed).</p>
+    </form>
+    <div class="callout">
+      <p><strong>What gets listed.</strong> Decompilations, static recompilations, source ports, clean-room reimplementations of commercial software, real RE tooling and preservation or server-revival projects. Not listed: projects that ship ROMs, ISOs, retail assets or leaked source, cheats and DRM bypasses, and original games that don't rebuild an existing one.</p>
+    </div>
+  </section>
+</Base>
+<script define:vars={{ ISSUES, known: projects().map((p) => [p.repo?.toLowerCase().replace(/\/$/, '') ?? '', p.slug, p.name]) }}>
+  const f = document.getElementById('sub');
+  const dup = f.querySelector('.dup');
+  f.repo.addEventListener('input', () => {
+    const v = f.repo.value.toLowerCase().trim().replace(/\/$/, '').replace(/\.git$/, '');
+    const hit = v && known.find(([r]) => r && r === v);
+    dup.hidden = !hit;
+    if (hit) dup.innerHTML = `Already listed: <a href="/p/${hit[1]}/">${hit[2]}</a>. Something wrong there? Use "Correct an entry".`;
+  });
+  f.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const q = new URLSearchParams({ template: 'submit-project.yml', title: `[submit] ${f.original.value}`, repo: f.repo.value, original: f.original.value, provenance: f.provenance.value, notes: f.notes.value });
+    window.gtag?.('event', 'submit_click');
+    location.href = `${ISSUES}?${q}`;
+  });
+</script>
+<style>
+  .sub { display: grid; gap: 0.9rem; max-width: 640px; margin-bottom: 2rem; }
+  .sub label { display: grid; gap: 0.3rem; font-weight: 500; font-size: 0.95rem; }
+  .sub input, .sub select, .sub textarea { font: inherit; font-weight: 400; padding: 0.55rem 0.65rem; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--bg-raised); color: var(--ink); }
+  .sub input:focus, .sub select:focus, .sub textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .dup { margin: -0.4rem 0 0; color: var(--warn); }
+</style>

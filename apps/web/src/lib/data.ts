@@ -64,14 +64,52 @@ export const bySlug = (slug: string) => projects().find((p) => p.slug === slug);
 
 export function stats(): Record<string, Stats> { return read('stats/latest.json', { repos: {} } as { repos: Record<string, Stats> }).repos; }
 export function statsDate(): string | null { return read<{ date?: string }>('stats/latest.json', {}).date ?? null; }
+/** Daily snapshots (data/stats/YYYY-MM-DD.json), oldest first: star series and growth before 7 days exist. */
+type Snap = Record<string, { stars: number }>;
+let snapCache: { date: string; repos: Snap }[] | null = null;
+export function snapshots() {
+  if (snapCache) return snapCache;
+  const dir = path.join(DATA, 'stats');
+  const files = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort() : [];
+  snapCache = files.map((f) => ({ date: f.slice(0, 10), repos: JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')) as Snap }));
+  return snapCache;
+}
+export const starSeries = (p: Project) => {
+  if (!p.repo) return [];
+  const k = repoKey(p.repo);
+  return snapshots().filter((s) => s.repos[k]).map((s) => ({ date: s.date, stars: s.repos[k].stars }));
+};
+/** Star growth over the last 7 days, or over as many days of snapshots as exist so far. */
+export function growth(p: Project): { delta: number; days: number } | null {
+  const st = statsFor(p);
+  if (st?.starsWeek != null && snapshots().length >= 8) return { delta: st.starsWeek, days: 7 };
+  const s = starSeries(p);
+  if (s.length < 2) return st?.starsWeek != null ? { delta: st.starsWeek, days: 7 } : null;
+  const last = s[s.length - 1];
+  const first = s.find((x) => Date.parse(last.date) - Date.parse(x.date) <= 7 * 864e5)!;
+  const days = Math.round((Date.parse(last.date) - Date.parse(first.date)) / 864e5);
+  return days >= 1 ? { delta: last.stars - first.stars, days } : null;
+}
+export const growthLabel = (g: { delta: number; days: number }) => `+${fmtNum(g.delta)} ★ ${g.days === 7 ? 'this week' : `in ${g.days} days`}`;
+
 export const statsFor = (p: Project) => (p.repo ? stats()[repoKey(p.repo)] : undefined);
 export function repoKey(url: string) {
   const m = url.match(/github\.com\/([^/]+\/[^/#?]+)/i);
   return m ? m[1].replace(/\.git$/, '').toLowerCase() : url;
 }
 
+/** Each project's own picture (social preview or README image), thumbnailed by scripts/fetch-media.mjs. */
+export interface Media { src: string; kind: 'social' | 'readme'; thumb?: string }
+let mediaCache: Record<string, Media> | null = null;
+export const mediaFor = (p: Project) => (mediaCache ??= read<Record<string, Media>>('media.json', {}))[p.slug];
+
+/** Stable hue per platform, for the generated cover of projects without a picture. */
+export const platformHue = (platform: string) => [...platform].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 360, 7);
+
 export const history = () => read<HistoryEra[]>('history.json', []);
-export const lineage = () => read<{ slug: string; parents: string[]; relation: string }[]>('lineage.json', []);
+type Edge = { slug: string; parents: string[]; relation: string };
+/** Curated edges (lineage.json) plus "built with" edges derived from what projects say (scripts/derive-lineage.mjs). */
+export const lineage = () => [...read<Edge[]>('lineage.json', []), ...read<Edge[]>('lineage-derived.json', [])];
 export const news = () => read<NewsItem[]>('news.json', []).sort((a, b) => b.date.localeCompare(a.date));
 
 export const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -116,7 +154,9 @@ export function heat(p: Project): number {
   if (!s) return 0;
   const rel = s.release?.date ?? p.latestRelease?.date;
   const daysSinceRelease = rel ? (Date.now() - Date.parse(rel)) / 864e5 : 999;
-  return (s.starsWeek ?? 0) * 3 + (s.starsMonth ?? 0) * 0.5 + Math.min(s.commits30 ?? 0, 200) * 0.5 + (daysSinceRelease < 14 ? 150 : daysSinceRelease < 45 ? 40 : 0);
+  const g = growth(p);
+  const week = g ? (g.delta * 7) / g.days : 0;
+  return week * 3 + (s.starsMonth ?? 0) * 0.5 + Math.min(s.commits30 ?? 0, 200) * 0.5 + (daysSinceRelease < 14 ? 150 : daysSinceRelease < 45 ? 40 : 0);
 }
 
 export function formatDate(d: string) {

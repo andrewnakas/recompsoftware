@@ -4164,5 +4164,2488 @@
       "https://github.com/Ravenslofty/biostation"
     ],
     "checked": "2026-10-14"
+  },
+  {
+    "slug": "rust-gameboy2",
+    "name": "rust-gameboy2",
+    "category": "os",
+    "subject": "Game Boy / Game Boy Color",
+    "originalPlatform": "Game Boy",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/germangb/rust-gameboy2",
+    "website": "https://germangb.github.io/rust-gameboy2/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "germangb"
+    ],
+    "started": "2020-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Rust rewrite of the author's earlier Game Boy emulator, with optional Game Boy Color support and test-ROM based tests.",
+    "tags": [
+      "game-boy",
+      "emulator",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/germangb/rust-gameboy2"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "gcom",
+    "name": "gcom",
+    "category": "os",
+    "subject": "Microsoft Component Object Model (in-process)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2015, predates AI coding tools (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/sam-falvo/gcom",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sam-falvo"
+    ],
+    "started": "2015-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Clean-room reimplementation of in-process COM, written in 1999 as the basis of AmigaDE's component system and published later.",
+    "tags": [
+      "com",
+      "amiga",
+      "reimplementation"
+    ],
+    "sources": [
+      "https://github.com/sam-falvo/gcom"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mahnesjs",
+    "name": "MahNES.js",
+    "category": "os",
+    "subject": "Nintendo Entertainment System",
+    "originalPlatform": "NES",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/hlorenzi/mahnesjs",
+    "website": "https://hlorenzi.github.io/mahnesjs/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "hlorenzi"
+    ],
+    "started": "2017-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "NES emulator with both a pure JavaScript core and a Rust/WebAssembly core, playable in the browser.",
+    "tags": [
+      "nes",
+      "emulator",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/hlorenzi/mahnesjs"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "crystalosd-decomp-legacy",
+    "name": "CrystalOSD (decomp, legacy)",
+    "category": "os",
+    "subject": "PlayStation 2 OSDSYS (system menu)",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2000,
+    "method": "matching-decomp",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in repo root (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/JeanxPereira/CrystalOSD-Decomp-Legacy",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "JeanxPereira"
+    ],
+    "started": "2026-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Archived matching decompilation and disassembly of the PS2 OSDSYS menu, kept as reference for its native C++ reimplementation successor.",
+    "tags": [
+      "ps2",
+      "osdsys",
+      "bios",
+      "matching-decomp"
+    ],
+    "sources": [
+      "https://github.com/JeanxPereira/CrystalOSD-Decomp-Legacy"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "t113-ddr-decompiled",
+    "name": "t113-ddr-decompiled",
+    "category": "os",
+    "subject": "Allwinner T113-s3 DDR init (boot SPL library)",
+    "originalPlatform": "Allwinner T113-s3",
+    "originalYear": null,
+    "method": "non-matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/rep-stosw/t113-ddr-decompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "rep-stosw"
+    ],
+    "started": "2022-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Allwinner T113-s3"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Hex-Rays decompilation of the DDR memory initialisation code from Allwinner's T113-s3 boot library, usable from bare-metal code, plus a memory test.",
+    "tags": [
+      "allwinner",
+      "dram",
+      "firmware",
+      "arm"
+    ],
+    "sources": [
+      "https://github.com/rep-stosw/t113-ddr-decompiled"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "imlunahey-emulators",
+    "name": "emulators",
+    "category": "os",
+    "subject": "Multiple consoles (GBA, SNES, NES, N64, PS1, Genesis and more)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/ImLunaHey/emulators",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ImLunaHey"
+    ],
+    "started": "2026-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1.1",
+      "date": "2026-06-16"
+    },
+    "targets": [
+      "Web",
+      "macOS",
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Collection of from-scratch Rust emulator cores for 16 systems, with a WebAssembly web app, native macOS and Windows front-ends and a RetroArch core; the GBA core is the most mature.",
+    "tags": [
+      "emulator",
+      "rust",
+      "wasm",
+      "multi-system"
+    ],
+    "sources": [
+      "https://github.com/ImLunaHey/emulators",
+      "https://github.com/ImLunaHey/emulators/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "oxgbc",
+    "name": "oxGBC",
+    "category": "os",
+    "subject": "Game Boy / Game Boy Color",
+    "originalPlatform": "Game Boy",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/mxmgorin/oxgbc",
+    "website": "https://mxmgorin.github.io/oxgbc/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mxmgorin"
+    ],
+    "started": "2025-01",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "0.22",
+      "date": "2026-08-14"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Game Boy and Game Boy Color emulator in Rust with sub-instruction CPU timing and dot-level PPU, for desktop, Android, handhelds and the browser.",
+    "tags": [
+      "game-boy",
+      "emulator",
+      "rust",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/mxmgorin/oxgbc",
+      "https://github.com/mxmgorin/oxgbc/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "free-bbn",
+    "name": "Free-BBN",
+    "category": "os",
+    "subject": "PlayStation Broadband Navigator (PSBBN)",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/jegesmedve09/Free-BBN",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jegesmedve09"
+    ],
+    "started": "2025-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "PlayStation 2"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Proof-of-concept homebrew recreation of the PS2 Broadband Navigator dashboard written from scratch with ps2sdk and gsKit; the author lists it as paused.",
+    "tags": [
+      "ps2",
+      "dashboard",
+      "homebrew"
+    ],
+    "sources": [
+      "https://github.com/jegesmedve09/Free-BBN"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "phpboy",
+    "name": "phpboy",
+    "category": "os",
+    "subject": "Game Boy Color",
+    "originalPlatform": "Game Boy Color",
+    "originalYear": 1998,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/eddmann/phpboy",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "eddmann"
+    ],
+    "started": "2025-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Game Boy Color emulator written in PHP 8.4 with DMG compatibility, a working terminal frontend and in-progress WebAssembly and SDL2 frontends.",
+    "tags": [
+      "game-boy",
+      "emulator",
+      "php"
+    ],
+    "sources": [
+      "https://github.com/eddmann/phpboy"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "win7-dwm-decomp",
+    "name": "Desktop Window Manager decompilation",
+    "category": "os",
+    "subject": "Windows 7 Desktop Window Manager (dwm.exe, uDWM.dll)",
+    "originalPlatform": "Windows",
+    "originalYear": 2009,
+    "method": "non-matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/Adrikikicp2/DWM",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Adrikikicp2"
+    ],
+    "started": "2024-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Decompilation of the Windows 7 Desktop Window Manager executable and its uDWM library, intended to build within a Windows environment.",
+    "tags": [
+      "windows",
+      "dwm",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/Adrikikicp2/DWM"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "marius-nes",
+    "name": "marius",
+    "category": "os",
+    "subject": "Nintendo Entertainment System",
+    "originalPlatform": "NES",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/alanjian85/marius",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "alanjian85"
+    ],
+    "started": "2021-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Lightweight educational NES emulator in C++ covering the 6502 CPU and PPU, with a WebAssembly build.",
+    "tags": [
+      "nes",
+      "emulator",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/alanjian85/marius"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "open-rvl",
+    "name": "open_rvl",
+    "category": "os",
+    "subject": "Nintendo Revolution (Wii) SDK",
+    "originalPlatform": "Wii",
+    "originalYear": 2006,
+    "method": "matching-decomp",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/kiwi515/open_rvl",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "kiwi515"
+    ],
+    "started": "2022-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Decompilation of the Wii RVL SDK libraries as linked into Wii Sports, meant as shared code for other Wii decomp projects.",
+    "tags": [
+      "wii",
+      "sdk",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/kiwi515/open_rvl"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "win3mu",
+    "name": "Win3mu",
+    "category": "os",
+    "subject": "Windows 3.0 (16-bit Windows programs)",
+    "originalPlatform": "Windows",
+    "originalYear": 1990,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/skochinsky/win3mu",
+    "website": "https://www.toptensoftware.com/win3mu/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "skochinsky",
+      "toptensoftware"
+    ],
+    "started": "2018-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "GitHub mirror of Topten Software's Win3mu, which emulates an 8086 to load 16-bit Windows programs and maps their API calls onto modern Windows.",
+    "tags": [
+      "windows-3",
+      "16-bit",
+      "emulator"
+    ],
+    "sources": [
+      "https://github.com/skochinsky/win3mu"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mes-nes-emulator",
+    "name": "Mes",
+    "category": "os",
+    "subject": "Nintendo Entertainment System",
+    "originalPlatform": "NES",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/luckasRanarison/mes",
+    "website": "https://luckasranarison.github.io/mes/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "luckasRanarison"
+    ],
+    "started": "2024-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "NES emulator written in Rust with a browser build and an Android target, supporting iNES images and a set of common cartridge mappers.",
+    "tags": [
+      "nes",
+      "emulator",
+      "rust",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/luckasRanarison/mes"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ags-aging-tests",
+    "name": "AGS tests",
+    "category": "os",
+    "subject": "AGB Aging Cartridge (Game Boy Advance factory test)",
+    "originalPlatform": "Game Boy Advance",
+    "originalYear": null,
+    "method": "non-matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/DenSinH/AGSTests",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "DenSinH"
+    ],
+    "started": "2021-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Partial disassembly of Nintendo's AGS Aging Cartridge hardware test program for the Game Boy Advance, gathered as a reference for emulator developers.",
+    "tags": [
+      "gba",
+      "test-rom",
+      "disassembly",
+      "emulation"
+    ],
+    "sources": [
+      "https://github.com/DenSinH/AGSTests"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "zakuro",
+    "name": "Zakuro",
+    "category": "os",
+    "subject": "Nintendo 3DS",
+    "originalPlatform": "Nintendo 3DS",
+    "originalYear": 2011,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/fearkov/zakuro",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "fearkov"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.2.27",
+      "date": "2026-10-13"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "High-level Nintendo 3DS emulator in Rust that translates game code ahead of time instead of using a JIT; compatibility is tracked per title.",
+    "tags": [
+      "3ds",
+      "emulator",
+      "aot",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/fearkov/zakuro",
+      "https://github.com/fearkov/zakuro/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "web-a2e",
+    "name": "ApplEm",
+    "category": "os",
+    "subject": "Apple IIe / Apple II Plus",
+    "originalPlatform": "Apple II",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in repo root describe AI agent workflow (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/mikedaley/web-a2e",
+    "website": "https://web-a2e.retrotech71.co.uk/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mikedaley"
+    ],
+    "started": "2026-01",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.6.0",
+      "date": "2026-09-10"
+    },
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Cycle-accurate Apple IIe and II Plus emulator running in the browser through a WebAssembly core with WebGL composite-video CRT rendering.",
+    "tags": [
+      "apple-ii",
+      "emulator",
+      "wasm",
+      "browser"
+    ],
+    "sources": [
+      "https://github.com/mikedaley/web-a2e",
+      "https://github.com/mikedaley/web-a2e/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "n64-ipl",
+    "name": "N64 IPL",
+    "category": "os",
+    "subject": "Nintendo 64 boot code (IPL1, IPL2, IPL3)",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1996,
+    "method": "matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/decompals/N64-IPL",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "decompals"
+    ],
+    "started": "2022-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Disassemblies of the three Nintendo 64 boot stages that produce matching binaries when assembled with IDO 5.3.",
+    "tags": [
+      "n64",
+      "boot",
+      "ipl3",
+      "firmware"
+    ],
+    "sources": [
+      "https://github.com/decompals/N64-IPL"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "coreinit-nx",
+    "name": "coreinit-nx",
+    "category": "os",
+    "subject": "Wii U Cafe OS coreinit library",
+    "originalPlatform": "Wii U",
+    "originalYear": 2012,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/gabryboy12-ai/coreinit-nx",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "gabryboy12-ai"
+    ],
+    "started": "2026-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Nintendo Switch"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Implementation of the Wii U Cafe OS coreinit API on top of libnx so that statically recompiled Wii U game code can run as Switch homebrew; symbol coverage is tracked per title.",
+    "tags": [
+      "wii-u",
+      "switch",
+      "cafe-os",
+      "recomp"
+    ],
+    "sources": [
+      "https://github.com/gabryboy12-ai/coreinit-nx"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ip32prom-decompiler",
+    "name": "ip32prom-decompiler",
+    "category": "os",
+    "subject": "Silicon Graphics O2 (IP32) PROM firmware",
+    "originalPlatform": "SGI O2",
+    "originalYear": 1996,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/mattst88/ip32prom-decompiler",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mattst88"
+    ],
+    "started": "2025-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompiles the PROM firmware of the Silicon Graphics O2 workstation and reassembles it into a bit-identical image.",
+    "tags": [
+      "sgi",
+      "firmware",
+      "mips",
+      "prom"
+    ],
+    "sources": [
+      "https://github.com/mattst88/ip32prom-decompiler"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dolsdk2004",
+    "name": "Dolphin SDK 2004 decompilation",
+    "category": "os",
+    "subject": "Dolphin SDK libraries (April 2004)",
+    "originalPlatform": "GameCube",
+    "originalYear": 2004,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/doldecomp/dolsdk2004",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "doldecomp"
+    ],
+    "started": "2024-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of the compiled library archives from the April 2004 GameCube Dolphin SDK, with per-library completion tracked in the README.",
+    "tags": [
+      "gamecube",
+      "sdk",
+      "decomp",
+      "libraries"
+    ],
+    "sources": [
+      "https://github.com/doldecomp/dolsdk2004"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "pif-sm5-rom",
+    "name": "PIF-SM5-ROM disassembly",
+    "category": "os",
+    "subject": "Nintendo 64 PIF (SM5 microcontroller ROM)",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1996,
+    "method": "non-matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "Unlicense",
+    "repo": "https://github.com/GenericHeroGuy/pif-sm5-rom",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "GenericHeroGuy"
+    ],
+    "started": "2022-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Disassembly of the SM5 microcontroller program inside the Nintendo 64 PIF chip, with a Python disassembler and a C model of the PIF and CIC behaviour.",
+    "tags": [
+      "n64",
+      "pif",
+      "sm5",
+      "firmware"
+    ],
+    "sources": [
+      "https://github.com/GenericHeroGuy/pif-sm5-rom"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dosbox-automation",
+    "name": "dosbox-automation",
+    "category": "os",
+    "subject": "IBM PC compatibles / MS-DOS",
+    "originalPlatform": "MS-DOS",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/dosbox-automation/dosbox-automation",
+    "website": "https://www.dosbox-automation.org",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "dosbox-automation"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.85.1",
+      "date": "2026-09-07"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "DOSBox-derived DOS emulator that adds a REST API, sandboxed Lua scripting and frame-accurate input recording for remote control, recording and CI use.",
+    "tags": [
+      "dos",
+      "dosbox",
+      "emulator",
+      "automation"
+    ],
+    "sources": [
+      "https://github.com/dosbox-automation/dosbox-automation",
+      "https://github.com/dosbox-automation/dosbox-automation/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "space-invaders-emulator-jc",
+    "name": "Space Invaders Emulator",
+    "category": "os",
+    "subject": "Space Invaders arcade hardware (Intel 8080)",
+    "originalPlatform": "Arcade",
+    "originalYear": 1978,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/Justin-Credible/space-invaders-emulator",
+    "website": "https://www.justin-credible.net/2020/03/31/space-invaders-emulator/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Justin-Credible"
+    ],
+    "started": "2019-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Emulator of the Intel 8080 based Space Invaders arcade board with sound, save states, rewind and a debugger, runnable on desktops or a Meadow microcontroller board.",
+    "tags": [
+      "arcade",
+      "8080",
+      "space-invaders",
+      "emulator"
+    ],
+    "sources": [
+      "https://github.com/Justin-Credible/space-invaders-emulator"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "casper-zx",
+    "name": "Casper",
+    "category": "os",
+    "subject": "ZX Spectrum",
+    "originalPlatform": "ZX Spectrum",
+    "originalYear": 1982,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/Arlorean/Casper",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Arlorean"
+    ],
+    "started": "2019-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web",
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "ZX Spectrum emulator in C#, ported from the Java Jasper emulator, that runs as a Blazor WebAssembly page as well as on Windows Forms.",
+    "tags": [
+      "zx-spectrum",
+      "emulator",
+      "blazor",
+      "csharp"
+    ],
+    "sources": [
+      "https://github.com/Arlorean/Casper"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "forecast-channel-decomp",
+    "name": "Forecast Channel decompilation",
+    "category": "os",
+    "subject": "Wii Forecast Channel",
+    "originalPlatform": "Wii",
+    "originalYear": 2006,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo root describe AI agent workflow (GitHub)",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/doldecomp/forecast",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "doldecomp"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of the USA v7 build of the Wii's Forecast Channel, hosted under doldecomp with progress tracked on decomp.dev.",
+    "tags": [
+      "wii",
+      "channel",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/doldecomp/forecast",
+      "https://github.com/GuestDreemurr/forecast"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "game-genie-disassembly-kevinselwyn",
+    "name": "Game Genie disassembly",
+    "category": "os",
+    "subject": "NES Game Genie cartridge ROM",
+    "originalPlatform": "NES",
+    "originalYear": 1990,
+    "method": "matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/kevinselwyn/game-genie-disassembly",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "kevinselwyn"
+    ],
+    "started": "2016-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Disassembly of the NES Game Genie's ROM that reassembles and can be compared against a user-supplied original, with a write-up of the process.",
+    "tags": [
+      "nes",
+      "game-genie",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/kevinselwyn/game-genie-disassembly"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "rfl-decomp",
+    "name": "Revolution Face Library",
+    "category": "os",
+    "subject": "Revolution Face Library (Wii Mii library)",
+    "originalPlatform": "Wii",
+    "originalYear": null,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/koopthekoopa/RFL",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "koopthekoopa"
+    ],
+    "started": "2025-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of the Wii library that handles Miis, extracted from a retail game; release builds match fully and a few debug-build functions remain.",
+    "tags": [
+      "wii",
+      "mii",
+      "sdk",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/koopthekoopa/RFL"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "memetendo-unsafe-boy-advance",
+    "name": "Memetendo Unsafe Boy Advance",
+    "category": "os",
+    "subject": "Game Boy Advance",
+    "originalPlatform": "Game Boy Advance",
+    "originalYear": 2001,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/seandewar/memetendo-unsafe-boy-advance",
+    "website": "https://seandewar.github.io/memetendo-unsafe-boy-advance/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "seandewar"
+    ],
+    "started": "2022-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Game Boy Advance emulator written in Rust with audio support that runs most games and has a browser build.",
+    "tags": [
+      "gba",
+      "emulator",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/seandewar/memetendo-unsafe-boy-advance"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "hagi-decomp",
+    "name": "Hagi",
+    "category": "os",
+    "subject": "Hagi (Nintendo's GameCube/Wii emulator in Super Mario 3D All-Stars)",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2020,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/GRAnimated/Hagi",
+    "website": "https://decomp.dev/GRAnimated/Hagi",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "GRAnimated"
+    ],
+    "started": "2025-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of Hagi, the GameCube and Wii emulator Nintendo used for Super Mario 3D All-Stars on the Switch, with progress on decomp.dev.",
+    "tags": [
+      "switch",
+      "emulator",
+      "decomp",
+      "nintendo"
+    ],
+    "sources": [
+      "https://github.com/GRAnimated/Hagi"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "agx-g16-g17-re",
+    "name": "AGX G16/G17 Clean Room RE",
+    "category": "os",
+    "subject": "Apple G16/G17 AGX GPU (userspace)",
+    "originalPlatform": "Apple Silicon",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README says the work was created entirely via LLM-driven live probing; CLAUDE.md in repo",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/ADevWithAnIdea/agx-re",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ADevWithAnIdea"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Clean-room reverse engineering notes and probes for the userspace side of Apple's G16 and G17 AGX GPUs.",
+    "tags": [
+      "apple",
+      "gpu",
+      "clean-room"
+    ],
+    "sources": [
+      "https://github.com/ADevWithAnIdea/agx-re"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "jgnes",
+    "name": "jgnes",
+    "category": "os",
+    "subject": "Nintendo Entertainment System",
+    "originalPlatform": "NES",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/jsgroth/jgnes",
+    "website": "https://jsgroth.dev/jgnes/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jsgroth"
+    ],
+    "started": "2023-04",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.6.2",
+      "date": "2023-10-06"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Cross-platform NES emulator in Rust with an SDL2 desktop front end and a WebAssembly build; largely superseded by the author's jgenesis.",
+    "tags": [
+      "nes",
+      "emulator",
+      "rust",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/jsgroth/jgnes",
+      "https://github.com/jsgroth/jgnes/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ukncbtl-wasm",
+    "name": "UKNCBTL WASM",
+    "category": "os",
+    "subject": "UKNC (Elektronika MS-0511)",
+    "originalPlatform": "UKNC",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "LGPL-3.0",
+    "repo": "https://github.com/nzeemin/ukncbtl-wasm",
+    "website": "https://nzeemin.github.io/ukncbtl-wasm/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "nzeemin"
+    ],
+    "started": "2017-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "WebAssembly build of the UKNCBTL emulator for the Soviet UKNC school computer with two PDP-11 compatible CPUs, runnable in a browser.",
+    "tags": [
+      "emulator",
+      "pdp-11",
+      "soviet",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/nzeemin/ukncbtl-wasm"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "axwgameboy",
+    "name": "AXWGameboy",
+    "category": "os",
+    "subject": "Game Boy and Game Boy Color",
+    "originalPlatform": "Game Boy",
+    "originalYear": 1989,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/ArcticXWolf/AXWGameboy",
+    "website": "https://arcticxwolf.github.io/AXWGameboy/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ArcticXWolf"
+    ],
+    "started": "2021-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.0.5",
+      "date": "2021-08-04"
+    },
+    "targets": [
+      "Web",
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Go Game Boy emulator built on Ebiten with mostly complete Game Boy Color support, mainly targeting WebAssembly.",
+    "tags": [
+      "gameboy",
+      "emulator",
+      "golang",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/ArcticXWolf/AXWGameboy",
+      "https://github.com/ArcticXWolf/AXWGameboy/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "sos-sword-web",
+    "name": "S-OS SWORD for Web",
+    "category": "os",
+    "subject": "S-OS \"SWORD\"",
+    "originalPlatform": "Z80 home computers",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/W88DodPECuThLOl/SOS_SWORDforWeb",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "W88DodPECuThLOl"
+    ],
+    "started": "2022-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Browser version of the Japanese S-OS \"SWORD\" environment: a WebAssembly Z80 core with the S-OS subroutines and console reimplemented in JavaScript.",
+    "tags": [
+      "s-os",
+      "z80",
+      "emulator",
+      "web"
+    ],
+    "sources": [
+      "https://github.com/W88DodPECuThLOl/SOS_SWORDforWeb"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "rugby-gameboy",
+    "name": "Rugby",
+    "category": "os",
+    "subject": "Game Boy",
+    "originalPlatform": "Game Boy",
+    "originalYear": 1989,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/kaplanz/rugby",
+    "website": "https://rugby.zakhary.dev",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "kaplanz"
+    ],
+    "started": "2022-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Cycle-accurate emulator of the original Game Boy written in Rust, with command-line and web frontends.",
+    "tags": [
+      "gameboy",
+      "emulator",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/kaplanz/rugby"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "fnes",
+    "name": "FNES",
+    "category": "os",
+    "subject": "Nintendo Entertainment System",
+    "originalPlatform": "NES",
+    "originalYear": 1983,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "ISC",
+    "repo": "https://github.com/jakubito/fnes",
+    "website": "https://fnes.netlify.app",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jakubito"
+    ],
+    "started": "2022-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "NES emulator whose core is written in AssemblyScript and compiled to WebAssembly, with a small browser client supporting gamepads and custom key maps.",
+    "tags": [
+      "nes",
+      "emulator",
+      "webassembly"
+    ],
+    "sources": [
+      "https://github.com/jakubito/fnes"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "hanover-flipdot-disasm",
+    "name": "HanoverFlipDot",
+    "category": "os",
+    "subject": "Hanover Displays flip-dot sign firmware",
+    "originalPlatform": "Embedded",
+    "originalYear": null,
+    "method": "non-matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "Unlicense",
+    "repo": "https://github.com/furrtek/HanoverFlipDot",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "furrtek"
+    ],
+    "started": "2017-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Disassembly and analysis of the firmware in a Hanover Displays 84x7 flip-dot sign, documenting its simplified RS-485 serial protocol.",
+    "tags": [
+      "firmware",
+      "disassembly",
+      "hardware"
+    ],
+    "sources": [
+      "https://github.com/furrtek/HanoverFlipDot"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "polo-g40-digifant-decomp",
+    "name": "PoloG40Digifant",
+    "category": "os",
+    "subject": "VW Polo G40 Digifant-1 engine controller firmware",
+    "originalPlatform": "Embedded",
+    "originalYear": null,
+    "method": "non-matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/YOU54F/PoloG40Digifant",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "YOU54F"
+    ],
+    "started": "2018-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of the Digifant-1 engine control unit firmware from the Volkswagen Polo G40, with notes kept in the repo wiki.",
+    "tags": [
+      "firmware",
+      "ecu",
+      "automotive"
+    ],
+    "sources": [
+      "https://github.com/YOU54F/PoloG40Digifant"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "koncepcja",
+    "name": "konCePCja",
+    "category": "os",
+    "subject": "Amstrad CPC and CPC+",
+    "originalPlatform": "Amstrad CPC",
+    "originalYear": 1984,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo root describes agent workflow (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/ikari-pl/konCePCja",
+    "website": "https://ikari-pl.github.io/konCePCja/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ikari-pl"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v6.4.2",
+      "date": "2026-10-07"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Amstrad CPC, CPC+ and GX4000 emulator built around a sub-cycle, pin-level hardware simulation, with a debugger, IPC automation and flux-level disk support.",
+    "tags": [
+      "amstrad",
+      "emulator",
+      "debugger"
+    ],
+    "sources": [
+      "https://github.com/ikari-pl/konCePCja",
+      "https://github.com/ikari-pl/konCePCja/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "gamecom-bootrom-disasm",
+    "name": "gcbootrom",
+    "category": "os",
+    "subject": "Tiger game.com boot ROM",
+    "originalPlatform": "game.com",
+    "originalYear": 1997,
+    "method": "matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/simontime/gcbootrom",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "simontime"
+    ],
+    "started": "2020-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Disassembly of the Tiger game.com boot ROM that rebuilds a matching image using assembler tools from the official SDK.",
+    "tags": [
+      "game-com",
+      "bios",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/simontime/gcbootrom"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "rust-gameboy-germangb",
+    "name": "rust-gameboy",
+    "category": "os",
+    "subject": "Game Boy / Game Boy Color",
+    "originalPlatform": "Game Boy",
+    "originalYear": 1989,
+    "method": "rewrite",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/germangb/rust-gameboy",
+    "website": "https://germangb.github.io/rust-gameboy",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "germangb"
+    ],
+    "started": "2020-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Game Boy and Game Boy Color emulator in Rust; archived with work continuing in a successor repository.",
+    "tags": [
+      "gameboy",
+      "emulator",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/germangb/rust-gameboy"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "os9exec",
+    "name": "OS9exec",
+    "category": "os",
+    "subject": "Microware OS-9/68000",
+    "originalPlatform": "68000",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says a debugger fix was done collaboratively with Claude Sonnet 4.6",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/peacedudes/os9exec",
+    "website": "https://peacedudes.github.io/osk-freeware/try/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "peacedudes",
+      "Lukas Zeller",
+      "Beat Forster"
+    ],
+    "started": "2026-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v4.1.1",
+      "date": "2026-09-29"
+    },
+    "targets": [
+      "macOS",
+      "Linux",
+      "Windows",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "OS-9/68k emulator pairing a 68020 core with a reimplemented OS-9 kernel so unmodified binaries run on modern hosts; continuation of Lukas Zeller and Beat Forster's OS9exec.",
+    "tags": [
+      "os-9",
+      "emulator",
+      "68k"
+    ],
+    "sources": [
+      "https://github.com/peacedudes/os9exec",
+      "https://github.com/peacedudes/os9exec/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "nds-arm7-wifi-decomp",
+    "name": "arm7decomp",
+    "category": "os",
+    "subject": "Nintendo DS ARM7 binary (Wi-Fi driver)",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2004,
+    "method": "non-matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/NathaanTFM/arm7decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "NathaanTFM"
+    ],
+    "started": "2023-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of the Nintendo DS ARM7 component from the TWL SDK, focused on the NitroWireless Wi-Fi driver, to understand how it works rather than to rebuild it.",
+    "tags": [
+      "nds",
+      "arm7",
+      "wifi"
+    ],
+    "sources": [
+      "https://github.com/NathaanTFM/arm7decomp"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "rk86-monitor",
+    "name": "Radio-86RK Monitor disassembly",
+    "category": "os",
+    "subject": "Radio-86RK ROM Monitor",
+    "originalPlatform": "Radio-86RK",
+    "originalYear": 1986,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in repo root describes agent workflow (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/begoon/rk86-monitor",
+    "website": "https://rk86.ru/monitor",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "begoon"
+    ],
+    "started": "2021-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Annotated, Russian-commented disassembly of the 2 KB ROM Monitor of the Soviet Radio-86RK Intel 8080 hobby computer, which assembles back to a binary used by the rk86.ru emulator.",
+    "tags": [
+      "radio-86rk",
+      "8080",
+      "rom"
+    ],
+    "sources": [
+      "https://github.com/begoon/rk86-monitor"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "trs80-level1-disasm",
+    "name": "TRS-80 Level 1 ROM disassembly",
+    "category": "os",
+    "subject": "TRS-80 Level I BASIC ROM",
+    "originalPlatform": "TRS-80",
+    "originalYear": 1977,
+    "method": "non-matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/andyv/level1",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "andyv"
+    ],
+    "started": "2018-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Annotated Z80 disassembly of the 4 KB TRS-80 Level I BASIC ROM, with a memory map of the interpreter.",
+    "tags": [
+      "trs-80",
+      "z80",
+      "basic"
+    ],
+    "sources": [
+      "https://github.com/andyv/level1"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "retrobob",
+    "name": "retrobob",
+    "category": "os",
+    "subject": "SNES, NES/Famicom, Game Boy and Game Boy Color",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/iury/retrobob",
+    "website": "https://retrobob.bitzero.com.br",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "iury"
+    ],
+    "started": "2024-02",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.4.0",
+      "date": "2024-03-25"
+    },
+    "targets": [
+      "Web",
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Multi-system emulator written in Zig that runs in the browser and as a native build, covering the Super Nintendo, NES/Famicom, Game Boy and Game Boy Color.",
+    "tags": [
+      "emulator",
+      "snes",
+      "nes",
+      "gameboy",
+      "web"
+    ],
+    "sources": [
+      "https://github.com/iury/retrobob",
+      "https://github.com/iury/retrobob/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "webtv-decomp",
+    "name": "WebTV decompilation project",
+    "category": "os",
+    "subject": "WebTV OS (LC2 build 2046)",
+    "originalPlatform": "WebTV",
+    "originalYear": null,
+    "method": "non-matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/webtv-decomp/decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "webtv-decomp"
+    ],
+    "started": "2024-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Partial decompilation of the WebTV LC2 build 2046 firmware; the author has marked the project discontinued, leaving the analysed pieces in the repo.",
+    "tags": [
+      "webtv",
+      "firmware",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/webtv-decomp/decomp"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "lv0pen",
+    "name": "lv0pen",
+    "category": "os",
+    "subject": "PlayStation 3 boot chain (lv0, loaders and isolated SPU modules)",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": null,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/sagemono/lv0pen",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sagemono"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Byte-matching decompilation of the PS3 boot chain, rebuilt with the original compilers; lv0 and several loaders match fully and the rest are close.",
+    "tags": [
+      "ps3",
+      "firmware",
+      "bootloader",
+      "spu",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/sagemono/lv0pen"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "athenaos",
+    "name": "AthenaOS",
+    "category": "os",
+    "subject": "FreyaBIOS/FreyaOS (WonderWitch)",
+    "originalPlatform": "WonderSwan",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/OpenWitch/AthenaOS",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "OpenWitch"
+    ],
+    "started": "2024-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Clean-room reimplementation of the WonderWitch FreyaBIOS/FreyaOS layer so freely available WonderWitch software can run on emulators and third-party cartridges.",
+    "tags": [
+      "wonderswan",
+      "wonderwitch",
+      "bios",
+      "clean-room"
+    ],
+    "sources": [
+      "https://github.com/OpenWitch/AthenaOS"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "acorn-mos-disassembly",
+    "name": "Acorn MOS disassembly",
+    "category": "os",
+    "subject": "Acorn MOS (BBC Master series)",
+    "originalPlatform": "BBC Micro",
+    "originalYear": 1986,
+    "method": "matching-decomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/tom-seddon/acorn_mos_disassembly",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "tom-seddon"
+    ],
+    "started": "2020-12",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "20260501-000102-f740ee9",
+      "date": "2026-04-30"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Disassembly of Acorn MOS for the 8-bit BBC Master series that rebuilds the original versions and also produces experimental updated MOS releases.",
+    "tags": [
+      "acorn",
+      "bbc-master",
+      "6502",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/tom-seddon/acorn_mos_disassembly",
+      "https://github.com/tom-seddon/acorn_mos_disassembly/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "gb-web-zeroview",
+    "name": "gb-web",
+    "category": "os",
+    "subject": "Nintendo Game Boy (DMG)",
+    "originalPlatform": "Game Boy",
+    "originalYear": 1989,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/zeroview/gb-web",
+    "website": "https://zeroview.github.io/gb-web/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "zeroview"
+    ],
+    "started": "2025-01",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0.0",
+      "date": "2025-12-16"
+    },
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Browser-based original Game Boy emulator with a Rust core compiled to WebAssembly, WebGL display shaders and a Svelte interface; passes common CPU and PPU test programs.",
+    "tags": [
+      "gameboy",
+      "emulator",
+      "rust",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/zeroview/gb-web",
+      "https://github.com/zeroview/gb-web/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "rustyboy",
+    "name": "rustyboy",
+    "category": "os",
+    "subject": "Nintendo Game Boy",
+    "originalPlatform": "Game Boy",
+    "originalYear": 1989,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/klolev/rustyboy",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "klolev"
+    ],
+    "started": "2018-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "iOS",
+      "Web",
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Work-in-progress Game Boy emulator in Rust with iOS, web and desktop front ends; CPU, PPU, input and timers are done but sound is not.",
+    "tags": [
+      "gameboy",
+      "emulator",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/klolev/rustyboy"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dc4ever",
+    "name": "DC4Ever",
+    "category": "os",
+    "subject": "Sega Dreamcast",
+    "originalPlatform": "Dreamcast",
+    "originalYear": 1998,
+    "method": "rewrite",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/skmp/dc4ever",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "skmp"
+    ],
+    "started": "2019-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Archived source of an early Dreamcast emulator from 2003-2005, recovered from backups; parts of it later fed into nullDC and Reicast.",
+    "tags": [
+      "dreamcast",
+      "emulator",
+      "history"
+    ],
+    "sources": [
+      "https://github.com/skmp/dc4ever"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "pokewalker-decomp",
+    "name": "pw",
+    "category": "os",
+    "subject": "Pokéwalker firmware",
+    "originalPlatform": "Pokéwalker",
+    "originalYear": 2009,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/lumirth/pw",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "lumirth"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the Pokéwalker pedometer firmware that rebuilds an identical binary with a Renesas HEW toolchain and the original artwork.",
+    "tags": [
+      "pokemon",
+      "firmware",
+      "h8",
+      "matching-decomp"
+    ],
+    "sources": [
+      "https://github.com/lumirth/pw"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "xbox-dashboard-recomp",
+    "name": "Xbox Dashboard Recompiled",
+    "category": "os",
+    "subject": "Original Xbox Dashboard (build 3944)",
+    "originalPlatform": "Xbox",
+    "originalYear": null,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/sp00nznet/xboxdashboard",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sp00nznet"
+    ],
+    "started": "2026-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of the original Xbox Dashboard executable to native Windows code on the xboxrecomp toolkit, with a D3D8-to-D3D11 backend. Early: it boots but renders a black frame.",
+    "tags": [
+      "xbox",
+      "dashboard",
+      "static-recomp"
+    ],
+    "sources": [
+      "https://github.com/sp00nznet/xboxdashboard"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "rustynes-doublegate",
+    "name": "RustyNES",
+    "category": "os",
+    "subject": "Nintendo Entertainment System",
+    "originalPlatform": "NES",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo root (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/doublegate/RustyNES",
+    "website": "https://doublegate.github.io/RustyNES/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "doublegate"
+    ],
+    "started": "2025-12",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v3.3.0",
+      "date": "2026-10-16"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Cycle-accurate NES emulator in Rust with broad mapper coverage, WebAssembly builds, rollback netplay, TAS tools and RetroAchievements.",
+    "tags": [
+      "nes",
+      "emulator",
+      "rust",
+      "wasm"
+    ],
+    "sources": [
+      "https://github.com/doublegate/RustyNES",
+      "https://github.com/doublegate/RustyNES/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "rim-buei-gameboy",
+    "name": "gameboy (rim-buei)",
+    "category": "os",
+    "subject": "Game Boy",
+    "originalPlatform": "Game Boy",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/rim-buei/gameboy",
+    "website": "https://tekito.net/gameboy",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "rim-buei"
+    ],
+    "started": "2018-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web",
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Simple Game Boy (DMG) emulator in Rust that aims for accuracy over features and runs some games; also usable as a learning reference.",
+    "tags": [
+      "game-boy",
+      "emulator",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/rim-buei/gameboy"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "vmu-bios-disassembly",
+    "name": "VMU BIOS disassembly",
+    "category": "os",
+    "subject": "Sega Dreamcast VMU BIOS (v1.05)",
+    "originalPlatform": "Dreamcast VMU",
+    "originalYear": 1998,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/gyrovorbis/vmu-bios-disassembly",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "gyrovorbis"
+    ],
+    "started": "2023-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Commented disassembly and analysis of the American Dreamcast VMU BIOS v1.05, documenting its routines and hidden behaviour.",
+    "tags": [
+      "dreamcast",
+      "vmu",
+      "bios",
+      "disassembly"
+    ],
+    "sources": [
+      "https://github.com/gyrovorbis/vmu-bios-disassembly"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "pocket-native",
+    "name": "Pocket Native",
+    "category": "os",
+    "subject": "Nintendo 3DS",
+    "originalPlatform": "Nintendo 3DS",
+    "originalYear": null,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/whovian64/pocket-native",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "whovian64"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.2.0",
+      "date": "2026-10-17"
+    },
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Fork of the Zakuro 3DS ahead-of-time recompiling emulator, adapted for the R36S and other low-end Linux handhelds with an OpenGL ES renderer. A PC rebuilds each game from your own copy.",
+    "tags": [
+      "3ds",
+      "recompilation",
+      "handheld"
+    ],
+    "sources": [
+      "https://github.com/whovian64/pocket-native",
+      "https://github.com/whovian64/pocket-native/releases"
+    ],
+    "checked": "2026-10-18"
   }
 ]

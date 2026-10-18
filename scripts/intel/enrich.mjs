@@ -1,5 +1,6 @@
 // Enrich .cache/harvest.json with latest release, README head and AI-build signals (CLAUDE.md / AGENTS.md / README wording).
-// Usage: node scripts/intel/enrich.mjs  -> .cache/harvest-enriched.json
+// Usage: node scripts/intel/enrich.mjs [--in .cache/harvest.json] [--out .cache/harvest-enriched.json]
+// Candidates whose repo is already in data/projects/*.json are dropped first.
 import fs from 'node:fs';
 import path from 'node:path';
 import { execSync } from 'node:child_process';
@@ -8,7 +9,14 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const token = process.env.GITHUB_TOKEN || execSync('gh auth token').toString().trim();
 const H = { 'User-Agent': 'recompsoftware-harvest/0.1', Authorization: `bearer ${token}` };
-const cands = JSON.parse(fs.readFileSync(path.join(ROOT, '.cache/harvest.json'), 'utf8')).filter((x) => !x.via.every((v) => v.includes('game-datasets')));
+const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : d; };
+const IN = path.resolve(ROOT, arg('--in', '.cache/harvest.json'));
+const OUT = path.resolve(ROOT, arg('--out', '.cache/harvest-enriched.json'));
+const norm = (u) => (u ?? '').toLowerCase().replace(/\.git$/, '').replace(/\/$/, '');
+const tracked = new Set(['games', 'apps', 'os', 'tools', 'preservation'].flatMap((c) => JSON.parse(fs.readFileSync(path.join(ROOT, `data/projects/${c}.json`), 'utf8')).map((p) => norm(p.repo))).filter(Boolean));
+const all = JSON.parse(fs.readFileSync(IN, 'utf8')).filter((x) => !(x.via ?? []).every((v) => v.includes('game-datasets')));
+const cands = all.filter((x) => !tracked.has(norm(x.repo)));
+console.log(`input ${all.length}; already tracked ${all.length - cands.length}; to enrich ${cands.length}`);
 const AI = /\b(claude|codex|chatgpt|gpt-[45]|copilot|cursor|llm|ai[- ](assisted|generated|written|agent)|made (almost )?(entirely|exclusively) with ai|vibe[- ]cod)/i;
 const blob = (a, f) => `${a}: object(expression: "HEAD:${f}") { ... on Blob { text } }`;
 
@@ -33,5 +41,5 @@ for (let i = 0; i < cands.length; i += 25) {
   });
   if (i % 250 === 0) console.log(`${i}/${cands.length}`);
 }
-fs.writeFileSync(path.join(ROOT, '.cache/harvest-enriched.json'), JSON.stringify(cands, null, 1));
+fs.writeFileSync(OUT, JSON.stringify(cands, null, 1));
 console.log(`enriched ${cands.length}; with AI files ${cands.filter((c) => c.aiFiles?.length).length}; AI wording ${cands.filter((c) => c.aiHits?.length).length}`);

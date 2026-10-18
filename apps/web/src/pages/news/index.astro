@@ -1,9 +1,12 @@
 ---
 import Base from '../../layouts/Base.astro';
 import PageHead from '../../components/PageHead.astro';
-import { news, projects, formatDate } from '../../lib/data';
+import Cover from '../../components/Cover.astro';
+import { news, projects, formatDate, mediaFor } from '../../lib/data';
 const items = news();
 const all = projects();
+// A story shows the picture of the first linked project that has one.
+const pic = (slugs: string[] = []) => slugs.map((s) => all.find((p) => p.slug === s)).find((p) => p && mediaFor(p)?.thumb);
 const host = (u: string) => new URL(u).hostname.replace(/^www\./, '');
 ---
 <Base title="Decomp & recomp news" description="Releases, milestones and announcements from decompilation, recompilation and preservation projects, each linked to its source.">
@@ -12,18 +15,24 @@ const host = (u: string) => new URL(u).hostname.replace(/^www\./, '');
     {items.length === 0 && <p>The first stories are on their way. Meanwhile see <a href="/history/">the history</a>.</p>}
     <ol class="news">
       {items.map((n) => (
-        <li>
+        <li class:list={{ has: pic(n.projects) }}>
+          {pic(n.projects) && <a class="np" href={`/p/${pic(n.projects)!.slug}/`} tabindex="-1" aria-hidden="true"><Cover p={pic(n.projects)!} /></a>}
+          <div>
           <time class="meta">{formatDate(n.date)}</time>
           <h3><a href={n.source} rel="noopener">{n.title}</a></h3>
           <p>{n.body}</p>
           <p class="meta">{n.projects?.map((s) => all.find((p) => p.slug === s)).filter(Boolean).map((p) => <a href={`/p/${p!.slug}/`}>{p!.name}</a>)} <span>via {host(n.source)}</span></p>
+          </div>
         </li>
       ))}
     </ol>
   </section>
 </Base>
 <style>
-  .news { list-style: none; padding: 0; max-width: 75ch; }
+  .news { list-style: none; padding: 0; max-width: 90ch; }
+  .news li.has { display: grid; gap: 0.8rem 1.4rem; }
+  @media (min-width: 720px) { .news li.has { grid-template-columns: 220px minmax(0, 1fr); } }
+  .np { display: block; align-self: start; }
   .news li { border-top: 1px solid var(--line); padding: 1rem 0; }
   .news h3 { margin: 0.2rem 0 0.3rem; }
   .news p { margin: 0; color: var(--ink-soft); }

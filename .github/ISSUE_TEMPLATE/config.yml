@@ -1,1 +1,5 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
+contact_links:
+  - name: Browse the catalogue
+    url: https://recompsoftware.com/projects/
+    about: Check whether the project is already listed.

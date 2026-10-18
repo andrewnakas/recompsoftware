@@ -1,0 +1,23 @@
+---
+// Star history sparkline from the daily snapshots.
+import { starSeries, type Project } from '../lib/data';
+interface Props { p: Project; w?: number; h?: number }
+const { p, w = 160, h = 36 } = Astro.props;
+const s = starSeries(p);
+const min = Math.min(...s.map((x) => x.stars)), max = Math.max(...s.map((x) => x.stars));
+const pts = s.map((x, i) => [(i / Math.max(1, s.length - 1)) * (w - 4) + 2, h - 3 - ((x.stars - min) / Math.max(1, max - min)) * (h - 6)]);
+const d = pts.map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`).join(' ');
+---
+{s.length >= 2 && (
+  <svg class="spark" viewBox={`0 0 ${w} ${h}`} width={w} height={h} role="img" aria-label={`Stars from ${s[0].stars} on ${s[0].date} to ${s[s.length - 1].stars} on ${s[s.length - 1].date}`}>
+    <path d={`${d} L${w - 2} ${h} L2 ${h} Z`} class="area" />
+    <path d={d} class="line" />
+    <circle cx={pts[pts.length - 1][0]} cy={pts[pts.length - 1][1]} r="2.6" class="dot" />
+  </svg>
+)}
+<style>
+  .spark { display: block; overflow: visible; }
+  .line { fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round; }
+  .area { fill: var(--accent); opacity: 0.12; }
+  .dot { fill: var(--accent); }
+</style>

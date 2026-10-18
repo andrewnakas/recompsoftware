@@ -1,29 +1,119 @@
 ---
 import Base from '../layouts/Base.astro';
 import PageHead from '../components/PageHead.astro';
-import { lineage, projects } from '../lib/data';
+import Cover from '../components/Cover.astro';
+import { lineage, projects, type Project } from '../lib/data';
 const all = projects();
-const name = (s: string) => all.find((p) => p.slug === s);
-const edges = lineage();
-// Group children under each parent: "what was built on what".
-const parents = [...new Set(edges.flatMap((e) => e.parents))]
-  .map((slug) => ({ slug, p: name(slug), kids: edges.filter((e) => e.parents.includes(slug)) }))
-  .sort((a, b) => b.kids.length - a.kids.length);
-const link = (s: string) => { const p = name(s); return p ? `<a href="/p/${s}/">${p.name}</a>` : s; };
+const find = (s: string) => all.find((p) => p.slug === s);
+const edges = lineage().flatMap((e) => e.parents.map((parent) => ({ child: e.slug, parent, rel: e.relation }))).filter((e) => find(e.child) && find(e.parent));
+// One section per parent, biggest first: "what was built on what".
+const groups = [...new Set(edges.map((e) => e.parent))]
+  .map((slug) => ({ p: find(slug)!, kids: edges.filter((e) => e.parent === slug).map((e) => ({ p: find(e.child)!, rel: e.rel })) }))
+  .sort((a, b) => b.kids.length - a.kids.length || a.p.name.localeCompare(b.p.name));
+
+// Overview graph, laid out at build time (force-directed, deterministic): parents are hubs, children orbit them.
+const W = 1100, H = 640;
+const ids = [...new Set(edges.flatMap((e) => [e.parent, e.child]))];
+const deg: Record<string, number> = Object.fromEntries(ids.map((id) => [id, edges.filter((e) => e.parent === id).length]));
+let seed = 7;
+const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const pos: Record<string, { x: number; y: number; vx: number; vy: number }> = Object.fromEntries(
+  ids.map((id) => [id, { x: W / 2 + (rnd() - 0.5) * W * 0.8, y: H / 2 + (rnd() - 0.5) * H * 0.8, vx: 0, vy: 0 }]),
+);
+const r = (id: string) => (deg[id] ? 6 + Math.sqrt(deg[id]) * 4.5 : 3.2);
+for (let it = 0; it < 420; it++) {
+  const cool = 1 - it / 420;
+  for (let i = 0; i < ids.length; i++) for (let j = i + 1; j < ids.length; j++) {
+    const a = pos[ids[i]], b = pos[ids[j]];
+    let dx = a.x - b.x, dy = a.y - b.y;
+    const f = (14 * (1 + (deg[ids[i]] + deg[ids[j]]) * 0.15)) / Math.max(dx * dx + dy * dy, 25);
+    dx *= f; dy *= f;
+    a.vx += dx; a.vy += dy; b.vx -= dx; b.vy -= dy;
+  }
+  for (const e of edges) {
+    const a = pos[e.child], b = pos[e.parent];
+    const dx = b.x - a.x, dy = b.y - a.y, d = Math.hypot(dx, dy) || 1, f = (d - (20 + r(e.parent))) * 0.06;
+    a.vx += (dx / d) * f; a.vy += (dy / d) * f; b.vx -= (dx / d) * f * 0.3; b.vy -= (dy / d) * f * 0.3;
+  }
+  for (const id of ids) {
+    const n = pos[id];
+    n.vx += (W / 2 - n.x) * 0.015; n.vy += (H / 2 - n.y) * 0.024;
+    n.x += Math.max(-12, Math.min(12, n.vx)) * cool; n.y += Math.max(-12, Math.min(12, n.vy)) * cool;
+    n.vx *= 0.5; n.vy *= 0.5;
+    const m = r(id) + 8; // keep dots (and hub labels above them) inside the frame
+    n.x = Math.max(m, Math.min(W - m, n.x)); n.y = Math.max(m + (deg[id] >= 3 ? 18 : 0), Math.min(H - m, n.y));
+  }
+}
+const catColor: Record<Project['category'], string> = { games: 'var(--accent)', tools: 'var(--warn)', os: '#7aa7ff', apps: '#d58cff', preservation: 'var(--ok)' };
+const hubs = new Set(ids.filter((id) => deg[id] >= 3));
+const f1 = (n: number) => n.toFixed(1);
 ---
-<Base title="Tool lineage: what each recomp and decomp is built on" description="Which recompiler, decomp toolchain or library each project is built on, forked from or inspired by.">
-  <PageHead kicker="Lineage" title="Built on the shoulders of" lede="Static recompilers, decomp toolchains and shared libraries, and the projects that grew out of each." />
-  <section class="wrap tree">
-    {parents.map((g) => (
-      <section>
-        <h2>{g.p ? <a href={`/p/${g.slug}/`}>{g.p.name}</a> : g.slug}</h2>
-        <ul>{g.kids.map((k) => <li><Fragment set:html={link(k.slug)} /> <span class="meta">{k.relation.replace(/-/g, ' ')}</span></li>)}</ul>
+<Base title="Tool lineage: what each recomp and decomp is built on" description={`${edges.length} links between static recompilers, decomp toolchains and the ${ids.length} projects built with them: N64Recomp, ReXGlue, XenonRecomp, splat, objdiff and more.`}>
+  <PageHead kicker="Lineage" title="Built on the shoulders of" lede={`Static recompilers, decomp toolchains and shared libraries, and the projects that grew out of each: ${edges.length} links between ${ids.length} projects, taken from the projects' own descriptions.`} />
+  <section class="wrap">
+    <figure class="graph">
+      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Graph of tools and the projects built with them">
+        <g class="edges">{edges.map((e) => <line x1={f1(pos[e.child].x)} y1={f1(pos[e.child].y)} x2={f1(pos[e.parent].x)} y2={f1(pos[e.parent].y)} data-p={e.parent} data-c={e.child} />)}</g>
+        <g class="nodes">{ids.map((id) => (
+          <a href={`/p/${id}/`} data-id={id}>
+            <circle cx={f1(pos[id].x)} cy={f1(pos[id].y)} r={r(id)} style={`fill:${catColor[find(id)!.category]}`} />
+            <title>{find(id)!.name}{deg[id] ? ` · ${deg[id]} projects` : ''}</title>
+            {hubs.has(id) && <text x={f1(pos[id].x)} y={f1(pos[id].y - r(id) - 5)}>{find(id)!.name}</text>}
+          </a>
+        ))}</g>
+      </svg>
+      <figcaption class="meta">
+        <span class="k" style="--c:var(--warn)"></span>RE tool <span class="k" style="--c:var(--accent)"></span>game <span class="k" style="--c:#7aa7ff"></span>OS &amp; system <span class="k" style="--c:#d58cff"></span>app <span class="k" style="--c:var(--ok)"></span>preservation · a bigger dot means more projects are built on it. Hover to trace the links, click to open a project.
+      </figcaption>
+    </figure>
+  </section>
+  <section class="wrap groups">
+    {groups.map((g) => (
+      <section class="grp" id={g.p.slug}>
+        <div class="gh"><h2><a href={`/p/${g.p.slug}/`}>{g.p.name}</a></h2><span class="meta">{g.kids.length} {g.kids.length > 1 ? 'projects' : 'project'}</span></div>
+        <ul class="kids">{g.kids.map((k) => (
+          <li><a href={`/p/${k.p.slug}/`}><span class="kt"><Cover p={k.p} /></span><span class="kn">{k.p.name}<span class="meta">{k.rel.replace(/-/g, ' ')}</span></span></a></li>
+        ))}</ul>
       </section>
     ))}
   </section>
 </Base>
+<script>
+  // Trace a node's links on hover.
+  const svg = document.querySelector<SVGSVGElement>('.graph svg');
+  svg?.querySelectorAll<SVGAElement>('.nodes a').forEach((n) => {
+    const id = n.dataset.id!;
+    n.addEventListener('mouseenter', () => {
+      svg.classList.add('tracing');
+      svg.querySelectorAll(`line[data-p="${id}"],line[data-c="${id}"]`).forEach((l) => l.classList.add('on'));
+      n.classList.add('on');
+    });
+    n.addEventListener('mouseleave', () => { svg.classList.remove('tracing'); svg.querySelectorAll('.on').forEach((l) => l.classList.remove('on')); });
+  });
+</script>
 <style>
-  .tree { display: grid; gap: 0 2.5rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
-  .tree h2 { font-size: 1.3rem; border-top: 1px solid var(--ink); padding-top: 0.6rem; margin-top: 1.5rem; }
-  .tree ul { padding-left: 1.1rem; margin: 0; }
+  .graph { margin: 1rem 0 2rem; border: 1px solid var(--line); border-radius: 8px; background: radial-gradient(80% 80% at 50% 40%, var(--bg-raised), var(--bg-sunk)); padding: 0.5rem; }
+  .graph svg { display: block; width: 100%; height: auto; }
+  .edges line { stroke: var(--line-strong); stroke-width: 1; opacity: 0.55; transition: opacity 0.15s; }
+  .nodes circle { stroke: var(--bg); stroke-width: 1.5; transition: opacity 0.15s; }
+  .nodes text { font: 600 12px var(--font-body); fill: var(--ink); text-anchor: middle; paint-order: stroke; stroke: var(--bg); stroke-width: 3px; pointer-events: none; }
+  .tracing line { opacity: 0.08; }
+  .tracing line.on { opacity: 1; stroke: var(--accent); stroke-width: 1.6; }
+  .tracing .nodes a:not(.on) circle { opacity: 0.45; }
+  figcaption { padding: 0.4rem 0.5rem 0.2rem; }
+  .k { display: inline-block; width: 0.6rem; height: 0.6rem; border-radius: 50%; background: var(--c); margin: 0 0.25rem 0 0.6rem; vertical-align: -1px; }
+  .groups { display: grid; gap: 0 2.5rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
+  .grp { margin-top: 1.5rem; }
+  .gh { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; border-top: 1px solid var(--ink); padding-top: 0.6rem; }
+  .gh h2 { font-size: 1.3rem; margin: 0; }
+  .kids { list-style: none; padding: 0; margin: 0.6rem 0 0; display: grid; gap: 0.4rem; max-height: 26rem; overflow-y: auto; }
+  .kids a { display: flex; gap: 0.7rem; align-items: center; text-decoration: none; }
+  .kids a:hover .kn { color: var(--accent); }
+  .kt { display: block; width: 64px; flex: none; }
+  .kt :global(.cover) { border-radius: 4px; }
+  .kt :global(.gp) { font-size: 0.8rem !important; }
+  .kt :global(.gs) { display: none; }
+  .kt :global(.gen) { padding: 0.25rem 0.35rem; }
+  .kn { display: grid; font-size: 0.92rem; line-height: 1.25; }
+  .kn .meta { font-size: 0.7rem; }
 </style>

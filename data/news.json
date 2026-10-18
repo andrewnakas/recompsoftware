@@ -76,5 +76,230 @@
     "projects": [
       "goldeneye-decomp"
     ]
+  },
+  {
+    "date": "2026-10-17",
+    "kind": "release",
+    "title": "Lost Odyssey Recomp reaches v1.0.0",
+    "body": "The Xbox 360 RPG now runs natively on Windows, Linux, Apple Silicon Macs and Android, with builds for all four on the release page; three fix releases (up to v1.0.3) followed the same day. The developer's announcement bills it as 44 days from an empty repository to 1.0. No game data is included: you import your own disc or extracted files.",
+    "source": "https://github.com/freefrank/LostOdysseyRecomp/releases",
+    "projects": [
+      "lostodyssey-recomp",
+      "xenonrecomp"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "kind": "release",
+    "title": "Ninja Gaiden Black statically recompiled for Linux and Windows",
+    "body": "Ninja Gaiden Black Recompiled turns the 2005 Xbox game into native Linux (AppImage) and Windows builds that draw through their own Vulkan renderer instead of emulating the Xbox GPU. It targets 60 fps with widescreen, ultrawide and keyboard-and-mouse support; builds are still prereleases, the latest being v0.9.18. It installs from your own copy of the US release.",
+    "source": "https://github.com/gamboozino/ngbrecomp/releases",
+    "projects": []
+  },
+  {
+    "date": "2026-10-14",
+    "kind": "release",
+    "title": "Gravity Rush 2 gets a native PC port",
+    "body": "HayatoG's port runs the PS4 game's own code directly on the processor, reimplements the PS4 system and translates its graphics to Vulkan, sharing a core with the same developer's The Last Guardian port. The first builds appeared on 14 October; the README lists Linux as tested and the Windows build as not yet tested in game. You need your own dump of the US release with update 1.11.",
+    "source": "https://github.com/HayatoG/gr2_pc",
+    "projects": []
+  },
+  {
+    "date": "2026-10-17",
+    "kind": "release",
+    "title": "Skies of Arcadia Legends: Recompiled v0.10.0-beta adds the European disc",
+    "body": "The GameCube RPG's static recompilation, which uses Dolphin's hardware code for graphics, sound and input, now accepts the European release with English, German, French or Spanish text. Beta builds cover Windows, Linux and Android and add widescreen, 60 fps and save states; you supply your own disc.",
+    "source": "https://github.com/ogdanimal/SkiesOfArcadiaLegends-Recomp/releases/tag/v0.10.0-beta",
+    "projects": []
+  },
+  {
+    "date": "2026-10-11",
+    "kind": "release",
+    "title": "Splinter Cell: Double Agent (Xbox) released as a native PC port, along with the tool that made it",
+    "body": "SCDA-XBERecomp V1 is a 64-bit Windows build of the original Xbox version, drawn with Direct3D 12 and played through XAudio2. Its author has published the recompiler as a separate tool, Xbox XBE Recomp, which translates an XBE's x86 code to C++ and implements the Xbox kernel and XDK libraries on Windows; it has since been used for BLACK. Game files come from your own copy.",
+    "source": "https://github.com/TGP482/SCDA-XBERecomp/releases",
+    "projects": [
+      "scda-xberecomp",
+      "xbox-xbe-recomp"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "kind": "release",
+    "title": "Far Cry Instincts recompiled for Windows: fci-recomp 0.1.0",
+    "body": "The first release of this port of the 2005 Xbox game has a working story mode and map editor, a Direct3D 12 renderer and customisable mouse and keyboard controls; it needs an original disc image. The README states the project was built with extensive AI assistance, with a human reviewing the work.",
+    "source": "https://github.com/VinceIP/fci-recomp",
+    "projects": []
+  },
+  {
+    "date": "2026-10-17",
+    "kind": "release",
+    "title": "Mortal Kombat: Shaolin Monks Recomp v0.1.0 brings the Xbox game to Windows",
+    "body": "The first release plays the campaign from start to finish on Windows x64 through Direct3D 12, with some graphical issues still open. It adds render scaling, display modes, keyboard and mouse, and button remapping. You need a US or European Xbox copy; the README says AI assistance is used for analysis, code, debugging and documentation.",
+    "source": "https://github.com/OAleex/ShaolinMonksRecomp/releases",
+    "projects": []
+  },
+  {
+    "date": "2026-10-16",
+    "kind": "release",
+    "title": "Army of Two Recompilation ships with online co-op, no EA servers needed",
+    "body": "This Windows port of the Xbox 360 game, built with the ReXGlue SDK and its own Direct3D 12 renderer, lets the campaign be played in online co-op and, per its README, is finishable solo or together. v1.0 came out on 16 October and v1.1 a day later; it needs your own copy of the European release.",
+    "source": "https://github.com/OpenPortroid/ArmyOfTwoRecompilation/releases",
+    "projects": [
+      "rexglue"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "kind": "announcement",
+    "title": "Super Mario Bros. Wonder static recompilation goes public",
+    "body": "Projeto Belmante opened a repository that translates the Switch game's AArch64 code (version 1.0.0) to C++ and implements Nintendo's NVN graphics API on Vulkan (MoltenVK on macOS), targeting macOS, Android and Windows. It distributes no game files and no builds: everything is produced from your own dump, keys and firmware. The README says most of the code was written with Claude, directed and reviewed by a human.",
+    "source": "https://github.com/BelmanteGu/SuperMarioWonderRecomp",
+    "projects": []
+  },
+  {
+    "date": "2026-10-17",
+    "kind": "release",
+    "title": "Two Naruto Ultimate Ninja Storm games recompiled for Android and PC",
+    "body": "The same developer released static recompilations of the Xbox 360 versions of Ultimate Ninja Storm Generations (v0.1 on 15 October) and Ultimate Ninja Storm 3 Full Burst (v0.3 on 17 October). Both translate the PowerPC executable to ARM64 and x86-64 and use a Vulkan backend tuned for phone GPUs; the APKs and Windows builds contain no game files.",
+    "source": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo",
+    "projects": []
+  },
+  {
+    "date": "2026-10-17",
+    "kind": "release",
+    "title": "ReKHCoM v1.9: Kingdom Hearts: Chain of Memories on PC, with browser and Android alphas",
+    "body": "ReKHCoM runs the matching decompilation of the GBA game as a Windows program with its own renderer, audio and launcher, adding widescreen and ultrawide. v1.9 is the current Windows stable and ships alongside alpha web and Android builds. It supports European, US and Japanese cartridges from your own dump.",
+    "source": "https://github.com/MatyMeatBoy/ReKHCom/releases",
+    "projects": [
+      "khcom-decomp"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "kind": "release",
+    "title": "God of War Tobiichi Port brings the PS2 original to PC",
+    "body": "Klexter, GoldenGTR and Waffle released a static recompilation of the US PS2 God of War for Linux and Windows, built on PS2Recomp, with an OpenGL renderer and a Qt launcher. The repository holds no game files or generated code: its installer builds the port on your computer from your own disc.",
+    "source": "https://github.com/YYOzcan/Tobiichi-Port",
+    "projects": [
+      "ps2recomp"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "kind": "release",
+    "title": "Takedawn 0.2.0: Burnout 3: Takedown (Xbox) on Mac, Windows, Linux and Android",
+    "body": "Takedawn is a static recompilation of the original Xbox version, with installers or packages for all four platforms and source archives on each release. Version 0.2.0 follows 0.1.0 from 13 October. You bring the data from your own disc; the developer says AI coding agents (Claude) do much of the typing.",
+    "source": "https://github.com/xenophobentx/takedawn/releases",
+    "projects": []
+  },
+  {
+    "date": "2026-10-15",
+    "kind": "release",
+    "title": "Crackdown Recomp beta 0.4.0 adds experimental co-op and an Archipelago randomizer",
+    "body": "The unofficial Windows port of the 2007 Xbox 360 game runs at 60 fps by default and has a launcher that installs from your own disc dump and updates itself. Recent betas add experimental two-player co-op over System Link and an Archipelago randomizer world.",
+    "source": "https://github.com/Unowa001/crackdown-recomp/releases",
+    "projects": [
+      "crackdown-recomp-unowa"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "kind": "release",
+    "title": "The Bigs 2 Recompiled brings 2K's Xbox 360 baseball game to Linux, Steam Deck and Windows",
+    "body": "A static recompilation built with the ReXGlue SDK: version 1.0 shipped Linux and Steam Deck AppImages, and 1.01 added a Windows build the next day. No game data is included, so you need your own disc dump.",
+    "source": "https://github.com/mdomangue26/thebigs2/releases",
+    "projects": [
+      "rexglue"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "kind": "release",
+    "title": "Two South Park XBLA games recompiled for Windows and Linux",
+    "body": "TekRantGaming released v0.1.0 ports of South Park: Tenorman's Revenge and South Park: Let's Go Tower Defense Play!, both statically recompiled from the Xbox 360 code with ReXGlue and shipped with the developer's own launcher. You bring your own game package; the READMEs say the ports were made almost entirely with Claude Code, directed and tested by the owner.",
+    "source": "https://github.com/TekRantGaming/south-park-tenormans-revenge-recompiled",
+    "projects": [
+      "rexglue"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "kind": "release",
+    "title": "Scooby-Doo: Refrightened ports Night of 100 Frights to PC",
+    "body": "Version 1.0.0 is a Windows port of the 2002 GameCube game, recompiled from PowerPC to C++ with WiiCompiled, with true widescreen, up to 4K, HDR and gamepad support. It keeps the original 30 fps and reads all game data from your own dump.",
+    "source": "https://github.com/josiahg2502-glitch/Scooby-Doo-Refrightened",
+    "projects": []
+  },
+  {
+    "date": "2026-10-15",
+    "kind": "release",
+    "title": "MLB Power Pros 2008 (Wii) recompiled for Windows, with roster and stadium modding",
+    "body": "Built on WiiCompiled's translator and runtime, the port compiles the game on your PC from your own disc and adds tools for editing textures, rosters and stadiums. v0.1.0 beta arrived on 15 October and v0.1.1 added true 16:9 and frame interpolation two days later. The README says nearly all of it was written by Claude through Claude Code, directed and tested by a person.",
+    "source": "https://github.com/HopeAero/MLBPowerPros2008Recomp/releases",
+    "projects": []
+  },
+  {
+    "date": "2026-10-16",
+    "kind": "release",
+    "title": "PaxDino beta modernises Turok: Rage Wars on PC",
+    "body": "An N64Recomp port running on N64ModernRuntime with RT64, adding widescreen, high resolutions and frame rates, mouse aim and four-player local multiplayer. Windows is the main target, with experimental Linux builds, and it needs your own dump of the game. The 0.1.0 beta arrived on 16 October, with 0.1.2 out a day later.",
+    "source": "https://github.com/wootbeer/PaxDino/releases",
+    "projects": [
+      "n64recomp",
+      "n64modernruntime",
+      "rt64"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "kind": "release",
+    "title": "Jet Force Gemini Recomp v1.2.0 ships a prebuilt Windows game",
+    "body": "After v1.0.0 on 9 October, v1.2.0 needs no compiling: extract it, import your own North American ROM once and play. The README calls it fully playable, including local multiplayer, and credits AI help (Codex) under human direction. A separate Jet Force Gemini recomp by VibinToast also reached v1.1.5 this week.",
+    "source": "https://github.com/TK22-26/JetForceGemini-Recomp/releases/tag/v1.2.0",
+    "projects": []
+  },
+  {
+    "date": "2026-10-15",
+    "kind": "release",
+    "title": "Forza Horizon 2 recompiled for Android reaches 0.3.0",
+    "body": "FH2 Recompiled is an unofficial static recompilation of the Xbox 360 game for Android, with Linux also named as a target, and preview APKs since 8 October. The APKs carry no game files: the code generated from the game is produced from your own copy of the US edition.",
+    "source": "https://github.com/Gabrick75/fh2-recompiled/releases",
+    "projects": []
+  },
+  {
+    "date": "2026-10-17",
+    "kind": "release",
+    "title": "Pocket Native runs recompiled 3DS games on the R36S handheld",
+    "body": "A fork of fearkov's Zakuro and 3dsrecomp, it adds an OpenGL ES 3.1 renderer tuned for the R36S's Mali GPU under ArkOS; a PC rebuilds each game first from your own dump. It went from 0.1.0 on 16 October to 0.2.0 a day later, and a showcase post for it was labelled AI-assisted.",
+    "source": "https://github.com/whovian64/pocket-native",
+    "projects": [
+      "3dsrecomp",
+      "zakuro"
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "kind": "release",
+    "title": "lp-engine 0.1.0 runs LovePlus+ natively with an English translation",
+    "body": "Rather than a static recompilation or a general DS emulator, lp-engine is a Rust runtime built around this one game: the game logic runs unchanged while graphics, sound and touch input are reimplemented, with up to 4x resolution. Builds cover Windows, macOS and Linux and read everything from your own Japanese cartridge dump.",
+    "source": "https://github.com/gage-marshall/lp-engine",
+    "projects": []
+  },
+  {
+    "date": "2026-10-13",
+    "kind": "release",
+    "title": "Twisted Metal 1-4 recompiled for Windows with one launcher",
+    "body": "All four US PlayStation Twisted Metal games are statically recompiled with psxrecomp and recomp-ui, adding 16:9 or 21:9 widescreen and 30 or 60 fps modes for the first two games. The author's announcement says Claude did the recompilation work.",
+    "source": "https://github.com/jcoker85/TwistedMetal1234Recomp",
+    "projects": []
+  },
+  {
+    "date": "2026-10-16",
+    "kind": "milestone",
+    "title": "Ultimate Mortal Kombat 3 for iOS fully decompiled; PC port in alpha",
+    "body": "All 2,572 game functions of the 2011 EA Mobile release are decompiled to readable C, checked against a static ARM-to-C recompiler. The Windows and Linux port built on it put out alpha and beta builds on 16 October, the latest (0.1.5 alpha) adding online play; it ships no game files and carries an AI disclosure document.",
+    "source": "https://github.com/MaryNCRT/Ultimate-Mortal-Kombat-3-iOS-Decompiled",
+    "projects": []
   }
 ]

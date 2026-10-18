@@ -18032,5 +18032,4985 @@
       "https://github.com/Decompollaborate/mapfile_parser/releases"
     ],
     "checked": "2026-10-14"
+  },
+  {
+    "slug": "jadart",
+    "name": "Jadart",
+    "category": "tools",
+    "subject": "Flutter (Dart AOT) Android apps",
+    "originalPlatform": "Android",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/IR0NBYTE/Jadart",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "IR0NBYTE"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.2.0",
+      "date": "2026-10-02"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Decompiler for AOT-compiled Flutter apps that recovers a class tree, pseudo-Dart method bodies, the string pool and virtual-call names from an APK.",
+    "tags": [
+      "flutter",
+      "dart",
+      "decompiler",
+      "android"
+    ],
+    "sources": [
+      "https://github.com/IR0NBYTE/Jadart",
+      "https://github.com/IR0NBYTE/Jadart/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "d80",
+    "name": "d80",
+    "category": "tools",
+    "subject": "Intel 8080 / Zilog Z80 binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "ISC",
+    "repo": "https://github.com/ibara/d80",
+    "website": "https://briancallahan.net/blog/20210407.html",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ibara"
+    ],
+    "started": "2021-04",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.5.2",
+      "date": "2021-04-05"
+    },
+    "targets": [
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Small disassembler written in D covering the full Intel 8080 and Zilog Z80 instruction sets.",
+    "tags": [
+      "z80",
+      "8080",
+      "disassembler"
+    ],
+    "sources": [
+      "https://github.com/ibara/d80",
+      "https://github.com/ibara/d80/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "fission",
+    "name": "Fission",
+    "category": "tools",
+    "subject": "Binaries via Ghidra SLEIGH specs",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root (GitHub)",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/fission-systems/Fission",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "fission-systems"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.2.3",
+      "date": "2026-08-28"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Rust reverse-engineering workspace that lifts machine code through SLEIGH specs into its own IR, with decompilation, emulation and a goal of rebuilding binaries into runnable projects.",
+    "tags": [
+      "rust",
+      "sleigh",
+      "decompiler",
+      "lifter"
+    ],
+    "sources": [
+      "https://github.com/fission-systems/Fission",
+      "https://github.com/fission-systems/Fission/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "jesso-decompiler",
+    "name": "Jesso Decompiler",
+    "category": "tools",
+    "subject": "x86/x86-64 ELF and PE binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/bfjesso/jesso-decompiler",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "bfjesso"
+    ],
+    "started": "2024-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Static file analyzer with an x86/x86-64 disassembler and work-in-progress C decompiler for ELF and PE files, with a wxWidgets GUI.",
+    "tags": [
+      "decompiler",
+      "disassembler",
+      "x86"
+    ],
+    "sources": [
+      "https://github.com/bfjesso/jesso-decompiler"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "sleigh2rust",
+    "name": "Sleigh2Rust",
+    "category": "tools",
+    "subject": "Ghidra SLEIGH processor specs",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/rbran/sleigh2rust",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "rbran"
+    ],
+    "started": "2022-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Generator that turns Ghidra SLEIGH specifications into Rust disassemblers, with emulators planned, built on sleigh-rs.",
+    "tags": [
+      "sleigh",
+      "rust",
+      "disassembler"
+    ],
+    "sources": [
+      "https://github.com/rbran/sleigh2rust"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "reassemble-thumb",
+    "name": "ReAssembler",
+    "category": "tools",
+    "subject": "ARM Thumb-2 binaries",
+    "originalPlatform": "ARM",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/ChaoticEnigma/reassemble",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ChaoticEnigma"
+    ],
+    "started": "2017-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Tool that turns Thumb-2 machine code into editable assembly with labels for branches, calls and pointers.",
+    "tags": [
+      "arm",
+      "thumb",
+      "disassembler"
+    ],
+    "sources": [
+      "https://github.com/ChaoticEnigma/reassemble"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "llarm",
+    "name": "LLARM",
+    "category": "tools",
+    "subject": "ARM/Thumb machine code",
+    "originalPlatform": "ARM",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/kernelwernel/llarm",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "kernelwernel"
+    ],
+    "started": "2024-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Cross-platform C/C++ libraries and tools for ARM: assembly, disassembly, instruction identification and a full CPU/system emulator that can boot Linux.",
+    "tags": [
+      "arm",
+      "emulator",
+      "disassembler"
+    ],
+    "sources": [
+      "https://github.com/kernelwernel/llarm"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dcdis",
+    "name": "dcdis",
+    "category": "tools",
+    "subject": "Sega Dreamcast SH4 binaries",
+    "originalPlatform": "Dreamcast",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/sizious/dcdis",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sizious",
+      "Lars Olsson"
+    ],
+    "started": "2020-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Simple disassembler for raw Sega Dreamcast SH4 binaries, originally written by Lars Olsson.",
+    "tags": [
+      "dreamcast",
+      "sh4",
+      "disassembler"
+    ],
+    "sources": [
+      "https://github.com/sizious/dcdis"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "fireman",
+    "name": "Fireman",
+    "category": "tools",
+    "subject": "x86/x64 binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/Eveheeero/fireman",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Eveheeero"
+    ],
+    "started": "2022-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Rust decompiler inspired by snowman, built around an editable IR with GUI, CLI and TUI front-ends.",
+    "tags": [
+      "decompiler",
+      "rust",
+      "ir"
+    ],
+    "sources": [
+      "https://github.com/Eveheeero/fireman"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "model3recomp",
+    "name": "model3recomp",
+    "category": "tools",
+    "subject": "Sega Model 3 PowerPC arcade programs",
+    "originalPlatform": "Arcade (Sega Model 3)",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/sp00nznet/model3recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sp00nznet"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Sega Model 3 hardware runtime and PowerPC 603e static recompiler, so a recompiled Model 3 game links against native C hardware; alpha, with The Lost World as reference game.",
+    "tags": [
+      "arcade",
+      "model3",
+      "powerpc",
+      "static-recomp"
+    ],
+    "sources": [
+      "https://github.com/sp00nznet/model3recomp"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dr-riptide-dissected",
+    "name": "Dr. Riptide Dissected",
+    "category": "tools",
+    "subject": "In Search of Dr. Riptide (DOS) data files",
+    "originalPlatform": "MS-DOS",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "Unlicense",
+    "repo": "https://github.com/movAX13h/DrRiptideDissected",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "movAX13h"
+    ],
+    "started": "2018-02",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.2",
+      "date": "2018-03-02"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Viewer and editor for the DAT archive of the DOS game In Search of Dr. Riptide, covering sprites, maps, images, music and sound.",
+    "tags": [
+      "dos",
+      "assets",
+      "format"
+    ],
+    "sources": [
+      "https://github.com/movAX13h/DrRiptideDissected",
+      "https://github.com/movAX13h/DrRiptideDissected/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "rsleigh",
+    "name": "rsleigh",
+    "category": "tools",
+    "subject": "Multi-architecture binaries via SLEIGH",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in repo root (GitHub)",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/ShaneBreazeale/rsleigh",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ShaneBreazeale"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.7.0",
+      "date": "2026-10-16"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Pure-Rust SLEIGH-driven reverse-engineering workbench with disassembly, P-code, pseudocode and machine-readable output aimed at scripts and coding agents.",
+    "tags": [
+      "rust",
+      "sleigh",
+      "decompiler"
+    ],
+    "sources": [
+      "https://github.com/ShaneBreazeale/rsleigh",
+      "https://github.com/ShaneBreazeale/rsleigh/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "reipa",
+    "name": "ReIPA",
+    "category": "tools",
+    "subject": "iOS Mach-O arm64 binaries",
+    "originalPlatform": "iOS",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo describe agent workflow (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/JRBusiness/REipa",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "JRBusiness"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-07-04"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Rust toolkit for iOS reverse engineering: Mach-O loader, arm64 disassembler, Objective-C and Swift metadata recovery, a decompiler and a desktop explorer, with no Ghidra or IDA dependency.",
+    "tags": [
+      "ios",
+      "arm64",
+      "decompiler",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/JRBusiness/REipa",
+      "https://github.com/JRBusiness/REipa/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "unstrip",
+    "name": "unstrip",
+    "category": "tools",
+    "subject": "Stripped Go binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/riven-labs/unstrip",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "riven-labs"
+    ],
+    "started": "2026-05",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.2.0",
+      "date": "2026-07-01"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Recovers function names, signatures, types and interface tables from stripped Go executables using runtime metadata, with exporters for Ghidra, IDA and Binary Ninja.",
+    "tags": [
+      "go",
+      "symbols",
+      "binary-analysis"
+    ],
+    "sources": [
+      "https://github.com/riven-labs/unstrip",
+      "https://github.com/riven-labs/unstrip/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ps4recomp-wie",
+    "name": "PS4Recomp",
+    "category": "tools",
+    "subject": "PlayStation 4 x86-64 executables",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo describe agent workflow (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/wie-project/PS4Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "wie-project"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "binaries",
+      "date": "2026-09-21"
+    },
+    "targets": [
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Experimental ahead-of-time recompiler that turns PS4 x86-64 programs into C for Apple Silicon, paired with a Metal-based GNM graphics layer.",
+    "tags": [
+      "ps4",
+      "recompiler",
+      "apple-silicon"
+    ],
+    "sources": [
+      "https://github.com/wie-project/PS4Recomp",
+      "https://github.com/wie-project/PS4Recomp/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "r3ditor",
+    "name": "R3ditor",
+    "category": "tools",
+    "subject": "Resident Evil 3 (classic) game files",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/themitosan/R3ditor",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "themitosan"
+    ],
+    "started": "2019-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "NW.js editor for several Resident Evil 3 file formats, now on hold in favour of R3ditor V2.",
+    "tags": [
+      "resident-evil",
+      "file-formats",
+      "editor"
+    ],
+    "sources": [
+      "https://github.com/themitosan/R3ditor"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ff8-rinoas-toolset",
+    "name": "FF8 Rinoa's Toolset",
+    "category": "tools",
+    "subject": "Final Fantasy VIII game files",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2015, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/MaKiPL/FF8-Rinoa-s-Toolset",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "MaKiPL"
+    ],
+    "started": "2015-08",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.2.6189",
+      "date": "2016-12-12"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "All-in-one Final Fantasy VIII toolkit for viewing and extracting battle stages, world map data, dialogue and archives.",
+    "tags": [
+      "ff8",
+      "file-formats",
+      "modding"
+    ],
+    "sources": [
+      "https://github.com/MaKiPL/FF8-Rinoa-s-Toolset",
+      "https://github.com/MaKiPL/FF8-Rinoa-s-Toolset/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mpfmaster",
+    "name": "MPFmaster",
+    "category": "tools",
+    "subject": "EA Pathfinder v5 interactive music files",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/xan1242/MPFmaster",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "xan1242"
+    ],
+    "started": "2022-11",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.8",
+      "date": "2023-05-30"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Decompiles and recompiles EA Pathfinder v5 interactive-music files used by several Need for Speed games and Red Alert 3.",
+    "tags": [
+      "ea",
+      "audio",
+      "file-formats"
+    ],
+    "sources": [
+      "https://github.com/xan1242/MPFmaster",
+      "https://github.com/xan1242/MPFmaster/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "microlift",
+    "name": "Microlift",
+    "category": "tools",
+    "subject": "x86-64 and AArch64 machine code",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/microlift/microlift",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "microlift"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Rust crate that lifts x86-64 and AArch64 machine code to Cranelift IR for JIT or AOT compilation; it powers the Rosemary macOS compatibility layer.",
+    "tags": [
+      "lifter",
+      "cranelift",
+      "binary-translation"
+    ],
+    "sources": [
+      "https://github.com/microlift/microlift"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "yabr",
+    "name": "YABR",
+    "category": "tools",
+    "subject": "Java bytecode",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/Tonic-Box/YABR",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Tonic-Box"
+    ],
+    "started": "2025-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Bidirectional Java framework covering bytecode reading and writing, SSA and structured IR, decompilation and transformation.",
+    "tags": [
+      "java",
+      "bytecode",
+      "decompiler"
+    ],
+    "sources": [
+      "https://github.com/Tonic-Box/YABR"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "bitedits-be",
+    "name": "Binary Editor",
+    "category": "tools",
+    "subject": "Multi-architecture binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/bitedits/be",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "bitedits"
+    ],
+    "started": "2022-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "2023.06.1",
+      "date": "2023-06-01"
+    },
+    "targets": [
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Terminal hex editor in ANSI C with built-in disassemblers for x86-64, ARM, RISC-V, PowerPC, MIPS, SuperH, 68000 and PDP-11.",
+    "tags": [
+      "hex-editor",
+      "disassembler",
+      "c"
+    ],
+    "sources": [
+      "https://github.com/bitedits/be",
+      "https://github.com/bitedits/be/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "da-mainframe-disassembler",
+    "name": "DA",
+    "category": "tools",
+    "subject": "IBM mainframe load modules",
+    "originalPlatform": "IBM mainframe",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/abend0c1/da",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "abend0c1"
+    ],
+    "started": "2020-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "REXX disassembler that turns printable-hex AMBLIST output of mainframe executables into reassemblable assembler source.",
+    "tags": [
+      "mainframe",
+      "rexx",
+      "disassembler"
+    ],
+    "sources": [
+      "https://github.com/abend0c1/da"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "pdp10-its-disassembler",
+    "name": "pdp10-its-disassembler",
+    "category": "tools",
+    "subject": "PDP-10 ITS executables and archives",
+    "originalPlatform": "PDP-10",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2013, predates AI coding tools (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/larsbrinkhoff/pdp10-its-disassembler",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "larsbrinkhoff"
+    ],
+    "started": "2013-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Disassembler for ITS executables plus tools to read and write ITS tape, disk and archive formats.",
+    "tags": [
+      "pdp-10",
+      "its",
+      "disassembler"
+    ],
+    "sources": [
+      "https://github.com/larsbrinkhoff/pdp10-its-disassembler"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "n64-auto-decompiler",
+    "name": "Auto Decompiler",
+    "category": "tools",
+    "subject": "N64 MIPS assembly",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/farisawan-2000/auto-decompiler",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "farisawan-2000"
+    ],
+    "started": "2020-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Scripts that split N64 assembly into functions, run mips_to_c on each and sort out non-matching results to speed up decompilation.",
+    "tags": [
+      "n64",
+      "mips",
+      "decomp-tools"
+    ],
+    "sources": [
+      "https://github.com/farisawan-2000/auto-decompiler"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "panglib",
+    "name": "PangLib",
+    "category": "tools",
+    "subject": "Pangya (PC) game files",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/retreev/PangLib",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "retreev"
+    ],
+    "started": "2018-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": ".NET libraries for reading and writing Pangya PC game file formats; development moved to Codeberg.",
+    "tags": [
+      "pangya",
+      "file-formats",
+      "dotnet"
+    ],
+    "sources": [
+      "https://github.com/retreev/PangLib"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "glulxtoc",
+    "name": "Glulxtoc and IF-Decompiler",
+    "category": "tools",
+    "subject": "Glulx interactive fiction story files",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/curiousdannii/if-decompiler",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "curiousdannii"
+    ],
+    "started": "2021-02",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "glulxtoc-0.1.0",
+      "date": "2021-07-10"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Rust tools that decompile Glulx story files into C for compiling against a Glk library, plus a general interactive-fiction decompiler and relooper.",
+    "tags": [
+      "interactive-fiction",
+      "glulx",
+      "decompiler"
+    ],
+    "sources": [
+      "https://github.com/curiousdannii/if-decompiler",
+      "https://github.com/curiousdannii/if-decompiler/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "bun-decompile",
+    "name": "bun-decompile",
+    "category": "tools",
+    "subject": "Bun compiled executables",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/lafkpages/bun-decompile",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "lafkpages"
+    ],
+    "started": "2024-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Library and web app that extracts the bundled transpiled sources from executables made with bun build --compile.",
+    "tags": [
+      "bun",
+      "javascript",
+      "extraction"
+    ],
+    "sources": [
+      "https://github.com/lafkpages/bun-decompile"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "java-decompiler-rust",
+    "name": "Java Decompiler (Caellian)",
+    "category": "tools",
+    "subject": "Java class files",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Caellian/java-decompiler",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Caellian"
+    ],
+    "started": "2020-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Early-stage Java class-file decompiler written in Rust; unmatched instructions are still emitted as commented bytecode.",
+    "tags": [
+      "java",
+      "decompiler",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/Caellian/java-decompiler"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ti-recover",
+    "name": "ti_recover",
+    "category": "tools",
+    "subject": "Appcelerator Titanium Android apps",
+    "originalPlatform": "Android",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/puntorigen/ti_recover",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "puntorigen"
+    ],
+    "started": "2017-01",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v2.3.1",
+      "date": "2026-07-07"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "JavaScript library and CLI that recovers app source from Appcelerator Titanium Android packages, including encrypted distribution builds.",
+    "tags": [
+      "android",
+      "titanium",
+      "source-recovery"
+    ],
+    "sources": [
+      "https://github.com/puntorigen/ti_recover",
+      "https://github.com/puntorigen/ti_recover/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ethir",
+    "name": "EthIR",
+    "category": "tools",
+    "subject": "Ethereum EVM bytecode",
+    "originalPlatform": "Ethereum",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/costa-group/EthIR",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "costa-group"
+    ],
+    "started": "2018-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Analysis framework that builds a sound control-flow graph from Ethereum bytecode and lifts it to a rule-based representation for high-level analyses.",
+    "tags": [
+      "evm",
+      "bytecode",
+      "analysis"
+    ],
+    "sources": [
+      "https://github.com/costa-group/EthIR"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "retro-disassembler-studio",
+    "name": "Retro Disassembler Studio",
+    "category": "tools",
+    "subject": "NES programs",
+    "originalPlatform": "NES",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/sarchar/RetroDisassemblerStudio",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sarchar"
+    ],
+    "started": "2023-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Interactive disassembler with a built-in emulator for annotating retro games, currently supporting only the NES.",
+    "tags": [
+      "nes",
+      "disassembler",
+      "emulator"
+    ],
+    "sources": [
+      "https://github.com/sarchar/RetroDisassemblerStudio"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "go-arm64",
+    "name": "go-arm64",
+    "category": "tools",
+    "subject": "AArch64 machine code",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/blacktop/go-arm64",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "blacktop"
+    ],
+    "started": "2020-10",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.6.18",
+      "date": "2020-11-26"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Pure Go AArch64 disassembler library, archived.",
+    "tags": [
+      "arm64",
+      "disassembler",
+      "go"
+    ],
+    "sources": [
+      "https://github.com/blacktop/go-arm64",
+      "https://github.com/blacktop/go-arm64/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "zdis",
+    "name": "zdis",
+    "category": "tools",
+    "subject": "eZ80 machine code",
+    "originalPlatform": "TI-84 Plus CE",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/CE-Programming/zdis",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "CE-Programming"
+    ],
+    "started": "2018-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Small C11 eZ80 disassembler used in the CEmu calculator emulator's debugger.",
+    "tags": [
+      "ez80",
+      "disassembler",
+      "ti-calculator"
+    ],
+    "sources": [
+      "https://github.com/CE-Programming/zdis"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "lfgfx",
+    "name": "LFGFX",
+    "category": "tools",
+    "subject": "N64 graphics data",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/ethteck/lfgfx",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ethteck"
+    ],
+    "started": "2022-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Python tool that scans blobs from N64 games for display lists, vertices, textures and palettes.",
+    "tags": [
+      "n64",
+      "graphics",
+      "decomp-tools"
+    ],
+    "sources": [
+      "https://github.com/ethteck/lfgfx"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "k0dasm",
+    "name": "k0dasm",
+    "category": "tools",
+    "subject": "Renesas/NEC 78K0 microcontroller firmware",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "BSD-3-Clause",
+    "repo": "https://github.com/mnaberez/k0dasm",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mnaberez"
+    ],
+    "started": "2018-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Python disassembler for NEC/Renesas 78K0 8-bit microcontroller binaries whose output reassembles with the as78k0 assembler, aimed at firmware analysis.",
+    "tags": [
+      "disassembler",
+      "78k0",
+      "firmware",
+      "microcontroller"
+    ],
+    "sources": [
+      "https://github.com/mnaberez/k0dasm"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ai6win-script-tool",
+    "name": "AI6WINScriptTool",
+    "category": "tools",
+    "subject": "AI6WIN visual novel engine scripts",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/TesterTesterov/AI6WINScriptTool",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TesterTesterov"
+    ],
+    "started": "2021-12",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "2.0",
+      "date": "2022-02-01"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Disassembler and assembler for the compiled message scripts of the AI6WIN visual novel engine, letting translators edit full script logic rather than only text strings.",
+    "tags": [
+      "visual-novel",
+      "scripts",
+      "disassembler",
+      "translation"
+    ],
+    "sources": [
+      "https://github.com/TesterTesterov/AI6WINScriptTool",
+      "https://github.com/TesterTesterov/AI6WINScriptTool/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mhde",
+    "name": "MHDE",
+    "category": "tools",
+    "subject": "x86/x86-64 machine code",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/Jasper1467/mhde",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Jasper1467"
+    ],
+    "started": "2024-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "C++20 rework of the Hacker Disassembler Engine, a small instruction-length and decoding library for 32-bit and 64-bit x86 code.",
+    "tags": [
+      "disassembler",
+      "x86",
+      "library"
+    ],
+    "sources": [
+      "https://github.com/Jasper1467/mhde"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "darkstone-re",
+    "name": "Darkstone file format tools",
+    "category": "tools",
+    "subject": "Darkstone: Evil Reigns file formats",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2015, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/glampert/darkstone-re",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "glampert"
+    ],
+    "started": "2015-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Small tools for unpacking Darkstone's compressed MTF archives and viewing its O3D models, with notes on the formats.",
+    "tags": [
+      "darkstone",
+      "file-formats",
+      "archives",
+      "models"
+    ],
+    "sources": [
+      "https://github.com/glampert/darkstone-re"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dev7-tools",
+    "name": "DEV7",
+    "category": "tools",
+    "subject": "DEV7 engine (Coktel Vision / Adibou games)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/BJNFNE/DEV7",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "BJNFNE"
+    ],
+    "started": "2023-05",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "IMGConverter",
+      "date": "2025-04-28"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Research tools for the DEV7 engine used in Coktel Vision titles such as Adibou 3, including a loader version checker and an OBC script text viewer.",
+    "tags": [
+      "coktel-vision",
+      "adibou",
+      "scripts",
+      "scummvm"
+    ],
+    "sources": [
+      "https://github.com/BJNFNE/DEV7",
+      "https://github.com/BJNFNE/DEV7/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "protobuf-decompiler",
+    "name": "protobuf-decompiler",
+    "category": "tools",
+    "subject": "Protocol Buffers descriptors embedded in binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/Shauren/protobuf-decompiler",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Shauren"
+    ],
+    "started": "2016-02",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Rebuilds .proto definitions from the protobuf reflection descriptors compiled into executables.",
+    "tags": [
+      "protobuf",
+      "decompiler",
+      "protocols"
+    ],
+    "sources": [
+      "https://github.com/Shauren/protobuf-decompiler"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "burst-rs",
+    "name": "burst",
+    "category": "tools",
+    "subject": "x86/x86-64 machine code",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "BSD-2-Clause",
+    "repo": "https://github.com/endoli/burst.rs",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "endoli"
+    ],
+    "started": "2017-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Rust disassembler crate for x86 and x86-64, ported from the C asmx86 disassembler.",
+    "tags": [
+      "disassembler",
+      "x86",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/endoli/burst.rs"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "pydisass6502",
+    "name": "pyDisass6502",
+    "category": "tools",
+    "subject": "6502 machine code (Commodore 64)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/Esshahn/pydisass6502",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Esshahn"
+    ],
+    "started": "2021-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Command-line 6502 disassembler in Python that can take an entrypoints file to separate code from data.",
+    "tags": [
+      "6502",
+      "disassembler",
+      "python",
+      "c64"
+    ],
+    "sources": [
+      "https://github.com/Esshahn/pydisass6502"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dispar",
+    "name": "Dispar",
+    "category": "tools",
+    "subject": "Mach-O and other executable formats",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/netromdk/dispar",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "netromdk"
+    ],
+    "started": "2016-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.3",
+      "date": "2020-04-11"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "C++17 GUI tool that parses executables, libraries and core dumps to inspect their structure, strings, symbols and disassembled functions.",
+    "tags": [
+      "binary-analysis",
+      "disassembler",
+      "qt"
+    ],
+    "sources": [
+      "https://github.com/netromdk/dispar",
+      "https://github.com/netromdk/dispar/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ciasdis",
+    "name": "ciasdis",
+    "category": "tools",
+    "subject": "Binaries for x86, 6809, 8080 and other CPUs",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/albertvanderhorst/ciasdis",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "albertvanderhorst"
+    ],
+    "started": "2018-11",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "REL-3-0-0",
+      "date": "2025-11-20"
+    },
+    "targets": [
+      "Linux",
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Forth-based assembler/disassembler pair from the ciforth family that can turn a binary into source which reassembles byte for byte.",
+    "tags": [
+      "disassembler",
+      "forth",
+      "reassembly"
+    ],
+    "sources": [
+      "https://github.com/albertvanderhorst/ciasdis",
+      "https://github.com/albertvanderhorst/ciasdis/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ghidrust-oofz",
+    "name": "Ghidrust",
+    "category": "tools",
+    "subject": "PE/ELF binaries (x86-64 and other ISAs)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/oofz/Ghidrust",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "oofz"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1.2",
+      "date": "2026-08-24"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Rust reverse-engineering toolkit modelled on Ghidra with multi-architecture listings, auto analysis, pseudo-C decompilation and IL2CPP metadata parsing via CLI, GUI or an MCP server.",
+    "tags": [
+      "decompiler",
+      "rust",
+      "ghidra",
+      "mcp"
+    ],
+    "sources": [
+      "https://github.com/oofz/Ghidrust",
+      "https://github.com/oofz/Ghidrust/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dexgraph",
+    "name": "DexGraph",
+    "category": "tools",
+    "subject": "Android DEX bytecode",
+    "originalPlatform": "Android",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/maxence-ho/DexGraph",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "maxence-ho"
+    ],
+    "started": "2016-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Modified dexdump that builds control-flow graphs from Android classes.dex files, with an accompanying white paper.",
+    "tags": [
+      "android",
+      "dex",
+      "cfg"
+    ],
+    "sources": [
+      "https://github.com/maxence-ho/DexGraph"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "binaryripper",
+    "name": "Binary Ripper",
+    "category": "tools",
+    "subject": "HarmonyOS Ark and Android Dalvik bytecode",
+    "originalPlatform": "Android",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/XiyaoSoftware/binaryripper",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "XiyaoSoftware"
+    ],
+    "started": "2026-01",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v26.7",
+      "date": "2026-09-07"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Free non-commercial edition of a commercial decompiler for HarmonyOS Ark and Android Dalvik bytecode, with control-flow views that split normal and exception paths.",
+    "tags": [
+      "decompiler",
+      "android",
+      "harmonyos",
+      "dalvik"
+    ],
+    "sources": [
+      "https://github.com/XiyaoSoftware/binaryripper",
+      "https://github.com/XiyaoSoftware/binaryripper/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "jscd",
+    "name": "jscd",
+    "category": "tools",
+    "subject": "Bytenode V8 code cache files",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/ejfkdev/jscd",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ejfkdev"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-10-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Static Rust decompiler that turns bytenode-compiled V8 code cache files back into JavaScript across Node 8 to 26, without a patched V8 or Node runtime.",
+    "tags": [
+      "decompiler",
+      "v8",
+      "nodejs",
+      "javascript"
+    ],
+    "sources": [
+      "https://github.com/ejfkdev/jscd",
+      "https://github.com/ejfkdev/jscd/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "hexpyrion",
+    "name": "HEXPYRION",
+    "category": "tools",
+    "subject": "Nuitka-compiled Python executables",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/DimaReverse/hexpyrion",
+    "website": "https://dimareverse.netlify.app",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "DimaReverse"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Static tool for recovering Python source from Nuitka-compiled binaries, including onefile unpacking and reconstruction of the generated native code.",
+    "tags": [
+      "nuitka",
+      "python",
+      "decompiler"
+    ],
+    "sources": [
+      "https://github.com/DimaReverse/hexpyrion"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "binnexus",
+    "name": "BinNexus",
+    "category": "tools",
+    "subject": "Windows x86 DLL/EXE binaries",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/Dvurechensky/BinNexus",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Dvurechensky"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Analyzer for Windows x86 executables and DLLs that generates an interactive web portal of dependency graphs and exports; the demo maps the Freelancer runtime.",
+    "tags": [
+      "pe",
+      "dependency-graph",
+      "binary-analysis"
+    ],
+    "sources": [
+      "https://github.com/Dvurechensky/BinNexus"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "shenmue-hd-tools",
+    "name": "Shenmue HD Mod Tools",
+    "category": "tools",
+    "subject": "Shenmue I & II (HD) archive formats",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/derplayer/ShenmueHDTools",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "derplayer"
+    ],
+    "started": "2018-08",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.2",
+      "date": "2018-09-19"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Tools for unpacking, editing and repacking the TAD/TAC archives of the Shenmue I & II PC release, with a simple loader for exported changes.",
+    "tags": [
+      "shenmue",
+      "archives",
+      "modding"
+    ],
+    "sources": [
+      "https://github.com/derplayer/ShenmueHDTools",
+      "https://github.com/derplayer/ShenmueHDTools/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "datonearchiver",
+    "name": "DATOneArchiver",
+    "category": "tools",
+    "subject": "TT Games DAT archive format",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/IsaMorphic/DATOneArchiver",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "IsaMorphic"
+    ],
+    "started": "2021-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0",
+      "date": "2021-08-10"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Clean-room reverse engineering of the TT Games DAT archive format with tools to extract, modify and rebuild the archives used by the LEGO games.",
+    "tags": [
+      "tt-games",
+      "lego",
+      "archives",
+      "file-formats"
+    ],
+    "sources": [
+      "https://github.com/IsaMorphic/DATOneArchiver",
+      "https://github.com/IsaMorphic/DATOneArchiver/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "hardtruck-file-formats",
+    "name": "Hard Truck / Rig'n'Roll file formats",
+    "category": "tools",
+    "subject": "Hard Truck 1/2 and Rig'n'Roll file formats",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/AlexKimov/HardTruck-RignRoll-file-formats",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "AlexKimov"
+    ],
+    "started": "2018-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Specs, 010 Editor templates and scripts documenting the binary formats of the Russian trucking games Hard Truck 1 and 2 and Rig'n'Roll.",
+    "tags": [
+      "hard-truck",
+      "file-formats",
+      "010-editor"
+    ],
+    "sources": [
+      "https://github.com/AlexKimov/HardTruck-RignRoll-file-formats"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "jarbyteeditor",
+    "name": "JarByteEditor",
+    "category": "tools",
+    "subject": "JVM bytecode and Android DEX",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/perfidanb/JarByteEditor",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "perfidanb"
+    ],
+    "started": "2026-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.0.2",
+      "date": "2026-06-28"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Java 21 desktop and CLI editor for JAR and APK files that disassembles JVM bytecode with ASM and Dalvik code via Smali, then repackages the edited result.",
+    "tags": [
+      "java",
+      "bytecode",
+      "smali",
+      "editor"
+    ],
+    "sources": [
+      "https://github.com/perfidanb/JarByteEditor",
+      "https://github.com/perfidanb/JarByteEditor/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "majiro-py",
+    "name": "majiro-py",
+    "category": "tools",
+    "subject": "Majiro visual novel engine",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/trigger-segfault/majiro-py",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "trigger-segfault"
+    ],
+    "started": "2021-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Python library, script tools and a VS Code extension produced while reverse engineering the Majiro visual novel engine, developed alongside MajiroTools.",
+    "tags": [
+      "visual-novel",
+      "majiro",
+      "scripts"
+    ],
+    "sources": [
+      "https://github.com/trigger-segfault/majiro-py"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "denuitkanizator",
+    "name": "DeNuitkanizator",
+    "category": "tools",
+    "subject": "Nuitka, PyInstaller and other packed executables",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/2M12/DeNuitkanizator",
+    "website": "https://denuitkanizator-site.vercel.app",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "2M12"
+    ],
+    "started": "2026-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.5",
+      "date": "2026-08-29"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Analyzer for executables built with Nuitka, PyInstaller and similar packers that extracts metadata, strings, modules and PE structure; it does not decompile.",
+    "tags": [
+      "nuitka",
+      "pyinstaller",
+      "pe",
+      "analysis"
+    ],
+    "sources": [
+      "https://github.com/2M12/DeNuitkanizator",
+      "https://github.com/2M12/DeNuitkanizator/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "riscv-sbt",
+    "name": "RISC-V Static Binary Translator",
+    "category": "tools",
+    "subject": "RISC-V binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/lmcad-unicamp/riscv-sbt",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "lmcad-unicamp"
+    ],
+    "started": "2016-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Research static binary translator from Unicamp that converts RISC-V executables to other host architectures through LLVM.",
+    "tags": [
+      "risc-v",
+      "binary-translation",
+      "llvm"
+    ],
+    "sources": [
+      "https://github.com/lmcad-unicamp/riscv-sbt"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mortalkombat-tools",
+    "name": "MortalKombat.Tools",
+    "category": "tools",
+    "subject": "Mortal Kombat and War Gods file formats",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/ermaccer/MortalKombat.Tools",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ermaccer"
+    ],
+    "started": "2019-04",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "toceditor",
+      "date": "2020-08-16"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Collection of converters and archive tools for files from Mortal Kombat 4, Mortal Kombat Gold, War Gods and related games.",
+    "tags": [
+      "mortal-kombat",
+      "file-formats",
+      "archives"
+    ],
+    "sources": [
+      "https://github.com/ermaccer/MortalKombat.Tools",
+      "https://github.com/ermaccer/MortalKombat.Tools/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "snesrecomp-sp00nznet",
+    "name": "snesrecomp",
+    "category": "tools",
+    "subject": "SNES static recompilations",
+    "originalPlatform": "SNES",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/sp00nznet/snesrecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sp00nznet"
+    ],
+    "started": "2026-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Linkable C library that provides emulated SNES hardware (PPU rendering, SPC700 audio, DMA, Mode 7) for statically recompiled SNES game code to run against.",
+    "tags": [
+      "snes",
+      "static-recomp",
+      "runtime"
+    ],
+    "sources": [
+      "https://github.com/sp00nznet/snesrecomp"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "saturnrecomp",
+    "name": "SaturnRecomp",
+    "category": "tools",
+    "subject": "Sega Saturn games (SH-2)",
+    "originalPlatform": "Sega Saturn",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/sonsegajp/SaturnRecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sonsegajp"
+    ],
+    "started": "2026-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Experimental clean-room Sega Saturn runtime and static-recompilation research kit with a disc/config CLI, an SH-2 execution core and an SDL2 runner that boots user-supplied games with a user-supplied BIOS.",
+    "tags": [
+      "saturn",
+      "sh-2",
+      "static-recomp",
+      "clean-room"
+    ],
+    "sources": [
+      "https://github.com/sonsegajp/SaturnRecomp"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dso-sharp",
+    "name": "DSO Sharp",
+    "category": "tools",
+    "subject": "Torque Game Engine compiled scripts (DSO)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "BSD-3-Clause",
+    "repo": "https://github.com/Elletra/dso-sharp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Elletra"
+    ],
+    "started": "2022-08",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "2.1.0",
+      "date": "2024-10-26"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "C# decompiler that turns compiled Torque Game Engine .dso files back into TorqueScript, supporting several engine versions used by games such as Blockland and Marble Blast.",
+    "tags": [
+      "decompiler",
+      "torque",
+      "torquescript"
+    ],
+    "sources": [
+      "https://github.com/Elletra/dso-sharp",
+      "https://github.com/Elletra/dso-sharp/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "jd-mcp-duo",
+    "name": "jd-mcp-duo",
+    "category": "tools",
+    "subject": "Java bytecode",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/AgeloVito/jd-mcp-duo",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "AgeloVito"
+    ],
+    "started": "2026-05",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v4.2.5.4",
+      "date": "2026-05-17"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "MCP server and CLI that exposes several Java decompiler engines (JD-Core, CFR, Procyon, Fernflower, Vineflower, JADX) through the jd-gui-duo engine suite.",
+    "tags": [
+      "java",
+      "decompiler",
+      "mcp"
+    ],
+    "sources": [
+      "https://github.com/AgeloVito/jd-mcp-duo",
+      "https://github.com/AgeloVito/jd-mcp-duo/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "pydis-zydis",
+    "name": "pydis",
+    "category": "tools",
+    "subject": "x86/x86-64 machine code",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/novogen/pydis",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "novogen"
+    ],
+    "started": "2018-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.3",
+      "date": "2018-10-27"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Python bindings for the Zydis x86/x86-64 disassembler library.",
+    "tags": [
+      "disassembler",
+      "x86",
+      "python"
+    ],
+    "sources": [
+      "https://github.com/novogen/pydis",
+      "https://github.com/novogen/pydis/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "zettabridge",
+    "name": "ZettaBridge",
+    "category": "tools",
+    "subject": "32-bit ARM Android native code",
+    "originalPlatform": "Android",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo root (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/ZailoxTT/ZettaBridge",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ZailoxTT"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-09-19"
+    },
+    "targets": [
+      "Android"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "ARM32-to-ARM64 native code translator and launcher that lets old 32-bit Android apps run on phones whose SoCs lack AArch32 support.",
+    "tags": [
+      "binary-translation",
+      "arm",
+      "android"
+    ],
+    "sources": [
+      "https://github.com/ZailoxTT/ZettaBridge",
+      "https://github.com/ZailoxTT/ZettaBridge/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "xrefs-xr",
+    "name": "xr",
+    "category": "tools",
+    "subject": "ELF, Mach-O and PE binaries and dyld shared caches",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/thebabush/xrefs",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "thebabush"
+    ],
+    "started": "2026-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Rust command-line tool that quickly extracts call, jump and data cross-references from stripped ELF, Mach-O, PE and dyld shared cache binaries without a full disassembler.",
+    "tags": [
+      "xrefs",
+      "binary-analysis",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/thebabush/xrefs"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "aostools",
+    "name": "AosTools",
+    "category": "tools",
+    "subject": ".aos archives (Princess Sugar, Sugar Pot and LiLiM visual novels)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/Lasriel/AosTools",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Lasriel"
+    ],
+    "started": "2025-02",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.1.0",
+      "date": "2025-03-27"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Command-line tools that extract and repack .aos archives from the in-house engine of visual novel makers Princess Sugar, Sugar Pot and LiLiM.",
+    "tags": [
+      "visual-novel",
+      "archive",
+      "format"
+    ],
+    "sources": [
+      "https://github.com/Lasriel/AosTools",
+      "https://github.com/Lasriel/AosTools/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "va11halla-tools",
+    "name": "VA-11 Hall-A Tools",
+    "category": "tools",
+    "subject": "VA-11 Hall-A data files (GameMaker Studio)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2019, predates AI coding tools (GitHub)",
+    "licence": "BSD-2-Clause",
+    "repo": "https://github.com/dressupgeekout/va11halla-tools",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "dressupgeekout"
+    ],
+    "started": "2019-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Ruby scripts and libraries that read the data files shipped with VA-11 Hall-A and extract its media and other content.",
+    "tags": [
+      "gamemaker",
+      "extraction",
+      "format"
+    ],
+    "sources": [
+      "https://github.com/dressupgeekout/va11halla-tools"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "baller-backyard-sports",
+    "name": "Baller",
+    "category": "tools",
+    "subject": "Backyard Sports games (SCUMM engine)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/whatisaphone/baller",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "whatisaphone"
+    ],
+    "started": "2022-10",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.6.5",
+      "date": "2026-08-23"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Zig modding toolkit for the SCUMM-based Backyard Sports games that decompiles scripts, images and audio from original data and recompiles them back.",
+    "tags": [
+      "scumm",
+      "backyard-sports",
+      "modding",
+      "decompiler"
+    ],
+    "sources": [
+      "https://github.com/whatisaphone/baller",
+      "https://github.com/whatisaphone/baller/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "u8disasm",
+    "name": "U8Disasm",
+    "category": "tools",
+    "subject": "nX-U8/100 8-bit RISC code",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/ferib/U8Disasm",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ferib"
+    ],
+    "started": "2021-01",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0.1",
+      "date": "2021-01-25"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "C# disassembler library for the nX-U8/100 microcontroller architecture, with a console example and a basic subroutine analyser.",
+    "tags": [
+      "disassembler",
+      "nx-u8",
+      "microcontroller"
+    ],
+    "sources": [
+      "https://github.com/ferib/U8Disasm",
+      "https://github.com/ferib/U8Disasm/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "universe-binary-runtime",
+    "name": "Universe",
+    "category": "tools",
+    "subject": "Binaries built for other CPUs and operating systems",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/OthmaneBlial/universe",
+    "website": "https://othmaneblial.github.io/universe/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "OthmaneBlial"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.4.0",
+      "date": "2026-10-13"
+    },
+    "targets": [
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Experimental Zig binary runtime with its own CPU engine, executable loaders and OS compatibility layers for running software built for other platforms on macOS and Linux.",
+    "tags": [
+      "binary-translation",
+      "emulation",
+      "zig"
+    ],
+    "sources": [
+      "https://github.com/OthmaneBlial/universe",
+      "https://github.com/OthmaneBlial/universe/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "tangos",
+    "name": "tangOS",
+    "category": "tools",
+    "subject": "Decompilation project repositories",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README states \"Built with Claude Code\" (GitHub README)",
+    "licence": "MIT",
+    "repo": "https://github.com/tangosdev/tangOS",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "tangosdev"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v3.6.0",
+      "date": "2026-08-08"
+    },
+    "targets": [
+      "Windows",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Toolkit for decompilation projects built around a per-repo descriptor file, with a desktop console that exposes a repo's tools as an MCP server and shows a live viewer.",
+    "tags": [
+      "decomp",
+      "tooling",
+      "mcp"
+    ],
+    "sources": [
+      "https://github.com/tangosdev/tangOS",
+      "https://github.com/tangosdev/tangOS/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "outlaws-re",
+    "name": "Outlaws RE",
+    "category": "tools",
+    "subject": "Outlaws (LucasArts) file formats",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2015, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/glampert/outlaws-re",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "glampert"
+    ],
+    "started": "2015-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Reverse engineering of the custom file formats used by LucasArts' Outlaws, currently focused on unpacking and repacking its LAB archives.",
+    "tags": [
+      "lucasarts",
+      "outlaws",
+      "format"
+    ],
+    "sources": [
+      "https://github.com/glampert/outlaws-re"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "spirit-packetpuller",
+    "name": "Spirit PacketPuller",
+    "category": "tools",
+    "subject": "MapleStory client packet structures",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/KOOKIIEStudios/Spirit-PacketPuller",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "KOOKIIEStudios"
+    ],
+    "started": "2020-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Flutter GUI that reads IDA-generated pseudocode from MapleStory client decompiles and pulls out packet structures and opcodes.",
+    "tags": [
+      "maplestory",
+      "packets",
+      "ida"
+    ],
+    "sources": [
+      "https://github.com/KOOKIIEStudios/Spirit-PacketPuller"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ehppack",
+    "name": "ehppack",
+    "category": "tools",
+    "subject": "Yu-Gi-Oh! Tag Force EHP archives (PSP)",
+    "originalPlatform": "PlayStation Portable",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/xan1242/ehppack",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "xan1242"
+    ],
+    "started": "2021-01",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.3",
+      "date": "2021-07-31"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Command-line tool that extracts and repacks the EHP/EhFolder archives used by the PSP Yu-Gi-Oh! Tag Force games.",
+    "tags": [
+      "psp",
+      "archive",
+      "yu-gi-oh"
+    ],
+    "sources": [
+      "https://github.com/xan1242/ehppack",
+      "https://github.com/xan1242/ehppack/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "pakinspector-arma-reforger",
+    "name": "PakInspector",
+    "category": "tools",
+    "subject": "Arma Reforger .pak (PAC1) files",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/rvost/PakInspector",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "rvost"
+    ],
+    "started": "2025-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.1.0",
+      "date": "2025-07-12"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Proof-of-concept CLI that lists and extracts the contents of Arma Reforger's PAC1 .pak files.",
+    "tags": [
+      "arma",
+      "archive",
+      "format"
+    ],
+    "sources": [
+      "https://github.com/rvost/PakInspector",
+      "https://github.com/rvost/PakInspector/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "edisassm",
+    "name": "edisassm",
+    "category": "tools",
+    "subject": "x86 and x86-64 machine code",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2015, predates AI coding tools (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/eteran/edisassm",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "eteran"
+    ],
+    "started": "2015-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "C++ library for decoding and disassembling x86 and x86-64 instructions, built with CMake. The repository is archived.",
+    "tags": [
+      "disassembler",
+      "x86",
+      "library"
+    ],
+    "sources": [
+      "https://github.com/eteran/edisassm"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "avrdis",
+    "name": "avrdis",
+    "category": "tools",
+    "subject": "8-bit AVR microcontroller firmware",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/imrehorvath/avrdis",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "imrehorvath"
+    ],
+    "started": "2023-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Portable C disassembler that turns 8-bit AVR firmware images into AVRASM-compatible assembly source or an annotated listing.",
+    "tags": [
+      "disassembler",
+      "avr",
+      "embedded"
+    ],
+    "sources": [
+      "https://github.com/imrehorvath/avrdis"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "m68k-disasm-oxore",
+    "name": "m68k-disasm",
+    "category": "tools",
+    "subject": "Motorola 68000 binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "Unlicense",
+    "repo": "https://github.com/Oxore/m68k-disasm",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Oxore"
+    ],
+    "started": "2023-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Standalone Motorola 68000 disassembler whose output can be reassembled with GNU as or Sierra ASM68, aimed at Mega Drive work.",
+    "tags": [
+      "disassembler",
+      "m68k",
+      "mega-drive"
+    ],
+    "sources": [
+      "https://github.com/Oxore/m68k-disasm"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "aitd-tools",
+    "name": "AITD-tools",
+    "category": "tools",
+    "subject": "Alone in the Dark series",
+    "originalPlatform": "MS-DOS",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/tigrouind/AITD-tools",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "tigrouind"
+    ],
+    "started": "2016-11",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.54",
+      "date": "2026-04-21"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Set of Windows tools for the Alone in the Dark games, including a disassembler for the LIFE scripting language and utilities for inspecting the running game.",
+    "tags": [
+      "alone-in-the-dark",
+      "disassembler",
+      "dos",
+      "scripts"
+    ],
+    "sources": [
+      "https://github.com/tigrouind/AITD-tools",
+      "https://github.com/tigrouind/AITD-tools/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "asmtransformers",
+    "name": "ASMTransformers",
+    "category": "tools",
+    "subject": "ARM64, AMD64, i386 and RISC-V functions",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "EUPL-1.2",
+    "repo": "https://github.com/NetherlandsForensicInstitute/asmtransformers",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "NetherlandsForensicInstitute"
+    ],
+    "started": "2024-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0.0",
+      "date": "2025-06-03"
+    },
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Machine-learning model, API backend and Ghidra front end from the Netherlands Forensic Institute that match disassembled functions against a database of known functions.",
+    "tags": [
+      "binary-similarity",
+      "ghidra",
+      "machine-learning"
+    ],
+    "sources": [
+      "https://github.com/NetherlandsForensicInstitute/asmtransformers",
+      "https://github.com/NetherlandsForensicInstitute/asmtransformers/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "pvrx2png",
+    "name": "pvrx2png",
+    "category": "tools",
+    "subject": "PVR-X textures (Shenmue II on Xbox)",
+    "originalPlatform": "Xbox",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/sizious/pvrx2png",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sizious"
+    ],
+    "started": "2018-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1",
+      "date": "2018-09-26"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Small converter that decodes PVR-X texture files used by some original Xbox games such as Shenmue II into PNG images.",
+    "tags": [
+      "textures",
+      "xbox",
+      "shenmue",
+      "format"
+    ],
+    "sources": [
+      "https://github.com/sizious/pvrx2png",
+      "https://github.com/sizious/pvrx2png/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "yakuza-ps2xr",
+    "name": "Yakuza PS2XR",
+    "category": "tools",
+    "subject": "Yakuza and Yakuza 2 (PS2) game data",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/Sylwahan/yakuza_ps2xr",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Sylwahan"
+    ],
+    "started": "2025-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Python tool that extracts and rebuilds the disc data of the PS2 games Yakuza and Yakuza 2, written for the author's restoration mods.",
+    "tags": [
+      "ps2",
+      "yakuza",
+      "extractor"
+    ],
+    "sources": [
+      "https://github.com/Sylwahan/yakuza_ps2xr"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "seadogs-file-formats",
+    "name": "seadogs-file-formats",
+    "category": "tools",
+    "subject": "Storm engine games (Sea Dogs series, Age of Sail II)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/AlexKimov/seadogs-file-formats",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "AlexKimov"
+    ],
+    "started": "2018-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Documentation and MAXScript importers for file formats of Akella's Storm engine games, including Sea Dogs, Age of Sail II and Pirates of the Caribbean.",
+    "tags": [
+      "formats",
+      "sea-dogs",
+      "3ds-max"
+    ],
+    "sources": [
+      "https://github.com/AlexKimov/seadogs-file-formats"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mdd-daedalus",
+    "name": "mdd",
+    "category": "tools",
+    "subject": "Gothic and Gothic II Daedalus scripts",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/GothicKit/mdd",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "GothicKit"
+    ],
+    "started": "2024-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0.1",
+      "date": "2025-10-28"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Visual decompiler and disassembler for compiled Daedalus scripts used by the ZenGin engine in Gothic and Gothic II.",
+    "tags": [
+      "gothic",
+      "decompiler",
+      "scripts"
+    ],
+    "sources": [
+      "https://github.com/GothicKit/mdd",
+      "https://github.com/GothicKit/mdd/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "bugz-z80",
+    "name": "bugz",
+    "category": "tools",
+    "subject": "Z80 machine code",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/retro-vault/bugz",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "retro-vault"
+    ],
+    "started": "2016-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Very small table-driven Z80 disassembler written in portable C89.",
+    "tags": [
+      "disassembler",
+      "z80"
+    ],
+    "sources": [
+      "https://github.com/retro-vault/bugz"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "dashlink",
+    "name": "dashlink",
+    "category": "tools",
+    "subject": "HashLink bytecode (Haxe)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/steviegt6/dashlink",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "steviegt6"
+    ],
+    "started": "2022-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Haxe library to disassemble, inspect, edit and write HashLink bytecode, adapted largely from the hlbc Rust disassembler.",
+    "tags": [
+      "hashlink",
+      "haxe",
+      "disassembler"
+    ],
+    "sources": [
+      "https://github.com/steviegt6/dashlink"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "reshare",
+    "name": "REshare",
+    "category": "tools",
+    "subject": "Reverse-engineering databases (Ghidra, IDA, Binary Ninja, radare2)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/v-p-b/reshare",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "v-p-b"
+    ],
+    "started": "2025-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Human- and machine-readable exchange format for reverse-engineering knowledge, with importers and exporters to move symbols and notes between disassemblers.",
+    "tags": [
+      "interop",
+      "ghidra",
+      "ida",
+      "radare2"
+    ],
+    "sources": [
+      "https://github.com/v-p-b/reshare"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "gditools3",
+    "name": "gditools3",
+    "category": "tools",
+    "subject": "Dreamcast GD-ROM images",
+    "originalPlatform": "Dreamcast",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/AltoRetrato/gditools3",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "AltoRetrato"
+    ],
+    "started": "2018-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Python 2/3 library, CLI and GUI for listing and extracting files from Dreamcast GD-ROM images; a fork of dcisotools.",
+    "tags": [
+      "dreamcast",
+      "gd-rom",
+      "extractor"
+    ],
+    "sources": [
+      "https://github.com/AltoRetrato/gditools3"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "psprecomp-sp00nznet",
+    "name": "psprecomp (sp00nznet)",
+    "category": "tools",
+    "subject": "PSP Allegrex/MIPS executables",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/sp00nznet/psprecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sp00nznet"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation toolkit for PSP games with analysis tools, a code generator and runtime libraries that turn Allegrex MIPS code into C.",
+    "tags": [
+      "psp",
+      "static-recomp",
+      "mips"
+    ],
+    "sources": [
+      "https://github.com/sp00nznet/psprecomp"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "slinky",
+    "name": "slinky",
+    "category": "tools",
+    "subject": "Linker scripts for matching decompilation projects",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/decompals/slinky",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "decompals"
+    ],
+    "started": "2024-02",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "0.6.0",
+      "date": "2026-07-21"
+    },
+    "targets": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Linker script generator for GNU ld and LLVM lld, built to produce the scripts matching decompilation and modding projects need.",
+    "tags": [
+      "linker",
+      "decomp-tooling",
+      "splat"
+    ],
+    "sources": [
+      "https://github.com/decompals/slinky",
+      "https://github.com/decompals/slinky/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "gmd-recovery",
+    "name": "GMD Recovery",
+    "category": "tools",
+    "subject": "GameMaker 5.3a and earlier project files",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2012, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/VBGAMER45/GMD-Recovery",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "VBGAMER45"
+    ],
+    "started": "2012-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Visual Basic 6 decompiler that recovers projects from games made with GameMaker 5.3a and earlier.",
+    "tags": [
+      "gamemaker",
+      "decompiler",
+      "vb6"
+    ],
+    "sources": [
+      "https://github.com/VBGAMER45/GMD-Recovery"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "mist-mips",
+    "name": "mist",
+    "category": "tools",
+    "subject": "PSP Allegrex MIPS code",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/kotcrab/mist",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "kotcrab"
+    ],
+    "started": "2018-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Experimental Kotlin MIPS toolkit for the PSP Allegrex CPU: disassembler, symbolic execution engine used to verify uofw reverse engineering, recompiler and decompiler.",
+    "tags": [
+      "mips",
+      "psp",
+      "symbolic-execution"
+    ],
+    "sources": [
+      "https://github.com/kotcrab/mist"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "il2csharp",
+    "name": "il2csharp",
+    "category": "tools",
+    "subject": "Unity IL2CPP binaries",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo root (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/mynamescrax/il2csharp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mynamescrax"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "IL2CPP-to-C# decompiler that lifts method bodies from native x64 code and cross-checks them with IL2CPP metadata to produce a C# source tree.",
+    "tags": [
+      "unity",
+      "il2cpp",
+      "decompiler"
+    ],
+    "sources": [
+      "https://github.com/mynamescrax/il2csharp"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "isdcc",
+    "name": "isDcc",
+    "category": "tools",
+    "subject": "InstallShield scripts (up to v5.5)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/incognitte/isDcc",
+    "website": "http://www.tardis.ed.ac.uk/~adq",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "incognitte"
+    ],
+    "started": "2023-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.22",
+      "date": "2023-06-03"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Upload of ADQ's InstallShield script decompiler, covering InstallShield versions up to 5.5.",
+    "tags": [
+      "installshield",
+      "decompiler",
+      "installer"
+    ],
+    "sources": [
+      "https://github.com/incognitte/isDcc",
+      "https://github.com/incognitte/isDcc/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "libopennfs",
+    "name": "LibOpenNFS",
+    "category": "tools",
+    "subject": "Need for Speed 1-5 asset formats",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/OpenNFS/LibOpenNFS",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "OpenNFS"
+    ],
+    "started": "2020-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Reverse-engineered parsers and format notes for the data files of the early Need for Speed games, used by the OpenNFS engine to load assets.",
+    "tags": [
+      "nfs",
+      "formats",
+      "parser"
+    ],
+    "sources": [
+      "https://github.com/OpenNFS/LibOpenNFS"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "nfsmw-2005-re",
+    "name": "NFSMW Reverse-Engineering Project",
+    "category": "tools",
+    "subject": "Need for Speed: Most Wanted (2005) PC",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/s-b-repo/nfsmw-2005-re",
+    "website": "https://cybersec.org.za",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "s-b-repo"
+    ],
+    "started": "2026-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Reverse-engineering notes and modding tools for the PC Need for Speed: Most Wanted, mapping its subsystems and attribute hashes, with an ASI mod and a Linux CLI.",
+    "tags": [
+      "nfs",
+      "reverse-engineering",
+      "modding"
+    ],
+    "sources": [
+      "https://github.com/s-b-repo/nfsmw-2005-re"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "slgsystem-script-tool",
+    "name": "SLGSystemScriptTool",
+    "category": "tools",
+    "subject": "SLG System engine scripts",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/TesterTesterov/SLGSystemScriptTool",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TesterTesterov"
+    ],
+    "started": "2021-07",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0",
+      "date": "2021-07-20"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "GUI tool that decompiles, compiles, decrypts and encrypts scripts for every known version of the SLG System game engine, including key finding.",
+    "tags": [
+      "scripts",
+      "visual-novel",
+      "decompiler"
+    ],
+    "sources": [
+      "https://github.com/TesterTesterov/SLGSystemScriptTool",
+      "https://github.com/TesterTesterov/SLGSystemScriptTool/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "helix-n64",
+    "name": "Helix",
+    "category": "tools",
+    "subject": "Decompiled N64 games being ported to PC",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/retrofoundry/helix",
+    "website": "https://retrofoundry.github.io/helix/dev",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "retrofoundry"
+    ],
+    "started": "2023-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Library that gives N64 decompilations a libultra runtime with real threads plus a modern renderer, audio and input so they run on PC with minimal changes.",
+    "tags": [
+      "n64",
+      "runtime",
+      "porting"
+    ],
+    "sources": [
+      "https://github.com/retrofoundry/helix"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "decomplicator",
+    "name": "Decomplicator",
+    "category": "tools",
+    "subject": "N64 decompilation build environments",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/LucretiaArc/Decomplicator",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "LucretiaArc"
+    ],
+    "started": "2026-01",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0.6",
+      "date": "2026-09-13"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows tool that sets up a build environment for N64 decompilation projects from templates, given a project folder and the base cartridge image.",
+    "tags": [
+      "n64",
+      "decomp",
+      "setup"
+    ],
+    "sources": [
+      "https://github.com/LucretiaArc/Decomplicator",
+      "https://github.com/LucretiaArc/Decomplicator/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "miniworld-pkg-unpacker",
+    "name": "MiniWorldPkgUnpacker",
+    "category": "tools",
+    "subject": "Mini World resource packages (Rainbow engine)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root describes agent workflow (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/functy23/MiniWorldPkgUnpacker",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "functy23"
+    ],
+    "started": "2026-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Unpacker and texture decoder for Mini World's reverse-engineered Rainbow engine package format, converting ASTC, Crunch and ETC2 textures to PNG.",
+    "tags": [
+      "unpacker",
+      "textures",
+      "mini-world"
+    ],
+    "sources": [
+      "https://github.com/functy23/MiniWorldPkgUnpacker"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "xbox-xbe-recomp",
+    "name": "Xbox XBE Recomp",
+    "category": "tools",
+    "subject": "Original Xbox XBE executables",
+    "originalPlatform": "Xbox",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/TGP482/XboxXBERecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TGP482"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompiler that translates original Xbox x86 executables to C++ and implements the kernel and XDK libraries on Windows, with Direct3D 12 and XAudio2 back ends.",
+    "tags": [
+      "xbox",
+      "recomp",
+      "tool"
+    ],
+    "sources": [
+      "https://github.com/TGP482/XboxXBERecomp"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "swe1r-assets",
+    "name": "swe1r-assets",
+    "category": "tools",
+    "subject": "Star Wars Episode I: Racer asset files",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/akopetsch/swe1r-assets",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "akopetsch"
+    ],
+    "started": "2023-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "C#/.NET library that reads, edits and writes the block asset files of Star Wars Episode I: Racer.",
+    "tags": [
+      "swe1r",
+      "assets",
+      "dotnet"
+    ],
+    "sources": [
+      "https://github.com/akopetsch/swe1r-assets"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "shenmue-export-tools",
+    "name": "Shenmue-Export-Tools",
+    "category": "tools",
+    "subject": "Shenmue model and texture files",
+    "originalPlatform": "Dreamcast",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2018, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/seiche/Shenmue-Export-Tools",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "seiche"
+    ],
+    "started": "2018-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Blender and Noesis plugins that read Shenmue's MT5 model files and PowerVR textures, including the game's twiddled rectangular images, for mesh export.",
+    "tags": [
+      "shenmue",
+      "dreamcast",
+      "blender",
+      "noesis",
+      "formats"
+    ],
+    "sources": [
+      "https://github.com/seiche/Shenmue-Export-Tools"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "wartoolkit",
+    "name": "War Tool Kit",
+    "category": "tools",
+    "subject": "Sudden Strike, Sudden Strike Resource War and Sudden Strike 2 data files",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/americusmaximus/WarToolKit",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "americusmaximus"
+    ],
+    "started": "2024-05",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Tools for reading and writing the internal data files of Fireglow's Sudden Strike games, mostly produced by reverse engineering the original binaries.",
+    "tags": [
+      "sudden-strike",
+      "formats",
+      "tools"
+    ],
+    "sources": [
+      "https://github.com/americusmaximus/WarToolKit"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "sctparser",
+    "name": "SCTParser",
+    "category": "tools",
+    "subject": "Yuna Engine SCT images (Chaos Zero Nightmare, Epic Seven)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/formagGinoo/SCTParser",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "formagGinoo"
+    ],
+    "started": "2025-10",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.4",
+      "date": "2026-02-06"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Small C# converter that parses the custom SCT image format used by Yuna Engine games such as Chaos Zero Nightmare and writes PNGs; its work has moved into a larger asset ripper.",
+    "tags": [
+      "formats",
+      "textures",
+      "yuna-engine"
+    ],
+    "sources": [
+      "https://github.com/formagGinoo/SCTParser",
+      "https://github.com/formagGinoo/SCTParser/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "emotion-engine-disassembler",
+    "name": "Emotion Engine Disassembler",
+    "category": "tools",
+    "subject": "PlayStation 2 Emotion Engine machine code",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/TimoSalomaki/EmotionEngineDisassembler",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TimoSalomaki"
+    ],
+    "started": "2020-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Early-stage C# disassembler for the PlayStation 2 Emotion Engine CPU instruction set; register naming and tests were still unfinished when work stopped.",
+    "tags": [
+      "ps2",
+      "disassembler",
+      "mips"
+    ],
+    "sources": [
+      "https://github.com/TimoSalomaki/EmotionEngineDisassembler"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "zydec",
+    "name": "Zydec",
+    "category": "tools",
+    "subject": "x64 machine code",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "BSD-2-Clause",
+    "repo": "https://github.com/rainerzufalldererste/zydec",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "rainerzufalldererste"
+    ],
+    "started": "2023-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Small library that turns Zydis-disassembled x64 instructions into C-like pseudo-code, aimed at skimming vectorised code and mapping it back to intrinsics.",
+    "tags": [
+      "decompiler",
+      "x64",
+      "zydis"
+    ],
+    "sources": [
+      "https://github.com/rainerzufalldererste/zydec"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "codereverse2",
+    "name": "CodeReverse2",
+    "category": "tools",
+    "subject": "Windows executables (PE)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2020, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/katahiromz/CodeReverse2",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "katahiromz"
+    ],
+    "started": "2020-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Command-line reverse-engineering tool that inspects Windows executables and DLLs, dumping headers, imports, memory and disassembly; runs on Windows, Linux and macOS.",
+    "tags": [
+      "pe",
+      "disassembler",
+      "windows"
+    ],
+    "sources": [
+      "https://github.com/katahiromz/CodeReverse2"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ido-matching-decomp",
+    "name": "IDO matching decomp",
+    "category": "tools",
+    "subject": "SGI IRIX IDO compiler",
+    "originalPlatform": "IRIX",
+    "originalYear": null,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/decompals/ido-matching-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "decompals"
+    ],
+    "started": "2022-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Matching decompilation of the IRIX Development Option C compiler programs (cc, cfe, uopt, ugen, as1) used to build many N64 games, as support for other decompilations.",
+    "tags": [
+      "ido",
+      "irix",
+      "compiler",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/decompals/ido-matching-decomp"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "gbarecomp",
+    "name": "gbarecomp",
+    "category": "tools",
+    "subject": "Game Boy Advance ARM/Thumb code",
+    "originalPlatform": "Game Boy Advance",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/sp00nznet/gbarecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sp00nznet"
+    ],
+    "started": "2026-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Static recompiler that finds ARM and Thumb code in Game Boy Advance games, translates it to C and generates a CMake project linked against a small GBA runtime with SDL2.",
+    "tags": [
+      "gba",
+      "static-recomp",
+      "arm"
+    ],
+    "sources": [
+      "https://github.com/sp00nznet/gbarecomp"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "chip8recompiled",
+    "name": "CHIP-8 Recompiled",
+    "category": "tools",
+    "subject": "CHIP-8 programs",
+    "originalPlatform": "CHIP-8",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/arcanite24/chip8recompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "arcanite24"
+    ],
+    "started": "2025-12",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.8.0",
+      "date": "2026-01-03"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Static recompilation toolchain that turns CHIP-8 programs into C and builds them as standalone native executables with a small runtime.",
+    "tags": [
+      "chip-8",
+      "static-recomp"
+    ],
+    "sources": [
+      "https://github.com/arcanite24/chip8recompiled",
+      "https://github.com/arcanite24/chip8recompiled/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "decomp-wtf",
+    "name": "decomp.wtf",
+    "category": "tools",
+    "subject": "Matching decompilation of N64, GameCube and Wii games",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AI-agent decomp tool: ships a .claude-plugin and has agents (Claude Code, Codex) write the matching C (README, repo root)",
+    "licence": "MIT",
+    "repo": "https://github.com/i12bp8/decomp.wtf",
+    "website": "https://decomp.wtf",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "i12bp8"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Local tool that drives an AI coding agent through matching decompilation of games the user owns, scoring each function by whether it compiles back to the original bytes. The author has discontinued it.",
+    "tags": [
+      "ai",
+      "matching-decomp",
+      "agents"
+    ],
+    "sources": [
+      "https://github.com/i12bp8/decomp.wtf"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "recompcore",
+    "name": "RecompCore",
+    "category": "tools",
+    "subject": "GameCube executables (Dolphin CPU core)",
+    "originalPlatform": "GameCube",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README states it is fully vibecoded, written by AI under the author's direction",
+    "licence": "unknown",
+    "repo": "https://github.com/aharonahdoot/RecompCore",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "aharonahdoot"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-07-08"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static-recompilation CPU core for Dolphin that runs GameCube game code as native code and falls back to the interpreter where needed.",
+    "tags": [
+      "gamecube",
+      "dolphin",
+      "static-recomp"
+    ],
+    "sources": [
+      "https://github.com/aharonahdoot/RecompCore",
+      "https://github.com/aharonahdoot/RecompCore/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "nwiiurecomp",
+    "name": "nWiiURecomp",
+    "category": "tools",
+    "subject": "Wii U executables",
+    "originalPlatform": "Wii U",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/BlackLineInteractive/nWiiURecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "BlackLineInteractive"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompiler and Cafe OS HLE runtime that turn Wii U executables into native C++ programs; derived from the same team's NWiiRecomp.",
+    "tags": [
+      "wiiu",
+      "static-recomp",
+      "toolkit"
+    ],
+    "sources": [
+      "https://github.com/BlackLineInteractive/nWiiURecomp"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "n64-decomp-workbench",
+    "name": "N64 Decomp Workbench",
+    "category": "tools",
+    "subject": "N64 MIPS matching decompilation",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/akratch/n64-decomp-workbench",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "akratch"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.8.0",
+      "date": "2026-09-03"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Diagnostic tool for nearly-matched MIPS functions in N64 decomps, with relocation-aware diffs, compiler traces and pass replay to locate the cause of a mismatch.",
+    "tags": [
+      "n64",
+      "matching-decomp",
+      "mips",
+      "diff"
+    ],
+    "sources": [
+      "https://github.com/akratch/n64-decomp-workbench",
+      "https://github.com/akratch/n64-decomp-workbench/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ecd-plus-plus",
+    "name": "ECD++",
+    "category": "tools",
+    "subject": "Java class files (Eclipse)",
+    "originalPlatform": "Java",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "EPL-1.0",
+    "repo": "https://github.com/nbauma109/ecd",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "nbauma109"
+    ],
+    "started": "2022-02",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "2026.6.3",
+      "date": "2026-07-09"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Fork of Enhanced Class Decompiler that integrates several modern Java decompilers into Eclipse.",
+    "tags": [
+      "java",
+      "decompiler",
+      "eclipse"
+    ],
+    "sources": [
+      "https://github.com/nbauma109/ecd",
+      "https://github.com/nbauma109/ecd/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "ai5winscripttool",
+    "name": "AI5WINScriptTool",
+    "category": "tools",
+    "subject": "AI5WIN visual novel engine scripts",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/TesterTesterov/AI5WINScriptTool",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TesterTesterov"
+    ],
+    "started": "2021-12",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.1",
+      "date": "2023-05-31"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Dual-language tool that decompiles and recompiles the mes scripts of the AI5WIN visual novel engine, allowing full script edits.",
+    "tags": [
+      "visual-novel",
+      "scripts",
+      "format"
+    ],
+    "sources": [
+      "https://github.com/TesterTesterov/AI5WINScriptTool",
+      "https://github.com/TesterTesterov/AI5WINScriptTool/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "wiicompiled",
+    "name": "WiiCompiled",
+    "category": "tools",
+    "subject": "Wii and GameCube PowerPC executables (first target: Mario Kart Wii)",
+    "originalPlatform": "Wii",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/patchzyy/Wiicompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "patchzyy"
+    ],
+    "started": "2026-08",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.2.34",
+      "date": "2026-10-08"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompiler and runtime that turns Wii/GameCube PowerPC game code into native PC programs, first used for a Mario Kart Wii port and since by several other ports. Translation runs locally against your own disc.",
+    "tags": [
+      "wii",
+      "gamecube",
+      "recompiler",
+      "powerpc"
+    ],
+    "sources": [
+      "https://github.com/patchzyy/Wiicompiled",
+      "https://github.com/patchzyy/Wiicompiled/releases"
+    ],
+    "checked": "2026-10-18"
+  },
+  {
+    "slug": "psxrecomp",
+    "name": "PSXRecomp",
+    "category": "tools",
+    "subject": "PlayStation (MIPS R3000A) games",
+    "originalPlatform": "PlayStation",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo root; README mentions AI-assisted work (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/RetroPortingToolKit/psxrecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "RetroPortingToolKit"
+    ],
+    "started": "2026-03",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "General-purpose static recompiler for PlayStation games: MIPS R3000A code from a disc is translated to C and linked against a hardware-accurate runtime. Maintained by mstan within Retro Porting Toolkit.",
+    "tags": [
+      "ps1",
+      "recompiler",
+      "mips"
+    ],
+    "sources": [
+      "https://github.com/RetroPortingToolKit/psxrecomp"
+    ],
+    "checked": "2026-10-18"
   }
 ]

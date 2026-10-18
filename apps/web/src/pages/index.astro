@@ -2,7 +2,8 @@
 import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import ConsoleStrip from '../components/ConsoleStrip.astro';
-import { projects, CATEGORIES, heat, statsFor, statsDate, news, history, formatDate, TIER_LABEL } from '../lib/data';
+import Cover from '../components/Cover.astro';
+import { projects, CATEGORIES, heat, statsFor, statsDate, news, history, formatDate, TIER_LABEL, mediaFor, fmtNum } from '../lib/data';
 
 const all = projects();
 const hot = [...all].filter((p) => heat(p) > 0).sort((a, b) => heat(b) - heat(a)).slice(0, 6);
@@ -13,18 +14,47 @@ const latestNews = news().slice(0, 5);
 const milestones = history().flatMap((e) => e.events).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 5);
 const count = (c: string) => all.filter((p) => p.category === c).length;
 const playCount = all.filter((p) => p.playable).length;
+// Hero mosaic: the hottest projects that have a picture of their own.
+const mosaic = [...all].filter((p) => mediaFor(p)?.thumb).sort((a, b) => heat(b) - heat(a)).slice(0, 6);
+const ticker = all.filter((p) => releaseOf(p)?.date).sort((a, b) => releaseOf(b)!.date.localeCompare(releaseOf(a)!.date)).slice(0, 24);
+const ago = (d: string) => { const n = Math.floor((Date.parse(statsDate() ?? d) - Date.parse(d)) / 864e5); return n <= 0 ? 'today' : n === 1 ? '1 day ago' : n < 30 ? `${n} days ago` : formatDate(d.slice(0, 10)); };
 ---
 <Base title="Recomp">
   <section class="hero wrap">
-    <p class="meta kicker">Decomp · Recomp · Clean-room · Preservation</p>
-    <h1>Every game and program being rebuilt from its binary, tracked live.</h1>
-    <p class="lede">Recomp follows {all.length} decompilation, static recompilation, clean-room and preservation projects: what's hot on GitHub this week, what just shipped, how each was made, and {playCount} you can run in your browser right now.</p>
-    <div class="btns">
-      <a class="btn primary" href="/trending/">What's trending</a>
-      <a class="btn" href="/play/">Play in browser</a>
-      <a class="btn" href="/what-is-a-recomp/">What is a recomp?</a>
+    <div class="htext">
+      <p class="meta kicker">Decomp · Recomp · Clean-room · Preservation</p>
+      <h1>Every game and program being rebuilt from its binary, tracked live.</h1>
+      <p class="lede">Recomp follows {all.length} decompilation, static recompilation, clean-room and preservation projects: what's hot on GitHub this week, what just shipped, how each was made, and {playCount} you can run in your browser right now.</p>
+      <div class="btns">
+        <a class="btn primary" href="/trending/">What's trending</a>
+        <a class="btn" href="/play/">Play in browser</a>
+        <a class="btn" href="/what-is-a-recomp/">What is a recomp?</a>
+      </div>
     </div>
+    {mosaic.length === 6 && (
+      <div class="mosaic" aria-label="Hot right now">
+        {mosaic.map((p, i) => (
+          <a class={`tile t${i}`} href={`/p/${p.slug}/`}>
+            <Cover p={p} eager={i < 2} />
+            <span class="tl"><span class="tn">{p.name}</span><span class="meta">{p.originalPlatform}</span></span>
+          </a>
+        ))}
+      </div>
+    )}
   </section>
+
+  {ticker.length > 0 && (
+    <section class="ticker" aria-label="Just shipped">
+      <span class="tk-label">Just shipped</span>
+      <div class="tk-viewport">
+        <ul class="tk-track">
+          {[0, 1].map((copy) => ticker.map((p) => (
+            <li aria-hidden={copy ? 'true' : undefined}><a href={`/p/${p.slug}/`} tabindex={copy ? -1 : undefined}><strong>{p.name}</strong> <span class="v">{releaseOf(p)!.version}</span> <span class="meta">{ago(releaseOf(p)!.date)}</span></a></li>
+          )))}
+        </ul>
+      </div>
+    </section>
+  )}
 
   <section class="section wrap">
     <div class="sections">
@@ -71,13 +101,37 @@ const playCount = all.filter((p) => p.playable).length;
 
   <section class="section wrap">
     <div class="callout">
-      <p><strong>Labelled honestly.</strong> Every entry says how it was made: human-led, AI-assisted or AI-generated, as stated by the project, plus its licence and whether you need your own copy of the original. <a href="/about/#labels">How the labels work</a>.</p>
+      <p><strong>Labelled honestly.</strong> Every entry says how it was made: human-led, AI-assisted or AI-generated, as stated by the project, plus its licence and whether you need your own copy of the original. <a href="/about/#labels">How the labels work</a>. Missing a project? <a href="/submit/">Add it</a>.</p>
     </div>
   </section>
 </Base>
 <style>
-  .hero { padding-top: 3.5rem; padding-bottom: 1rem; }
+  .hero { padding-top: 3rem; padding-bottom: 1.5rem; display: grid; gap: 2rem 3rem; align-items: center; }
+  @media (min-width: 980px) { .hero { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); padding-top: 3.5rem; } }
   .hero h1 { max-width: 20ch; }
+  .mosaic { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; }
+  @media (min-width: 980px) { .mosaic { grid-template-columns: repeat(3, minmax(0, 1fr)); transform: perspective(1400px) rotateY(-9deg) rotateX(3deg); } }
+  .tile { position: relative; display: block; color: #fff; text-decoration: none; border-radius: 6px; overflow: hidden; animation: rise 0.6s both; }
+  .tile :global(.cover) { border: 0; border-radius: 0; transition: transform 0.4s ease; }
+  .tile:hover :global(.cover) { transform: scale(1.06); }
+  .tl { position: absolute; inset: auto 0 0 0; display: grid; padding: 1.4rem 0.6rem 0.45rem; background: linear-gradient(transparent, rgb(0 0 0 / 0.85)); }
+  .tn { font: 600 0.82rem/1.2 var(--font-body); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .tl .meta { color: rgb(255 255 255 / 0.7); font-size: 0.68rem; }
+  .t5 { display: none; } .t4 { display: none; }
+  @media (min-width: 980px) { .t4, .t5 { display: block; } }
+  .t1 { animation-delay: 0.06s; } .t2 { animation-delay: 0.12s; } .t3 { animation-delay: 0.18s; } .t4 { animation-delay: 0.24s; } .t5 { animation-delay: 0.3s; }
+  @keyframes rise { from { opacity: 0; transform: translateY(12px); } }
+  .ticker { display: flex; align-items: center; border-block: 1px solid var(--line); background: var(--bg-raised); overflow: hidden; }
+  .tk-label { flex: none; font: 500 0.72rem/1 var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-ink); background: var(--accent); padding: 0.85rem 0.9rem; position: relative; z-index: 1; }
+  .tk-viewport { overflow: hidden; flex: 1; mask-image: linear-gradient(90deg, transparent, #000 4%, #000 92%, transparent); }
+  .tk-track { display: flex; width: max-content; list-style: none; margin: 0; padding: 0; animation: scroll 90s linear infinite; }
+  .ticker:hover .tk-track, .ticker:focus-within .tk-track { animation-play-state: paused; }
+  .tk-track li { white-space: nowrap; padding: 0.6rem 1.4rem; border-right: 1px solid var(--line); font-size: 0.9rem; }
+  .tk-track a { color: inherit; text-decoration: none; }
+  .tk-track a:hover strong { color: var(--accent); }
+  .tk-track .v { font: 500 0.8rem var(--font-mono); color: var(--accent); }
+  @keyframes scroll { to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { .tk-track { animation: none; } .tk-viewport { overflow-x: auto; } .tile { animation: none; } }
   .kicker { text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); }
   .sections { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); border-top: 1px solid var(--ink); }
   .sec { display: grid; gap: 0.2rem; padding: 1rem 1rem 1.2rem 0; color: inherit; text-decoration: none; border-bottom: 1px solid var(--line); }

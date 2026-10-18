@@ -1,0 +1,1808 @@
+[
+ {
+  "slug": "sims1-mac-decomp",
+  "parents": [
+   "asm-differ"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "vandal-hearts-decomp",
+  "parents": [
+   "asm-differ"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "aidyn-chronicles-decomp",
+  "parents": [
+   "decomp-me"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "body-harvest-decomp",
+  "parents": [
+   "decomp-me"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "kappa",
+  "parents": [
+   "decomp-me"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "kl2-lv-decomp",
+  "parents": [
+   "decomp-me"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "makerom-decomp",
+  "parents": [
+   "decomp-me"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "mml1",
+  "parents": [
+   "decomp-me"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "redpepper",
+  "parents": [
+   "decomp-me"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "rood-reverse",
+  "parents": [
+   "decomp-me"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "sims1-mac-decomp",
+  "parents": [
+   "decomp-me"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "bullseye-re-dead-aim",
+  "parents": [
+   "decomp-permuter"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "kappa",
+  "parents": [
+   "decomp-permuter"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "n64-decomp-workbench",
+  "parents": [
+   "decomp-permuter"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "rood-reverse",
+  "parents": [
+   "decomp-permuter"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "dolsdk2001",
+  "parents": [
+   "decomp-toolkit"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "dolsdk2004",
+  "parents": [
+   "decomp-toolkit"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "eternal-darkness-decomp",
+  "parents": [
+   "decomp-toolkit"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "gauntlet-dark-legacy-decomp",
+  "parents": [
+   "decomp-toolkit"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "mssb-dtk",
+  "parents": [
+   "decomp-toolkit"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "pik2wii-decomp",
+  "parents": [
+   "decomp-toolkit"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "pkmn-colosseum",
+  "parents": [
+   "decomp-toolkit"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "pokepark-wii-decomp",
+  "parents": [
+   "decomp-toolkit"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "wii-play-decomp",
+  "parents": [
+   "decomp-toolkit"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "aidyn-chronicles-decomp",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "bakugan-dotc-decomp",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "breadflowerdos",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "cmr2decomp",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "crystalosd-decomp-legacy",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "dx-ball-reconstruction",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "flatout-2-decomp",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "lords-of-midnight-disassembly",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "lsd-dream-emulator-decomp",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "lunii-re",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "meteor-decomp",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "model2emuex",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "openlw",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "openrakis",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "paleblood",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "rayman-arena-decomp",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "redriver2",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "resident-evil-pc-decomp",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "reverse-engineer-azel",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "summit-wow-server",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "vandal-hearts-decomp",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "win7-dwm-decomp",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "f0x",
+  "parents": [
+   "libultraship"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "g-diffuser",
+  "parents": [
+   "libultraship"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "bullseye-re-dead-aim",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "kappa",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "mnsg-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "n64-auto-decompiler",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "dk64-recomp-android",
+  "parents": [
+   "n64modernruntime"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "iss2000-recomp",
+  "parents": [
+   "n64modernruntime"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "paxdino",
+  "parents": [
+   "n64modernruntime"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "starcraft64-recomp",
+  "parents": [
+   "n64modernruntime"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wcw-nwo-revenge-recomp",
+  "parents": [
+   "n64modernruntime"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wcw-nwo-world-tour-recomp",
+  "parents": [
+   "n64modernruntime"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wwf-no-mercy-recomp",
+  "parents": [
+   "n64modernruntime"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wwf-wrestlemania-2000-recomp",
+  "parents": [
+   "n64modernruntime"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "bar-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "body-harvest-recompiled",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "bomberman64-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "cbfd-recompiled",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "chip8recompiled",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "conkerbfdreloaded",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "dinosaur-planet-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "dk64-recompiled",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "dnzh-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "goemon64recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "goemon64recomp-android",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "goldeneye64recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "goldenrecomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "harvestmoon64-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "iss2000-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "mariokart64recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "megaman64-recompiled",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "mnsg-decomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "paxdino",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "pilotwings-64-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "pilotwings64-cleanroom",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "pilotwings64-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "ps3recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "psprecomp-sp00nznet",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "quest64-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "recompone",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "reo",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "rt64",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "sanrecomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "snap64recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "snowboardkids2-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "sote-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "spaceranger-ts2",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "starcraft64-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "starfox64recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wcw-nwo-revenge-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wcw-nwo-world-tour-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wwf-no-mercy-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wwf-wrestlemania-2000-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "brawl-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "chronicle-two",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "dc3-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "doshin-gc-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "eternal-darkness-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "kappa",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "kdc-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "kirbys-epic-yarn-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "marioparty7-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "mkdd",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "mkw",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "mssb-dtk",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "nfshs-psx-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "nfsug",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "pbg-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "pbr-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "pkmn-colosseum",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "pokemon-rumble-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "pokepark-wii-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "pvz-099-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "rac3-uya-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "rfl-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "rhf",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "rood-reverse",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "rr-pc-port",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "sadx-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "sims2-castaway-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "sonic06-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "tssm-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "wii-play-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "xenogears-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "ace-combat-5-recomp",
+  "parents": [
+   "ps2recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "bt3-recomp",
+  "parents": [
+   "ps2recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "dq8-recompiled",
+  "parents": [
+   "ps2recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "god-of-war-recomp",
+  "parents": [
+   "ps2recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "killzone-recomp",
+  "parents": [
+   "ps2recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "psprecomp-sp00nznet",
+  "parents": [
+   "ps2recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "road-trip-recomp",
+  "parents": [
+   "ps2recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "flow-recomp",
+  "parents": [
+   "ps3recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "gbarecomp",
+  "parents": [
+   "ps3recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "psprecomp-sp00nznet",
+  "parents": [
+   "ps3recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "ac6-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "ac6recomp-rapidsamphire",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "army-of-two-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "army-of-two-recomp-genesis5500",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "army-of-two-recompilation-openportroid",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "asuras-wrath-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "band3-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "burnout-crash-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "condemned2recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "crackdown-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "crackdown-recomp-unowa",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "daytona-xbla-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "dbz-burst-limit-recompiled",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "downpourrecomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "dprecomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "earthworm-jim-hd-recompiled",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "estacado-darkness-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "eternal-sonata-reprise",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "fm4-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "forzarecomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "geometry-wars-retro-evolved-2-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "hard-corps-uprising-recompiled",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "hells-gate-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "kameo-repowered",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "king-kong-recompiled",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "mcla-4ios",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "nfs-carbon-360-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "nfs-carbon-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "nfsmw-ios",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "nfsmw-recompiled",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "nocturnerecomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "nx1recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "openh3m",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "openjam",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "perfect-dark-remaster-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "perfect-dark-zero-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "project-1944",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "project-2099",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "project8recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "re-gh2",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "re-sonic06demo",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "re-wor",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "reblue-weigustavo",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "redahm",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "renut",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "ridge-racer-6-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "saintsrow-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "sega-superstars-tennis-rematch",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "skate2-recompile-pc",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "skullburglar",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "south-park-tenormans-revenge-recompiled",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "south-park-tower-defense-recompiled",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "svr2011-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "tdure",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "the-simpsons-game-nx",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "thebigs2-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "theft4",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "tip-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "vig8-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wet-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wwe-all-stars-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wwe-svr2011-pc",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "xmd-recompiled",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "banjo-tooie-scurvy-dog-port",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "bearbirdpad",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "body-harvest-recompiled",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "dk64-recomp-android",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "dk64-recompiled",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "dnzh-recomp",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "goemon64recomp-android",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "goldeneye64recomp",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "iss2000-recomp",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "paxdino",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "pilotwings64-recomp",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "snap64recomp",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "spaceranger-ts2",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wcw-nwo-revenge-recomp",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wcw-nwo-world-tour-recomp",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wwf-no-mercy-recomp",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "wwf-wrestlemania-2000-recomp",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "xenogears-decomp",
+  "parents": [
+   "spimdisasm"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "aidyn-chronicles-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "banjo-tooie-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "bap",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "bullseye-re-dead-aim",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "chameleon-twist-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "cv64",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "digimon-world-2-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "duke-nukem-zero-hour-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "f-zerox-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "fugue-core",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "mariogolf64-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "nfshs-psx-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "rood-reverse",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "sead-2",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "sega2asm",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "slinky",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "sm64ds-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "spimdisasm",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "ssx3-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "tmhc-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "vandal-hearts-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "xenogears-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "unleashedrecomp-android",
+  "parents": [
+   "unleashed-recompiled"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "cod3recomp",
+  "parents": [
+   "xenonrecomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "dead-rising-2-case-west-recomp",
+  "parents": [
+   "xenonrecomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "dead-rising-2-case-zero-recomp",
+  "parents": [
+   "xenonrecomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "estacado-darkness-recomp",
+  "parents": [
+   "xenonrecomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "free-riders-recompiled",
+  "parents": [
+   "xenonrecomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "marathon-recompiled",
+  "parents": [
+   "xenonrecomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "recompone",
+  "parents": [
+   "xenonrecomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "saintsrow-recomp",
+  "parents": [
+   "xenonrecomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "sanrecomp",
+  "parents": [
+   "xenonrecomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "skate2-recomp-team",
+  "parents": [
+   "xenonrecomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "vig8-recomp",
+  "parents": [
+   "xenonrecomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "dead-rising-2-case-west-recomp",
+  "parents": [
+   "xenosrecomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "dead-rising-2-case-zero-recomp",
+  "parents": [
+   "xenosrecomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "free-riders-recompiled",
+  "parents": [
+   "xenosrecomp"
+  ],
+  "relation": "built-with"
+ }
+]

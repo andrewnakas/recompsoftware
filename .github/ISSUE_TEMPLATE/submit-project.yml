@@ -1,0 +1,42 @@
+name: Submit a project
+description: Suggest a decomp, recomp, clean-room rebuild, RE tool or preservation project for recompsoftware.com
+title: "[submit] "
+labels: [submission]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks! Every entry is checked by hand against the project's own public pages before it goes live. Facts and links only.
+  - type: input
+    id: repo
+    attributes: { label: Source repository or website, placeholder: "https://github.com/owner/repo" }
+    validations: { required: true }
+  - type: input
+    id: original
+    attributes: { label: What it rebuilds, description: The original game, app, OS or system (or what a tool targets), placeholder: "Super Mario 64 (Nintendo 64, 1996)" }
+    validations: { required: true }
+  - type: dropdown
+    id: method
+    attributes:
+      label: Method
+      options: [Matching decompilation, Decompilation (non-matching), Static recompilation, Clean-room / reimplementation, Source port, Official source release, Binary lift, RE tool, Preservation / server revival, Not sure]
+    validations: { required: true }
+  - type: dropdown
+    id: provenance
+    attributes:
+      label: How was it made?
+      description: As the project itself states it. We label every entry honestly.
+      options: [Human-led, AI-assisted, AI-generated, Not stated / not sure]
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: Where is that stated?, description: A link to the README line, post or commit history that shows how it was made (optional) }
+  - type: textarea
+    id: notes
+    attributes: { label: Anything else, description: Releases, browser builds, Discord, who leads it }
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Rules
+      options:
+        - label: The project does not ship ROMs, ISOs, retail assets or leaked source.
+          required: true

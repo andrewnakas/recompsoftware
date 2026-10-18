@@ -2538,5 +2538,642 @@
       "https://github.com/aap/librw"
     ],
     "checked": "2026-10-14"
+  },
+  {
+    "slug": "dymo-web-service-clone",
+    "name": "Dymo Web Service Clone",
+    "category": "apps",
+    "subject": "DYMO Label Web Service",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "MIT",
+    "repo": "https://github.com/hunternet93/dymo-web-service-clone",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "hunternet93"
+    ],
+    "started": "2016-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source reimplementation of DYMO's label-printing web service for Linux, filling an SVG template with each job's fields.",
+    "tags": [
+      "dymo",
+      "printing",
+      "protocol"
+    ],
+    "sources": [
+      "https://github.com/hunternet93/dymo-web-service-clone"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "makerom-decomp",
+    "name": "Makerom decompilation",
+    "category": "apps",
+    "subject": "makerom (N64 SDK tool, IRIX)",
+    "originalPlatform": "IRIX",
+    "originalYear": null,
+    "method": "matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/LLONSIT/Makerom",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "LLONSIT"
+    ],
+    "started": "2022-11",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "Patch",
+      "date": "2022-12-26"
+    },
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of the debug and release IRIX builds of makerom, the Nintendo 64 SDK ROM image builder, with matched functions reimplemented in C.",
+    "tags": [
+      "n64",
+      "sdk",
+      "irix"
+    ],
+    "sources": [
+      "https://github.com/LLONSIT/Makerom",
+      "https://github.com/LLONSIT/Makerom/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "openpass-mobilepass",
+    "name": "OpenPass",
+    "category": "apps",
+    "subject": "SafeNet MobilePASS",
+    "originalPlatform": "Android",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/ars3niy/openpass",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ars3niy"
+    ],
+    "started": "2016-07",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.0",
+      "date": "2017-07-30"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Small open-source reimplementation of the SafeNet MobilePASS one-time-password token app.",
+    "tags": [
+      "otp",
+      "authenticator",
+      "java"
+    ],
+    "sources": [
+      "https://github.com/ars3niy/openpass",
+      "https://github.com/ars3niy/openpass/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "piner",
+    "name": "Piner",
+    "category": "apps",
+    "subject": "TradingView Pine Script v6",
+    "originalPlatform": "Web",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in repo describe agent workflow (GitHub)",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/heyphat/piner",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "heyphat"
+    ],
+    "started": "2026-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.13.0",
+      "date": "2026-08-22"
+    },
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "TypeScript engine that compiles and runs Pine Script v6 indicators and strategies in the browser or Node, designed only from public TradingView documentation.",
+    "tags": [
+      "pine-script",
+      "typescript",
+      "interpreter"
+    ],
+    "sources": [
+      "https://github.com/heyphat/piner",
+      "https://github.com/heyphat/piner/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "opendsp-4x4",
+    "name": "openDSP-4x4",
+    "category": "apps",
+    "subject": "t.racks DSP 4x4 Mini Pro editor software",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/GlassOnTin/opendsp-4x4",
+    "website": "https://glassontin.github.io/opendsp-4x4/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "GlassOnTin"
+    ],
+    "started": "2026-06",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.2.2",
+      "date": "2026-06-17"
+    },
+    "targets": [
+      "Web",
+      "Android"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Clean-room replacement for the Windows-only editor of the t.racks DSP 4x4 Mini Pro audio processor, controlling the device over WebHID from the browser or an Android app.",
+    "tags": [
+      "audio",
+      "hardware",
+      "webhid",
+      "protocol"
+    ],
+    "sources": [
+      "https://github.com/GlassOnTin/opendsp-4x4",
+      "https://github.com/GlassOnTin/opendsp-4x4/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "spotify-spider-layout",
+    "name": "Spider Layout Engine",
+    "category": "apps",
+    "subject": "Spotify Spider layout engine",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2011, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/krikelin/Spider",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "krikelin"
+    ],
+    "started": "2011-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Java clean-room implementation of Spider, the proprietary internal layout engine of the early Spotify desktop client, worked out from resources in the Spotify binary.",
+    "tags": [
+      "spotify",
+      "layout-engine",
+      "java"
+    ],
+    "sources": [
+      "https://github.com/krikelin/Spider"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "installerlg",
+    "name": "InstallerLG",
+    "category": "apps",
+    "subject": "AmigaOS Installer utility",
+    "originalPlatform": "Amiga",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017, predates AI coding tools (GitHub)",
+    "licence": "unknown",
+    "repo": "https://github.com/sodero/InstallerLG",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sodero"
+    ],
+    "started": "2017-03",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "1.0.4",
+      "date": "2025-10-19"
+    },
+    "targets": [
+      "Amiga",
+      "Linux"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Reimplementation of the AmigaOS Installer utility and its LISP-like scripting language, aiming for full compatibility with the documented original.",
+    "tags": [
+      "amiga",
+      "installer",
+      "scripting"
+    ],
+    "sources": [
+      "https://github.com/sodero/InstallerLG",
+      "https://github.com/sodero/InstallerLG/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "amiga-imploder-decompiled",
+    "name": "AmigaImploder",
+    "category": "apps",
+    "subject": "Imploder (Amiga executable cruncher)",
+    "originalPlatform": "Amiga",
+    "originalYear": null,
+    "method": "non-matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2016, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/lab313ru/AmigaImploder",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "lab313ru"
+    ],
+    "started": "2016-03",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v2.0",
+      "date": "2016-03-12"
+    },
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "C reconstruction of the compression algorithm from the Amiga Imploder cruncher, recovered by decompiling the original program.",
+    "tags": [
+      "amiga",
+      "compression",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/lab313ru/AmigaImploder",
+      "https://github.com/lab313ru/AmigaImploder/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "psychedelia-minter",
+    "name": "Psychedelia/Colourspace",
+    "category": "apps",
+    "subject": "Psychedelia and Colourspace (Jeff Minter's light synthesizers)",
+    "originalPlatform": "Multi",
+    "originalYear": 1984,
+    "method": "matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2021, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/mwenge/psychedelia",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mwenge"
+    ],
+    "started": "2021-01",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Reverse-engineered, commented source for Jeff Minter's 1984-1987 light-synthesizer programs Psychedelia and Colourspace, part of the llamaSource project.",
+    "tags": [
+      "jeff-minter",
+      "disassembly",
+      "8-bit"
+    ],
+    "sources": [
+      "https://github.com/mwenge/psychedelia"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "model2emuex",
+    "name": "Model2EmuEx",
+    "category": "apps",
+    "subject": "Sega Model 2 Emulator 1.1a (ElSemi)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "non-matching-decomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/octavioCuatrochio/Model2EmuEx",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "octavioCuatrochio"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "Latest0.3",
+      "date": "2026-09-24"
+    },
+    "targets": [
+      "Linux",
+      "Windows",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Ghidra-based decompilation of ElSemi's closed-source Sega Model 2 emulator plus a portable C port aimed at Linux, Windows and a low-end Android TV box, with couch split screen for Daytona USA.",
+    "tags": [
+      "model-2",
+      "emulator",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/octavioCuatrochio/Model2EmuEx",
+      "https://github.com/octavioCuatrochio/Model2EmuEx/releases"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "gsasm",
+    "name": "gsasm",
+    "category": "apps",
+    "subject": "Apple MPW IIgs cross-development tools",
+    "originalPlatform": "Classic Mac OS",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/emdeejay/gsasm",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "emdeejay"
+    ],
+    "started": "2026-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Clean-room Python reimplementation of the MPW IIgs assembler, linker, resource compiler and packagers, checked byte-for-byte against shipped Apple IIgs ROM and GS/OS builds.",
+    "tags": [
+      "apple-iigs",
+      "assembler",
+      "mpw"
+    ],
+    "sources": [
+      "https://github.com/emdeejay/gsasm"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "tabula-sonora",
+    "name": "Tabula Sonora",
+    "category": "apps",
+    "subject": "Roland Sound Canvas VA",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "BSD-3-Clause",
+    "repo": "https://github.com/TabulaSonora/spec",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TabulaSonora"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Specification and Python reference engine for the Roland Sound Canvas VA synth voice, reverse-engineered from and validated against the plugin's own DLL, which users must supply.",
+    "tags": [
+      "roland",
+      "synth",
+      "midi"
+    ],
+    "sources": [
+      "https://github.com/TabulaSonora/spec"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "kaleidoscope-dazzler-disasm",
+    "name": "Kaleidoscope disassembly",
+    "category": "apps",
+    "subject": "Kaleidoscope (Cromemco Dazzler demo by Li-Chen Wang)",
+    "originalPlatform": "Cromemco Dazzler",
+    "originalYear": null,
+    "method": "non-matching-decomp",
+    "status": "stalled",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022, predates AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/Raffzahn/Kaleidoscope",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Raffzahn"
+    ],
+    "started": "2022-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Commented disassembly of Li-Chen Wang's 127-byte Kaleidoscope demo for the Cromemco Dazzler graphics board.",
+    "tags": [
+      "8080",
+      "cromemco",
+      "disassembly",
+      "demo"
+    ],
+    "sources": [
+      "https://github.com/Raffzahn/Kaleidoscope"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "snes-station-decomp",
+    "name": "SNES Station Decompilation",
+    "category": "apps",
+    "subject": "SNES Station v0.23 (PS2 SNES emulator)",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2004,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/ReyFxck/SNESstation-Decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ReyFxck"
+    ],
+    "started": "2026-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Exact-binary decompilation of SNES Station v0.23, an early Snes9x-derived SNES emulator for the PS2, rebuilding its frontend, core, renderer and runtime from evidence.",
+    "tags": [
+      "ps2",
+      "emulator",
+      "snes9x",
+      "matching-decomp"
+    ],
+    "sources": [
+      "https://github.com/ReyFxck/SNESstation-Decomp"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "slug": "reupdater",
+    "name": "reUpdater",
+    "category": "apps",
+    "subject": "Discord updater.node",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/cordpackers/reUpdater",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "cordpackers"
+    ],
+    "started": "2023-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v1.0.2",
+      "date": "2024-08-23"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source replacement for the Rust-built updater.node module in the Discord desktop client.",
+    "tags": [
+      "discord",
+      "updater",
+      "reimplementation"
+    ],
+    "sources": [
+      "https://github.com/cordpackers/reUpdater",
+      "https://github.com/cordpackers/reUpdater/releases"
+    ],
+    "checked": "2026-10-17"
   }
 ]
