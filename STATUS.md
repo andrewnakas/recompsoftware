@@ -80,3 +80,4 @@ Owner's own logged-in Chrome, read-only, human pace, only when a sweep is starte
 - OG cards now JPEG with the project picture.
 - Open calls for owner: win7-dwm-decomp (MS source sensitivity), live-service server emulators (runuo etc.), umk3-ios-decomp ai-generated vs ai-assisted, twisted-metal/driveclub provenance unknown.
 - Build is now ~2,580 pages / ~7 min; run it detached (RAM pressure killed one run).
+- 2026-10-19 (hosting move, E:\recomp-hub): reviewed the earlier uncommitted move edits; fixed scripts/cf/data.mjs pull to merge instead of overwrite (R2 would have reverted hand-added media/stats); verified a full local build (2,621 pages; Search Console tag, GA4, 27 _redirects, IndexNow key, self-hosted fonts, no fonts.googleapis left); committed 8d6739d. Builds connection, deploy hook and GITHUB_TOKEN secret wait on the owner (step 2), then the agent does steps 3-4.
