@@ -16,7 +16,7 @@
     "body": "Final Fantasy Tactics Advance now runs natively on Android with touch controls, alongside Windows, Linux and a dedicated Steam Deck installer. A compiler switch cut the PC install from about 800 MB to about 11 MB; European cartridge dumps now work too.",
     "source": "https://github.com/Jorge262007/FFTARecomp/releases/tag/v3.0",
     "projects": [
-      "ffta-recomp"
+      "fftarecomp-jorge"
     ]
   },
   {
