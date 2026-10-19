@@ -1,4 +1,5 @@
 ---
+import '../styles/fonts.css';
 import '../styles/global.css';
 
 interface Props {
@@ -43,9 +44,6 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
     <link rel="canonical" href={new URL(path, SITE)} />
     <link rel="alternate" type="application/rss+xml" title="Recomp news" href="/news/rss.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
     {schema && <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', ...schema })} />}
     <script is:inline>let t = null; try { t = localStorage.getItem('theme'); } catch {} document.documentElement.dataset.theme = t || 'dark'; // dark by default; the toggle stores a light choice</script>
     {GA && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA}`}></script>}

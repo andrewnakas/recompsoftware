@@ -1,6 +1,8 @@
 # Daily: snapshot GitHub stats for every tracked repo, commit them, build, deploy as Workers static assets (worker: recompsoftware, apps/web/wrangler.jsonc).
 # Mondays: refresh project pictures (scripts/fetch-media.mjs). Every 6 hours: rebuild + deploy (picks up new data commits). Needs secrets CLOUDFLARE_API_TOKEN (Workers Scripts: Edit) + CLOUDFLARE_ACCOUNT_ID;
 # without them the build still runs and only the deploy is skipped.
+# Moving to Cloudflare: once repo variable CF_BUILDS = on, Workers Builds + the recomp-cron worker do all of this
+# (scripts/cf/build.mjs, apps/cron) and this workflow only checks pull requests.
 name: site
 
 on:
@@ -19,6 +21,7 @@ concurrency: { group: site, cancel-in-progress: false }
 
 jobs:
   build:
+    if: vars.CF_BUILDS != 'on' || github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     env:
       CF_TOKEN_SET: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}

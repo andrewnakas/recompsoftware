@@ -8,7 +8,9 @@
     "dev": "astro dev",
     "build": "node ../../scripts/validate.mjs && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "cf-build": "node ../../scripts/cf/build.mjs",
+    "cf-deploy": "npx -y wrangler@4 deploy && node ../../scripts/indexnow.mjs --if-due"
   },
   "dependencies": {
     "astro": "5.18.2"

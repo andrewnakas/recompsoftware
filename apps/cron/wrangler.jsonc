@@ -1,0 +1,12 @@
+// Cron Triggers that replace the old GitHub Actions schedules: each run POSTs the Workers Builds deploy hook of the
+// `recompsoftware` worker. The build decides what is due (daily stats snapshot, Monday pictures, IndexNow) — see scripts/cf/build.mjs.
+// Secret DEPLOY_HOOK = the hook URL (Settings > Builds > Deploy Hooks): npx wrangler@4 secret put DEPLOY_HOOK
+{
+  "$schema": "../web/node_modules/wrangler/config-schema.json",
+  "name": "recomp-cron",
+  "main": "index.js",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": false,
+  "triggers": { "crons": ["23 5,11,17,23 * * *"] },
+  "observability": { "enabled": true }
+}
