@@ -3175,5 +3175,95 @@
       "https://github.com/cordpackers/reUpdater/releases"
     ],
     "checked": "2026-10-17"
+  },
+  {
+    "slug": "capcraft-android",
+    "name": "CapCraft for Android",
+    "category": "apps",
+    "subject": "CapCut",
+    "originalPlatform": "Android",
+    "originalYear": null,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/artcraft-android/capcraft-android",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "artcraft-android"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.0.1-beta",
+      "date": "2026-10-18"
+    },
+    "targets": [
+      "Android"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source reimplementation of the CapCut Android video editor, with a Rust core and Kotlin UI.",
+    "tags": [
+      "video-editor",
+      "rust",
+      "reimplementation"
+    ],
+    "sources": [
+      "https://github.com/artcraft-android/capcraft-android",
+      "https://github.com/artcraft-android/capcraft-android/releases"
+    ],
+    "checked": "2026-10-19"
+  },
+  {
+    "slug": "open-scrantic",
+    "name": "Open Scrantic",
+    "category": "apps",
+    "subject": "Screen Antics: Johnny Castaway",
+    "originalPlatform": "Windows",
+    "originalYear": 1992,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo root",
+    "licence": "MIT",
+    "repo": "https://github.com/glauberlima/open-scrantic",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "glauberlima"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.3.0",
+      "date": "2026-10-18"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Reverse-engineered Rust reimplementation of the 1992 Johnny Castaway screensaver for Windows, macOS and Linux.",
+    "tags": [
+      "screensaver",
+      "sierra",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/glauberlima/open-scrantic",
+      "https://github.com/glauberlima/open-scrantic/releases"
+    ],
+    "checked": "2026-10-19"
   }
 ]

@@ -23012,5 +23012,45 @@
       "https://github.com/RetroPortingToolKit/psxrecomp"
     ],
     "checked": "2026-10-18"
+  },
+  {
+    "slug": "swbf2-browser-reconstruction",
+    "name": "SWBF2 Browser Reconstruction",
+    "category": "tools",
+    "subject": "Star Wars Battlefront II (2017) data",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/luckeyfaraday/swbf2-browser-reconstruction",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "luckeyfaraday"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Pipeline that converts maps from your own Star Wars Battlefront II (2017) install into browser formats and plays them in a three.js runtime.",
+    "tags": [
+      "frostbite",
+      "three-js",
+      "asset-pipeline"
+    ],
+    "sources": [
+      "https://github.com/luckeyfaraday/swbf2-browser-reconstruction"
+    ],
+    "checked": "2026-10-19"
   }
 ]

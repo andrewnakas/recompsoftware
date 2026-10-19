@@ -924,6 +924,13 @@
   "relation": "built-with"
  },
  {
+  "slug": "cps2-recomp",
+  "parents": [
+   "ps2recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
   "slug": "dq8-recompiled",
   "parents": [
    "ps2recomp"
@@ -959,6 +966,13 @@
   "relation": "built-with"
  },
  {
+  "slug": "drakengard-3-recomp",
+  "parents": [
+   "ps3recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
   "slug": "flow-recomp",
   "parents": [
    "ps3recomp"
@@ -967,6 +981,13 @@
  },
  {
   "slug": "gbarecomp",
+  "parents": [
+   "ps3recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "infamous-2-recomp",
   "parents": [
    "ps3recomp"
   ],
@@ -1113,7 +1134,21 @@
   "relation": "built-with"
  },
  {
+  "slug": "forza-motorsport-4-recomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
   "slug": "forzarecomp",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "gears-of-war-2-pc-port",
   "parents": [
    "rexglue"
   ],
@@ -1338,6 +1373,13 @@
  },
  {
   "slug": "south-park-tower-defense-recompiled",
+  "parents": [
+   "rexglue"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "spider-man-3-recomp",
   "parents": [
    "rexglue"
   ],

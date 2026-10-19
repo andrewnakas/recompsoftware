@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-10-18",
+    "kind": "release",
+    "title": "Crackdown Recomp reaches 1.0",
+    "body": "The first full release of the native Windows Crackdown port roughly doubles frame rates on the developers' test PC by spreading rendering over several threads, and adds a graphics tab with internal resolution up to 4K and wide aspect ratios. The launcher updates 0.4 installs in place and keeps saves.",
+    "source": "https://github.com/Unowa001/crackdown-recomp/releases/tag/v1.0.0",
+    "projects": [
+      "crackdown-recomp-unowa"
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "kind": "release",
+    "title": "FFTARecomp 3.0 adds a native Android build",
+    "body": "Final Fantasy Tactics Advance now runs natively on Android with touch controls, alongside Windows, Linux and a dedicated Steam Deck installer. A compiler switch cut the PC install from about 800 MB to about 11 MB; European cartridge dumps now work too.",
+    "source": "https://github.com/Jorge262007/FFTARecomp/releases/tag/v3.0",
+    "projects": [
+      "ffta-recomp"
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "kind": "release",
+    "title": "Project Midas: a GoldenEye 007 PC port from the N64 decomp",
+    "body": "A new Windows and Linux port of GoldenEye 007 built from the N64 decompilation, with widescreen, mouse look and modern controllers, reading data from your own cartridge dump. Version 1.0.1 followed within days with saved video settings and Wayland keyboard fixes. The README says Claude was used in making it.",
+    "source": "https://github.com/murkantor/Project-Midas/releases/tag/v1.0.1",
+    "projects": [
+      "project-midas",
+      "goldeneye-decomp"
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "kind": "release",
+    "title": "Eternal Darkness Recomp 0.9.3 adds third- and first-person cameras",
+    "body": "The native Mac, Windows and Linux build of the GameCube horror game adds optional free cameras beside the original fixed angles, kept in bounds by the game's own collision, and fixes a freeze during sanity effects. It needs the European disc.",
+    "source": "https://github.com/griches/EternalDarknessRecomp/releases/tag/v0.9.3",
+    "projects": [
+      "eternal-darkness-recomp"
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "kind": "release",
+    "title": "Super Street Fighter II Turbo HD Remix recompiled for PC",
+    "body": "First playable release of a static recompilation of the Xbox Live Arcade game: a launcher installs it from your own package, checks the exact version, and adds modern PC options and local achievements, with experimental Linux support.",
+    "source": "https://github.com/saulob/ssf2t-hd-remix-recompiled/releases/tag/v0.1.0",
+    "projects": [
+      "ssf2t-hd-remix-recompiled"
+    ]
+  },
+  {
     "date": "2026-10-15",
     "kind": "release",
     "title": "Halo 64 runs Halo: Combat Evolved multiplayer on a Nintendo 64",
