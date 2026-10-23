@@ -82,5 +82,14 @@ Owner's own logged-in Chrome, read-only, human pace, only when a sweep is starte
 - Build is now ~2,580 pages / ~7 min; run it detached (RAM pressure killed one run).
 - 2026-10-19 (hosting move, E:\recomp-hub): reviewed the earlier uncommitted move edits; fixed scripts/cf/data.mjs pull to merge instead of overwrite (R2 would have reverted hand-added media/stats); verified a full local build (2,621 pages; Search Console tag, GA4, 27 _redirects, IndexNow key, self-hosted fonts, no fonts.googleapis left); committed 8d6739d. Builds connection, deploy hook and GITHUB_TOKEN secret wait on the owner (step 2), then the agent does steps 3-4.
 
-## Next session (owner, 2026-10-22)
+## Progress tracker (built 2026-10-23)
+/progress/ page + % bars on cards/tables + history chart on project pages + platform leaderboards + home "Decomp progress this week" strip.
+- `scripts/fetch-progress.mjs` (daily, after fetch-stats, in site.yml and scripts/cf/build.mjs; data/progress rides in the R2 `stats` set). Sources best first: ByteMatch list API -> decomp.dev per-project JSON -> frogress (data/progress/frogress-map.json) -> the repo's own `*_report` Actions artifact (needs a token) -> README badges -> hand `progress`. `--discover` asks decomp.dev about every decomp repo (run it now and then; daily runs only ask repos known to be there).
+- Owner rule (2026-10-23): everyone with progress gets a bar + chart, but only ranked sources (ByteMatch, decomp.dev, frogress = maintainer opted in) go on movers, leaderboards and milestones. `progressOptOut: true` on an entry removes it everywhere.
+- First run: 198 repos with progress (decomp.dev 143, badge 21, manual 16, ByteMatch 10, frogress 5, artifact 3), 9,735 history points back to 2021.
+- Traps: README badges copied from templates (three repos carried tww's frogress badge): shared badge URLs are dropped, frogress badges map only when the slug looks like the repo. decomp.dev has no index (projects.json = 410) and could vanish: last values are kept on failure.
+- Leads: ~98 ByteMatch projects are not in the catalogue yet (`.cache/progress-unmatched.txt` after a run) -> add via the usual harvest -> enrich -> write-up -> merge-new recipe.
+- Open: CI `github.token` may not download other repos' artifacts (local gh token works); check the first CI run's `failures` line.
+
+## Next session (owner, 2026-10-22, done 2026-10-23: see Progress tracker)
 Build the most comprehensive public decomp/recomp progress tracker (bytematch/decomp.dev-style, tracking everything): progress sources per entry (objdiff report.json, progress JSON, badges), daily progress snapshots, % bars, progress charts, movers board, milestones. decomp.dev is sunsetting.

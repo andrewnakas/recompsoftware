@@ -19,7 +19,11 @@ pull(['stats', 'media']);
 
 const changed = [];
 if (!fs.existsSync(path.join(ROOT, 'data/stats', `${today}.json`))) {
-  if (hasToken) { sh('node scripts/fetch-stats.mjs'); changed.push('stats'); }
+  if (hasToken) {
+    sh('node scripts/fetch-stats.mjs');
+    try { sh('node scripts/fetch-progress.mjs'); } catch { console.log('progress: fetch failed, keeping the last data'); }
+    changed.push('stats');
+  }
   else console.log('stats: no GITHUB_TOKEN, snapshot skipped');
 }
 // Pictures (~6 min) never share a build with the snapshot (~4 min), keeping each build well under the time limit.

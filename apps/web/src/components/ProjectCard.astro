@@ -1,7 +1,8 @@
 ---
 import Badges from './Badges.astro';
 import Cover from './Cover.astro';
-import { statsFor, fmtNum, growth, growthLabel, type Project } from '../lib/data';
+import ProgressBar from './ProgressBar.astro';
+import { statsFor, progressFor, fmtNum, growth, growthLabel, type Project } from '../lib/data';
 interface Props { p: Project; note?: string; eager?: boolean }
 const { p, note, eager } = Astro.props;
 const s = statsFor(p);
@@ -9,7 +10,7 @@ const g = growth(p);
 ---
 <a class="card pc" href={`/p/${p.slug}/`}
    data-cat={p.category} data-method={p.method} data-prov={p.provenance} data-platform={p.originalPlatform}
-   data-play={p.playable ? '1' : '0'} data-stars={s?.stars ?? 0} data-name={p.name.toLowerCase()}
+   data-play={p.playable ? '1' : '0'} data-stars={s?.stars ?? 0} data-progress={progressFor(p)?.pct ?? -1} data-name={p.name.toLowerCase()}
    data-q={`${p.name} ${p.subject} ${p.originalPlatform} ${p.tags.join(' ')} ${p.team.join(' ')}`.toLowerCase()}>
   <span class="art">
     <Cover p={p} eager={eager} />
@@ -20,6 +21,7 @@ const g = growth(p);
   <h3>{p.name}</h3>
   {p.subject && p.subject !== p.name && <p class="subj">{p.subject}</p>}
   <p class="sum">{note ?? p.summary}</p>
+  <ProgressBar p={p} />
   <div class="b"><Badges p={p} /></div>
 </a>
 <style>

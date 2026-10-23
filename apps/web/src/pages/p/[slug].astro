@@ -4,9 +4,12 @@ import Badges from '../../components/Badges.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
 import Cover from '../../components/Cover.astro';
 import Spark from '../../components/Spark.astro';
+import ProgressBar from '../../components/ProgressBar.astro';
+import ProgressChart from '../../components/ProgressChart.astro';
 import {
   projects, statsFor, statsDate, lineage, history, news, formatDate, fmtNum, CATEGORIES, METHOD_LABEL,
-  PROVENANCE_LABEL, TIER_LABEL, slugify, hubFor, mediaFor, growth, growthLabel, type Project,
+  PROVENANCE_LABEL, TIER_LABEL, slugify, hubFor, mediaFor, growth, growthLabel, progressFor, progressDelta, progressDate,
+  PROGRESS_SOURCE_LABEL, type Project,
 } from '../../lib/data';
 
 export function getStaticPaths() {
@@ -28,6 +31,8 @@ const related = [...sameGame, ...all.filter((x) => x.slug !== p.slug && !sameGam
 const release = s?.release ?? p.latestRelease;
 const media = mediaFor(p);
 const g = growth(p);
+const pr = progressFor(p);
+const d30 = pr ? progressDelta(p, 30) : null;
 // Search visitors mostly want the build: link the latest GitHub release directly.
 const dl = release && p.repo && /github\.com\//.test(p.repo) ? `${p.repo.replace(/\/$/, '').replace(/\.git$/, '')}/releases/latest` : null;
 const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
@@ -71,9 +76,22 @@ const schema = {
       <div><span class="k">Commits, 30 days</span><span class="v">{s?.commits30 ?? '—'}</span></div>
       <div><span class="k">Latest release</span><span class="v">{release ? release.version : '—'}</span>{release?.date && <span class="d">{formatDate(release.date.slice(0, 10))}</span>}</div>
       <div><span class="k">Last push</span><span class="v">{s?.pushedAt ? formatDate(s.pushedAt.slice(0, 10)) : '—'}</span>{s?.archived && <span class="d">archived</span>}</div>
-      {p.progress != null && <div><span class="k">Progress</span><span class="v">{p.progress}%</span>{p.progressSource && <a class="d" href={p.progressSource} rel="noopener">{host(p.progressSource)}</a>}</div>}
+      {pr && <div><span class="k">Matched</span><span class="v">{pr.pct}%</span>{d30 ? <span class="d">+{d30} pts in 30 days</span> : pr.sourceUrl && <a class="d" href={pr.sourceUrl} rel="noopener">{host(pr.sourceUrl)}</a>}</div>}
     </section>
     {s && <p class="meta">GitHub figures as of {statsDate()}, refreshed daily.</p>}
+
+    {pr && (
+      <section class="progress" aria-label="Decomp progress">
+        <h2>Decomp progress</h2>
+        <ProgressBar p={p} source />
+        <ProgressChart p={p} />
+        <p class="meta">
+          {pr.linkedPct != null && <>Linked (fully built from source): {pr.linkedPct}%. </>}
+          {pr.source === 'manual' ? "Figure entered by hand from the project's own page" : `Figure from ${PROGRESS_SOURCE_LABEL[pr.source]}`}{pr.at && `, measured ${formatDate(pr.at)}`}, checked {progressDate() ?? pr.at}.
+          {pr.ranked ? ' This project opted into public progress tracking.' : ' Shown, never ranked: only projects that opted into a public tracker go on the boards.'} <a href="/progress/#how">How this works</a>
+        </p>
+      </section>
+    )}
 
     <div class="cols">
       <section class="facts">
@@ -83,7 +101,7 @@ const schema = {
           <dt>Platform</dt><dd><a href={`/platforms/${slugify(p.originalPlatform)}/`}>{p.originalPlatform}</a></dd>
           <dt>Method</dt><dd>{METHOD_LABEL[p.method]}</dd>
           <dt>Provenance</dt><dd>{PROVENANCE_LABEL[p.provenance]}{p.provenanceNote && <span class="note"> · {p.provenanceNote}</span>} <a class="note" href="/about/#labels">what this means</a></dd>
-          <dt>Status</dt><dd>{p.status}{p.progress != null && ` · ${p.progress}%`}</dd>
+          <dt>Status</dt><dd>{p.status}{pr && ` · ${pr.pct}% matched`}</dd>
           <dt>Licence</dt><dd>{p.licence}</dd>
           {p.team.length > 0 && <><dt>Team</dt><dd>{p.team.join(', ')}</dd></>}
           {p.started && <><dt>Started</dt><dd>{p.started}</dd></>}
@@ -141,6 +159,9 @@ const schema = {
   </article>
 </Base>
 <style>
+  .progress { margin-top: 1.6rem; max-width: 760px; }
+  .progress :global(.pbar) { font-size: 0.9rem; }
+  .progress :global(.pbar .track) { height: 9px; }
   .top { display: grid; gap: 1.2rem 2.5rem; align-items: start; }
   @media (min-width: 900px) { .top { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); } .shot { margin-top: 2rem; } }
   .intro > :global(h1) { margin-top: 0.3rem; }

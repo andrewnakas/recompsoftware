@@ -1,0 +1,27 @@
+---
+// Ranked list of projects by matched %. Callers pass only ranked (opted-in) projects.
+import ProgressBar from './ProgressBar.astro';
+import { progressFor, progressDelta, PROVENANCE_LABEL, type Project } from '../lib/data';
+interface Props { list: Project[]; n?: number; days?: number }
+const { list, n = 10, days } = Astro.props;
+const rows = days
+  ? list.map((p) => ({ p, d: progressDelta(p, days) ?? 0 })).filter((x) => x.d > 0).sort((a, b) => b.d - a.d).slice(0, n)
+  // Ties (often at 100%) go to the bigger program.
+  : list.map((p) => ({ p, d: null as number | null })).sort((a, b) => progressFor(b.p)!.pct - progressFor(a.p)!.pct || (progressFor(b.p)!.totalFns ?? 0) - (progressFor(a.p)!.totalFns ?? 0)).slice(0, n);
+const provClass = { 'human-led': 'ok', 'ai-assisted': 'warn', 'ai-generated': 'bad', unknown: '' } as const;
+---
+<ol class="pboard">
+  {rows.map(({ p, d }) => (
+    <li>
+      <span><a href={`/p/${p.slug}/`}>{p.name}</a> <span class={`chip ${provClass[p.provenance]}`}>{PROVENANCE_LABEL[p.provenance]}</span></span>
+      {d != null && <span class="gain">+{d.toFixed(2)} pts</span>}
+      <ProgressBar p={p} />
+    </li>
+  ))}
+</ol>
+<style>
+  .pboard { padding-left: 1.4rem; margin: 0; }
+  .pboard li { display: grid; grid-template-columns: 1fr auto; gap: 0.15rem 1rem; padding: 0.45rem 0; border-bottom: 1px solid var(--line); }
+  .pboard li > :global(.pbar) { grid-column: 1 / -1; }
+  .gain { font: 500 0.8rem var(--font-mono); color: var(--ok); }
+</style>

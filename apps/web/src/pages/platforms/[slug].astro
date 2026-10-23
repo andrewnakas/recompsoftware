@@ -3,7 +3,8 @@
 import Base from '../../layouts/Base.astro';
 import PageHead from '../../components/PageHead.astro';
 import ListTable from '../../components/ListTable.astro';
-import { platforms, projects, statsFor, statsDate, gameHubs, shortName, CATEGORIES, type Project } from '../../lib/data';
+import ProgressBoard from '../../components/ProgressBoard.astro';
+import { platforms, projects, statsFor, statsDate, gameHubs, shortName, tracked, progressFor, CATEGORIES, type Project } from '../../lib/data';
 export function getStaticPaths() {
   const all = projects();
   return platforms().map((p) => ({ params: { slug: p.slug }, props: { name: p.name, list: all.filter((x) => x.originalPlatform === p.name) } }));
@@ -24,6 +25,7 @@ const groups = [
 ].filter((g) => g.items.length).map((g) => ({ ...g, items: [...g.items].sort(byStars) }));
 const pc = games.filter((p) => (p.status === 'released' || p.status === 'complete') && p.targets.some((t) => /windows|linux|mac/i.test(t)) && p.method !== 'matching-decomp').sort(byStars);
 const playable = list.filter((p) => p.playable);
+const rankedProgress = tracked().filter((p) => p.originalPlatform === name && progressFor(p)!.ranked);
 const hubs = gameHubs().filter((h) => h.platform === name).slice(0, 12);
 const gamey = games.length >= list.length / 2;
 const join = (xs: string[]) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs.at(-1)}`);
@@ -46,6 +48,12 @@ const schema = faq.length ? { '@type': 'FAQPage', mainEntity: faq.map((f) => ({ 
   </PageHead>
   <section class="wrap">
     {hubs.length > 0 && <p class="hubs"><span class="meta">Compare by game:</span> {hubs.map((h) => <a href={`/game/${h.slug}/`}>{h.name} <span class="meta">{h.list.length}</span></a>)}</p>}
+    {rankedProgress.length > 0 && (
+      <div class="prog">
+        <div class="rule-head"><h2>{short} decomp progress</h2><a href="/progress/">All platforms →</a></div>
+        <ProgressBoard list={rankedProgress} n={8} />
+      </div>
+    )}
     <ListTable list={list} groups={groups} />
   </section>
   {faq.length > 0 && (
@@ -57,5 +65,6 @@ const schema = faq.length ? { '@type': 'FAQPage', mainEntity: faq.map((f) => ({ 
 <style>
   .hubs { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; margin: 0 0 1.4rem; }
   .faq { max-width: 75ch; }
+  .prog { max-width: 760px; margin: 0 0 2rem; }
   .faq h2 { font-size: 1.15rem; margin: 1.4rem 0 0.3rem; }
 </style>

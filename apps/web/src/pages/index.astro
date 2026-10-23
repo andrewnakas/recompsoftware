@@ -3,12 +3,15 @@ import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import ConsoleStrip from '../components/ConsoleStrip.astro';
 import Cover from '../components/Cover.astro';
-import { projects, CATEGORIES, heat, statsFor, statsDate, news, history, formatDate, TIER_LABEL, mediaFor, fmtNum } from '../lib/data';
+import ProgressBoard from '../components/ProgressBoard.astro';
+import { projects, CATEGORIES, heat, statsFor, statsDate, news, history, formatDate, TIER_LABEL, mediaFor, fmtNum, movers } from '../lib/data';
 
 const all = projects();
 const hot = [...all].filter((p) => heat(p) > 0).sort((a, b) => heat(b) - heat(a)).slice(0, 6);
 const releaseOf = (p: (typeof all)[number]) => statsFor(p)?.release ?? p.latestRelease;
 const releases = all.filter((p) => releaseOf(p)?.date).sort((a, b) => releaseOf(b)!.date.localeCompare(releaseOf(a)!.date)).slice(0, 8);
+const moved7 = movers(7, 6);
+const progMovers = moved7.length >= 3 ? { days: 7, list: moved7 } : { days: 30, list: movers(30, 6) };
 const playable = all.filter((p) => p.playable).slice(0, 6);
 const latestNews = news().slice(0, 5);
 const milestones = history().flatMap((e) => e.events).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 5);
@@ -77,6 +80,13 @@ const ago = (d: string) => { const n = Math.floor((Date.parse(statsDate() ?? d) 
     </section>
   )}
 
+  {progMovers.list.length > 0 && (
+    <section class="section wrap">
+      <div class="rule-head"><h2>Decomp progress {progMovers.days === 7 ? 'this week' : 'this month'}</h2><a href="/progress/">Progress tracker →</a></div>
+      <div class="pm"><ProgressBoard list={progMovers.list.map((x) => x.p)} days={progMovers.days} n={6} /></div>
+    </section>
+  )}
+
   <section class="section wrap two">
     <div>
       <div class="rule-head"><h2>New releases</h2></div>
@@ -106,6 +116,8 @@ const ago = (d: string) => { const n = Math.floor((Date.parse(statsDate() ?? d) 
   </section>
 </Base>
 <style>
+  .pm :global(.pboard) { columns: 2 22rem; column-gap: 3rem; }
+  .pm :global(.pboard li) { break-inside: avoid; }
   .hero { padding-top: 3rem; padding-bottom: 1.5rem; display: grid; gap: 2rem 3rem; align-items: center; }
   @media (min-width: 980px) { .hero { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); padding-top: 3.5rem; } }
   .hero h1 { max-width: 20ch; }

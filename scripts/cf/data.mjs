@@ -1,5 +1,5 @@
 // Generated data lives in R2 (bucket recompsoftware-data), not in git: daily stats snapshots and project pictures.
-// Objects: stats.tgz = data/stats/*.json · media.tgz = data/media.json + apps/web/public/thumbs/ · media-stamp.txt = date of the last picture refresh.
+// Objects: stats.tgz = data/stats/*.json + data/progress/ · media.tgz = data/media.json + apps/web/public/thumbs/ · media-stamp.txt = date of the last picture refresh.
 // The git copies are the fallback baseline: pull unpacks R2 over them, so a build without R2 access still works on older data.
 // Auth: CLOUDFLARE_API_TOKEN in Workers Builds, else wrangler's login. Usage: node scripts/cf/data.mjs pull|push [stats] [media]
 import fs from 'node:fs';
@@ -11,7 +11,7 @@ export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '
 const BUCKET = 'recompsoftware-data';
 const TMP = path.join(ROOT, '.cache/r2');
 const SETS = {
-  stats: ['data/stats'],
+  stats: ['data/stats', 'data/progress'],
   media: ['data/media.json', 'apps/web/public/thumbs'],
 };
 
@@ -30,6 +30,7 @@ const readJson = (f) => { try { return JSON.parse(fs.readFileSync(path.join(ROOT
 const MERGE = {
   'data/media.json': (git, r2) => ({ ...git, ...r2 }),
   'data/stats/latest.json': (git, r2) => (git && r2 && git.date > r2.date ? git : r2),
+  'data/progress/latest.json': (git, r2) => (git && r2 && git.date > r2.date ? git : r2),
 };
 
 export function pull(sets) {

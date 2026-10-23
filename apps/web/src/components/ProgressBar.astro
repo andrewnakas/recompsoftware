@@ -1,0 +1,23 @@
+---
+// Decomp progress as a thin bar + number; `source` adds where the figure comes from.
+import { progressFor, fmtNum, PROGRESS_SOURCE_LABEL, type Project } from '../lib/data';
+interface Props { p: Project; source?: boolean }
+const { p, source = false } = Astro.props;
+const pr = progressFor(p);
+const fns = pr?.matchedFns != null && pr.totalFns ? `${fmtNum(pr.matchedFns)} of ${fmtNum(pr.totalFns)} functions matched` : null;
+const title = pr ? [`${pr.pct}% matched${pr.version ? ` (${pr.version})` : ''}`, fns, `via ${PROGRESS_SOURCE_LABEL[pr.source]}`].filter(Boolean).join(' · ') : '';
+---
+{pr && (
+  <span class="pbar" title={title}>
+    <span class="track" aria-hidden="true"><span class="fill" style={`width:${pr.pct}%`} /></span>
+    <span class="num">{pr.pct >= 99.995 ? '100' : pr.pct.toFixed(pr.pct < 10 ? 1 : 0)}%</span>
+    {source && <span class="src">{fns ?? 'matched'} · via {pr.sourceUrl ? <a href={pr.sourceUrl} rel="noopener">{PROGRESS_SOURCE_LABEL[pr.source]}</a> : PROGRESS_SOURCE_LABEL[pr.source]}</span>}
+  </span>
+)}
+<style>
+  .pbar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.5rem; font: 500 0.75rem/1.2 var(--font-mono); color: var(--ink-soft); }
+  .track { flex: 1 1 4rem; min-width: 4rem; height: 5px; background: var(--bg-sunk); border: 1px solid var(--line); border-radius: 3px; overflow: hidden; }
+  .fill { display: block; height: 100%; background: var(--accent); }
+  .num { min-width: 2.6rem; text-align: right; color: var(--ink); }
+  .src { flex-basis: 100%; color: var(--ink-faint); font-size: 0.7rem; }
+</style>

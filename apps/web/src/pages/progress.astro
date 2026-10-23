@@ -1,0 +1,123 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import ProgressBar from '../components/ProgressBar.astro';
+import ProgressBoard from '../components/ProgressBoard.astro';
+import {
+  tracked, progressFor, progressDelta, progressDate, milestones, movers, fmtNum, formatDate, slugify, shortName,
+  METHOD_LABEL, PROVENANCE_LABEL, PROGRESS_SOURCE_LABEL,
+} from '../lib/data';
+
+const all = tracked().map((p) => ({ p, pr: progressFor(p)! }));
+const ranked = all.filter((x) => x.pr.ranked).map((x) => x.p);
+const fns = all.reduce((a, x) => a + (x.pr.matchedFns ?? 0), 0);
+const done = all.filter((x) => x.pr.pct >= 99.995).length;
+const week = movers(7);
+const month = movers(30);
+const marks = milestones(24);
+const platforms = [...new Set(ranked.map((p) => p.originalPlatform))]
+  .map((pl) => ({ pl, list: ranked.filter((p) => p.originalPlatform === pl) }))
+  .filter((x) => x.list.length >= 2).sort((a, b) => b.list.length - a.list.length);
+const bySource = Object.entries(all.reduce<Record<string, number>>((a, x) => ((a[x.pr.source] = (a[x.pr.source] ?? 0) + 1), a), {}))
+  .sort((a, b) => b[1] - a[1]);
+const rows = [...all].sort((a, b) => b.pr.pct - a.pr.pct || a.p.name.localeCompare(b.p.name));
+const date = progressDate();
+---
+<Base title="Decomp progress tracker: every decompilation, matched %" description={`Live matched-code progress for ${all.length} decompilation projects across every platform: % bars, history charts, biggest movers and milestones, refreshed daily from ByteMatch, decomp.dev, frogress and the projects' own reports.`}>
+  <PageHead kicker="Progress tracker" title="How far along is every decomp?"
+    lede={`Matched code for ${all.length} decompilation projects, refreshed daily${date ? ` (last ${formatDate(date)})` : ''}. ${ranked.length} of them opted into public tracking and appear on the boards; the rest are shown but never ranked.`}>
+    <dl class="kpis">
+      <div><dt>Projects tracked</dt><dd>{all.length}</dd></div>
+      <div><dt>On the boards</dt><dd>{ranked.length}</dd></div>
+      <div><dt>Functions matched</dt><dd>{fmtNum(fns)}</dd></div>
+      <div><dt>At 100%</dt><dd>{done}</dd></div>
+    </dl>
+  </PageHead>
+
+  <section class="wrap two">
+    <div><div class="rule-head"><h2>Biggest movers, 7 days</h2></div>
+      {week.length ? <ProgressBoard list={week.map((x) => x.p)} days={7} /> : <p class="meta">No opted-in project moved this week.</p>}</div>
+    <div><div class="rule-head"><h2>Biggest movers, 30 days</h2></div>
+      {month.length ? <ProgressBoard list={month.map((x) => x.p)} days={30} /> : <p class="meta">No opted-in project moved this month.</p>}</div>
+  </section>
+
+  {marks.length > 0 && (
+    <section class="section wrap">
+      <div class="rule-head"><h2>Milestones</h2></div>
+      <ol class="marks">{marks.map((m) => (
+        <li><span class="meta">{formatDate(m.date)}</span> <a href={`/p/${m.p.slug}/`}>{m.p.name}</a> passed <strong>{m.mark}%</strong> matched <span class="meta">{shortName(m.p.originalPlatform)}</span></li>
+      ))}</ol>
+    </section>
+  )}
+
+  <section class="section wrap">
+    <div class="rule-head"><h2>Leaderboards by platform</h2></div>
+    <div class="boards">{platforms.map(({ pl, list }) => (
+      <div><h3><a href={`/platforms/${slugify(pl)}/`}>{pl}</a> <span class="meta">{list.length}</span></h3><ProgressBoard list={list} n={5} /></div>
+    ))}</div>
+  </section>
+
+  <section class="section wrap">
+    <div class="rule-head"><h2>Every tracked project</h2></div>
+    <p class="meta">Click a column heading to sort. "Ranked" means the project opted into public tracking.</p>
+    <div class="table-wrap"><table id="all">
+      <thead><tr><th data-k="name">Project</th><th data-k="pl">Platform</th><th data-k="pct" class="sorted">Matched</th><th data-k="fns">Functions</th><th data-k="d30">30 days</th><th data-k="src">Source</th></tr></thead>
+      <tbody>{rows.map(({ p, pr }) => { const d30 = progressDelta(p, 30); return (
+        <tr data-name={p.name.toLowerCase()} data-pl={p.originalPlatform} data-pct={pr.pct} data-fns={pr.matchedFns ?? -1} data-d30={d30 ?? -999} data-src={pr.source}>
+          <td><a href={`/p/${p.slug}/`}>{p.name}</a><br /><span class="meta">{METHOD_LABEL[p.method]} · {PROVENANCE_LABEL[p.provenance]}</span></td>
+          <td>{shortName(p.originalPlatform)}</td>
+          <td class="bar"><ProgressBar p={p} /></td>
+          <td>{pr.matchedFns != null && pr.totalFns ? `${fmtNum(pr.matchedFns)} / ${fmtNum(pr.totalFns)}` : '—'}</td>
+          <td>{d30 ? `${d30 > 0 ? '+' : ''}${d30}` : '—'}</td>
+          <td>{pr.sourceUrl ? <a href={pr.sourceUrl} rel="noopener">{PROGRESS_SOURCE_LABEL[pr.source]}</a> : PROGRESS_SOURCE_LABEL[pr.source]}{pr.ranked && <span class="chip ok"> ranked</span>}</td>
+        </tr>
+      ); })}</tbody>
+    </table></div>
+  </section>
+
+  <section id="how" class="section wrap prose">
+    <div class="rule-head"><h2>How this works</h2></div>
+    <p>Every day Recomp reads the published progress of each decompilation in the catalogue, best source first:</p>
+    <ol>
+      <li><a href="https://bytematch.dev/" rel="noopener">ByteMatch</a>, <a href="https://decomp.dev/" rel="noopener">decomp.dev</a> and <a href="https://progress.deco.mp/" rel="noopener">progress.deco.mp</a>: trackers that maintainers sign their project up to. Only these projects are ranked on the boards and milestones above.</li>
+      <li>The project's own <a href="https://github.com/encounter/objdiff" rel="noopener">objdiff</a> report, from the latest build on its main branch.</li>
+      <li>A progress badge in the project's README.</li>
+      <li>A figure the project states on its own site, entered by hand.</li>
+    </ol>
+    <p>The headline number is matched code: the share of the original program's code bytes that the project's source rebuilds byte for byte (objdiff's <code>matched_code_percent</code>). "Linked" on a project page is the stricter share already built entirely from source. Static recompilations and ports don't have a match percentage, so they aren't listed here.</p>
+    <p>Right now: {bySource.map(([s, n], i) => <>{i > 0 && ', '}{n} from {PROGRESS_SOURCE_LABEL[s as keyof typeof PROGRESS_SOURCE_LABEL]}</>)}.</p>
+    <p><strong>Maintainers:</strong> to be ranked, register your project on <a href="https://bytematch.dev/" rel="noopener">ByteMatch</a>. To have your progress left off this site, <a href="https://github.com/andrewnakas/recompsoftware/issues/new?template=correction.yml&title=%5Bprogress%20opt-out%5D" rel="noopener">open an opt-out issue</a> and it will be removed from the next refresh.</p>
+  </section>
+</Base>
+<script>
+  const t = document.getElementById('all') as HTMLTableElement | null;
+  t?.querySelectorAll('th[data-k]').forEach((th) => th.addEventListener('click', () => {
+    const k = (th as HTMLElement).dataset.k!;
+    const num = !['name', 'pl', 'src'].includes(k);
+    const asc = th.classList.contains('sorted') ? !th.classList.contains('asc') : !num; // numbers start high-first, text A-Z
+    t.querySelectorAll('th').forEach((x) => x.classList.remove('sorted', 'asc'));
+    th.classList.add('sorted'); if (asc) th.classList.add('asc');
+    const body = t.tBodies[0];
+    [...body.rows].sort((a, b) => {
+      const x = a.dataset[k]!, y = b.dataset[k]!;
+      const c = num ? Number(x) - Number(y) : x.localeCompare(y);
+      return asc ? c : -c;
+    }).forEach((r) => body.appendChild(r));
+  }));
+</script>
+<style>
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); gap: 0.8rem; margin: 1.2rem 0 0; }
+  .kpis div { border-top: 2px solid var(--ink); padding-top: 0.4rem; }
+  .kpis dt { font: 500 0.75rem var(--font-mono); color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.05em; }
+  .kpis dd { margin: 0; font: 600 1.8rem/1.2 var(--font-display); }
+  .two { display: grid; gap: 0 3rem; padding-top: 1rem; }
+  @media (min-width: 900px) { .two { grid-template-columns: 1fr 1fr; } }
+  .marks { list-style: none; padding: 0; margin: 0; columns: 2 22rem; column-gap: 3rem; }
+  .marks li { break-inside: avoid; padding: 0.35rem 0; border-bottom: 1px solid var(--line); }
+  .boards { display: grid; gap: 1.5rem 3rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); }
+  .boards h3 { margin: 0 0 0.3rem; font-size: 1rem; }
+  th[data-k] { cursor: pointer; white-space: nowrap; }
+  th.sorted::after { content: ' ↓'; } th.sorted.asc::after { content: ' ↑'; }
+  td.bar { min-width: 9rem; }
+  .prose { max-width: 75ch; }
+</style>

@@ -14,6 +14,7 @@ One JSON array per section in `data/projects/<category>.json`. Facts and links o
   "status": "released",                    // released | complete | wip | stalled | archived
   "progress": null,                        // 0-100 if the project publishes a % (matching decomp), else null
   "progressSource": null,                  // URL of that %
+  "progressOptOut": false,                 // optional: true = the maintainer asked us not to show progress (scripts/fetch-progress.mjs skips it)
   "provenance": "human-led",               // human-led | ai-assisted | ai-generated | unknown  (ONLY from the project's own statements or clear public reporting; default "unknown")
   "provenanceNote": null,                  // one line + where it is stated, when not "unknown"
   "licence": "GPL-3.0",                    // SPDX id from GitHub, "none" if no licence file, "unknown"
@@ -38,3 +39,9 @@ One JSON array per section in `data/projects/<category>.json`. Facts and links o
 History: `data/history.json` = `[{ "id", "label", "blurb", "events": [{ "date": "YYYY[-MM[-DD]]", "title", "body", "who", "source": "url", "projects": ["slug"] }] }]`.
 
 Lineage: `data/lineage.json` = `[{ "slug", "parents": ["slug"], "relation": "built-on | fork-of | inspired-by | uses-tool" }]`.
+
+Progress (written daily by `scripts/fetch-progress.mjs`, never by hand except `frogress-map.json`):
+- `data/progress/latest.json` = `{ "date", "repos": { "owner/repo": { "pct", "codePct", "fuzzyPct", "linkedPct", "matchedFns", "totalFns", "version", "source", "sourceUrl", "ranked", "commit", "at", "checked" } } }`. `source` is bytematch | decompdev | frogress | artifact | badge | manual; `ranked` is true only for the first three (maintainer opted in), and only ranked repos go on movers boards, leaderboards and milestones.
+- `data/progress/history.json` = `{ "owner/repo": { "source", "points": [["YYYY-MM-DD", pct, matchedFns|null]] } }`, one point per day, only when the value changed; seeded from the aggregator's own history.
+- `data/progress/scan.json` = fetch cache (which repos have report artifacts or README badges; rechecked weekly when empty).
+- `data/progress/frogress-map.json` = progress.deco.mp slug -> `{ repo, version, category }`, hand-checked; README badges add entries.

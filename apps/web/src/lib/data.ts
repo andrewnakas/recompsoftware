@@ -98,6 +98,58 @@ export function repoKey(url: string) {
   return m ? m[1].replace(/\.git$/, '').toLowerCase() : url;
 }
 
+/** Decomp progress from scripts/fetch-progress.mjs. Ranked = the project opted into public tracking (ByteMatch,
+ * decomp.dev, frogress); only ranked projects go on movers boards, leaderboards and the milestones feed. */
+export type ProgressSource = 'bytematch' | 'decompdev' | 'frogress' | 'artifact' | 'badge' | 'manual';
+export interface Progress {
+  pct: number; codePct: number | null; fuzzyPct: number | null; linkedPct: number | null;
+  matchedFns: number | null; totalFns: number | null; version: string | null;
+  source: ProgressSource; sourceUrl: string | null; ranked: boolean; at: string;
+}
+export const PROGRESS_SOURCE_LABEL: Record<ProgressSource, string> = {
+  bytematch: 'ByteMatch', decompdev: 'decomp.dev', frogress: 'progress.deco.mp', artifact: 'its own CI report',
+  badge: 'its README badge', manual: 'the project',
+};
+type Point = [string, number, number | null];
+let progCache: { date: string | null; repos: Record<string, Progress> } | null = null;
+let progHist: Record<string, { source: string; points: Point[] }> | null = null;
+const prog = () => (progCache ??= read('progress/latest.json', { date: null, repos: {} }));
+export const progressDate = () => prog().date;
+export function progressFor(p: Project): Progress | undefined {
+  const r = p.repo ? prog().repos[repoKey(p.repo)] : undefined;
+  if (r) return r;
+  if (p.progress == null) return undefined;
+  return { pct: p.progress, codePct: null, fuzzyPct: null, linkedPct: null, matchedFns: null, totalFns: null, version: null, source: 'manual', sourceUrl: p.progressSource, ranked: false, at: p.checked };
+}
+export const progressSeries = (p: Project): Point[] => (p.repo ? ((progHist ??= read('progress/history.json', {}))[repoKey(p.repo)]?.points ?? []) : []);
+/** Percentage points gained over the last N days (needs a point at or before the cut-off). */
+export function progressDelta(p: Project, days: number): number | null {
+  const s = progressSeries(p);
+  if (s.length < 2) return null;
+  const cut = new Date(Date.parse(progressDate() ?? s[s.length - 1][0]) - days * 864e5).toISOString().slice(0, 10);
+  const before = [...s].reverse().find((x) => x[0] <= cut);
+  return before ? Math.round((s[s.length - 1][1] - before[1]) * 100) / 100 : null;
+}
+/** One project per repo: several catalogue entries can share a repo (and its progress). */
+export const tracked = () => {
+  const seen = new Set<string>();
+  return projects().filter((p) => { const pr = progressFor(p); if (!pr) return false; const k = p.repo ? repoKey(p.repo) : p.slug; if (seen.has(k)) return false; seen.add(k); return true; });
+};
+export const movers = (days: number, n = 10) => tracked().filter((p) => progressFor(p)!.ranked)
+  .map((p) => ({ p, delta: progressDelta(p, days) ?? 0 })).filter((x) => x.delta > 0).sort((a, b) => b.delta - a.delta).slice(0, n);
+const MILESTONES = [10, 25, 50, 75, 90, 100];
+export function milestones(n = 30) {
+  const out: { p: Project; date: string; mark: number }[] = [];
+  for (const p of tracked().filter((p) => progressFor(p)!.ranked)) {
+    const s = progressSeries(p);
+    for (let i = 1; i < s.length; i++) {
+      const m = MILESTONES.filter((m) => s[i - 1][1] < m && s[i][1] >= m).pop(); // several crossed in one day = the highest
+      if (m) out.push({ p, date: s[i][0], mark: m });
+    }
+  }
+  return out.sort((a, b) => b.date.localeCompare(a.date) || b.mark - a.mark).slice(0, n);
+}
+
 /** Each project's own picture (social preview or README image), thumbnailed by scripts/fetch-media.mjs. */
 export interface Media { src: string; kind: 'social' | 'readme'; thumb?: string }
 let mediaCache: Record<string, Media> | null = null;

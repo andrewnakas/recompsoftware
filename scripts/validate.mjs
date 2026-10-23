@@ -34,6 +34,7 @@ for (const cat of CATS) {
     if (p.provenance !== 'unknown' && p.provenance !== 'human-led' && !p.provenanceNote) err(w, 'AI provenance needs provenanceNote');
     if (!STATUS.includes(p.status)) err(w, `status "${p.status}"`);
     if (p.progress != null && (typeof p.progress !== 'number' || p.progress < 0 || p.progress > 100)) err(w, 'progress 0-100');
+    if (p.progressOptOut != null && typeof p.progressOptOut !== 'boolean') err(w, 'progressOptOut boolean');
     if (p.repo != null && !isUrl(p.repo)) err(w, 'repo not a URL');
     if (!p.repo && !p.website) err(w, 'needs repo or website');
     for (const k of ['website', 'discord', 'subreddit', 'progressSource']) if (p[k] != null && !isUrl(p[k])) err(w, `${k} not a URL`);

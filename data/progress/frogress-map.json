@@ -1,0 +1,168 @@
+{
+  "_note": "progress.deco.mp (frogress) project slug -> catalogue repo + the version/category to read. Hand-checked 2026-10-23; README badges pointing at progress.deco.mp add entries at run time.",
+  "drmario64": {
+    "repo": "angheloalf/drmario64",
+    "version": "us",
+    "category": "code"
+  },
+  "puzzleleague64": {
+    "repo": "angheloalf/puzzleleague64",
+    "version": "usa",
+    "category": "code"
+  },
+  "animalforest": {
+    "repo": "zeldaret/af",
+    "version": "jp",
+    "category": "code"
+  },
+  "chameleontwist": {
+    "repo": "chameleontwistret/chameleontwistv1.0-jp",
+    "version": "jp",
+    "category": "default"
+  },
+  "melee": {
+    "repo": "doldecomp/melee",
+    "version": "GALE01",
+    "category": "dol"
+  },
+  "fireemblem8": {
+    "repo": "fireemblemuniverse/fireemblem8u",
+    "version": "us",
+    "category": "default"
+  },
+  "sotn": {
+    "repo": "xeeynamo/sotn-decomp",
+    "version": "us",
+    "category": "code"
+  },
+  "pikmin2": {
+    "repo": "projectpiki/pikmin2",
+    "version": "GPVE01",
+    "category": "dol"
+  },
+  "fireemblem7j": {
+    "repo": "mokhaleee/fireemblem7j",
+    "version": "jp",
+    "category": "default"
+  },
+  "yoshisstory": {
+    "repo": "decompals/yoshis-story",
+    "version": "us",
+    "category": "code"
+  },
+  "slycooper1": {
+    "repo": "theonlyzac/sly1",
+    "version": "us",
+    "category": "all"
+  },
+  "prime": {
+    "repo": "primedecomp/prime",
+    "version": "GM8E01_00",
+    "category": "dol"
+  },
+  "animalcrossing": {
+    "repo": "acreteam/ac-decomp",
+    "version": "us",
+    "category": "dol"
+  },
+  "ty": {
+    "repo": "1superchip/ty-decomp",
+    "version": "us",
+    "category": "Code"
+  },
+  "mkw": {
+    "repo": "doldecomp/mkw",
+    "version": "pal",
+    "category": "all"
+  },
+  "psyq": {
+    "repo": "sozud/psy-q-decomp",
+    "version": "3.5",
+    "category": "default"
+  },
+  "pokemonsnap": {
+    "repo": "ethteck/pokemonsnap",
+    "version": "us",
+    "category": "all"
+  },
+  "marioparty4": {
+    "repo": "mariopartyrd/marioparty4",
+    "version": "GMPE01_00",
+    "category": "all"
+  },
+  "bfbb": {
+    "repo": "bfbbdecomp/bfbb",
+    "version": "GQPE78",
+    "category": "dol"
+  },
+  "mkdd": {
+    "repo": "doldecomp/mkdd",
+    "version": "MarioClub_us",
+    "category": "dol"
+  },
+  "ss": {
+    "repo": "zeldaret/ss",
+    "version": "SOUE01",
+    "category": "all"
+  },
+  "sotc": {
+    "repo": "fantaskink/sotc",
+    "version": "preview",
+    "category": "default"
+  },
+  "key": {
+    "repo": "swiftshine/key",
+    "version": "RK5E01",
+    "category": "all"
+  },
+  "rb3": {
+    "repo": "darkrta/rb3",
+    "version": "SZBE69_B8",
+    "category": "dol"
+  },
+  "xenoblade": {
+    "repo": "xbret/xenoblade",
+    "version": "us",
+    "category": "dol"
+  },
+  "oot-gc": {
+    "repo": "zeldaret/oot-gc",
+    "version": "ce-u",
+    "category": "dol"
+  },
+  "oot-vc": {
+    "repo": "zeldaret/oot-vc",
+    "version": "oot-u",
+    "category": "dol"
+  },
+  "pikmin": {
+    "repo": "projectpiki/pikmin",
+    "version": "GPIE01_01",
+    "category": "dol"
+  },
+  "tww": {
+    "repo": "zeldaret/tww",
+    "version": "GZLE01",
+    "category": "all"
+  },
+  "twilightprincess": {
+    "repo": "zeldaret/tp",
+    "version": "GZ2E01",
+    "category": "all"
+  },
+  "smg": {
+    "repo": "smgcommunity/petari",
+    "version": "RMGK01",
+    "category": "all"
+  },
+  "tooie": {
+    "repo": "mr-wiseguy/banjo-tooie",
+    "version": "us",
+    "category": "code"
+  },
+  "dukezh": {
+    "repo": "gillou68310/dukenukemzerohour",
+    "version": "us",
+    "category": "default"
+  }
+}

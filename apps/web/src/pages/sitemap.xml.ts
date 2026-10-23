@@ -1,6 +1,6 @@
 import { projects, platforms, gameHubs, CATEGORIES } from '../lib/data';
 
-const pages = ['/', '/projects/', '/trending/', '/play/', '/history/', '/lineage/', '/news/', '/this-week/', '/platforms/', '/game/', '/recompiled-games-list/', '/decompiled-games-list/', '/what-is-a-recomp/', '/about/'];
+const pages = ['/', '/projects/', '/trending/', '/progress/', '/play/', '/history/', '/lineage/', '/news/', '/this-week/', '/platforms/', '/game/', '/recompiled-games-list/', '/decompiled-games-list/', '/what-is-a-recomp/', '/about/'];
 
 export function GET() {
   const all = projects();
