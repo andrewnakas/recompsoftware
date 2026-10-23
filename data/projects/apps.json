@@ -3265,5 +3265,45 @@
       "https://github.com/glauberlima/open-scrantic/releases"
     ],
     "checked": "2026-10-19"
+  },
+  {
+    "slug": "wii-news-channel-decomp",
+    "name": "wii-news-channel",
+    "category": "apps",
+    "subject": "Wii News Channel",
+    "originalPlatform": "Wii",
+    "originalYear": 2007,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README disclaimer calls it \"vibecoded\", with an AI agent writing code the owner reviews",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/hotlandsoftware/wii-news-channel",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "hotlandsoftware"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of the Wii News Channel aiming at a byte-matching DOL, with a PC port that pulls news from a mirror of the news server.",
+    "tags": [
+      "wii",
+      "channel",
+      "port"
+    ],
+    "sources": [
+      "https://github.com/hotlandsoftware/wii-news-channel"
+    ],
+    "checked": "2026-10-23"
   }
 ]

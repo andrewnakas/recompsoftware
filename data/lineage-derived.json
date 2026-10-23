@@ -42,6 +42,13 @@
   "relation": "uses"
  },
  {
+  "slug": "legaia2-decomp",
+  "parents": [
+   "decomp-me"
+  ],
+  "relation": "uses"
+ },
+ {
   "slug": "makerom-decomp",
   "parents": [
    "decomp-me"
@@ -71,6 +78,13 @@
  },
  {
   "slug": "sims1-mac-decomp",
+  "parents": [
+   "decomp-me"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "the-last-story-decomp",
   "parents": [
    "decomp-me"
   ],
@@ -133,6 +147,13 @@
   "relation": "uses"
  },
  {
+  "slug": "mm9decomp",
+  "parents": [
+   "decomp-toolkit"
+  ],
+  "relation": "uses"
+ },
+ {
   "slug": "mssb-dtk",
   "parents": [
    "decomp-toolkit"
@@ -155,6 +176,27 @@
  },
  {
   "slug": "pokepark-wii-decomp",
+  "parents": [
+   "decomp-toolkit"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "shadow-the-hedgehog-decomp",
+  "parents": [
+   "decomp-toolkit"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "the-last-story-decomp",
+  "parents": [
+   "decomp-toolkit"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "urbz-gc-decomp",
   "parents": [
    "decomp-toolkit"
   ],
@@ -211,6 +253,13 @@
  },
  {
   "slug": "flatout-2-decomp",
+  "parents": [
+   "ghidra"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "legaia2-decomp",
   "parents": [
    "ghidra"
   ],
@@ -336,7 +385,77 @@
   "relation": "built-with"
  },
  {
+  "slug": "blue-dragon-awakened-shadow-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
   "slug": "bullseye-re-dead-aim",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "code-lyoko-ds-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "cooking-mama-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "dragon-ball-origins-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "eyeshield-21-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "fairy-tail-kardia-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "fairy-tail-madoushi-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "farm-frenzy-ds-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "harvest-moon-ds-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "heroes-of-mana-decomp",
   "parents": [
    "m2c"
   ],
@@ -350,7 +469,28 @@
   "relation": "uses"
  },
  {
+  "slug": "lego-star-wars-ii-ds-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "livly-garden-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
   "slug": "mnsg-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "mysims-ds-decomp",
   "parents": [
    "m2c"
   ],
@@ -362,6 +502,76 @@
    "m2c"
   ],
   "relation": "uses"
+ },
+ {
+  "slug": "nintendogs-dachshund-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "pes6-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "powerpuff-girls-z-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "rayman-raving-rabbids-ds-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "re-deadly-silence-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "simpsons-game-ds-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "spider-man-web-of-shadows-ds-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "spyro-shadow-legacy-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "ultimate-spider-man-ds-decomp",
+  "parents": [
+   "m2c"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "battletanx-global-assault-pc-port",
+  "parents": [
+   "n64modernruntime"
+  ],
+  "relation": "built-with"
  },
  {
   "slug": "dk64-recomp-android",
@@ -421,6 +631,13 @@
  },
  {
   "slug": "bar-recomp",
+  "parents": [
+   "n64recomp"
+  ],
+  "relation": "built-with"
+ },
+ {
+  "slug": "battletanx-global-assault-pc-port",
   "parents": [
    "n64recomp"
   ],
@@ -728,6 +945,13 @@
   "relation": "uses"
  },
  {
+  "slug": "indiana-jones-infernal-machine-n64-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
   "slug": "kappa",
   "parents": [
    "objdiff"
@@ -770,7 +994,28 @@
   "relation": "uses"
  },
  {
+  "slug": "mlss-johnsoellner-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "mm9decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
   "slug": "mssb-dtk",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "nd-blackmoor-decomp",
   "parents": [
    "objdiff"
   ],
@@ -889,7 +1134,21 @@
   "relation": "uses"
  },
  {
+  "slug": "the-last-story-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
   "slug": "tssm-decomp",
+  "parents": [
+   "objdiff"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "urbz-gc-decomp",
   "parents": [
    "objdiff"
   ],
@@ -1470,6 +1729,13 @@
   "relation": "built-with"
  },
  {
+  "slug": "battletanx-global-assault-pc-port",
+  "parents": [
+   "rt64"
+  ],
+  "relation": "built-with"
+ },
+ {
   "slug": "bearbirdpad",
   "parents": [
    "rt64"
@@ -1589,6 +1855,13 @@
   "relation": "uses"
  },
  {
+  "slug": "1080-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
   "slug": "aidyn-chronicles-decomp",
   "parents": [
    "splat"
@@ -1659,6 +1932,20 @@
   "relation": "uses"
  },
  {
+  "slug": "future-cop-lapd-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "indiana-jones-infernal-machine-n64-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
   "slug": "mariogolf64-decomp",
   "parents": [
    "splat"
@@ -1694,6 +1981,13 @@
   "relation": "uses"
  },
  {
+  "slug": "shox-rr-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
   "slug": "slinky",
   "parents": [
    "splat"
@@ -1716,6 +2010,13 @@
  },
  {
   "slug": "ssx3-decomp",
+  "parents": [
+   "splat"
+  ],
+  "relation": "uses"
+ },
+ {
+  "slug": "syphon-filter-omega-strain-decomp",
   "parents": [
    "splat"
   ],

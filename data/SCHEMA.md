@@ -41,7 +41,8 @@ History: `data/history.json` = `[{ "id", "label", "blurb", "events": [{ "date": 
 Lineage: `data/lineage.json` = `[{ "slug", "parents": ["slug"], "relation": "built-on | fork-of | inspired-by | uses-tool" }]`.
 
 Progress (written daily by `scripts/fetch-progress.mjs`, never by hand except `frogress-map.json`):
-- `data/progress/latest.json` = `{ "date", "repos": { "owner/repo": { "pct", "codePct", "fuzzyPct", "linkedPct", "matchedFns", "totalFns", "version", "source", "sourceUrl", "ranked", "commit", "at", "checked" } } }`. `source` is bytematch | decompdev | frogress | artifact | badge | manual; `ranked` is true only for the first three (maintainer opted in), and only ranked repos go on movers boards, leaderboards and milestones.
+- `data/progress/latest.json` = `{ "date", "repos": { "owner/repo": { "pct", "codePct", "fuzzyPct", "linkedPct", "matchedFns", "totalFns", "version", "source", "sourceUrl", "ranked", "commit", "at", "checked" } } }`. `source` is bytematch | decompdev | frogress | site | artifact | badge | manual; `ranked` is true only for the first three (maintainer opted in), and only ranked repos go on movers boards, leaderboards and milestones.
 - `data/progress/history.json` = `{ "owner/repo": { "source", "points": [["YYYY-MM-DD", pct, matchedFns|null]] } }`, one point per day, only when the value changed; seeded from the aggregator's own history.
 - `data/progress/scan.json` = fetch cache (which repos have report artifacts or README badges; rechecked weekly when empty).
 - `data/progress/frogress-map.json` = progress.deco.mp slug -> `{ repo, version, category }`, hand-checked; README badges add entries.
+- `data/progress/site-map.json` = repo -> a progress CSV on the project's own site (`csv`, `page`, matched/total columns), hand-checked; gives full history.

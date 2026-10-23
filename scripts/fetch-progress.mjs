@@ -1,6 +1,7 @@
 // Daily decomp progress for every tracked repo -> data/progress/latest.json + history.json (+ scan.json, the fetch cache).
-// Sources, best first: ByteMatch API, decomp.dev per-project JSON, frogress (progress.deco.mp), the objdiff report in a
-// repo's own Actions artifacts, README progress badges, then the hand-entered `progress` field.
+// Sources, best first: ByteMatch API, decomp.dev per-project JSON, frogress (progress.deco.mp), progress CSVs on the
+// project's own site (site-map.json), the objdiff report in a repo's own Actions artifacts, README progress badges,
+// then the hand-entered `progress` field.
 // Only the first three are "ranked": their maintainers opted into public tracking, so only they feed movers/leaderboards.
 // Entries with progressOptOut are skipped. Token: GITHUB_TOKEN, else `gh auth token`.
 // Usage: node scripts/fetch-progress.mjs [--limit N] [--discover]   (--discover asks decomp.dev about every decomp repo)
@@ -125,9 +126,19 @@ async function byteMatch() {
     list.push(...j);
     if (j.length < 500) break;
   }
-  const mine = list.filter((x) => { const k = `${x.owner}/${x.repo}`.toLowerCase(); if (!cat.has(k)) unmatched.push(`bytematch ${k}`); return rows.some((r) => r.key === k); });
+  // ByteMatch keeps the name a repo had when it was registered; GitHub redirects renamed repos, so ask it (weekly, cached).
+  const alias = {};
+  for (const x of list) {
+    const k = `${x.owner}/${x.repo}`.toLowerCase();
+    if (cat.has(k)) continue;
+    const s = (scan[`~${k}`] ??= {});
+    if (daysSince(s.at) >= RESCAN_DAYS) { const r = await gh(`/repos/${k}`); if (!ghBlocked) Object.assign(s, { canonical: r.body?.full_name?.toLowerCase() ?? null, at: today }); }
+    if (s.canonical && s.canonical !== k && cat.has(s.canonical)) alias[k] = s.canonical;
+  }
+  const keyOfBm = (x) => { const k = `${x.owner}/${x.repo}`.toLowerCase(); return alias[k] ?? k; };
+  const mine = list.filter((x) => { const k = keyOfBm(x); if (!cat.has(k)) unmatched.push(`bytematch ${k}`); return rows.some((r) => r.key === k); });
   await pool(mine, 6, async (x) => {
-    const key = `${x.owner}/${x.repo}`.toLowerCase();
+    const key = keyOfBm(x);
     const url = `https://bytematch.dev/${x.owner}/${x.repo}`;
     let seed;
     if (history[key]?.source !== 'bytematch') {
@@ -227,7 +238,10 @@ async function artifact(key) {
 async function badge(key) {
   const r = await gh(`/repos/${key}/readme`, 'application/vnd.github.raw');
   if (!r.body) return null;
-  const urls = [...r.body.matchAll(/https?:\/\/[^\s)"'<>\]]+/g)].map((m) => m[0].replace(/&amp;/g, '&'));
+  // A README can carry several badges (sat-r/sa2 shows SA1 first, then SA2): prefer the one named after the repo, then matching ones.
+  const name = key.split('/')[1].replace(/[^a-z0-9]/g, '');
+  const score = (u) => (decodeURIComponent(u).toLowerCase().split('/').pop().replace(/[^a-z0-9]/g, '').includes(name) ? 2 : 0) + (/[^n]matching/i.test(u) ? 1 : 0);
+  const urls = [...r.body.matchAll(/https?:\/\/[^\s)"'<>\]]+/g)].map((m) => m[0].replace(/&amp;/g, '&')).sort((a, b) => score(b) - score(a));
   for (let u of urls) {
     const ep = u.match(/img\.shields\.io\/endpoint\?(?:.*&)?url=([^&]+)/i);
     if (ep) u = decodeURIComponent(ep[1]);
@@ -285,6 +299,21 @@ for (const [slug, map] of Object.entries(fmap)) {
   if (!found.has(map.repo) && rows.some((r) => r.key === map.repo)) await frogress(slug, map, all);
 }
 for (const slug of Object.keys(all)) if (!fmap[slug]) unmatched.push(`frogress ${slug} (unmapped)`);
+
+// Progress CSVs that projects publish on their own sites (zelda64.dev, papermar.io, sat-r): every row is a commit,
+// so they give full history. Rows: version, unix time, hash, then counts; site-map.json says which columns are matched/total.
+const smap = Object.fromEntries(Object.entries(readJson('site-map.json', {})).filter(([k]) => !k.startsWith('_')));
+for (const [key, m] of Object.entries(smap)) {
+  if (found.has(key) || !rows.some((r) => r.key === key)) continue;
+  const text = await fetch(m.csv, { headers: UA }).then((x) => (x.ok ? x.text() : '')).catch(() => '');
+  const pts = text.split('\n').map((l) => l.split(',')).filter((c) => /^\d+$/.test(c[1] ?? '') && Number(c[m.den]) > 0)
+    .map((c) => ({ at: dateOf(Number(c[1])), pct: round((100 * Number(c[m.num])) / Number(c[m.den])), fns: m.fns ? Number(c[m.fns[0]]) : null, total: m.fns ? Number(c[m.fns[1]]) : null, commit: c[2]?.slice(0, 10) ?? null }));
+  if (!pts.length) { fail('site'); continue; }
+  pts.sort((a, b) => a.at.localeCompare(b.at));
+  const last = pts[pts.length - 1];
+  record(key, { pct: last.pct, codePct: last.pct, fuzzyPct: null, matchedFns: last.fns, totalFns: last.total, linkedPct: null, version: m.version ?? null, source: 'site', sourceUrl: m.page ?? m.csv, commit: last.commit, at: last.at },
+    history[key]?.source === 'site' ? undefined : pts.map((p) => [p.at, p.pct, p.fns]));
+}
 
 // GitHub-based sources only for decomp-type repos, and only re-asked weekly once a repo turned out to have nothing.
 const ghCand = open().filter((r) => [...r.methods].some((m) => DECOMP.has(m)));

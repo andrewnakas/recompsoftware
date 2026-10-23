@@ -100,14 +100,14 @@ export function repoKey(url: string) {
 
 /** Decomp progress from scripts/fetch-progress.mjs. Ranked = the project opted into public tracking (ByteMatch,
  * decomp.dev, frogress); only ranked projects go on movers boards, leaderboards and the milestones feed. */
-export type ProgressSource = 'bytematch' | 'decompdev' | 'frogress' | 'artifact' | 'badge' | 'manual';
+export type ProgressSource = 'bytematch' | 'decompdev' | 'frogress' | 'site' | 'artifact' | 'badge' | 'manual';
 export interface Progress {
   pct: number; codePct: number | null; fuzzyPct: number | null; linkedPct: number | null;
   matchedFns: number | null; totalFns: number | null; version: string | null;
   source: ProgressSource; sourceUrl: string | null; ranked: boolean; at: string;
 }
 export const PROGRESS_SOURCE_LABEL: Record<ProgressSource, string> = {
-  bytematch: 'ByteMatch', decompdev: 'decomp.dev', frogress: 'progress.deco.mp', artifact: 'its own CI report',
+  bytematch: 'ByteMatch', decompdev: 'decomp.dev', frogress: 'progress.deco.mp', site: 'its own progress page', artifact: 'its own CI report',
   badge: 'its README badge', manual: 'the project',
 };
 type Point = [string, number, number | null];

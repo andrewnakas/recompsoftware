@@ -1,0 +1,9 @@
+{
+  "_note": "Progress CSVs published on a project's own site -> catalogue repo. num/den = 0-based columns of matched/total code bytes; fns = [matched, total] function columns when present. Hand-checked 2026-10-23.",
+  "zeldaret/oot": { "csv": "https://zelda.deco.mp/assets/csv/progress-oot-matching.csv", "page": "https://zelda.deco.mp/games/oot", "num": 3, "den": 4 },
+  "zeldaret/mm": { "csv": "https://zelda.deco.mp/assets/csv/progress-mm-matching.csv", "page": "https://zelda.deco.mp/games/mm", "num": 3, "den": 4 },
+  "zeldaret/tmc": { "csv": "https://zelda64.dev/assets/csv/progress-tmc-matching.csv", "page": "https://zelda64.dev/games/tmc", "num": 3, "den": 4 },
+  "pmret/papermario": { "csv": "https://papermar.io/reports/progress_us.csv", "page": "https://papermar.io/progress-us", "num": 8, "den": 6, "fns": [5, 3], "version": "us" },
+  "sat-r/sa2": { "csv": "https://sat-r.github.io/sa2/reports/progress-sa2-matching.csv", "page": "https://sat-r.github.io/sa2/", "num": 3, "den": 4, "version": "SA2" },
+  "sat-r/sa3": { "csv": "https://sat-r.github.io/sa3/reports/progress-sa3-matching.csv", "page": "https://sat-r.github.io/sa3/", "num": 3, "den": 4 }
+}

@@ -49006,7 +49006,7 @@
     "provenance": "ai-assisted",
     "provenanceNote": "CLAUDE.md and AGENTS.md in repo root (GitHub)",
     "licence": "GPL-3.0",
-    "repo": "https://github.com/OpenRAC/rac2-gc-decomp",
+    "repo": "https://github.com/OpenRAC/rac2-decomp",
     "website": null,
     "discord": null,
     "subreddit": null,
@@ -49027,7 +49027,7 @@
       "openrac"
     ],
     "sources": [
-      "https://github.com/OpenRAC/rac2-gc-decomp"
+      "https://github.com/OpenRAC/rac2-decomp"
     ],
     "checked": "2026-10-17"
   },
@@ -49170,7 +49170,7 @@
     "provenance": "unknown",
     "provenanceNote": null,
     "licence": "GPL-3.0",
-    "repo": "https://github.com/OpenRAC/rac-deadlocked-decomp",
+    "repo": "https://github.com/OpenRAC/rac4-decomp",
     "website": "https://openrac.dev/",
     "discord": null,
     "subreddit": null,
@@ -49191,7 +49191,7 @@
       "openrac"
     ],
     "sources": [
-      "https://github.com/OpenRAC/rac-deadlocked-decomp"
+      "https://github.com/OpenRAC/rac4-decomp"
     ],
     "checked": "2026-10-17"
   },
@@ -49289,7 +49289,7 @@
     "provenance": "unknown",
     "provenanceNote": null,
     "licence": "unknown",
-    "repo": "https://github.com/OpenRAC/rac3-uya-decomp",
+    "repo": "https://github.com/vetusmagnus/rac3-uya-decomp",
     "website": "https://openrac.dev/",
     "discord": null,
     "subreddit": null,
@@ -49310,7 +49310,7 @@
       "openrac"
     ],
     "sources": [
-      "https://github.com/OpenRAC/rac3-uya-decomp"
+      "https://github.com/vetusmagnus/rac3-uya-decomp"
     ],
     "checked": "2026-10-17"
   },
@@ -53752,5 +53752,3324 @@
       "https://github.com/saulob/ssf2t-hd-remix-recompiled/releases"
     ],
     "checked": "2026-10-19"
+  },
+  {
+    "slug": "way-of-the-samurai-decomp",
+    "name": "Way of the Samurai decompilation",
+    "category": "games",
+    "subject": "Way of the Samurai",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2002,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README states it is an AI-assisted project pairing an LLM with a byte-exact compile oracle",
+    "licence": "none",
+    "repo": "https://github.com/dnb4ever/way-of-the-samurai-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "dnb4ever"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US PS2 release of Way of the Samurai (SLUS-20407), with a parallel native PC port planned through static recompilation.",
+    "tags": [
+      "ps2",
+      "acquire",
+      "samurai"
+    ],
+    "sources": [
+      "https://github.com/dnb4ever/way-of-the-samurai-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "gangstar-wch-decomp",
+    "name": "Gangstar: West Coast Hustle decompilation",
+    "category": "games",
+    "subject": "Gangstar: West Coast Hustle",
+    "originalPlatform": "Android",
+    "originalYear": 2009,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "unknown",
+    "repo": "https://github.com/Virjoinga/gangstar-wch-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Virjoinga"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the native ARM game library from the Android version of Gameloft's Gangstar: West Coast Hustle, rebuilding it as C++ that compiles to the retail bytes.",
+    "tags": [
+      "android",
+      "arm",
+      "gameloft"
+    ],
+    "sources": [
+      "https://github.com/Virjoinga/gangstar-wch-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "thps64",
+    "name": "Tony Hawk's Pro Skater (N64) decompilation",
+    "category": "games",
+    "subject": "Tony Hawk's Pro Skater",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 2000,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root and README describe rules for AI agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/andrewnakas/thps64",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "andrewnakas"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US v1.1 Nintendo 64 version of Tony Hawk's Pro Skater, run as the pilot project of the Decompathon community decomp jams.",
+    "tags": [
+      "n64",
+      "tony-hawk",
+      "skateboarding",
+      "decompathon"
+    ],
+    "sources": [
+      "https://github.com/andrewnakas/thps64"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "tagforce-decomp",
+    "name": "Yu-Gi-Oh! GX Tag Force decompilation",
+    "category": "games",
+    "subject": "Yu-Gi-Oh! GX Tag Force",
+    "originalPlatform": "PlayStation Portable",
+    "originalYear": 2006,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/thiago-cipitelli/tagforce-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "thiago-cipitelli"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of the US PSP release of Yu-Gi-Oh! GX Tag Force, verified byte for byte with the original Metrowerks compiler, aiming at a native PC build that reads assets from the user's copy.",
+    "tags": [
+      "psp",
+      "yu-gi-oh",
+      "konami",
+      "card-game"
+    ],
+    "sources": [
+      "https://github.com/thiago-cipitelli/tagforce-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "gtadv3-decomp",
+    "name": "GT Advance 3 decompilation",
+    "category": "games",
+    "subject": "GT Advance 3: Pro Concept Racing",
+    "originalPlatform": "Game Boy Advance",
+    "originalYear": 2002,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/722rsr/gtadv3-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "722rsr"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Reconstruction of the US GBA racer GT Advance 3 that already links to a byte-identical ROM, though much of the code is still inline assembly rather than real C.",
+    "tags": [
+      "gba",
+      "racing",
+      "thq"
+    ],
+    "sources": [
+      "https://github.com/722rsr/gtadv3-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "toejam-earl-decomp",
+    "name": "ToeJam & Earl decompilation",
+    "category": "games",
+    "subject": "ToeJam & Earl",
+    "originalPlatform": "Mega Drive / Genesis",
+    "originalYear": 1991,
+    "method": "matching-decomp",
+    "status": "complete",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "none",
+    "repo": "https://github.com/mschienbein/toejam-earl-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mschienbein"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Completed matching decompilation of the Sega Genesis game ToeJam & Earl, with C and assembly sources that rebuild both retail ROM revisions exactly.",
+    "tags": [
+      "genesis",
+      "mega-drive",
+      "sega"
+    ],
+    "sources": [
+      "https://github.com/mschienbein/toejam-earl-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "legoland-decomp",
+    "name": "Legoland decompilation",
+    "category": "games",
+    "subject": "Legoland",
+    "originalPlatform": "Windows",
+    "originalYear": 2000,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in repo root gives instructions for Claude Code",
+    "licence": "none",
+    "repo": "https://github.com/facundosterzerforino/legoland",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "facundosterzerforino"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the Windows game Legoland, compiled with the original MSVC 6 toolchain and checked function by function with reccmp, following the LEGO Island decomp approach.",
+    "tags": [
+      "windows",
+      "lego",
+      "msvc",
+      "reccmp"
+    ],
+    "sources": [
+      "https://github.com/facundosterzerforino/legoland"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "kanken-training-2-decomp",
+    "name": "Kanken Training 2 decompilation",
+    "category": "games",
+    "subject": "漢検トレーニング2 (Kanken Training 2)",
+    "originalPlatform": "Nintendo 3DS",
+    "originalYear": 2017,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/mschienbein/kanken-training-2-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mschienbein"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the Japanese 3DS kanji-test study title Kanken Training 2, with a later goal of a native Windows and iPad study app based on the recovered logic.",
+    "tags": [
+      "3ds",
+      "imagineer",
+      "education"
+    ],
+    "sources": [
+      "https://github.com/mschienbein/kanken-training-2-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "thief3-decomp",
+    "name": "T3SDK",
+    "category": "games",
+    "subject": "Thief: Deadly Shadows",
+    "originalPlatform": "Windows",
+    "originalYear": 2004,
+    "method": "matching-decomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in repo root gives instructions for Claude Code",
+    "licence": "MIT",
+    "repo": "https://github.com/Veradictus/Thief3-Decomp",
+    "website": "https://veradictus.github.io/Thief3-Decomp/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Veradictus"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.3.0",
+      "date": "2026-10-23"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Modding SDK for the PC version of Thief: Deadly Shadows that fixes display problems, loads mods into an installed copy and adds Godot map editing, alongside a matching decompilation workbench.",
+    "tags": [
+      "thief",
+      "modding",
+      "ion-storm",
+      "windows"
+    ],
+    "sources": [
+      "https://github.com/Veradictus/Thief3-Decomp",
+      "https://github.com/Veradictus/Thief3-Decomp/releases"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "rugrats-scavenger-hunt-decomp",
+    "name": "Rugrats: Scavenger Hunt decompilation",
+    "category": "games",
+    "subject": "Rugrats: Scavenger Hunt",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1999,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/TheGh0stShip/Rugrats-Scavenger-Hunt",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TheGh0stShip"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Byte-matching C decompilation of the US Rev 0 Nintendo 64 release of Rugrats: Scavenger Hunt, built against a user-supplied ROM.",
+    "tags": [
+      "n64",
+      "rugrats",
+      "thq"
+    ],
+    "sources": [
+      "https://github.com/TheGh0stShip/Rugrats-Scavenger-Hunt"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "madden-64-decomp",
+    "name": "Madden Football 64 decompilation",
+    "category": "games",
+    "subject": "Madden Football 64",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1997,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/TheGh0stShip/Madden-64",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TheGh0stShip"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early-stage matching decompilation of the US Rev 0 Madden Football 64, currently emulating the packed-program loader and byte-verifying recovered translation units.",
+    "tags": [
+      "n64",
+      "madden",
+      "football",
+      "ea-sports"
+    ],
+    "sources": [
+      "https://github.com/TheGh0stShip/Madden-64"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "nagano-winter-olympics-98-decomp",
+    "name": "Nagano Winter Olympics '98 decompilation",
+    "category": "games",
+    "subject": "Nagano Winter Olympics '98",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1997,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "none",
+    "repo": "https://github.com/TheGh0stShip/Nagano-Winter-Olympics-98-N64",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TheGh0stShip"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Byte-matching C decompilation of the US Rev 0 Nintendo 64 release of Nagano Winter Olympics '98, with an audited inventory of ROM contents.",
+    "tags": [
+      "n64",
+      "konami",
+      "sports"
+    ],
+    "sources": [
+      "https://github.com/TheGh0stShip/Nagano-Winter-Olympics-98-N64"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "fate-unlimited-codes-decomp",
+    "name": "Fate/Unlimited Codes decompilation",
+    "category": "games",
+    "subject": "Fate/Unlimited Codes",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2008,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README states much of the source was written with AI assistance",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/Harskov/fate-unlimited-codes-jp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Harskov"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the Japanese PS2 fighting game Fate/Unlimited Codes (SLPM 551.08), with each function accepted only when the pinned toolchain rebuilds the original.",
+    "tags": [
+      "ps2",
+      "fighting",
+      "fate",
+      "capcom"
+    ],
+    "sources": [
+      "https://github.com/Harskov/fate-unlimited-codes-jp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "aletheia-pokemon-black",
+    "name": "Aletheia",
+    "category": "games",
+    "subject": "Pokémon Black Version",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2010,
+    "method": "matching-decomp",
+    "status": "complete",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README states development is assisted by Claude Code under human direction",
+    "licence": "unknown",
+    "repo": "https://github.com/Project-Holon/aletheia",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Project-Holon"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Byte-matching decompilation of Pokémon Black for Nintendo DS with independently written extraction, disassembly and build tooling; reports every code region, overlays included, as fully matched.",
+    "tags": [
+      "nds",
+      "pokemon",
+      "game-freak"
+    ],
+    "sources": [
+      "https://github.com/Project-Holon/aletheia"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "halo-mega-bloks-decompiled",
+    "name": "Halo Mega Bloks (Project Haggar) decompilation",
+    "category": "games",
+    "subject": "Halo Mega Bloks (Project Haggar, cancelled)",
+    "originalPlatform": "Xbox 360",
+    "originalYear": null,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/kirklandsig/halo-mega-bloks-decompiled",
+    "website": "https://kirklandsig.github.io/halo-mega-bloks-decompiled/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "kirklandsig"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of a development build of n-Space's cancelled Unreal Engine 3 Halo Mega Bloks game for Xbox 360, matching its native C++ and scripts as the base for a native PC port.",
+    "tags": [
+      "xbox-360",
+      "halo",
+      "unreal-engine-3",
+      "cancelled"
+    ],
+    "sources": [
+      "https://github.com/kirklandsig/halo-mega-bloks-decompiled"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "future-cop-lapd-decomp",
+    "name": "Future Cop: L.A.P.D. decompilation",
+    "category": "games",
+    "subject": "Future Cop: L.A.P.D.",
+    "originalPlatform": "PlayStation",
+    "originalYear": 1998,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/TheGh0stShip/Future-Cop-L.A.P.D-PS1",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TheGh0stShip"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early byte-matching C reconstruction of the US PlayStation release of Future Cop: L.A.P.D., with the executable fully split and the PSX compiler toolchain pinned.",
+    "tags": [
+      "psx",
+      "ea",
+      "shooter"
+    ],
+    "sources": [
+      "https://github.com/TheGh0stShip/Future-Cop-L.A.P.D-PS1"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "pes6-decomp",
+    "name": "PES6 decompilation",
+    "category": "games",
+    "subject": "Pro Evolution Soccer 6",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2006,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/Subarasheese/pes6decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Subarasheese"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the PAL PS2 executable of Pro Evolution Soccer 6, one verified function per file, with unrecovered regions taken from the user's own executable at link time.",
+    "tags": [
+      "ps2",
+      "football",
+      "konami",
+      "pes"
+    ],
+    "sources": [
+      "https://github.com/Subarasheese/pes6decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "heroes-of-mana-decomp",
+    "name": "Heroes of Mana decompilation",
+    "category": "games",
+    "subject": "Heroes of Mana",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2007,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/heroes-of-mana-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the European Nintendo DS release of Heroes of Mana (AHEP) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "mana",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/heroes-of-mana-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "re-deadly-silence-decomp",
+    "name": "Resident Evil: Deadly Silence decompilation",
+    "category": "games",
+    "subject": "Resident Evil: Deadly Silence",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2006,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/resident-evil-deadly-silence-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US Nintendo DS release of Resident Evil: Deadly Silence (ABHE) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "resident-evil",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/resident-evil-deadly-silence-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "rayman-raving-rabbids-ds-decomp",
+    "name": "Rayman Raving Rabbids decompilation",
+    "category": "games",
+    "subject": "Rayman Raving Rabbids",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2006,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo root give instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/Rayman-RR-usa-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US Nintendo DS release of Rayman Raving Rabbids (AR5E) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "rayman",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/Rayman-RR-usa-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "ultimate-spider-man-ds-decomp",
+    "name": "Ultimate Spider-Man decompilation",
+    "category": "games",
+    "subject": "Ultimate Spider-Man",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2005,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/ultimate-spider-man-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the French Nintendo DS release of Ultimate Spider-Man (AUSF) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "spider-man",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/ultimate-spider-man-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "spyro-shadow-legacy-decomp",
+    "name": "Spyro: Shadow Legacy decompilation",
+    "category": "games",
+    "subject": "Spyro: Shadow Legacy",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2005,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/spyro-shadow-legacy-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US Nintendo DS release of Spyro: Shadow Legacy (ASSE) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "spyro",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/spyro-shadow-legacy-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "spider-man-web-of-shadows-ds-decomp",
+    "name": "Spider-Man: Web of Shadows decompilation",
+    "category": "games",
+    "subject": "Spider-Man: Web of Shadows",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2008,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/spider-man-web-of-shadows-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the European Nintendo DS release of Spider-Man: Web of Shadows (CS5X) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "spider-man",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/spider-man-web-of-shadows-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "simpsons-game-ds-decomp",
+    "name": "The Simpsons Game decompilation",
+    "category": "games",
+    "subject": "The Simpsons Game",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2007,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/simpsons-game-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US Nintendo DS release of The Simpsons Game (YSZE) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "simpsons",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/simpsons-game-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "powerpuff-girls-z-decomp",
+    "name": "The Powerpuff Girls Z decompilation",
+    "category": "games",
+    "subject": "The Powerpuff Girls Z",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": null,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/powerpuff-girls-z-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the Japanese Nintendo DS release of The Powerpuff Girls Z (YPPJ) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "powerpuff-girls",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/powerpuff-girls-z-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "mysims-ds-decomp",
+    "name": "MySims decompilation",
+    "category": "games",
+    "subject": "MySims",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2007,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/mysims-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US Nintendo DS release of MySims (AQIE) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "the-sims",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/mysims-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "livly-garden-decomp",
+    "name": "Livly Garden decompilation",
+    "category": "games",
+    "subject": "Livly Garden",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": null,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/livly-garden-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the Japanese Nintendo DS release of Livly Garden (BLIJ) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "life-sim",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/livly-garden-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "lego-star-wars-ii-ds-decomp",
+    "name": "LEGO Star Wars II: The Original Trilogy decompilation",
+    "category": "games",
+    "subject": "LEGO Star Wars II: The Original Trilogy",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2006,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/lego-star-wars-ii-the-original-trilogy-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US Nintendo DS release of LEGO Star Wars II: The Original Trilogy (AL7E) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "lego",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/lego-star-wars-ii-the-original-trilogy-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "harvest-moon-ds-decomp",
+    "name": "Harvest Moon DS decompilation",
+    "category": "games",
+    "subject": "Harvest Moon DS",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2005,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/harvest-moon-ds-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US Nintendo DS release of Harvest Moon DS (ABCE) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "harvest-moon",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/harvest-moon-ds-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "farm-frenzy-ds-decomp",
+    "name": "Farm Frenzy decompilation",
+    "category": "games",
+    "subject": "Farm Frenzy",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": null,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/farm-frenzy-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US Nintendo DS release of Farm Frenzy (BFZE) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "farming",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/farm-frenzy-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "fairy-tail-madoushi-decomp",
+    "name": "Fairy Tail: Gekitou! Madoushi Kessen decompilation",
+    "category": "games",
+    "subject": "Fairy Tail: Gekitou! Madoushi Kessen",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": null,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/fairy-tail-madoushi-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the Japanese Nintendo DS release of Fairy Tail: Gekitou! Madoushi Kessen (BH6J) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "fairy-tail",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/fairy-tail-madoushi-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "fairy-tail-kardia-decomp",
+    "name": "Fairy Tail: Gekitotsu! Kardia Daiseidou decompilation",
+    "category": "games",
+    "subject": "Fairy Tail: Gekitotsu! Kardia Daiseidou",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": null,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/fairy-tail-kardia-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the Japanese Nintendo DS release of Fairy Tail: Gekitotsu! Kardia Daiseidou (TFTJ) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "fairy-tail",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/fairy-tail-kardia-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "eyeshield-21-decomp",
+    "name": "Eyeshield 21: Max Devil Power! decompilation",
+    "category": "games",
+    "subject": "Eyeshield 21: Max Devil Power!",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2005,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/eyeshield-21-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the Japanese Nintendo DS release of Eyeshield 21: Max Devil Power! (AE4J) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "eyeshield-21",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/eyeshield-21-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "dragon-ball-origins-decomp",
+    "name": "Dragon Ball: Origins decompilation",
+    "category": "games",
+    "subject": "Dragon Ball: Origins",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2008,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/dragon-ball-origins-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the European Nintendo DS release of Dragon Ball: Origins (CDZP) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "dragon-ball",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/dragon-ball-origins-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "cooking-mama-decomp",
+    "name": "Cooking Mama decompilation",
+    "category": "games",
+    "subject": "Cooking Mama",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2006,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/cooking-mama-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US Nintendo DS release of Cooking Mama (ACCE) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "cooking-mama",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/cooking-mama-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "code-lyoko-ds-decomp",
+    "name": "Code Lyoko decompilation",
+    "category": "games",
+    "subject": "Code Lyoko",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2007,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/code-lyoko-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US Nintendo DS release of Code Lyoko (AL5E) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "code-lyoko",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/code-lyoko-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "blue-dragon-awakened-shadow-decomp",
+    "name": "Blue Dragon: Awakened Shadow decompilation",
+    "category": "games",
+    "subject": "Blue Dragon: Awakened Shadow",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2009,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/blue-dragon-awakened-shadow-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the German Nintendo DS release of Blue Dragon: Awakened Shadow (YBUD) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "blue-dragon",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/blue-dragon-awakened-shadow-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "nintendogs-dachshund-decomp",
+    "name": "Nintendogs: Dachshund & Friends decompilation",
+    "category": "games",
+    "subject": "Nintendogs: Dachshund & Friends",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2005,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/liolu/nintendogs-dachshund-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "liolu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US Nintendo DS release of Nintendogs: Dachshund & Friends (ADGE) using the DS Decomp Studio setup and Metrowerks mwccarm; much of the matched code is still raw m2c output awaiting cleanup.",
+    "tags": [
+      "nds",
+      "nintendogs",
+      "ds-decomp-studio"
+    ],
+    "sources": [
+      "https://github.com/liolu/nintendogs-dachshund-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "the-last-story-decomp",
+    "name": "The Last Story decompilation",
+    "category": "games",
+    "subject": "The Last Story",
+    "originalPlatform": "Wii",
+    "originalYear": 2011,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in repo root gives instructions for Claude Code",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/TheSoraHD/TheLastStoryDecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TheSoraHD"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of the PAL Wii release of Mistwalker's The Last Story, set up on the decomp-toolkit template for GameCube and Wii projects.",
+    "tags": [
+      "wii",
+      "mistwalker",
+      "rpg",
+      "decomp-toolkit"
+    ],
+    "sources": [
+      "https://github.com/TheSoraHD/TheLastStoryDecomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "battletanx-decomp",
+    "name": "BattleTanx decompilation",
+    "category": "games",
+    "subject": "BattleTanx",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1998,
+    "method": "matching-decomp",
+    "status": "complete",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/TheGh0stShip/BattleTanx",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TheGh0stShip"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Completed matching decompilation of the US Rev 0 Nintendo 64 release of BattleTanx, with all catalogued functions, initialized data and the asset region accounted for.",
+    "tags": [
+      "n64",
+      "3do",
+      "tanks"
+    ],
+    "sources": [
+      "https://github.com/TheGh0stShip/BattleTanx"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "battletanx-gbc-disasm",
+    "name": "BattleTanx (Game Boy Color) disassembly",
+    "category": "games",
+    "subject": "BattleTanx",
+    "originalPlatform": "Game Boy Color",
+    "originalYear": 2000,
+    "method": "matching-decomp",
+    "status": "complete",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/TheGh0stShip/BattleTanx-GBC",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TheGh0stShip"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Byte-exact annotated RGBDS disassembly of the US Game Boy Color version of BattleTanx, rebuilding the whole cartridge from source with every function named.",
+    "tags": [
+      "gbc",
+      "rgbds",
+      "disassembly",
+      "3do"
+    ],
+    "sources": [
+      "https://github.com/TheGh0stShip/BattleTanx-GBC"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "1080-decomp",
+    "name": "1080 Snowboarding decompilation",
+    "category": "games",
+    "subject": "1080° Snowboarding",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1998,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says the decompilation is mostly driven by Claude",
+    "licence": "none",
+    "repo": "https://github.com/djsaunde/1080-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "djsaunde"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US Nintendo 64 release of 1080° Snowboarding; the build already reproduces the ROM exactly while overlay segments are decompiled to C.",
+    "tags": [
+      "n64",
+      "nintendo",
+      "snowboarding"
+    ],
+    "sources": [
+      "https://github.com/djsaunde/1080-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "mlss-johnsoellner-decomp",
+    "name": "Mario & Luigi: Superstar Saga decompilation",
+    "category": "games",
+    "subject": "Mario & Luigi: Superstar Saga",
+    "originalPlatform": "Game Boy Advance",
+    "originalYear": 2003,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README states most of the C code was written with help from AI models (Claude)",
+    "licence": "none",
+    "repo": "https://github.com/JohnSoellnerDev/mlss-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "JohnSoellnerDev"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the European GBA release of Mario & Luigi: Superstar Saga, compiled with agbcc to a byte-identical ROM.",
+    "tags": [
+      "gba",
+      "mario",
+      "alphadream",
+      "rpg"
+    ],
+    "sources": [
+      "https://github.com/JohnSoellnerDev/mlss-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "rac5-sm-decomp",
+    "name": "Ratchet & Clank: Size Matters (PS2) decompilation",
+    "category": "games",
+    "subject": "Ratchet & Clank: Size Matters",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2008,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root gives instructions for AI coding agents",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/OpenRAC/rac5-sm-decomp",
+    "website": "https://openrac.dev/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "OpenRAC"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "OpenRAC matching decompilation workspace for the US PS2 port of Ratchet & Clank: Size Matters, rebuilding the disc programs from C and assembly.",
+    "tags": [
+      "ps2",
+      "ratchet-and-clank",
+      "high-impact-games",
+      "openrac"
+    ],
+    "sources": [
+      "https://github.com/OpenRAC/rac5-sm-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "pokeheartgold-slop",
+    "name": "pokeheartgold-slop",
+    "category": "games",
+    "subject": "Pokémon HeartGold and SoulSilver",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2009,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README calls it an LLM-assisted fork whose additions are written with LLM agents; CLAUDE.md in repo",
+    "licence": "none",
+    "repo": "https://github.com/antonsynd/pokeheartgold-slop",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "antonsynd"
+    ],
+    "started": "2026-04",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Unofficial fork of pret's HeartGold/SoulSilver decompilation where the remaining functions are matched with LLM agents, aiming at a byte-identical US ROM.",
+    "tags": [
+      "nds",
+      "pokemon",
+      "fork"
+    ],
+    "sources": [
+      "https://github.com/antonsynd/pokeheartgold-slop"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "rac3-decomp",
+    "name": "Ratchet & Clank 3 Decompilation",
+    "category": "games",
+    "subject": "Ratchet & Clank: Up Your Arsenal",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2004,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo root describes agent workflow",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/OpenRAC/rac3-decomp",
+    "website": "https://openrac.dev/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "OpenRAC"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of Ratchet & Clank 3 covering the PAL and NTSC-U discs from one source tree, part of the OpenRAC effort.",
+    "tags": [
+      "ps2",
+      "ratchet-and-clank",
+      "openrac"
+    ],
+    "sources": [
+      "https://github.com/OpenRAC/rac3-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "battletanx-global-assault-ps1-decomp",
+    "name": "BattleTanx: Global Assault (PlayStation)",
+    "category": "games",
+    "subject": "BattleTanx: Global Assault",
+    "originalPlatform": "PlayStation",
+    "originalYear": 1999,
+    "method": "matching-decomp",
+    "status": "complete",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/TheGh0stShip/BattleTanx-Global-Assault-PS1",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TheGh0stShip"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US PlayStation release of BattleTanx: Global Assault that rebuilds the retail executable, with decoders for the game's asset formats.",
+    "tags": [
+      "ps1",
+      "battletanx",
+      "asset-tools"
+    ],
+    "sources": [
+      "https://github.com/TheGh0stShip/BattleTanx-Global-Assault-PS1"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "crash-bandicoot-xs-decomp",
+    "name": "Crash Bandicoot XS",
+    "category": "games",
+    "subject": "Crash Bandicoot XS (The Huge Adventure)",
+    "originalPlatform": "Game Boy Advance",
+    "originalYear": 2002,
+    "method": "matching-decomp",
+    "status": "complete",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README section \"AI-assisted decompilation\" says much of the work was done with Claude Code under human review",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Almamu/CrashBandicootXS-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Almamu"
+    ],
+    "started": "2025-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the Vicarious Visions GBA game Crash Bandicoot XS / The Huge Adventure that rebuilds the retail ROM, with mod build support.",
+    "tags": [
+      "gba",
+      "crash-bandicoot",
+      "mods"
+    ],
+    "sources": [
+      "https://github.com/Almamu/CrashBandicootXS-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "stretch-panic-decomp",
+    "name": "Stretch Panic",
+    "category": "games",
+    "subject": "Stretch Panic",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2001,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says much of the source was written with AI assistance",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/Harskov/stretch-panic-usa",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Harskov"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of Treasure's Stretch Panic that rebuilds the US, European (Freak Out) and Japanese (Hippa Linda) executables from one source.",
+    "tags": [
+      "ps2",
+      "treasure",
+      "multi-region"
+    ],
+    "sources": [
+      "https://github.com/Harskov/stretch-panic-usa"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "shox-rr-decomp",
+    "name": "Shox: Rally Reinvented PS2 Decompilation",
+    "category": "games",
+    "subject": "Shox: Rally Reinvented",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2002,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root describes agent workflow",
+    "licence": "MIT",
+    "repo": "https://github.com/cblackler19/shox-rr-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "cblackler19"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early byte-matching C++ decompilation of the PS2 rally game Shox using the SN Systems compiler; the .text section already rebuilds from assembly.",
+    "tags": [
+      "ps2",
+      "racing",
+      "cpp"
+    ],
+    "sources": [
+      "https://github.com/cblackler19/shox-rr-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "redakai-vs-lokar-decomp",
+    "name": "Redakai vs Lokar",
+    "category": "games",
+    "subject": "Redakai vs Lokar",
+    "originalPlatform": "Web (Flash)",
+    "originalYear": null,
+    "method": "matching-decomp",
+    "status": "complete",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says much of the source was written with AI assistance",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/Harskov/redakai-vs-lokar-flash",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Harskov"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of the Flash game Redakai vs Lokar into ActionScript source that rebuilds the original SWF exactly; no game assets are included.",
+    "tags": [
+      "flash",
+      "actionscript",
+      "preservation"
+    ],
+    "sources": [
+      "https://github.com/Harskov/redakai-vs-lokar-flash"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "syphon-filter-omega-strain-decomp",
+    "name": "Syphon Filter: The Omega Strain decompilation",
+    "category": "games",
+    "subject": "Syphon Filter: The Omega Strain",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2004,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/zm2283145/syphon-filter-omega-strain-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "zm2283145"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the NTSC-U PS2 executable of Syphon Filter: The Omega Strain, with all game-derived files generated locally.",
+    "tags": [
+      "ps2",
+      "syphon-filter"
+    ],
+    "sources": [
+      "https://github.com/zm2283145/syphon-filter-omega-strain-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "shiren2-decomp",
+    "name": "Shiren the Wanderer 2 (N64) decompilation",
+    "category": "games",
+    "subject": "Fushigi no Dungeon: Fūrai no Shiren 2",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 2000,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/mschienbein/shiren2-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mschienbein"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the Japanese N64 roguelike Fūrai no Shiren 2 targeting a byte-identical ROM built with the original compilers.",
+    "tags": [
+      "n64",
+      "shiren",
+      "roguelike"
+    ],
+    "sources": [
+      "https://github.com/mschienbein/shiren2-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "mmx6-decomp",
+    "name": "mmx6",
+    "category": "games",
+    "subject": "Mega Man X6",
+    "originalPlatform": "PlayStation",
+    "originalYear": 2001,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README AI policy: \"Humans drive the decisions. AI reads and writes the code.\"",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/anzaldoivan/mmx6",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "anzaldoivan"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the USA v1.1 PlayStation release of Mega Man X6, rebuilding the boot executable and the code overlays byte for byte.",
+    "tags": [
+      "ps1",
+      "mega-man",
+      "capcom"
+    ],
+    "sources": [
+      "https://github.com/anzaldoivan/mmx6"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "kfiv-decomp",
+    "name": "kfiv-decomp",
+    "category": "games",
+    "subject": "King's Field: The Ancient City",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2001,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/Voicedrew11/kfiv-decomp",
+    "website": "https://voicedrew11.github.io/kfiv-decomp/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Voicedrew11"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US PS2 release of FromSoftware's King's Field IV; the image rebuilds exactly, with SDK code in C and game code still mostly assembly.",
+    "tags": [
+      "ps2",
+      "kings-field",
+      "fromsoftware"
+    ],
+    "sources": [
+      "https://github.com/Voicedrew11/kfiv-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "lemball-decomp",
+    "name": "Lemmings Paintball Decompilation",
+    "category": "games",
+    "subject": "Lemmings Paintball",
+    "originalPlatform": "Windows",
+    "originalYear": 1996,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root describes agent workflow",
+    "licence": "Unlicense",
+    "repo": "https://github.com/vonhoff/lemball-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "vonhoff"
+    ],
+    "started": "2026-07",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching C++ decompilation of the 1996 Windows 95 game Lemmings Paintball built with Visual C++ 4.0, meant as a base for later ports.",
+    "tags": [
+      "windows",
+      "lemmings",
+      "msvc"
+    ],
+    "sources": [
+      "https://github.com/vonhoff/lemball-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "legaia2-decomp",
+    "name": "Legaia 2: Duel Saga decompilation",
+    "category": "games",
+    "subject": "Legaia 2: Duel Saga",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2001,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says it is being decompiled with Ghidra and Claude Code",
+    "licence": "none",
+    "repo": "https://github.com/WeAreTommyBruh/Legaia2-Decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "WeAreTommyBruh"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early decompilation of the PAL PS2 release of Legaia 2: Duel Saga with rebuild and progress tooling around the original ee-gcc compiler.",
+    "tags": [
+      "ps2",
+      "rpg",
+      "legaia"
+    ],
+    "sources": [
+      "https://github.com/WeAreTommyBruh/Legaia2-Decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "dino-crisis-2-decomp",
+    "name": "Dino Crisis 2 Decompilation",
+    "category": "games",
+    "subject": "Dino Crisis 2",
+    "originalPlatform": "PlayStation",
+    "originalYear": 2000,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README AI policy: \"Humans drive the decisions. AI reads and writes the code.\"",
+    "licence": "MIT",
+    "repo": "https://github.com/anzaldoivan/dino-crisis-2-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "anzaldoivan"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US PlayStation release of Dino Crisis 2 that rebuilds the executable and its 82 code overlays, checked by hash.",
+    "tags": [
+      "ps1",
+      "dino-crisis",
+      "capcom"
+    ],
+    "sources": [
+      "https://github.com/anzaldoivan/dino-crisis-2-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "armored-core-decomp",
+    "name": "Armored Core Decompilation",
+    "category": "games",
+    "subject": "Armored Core",
+    "originalPlatform": "PlayStation",
+    "originalYear": 1997,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/Wyrelade/Armored-Core-Decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Wyrelade"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US PlayStation release of FromSoftware's Armored Core, covering the main executable plus program and mission overlays.",
+    "tags": [
+      "ps1",
+      "armored-core",
+      "fromsoftware"
+    ],
+    "sources": [
+      "https://github.com/Wyrelade/Armored-Core-Decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "shadow-the-hedgehog-decomp",
+    "name": "Shadow the Hedgehog",
+    "category": "games",
+    "subject": "Shadow the Hedgehog",
+    "originalPlatform": "GameCube",
+    "originalYear": 2005,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README \"AI Use Disclosure\" says LLM tools assist analysis, code and docs",
+    "licence": "none",
+    "repo": "https://github.com/dev-camo/shadow-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "dev-camo"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Work-in-progress dtk-based decompilation of the GameCube release of Shadow the Hedgehog, supporting the US, Japanese and European revisions.",
+    "tags": [
+      "gamecube",
+      "sonic",
+      "dtk"
+    ],
+    "sources": [
+      "https://github.com/dev-camo/shadow-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "alpha-sapphire-decomp",
+    "name": "Pokémon Alpha Sapphire matching decompilation",
+    "category": "games",
+    "subject": "Pokémon Alpha Sapphire",
+    "originalPlatform": "Nintendo 3DS",
+    "originalYear": 2014,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/ImLunaHey/alpha-sapphire-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ImLunaHey"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early matching decompilation of the European revision 2 of Pokémon Alpha Sapphire, with a function inventory and JavaScript-based checking tools.",
+    "tags": [
+      "3ds",
+      "pokemon"
+    ],
+    "sources": [
+      "https://github.com/ImLunaHey/alpha-sapphire-recomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "mm9decomp",
+    "name": "Mega Man 9 matching decompilation",
+    "category": "games",
+    "subject": "Mega Man 9",
+    "originalPlatform": "Wii",
+    "originalYear": 2008,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/arceuss/mm9decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "arceuss"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US WiiWare release of Mega Man 9 on decomp-toolkit, linking matched functions into a byte-identical DOL.",
+    "tags": [
+      "wii",
+      "wiiware",
+      "mega-man"
+    ],
+    "sources": [
+      "https://github.com/arceuss/mm9decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "sotc-decomp-nathanfahey23",
+    "name": "Shadow of the Colossus (Decompilation)",
+    "category": "games",
+    "subject": "Shadow of the Colossus",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2005,
+    "method": "matching-decomp",
+    "status": "archived",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root describes agent workflow",
+    "licence": "none",
+    "repo": "https://github.com/NathanFahey23/Shadow-of-the-Colossus-Decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "NathanFahey23"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching C decompilation of the NTSC-U PS2 release of Shadow of the Colossus, started with decomp.wtf; the repository is archived.",
+    "tags": [
+      "ps2",
+      "shadow-of-the-colossus"
+    ],
+    "sources": [
+      "https://github.com/NathanFahey23/Shadow-of-the-Colossus-Decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "ragewars-decomp",
+    "name": "Turok: Rage Wars decompilation",
+    "category": "games",
+    "subject": "Turok: Rage Wars",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1999,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/AbuN64/ragewars-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "AbuN64"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of Turok: Rage Wars for the N64 covering German, European, US and US Rev 1 cartridges, verified by SHA-256.",
+    "tags": [
+      "n64",
+      "turok",
+      "multi-region"
+    ],
+    "sources": [
+      "https://github.com/AbuN64/ragewars-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "bokura-no-kazoku-decomp",
+    "name": "Bokura no Kazoku decomp",
+    "category": "games",
+    "subject": "Bokura no Kazoku",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2005,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/conor-sometimes/bokura-no-kazoku-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "conor-sometimes"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the Japanese PS2 family life sim Bokura no Kazoku, with C++ classes recovered from vtables and RTTI.",
+    "tags": [
+      "ps2",
+      "japan",
+      "cpp"
+    ],
+    "sources": [
+      "https://github.com/conor-sometimes/bokura-no-kazoku-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "battletanx-n64-decomp",
+    "name": "BattleTanx decompilation",
+    "category": "games",
+    "subject": "BattleTanx",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1998,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/AbuN64/battletanx-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "AbuN64"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early matching decompilation of the North American N64 release of BattleTanx, verified against the cartridge by SHA-256.",
+    "tags": [
+      "n64",
+      "battletanx"
+    ],
+    "sources": [
+      "https://github.com/AbuN64/battletanx-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "nd-blackmoor-decomp",
+    "name": "Blackmoor reconstruction project",
+    "category": "games",
+    "subject": "Nancy Drew: Curse of Blackmoor Manor",
+    "originalPlatform": "Windows",
+    "originalYear": 2004,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root describes agent workflow",
+    "licence": "none",
+    "repo": "https://github.com/albovsky/nd-blackmoor-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "albovsky"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Source reconstruction of the GAME.EXE of Nancy Drew: Curse of Blackmoor Manor, combining x86 matching with a native C build and an ARM64 macOS port.",
+    "tags": [
+      "windows",
+      "nancy-drew",
+      "adventure"
+    ],
+    "sources": [
+      "https://github.com/albovsky/nd-blackmoor-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "moto-racer-world-tour-decomp",
+    "name": "Moto Racer World Tour reverse engineering",
+    "category": "games",
+    "subject": "Moto Racer World Tour",
+    "originalPlatform": "PlayStation",
+    "originalYear": 2000,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README section \"AI-assisted decompilation\" says much of the work was done with Claude Code under human review",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Almamu/MotoRacerWorldTour-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Almamu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Reverse engineering of the PAL PlayStation release of Moto Racer World Tour: disc layout, archive and file formats, plus a matching decompilation of both executables.",
+    "tags": [
+      "ps1",
+      "racing",
+      "formats"
+    ],
+    "sources": [
+      "https://github.com/Almamu/MotoRacerWorldTour-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "hwde-decomp",
+    "name": "Hyrule Warriors: Definitive Edition decompilation",
+    "category": "games",
+    "subject": "Hyrule Warriors: Definitive Edition",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2018,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README says the decomp is entirely handled by Claude Opus 5.5 and the owner is not a programmer",
+    "licence": "none",
+    "repo": "https://github.com/MusohSlop/HWDE-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "MusohSlop"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching C++ decompilation of the update 1.0.1 main module of Hyrule Warriors: Definitive Edition, shipped without game files or keys.",
+    "tags": [
+      "switch",
+      "zelda",
+      "koei-tecmo"
+    ],
+    "sources": [
+      "https://github.com/MusohSlop/HWDE-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "battletanx-global-assault-decomp",
+    "name": "BattleTanx: Global Assault matching decompilation",
+    "category": "games",
+    "subject": "BattleTanx: Global Assault",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1999,
+    "method": "matching-decomp",
+    "status": "complete",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/TheGh0stShip/BattleTanx-Global-Assault",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TheGh0stShip"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US N64 release of BattleTanx: Global Assault that rebuilds all catalogued functions and data, used as the base for a native PC port.",
+    "tags": [
+      "n64",
+      "battletanx"
+    ],
+    "sources": [
+      "https://github.com/TheGh0stShip/BattleTanx-Global-Assault"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "wild9-decomp",
+    "name": "Wild 9 Decompilation",
+    "category": "games",
+    "subject": "Wild 9",
+    "originalPlatform": "PlayStation",
+    "originalYear": 1998,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/plinkr/Wild9-Decompilation",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "plinkr"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the NTSC-U PlayStation executable of Wild 9 using a reproducible GCC 2.8.1 PSX toolchain.",
+    "tags": [
+      "ps1",
+      "shiny",
+      "platformer"
+    ],
+    "sources": [
+      "https://github.com/plinkr/Wild9-Decompilation"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "battletanx-global-assault-pc-port",
+    "name": "BattleTanx: Global Assault native PC port",
+    "category": "games",
+    "subject": "BattleTanx: Global Assault",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1999,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/TheGh0stShip/BattleTanx-Global-Assault-PC-Port",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TheGh0stShip"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.2.5",
+      "date": "2026-10-13"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native Windows and Linux port of BattleTanx: Global Assault built from its matching decompilation with N64Recomp, RT64 and SDL2.",
+    "tags": [
+      "n64",
+      "battletanx",
+      "n64recomp",
+      "port"
+    ],
+    "sources": [
+      "https://github.com/TheGh0stShip/BattleTanx-Global-Assault-PC-Port",
+      "https://github.com/TheGh0stShip/BattleTanx-Global-Assault-PC-Port/releases"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "mmx5-decomp",
+    "name": "mmx5",
+    "category": "games",
+    "subject": "Mega Man X5",
+    "originalPlatform": "PlayStation",
+    "originalYear": 2000,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README AI policy: \"Humans drive the decisions. AI reads and writes the code.\"",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/anzaldoivan/mmx5",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "anzaldoivan"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early matching decompilation of the US PlayStation release of Mega Man X5, rebuilding the boot executable and code overlays byte for byte.",
+    "tags": [
+      "ps1",
+      "mega-man",
+      "capcom"
+    ],
+    "sources": [
+      "https://github.com/anzaldoivan/mmx5"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "nascar-heat-2002-gba-decomp",
+    "name": "NASCAR Heat 2002",
+    "category": "games",
+    "subject": "NASCAR Heat 2002",
+    "originalPlatform": "Game Boy Advance",
+    "originalYear": 2001,
+    "method": "matching-decomp",
+    "status": "complete",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in repo root describes agent workflow",
+    "licence": "none",
+    "repo": "https://github.com/shohamc1/heat2002",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "shohamc1"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US GBA release of NASCAR Heat 2002 that rebuilds the retail ROM, plus an SDL2 desktop port.",
+    "tags": [
+      "gba",
+      "nascar",
+      "racing",
+      "port"
+    ],
+    "sources": [
+      "https://github.com/shohamc1/heat2002"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "tww-snrubrm",
+    "name": "The Wind Waker (snrubrm fork)",
+    "category": "games",
+    "subject": "The Legend of Zelda: The Wind Waker",
+    "originalPlatform": "GameCube",
+    "originalYear": 2002,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says this fork tests AI-assisted decompilation of the remaining functions",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/snrubrm/tww",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "snrubrm"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Personal fork of the zeldaret Wind Waker decompilation used to try finishing its remaining functions with AI assistance; not submitted upstream.",
+    "tags": [
+      "gamecube",
+      "zelda",
+      "fork"
+    ],
+    "sources": [
+      "https://github.com/snrubrm/tww"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "botw-snrubrm",
+    "name": "Breath of the Wild (snrubrm fork)",
+    "category": "games",
+    "subject": "The Legend of Zelda: Breath of the Wild",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2017,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says the fork tests AI-assisted decompilation; CLAUDE.md and AGENTS.md in repo",
+    "licence": "none",
+    "repo": "https://github.com/snrubrm/botw",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "snrubrm"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Personal fork of the zeldaret Breath of the Wild v1.5.0 decompilation used to try AI-assisted decompilation of the rest of the game; not submitted upstream.",
+    "tags": [
+      "switch",
+      "zelda",
+      "fork"
+    ],
+    "sources": [
+      "https://github.com/snrubrm/botw"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "conquest-frontier-wars-restoration",
+    "name": "Conquest: Frontier Wars — Retail Restoration",
+    "category": "games",
+    "subject": "Conquest: Frontier Wars",
+    "originalPlatform": "Windows",
+    "originalYear": 2001,
+    "method": "source-port",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2022-12, predates common AI coding tools (GitHub)",
+    "licence": "none",
+    "repo": "https://github.com/Revan67/ConquestFWR",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Revan67"
+    ],
+    "started": "2022-12",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Rebuild of the officially released Conquest: Frontier Wars development source for Visual Studio 2022, restoring retail behaviour before modernising the renderer.",
+    "tags": [
+      "windows",
+      "rts",
+      "source-release"
+    ],
+    "sources": [
+      "https://github.com/Revan67/ConquestFWR"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "kya-decomp",
+    "name": "Kya: Dark Lineage Decompilation",
+    "category": "games",
+    "subject": "Kya: Dark Lineage",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2003,
+    "method": "non-matching-decomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in repo root describes agent workflow",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Icey1717/Kya",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Icey1717"
+    ],
+    "started": "2023-01",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "playable",
+      "date": "2026-07-25"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Decompilation of the PS2 action platformer Kya: Dark Lineage with a PC runtime in port/, alongside companion tools for its bank archives.",
+    "tags": [
+      "ps2",
+      "kya",
+      "port"
+    ],
+    "sources": [
+      "https://github.com/Icey1717/Kya",
+      "https://github.com/Icey1717/Kya/releases"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "mh2-decomp",
+    "name": "Monster Hunter 2 (Dos) decompilation",
+    "category": "games",
+    "subject": "Monster Hunter 2 (Dos)",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2006,
+    "method": "matching-decomp",
+    "status": "complete",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README \"Made with AI\" says Claude did the work in Claude Code, directed by the owner",
+    "licence": "none",
+    "repo": "https://github.com/Batenkaitos-dev/mh2-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Batenkaitos-dev"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of Capcom's own code in the Japanese PS2 Monster Hunter 2 (Dos), rebuilding the boot executable and 12 overlays; licensed middleware is not decompiled.",
+    "tags": [
+      "ps2",
+      "monster-hunter",
+      "capcom"
+    ],
+    "sources": [
+      "https://github.com/Batenkaitos-dev/mh2-decomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "ridge-racer-psp-decomp",
+    "name": "Ridge Racer (PSP): decompilation",
+    "category": "games",
+    "subject": "Ridge Racer",
+    "originalPlatform": "PlayStation Portable",
+    "originalYear": 2004,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/jeff-strutb/ridgeracerpsp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jeff-strutb",
+      "Jeffrey Wilbur"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Byte-exact decompilation of the PSP launch title Ridge Racer, with a per-function grader and a rebuilt boot executable identical to retail.",
+    "tags": [
+      "psp",
+      "ridge-racer",
+      "namco"
+    ],
+    "sources": [
+      "https://github.com/jeff-strutb/ridgeracerpsp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "stunt-race-fx-decomp",
+    "name": "Stunt Race FX decompilation",
+    "category": "games",
+    "subject": "Stunt Race FX",
+    "originalPlatform": "SNES",
+    "originalYear": 1994,
+    "method": "matching-decomp",
+    "status": "complete",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/jeff-strutb/stuntracefx",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jeff-strutb"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Complete decompilation of the Super FX game Stunt Race FX into C that matches the original byte for byte and cycle for cycle on the S-CPU, Super FX and sound CPU.",
+    "tags": [
+      "snes",
+      "super-fx",
+      "cycle-exact"
+    ],
+    "sources": [
+      "https://github.com/jeff-strutb/stuntracefx"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "brally-decomp",
+    "name": "Boss Rally / Top Gear Rally decompilation",
+    "category": "games",
+    "subject": "Top Gear Rally / Boss Rally",
+    "originalPlatform": "Multi",
+    "originalYear": 1997,
+    "method": "matching-decomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/jeff-strutb/brally",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jeff-strutb"
+    ],
+    "started": "2026-08",
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "v0.89",
+      "date": "2026-10-22"
+    },
+    "targets": [
+      "Windows",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Byte-exact decompilation of the N64 Top Gear Rally and its PC sibling Boss Rally, with a Rally Builder app that makes native builds from your own copy.",
+    "tags": [
+      "n64",
+      "windows",
+      "racing",
+      "port"
+    ],
+    "sources": [
+      "https://github.com/jeff-strutb/brally",
+      "https://github.com/jeff-strutb/brally/releases"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "urbz-gc-decomp",
+    "name": "The Urbz GameCube decompilation",
+    "category": "games",
+    "subject": "The Urbz: Sims in the City",
+    "originalPlatform": "GameCube",
+    "originalYear": 2004,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/samtaylorr/urbz-sims-decomp-gc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "samtaylorr"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early dtk-template decompilation of the US GameCube release of The Urbz: Sims in the City that rebuilds main.dol against your own copy.",
+    "tags": [
+      "gamecube",
+      "sims",
+      "dtk"
+    ],
+    "sources": [
+      "https://github.com/samtaylorr/urbz-sims-decomp-gc"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "vt3-port",
+    "name": "Virtua Tennis 3 Port",
+    "category": "games",
+    "subject": "Virtua Tennis 3",
+    "originalPlatform": "Windows",
+    "originalYear": 2007,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/hjcoggan/vt3-port",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "hjcoggan"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Android",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of the European PC release of Virtua Tennis 3 into native code for Android and Apple Silicon Macs, built locally from your own executable.",
+    "tags": [
+      "windows",
+      "sega",
+      "android",
+      "static-recomp"
+    ],
+    "sources": [
+      "https://github.com/hjcoggan/vt3-port"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "white-knight-chronicles-2-recomp",
+    "name": "White Knight Chronicles II Recomp",
+    "category": "games",
+    "subject": "White Knight Chronicles II",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2010,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/WK2D/White-Knight-Chronicles-2-Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "WK2D"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native C++ port of White Knight Chronicles II by recompiling the PS3 code, starting with the first game on the same disc; boots to the first town on Windows.",
+    "tags": [
+      "ps3",
+      "static-recomp",
+      "rpg",
+      "vulkan"
+    ],
+    "sources": [
+      "https://github.com/WK2D/White-Knight-Chronicles-2-Recomp"
+    ],
+    "checked": "2026-10-23"
+  },
+  {
+    "slug": "indiana-jones-infernal-machine-n64-decomp",
+    "name": "Indiana Jones and the Infernal Machine decompilation",
+    "category": "games",
+    "subject": "Indiana Jones and the Infernal Machine",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 2000,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/dreamsailing59-ops/ijatim",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "dreamsailing59-ops"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early matching decompilation of the Nintendo 64 version of Indiana Jones and the Infernal Machine, set up with splat and objdiff; builds against your own cartridge dump.",
+    "tags": [
+      "n64",
+      "indiana-jones",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/dreamsailing59-ops/ijatim",
+      "https://bytematch.dev/dreamsailing59-ops/ijatim"
+    ],
+    "checked": "2026-10-23"
   }
 ]
