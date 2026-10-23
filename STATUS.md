@@ -91,5 +91,8 @@ Owner's own logged-in Chrome, read-only, human pace, only when a sweep is starte
 - Leads: `.cache/progress-unmatched.txt` after each run lists ByteMatch projects not in the catalogue (the rest are deliberate rejects) -> harvest -> enrich -> write-up (BRIEF, paths now E:) -> merge-new.
 - Checked 2026-10-23: the Actions `github.token` CAN download other public repos' artifacts (HTTP 200 via a throwaway workflow), so CI needs no extra secret. nightly.link refuses these artifacts, don't use it.
 
-## Next session (owner, 2026-10-22, done 2026-10-23: see Progress tracker)
+## Next session (owner, 2026-10-23)
+Use Google Analytics (GA4 property p558977824, read through the owner's Chrome) to understand how people use the site, then propose changes for retention, growth and traffic. Baselines and the tracked events (play_click, download_click, repo_click, correction_click; no key events marked yet) are in the "Live" notes above. Measure what /progress/ (launched 2026-10-23) brings.
+
+## Previous next-session (owner, 2026-10-22, done 2026-10-23: see Progress tracker)
 Build the most comprehensive public decomp/recomp progress tracker (bytematch/decomp.dev-style, tracking everything): progress sources per entry (objdiff report.json, progress JSON, badges), daily progress snapshots, % bars, progress charts, movers board, milestones. decomp.dev is sunsetting.
