@@ -9,7 +9,7 @@ export function GET() {
     '## Key pages',
     '- [Recompiled games list](https://recompsoftware.com/recompiled-games-list/): every static recomp PC port',
     '- [Decompiled games list](https://recompsoftware.com/decompiled-games-list/): every game decompilation',
-    '- [Decomp progress tracker](https://recompsoftware.com/progress/): matched-code % for each decomp, with history',
+    '- [Project tracker](https://recompsoftware.com/progress/): searchable matched-code % for every decomp, with movers and milestones',
     '- [Platforms](https://recompsoftware.com/platforms/): full lists of decomps, recomps and PC ports per console',
     '- [Play in browser](https://recompsoftware.com/play/): builds that run in a web page',
     '- [New releases (RSS)](https://recompsoftware.com/releases.xml)',

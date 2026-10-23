@@ -1,124 +1,229 @@
 ---
 import Base from '../layouts/Base.astro';
-import PageHead from '../components/PageHead.astro';
-import ProgressBar from '../components/ProgressBar.astro';
-import ProgressBoard from '../components/ProgressBoard.astro';
 import {
-  tracked, progressFor, progressDelta, progressDate, milestones, movers, fmtNum, formatDate, slugify, shortName,
-  METHOD_LABEL, PROVENANCE_LABEL, PROGRESS_SOURCE_LABEL,
+  tracked, progressFor, progressDelta, progressDate, milestones, movers, fmtNum, formatDate, shortName,
+  PROVENANCE_LABEL, PROGRESS_SOURCE_LABEL,
 } from '../lib/data';
 
-const all = tracked().map((p) => ({ p, pr: progressFor(p)! }));
-const ranked = all.filter((x) => x.pr.ranked).map((x) => x.p);
+const all = tracked().map((p) => ({ p, pr: progressFor(p)!, d30: progressDelta(p, 30) }));
+const ranked = all.filter((x) => x.pr.ranked);
 const fns = all.reduce((a, x) => a + (x.pr.matchedFns ?? 0), 0);
 const done = all.filter((x) => x.pr.pct >= 99.995).length;
-const week = movers(7);
-const month = movers(30);
-const marks = milestones(24);
-const platforms = [...new Set(ranked.map((p) => p.originalPlatform))]
-  .map((pl) => ({ pl, list: ranked.filter((p) => p.originalPlatform === pl) }))
-  .filter((x) => x.list.length >= 2).sort((a, b) => b.list.length - a.list.length);
+// Movers and milestones only list projects that opted into a public tracker (owner rule).
+const week = movers(7, 8);
+const month = movers(30, 8);
+const marks = milestones(8);
+const platforms = [...new Set(all.map((x) => x.p.originalPlatform))]
+  .map((pl) => ({ pl, n: all.filter((x) => x.p.originalPlatform === pl).length }))
+  .sort((a, b) => b.n - a.n);
 const bySource = Object.entries(all.reduce<Record<string, number>>((a, x) => ((a[x.pr.source] = (a[x.pr.source] ?? 0) + 1), a), {}))
   .sort((a, b) => b[1] - a[1]);
-const rows = [...all].sort((a, b) => b.pr.pct - a.pr.pct || a.p.name.localeCompare(b.p.name));
+const rows = [...all].sort((a, b) => b.pr.pct - a.pr.pct || (b.pr.totalFns ?? 0) - (a.pr.totalFns ?? 0));
 const date = progressDate();
+const pctText = (n: number) => (n >= 99.995 ? '100' : n.toFixed(n < 10 ? 1 : 0));
+const provClass = { 'human-led': 'ok', 'ai-assisted': 'warn', 'ai-generated': 'bad', unknown: '' } as const;
+const FIRST = 48; // tiles shown before "Show all"
 ---
-<Base title="Decomp progress tracker: every decompilation, matched %" description={`Live matched-code progress for ${all.length} decompilation projects across every platform: % bars, history charts, biggest movers and milestones, refreshed daily from ByteMatch, decomp.dev, frogress and the projects' own reports.`}>
-  <PageHead kicker="Progress tracker" title="How far along is every decomp?"
-    lede={`Matched code for ${all.length} decompilation projects, refreshed daily${date ? ` (last ${formatDate(date)})` : ''}. ${ranked.length} of them opted into public tracking and appear on the boards; the rest are shown but never ranked.`}>
+<Base title="Project tracker: decomp progress for every project" description={`Search ${all.length} decompilation projects and see how far along each one is: matched-code %, functions matched, 30-day gains, movers and milestones, refreshed daily from ByteMatch, decomp.dev, frogress and the projects' own reports.`}>
+  <section class="wrap head">
+    <p class="meta kicker">Project tracker</p>
+    <h1>How far along is every decomp?</h1>
+    <p class="lede">Matched code for {all.length} decompilation projects, refreshed daily{date && ` (last ${formatDate(date)})`}.</p>
     <dl class="kpis">
-      <div><dt>Projects tracked</dt><dd>{all.length}</dd></div>
-      <div><dt>On the boards</dt><dd>{ranked.length}</dd></div>
+      <div><dt>Projects</dt><dd>{all.length}</dd></div>
+      <div><dt>Opted in</dt><dd>{ranked.length}</dd></div>
       <div><dt>Functions matched</dt><dd>{fmtNum(fns)}</dd></div>
       <div><dt>At 100%</dt><dd>{done}</dd></div>
     </dl>
-  </PageHead>
+  </section>
 
-  <section class="wrap two">
-    <div><div class="rule-head"><h2>Biggest movers, 7 days</h2></div>
-      {week.length ? <ProgressBoard list={week.map((x) => x.p)} days={7} /> : <p class="meta">No opted-in project moved this week.</p>}</div>
-    <div><div class="rule-head"><h2>Biggest movers, 30 days</h2></div>
-      {month.length ? <ProgressBoard list={month.map((x) => x.p)} days={30} /> : <p class="meta">No opted-in project moved this month.</p>}</div>
+  <section class="wrap section" aria-labelledby="mv">
+    <div class="sec-head">
+      <h2 id="mv">Biggest movers</h2>
+      <div class="seg" role="group" aria-label="Period">
+        <button type="button" data-p="7" aria-pressed="true">7 days</button>
+        <button type="button" data-p="30" aria-pressed="false">30 days</button>
+      </div>
+    </div>
+    {[{ k: '7', list: week }, { k: '30', list: month }].map(({ k, list }) => (
+      <div class="tiles movers" data-period={k} hidden={k !== '7'}>
+        {list.length ? list.map(({ p }) => { const pr = progressFor(p)!; const d = progressDelta(p, Number(k)) ?? 0; return (
+          <a class="tile mover" href={`/p/${p.slug}/`}>
+            <span class="gain">+{d.toFixed(1)}<small> pts</small></span>
+            <span class="name">{p.name}</span>
+            <span class="track" aria-hidden="true"><span class="was" style={`width:${Math.max(0, pr.pct - d)}%`} /><span class="now" style={`width:${pr.pct}%`} /></span>
+            <span class="foot"><span>{shortName(p.originalPlatform)}</span><strong>{pctText(pr.pct)}%</strong></span>
+          </a>
+        ); }) : <p class="meta">No opted-in project moved in this period.</p>}
+      </div>
+    ))}
   </section>
 
   {marks.length > 0 && (
-    <section class="section wrap">
-      <div class="rule-head"><h2>Milestones</h2></div>
-      <ol class="marks">{marks.map((m) => (
-        <li><span class="meta">{formatDate(m.date)}</span> <a href={`/p/${m.p.slug}/`}>{m.p.name}</a> passed <strong>{m.mark}%</strong> matched <span class="meta">{shortName(m.p.originalPlatform)}</span></li>
+    <section class="wrap section" aria-labelledby="ms">
+      <div class="sec-head"><h2 id="ms">Latest milestones</h2></div>
+      <ol class="tiles marks">{marks.map((m) => (
+        <li><a class="tile mark" href={`/p/${m.p.slug}/`}>
+          <span class={`badge${m.mark >= 100 ? ' full' : ''}`}>{m.mark}%</span>
+          <span class="name">{m.p.name}</span>
+          <span class="meta">{shortName(m.p.originalPlatform)} · {formatDate(m.date)}</span>
+        </a></li>
       ))}</ol>
     </section>
   )}
 
-  <section class="section wrap">
-    <div class="rule-head"><h2>Leaderboards by platform</h2></div>
-    <div class="boards">{platforms.map(({ pl, list }) => (
-      <div><h3><a href={`/platforms/${slugify(pl)}/`}>{pl}</a> <span class="meta">{list.length}</span></h3><ProgressBoard list={list} n={5} /></div>
-    ))}</div>
+  <section class="wrap section" id="projects" aria-labelledby="ap">
+    <div class="sec-head"><h2 id="ap">All projects</h2></div>
+    <form class="finder" role="search" onsubmit="return false">
+      <input type="search" name="q" placeholder={`Search ${all.length} projects or games…`} aria-label="Search projects" />
+      <select name="pl" aria-label="Platform"><option value="">All platforms</option>{platforms.map(({ pl, n }) => <option value={pl}>{shortName(pl)} ({n})</option>)}</select>
+      <select name="sort" aria-label="Sort">
+        <option value="pct">Most complete</option>
+        <option value="d30">Biggest 30-day gain</option>
+        <option value="fns">Biggest program</option>
+        <option value="name">A–Z</option>
+      </select>
+      <label class="chk"><input type="checkbox" name="opt" /> Opted in only</label>
+    </form>
+    <p class="meta count" aria-live="polite"></p>
+    <div class="tiles grid-all">
+      {rows.map(({ p, pr, d30 }, i) => (
+        <a class="tile proj" href={`/p/${p.slug}/`} hidden={i >= FIRST}
+          data-q={`${p.name} ${p.subject} ${p.originalPlatform}`.toLowerCase()} data-pl={p.originalPlatform} data-name={p.name.toLowerCase()}
+          data-pct={pr.pct} data-d30={d30 ?? 0} data-fns={pr.totalFns ?? 0} data-opt={pr.ranked ? '1' : '0'}>
+          <span class="top"><span class="plat">{shortName(p.originalPlatform)}</span><span class={`dot ${provClass[p.provenance]}`} title={PROVENANCE_LABEL[p.provenance]} /></span>
+          <span class="name">{p.name}</span>
+          <span class="big">{pctText(pr.pct)}<small>%</small></span>
+          <span class="track" aria-hidden="true"><span class="now" style={`width:${pr.pct}%`} /></span>
+          <span class="foot">
+            <span>{pr.matchedFns != null && pr.totalFns ? `${fmtNum(pr.matchedFns)} / ${fmtNum(pr.totalFns)} fns` : PROGRESS_SOURCE_LABEL[pr.source]}</span>
+            {d30 != null && d30 >= 0.05 ? <span class="up">+{d30.toFixed(1)} in 30d</span> : null}
+          </span>
+        </a>
+      ))}
+    </div>
+    <p class="more-wrap"><button type="button" class="btn more">Show all {all.length}</button></p>
+    <p class="meta legend"><span class="dot ok" /> human-led <span class="dot warn" /> AI-assisted <span class="dot bad" /> AI-generated <span class="dot" /> not stated · Movers and milestones only list projects that opted into a public tracker.</p>
   </section>
 
-  <section class="section wrap">
-    <div class="rule-head"><h2>Every tracked project</h2></div>
-    <p class="meta">Click a column heading to sort. "Ranked" means the project opted into public tracking.</p>
-    <div class="table-wrap"><table id="all">
-      <thead><tr><th data-k="name">Project</th><th data-k="pl">Platform</th><th data-k="pct" class="sorted">Matched</th><th data-k="fns">Functions</th><th data-k="d30">30 days</th><th data-k="src">Source</th></tr></thead>
-      <tbody>{rows.map(({ p, pr }) => { const d30 = progressDelta(p, 30); return (
-        <tr data-name={p.name.toLowerCase()} data-pl={p.originalPlatform} data-pct={pr.pct} data-fns={pr.matchedFns ?? -1} data-d30={d30 ?? -999} data-src={pr.source}>
-          <td><a href={`/p/${p.slug}/`}>{p.name}</a><br /><span class="meta">{METHOD_LABEL[p.method]} · {PROVENANCE_LABEL[p.provenance]}</span></td>
-          <td>{shortName(p.originalPlatform)}</td>
-          <td class="bar"><ProgressBar p={p} /></td>
-          <td>{pr.matchedFns != null && pr.totalFns ? `${fmtNum(pr.matchedFns)} / ${fmtNum(pr.totalFns)}` : '—'}</td>
-          <td>{d30 ? `${d30 > 0 ? '+' : ''}${d30}` : '—'}</td>
-          <td>{pr.sourceUrl ? <a href={pr.sourceUrl} rel="noopener">{PROGRESS_SOURCE_LABEL[pr.source]}</a> : PROGRESS_SOURCE_LABEL[pr.source]}{pr.ranked && <span class="chip ok"> ranked</span>}</td>
-        </tr>
-      ); })}</tbody>
-    </table></div>
-  </section>
-
-  <section id="how" class="section wrap prose">
-    <div class="rule-head"><h2>How this works</h2></div>
-    <p>Every day Recomp reads the published progress of each decompilation in the catalogue, best source first:</p>
-    <ol>
-      <li><a href="https://bytematch.dev/" rel="noopener">ByteMatch</a>, <a href="https://decomp.dev/" rel="noopener">decomp.dev</a> and <a href="https://progress.deco.mp/" rel="noopener">progress.deco.mp</a>: trackers that maintainers sign their project up to. Only these projects are ranked on the boards and milestones above.</li>
-      <li>The progress history a project publishes on its own site (zelda64.dev, papermar.io and others).</li>
-      <li>The project's own <a href="https://github.com/encounter/objdiff" rel="noopener">objdiff</a> report, from the latest build on its main branch.</li>
-      <li>A progress badge in the project's README.</li>
-      <li>A figure the project states on its own site, entered by hand.</li>
-    </ol>
-    <p>The headline number is matched code: the share of the original program's code bytes that the project's source rebuilds byte for byte (objdiff's <code>matched_code_percent</code>). "Linked" on a project page is the stricter share already built entirely from source. Static recompilations and ports don't have a match percentage, so they aren't listed here.</p>
-    <p>Right now: {bySource.map(([s, n], i) => <>{i > 0 && ', '}{n} from {PROGRESS_SOURCE_LABEL[s as keyof typeof PROGRESS_SOURCE_LABEL]}</>)}.</p>
-    <p><strong>Maintainers:</strong> to be ranked, register your project on <a href="https://bytematch.dev/" rel="noopener">ByteMatch</a>. To have your progress left off this site, <a href="https://github.com/andrewnakas/recompsoftware/issues/new?template=correction.yml&title=%5Bprogress%20opt-out%5D" rel="noopener">open an opt-out issue</a> and it will be removed from the next refresh.</p>
+  <section id="how" class="wrap section">
+    <details class="how">
+      <summary><h2>How this works</h2></summary>
+      <div class="prose">
+        <p>Every day Recomp reads the published progress of each decompilation in the catalogue, best source first:</p>
+        <ol>
+          <li><a href="https://bytematch.dev/" rel="noopener">ByteMatch</a>, <a href="https://decomp.dev/" rel="noopener">decomp.dev</a> and <a href="https://progress.deco.mp/" rel="noopener">progress.deco.mp</a>: trackers that maintainers sign their project up to. Only these projects appear in movers and milestones.</li>
+          <li>The progress history a project publishes on its own site (zelda64.dev, papermar.io and others).</li>
+          <li>The project's own <a href="https://github.com/encounter/objdiff" rel="noopener">objdiff</a> report, from the latest build on its main branch.</li>
+          <li>A progress badge in the project's README.</li>
+          <li>A figure the project states on its own site, entered by hand.</li>
+        </ol>
+        <p>The headline number is matched code: the share of the original program's code bytes that the project's source rebuilds byte for byte (objdiff's <code>matched_code_percent</code>). "Linked" on a project page is the stricter share already built entirely from source. Static recompilations and ports don't have a match percentage, so they aren't listed here.</p>
+        <p>Right now: {bySource.map(([s, n], i) => <>{i > 0 && ', '}{n} from {PROGRESS_SOURCE_LABEL[s as keyof typeof PROGRESS_SOURCE_LABEL]}</>)}.</p>
+        <p><strong>Maintainers:</strong> to appear in movers and milestones, register your project on <a href="https://bytematch.dev/" rel="noopener">ByteMatch</a>. To have your progress left off this site, <a href="https://github.com/andrewnakas/recompsoftware/issues/new?template=correction.yml&title=%5Bprogress%20opt-out%5D" rel="noopener">open an opt-out issue</a> and it will be removed from the next refresh.</p>
+      </div>
+    </details>
   </section>
 </Base>
 <script>
-  const t = document.getElementById('all') as HTMLTableElement | null;
-  t?.querySelectorAll('th[data-k]').forEach((th) => th.addEventListener('click', () => {
-    const k = (th as HTMLElement).dataset.k!;
-    const num = !['name', 'pl', 'src'].includes(k);
-    const asc = th.classList.contains('sorted') ? !th.classList.contains('asc') : !num; // numbers start high-first, text A-Z
-    t.querySelectorAll('th').forEach((x) => x.classList.remove('sorted', 'asc'));
-    th.classList.add('sorted'); if (asc) th.classList.add('asc');
-    const body = t.tBodies[0];
-    [...body.rows].sort((a, b) => {
-      const x = a.dataset[k]!, y = b.dataset[k]!;
-      const c = num ? Number(x) - Number(y) : x.localeCompare(y);
-      return asc ? c : -c;
-    }).forEach((r) => body.appendChild(r));
+  // Movers period toggle
+  const seg = document.querySelectorAll<HTMLButtonElement>('.seg button');
+  seg.forEach((b) => b.addEventListener('click', () => {
+    seg.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    document.querySelectorAll<HTMLElement>('.movers').forEach((m) => (m.hidden = m.dataset.period !== b.dataset.p));
   }));
+
+  // Search, filter and sort the project tiles
+  const form = document.querySelector<HTMLFormElement>('.finder')!;
+  const grid = document.querySelector<HTMLElement>('.grid-all')!;
+  const tiles = [...grid.querySelectorAll<HTMLElement>('.proj')];
+  const count = document.querySelector('.count')!;
+  const more = document.querySelector<HTMLButtonElement>('.more')!;
+  const FIRST = 48;
+  let showAll = false, timer: ReturnType<typeof setTimeout> | undefined, sent = '';
+  const params = new URLSearchParams(location.search);
+  for (const [k, v] of params) { const el = form.elements.namedItem(k) as HTMLInputElement | null; if (el) el.type === 'checkbox' ? (el.checked = v === '1') : (el.value = v); }
+  const apply = () => {
+    const f = new FormData(form);
+    const q = String(f.get('q') ?? '').toLowerCase().trim();
+    const pl = String(f.get('pl') ?? '');
+    const opt = f.get('opt') === 'on';
+    const sort = String(f.get('sort') ?? 'pct');
+    const hits = tiles.filter((t) => (!q || t.dataset.q!.includes(q)) && (!pl || t.dataset.pl === pl) && (!opt || t.dataset.opt === '1'));
+    hits.sort((a, b) => sort === 'name' ? a.dataset.name!.localeCompare(b.dataset.name!) : Number(b.dataset[sort]) - Number(a.dataset[sort]));
+    const filtered = Boolean(q || pl || opt);
+    const limit = showAll || filtered ? Infinity : FIRST;
+    tiles.forEach((t) => (t.hidden = true));
+    hits.forEach((t, i) => { grid.append(t); t.hidden = i >= limit; });
+    count.textContent = filtered ? `${hits.length} of ${tiles.length} projects` : '';
+    more.hidden = hits.length <= limit;
+    clearTimeout(timer);
+    timer = setTimeout(() => { const g = (window as any).gtag; if (q && q !== sent && g) { sent = q; g('event', 'search', { search_term: q, results: hits.length }); } }, 1200);
+  };
+  form.addEventListener('input', apply);
+  more.addEventListener('click', () => { showAll = true; apply(); });
+  apply();
 </script>
 <style>
-  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); gap: 0.8rem; margin: 1.2rem 0 0; }
-  .kpis div { border-top: 2px solid var(--ink); padding-top: 0.4rem; }
-  .kpis dt { font: 500 0.75rem var(--font-mono); color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.05em; }
-  .kpis dd { margin: 0; font: 600 1.8rem/1.2 var(--font-display); }
-  .two { display: grid; gap: 0 3rem; padding-top: 1rem; }
-  @media (min-width: 900px) { .two { grid-template-columns: 1fr 1fr; } }
-  .marks { list-style: none; padding: 0; margin: 0; columns: 2 22rem; column-gap: 3rem; }
-  .marks li { break-inside: avoid; padding: 0.35rem 0; border-bottom: 1px solid var(--line); }
-  .boards { display: grid; gap: 1.5rem 3rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); }
-  .boards h3 { margin: 0 0 0.3rem; font-size: 1rem; }
-  th[data-k] { cursor: pointer; white-space: nowrap; }
-  th.sorted::after { content: ' ↓'; } th.sorted.asc::after { content: ' ↑'; }
-  td.bar { min-width: 9rem; }
+  .head { padding-top: 2.2rem; }
+  .kicker { color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin: 0; }
+  .head h1 { margin: 0.4rem 0 0.5rem; }
+  .lede { color: var(--ink-soft); max-width: 60ch; margin: 0; }
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 0.75rem; margin: 1.5rem 0 0; }
+  .kpis div { background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius); padding: 0.9rem 1rem; }
+  .kpis dt { font: 500 0.72rem var(--font-mono); color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.06em; }
+  .kpis dd { margin: 0.2rem 0 0; font: 700 1.9rem/1.1 var(--font-display); }
+
+  .sec-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .sec-head h2 { margin: 0; }
+  .seg { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 999px; padding: 2px; }
+  .seg button { font: 500 0.82rem var(--font-mono); border: 0; background: none; color: var(--ink-soft); padding: 0.35rem 0.9rem; border-radius: 999px; cursor: pointer; }
+  .seg button[aria-pressed='true'] { background: var(--accent); color: var(--accent-ink); }
+
+  .tiles { display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); list-style: none; padding: 0; margin: 0; }
+  .tiles[hidden], .tile[hidden], .more[hidden] { display: none; }
+  .tile { display: flex; flex-direction: column; gap: 0.45rem; height: 100%; box-sizing: border-box; background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius); padding: 0.9rem 1rem; color: var(--ink); text-decoration: none; transition: border-color 0.15s, transform 0.15s; }
+  .tile:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .proj .name, .mover .name { min-height: 2.6em; }
+  .tile .name { font-weight: 600; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .track { position: relative; display: block; height: 6px; background: var(--bg-sunk); border-radius: 3px; overflow: hidden; margin-top: auto; }
+  .track span { position: absolute; inset: 0 auto 0 0; border-radius: 3px; }
+  .track .now { background: var(--accent); }
+  .mover .track .now { opacity: 0.45; }
+  .mover .track .was { background: var(--accent); z-index: 1; }
+  .foot { display: flex; justify-content: space-between; gap: 0.5rem; font: 0.75rem var(--font-mono); color: var(--ink-faint); }
+  .foot strong { color: var(--ink); }
+  .gain { font: 700 1.6rem/1 var(--font-display); color: var(--ok); }
+  .gain small, .big small { font-size: 0.55em; font-weight: 500; }
+
+  .movers { grid-template-columns: repeat(auto-fill, minmax(min(45%, 14rem), 1fr)); }
+  @media (max-width: 520px) { .mover { padding: 0.75rem; } .gain { font-size: 1.3rem; } }
+  .marks { grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); }
+  .mark { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.75rem; }
+  .mark .name { flex: 1 1 8rem; }
+  .mark .meta { flex-basis: 100%; font-size: 0.75rem; }
+  .badge { font: 700 0.85rem var(--font-mono); padding: 0.3rem 0.55rem; border-radius: var(--radius-sm); background: var(--bg-sunk); color: var(--ink); }
+  .badge.full { background: var(--accent); color: var(--accent-ink); }
+
+  .finder { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 0.6rem; }
+  .finder input[type='search'] { flex: 1 1 280px; font: inherit; font-size: 1rem; padding: 0.65rem 0.85rem; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--bg); color: var(--ink); }
+  .finder select { font: inherit; font-size: 0.9rem; padding: 0.55rem 0.6rem; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--bg); color: var(--ink); }
+  .chk { font-size: 0.9rem; display: inline-flex; gap: 0.35rem; align-items: center; }
+  .count { min-height: 1.2em; margin: 0 0 0.6rem; }
+  .proj .top { display: flex; justify-content: space-between; align-items: center; font: 500 0.72rem var(--font-mono); color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.05em; }
+  .big { font: 700 2rem/1 var(--font-display); }
+  .up { color: var(--ok); }
+  .dot { display: inline-block; width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--line-strong); }
+  .dot.ok { background: var(--ok); } .dot.warn { background: var(--warn); } .dot.bad { background: var(--bad); }
+  .more-wrap { text-align: center; margin: 1.2rem 0 0; }
+  .legend { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.3rem 0.6rem; align-items: center; }
+  .legend .dot { margin-left: 0.4rem; }
+
+  .how { border-top: 1px solid var(--line); padding-top: 0.5rem; }
+  .how summary { cursor: pointer; list-style: none; }
+  .how summary::-webkit-details-marker { display: none; }
+  .how summary h2 { display: inline; }
+  .how summary::after { content: ' +'; font: 600 1.4rem var(--font-mono); color: var(--accent); }
+  .how[open] summary::after { content: ' −'; }
   .prose { max-width: 75ch; }
 </style>

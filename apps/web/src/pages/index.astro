@@ -83,7 +83,7 @@ const ago = (d: string) => { const n = Math.floor((Date.parse(statsDate() ?? d) 
 
   {progMovers.list.length > 0 && (
     <section class="section wrap">
-      <div class="rule-head"><h2>Decomp progress {progMovers.days === 7 ? 'this week' : 'this month'}</h2><a href="/progress/">Progress tracker →</a></div>
+      <div class="rule-head"><h2>Decomp progress {progMovers.days === 7 ? 'this week' : 'this month'}</h2><a href="/progress/">Project tracker →</a></div>
       <div class="pm"><ProgressBoard list={progMovers.list.map((x) => x.p)} days={progMovers.days} n={6} /></div>
     </section>
   )}

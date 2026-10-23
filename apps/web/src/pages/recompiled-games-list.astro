@@ -9,7 +9,7 @@ const year = new Date().getFullYear();
 ---
 <Base title={`Recompiled games list (${year}): every static recomp PC port`} description={`All ${list.length} statically recompiled games: N64 Recompiled ports, XenonRecomp, PS2 and more, with status, latest release and who made them. Updated daily.`}>
   <PageHead kicker="List" title="Every recompiled game" lede={`${list.length} static recompilations: native ports produced by translating the original machine code into C/C++, like Zelda 64: Recompiled and Unleashed Recompiled. You need your own copy of each game unless a build is marked playable. Updated daily; GitHub data as of ${statsDate() ?? 'the next refresh'}.`}>
-    <p><a href="/what-is-a-recomp/">What is a recomp, and how is it different from a decomp?</a> · <a href="/decompiled-games-list/">Decompiled games list</a> · <a href="/progress/">Decomp progress tracker</a> · <a href="/releases.xml" data-track="feed_click" data-item="releases">New releases by RSS</a></p>
+    <p><a href="/what-is-a-recomp/">What is a recomp, and how is it different from a decomp?</a> · <a href="/decompiled-games-list/">Decompiled games list</a> · <a href="/progress/">Project tracker</a> · <a href="/releases.xml" data-track="feed_click" data-item="releases">New releases by RSS</a></p>
   </PageHead>
   <section class="wrap"><ListTable list={list} /></section>
   <section class="wrap section"><h2>Full lists by console</h2><p class="meta">Every decomp, recomp and port for each console, ranked by stars.</p><ConsoleStrip limit={18} /></section>
