@@ -34,9 +34,28 @@ const g = growth(p);
 const pr = progressFor(p);
 const d30 = pr ? progressDelta(p, 30) : null;
 // Search visitors mostly want the build: link the latest GitHub release directly.
-const dl = release && p.repo && /github\.com\//.test(p.repo) ? `${p.repo.replace(/\/$/, '').replace(/\.git$/, '')}/releases/latest` : null;
+const gh = p.repo && /github\.com\//.test(p.repo) ? p.repo.replace(/\/$/, '').replace(/\.git$/, '') : null;
+const dl = release && gh ? `${gh}/releases/latest` : null;
+// "3 days ago" next to the button shows the project is alive; null when the release has no date
+const ago = (iso?: string) => {
+  if (!iso) return null;
+  const days = Math.floor((Date.parse(statsDate() ?? iso) - Date.parse(iso)) / 864e5);
+  return days < 1 ? 'today' : days < 2 ? 'yesterday' : days < 60 ? `${days} days ago` : days < 730 ? `${Math.round(days / 30)} months ago` : `${Math.round(days / 365)} years ago`;
+};
+const releasedAgo = ago(release?.date);
+// Project-page visitors read ~1.2 pages: offer the next click above the fold, not only at the bottom.
+const more = related.slice(0, 3);
 const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
 const verb = p.method === 'static-recomp' ? 'recompiled' : p.method.includes('decomp') ? 'decompiled' : p.method === 'clean-room' ? 'rebuilt clean-room' : 'rebuilt';
+// Searchers type "<game> recomp", "<game> pc", "<game> github": put the game, the method and what's here in the title.
+const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+const kind = p.method.includes('decomp') ? 'decompilation' : p.method === 'clean-room' ? 'clean-room rebuild'
+  : p.method === 'static-recomp' ? 'PC recomp' : p.category === 'apps' || p.category === 'os' || p.category === 'tools' ? 'source port' : 'PC port';
+// skip what the name already says, and the game when the title would run long
+const saysKind = /decomp|disasm|disassembl|recomp|port|reimpl|rebuild|remake/.test(norm(p.name));
+const sub = p.subject && !norm(p.name).includes(norm(p.subject).slice(0, 8)) && (p.name + p.subject).length <= 44 ? p.subject : '';
+const wants = p.playable ? 'play in browser' : dl ? 'download & source' : 'source & status';
+const title = sub ? `${p.name}: ${sub} ${kind}, ${wants}` : saysKind ? `${p.name}: ${wants}` : `${p.name}: ${kind}, ${wants}`;
 const description = `${p.name}: ${p.summary} Status, ${PROVENANCE_LABEL[p.provenance].toLowerCase()} provenance, licence, latest release and live GitHub activity.`.slice(0, 300);
 const schema = {
   '@type': 'SoftwareSourceCode', name: p.name, description: p.summary, codeRepository: p.repo ?? undefined,
@@ -44,7 +63,7 @@ const schema = {
   author: p.team.map((t) => ({ '@type': 'Person', name: t })),
 };
 ---
-<Base title={p.name} description={description} type="article" schema={schema} image={`/og/p-${p.slug}.jpg`}>
+<Base title={title} description={description} type="article" schema={schema} image={`/og/p-${p.slug}.jpg`}>
   <article class="wrap proj">
     <div class="top">
       <div class="intro">
@@ -64,6 +83,15 @@ const schema = {
           {p.discord && <a class="btn" href={p.discord} rel="noopener">Discord</a>}
           {p.subreddit && <a class="btn" href={p.subreddit} rel="noopener">Reddit</a>}
         </div>
+        {(releasedAgo || gh) && (
+          <p class="meta cta-meta">
+            {releasedAgo && <>{release!.version} released {releasedAgo}. </>}
+            {gh && <a href={`${gh}/releases.atom`} rel="noopener" data-track="watch_click" data-item={p.slug}>Get new releases by RSS</a>}
+          </p>
+        )}
+        {more.length > 0 && (
+          <p class="more"><span class="meta">More like this:</span> {more.map((r, i) => <>{i > 0 && ' · '}<a href={`/p/${r.slug}/`} data-track="related_click" data-item={r.slug}>{r.name}</a></>)}</p>
+        )}
       </div>
       <figure class="shot">
         <Cover p={p} eager large />
@@ -171,7 +199,9 @@ const schema = {
   .hub-link { margin: 0.8rem 0 0; font-weight: 600; }
   .proj { padding-top: 2rem; }
   .proj h1 { margin-bottom: 0.6rem; }
-  .cta { margin: 1.4rem 0; }
+  .cta { margin: 1.4rem 0 0.5rem; }
+  .cta-meta { margin: 0 0 0.8rem; }
+  .more { margin: 0; font-size: 0.92rem; }
   .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); border-top: 1px solid var(--ink); border-bottom: 1px solid var(--line); margin-top: 1.5rem; }
   .stats div { padding: 0.8rem 0.8rem 0.8rem 0; display: grid; gap: 0.1rem; }
   .k { font: 500 0.72rem var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-faint); }

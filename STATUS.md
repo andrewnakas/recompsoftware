@@ -91,6 +91,13 @@ Owner's own logged-in Chrome, read-only, human pace, only when a sweep is starte
 - Leads: `.cache/progress-unmatched.txt` after each run lists ByteMatch projects not in the catalogue (the rest are deliberate rejects) -> harvest -> enrich -> write-up (BRIEF, paths now E:) -> merge-new.
 - Checked 2026-10-23: the Actions `github.token` CAN download other public repos' artifacts (HTTP 200 via a throwaway workflow), so CI needs no extra secret. nightly.link refuses these artifacts, don't use it.
 
+## GA + Search Console review (2026-10-23, plan C:\Users\andre\.claude\plans\mighty-greeting-rivest.md)
+- GA 28 d to 10-22: 14,649 sessions, 12.5k users; 10-09..15 = 892 sessions vs 10-16..22 = 13,834 (sustained, ~2.2k/day by 10-22). google 8,342, direct 1,974 (40% engaged), bing 1,746, chatgpt 1,114 (best engaged), estadao.com.br 201 (Brazil = 20% of users). New 13k vs returning 1.3k; cohort retention <5%. /p/ landings 14-37 s. Events: download_click 2,193, repo_click 1,717, play_click 624, boot_start 623. `search` fired per keystroke (8,783 from 512 users).
+- Search Console 28 d: 6k clicks, 91.7k impressions, CTR 6.5%, avg pos 6.7. Top: driveclub recomp 390/2,842, recomp 270/1,980, infamous recomp 105/497. Low CTR: allrecomps 73/2,677, pinyon shift 17/1,066, driveclub recomp github 15/840, black recomp 22/596, skate 2 recomp 17/353.
+- Shipped in code (local): search event debounced once per term (Catalog.astro); /p/ titles now "<name>: <game> PC recomp, download & source"; release age + "Get new releases by RSS" (repo releases.atom, watch_click) + "More like this" (related_click) above the fold on /p/; /releases.xml site-wide release feed (head link + footer); home "N new since your last visit" (localStorage); recompiled list cross-links; llms.txt key pages.
+- OWNER (auto mode blocks GA admin edits): GA Admin → Events → Recent events → star download_click + play_click. Admin → Custom definitions → event-scoped dimension `item` (param item) and `search_term`.
+- Re-read ~10-30: /progress/ (4 views on launch day), /p/ engagement, returning share, CTR of the low-CTR queries after the title change.
+
 ## Next session (owner, 2026-10-23)
 Use Google Analytics (GA4 property p558977824, read through the owner's Chrome) to understand how people use the site, then propose changes for retention, growth and traffic. Baselines and the tracked events (play_click, download_click, repo_click, correction_click; no key events marked yet) are in the "Live" notes above. Measure what /progress/ (launched 2026-10-23) brings.
 

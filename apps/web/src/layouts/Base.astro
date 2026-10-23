@@ -44,6 +44,7 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
     <meta name="google-site-verification" content="0yAnH0Vhx_0lgFbTE_n0VFSPm16Y6kK31b00Psv4M0g" />
     <link rel="canonical" href={new URL(path, SITE)} />
     <link rel="alternate" type="application/rss+xml" title="Recomp news" href="/news/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Recomp: new releases" href="/releases.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     {schema && <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', ...schema })} />}
     <script is:inline>let t = null; try { t = localStorage.getItem('theme'); } catch {} document.documentElement.dataset.theme = t || 'dark'; // dark by default; the toggle stores a light choice</script>
@@ -84,7 +85,7 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
           </nav>
           <nav aria-label="Lists">
             <p class="h">Lists</p>
-            <a href="/recompiled-games-list/">Recompiled games list</a><a href="/decompiled-games-list/">Decompiled games list</a><a href="/trending/">Trending</a><a href="/progress/">Decomp progress tracker</a><a href="/this-week/">This week</a><a href="/play/">Play in browser</a>
+            <a href="/recompiled-games-list/">Recompiled games list</a><a href="/decompiled-games-list/">Decompiled games list</a><a href="/trending/">Trending</a><a href="/progress/">Decomp progress tracker</a><a href="/this-week/">This week</a><a href="/play/">Play in browser</a><a href="/releases.xml" data-track="feed_click" data-item="releases">New releases (RSS)</a><a href="/news/rss.xml" data-track="feed_click" data-item="news">News (RSS)</a>
           </nav>
           <nav aria-label="Learn">
             <p class="h">Learn</p>

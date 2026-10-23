@@ -44,8 +44,11 @@ const provs = [...new Set(list.map((p) => p.provenance))];
       const sort = String(f.get('sort'));
       cards.sort((a, b) => sort === 'name' ? a.dataset.name!.localeCompare(b.dataset.name!) : Number(b.dataset.stars) - Number(a.dataset.stars)).forEach((c) => grid.append(c));
       count.textContent = `${n} of ${cards.length} shown`;
-      const g = (window as any).gtag; if (q && g) g('event', 'search', { search_term: q });
+      // one search event per term once typing pauses, not one per keystroke
+      clearTimeout(timer);
+      timer = setTimeout(() => { const g = (window as any).gtag; if (q && q !== sent && g) { sent = q; g('event', 'search', { search_term: q, results: n }); } }, 1200);
     };
+    let timer: ReturnType<typeof setTimeout> | undefined, sent = '';
     form.addEventListener('input', apply);
     apply();
   }

@@ -49,10 +49,11 @@ const ago = (d: string) => { const n = Math.floor((Date.parse(statsDate() ?? d) 
   {ticker.length > 0 && (
     <section class="ticker" aria-label="Just shipped">
       <span class="tk-label">Just shipped</span>
+      <a class="tk-since" href="/this-week/" data-track="since_click" hidden></a>
       <div class="tk-viewport">
         <ul class="tk-track">
           {[0, 1].map((copy) => ticker.map((p) => (
-            <li aria-hidden={copy ? 'true' : undefined}><a href={`/p/${p.slug}/`} tabindex={copy ? -1 : undefined}><strong>{p.name}</strong> <span class="v">{releaseOf(p)!.version}</span> <span class="meta">{ago(releaseOf(p)!.date)}</span></a></li>
+            <li aria-hidden={copy ? 'true' : undefined} data-date={copy ? undefined : releaseOf(p)!.date}><a href={`/p/${p.slug}/`} tabindex={copy ? -1 : undefined}><strong>{p.name}</strong> <span class="v">{releaseOf(p)!.version}</span> <span class="meta">{ago(releaseOf(p)!.date)}</span></a></li>
           )))}
         </ul>
       </div>
@@ -115,7 +116,18 @@ const ago = (d: string) => { const n = Math.floor((Date.parse(statsDate() ?? d) 
     </div>
   </section>
 </Base>
+<script>
+  // Returning visitors: count releases since their last visit. The date stays in this browser only.
+  const since = document.querySelector<HTMLAnchorElement>('.tk-since');
+  let last: string | null = null;
+  try { last = localStorage.getItem('lastVisit'); localStorage.setItem('lastVisit', new Date().toISOString()); } catch {}
+  if (since && last) {
+    const n = [...document.querySelectorAll<HTMLElement>('.tk-track li[data-date]')].filter((li) => li.dataset.date! > last!).length;
+    if (n > 0) { since.textContent = `${n}${n === 24 ? '+' : ''} new since your last visit`; since.hidden = false; }
+  }
+</script>
 <style>
+  .tk-since { flex: none; align-self: center; font: 600 0.78rem/1 var(--font-mono); color: var(--accent); padding: 0 0.9rem; white-space: nowrap; position: relative; z-index: 1; background: var(--bg); }
   .pm :global(.pboard) { columns: 2 22rem; column-gap: 3rem; }
   .pm :global(.pboard li) { break-inside: avoid; }
   .hero { padding-top: 3rem; padding-bottom: 1.5rem; display: grid; gap: 2rem 3rem; align-items: center; }
