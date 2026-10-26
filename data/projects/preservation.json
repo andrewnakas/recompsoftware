@@ -8866,5 +8866,52 @@
       "https://github.com/swstegall/Garlemald-Server/releases"
     ],
     "checked": "2026-10-17"
+  },
+  {
+    "slug": "darksiders-ii-reborn",
+    "name": "Darksiders II Reborn",
+    "category": "preservation",
+    "subject": "Darksiders II online mailbox (PS3)",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2012,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": null,
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "1.0.0",
+      "date": "2026-10-20"
+    },
+    "playable": null,
+    "checked": "2026-10-26",
+    "provenance": "unknown",
+    "licence": "none",
+    "repo": "https://github.com/adamstark1/Darksiders2-Reborn-PS3",
+    "team": [
+      "adamstark1"
+    ],
+    "started": "2026-10",
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "summary": "Local replacement server and launcher for the PS3 version of Darksiders II (console or RPCS3) that brings back the Online Mailbox, making the Pay It Forward trophy and the Platinum obtainable again. It works by pointing the console's DNS at your PC.",
+    "tags": [
+      "ps3",
+      "darksiders",
+      "server-revival",
+      "trophies"
+    ],
+    "sources": [
+      "https://github.com/adamstark1/Darksiders2-Reborn-PS3",
+      "https://github.com/andrewnakas/recompsoftware/issues/13"
+    ]
   }
 ]

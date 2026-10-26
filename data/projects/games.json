@@ -54113,9 +54113,9 @@
     "originalPlatform": "Nintendo 64",
     "originalYear": 1999,
     "method": "matching-decomp",
-    "status": "wip",
-    "progress": null,
-    "progressSource": null,
+    "status": "complete",
+    "progress": 100,
+    "progressSource": "https://bytematch.dev/TheGh0stShip/Rugrats-Scavenger-Hunt",
     "provenance": "unknown",
     "provenanceNote": null,
     "licence": "none",
@@ -54139,9 +54139,11 @@
       "thq"
     ],
     "sources": [
-      "https://github.com/TheGh0stShip/Rugrats-Scavenger-Hunt"
+      "https://github.com/TheGh0stShip/Rugrats-Scavenger-Hunt",
+      "https://bytematch.dev/TheGh0stShip/Rugrats-Scavenger-Hunt",
+      "https://github.com/andrewnakas/recompsoftware/issues/19"
     ],
-    "checked": "2026-10-23"
+    "checked": "2026-10-26"
   },
   {
     "slug": "madden-64-decomp",
@@ -57071,5 +57073,317 @@
       "https://bytematch.dev/dreamsailing59-ops/ijatim"
     ],
     "checked": "2026-10-23"
+  },
+  {
+    "slug": "metal-slug-x-apple-silicon",
+    "name": "Metal Slug X for Apple Silicon",
+    "category": "games",
+    "subject": "Metal Slug X",
+    "originalPlatform": "Neo Geo",
+    "originalYear": 1999,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": "Stated by the author in submission issue #6.",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "playable": null,
+    "checked": "2026-10-26",
+    "provenance": "ai-assisted",
+    "licence": "MIT",
+    "repo": "https://github.com/Tzeentchnet/metal-slug-x-apple-silicon",
+    "team": [
+      "Tzeentchnet"
+    ],
+    "started": "2026-10",
+    "targets": [
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "summary": "Native Apple Silicon build of Metal Slug X: the game code is recompiled to arm64 C from the player's own ROM set, with Metal rendering, SDL3 input and 60 Hz/ProMotion presentation.",
+    "tags": [
+      "neo-geo",
+      "metal-slug",
+      "snk",
+      "apple-silicon"
+    ],
+    "sources": [
+      "https://github.com/Tzeentchnet/metal-slug-x-apple-silicon",
+      "https://github.com/andrewnakas/recompsoftware/issues/6"
+    ]
+  },
+  {
+    "slug": "yoshis-story-recomp",
+    "name": "Yoshi's Story recomp",
+    "category": "games",
+    "subject": "Yoshi's Story",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1997,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": "README: created primarily by Claude, directed by a hobbyist.",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "1.0.0",
+      "date": "2026-10-16"
+    },
+    "playable": null,
+    "checked": "2026-10-26",
+    "provenance": "ai-generated",
+    "licence": "none",
+    "repo": "https://github.com/damobeanrod/yoshis-story-recomp",
+    "team": [
+      "damobeanrod"
+    ],
+    "started": "2026-10",
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "summary": "N64Recomp-based native port of Yoshi's Story for Linux, shipped as an AppImage; you supply the US ROM.",
+    "tags": [
+      "n64",
+      "yoshi",
+      "n64recomp",
+      "rt64"
+    ],
+    "sources": [
+      "https://github.com/damobeanrod/yoshis-story-recomp",
+      "https://github.com/andrewnakas/recompsoftware/issues/10"
+    ]
+  },
+  {
+    "slug": "jet-force-capricorn",
+    "name": "Jet Force Capricorn",
+    "category": "games",
+    "subject": "Jet Force Gemini",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1999,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": null,
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": "2026-09",
+    "latestRelease": {
+      "version": "0.3.176",
+      "date": "2026-10-21"
+    },
+    "playable": null,
+    "checked": "2026-10-26",
+    "provenance": "unknown",
+    "licence": "none",
+    "repo": "https://github.com/riseio/Jet-Force-Capricorn",
+    "team": [
+      "riseio"
+    ],
+    "started": "2026-09",
+    "targets": [
+      "Windows",
+      "Linux",
+      "Steam Deck"
+    ],
+    "needsOriginal": true,
+    "summary": "Static recompilation of Jet Force Gemini (revision 0 ROM, supplied by you) with Windows and Steam Deck builds, redrawn fonts and UI made from your own game files, and optional gameplay tweaks such as protecting the Tribals.",
+    "tags": [
+      "n64",
+      "rare",
+      "jet-force-gemini",
+      "n64recomp"
+    ],
+    "sources": [
+      "https://github.com/riseio/Jet-Force-Capricorn",
+      "https://github.com/andrewnakas/recompsoftware/issues/11"
+    ]
+  },
+  {
+    "slug": "benilla",
+    "name": "benilla",
+    "category": "games",
+    "subject": "World of Warcraft 1.12.1 client",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 2004,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": "Commits carry a Claude co-author trailer.",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": "2026-09",
+    "latestRelease": {
+      "version": "0.2.0",
+      "date": "2026-09-27"
+    },
+    "playable": null,
+    "checked": "2026-10-26",
+    "provenance": "ai-assisted",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/samwhosung/benilla",
+    "team": [
+      "samwhosung"
+    ],
+    "started": "2026-07",
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "summary": "From-scratch World of Warcraft 1.12.1 client in Rust and Bevy that reads data from your own 1.12.1 install; file formats, the network protocol and the interface engine are all reimplemented, with no original client code.",
+    "tags": [
+      "world-of-warcraft",
+      "wow",
+      "mmo",
+      "rust",
+      "bevy"
+    ],
+    "sources": [
+      "https://github.com/samwhosung/benilla",
+      "https://github.com/andrewnakas/recompsoftware/issues/12"
+    ]
+  },
+  {
+    "slug": "wowee",
+    "name": "WoWee",
+    "category": "games",
+    "subject": "World of Warcraft client (1.12.1, 2.4.3, 3.3.5a)",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 2004,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": null,
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": "2026-09",
+    "latestRelease": {
+      "version": "3.1.54",
+      "date": "2026-10-25"
+    },
+    "playable": null,
+    "checked": "2026-10-26",
+    "provenance": "unknown",
+    "licence": "Other",
+    "repo": "https://github.com/kelsidavis/WoWee",
+    "team": [
+      "kelsidavis"
+    ],
+    "started": "2026-02",
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "summary": "Open-source World of Warcraft client engine that plays Vanilla, The Burning Crusade and Wrath of the Lich King from your own game data and runs Blizzard's interface code, against AzerothCore, TrinityCore, CMaNGOS and Turtle WoW servers. Ships an original soundtrack of its own.",
+    "tags": [
+      "world-of-warcraft",
+      "wow",
+      "mmo",
+      "android"
+    ],
+    "sources": [
+      "https://github.com/kelsidavis/WoWee",
+      "https://github.com/andrewnakas/recompsoftware/issues/12"
+    ]
+  },
+  {
+    "slug": "wowdecomp",
+    "name": "wowdecomp",
+    "category": "games",
+    "subject": "World of Warcraft: Wrath of the Lich King (3.3.5a client)",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 2008,
+    "method": "non-matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": "saty.dev: contributors run AI agents that decompile and verify functions.",
+    "website": "https://saty.dev/",
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": null,
+    "latestRelease": null,
+    "playable": null,
+    "checked": "2026-10-26",
+    "provenance": "ai-assisted",
+    "licence": "none",
+    "repo": "https://github.com/SatyPardus/wowdecomp",
+    "team": [
+      "SatyPardus"
+    ],
+    "started": "2026-10",
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "summary": "Decompilation of the 3.3.5a (12340) World of Warcraft client into C++, every function tagged with its original address; third-party libraries are linked from upstream source. Work continues on later client versions at saty.dev.",
+    "tags": [
+      "world-of-warcraft",
+      "wow",
+      "mmo",
+      "decompilation"
+    ],
+    "sources": [
+      "https://github.com/SatyPardus/wowdecomp",
+      "https://github.com/andrewnakas/recompsoftware/issues/12"
+    ]
+  },
+  {
+    "slug": "sms-english-decomp",
+    "name": "Super Mario Sunshine decompilation (North America)",
+    "category": "games",
+    "subject": "Super Mario Sunshine",
+    "originalPlatform": "GameCube",
+    "originalYear": 2002,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README: AI has been used extensively to help reconstruct and match the North American code.",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/chasem-dev/sms-english",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "chasem-dev"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Fork of the Super Mario Sunshine decompilation retargeted at the North American release (GMSE01): about 12,050 of 12,900 functions match and the rebuilt mario.dol is byte-identical. It is the base of a native PC port.",
+    "tags": [
+      "gamecube",
+      "mario",
+      "nintendo",
+      "decompilation"
+    ],
+    "sources": [
+      "https://github.com/chasem-dev/sms-english",
+      "https://github.com/andrewnakas/recompsoftware/issues/16"
+    ],
+    "checked": "2026-10-26"
   }
 ]

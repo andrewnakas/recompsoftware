@@ -3305,5 +3305,53 @@
       "https://github.com/hotlandsoftware/wii-news-channel"
     ],
     "checked": "2026-10-23"
+  },
+  {
+    "slug": "openfuse",
+    "name": "OpenFUSE",
+    "category": "apps",
+    "subject": "Fender FUSE",
+    "originalPlatform": "Windows/macOS",
+    "originalYear": 2010,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": "README: \"Experimental, AI-assisted software\".",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.1.1",
+      "date": "2026-10-20"
+    },
+    "playable": null,
+    "checked": "2026-10-26",
+    "provenance": "ai-assisted",
+    "licence": "MIT",
+    "repo": "https://github.com/dbarbashov/openfuse",
+    "team": [
+      "dbarbashov"
+    ],
+    "started": "2026-10",
+    "targets": [
+      "macOS",
+      "Windows",
+      "Linux",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "summary": "Independent Rust replacement for Fender's discontinued FUSE preset editor, for editing presets on legacy Fender amplifiers on current macOS, Windows, Linux and the web.",
+    "tags": [
+      "fender",
+      "audio",
+      "amplifier",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/dbarbashov/openfuse",
+      "https://github.com/andrewnakas/recompsoftware/issues/14"
+    ]
   }
 ]

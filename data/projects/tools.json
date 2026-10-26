@@ -23052,5 +23052,52 @@
       "https://github.com/luckeyfaraday/swbf2-browser-reconstruction"
     ],
     "checked": "2026-10-19"
+  },
+  {
+    "slug": "benilla-re",
+    "name": "benilla-re",
+    "category": "tools",
+    "subject": "World of Warcraft 1.12.1 client (WoW.exe)",
+    "originalPlatform": "Windows",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenanceNote": "Commits carry a Claude co-author trailer.",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.1.1",
+      "date": "2026-10-15"
+    },
+    "playable": null,
+    "checked": "2026-10-26",
+    "provenance": "ai-assisted",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/samwhosung/benilla-re",
+    "team": [
+      "samwhosung"
+    ],
+    "started": "2026-10",
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "summary": "The reverse-engineering kit behind benilla: symbol tables, Ghidra and x64dbg databases and table generators that are rebuilt from your own copy of the 1.12.1 WoW.exe.",
+    "tags": [
+      "world-of-warcraft",
+      "ghidra",
+      "x64dbg",
+      "symbols"
+    ],
+    "sources": [
+      "https://github.com/samwhosung/benilla-re",
+      "https://github.com/andrewnakas/recompsoftware/issues/12"
+    ]
   }
 ]

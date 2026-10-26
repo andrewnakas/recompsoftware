@@ -30,9 +30,11 @@ jobs:
       - uses: actions/setup-node@v5
         with: { node-version: 22, cache: npm, cache-dependency-path: apps/web/package-lock.json }
       - name: Snapshot GitHub stats
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '23 5 * * *'
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
         env: { GITHUB_TOKEN: '${{ github.token }}' }
         run: |
+          # the 05:23 run takes the daily snapshot; the 6-hourly runs only catch up when it failed or was skipped
+          if [ "${{ github.event.schedule }}" != '23 5 * * *' ] && [ "$(node -p "require('./data/stats/latest.json').date")" = "$(date -u +%F)" ] && [ "$(node -p "require('./data/progress/latest.json').date")" = "$(date -u +%F)" ]; then echo "today's snapshot exists"; exit 0; fi
           node scripts/fetch-stats.mjs
           node scripts/fetch-progress.mjs || echo "progress fetch failed, keeping yesterday's"
           git config user.name "recomp-bot"; git config user.email "actions@users.noreply.github.com"

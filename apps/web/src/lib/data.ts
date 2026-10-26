@@ -58,7 +58,22 @@ export function projects(): Project[] {
   if (cache) return cache;
   const all = CATEGORIES.flatMap((c) => read<Project[]>(`projects/${c.id}.json`, []));
   cache = all.sort((a, b) => a.name.localeCompare(b.name));
+  for (const p of cache) p.status = liveStatus(p);
   return cache;
+}
+
+/** The hand-set status, moved on by the daily stats + progress snapshots so entries never go stale:
+ * 100% matched -> complete, archived repo -> archived, a wip port or recomp with a GitHub release -> released,
+ * a "stalled" repo pushed in the last 60 days -> wip. */
+const BUILDS = new Set<Method>(['static-recomp', 'source-port', 'rewrite', 'clean-room', 'lift']);
+function liveStatus(p: Project): string {
+  const s = statsFor(p);
+  if (s?.archived) return p.status === 'complete' || p.status === 'released' ? p.status : 'archived';
+  const pr = p.repo ? prog().repos[repoKey(p.repo)] : undefined;
+  if (pr && pr.pct >= 100 && (p.status === 'wip' || p.status === 'stalled')) return 'complete';
+  if (s?.release && BUILDS.has(p.method) && p.status === 'wip') return 'released';
+  if (p.status === 'stalled' && s?.pushedAt && Date.now() - Date.parse(s.pushedAt) < 60 * 864e5) return 'wip';
+  return p.status;
 }
 export const bySlug = (slug: string) => projects().find((p) => p.slug === slug);
 
