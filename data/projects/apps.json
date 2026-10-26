@@ -3353,5 +3353,49 @@
       "https://github.com/dbarbashov/openfuse",
       "https://github.com/andrewnakas/recompsoftware/issues/14"
     ]
+  },
+  {
+    "slug": "aare",
+    "name": "AARE",
+    "category": "apps",
+    "subject": "Android Auto (phone side)",
+    "originalPlatform": "Android",
+    "originalYear": 2015,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "32 of the last 93 commits carry Claude Co-Authored-By trailers",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/prototux/AARE",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "prototux",
+      "dustfeather"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.1.1",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Android"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Open-source stand-in for the phone half of Android Auto: speaks the projection protocol to a car head unit, draws the car screen itself and needs no Google Play Services.",
+    "tags": [
+      "android-auto",
+      "protocol",
+      "reimplementation"
+    ],
+    "sources": [
+      "https://github.com/prototux/AARE"
+    ],
+    "checked": "2026-10-26"
   }
 ]

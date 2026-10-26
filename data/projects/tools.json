@@ -23099,5 +23099,99 @@
       "https://github.com/samwhosung/benilla-re",
       "https://github.com/andrewnakas/recompsoftware/issues/12"
     ]
+  },
+  {
+    "slug": "atlus-script-tools",
+    "name": "Atlus Script Tools",
+    "category": "tools",
+    "subject": "Atlus flow and message scripts (Persona, SMT, etc.)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "Repo created 2017 (pre-2023)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/tge-was-taken/Atlus-Script-Tools",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "tge-was-taken",
+      "AnimatedSwine37",
+      "TekkaGB",
+      "oceanstuck"
+    ],
+    "started": "2017-04",
+    "firstRelease": "2017-11",
+    "latestRelease": {
+      "version": "v1.1.1-05483fe",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Compiler and decompiler suite for the flow (.bf) and message (.bmd) script formats used across Atlus games such as Persona 3-5, widely used for modding.",
+    "tags": [
+      "atlus",
+      "persona",
+      "scripts",
+      "modding"
+    ],
+    "sources": [
+      "https://github.com/tge-was-taken/Atlus-Script-Tools"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "kirikae",
+    "name": "Kirikae",
+    "category": "tools",
+    "subject": "Nintendo Switch executables",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/Cor3Duo/kirikae",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Cor3Duo",
+      "LokiCode404",
+      "jeffsmith82"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.2",
+      "date": "2026-10-24"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompiler written in Rust that converts Switch game executables into native PC programs, with an HLE system layer and NVN graphics translation.",
+    "tags": [
+      "switch",
+      "recompiler",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/Cor3Duo/kirikae"
+    ],
+    "checked": "2026-10-26"
   }
 ]

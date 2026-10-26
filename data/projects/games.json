@@ -57385,5 +57385,2687 @@
       "https://github.com/andrewnakas/recompsoftware/issues/16"
     ],
     "checked": "2026-10-26"
+  },
+  {
+    "slug": "savage-wind-recomp",
+    "name": "Savage Wind Recomp",
+    "category": "games",
+    "subject": "The Legend of Zelda: Breath of the Wild",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2017,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README: 'made almost entirely with AI' (Claude via Claude Code), human-directed; 26/43 commits carry Claude Co-Authored-By trailers",
+    "licence": "MIT",
+    "repo": "https://github.com/Revivedx/SavageWindRecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Revivedx",
+      "fgabe"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.3.1-alpha.3",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Work-in-progress static recompilation of the Switch release of Breath of the Wild (v1.9.0) into a native Windows and Linux program, built on the LAS Recomp runtime. The player supplies their own console dump.",
+    "tags": [
+      "switch",
+      "zelda",
+      "botw",
+      "recomp"
+    ],
+    "sources": [
+      "https://github.com/Revivedx/SavageWindRecomp"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "b2recomp",
+    "name": "B2recomp",
+    "category": "games",
+    "subject": "Bayonetta 2",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2018,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "All 36 commits carry AI Co-Authored-By trailers",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/K0NL/B2recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "K0NL"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.3.3",
+      "date": "2026-10-22"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Unofficial static recompilation of the Switch version of Bayonetta 2: a builder translates the player's own AArch64 game code to C on their PC and runs it on a reimplemented system layer.",
+    "tags": [
+      "switch",
+      "bayonetta",
+      "platinum",
+      "recomp"
+    ],
+    "sources": [
+      "https://github.com/K0NL/B2recomp"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "nfsu2-web",
+    "name": "nfsu2-web",
+    "category": "games",
+    "subject": "Need for Speed: Underground 2",
+    "originalPlatform": "Windows",
+    "originalYear": 2004,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README: 'Built with the help of Claude Code'; 100/100 recent commits carry AI trailers",
+    "licence": "MIT",
+    "repo": "https://github.com/th0mk/nfsu2-web",
+    "website": "https://nfsu2.xyz/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "th0mk"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Browser port of the 2004 PC Need for Speed: Underground 2: the game's x86 code is recompiled to C and WebAssembly, rendered through WebGPU with Web Audio, and fed from the player's own game files; includes a self-hostable server for shared free roam.",
+    "tags": [
+      "nfs",
+      "web",
+      "wasm",
+      "webgpu",
+      "recomp"
+    ],
+    "sources": [
+      "https://github.com/th0mk/nfsu2-web",
+      "https://nfsu2.xyz/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "forza-horizon-1-reimagined",
+    "name": "Forza Horizon 1 ReImagined",
+    "category": "games",
+    "subject": "Forza Horizon",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2012,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "GitHub contributors list includes the 'claude' account alongside Dyotson and soconnor0919",
+    "licence": "MIT",
+    "repo": "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined",
+    "website": "https://forza.dyotson.dev/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Dyotson",
+      "soconnor0919"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.2.0",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native PC version of the Xbox 360 Forza Horizon that generates C++ from the player's own copy, adding high frame rates, shared online free roam, leaderboards and a self-hostable server.",
+    "tags": [
+      "forza",
+      "xbox360",
+      "recomp",
+      "online"
+    ],
+    "sources": [
+      "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined",
+      "https://forza.dyotson.dev/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "botw-native",
+    "name": "BotW-Native",
+    "category": "games",
+    "subject": "The Legend of Zelda: Breath of the Wild",
+    "originalPlatform": "Wii U",
+    "originalYear": 2017,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/ryderclanky/BotW-Native",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ryderclanky"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.1",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of the Wii U Breath of the Wild (v1.5.0, USA) into a Windows program with a Vulkan renderer, continuing from the Metal-based BotW Recompiled project; a setup wizard builds the game from the player's extracted copy.",
+    "tags": [
+      "wiiu",
+      "zelda",
+      "botw",
+      "vulkan",
+      "recomp"
+    ],
+    "sources": [
+      "https://github.com/ryderclanky/BotW-Native"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "ultratears",
+    "name": "UltraTears",
+    "category": "games",
+    "subject": "The Legend of Zelda: Tears of the Kingdom",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2023,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "1 of 3 commits carries an AI Co-Authored-By trailer",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/kuraeow/ultratears",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "kuraeow"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.0-beta",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Unofficial Windows port of Tears of the Kingdom 1.4.3 by static recompilation, assembled on the player's PC from their own extracted ExeFS and RomFS dump.",
+    "tags": [
+      "switch",
+      "zelda",
+      "totk",
+      "recomp"
+    ],
+    "sources": [
+      "https://github.com/kuraeow/ultratears"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "cricket07-browser",
+    "name": "Cricket 07 in the browser",
+    "category": "games",
+    "subject": "EA Sports Cricket 07",
+    "originalPlatform": "Windows",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Its single commit carries an AI Co-Authored-By trailer",
+    "licence": "MIT",
+    "repo": "https://github.com/Dhaiwat10/cricket07-browser",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Dhaiwat10"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Runs the 2006 PC Cricket 07 in a browser by recompiling every function of its x86 executable to C and then WebAssembly, with Direct3D 8 reimplemented on WebGPU; the player loads their own game folder.",
+    "tags": [
+      "cricket",
+      "ea",
+      "web",
+      "wasm",
+      "webgpu",
+      "recomp"
+    ],
+    "sources": [
+      "https://github.com/Dhaiwat10/cricket07-browser"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "cvlod-recomp",
+    "name": "LodRecomp",
+    "category": "games",
+    "subject": "Castlevania: Legacy of Darkness",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1999,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/fliperama86/cvlod_recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "fliperama86"
+    ],
+    "started": "2026-01",
+    "firstRelease": "2026-06",
+    "latestRelease": {
+      "version": "v0.2.29",
+      "date": "2026-10-23"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "N64Recomp-based native port of Castlevania: Legacy of Darkness; the player places their own ROM next to the app.",
+    "tags": [
+      "n64",
+      "castlevania",
+      "konami",
+      "n64recomp"
+    ],
+    "sources": [
+      "https://github.com/fliperama86/cvlod_recomp"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "gow-psp-recomp",
+    "name": "God of War PSP Recomp",
+    "category": "games",
+    "subject": "God of War: Chains of Olympus / Ghost of Sparta",
+    "originalPlatform": "PlayStation Portable",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "37 of the last 100 commits carry AI Co-Authored-By trailers",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/DrummingBird1/gow-psp-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "DrummingBird1"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.3.1",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native Windows ports of both PSP God of War games made by static recompilation; a launcher detects the player's own US disc images and builds each game locally.",
+    "tags": [
+      "psp",
+      "god-of-war",
+      "recomp"
+    ],
+    "sources": [
+      "https://github.com/DrummingBird1/gow-psp-recomp"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "gt3-revisited",
+    "name": "GT3 Revisited",
+    "category": "games",
+    "subject": "Gran Turismo 3: A-Spec",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2001,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "All 5 commits carry AI Co-Authored-By trailers",
+    "licence": "MIT",
+    "repo": "https://github.com/matt-pulsipher/GT3-revisited",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "matt-pulsipher"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.3.0",
+      "date": "2026-10-24"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Android",
+      "Meta Quest"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Independent reimplementation of the Gran Turismo 3 A-Spec engine for modern systems that reads the player's own disc image at runtime, with split screen, replays, mods and a Quest VR mode.",
+    "tags": [
+      "gt3",
+      "ps2",
+      "reimplementation",
+      "vr"
+    ],
+    "sources": [
+      "https://github.com/matt-pulsipher/GT3-revisited"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "ps2rc",
+    "name": "PS2RC",
+    "category": "games",
+    "subject": "Grand Theft Auto: San Andreas",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2004,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "LicenseRef-PS2RC-1.2",
+    "repo": "https://github.com/SandstoneDev/PS2RC",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "SandstoneDev",
+      "entitybtw"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.1",
+      "date": "2026-10-14"
+    },
+    "targets": [
+      "PlayStation Portable"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Converter that statically recompiles the PAL PS2 release of GTA: San Andreas to C and builds it for a custom-firmware PSP, all on the player's PC from their own disc.",
+    "tags": [
+      "ps2",
+      "psp",
+      "gta",
+      "recomp"
+    ],
+    "sources": [
+      "https://github.com/SandstoneDev/PS2RC"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "snp-recomp",
+    "name": "Sin and Punishment Recompiled",
+    "category": "games",
+    "subject": "Sin and Punishment",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 2000,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "96 of the last 100 commits carry Claude Co-Authored-By trailers; 'claude' is a listed contributor",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/wootbeer/snprecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "wootbeer"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.2.4",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "N64 recompilation of Sin and Punishment for PC and Android, playing the player's Japanese ROM or a fan translation of it.",
+    "tags": [
+      "n64",
+      "treasure",
+      "n64recomp"
+    ],
+    "sources": [
+      "https://github.com/wootbeer/snprecomp"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "tekken-tag-2-ultimate-edition",
+    "name": "Tekken Tag 2 Ultimate Edition",
+    "category": "games",
+    "subject": "Tekken Tag Tournament 2 Wii U Edition",
+    "originalPlatform": "Wii U",
+    "originalYear": 2012,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "64 of 67 commits carry AI Co-Authored-By trailers",
+    "licence": "MIT",
+    "repo": "https://github.com/Petexy/Tekken-Tag-2-Ultimate-Edition",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Petexy",
+      "DeReggie"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.3.1",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native Linux port of the Wii U edition of Tekken Tag Tournament 2 made by static recompilation from the player's own .wua dump; playable through arcade mode.",
+    "tags": [
+      "wiiu",
+      "tekken",
+      "namco",
+      "recomp"
+    ],
+    "sources": [
+      "https://github.com/Petexy/Tekken-Tag-2-Ultimate-Edition"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "fh2mp",
+    "name": "FH2MP",
+    "category": "games",
+    "subject": "Forza Horizon 2",
+    "originalPlatform": "Xbox One",
+    "originalYear": 2014,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README: 'This project is AI-assisted'",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Charelene/FH2MP",
+    "website": "https://forza.scuffed.af",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Charelene",
+      "Trinculo54"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.0.2",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Replacement online server for the Xbox One build of Forza Horizon 2 running on PC through the Azimuth compatibility layer, rebuilt from the game client's own network protocol rather than captured Microsoft traffic.",
+    "tags": [
+      "forza",
+      "online",
+      "server",
+      "revival"
+    ],
+    "sources": [
+      "https://github.com/Charelene/FH2MP",
+      "https://forza.scuffed.af"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "flipendo",
+    "name": "Flipendo",
+    "category": "games",
+    "subject": "Harry Potter and the Philosopher's Stone",
+    "originalPlatform": "Windows",
+    "originalYear": 2001,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/kroplabeskidu/flipendo",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "kroplabeskidu",
+      "bravojohnny",
+      "KotlinIsland",
+      "zhegal"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.1",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Open-source engine for the 2001 PC Harry Potter game, built on SurrealEngine, that plays the installed retail files with widescreen and arbitrary resolutions and no SafeDisc; Chamber of Secrets support is in progress.",
+    "tags": [
+      "harry-potter",
+      "unreal",
+      "surrealengine",
+      "engine"
+    ],
+    "sources": [
+      "https://github.com/kroplabeskidu/flipendo"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "smash4pc",
+    "name": "Smash4PC",
+    "category": "games",
+    "subject": "Super Smash Bros. for Wii U",
+    "originalPlatform": "Wii U",
+    "originalYear": 2014,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Its single commit carries an AI Co-Authored-By trailer",
+    "licence": "MIT",
+    "repo": "https://github.com/josiahg2502-glitch/Smash4PC",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "josiahg2502-glitch"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of Super Smash Bros. for Wii U's PowerPC code into a native Windows game that runs from the player's own USA dump, with DLC and mod support.",
+    "tags": [
+      "wiiu",
+      "smash",
+      "recomp"
+    ],
+    "sources": [
+      "https://github.com/josiahg2502-glitch/Smash4PC"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "the-order-1886-port-mateussmeneses",
+    "name": "The Order: 1886 PC Native Port",
+    "category": "games",
+    "subject": "The Order: 1886",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2015,
+    "method": "emulation-hosted",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "38 of the last 100 commits carry AI Co-Authored-By trailers",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/mateussmeneses/theorder1886-port",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mateussmeneses",
+      "figormartins"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "windows-v0.7.8",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows port of The Order: 1886 that runs the PS4 executable's x86-64 code directly on the PC with a replacement system-library runtime and shadPS4's Vulkan video core; derived from the SpartanPort (God of War III) code base.",
+    "tags": [
+      "ps4",
+      "ready-at-dawn",
+      "shadps4"
+    ],
+    "sources": [
+      "https://github.com/mateussmeneses/theorder1886-port"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "spartanport",
+    "name": "SpartanPort",
+    "category": "games",
+    "subject": "God of War III Remastered",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2015,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/FelipePrado0/SpartanPort",
+    "website": "https://spartanport.com/en",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "FelipePrado0",
+      "devLucasEmiliano",
+      "Rajinder798",
+      "weversonl"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "windows-v2.8.0-intel-test2",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "PC port of God of War III Remastered (formerly gow3_pc) that executes the PS4 game's x86-64 code natively under a custom runtime, using shadPS4's Vulkan video core for graphics, with a launcher and up to 240 FPS.",
+    "tags": [
+      "ps4",
+      "god-of-war",
+      "shadps4"
+    ],
+    "sources": [
+      "https://github.com/FelipePrado0/SpartanPort",
+      "https://spartanport.com/en"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "ufc3rex",
+    "name": "UFC3ReX",
+    "category": "games",
+    "subject": "UFC Undisputed 3",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2012,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Co-Authored-By: Claude trailers (GitHub commit history), 4 of 8 commits",
+    "licence": "none",
+    "repo": "https://github.com/360recomper/UFC3ReX",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "360recomper"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.0.6",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows port of UFC Undisputed 3 built with the ReXGlue toolchain from the player's own Xbox 360 disc image, with career mode working and a launcher that handles DLC and mod packs.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "fighting"
+    ],
+    "sources": [
+      "https://github.com/360recomper/UFC3ReX",
+      "https://www.reddit.com/r/recomps/comments/1xg75fn/ufc_undisputed_3_360_recomp_with_working_career/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "streetball-revival",
+    "name": "Streetball Revival",
+    "category": "games",
+    "subject": "NBA Street Vol. 2",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2003,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README 'Made with the help of AI' notice and AI disclosure section; Claude Co-Authored-By trailers",
+    "licence": "MIT",
+    "repo": "https://github.com/luckvj/streetball-revival",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "luckvj"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.0-beta",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "A Rust rebuild of the PS2 three-on-three street basketball game that loads its data from the player's own disc image and adds online play.",
+    "tags": [
+      "ps2",
+      "rust",
+      "basketball",
+      "online"
+    ],
+    "sources": [
+      "https://github.com/luckvj/streetball-revival",
+      "https://www.reddit.com/r/recomps/comments/1xg4jn5/nba_street_v2_ps2_pc_port_w_3v3_online_support/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "rac-rs",
+    "name": "rac-rs",
+    "category": "games",
+    "subject": "Ratchet & Clank",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2002,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Co-Authored-By: Claude trailers (GitHub commit history), 14 of 17 commits",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/AsobiCodes/rac-rs",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "AsobiCodes"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.4.0",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Rust-based PC port of the first Ratchet & Clank: setup translates the PS2 code from the player's disc into Rust locally, and the port adds native rendering, texture-pack support and a script-mod loader.",
+    "tags": [
+      "ps2",
+      "rust",
+      "ratchet-and-clank",
+      "mods"
+    ],
+    "sources": [
+      "https://github.com/AsobiCodes/rac-rs",
+      "https://www.reddit.com/r/recomps/comments/1xg49ju/ratchetclank_enhanced_pc_port_3d_clouds/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "rampagere",
+    "name": "RampageRE",
+    "category": "games",
+    "subject": "Rampage: Total Destruction",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2006,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Co-Authored-By: Claude trailers (GitHub commit history), 60 of last 100 commits",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/jjmhalew/RampageRE",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jjmhalew"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.1.1",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "Android",
+      "Nintendo Switch",
+      "PS Vita"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native reimplementation of Midway's monster-smashing game that reads the city, monster and audio data from the player's PS2 (optionally Wii) disc and is playable start to finish.",
+    "tags": [
+      "ps2",
+      "reimplementation",
+      "midway"
+    ],
+    "sources": [
+      "https://github.com/jjmhalew/RampageRE",
+      "https://www.reddit.com/r/recomps/comments/1xfyxg4/rampage_total_destruction_pc_port_4k60_2026/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "saw2recomp",
+    "name": "Saw2Recomp",
+    "category": "games",
+    "subject": "Saw II: Flesh & Blood",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2010,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says some bring-up steps used AI assistance",
+    "licence": "none",
+    "repo": "https://github.com/Matt-code-d/Saw2Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Matt-code-d"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.1",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early ReXGlue recompilation of the Saw II horror game with a .NET launcher; the player provides the Xbox 360 disc image.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "horror"
+    ],
+    "sources": [
+      "https://github.com/Matt-code-d/Saw2Recomp",
+      "https://www.reddit.com/r/recomps/comments/1xfzimj/saw_2_flesh_and_blood/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "dust-wired-west-recomp",
+    "name": "Dust: A Tale of the Wired West Recomp",
+    "category": "games",
+    "subject": "Dust: A Tale of the Wired West",
+    "originalPlatform": "Windows",
+    "originalYear": 1995,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/twitchplayskh/Dust-a-tale-of-the-wired-west-Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "twitchplayskh"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "preview",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "C++20 reconstruction of the 1995 Western adventure's engine that reads the original game's data folders, with a launcher offering modern display modes; preview release.",
+    "tags": [
+      "pc",
+      "adventure",
+      "reimplementation"
+    ],
+    "sources": [
+      "https://github.com/twitchplayskh/Dust-a-tale-of-the-wired-west-Recomp",
+      "https://www.reddit.com/r/recomps/comments/1xfuqfq/dust_a_tale_of_the_wired_west_old_pc_game_recomp/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "recarbon",
+    "name": "ReCarbon",
+    "category": "games",
+    "subject": "Need for Speed: Carbon",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/retronative/recarbon",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "retronative"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.1",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Apple Silicon recompilation of the Xbox 360 Need for Speed: Carbon; the recompiled code is generated on the player's Mac from their own disc image.",
+    "tags": [
+      "xbox360",
+      "macos",
+      "apple-silicon",
+      "racing"
+    ],
+    "sources": [
+      "https://github.com/retronative/recarbon",
+      "https://www.reddit.com/r/recomps/comments/1xfqosp/recarbon_v010_need_for_speed_carbon_xbox_360/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "whopping-recompilation-collection",
+    "name": "The Whopping Recompilation Collection",
+    "category": "games",
+    "subject": "Sneak King, Big Bumpin' and PocketBike Racer",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Co-Authored-By: Claude trailers; README mentions AI",
+    "licence": "none",
+    "repo": "https://github.com/TekRantGaming/whopping-recompilation-collection",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TekRantGaming"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.0.6",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "One launcher bundling ReXGlue recompilations of the three 2006 Burger King promotional games, each installed from the player's own disc image.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "collection"
+    ],
+    "sources": [
+      "https://github.com/TekRantGaming/whopping-recompilation-collection",
+      "https://www.reddit.com/r/recomps/comments/1xfmle9/im_releasing_the_whopping_recompilation/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "mua-bundle-recompiled",
+    "name": "Marvel Ultimate Alliance Bundle Recompiled",
+    "category": "games",
+    "subject": "Marvel: Ultimate Alliance, Gold Edition and Marvel: Ultimate Alliance 2",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/saulob/marvel-ultimate-alliance-bundle-recompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "saulob"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Launcher plus three separate static recompilations of the Marvel Ultimate Alliance games, each installed from the player's own disc image, with higher resolutions and frame rates.",
+    "tags": [
+      "xbox360",
+      "marvel",
+      "collection"
+    ],
+    "sources": [
+      "https://github.com/saulob/marvel-ultimate-alliance-bundle-recompiled",
+      "https://www.reddit.com/r/recomps/comments/1xfkbia/marvel_ultimate_alliance_recompiled_for_pc_mua1/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "oogies-revenge-recompiled",
+    "name": "Oogie's Revenge Recompiled",
+    "category": "games",
+    "subject": "The Nightmare Before Christmas: Oogie's Revenge",
+    "originalPlatform": "Xbox",
+    "originalYear": 2004,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "All 4 commits carry Co-Authored-By: Claude trailers",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/josiahg2502-glitch/OogiesRevengeRecompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "josiahg2502-glitch"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.0.1",
+      "date": "2026-10-23"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of Capcom's Oogie's Revenge from the original Xbox release into a native Windows game with high resolutions, frame interpolation and extra rendering effects.",
+    "tags": [
+      "xbox",
+      "capcom"
+    ],
+    "sources": [
+      "https://github.com/josiahg2502-glitch/OogiesRevengeRecompiled",
+      "https://www.reddit.com/r/recomps/comments/1xfjr0c/capcoms_most_underrated_game_finally_has_a_pc/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "rayman3-hd-recompiled",
+    "name": "Rayman 3 HD Recompiled",
+    "category": "games",
+    "subject": "Rayman 3 HD",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2012,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "NOASSERTION",
+    "repo": "https://github.com/MysteriousAeon/rayman3-hd-recompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "MysteriousAeon"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.0.1",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows port of the XBLA Rayman 3 HD through static recompilation, using the player's own console package, with resolution and feature upgrades and a Turkish translation.",
+    "tags": [
+      "xbox360",
+      "xbla",
+      "rayman"
+    ],
+    "sources": [
+      "https://github.com/MysteriousAeon/rayman3-hd-recompiled",
+      "https://www.reddit.com/r/recomps/comments/1xfaiq7/i_finally_released_my_rayman_3_hd_xbox_360_recomp/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "wet-recomp-supermedo",
+    "name": "WET Recomp (Supermedo)",
+    "category": "games",
+    "subject": "WET",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2009,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "NOASSERTION",
+    "repo": "https://github.com/Supermedo/wet-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Supermedo"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-09",
+    "latestRelease": {
+      "version": "v0.6.0",
+      "date": "2026-10-05"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Fan ReXGlue port of the Xbox 360 shooter WET with a launcher and self-updater; the player dumps the ISO from their own disc. Separate from the already-listed nikolaygorb/WetRecomp.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "shooter"
+    ],
+    "sources": [
+      "https://github.com/Supermedo/wet-recomp",
+      "https://www.reddit.com/r/recomps/comments/1xfs5rx/wet_pc_port_wmouse_aim_early_preview/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "nhl-2k8-recompiled",
+    "name": "NHL 2K8 Recompiled",
+    "category": "games",
+    "subject": "NHL 2K8",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2007,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "22 of 24 commits carry a 'Co-authored-by: Claude' trailer (GitHub commit history)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/anishchandra24/NHL2K8-Recompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "anishchandra24"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.2.0",
+      "date": "2026-10-24"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early native Windows port of the Xbox 360 hockey game built on the ReXGlue SDK; the repo holds the recompiler fix list, a launcher and a music patch, and a setup tool builds the port locally from the player's own extracted disc.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "sports"
+    ],
+    "sources": [
+      "https://github.com/anishchandra24/NHL2K8-Recompiled",
+      "https://www.reddit.com/r/recomps/comments/1xf9ezk/nhl_2k8_recompiled/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "futurama-the-game-recomp",
+    "name": "Futurama: The Game: The Recomp",
+    "category": "games",
+    "subject": "Futurama (2003)",
+    "originalPlatform": "Xbox",
+    "originalYear": 2003,
+    "method": "non-matching-decomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README: built in about two weeks 'with Claude Opus 5.5 ... doing most of the heavy lifting'; Claude Co-Authored-By trailer on the commit",
+    "licence": "none",
+    "repo": "https://github.com/hiburn8/Futurama-The-Game-The-Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "hiburn8"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Hand-rewritten C++ reimplementation of the original Xbox Futurama game, each function recreated from the Xbox machine code, that runs natively on Windows and loads models, sounds and movies from the player's own disc files.",
+    "tags": [
+      "xbox",
+      "futurama",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/hiburn8/Futurama-The-Game-The-Recomp",
+      "https://www.reddit.com/r/recomps/comments/1xf8rt9/futurama_the_game_the_recomp/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "tidewater",
+    "name": "Tidewater",
+    "category": "games",
+    "subject": "Warcraft II: Battle.net Edition",
+    "originalPlatform": "Windows",
+    "originalYear": 1999,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "49 commits co-authored by Claude Opus 5.5; README points agents to CLAUDE.md; reddit post titled '(AI) Reimplementation'",
+    "licence": "MPL-2.0",
+    "repo": "https://github.com/nlwstein/tidewater",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "nlwstein"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.8.0",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android",
+      "PS Vita"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "From-scratch Rust engine for Warcraft II: Battle.net Edition and Beyond the Dark Portal, with campaigns, skirmish and LAN play, that imports data from the player's own GOG copy or CD image.",
+    "tags": [
+      "warcraft",
+      "rts",
+      "rust",
+      "engine-reimplementation"
+    ],
+    "sources": [
+      "https://github.com/nlwstein/tidewater",
+      "https://www.reddit.com/r/recomps/comments/1xf5m49/ai_reimplementation_port_of_warcraft_ii_battlenet/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "pgr4-native",
+    "name": "pgr4-native",
+    "category": "games",
+    "subject": "Project Gotham Racing 4",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2007,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "58 commits carry 'Co-authored-by: factory-droid[bot]' (Factory AI agent) trailers",
+    "licence": "MIT",
+    "repo": "https://github.com/shaunsingh/pgr4-native",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "shaunsingh"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.2.1",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "Linux (Steam Deck via Proton)"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native Direct3D 12 renderer and enhancements (HDR10, FSR upscaling, high refresh) layered on the ReXGlue-based PGR4 static recompilation, drawing from the game's own D3D calls instead of emulating the Xenos GPU; tuned for Steam Deck.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "racing",
+      "steam-deck"
+    ],
+    "sources": [
+      "https://github.com/shaunsingh/pgr4-native",
+      "https://www.reddit.com/r/recomps/comments/1xf44u8/native_pgr4_recomp_w_enhancements_nearly_locked/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "vf3-recomp",
+    "name": "Virtua Fighter 3 Recomp",
+    "category": "games",
+    "subject": "Virtua Fighter 3",
+    "originalPlatform": "Arcade (Sega Model 3)",
+    "originalYear": 1996,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/mr-finster/vf3-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mr-finster"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.10-alpha",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Steam Deck"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Recompiles the Model 3 arcade board's PowerPC program to native code at start-up from the player's own MAME ROM set, with widescreen, high render scales, 120 fps and online play with rollback netcode.",
+    "tags": [
+      "arcade",
+      "sega",
+      "model3",
+      "fighting",
+      "netplay"
+    ],
+    "sources": [
+      "https://github.com/mr-finster/vf3-recomp",
+      "https://www.reddit.com/r/recomps/comments/1xf0ls9/virtua_fighter_3_recomp_update_online_play_with/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "issn-pc",
+    "name": "issn_pc (inFAMOUS Second Son PC)",
+    "category": "games",
+    "subject": "inFAMOUS Second Son",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2014,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "58 commits co-authored by Claude Opus 5.5 (GitHub history)",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/Liondarkz/issn_pc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Liondarkz"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "windows-v0.3.4",
+      "date": "2026-10-24"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows-focused variant of the native inFAMOUS Second Son port that runs the PS4 game's x86-64 code on the PC with a Vulkan back end, adding FSR 4 and DLSS, 1:1 mouse aim, ultrawide and spray-can motion emulation; needs the player's own PS4 dump.",
+    "tags": [
+      "ps4",
+      "infamous",
+      "vulkan"
+    ],
+    "sources": [
+      "https://github.com/Liondarkz/issn_pc",
+      "https://www.reddit.com/r/recomps/comments/1xenok2/infamous_second_son_pc_port_034_is_out_intel_fix/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "rood-boi",
+    "name": "rood-boi",
+    "category": "games",
+    "subject": "Vagrant Story",
+    "originalPlatform": "PlayStation",
+    "originalYear": 2000,
+    "method": "source-port",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Claude Opus 5.5 Co-Authored-By trailers on several commits (GitHub history)",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/noprompt/rood-boi",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "noprompt"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux",
+      "Windows (via Linux/WSL build)"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native PC build of Vagrant Story on top of the rood-reverse decompilation, with a Vulkan renderer offering ray-traced and path-traced lighting plus a live editor; the player supplies their own disc image.",
+    "tags": [
+      "ps1",
+      "vagrant-story",
+      "ray-tracing",
+      "decomp-port"
+    ],
+    "sources": [
+      "https://github.com/noprompt/rood-boi",
+      "https://www.reddit.com/r/recomps/comments/1xembg5/progress_update_vagrant_story_native_pc_port/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "cosmic-recomp",
+    "name": "Cosmic Recomp",
+    "category": "games",
+    "subject": "Ben 10 Ultimate Alien: Cosmic Destruction",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2010,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "BSD-3-Clause",
+    "repo": "https://github.com/ExtremestoneGG/Cosmic-Recompi",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ExtremestoneGG"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.4.0-alpha.3",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Alpha Windows port of the Xbox 360 Ben 10 game built with ReXGlue and Direct3D 12, adding options such as an all-aliens toggle; requires the player's own copy.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "ben10"
+    ],
+    "sources": [
+      "https://github.com/ExtremestoneGG/Cosmic-Recompi",
+      "https://www.reddit.com/r/recomps/comments/1xefk2c/cosmic_recomp_ben_10_ultimate_alien_cosmic/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "007frwl-xbe-recomp",
+    "name": "007: From Russia with Love - XBE Recomp",
+    "category": "games",
+    "subject": "007: From Russia with Love",
+    "originalPlatform": "Xbox",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/TGP482/007FRWL-XBERecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TGP482"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "V1",
+      "date": "2026-10-24"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native PC port of the original Xbox version of the Bond game, with wide FOV, keyboard and mouse, rebindable controls and other options; the release ships the recompiler and toolchain so the port is built from the player's own default.xbe.",
+    "tags": [
+      "xbox",
+      "007",
+      "xbe"
+    ],
+    "sources": [
+      "https://github.com/TGP482/007FRWL-XBERecomp",
+      "https://www.reddit.com/r/recomps/comments/1xe5xvv/007_from_russia_with_love_xbe_recomp_by_tgp482/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "rerevved",
+    "name": "ReRevved",
+    "category": "games",
+    "subject": "Civilization Revolution",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/ReRevvedRecomp/rerevved",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ReRevvedRecomp",
+      "Aeshur"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.5.2",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of the Xbox 360 Civilization Revolution for desktop PCs with online hosting and mod support; needs the player's own Xbox 360 copy.",
+    "tags": [
+      "xbox360",
+      "civilization",
+      "strategy",
+      "rexglue"
+    ],
+    "sources": [
+      "https://github.com/ReRevvedRecomp/rerevved",
+      "https://www.reddit.com/r/recomps/comments/1xe1vjk/rerevved_civilization_revolution_xbox_360_static/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "brawl-recompiled",
+    "name": "Brawl Recompiled",
+    "category": "games",
+    "subject": "Super Smash Bros. Brawl",
+    "originalPlatform": "Wii",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "18 commits co-authored by Claude Opus 5.5 and 2 by Claude Fable (GitHub history)",
+    "licence": "none",
+    "repo": "https://github.com/josiahg2502-glitch/BrawlRecompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "josiahg2502-glitch"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.4.0",
+      "date": "2026-10-24"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native PC port of Brawl from static recompilation of the Wii code, with 4K and widescreen, gamepad support, online play and loading of SD-card mods such as Project+; installs from the player's own disc image.",
+    "tags": [
+      "wii",
+      "smash",
+      "online",
+      "mods",
+      "project-plus"
+    ],
+    "sources": [
+      "https://github.com/josiahg2502-glitch/BrawlRecompiled",
+      "https://www.reddit.com/r/recomps/comments/1xdyfii/brawl_recompiled_v040_my_native_pc_port_of_smash/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "iss-pc",
+    "name": "iss_pc",
+    "category": "games",
+    "subject": "inFAMOUS Second Son",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2014,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "21 commits co-authored by Claude Opus 5.5 (GitHub history)",
+    "licence": "none",
+    "repo": "https://github.com/HayatoG/iss_pc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "HayatoG"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "beta-2026.10.24-88e912f",
+      "date": "2026-10-24"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native Linux and Windows port of the PS4 inFAMOUS Second Son that runs the game's own x86-64 code with a translated GPU layer, motion-sensor emulation and save management; the player supplies their own PS4 dump.",
+    "tags": [
+      "ps4",
+      "infamous",
+      "vulkan"
+    ],
+    "sources": [
+      "https://github.com/HayatoG/iss_pc",
+      "https://www.reddit.com/r/recomps/comments/1xe9hcr/infamous_second_son_native_pc_port_before_vs_after/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "god-of-war-native-port",
+    "name": "God of War Native Port",
+    "category": "games",
+    "subject": "God of War",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README: 'Developed by Waffle565 with Claude (Anthropic) as co-author'; 60 Claude Co-Authored-By trailers; gemini-work/GEMINI.md in repo",
+    "licence": "none",
+    "repo": "https://github.com/Waffle565/God-Of-War-Native-Port",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Waffle565"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native PC port of the NTSC-U PS2 God of War in which the game code is statically recompiled to C++ and the PS2 hardware is replaced with native code; runs from the player's own ISO and executable.",
+    "tags": [
+      "ps2",
+      "god-of-war"
+    ],
+    "sources": [
+      "https://github.com/Waffle565/God-Of-War-Native-Port",
+      "https://www.reddit.com/r/recomps/comments/1xf0njn/god_of_war_2005_gets_a_native_pc_recompilation/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "blast-corps-recompiled",
+    "name": "Blast Corps Recompiled",
+    "category": "games",
+    "subject": "Blast Corps",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1997,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "README: 'No Gen-AI was used in this project' and Gen-AI contributions are refused (Time Extension also reports it as Gen-AI free)",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/SlaveOfIDO/blastcorps-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "SlaveOfIDO"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "1.0.1",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "N64: Recompiled-based native PC version of Blast Corps that loads its data from the player's own North American 1.1 ROM at startup.",
+    "tags": [
+      "n64",
+      "n64recomp",
+      "rare"
+    ],
+    "sources": [
+      "https://github.com/SlaveOfIDO/blastcorps-recomp",
+      "https://www.timeextension.com/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "arizona-vamp-recomp",
+    "name": "Arizona Vamp Recomp",
+    "category": "games",
+    "subject": "Darkwatch",
+    "originalPlatform": "Xbox",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "35 commits carry Claude Co-Authored-By trailers",
+    "licence": "MIT",
+    "repo": "https://github.com/Clergyman0013/arizona-vamp-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Clergyman0013"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.5.5",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native Windows build of the original Xbox Darkwatch made by statically recompiling the XBE on the player's PC from their own disc, adding Direct3D 12 rendering, split-screen co-op and PC settings.",
+    "tags": [
+      "xbox",
+      "xbe-recomp",
+      "shooter"
+    ],
+    "sources": [
+      "https://github.com/Clergyman0013/arizona-vamp-recomp",
+      "https://portedgames.com/darkwatch-pc/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "dusklight",
+    "name": "Dusklight",
+    "category": "games",
+    "subject": "The Legend of Zelda: Twilight Princess",
+    "originalPlatform": "GameCube",
+    "originalYear": 2006,
+    "method": "source-port",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "human-led",
+    "provenanceNote": "README: the project does not accept contributions that are primarily AI-generated",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/TwilitRealm/dusklight",
+    "website": "https://twilitrealm.dev/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TwilitRealm"
+    ],
+    "started": "2025-11",
+    "firstRelease": "2026-04",
+    "latestRelease": {
+      "version": "v2.0.3",
+      "date": "2026-09-30"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "PC and mobile port of Twilight Princess compiled from the zeldaret/tp decompilation, with fixes, mod support and a randomizer; the player supplies their own disc dump.",
+    "tags": [
+      "zelda",
+      "gamecube",
+      "decomp-port",
+      "mods"
+    ],
+    "sources": [
+      "https://github.com/TwilitRealm/dusklight",
+      "https://portedgames.com/zelda-twilight-princess-pc/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "ufc3native",
+    "name": "UFC3Native",
+    "category": "games",
+    "subject": "EA Sports UFC 3",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2018,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "38 commits carry Claude Opus Co-Authored-By trailers",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "GNSB"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "ufc3-v0.1.14",
+      "date": "2026-10-21"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native Linux and Windows port of the PS4 release of UFC 3 using the SacredFire/bbport runtime and a shadPS4-derived Vulkan renderer, run from the player's own dump.",
+    "tags": [
+      "ps4",
+      "fighting",
+      "bbport"
+    ],
+    "sources": [
+      "https://github.com/GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS",
+      "https://portedgames.com/ea-sports-ufc-pc/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "faust-rust-wasm",
+    "name": "Faust (Rust/WebAssembly port)",
+    "category": "games",
+    "subject": "Faust: The Seven Games of the Soul",
+    "originalPlatform": "Windows",
+    "originalYear": 1999,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/Omnium-Games/faust",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Omnium-Games"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-10-17"
+    },
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "New Rust engine for the 1999 Arxel Tribe adventure, worked out from faust.exe and compiled to WebAssembly so it plays in a browser from the player's own copy of the discs.",
+    "tags": [
+      "rust",
+      "wasm",
+      "adventure",
+      "browser"
+    ],
+    "sources": [
+      "https://github.com/Omnium-Games/faust",
+      "https://portedgames.com/faust-browser/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "mvp-baseball-2005-xbe-recomp",
+    "name": "MVP Baseball 2005 XBE Recomp",
+    "category": "games",
+    "subject": "MVP Baseball 2005",
+    "originalPlatform": "Xbox",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/maddog847/MVP-Baseball-2005-XBERecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "maddog847"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.3.0-beta",
+      "date": "2026-10-24"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Public beta of a native Windows build of the Xbox MVP Baseball 2005, recompiled with the XboxXBERecomp toolkit; game files come from the player's own copy.",
+    "tags": [
+      "xbox",
+      "xbe-recomp",
+      "sports",
+      "baseball"
+    ],
+    "sources": [
+      "https://github.com/maddog847/MVP-Baseball-2005-XBERecomp",
+      "https://portedgames.com/new/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "ncaa-10-psp-recomp",
+    "name": "NCAA 10 PSP Web Recomp",
+    "category": "games",
+    "subject": "NCAA Football 10",
+    "originalPlatform": "PlayStation Portable",
+    "originalYear": 2009,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude Opus Co-Authored-By trailers",
+    "licence": "MIT",
+    "repo": "https://github.com/awest813/NCAA-10-PSP-Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "awest813"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "player-20261020-c169aa1",
+      "date": "2026-10-20"
+    },
+    "targets": [
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Ahead-of-time translation of the PSP NCAA Football 10 executable to C++ and WebAssembly, played in the browser from the user's own US disc image.",
+    "tags": [
+      "psp",
+      "psprecomp",
+      "wasm",
+      "sports"
+    ],
+    "sources": [
+      "https://github.com/awest813/NCAA-10-PSP-Recomp",
+      "https://portedgames.com/ncaa-football-10-browser/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "opentennis",
+    "name": "OpenTennis",
+    "category": "games",
+    "subject": "Hot Shots Tennis",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2007,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "46 commits carry Claude Opus Co-Authored-By trailers",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/FIZL0/opentennis",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "FIZL0"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.3.8",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "Android",
+      "iOS",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Rust/Bevy remake of the PS2 Hot Shots Tennis (Everybody's Tennis) that reimplements the game's rules and physics and reads all art and audio at runtime from the player's own disc image.",
+    "tags": [
+      "ps2",
+      "rust",
+      "bevy",
+      "sports",
+      "online"
+    ],
+    "sources": [
+      "https://github.com/FIZL0/opentennis",
+      "https://portedgames.com/new/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "openomsi",
+    "name": "openOMSI",
+    "category": "games",
+    "subject": "OMSI 2",
+    "originalPlatform": "Windows",
+    "originalYear": 2013,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude Opus Co-authored-by trailers",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/openOMSI-org/openOMSI",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "openOMSI-org"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-09",
+    "latestRelease": {
+      "version": "v0.3.44",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Ground-up Rust reimplementation of the OMSI 2 bus simulator that loads existing OMSI 2 maps, buses and mods from an installed copy of the original.",
+    "tags": [
+      "rust",
+      "simulator",
+      "bus",
+      "mods"
+    ],
+    "sources": [
+      "https://github.com/openOMSI-org/openOMSI",
+      "https://portedgames.com/new/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "smm2recomp",
+    "name": "SMM2 Recomp",
+    "category": "games",
+    "subject": "Super Mario Maker 2",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2019,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "91 commits carry Claude Opus Co-Authored-By trailers",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/smm2recomp/smm2recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "smm2recomp"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.5.5",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of Super Mario Maker 2 for desktop that generates everything from the player's own 3.0.3 dump, keys and firmware, and adds SMM1's 100 Mario Challenge.",
+    "tags": [
+      "switch",
+      "mario",
+      "nx-recomp"
+    ],
+    "sources": [
+      "https://github.com/smm2recomp/smm2recomp",
+      "https://portedgames.com/super-mario-maker-2-pc/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "crash-bandicoot-launcher",
+    "name": "Crash Bandicoot Launcher",
+    "category": "games",
+    "subject": "Crash Bandicoot",
+    "originalPlatform": "PlayStation",
+    "originalYear": 1996,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commit history includes a Claude Opus Co-Authored-By trailer",
+    "licence": "MIT",
+    "repo": "https://github.com/Matteo842/CrashBandicoot-Launcher",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Matteo842"
+    ],
+    "started": "2026-07",
+    "firstRelease": "2026-07",
+    "latestRelease": {
+      "version": "2.3.1",
+      "date": "2026-10-21"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Launcher that uses RecompOne to translate the PS1 Crash Bandicoot code to C# on the player's machine from their own USA disc dump, with high resolutions, mods and a dev menu.",
+    "tags": [
+      "ps1",
+      "crash",
+      "recompone",
+      "mods"
+    ],
+    "sources": [
+      "https://github.com/Matteo842/CrashBandicoot-Launcher",
+      "https://portedgames.com/crash-bandicoot-pc/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "dkr-r",
+    "name": "DKR-R (Diddy Kong Racing Recompiled)",
+    "category": "games",
+    "subject": "Diddy Kong Racing",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1997,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/ThatGuyMcd/DKR-R",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ThatGuyMcd"
+    ],
+    "started": "2026-08",
+    "firstRelease": "2026-08",
+    "latestRelease": {
+      "version": "Version1.0.11",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native static recompilation of Diddy Kong Racing for desktop and Steam Deck with online play and custom kart imports, run from the player's own US ROM.",
+    "tags": [
+      "n64",
+      "rare",
+      "racing",
+      "online"
+    ],
+    "sources": [
+      "https://github.com/ThatGuyMcd/DKR-R",
+      "https://portedgames.com/new/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "luigis-mansion-recompiled",
+    "name": "Luigi's Mansion Recompiled",
+    "category": "games",
+    "subject": "Luigi's Mansion",
+    "originalPlatform": "GameCube",
+    "originalYear": 2001,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "88 commits carry Claude Opus Co-Authored-By trailers",
+    "licence": "none",
+    "repo": "https://github.com/rob646464/luigis-mansion-recompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "rob646464"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.1.4",
+      "date": "2026-10-22"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native PC version of Luigi's Mansion built from the player's own USA and/or PAL disc image, with high frame rates, widescreen, optional enhanced lighting and restored cut content.",
+    "tags": [
+      "gamecube",
+      "nintendo",
+      "aurora"
+    ],
+    "sources": [
+      "https://github.com/rob646464/luigis-mansion-recompiled",
+      "https://portedgames.com/luigis-mansion-pc/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "bluewake",
+    "name": "BlueWake",
+    "category": "games",
+    "subject": "The Legend of Zelda: The Wind Waker",
+    "originalPlatform": "GameCube",
+    "originalYear": 2002,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README: developed with substantial AI assistance for code, testing, documentation and debugging",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/chrissotraidis/bluewake",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "chrissotraidis"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-09",
+    "latestRelease": {
+      "version": "v0.9.0",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of the GameCube Wind Waker with native builds for desktop and mobile, built from the player's own US disc; succeeds Wind Waker Recomp 0.4.0.",
+    "tags": [
+      "zelda",
+      "gamecube",
+      "mobile"
+    ],
+    "sources": [
+      "https://github.com/chrissotraidis/bluewake",
+      "https://portedgames.com/zelda-wind-waker-pc/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "kartpad",
+    "name": "KartPad",
+    "category": "games",
+    "subject": "Mario Kart Wii",
+    "originalPlatform": "Wii",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README AI disclosure: substantial AI assistance for code, tests and docs",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/chrissotraidis/kartpad",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "chrissotraidis"
+    ],
+    "started": "2026-08",
+    "firstRelease": "2026-09",
+    "latestRelease": {
+      "version": "v0.8.6",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Android",
+      "iOS",
+      "macOS",
+      "tvOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Mobile and Apple-platform build of a Mario Kart Wii static recompilation (with Retro Rewind support) using Vulkan or Metal and touch controls, from the player's own PAL disc.",
+    "tags": [
+      "wii",
+      "mario-kart",
+      "mobile",
+      "retro-rewind"
+    ],
+    "sources": [
+      "https://github.com/chrissotraidis/kartpad",
+      "https://portedgames.com/mario-kart-wii-pc/"
+    ],
+    "checked": "2026-10-26"
+  },
+  {
+    "slug": "lcs-recomp",
+    "name": "LCS Recomp",
+    "category": "games",
+    "subject": "Grand Theft Auto: Liberty City Stories",
+    "originalPlatform": "PlayStation Portable",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/elmasas/lcs-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "elmasas"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-09",
+    "latestRelease": {
+      "version": "v0.1.7",
+      "date": "2026-10-09"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "PC port of the PSP Liberty City Stories built with PSPRecomp; the player adds their own decrypted EBOOT and PSP_GAME folder.",
+    "tags": [
+      "psp",
+      "gta",
+      "psprecomp"
+    ],
+    "sources": [
+      "https://github.com/elmasas/lcs-recomp",
+      "https://portedgames.com/gta-liberty-city-stories-pc/"
+    ],
+    "checked": "2026-10-26"
   }
 ]
