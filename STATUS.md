@@ -103,3 +103,8 @@ Use Google Analytics (GA4 property p558977824, read through the owner's Chrome) 
 
 ## Previous next-session (owner, 2026-10-22, done 2026-10-23: see Progress tracker)
 Build the most comprehensive public decomp/recomp progress tracker (bytematch/decomp.dev-style, tracking everything): progress sources per entry (objdiff report.json, progress JSON, badges), daily progress snapshots, % bars, progress charts, movers board, milestones. decomp.dev is sunsetting.
+
+## Search Console "not indexed" pass (2026-10-26)
+- Live crawl: all 2,720 sitemap URLs 200, canonicals match, no noindex.
+- Fixed in code: 25 internal links to /platforms/<x>/ that 404 (tools-only platforms such as python, risc-v, webassembly get no page; /p/ and /game/ crumbs linked them anyway) → `platformHref()` links only when the page exists. /p/ titles shared by same-name repos (AC6Recomp, F-Zero X decomp, Army of Two, Xenosaga, Crackdown...) now carry "by <owner>".
+- Owner, Cloudflare dashboard (zone recompsoftware.com): `http://` and `www.` still serve 200 (canonical points to the apex, so Google files them under "Alternate page with proper canonical tag"). SSL/TLS → Edge Certificates → Always Use HTTPS = on; Rules → Redirect Rules → "Redirect from WWW to root" template (301, keep path + query). Trailing-slash redirects from Workers assets are 307: harmless, internal links all carry the slash.

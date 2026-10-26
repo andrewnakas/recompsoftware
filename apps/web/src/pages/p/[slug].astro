@@ -8,7 +8,7 @@ import ProgressBar from '../../components/ProgressBar.astro';
 import ProgressChart from '../../components/ProgressChart.astro';
 import {
   projects, statsFor, statsDate, lineage, history, news, formatDate, fmtNum, CATEGORIES, METHOD_LABEL,
-  PROVENANCE_LABEL, TIER_LABEL, slugify, hubFor, mediaFor, growth, growthLabel, progressFor, progressDelta, progressDate,
+  PROVENANCE_LABEL, TIER_LABEL, platformHref, hubFor, mediaFor, growth, growthLabel, progressFor, progressDelta, progressDate,
   PROGRESS_SOURCE_LABEL, type Project,
 } from '../../lib/data';
 
@@ -18,6 +18,7 @@ export function getStaticPaths() {
 const { p } = Astro.props as { p: Project };
 const s = statsFor(p);
 const cat = CATEGORIES.find((c) => c.id === p.category)!;
+const platHref = platformHref(p.originalPlatform);
 const all = projects();
 const find = (slug: string) => all.find((x) => x.slug === slug);
 const edges = lineage();
@@ -55,7 +56,11 @@ const kind = p.method.includes('decomp') ? 'decompilation' : p.method === 'clean
 const saysKind = /decomp|disasm|disassembl|recomp|port|reimpl|rebuild|remake/.test(norm(p.name));
 const sub = p.subject && !norm(p.name).includes(norm(p.subject).slice(0, 8)) && (p.name + p.subject).length <= 44 ? p.subject : '';
 const wants = p.playable ? 'play in browser' : dl ? 'download & source' : 'source & status';
-const title = sub ? `${p.name}: ${sub} ${kind}, ${wants}` : saysKind ? `${p.name}: ${wants}` : `${p.name}: ${kind}, ${wants}`;
+// forks and rival repos share a name: the owner keeps their titles apart, or Google folds them into one page
+const owner = gh?.split('/')[3];
+const twin = owner && projects().some((o) => o.slug !== p.slug && norm(o.name) === norm(p.name));
+const name = twin ? `${p.name} by ${owner}` : p.name;
+const title = sub ? `${name}: ${sub} ${kind}, ${wants}` : saysKind ? `${name}: ${wants}` : `${name}: ${kind}, ${wants}`;
 const description = `${p.name}: ${p.summary} Status, ${PROVENANCE_LABEL[p.provenance].toLowerCase()} provenance, licence, latest release and live GitHub activity.`.slice(0, 300);
 const schema = {
   '@type': 'SoftwareSourceCode', name: p.name, description: p.summary, codeRepository: p.repo ?? undefined,
@@ -67,7 +72,7 @@ const schema = {
   <article class="wrap proj">
     <div class="top">
       <div class="intro">
-        <p class="crumbs"><a href="/">Recomp</a> / <a href={`/${p.category}/`}>{cat.label}</a> / <a href={`/platforms/${slugify(p.originalPlatform)}/`}>{p.originalPlatform}</a></p>
+        <p class="crumbs"><a href="/">Recomp</a> / <a href={`/${p.category}/`}>{cat.label}</a> / {platHref ? <a href={platHref}>{p.originalPlatform}</a> : p.originalPlatform}</p>
         <h1>{p.name}</h1>
         <p class="lede">{p.summary}</p>
         <Badges p={p} full />
@@ -126,7 +131,7 @@ const schema = {
         <h2>Facts</h2>
         <dl>
           <dt>Original</dt><dd>{p.subject}{p.originalYear && ` (${p.originalYear})`}</dd>
-          <dt>Platform</dt><dd><a href={`/platforms/${slugify(p.originalPlatform)}/`}>{p.originalPlatform}</a></dd>
+          <dt>Platform</dt><dd>{platHref ? <a href={platHref}>{p.originalPlatform}</a> : p.originalPlatform}</dd>
           <dt>Method</dt><dd>{METHOD_LABEL[p.method]}</dd>
           <dt>Provenance</dt><dd>{PROVENANCE_LABEL[p.provenance]}{p.provenanceNote && <span class="note"> · {p.provenanceNote}</span>} <a class="note" href="/about/#labels">what this means</a></dd>
           <dt>Status</dt><dd>{p.status}{pr && ` · ${pr.pct}% matched`}</dd>

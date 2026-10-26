@@ -2,7 +2,7 @@
 // One page per original game: every decomp, recomp, port and clean-room build of the same title, compared.
 import Base from '../../layouts/Base.astro';
 import PageHead from '../../components/PageHead.astro';
-import { gameHubs, statsFor, fmtNum, formatDate, METHOD_LABEL, PROVENANCE_LABEL, slugify, type Project } from '../../lib/data';
+import { gameHubs, statsFor, fmtNum, formatDate, METHOD_LABEL, PROVENANCE_LABEL, platformHref, type Project } from '../../lib/data';
 
 export function getStaticPaths() {
   return gameHubs().map((h) => ({ params: { slug: h.slug }, props: { h } }));
@@ -34,7 +34,7 @@ const description = `Every ${h.name} decompilation, static recompilation and por
 const schema = { '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
 ---
 <Base title={title} description={description} schema={schema}>
-  <PageHead crumbs={[{ href: '/games/', label: 'Games' }, { href: '/game/', label: 'By game' }, { href: `/platforms/${slugify(h.platform)}/`, label: h.platform }]} title={title}
+  <PageHead crumbs={[{ href: '/games/', label: 'Games' }, { href: '/game/', label: 'By game' }, ...(platformHref(h.platform) ? [{ href: platformHref(h.platform)!, label: h.platform }] : [])]} title={title}
     lede={`${list.length} community projects rebuild ${h.name}${h.year ? ` (${h.platform}, ${h.year})` : ''}: ${decomps} decompilation${decomps === 1 ? '' : 's'}, ${recomps} static recompilation${recomps === 1 ? '' : 's'} and ${ports} port${ports === 1 ? '' : 's'}, rewrite${ports === 1 ? '' : 's'} or clean-room build${ports === 1 ? '' : 's'}.`}>
     {web.length > 0 && <p class="btns"><a class="btn primary" href={web[0].playable!.launch === 'tab' ? web[0].playable!.url : `/play/${web[0].slug}/`} data-track="play_click" data-item={web[0].slug}>▶ Play {web[0].name} in your browser</a></p>}
   </PageHead>

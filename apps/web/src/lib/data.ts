@@ -174,6 +174,12 @@ export const platforms = () => {
   }
   return [...m.entries()].map(([name, list]) => ({ name, slug: slugify(name), list })).sort((a, b) => b.list.length - a.list.length);
 };
+/** Link to a platform page, or undefined when it has none (tools-only platforms such as Python or RISC-V get no page). */
+let platformSlugs: Set<string> | null = null;
+export const platformHref = (name: string) => {
+  const slug = slugify(name);
+  return (platformSlugs ??= new Set(platforms().map((p) => p.slug))).has(slug) ? `/platforms/${slug}/` : undefined;
+};
 
 /** The short name people search with ("N64 recomp", "PS2 decomp"). */
 export const PLATFORM_SHORT: Record<string, string> = {
