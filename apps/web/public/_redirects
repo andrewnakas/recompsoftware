@@ -25,3 +25,8 @@
 /platforms/windows-mac-os /platforms/windows-macos/ 301
 /platforms/windows-mac/ /platforms/windows-macos/ 301
 /platforms/windows-mac /platforms/windows-macos/ 301
+# 404s from Search Console 2026-10-26: tool-only platforms never had a page; skate3-cleanroom was taken down 2026-10-18
+/platforms/ethereum/ /tools/ 301
+/platforms/uefi/ /tools/ 301
+/platforms/ti-84-plus-ce/ /tools/ 301
+/p/skate3-cleanroom/ /game/skate-3/ 301

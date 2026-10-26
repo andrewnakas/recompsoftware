@@ -9,7 +9,7 @@ import ProgressChart from '../../components/ProgressChart.astro';
 import {
   projects, statsFor, statsDate, lineage, history, news, formatDate, fmtNum, CATEGORIES, METHOD_LABEL,
   PROVENANCE_LABEL, TIER_LABEL, slugify, hubFor, mediaFor, growth, growthLabel, progressFor, progressDelta, progressDate,
-  PROGRESS_SOURCE_LABEL, type Project,
+  PROGRESS_SOURCE_LABEL, platformHref, type Project,
 } from '../../lib/data';
 
 export function getStaticPaths() {
@@ -17,6 +17,7 @@ export function getStaticPaths() {
 }
 const { p } = Astro.props as { p: Project };
 const s = statsFor(p);
+const plHref = platformHref(p.originalPlatform);
 const cat = CATEGORIES.find((c) => c.id === p.category)!;
 const all = projects();
 const find = (slug: string) => all.find((x) => x.slug === slug);
@@ -63,11 +64,11 @@ const schema = {
   author: p.team.map((t) => ({ '@type': 'Person', name: t })),
 };
 ---
-<Base title={title} description={description} type="article" schema={schema} image={`/og/p-${p.slug}.jpg`}>
+<Base title={title} description={description} type="article" schema={schema} crumbs={[{ href: `/${p.category}/`, label: cat.label }, ...(plHref ? [{ href: plHref, label: p.originalPlatform }] : [])]} image={`/og/p-${p.slug}.jpg`}>
   <article class="wrap proj">
     <div class="top">
       <div class="intro">
-        <p class="crumbs"><a href="/">Recomp</a> / <a href={`/${p.category}/`}>{cat.label}</a> / <a href={`/platforms/${slugify(p.originalPlatform)}/`}>{p.originalPlatform}</a></p>
+        <p class="crumbs"><a href="/">Recomp</a> / <a href={`/${p.category}/`}>{cat.label}</a> / {plHref ? <a href={plHref}>{p.originalPlatform}</a> : p.originalPlatform}</p>
         <h1>{p.name}</h1>
         <p class="lede">{p.summary}</p>
         <Badges p={p} full />
@@ -126,7 +127,7 @@ const schema = {
         <h2>Facts</h2>
         <dl>
           <dt>Original</dt><dd>{p.subject}{p.originalYear && ` (${p.originalYear})`}</dd>
-          <dt>Platform</dt><dd><a href={`/platforms/${slugify(p.originalPlatform)}/`}>{p.originalPlatform}</a></dd>
+          <dt>Platform</dt><dd>{plHref ? <a href={plHref}>{p.originalPlatform}</a> : p.originalPlatform}</dd>
           <dt>Method</dt><dd>{METHOD_LABEL[p.method]}</dd>
           <dt>Provenance</dt><dd>{PROVENANCE_LABEL[p.provenance]}{p.provenanceNote && <span class="note"> · {p.provenanceNote}</span>} <a class="note" href="/about/#labels">what this means</a></dd>
           <dt>Status</dt><dd>{p.status}{pr && ` · ${pr.pct}% matched`}</dd>

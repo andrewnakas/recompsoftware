@@ -175,6 +175,14 @@ export const platforms = () => {
   return [...m.entries()].map(([name, list]) => ({ name, slug: slugify(name), list })).sort((a, b) => b.list.length - a.list.length);
 };
 
+/** Platform list page for a name, or null when none is built (tool-only platforms such as Ethereum or UEFI). */
+let platformSlugs: Set<string> | null = null;
+export const platformHref = (name: string) => {
+  platformSlugs ??= new Set(platforms().map((p) => p.slug));
+  const s = slugify(name);
+  return platformSlugs.has(s) ? `/platforms/${s}/` : null;
+};
+
 /** The short name people search with ("N64 recomp", "PS2 decomp"). */
 export const PLATFORM_SHORT: Record<string, string> = {
   'Nintendo 64': 'N64', PlayStation: 'PS1', 'PlayStation 2': 'PS2', 'PlayStation 3': 'PS3', 'PlayStation 4': 'PS4',

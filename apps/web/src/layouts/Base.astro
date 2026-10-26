@@ -8,9 +8,11 @@ interface Props {
   image?: string;
   type?: 'website' | 'article';
   schema?: Record<string, unknown>;
+  /** trail above this page (without the page itself), emitted as BreadcrumbList */
+  crumbs?: { href: string; label: string }[];
 }
 const SITE = 'https://recompsoftware.com';
-const { title, description = 'Recomp tracks every decompilation, static recompilation and clean-room rebuild of games and software: live GitHub trends, history, and builds you can play in the browser.', image = '/og/default.jpg', type = 'website', schema } = Astro.props;
+const { title, description = 'Recomp tracks every decompilation, static recompilation and clean-room rebuild of games and software: live GitHub trends, history, and builds you can play in the browser.', image = '/og/default.jpg', type = 'website', schema, crumbs } = Astro.props;
 const fullTitle = title === 'Recomp' ? 'Recomp: decompiled & recompiled games and software, tracked live' : `${title} · Recomp`;
 const path = Astro.url.pathname;
 const nav = [
@@ -24,6 +26,12 @@ const nav = [
   { href: '/history/', label: 'History' },
   { href: '/news/', label: 'News' },
 ];
+// site name for Google results + breadcrumb trail; both sit beside any page schema
+const ld = [
+  path === '/' && { '@type': 'WebSite', name: 'Recomp', alternateName: ['recompsoftware.com', 'Recomp Software'], url: SITE + '/' },
+  crumbs?.length && { '@type': 'BreadcrumbList', itemListElement: [{ href: '/', label: 'Recomp' }, ...crumbs, { href: path, label: title }].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: new URL(c.href, SITE).href })) },
+  schema,
+].filter(Boolean);
 const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
 ---
 <!doctype html>
@@ -46,7 +54,7 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
     <link rel="alternate" type="application/rss+xml" title="Recomp news" href="/news/rss.xml" />
     <link rel="alternate" type="application/rss+xml" title="Recomp: new releases" href="/releases.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    {schema && <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', ...schema })} />}
+    {ld.map((s) => <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', ...(s as object) })} />)}
     <script is:inline>let t = null; try { t = localStorage.getItem('theme'); } catch {} document.documentElement.dataset.theme = t || 'dark'; // dark by default; the toggle stores a light choice</script>
     {GA && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA}`}></script>}
     {/* define:vars wraps the script in a function, so gtag goes on window for the click tracker below */}
@@ -57,13 +65,18 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
     <header class="site-header">
       <div class="wrap bar">
         <a class="logo" href="/" aria-label="Recomp home"><span class="br">&lt;</span>recomp<span class="br">/&gt;</span></a>
+        <form class="gsearch" role="search" action="/projects/" method="get" autocomplete="off">
+          <label for="gq" class="visually-hidden">Search all projects</label>
+          <input id="gq" type="search" name="q" placeholder="Search projects…" aria-autocomplete="list" aria-controls="gq-list" aria-expanded="false" role="combobox" />
+          <kbd aria-hidden="true">/</kbd>
+          <ul id="gq-list" role="listbox" hidden></ul>
+        </form>
         <nav aria-label="Main">
           {nav.map((n) => <a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a>)}
         </nav>
         <div class="actions">
           <a class="play" href="/play/" aria-current={path.startsWith('/play/') ? 'page' : undefined}>▶ Play</a>
-          <a class="find" href="/projects/" aria-label="All projects">All projects</a>
-          <button class="theme" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <button class="theme" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
             <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 1.5v11a5.5 5.5 0 0 1 0-11z"/></svg>
           </button>
         </div>
@@ -81,7 +94,7 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
           </div>
           <nav aria-label="Catalogue">
             <p class="h">Catalogue</p>
-            <a href="/games/">Games</a><a href="/apps/">Apps</a><a href="/os/">OS &amp; system</a><a href="/tools/">RE tooling</a><a href="/preservation/">Preservation</a><a href="/platforms/">Platforms</a>
+            <a href="/games/">Games</a><a href="/apps/">Apps</a><a href="/os/">OS &amp; system</a><a href="/tools/">RE tooling</a><a href="/preservation/">Preservation</a><a href="/platforms/">Platforms</a><a href="/projects/">All projects</a>
           </nav>
           <nav aria-label="Lists">
             <p class="h">Lists</p>
@@ -105,6 +118,51 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
         root.dataset.theme = dark ? 'light' : 'dark';
         try { localStorage.setItem('theme', root.dataset.theme); } catch {}
       });
+      // header search: loads /search.json on first focus, suggests projects as you type, Enter opens the full catalogue search
+      {
+        const form = document.querySelector<HTMLFormElement>('.gsearch')!;
+        const input = form.querySelector('input')!;
+        const list = form.querySelector('ul')!;
+        const CAT: Record<string, string> = { games: 'Game', apps: 'App', os: 'OS', tools: 'Tool', preservation: 'Preservation' };
+        let rows: string[][] | null = null, loading: Promise<void> | null = null, hits: string[][] = [], sel = -1, timer: ReturnType<typeof setTimeout> | undefined;
+        const load = () => (loading ??= fetch('/search.json').then((r) => r.json()).then((d) => { rows = d.map((r: string[]) => [...r, r.slice(1, 4).join(' ').toLowerCase()]); }).catch(() => { loading = null; }));
+        const esc = (s: string) => s.replace(/[&<>"]/g, (c) => `&#${c.charCodeAt(0)};`);
+        const close = () => { list.hidden = true; input.setAttribute('aria-expanded', 'false'); sel = -1; };
+        const render = () => {
+          const q = input.value.toLowerCase().trim();
+          if (!q || !rows) return close();
+          const words = q.split(/\s+/);
+          const score = (r: string[]) => { const n = r[1].toLowerCase(); return n === q ? 0 : n.startsWith(q) ? 1 : n.includes(q) ? 2 : 3; };
+          hits = rows.filter((r) => words.every((w) => r[6].includes(w))).sort((a, b) => score(a) - score(b) || +b[5] - +a[5]).slice(0, 8);
+          sel = -1;
+          list.innerHTML = hits.map((r, i) => `<li role="option" id="gq-${i}"><a href="/p/${r[0]}/"><b>${esc(r[1])}</b><span>${esc([CAT[r[4]], r[3], r[2]].filter(Boolean).join(' · '))}</span></a></li>`).join('')
+            + `<li role="option" id="gq-all" class="all"><a href="/projects/?q=${encodeURIComponent(input.value.trim())}">All results for “${esc(input.value.trim())}” →</a></li>`;
+          list.hidden = false; input.setAttribute('aria-expanded', 'true');
+          clearTimeout(timer);
+          timer = setTimeout(() => { const g = (window as any).gtag; if (g) g('event', 'search', { search_term: q, results: hits.length, item: 'header' }); }, 1200);
+        };
+        const move = (d: number) => {
+          const items = [...list.querySelectorAll('li')];
+          if (!items.length) return;
+          sel = (sel + d + items.length) % items.length;
+          items.forEach((li, i) => li.classList.toggle('on', i === sel));
+          input.setAttribute('aria-activedescendant', items[sel].id);
+        };
+        input.addEventListener('focus', () => { load(); });
+        input.addEventListener('input', () => { if (rows) render(); else load()?.then(render); });
+        input.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowDown') { e.preventDefault(); move(1); }
+          else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
+          else if (e.key === 'Escape') { close(); input.blur(); }
+          else if (e.key === 'Enter' && sel >= 0) { e.preventDefault(); list.querySelectorAll('a')[sel]?.click(); }
+        });
+        list.addEventListener('click', (e) => { const a = (e.target as HTMLElement).closest('a'); const g = (window as any).gtag; if (a && g) g('event', 'search_select', { item: a.getAttribute('href') }); });
+        document.addEventListener('click', (e) => { if (!form.contains(e.target as Node)) close(); });
+        document.addEventListener('keydown', (e) => {
+          const t = e.target as HTMLElement;
+          if (e.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(t.tagName) && !t.isContentEditable) { e.preventDefault(); input.focus(); }
+        });
+      }
       document.addEventListener('click', (e) => {
         const a = (e.target as HTMLElement).closest<HTMLElement>('[data-track]');
         const g = (window as any).gtag;
@@ -129,6 +187,18 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
   .actions .play { background: var(--accent); color: var(--accent-ink); padding: 0.3rem 0.75rem; border-radius: var(--radius); font-weight: 700; }
   .actions .play:hover { background: var(--ink); color: var(--bg); }
   .find { font-family: var(--font-mono); font-size: 0.85rem; }
+  .gsearch { position: relative; flex: 1 1 200px; max-width: 340px; min-width: 0; }
+  @media (max-width: 639px) { .gsearch { order: 2; flex-basis: 100%; max-width: none; } .actions { margin-left: auto; } }
+  @media (min-width: 1080px) { .gsearch { flex: 0 1 240px; } .bar { column-gap: 1.25rem; flex-wrap: nowrap; } nav[aria-label='Main'] { gap: 1rem; } }
+  .gsearch input { width: 100%; font: inherit; font-size: 0.9rem; padding: 0.4rem 1.9rem 0.4rem 0.6rem; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--bg-raised); color: var(--ink); }
+  .gsearch input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .gsearch kbd { position: absolute; right: 0.45rem; top: 50%; transform: translateY(-50%); font: 0.72rem var(--font-mono); color: var(--ink-faint); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 0 0.3rem; pointer-events: none; }
+  .gsearch input:focus ~ kbd, .gsearch input:not(:placeholder-shown) ~ kbd { display: none; }
+  .gsearch ul { position: absolute; left: 0; top: calc(100% + 4px); width: max(100%, min(420px, 92vw)); margin: 0; padding: 0.25rem 0; list-style: none; background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: var(--radius); box-shadow: 0 8px 24px rgb(0 0 0 / 0.25); z-index: 20; max-height: 70vh; overflow-y: auto; }
+  .gsearch :global(li a) { display: block; padding: 0.4rem 0.7rem; color: var(--ink); text-decoration: none; font-size: 0.9rem; line-height: 1.3; }
+  .gsearch :global(li a span) { display: block; color: var(--ink-faint); font-size: 0.78rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .gsearch :global(li.on a), .gsearch :global(li a:hover) { background: var(--bg-sunk); }
+  .gsearch :global(li.all a) { color: var(--accent); font-size: 0.85rem; border-top: 1px solid var(--line); }
   .theme { display: grid; place-items: center; width: 30px; height: 30px; border: 0; background: none; color: var(--ink-soft); cursor: pointer; padding: 0; }
   @media (max-width: 1079px) { nav[aria-label='Main'] { mask-image: linear-gradient(to right, #000 85%, transparent); padding-right: 2rem; } }
   @media (max-width: 520px) { .find { display: none; } .bar { column-gap: 0.75rem; } }

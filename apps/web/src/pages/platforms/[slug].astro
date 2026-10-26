@@ -38,7 +38,7 @@ const faq = gamey ? [
 ] : [];
 const schema = faq.length ? { '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) } : undefined;
 ---
-<Base title={title} description={description} schema={schema}>
+<Base title={title} description={description} schema={schema} crumbs={[{ href: '/platforms/', label: 'Platforms' }]}>
   <PageHead crumbs={[{ href: '/platforms/', label: 'Platforms' }]} title={`${name} decomps & recomps`}
     lede={`${list.length} community projects rebuild ${name} software: ${recomps.length} static recompilation${recomps.length === 1 ? '' : 's'}, ${decomps.length} decompilation${decomps.length === 1 ? '' : 's'} and ${ports.length} port${ports.length === 1 ? '' : 's'}, rewrites and clean-room builds${list.length > games.length ? `, plus ${list.length - games.length} apps, tools and preservation projects` : ''}. Most-starred first; GitHub data as of ${statsDate() ?? 'the next refresh'}.`}>
     <p class="btns">
