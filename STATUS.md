@@ -103,3 +103,11 @@ Use Google Analytics (GA4 property p558977824, read through the owner's Chrome) 
 
 ## Previous next-session (owner, 2026-10-22, done 2026-10-23: see Progress tracker)
 Build the most comprehensive public decomp/recomp progress tracker (bytematch/decomp.dev-style, tracking everything): progress sources per entry (objdiff report.json, progress JSON, badges), daily progress snapshots, % bars, progress charts, movers board, milestones. decomp.dev is sunsetting.
+
+## Search Console fixes + header search (2026-10-26, d5b5721)
+- Diagnosis: clicks peaked 10-19 (1,451/day) and slid to 804 on 10-24, but avg position held 6.5-6.9: the Driveclub-recomp news spike faded (355 -> 169 clicks per 3 days), not a ranking loss. GA week 10-19..25 = 14,439 sessions vs 5,625 the week before. Home engagement 14 s, /p/ 12-19 s.
+- Indexing: 1.83K indexed, 834 "Discovered - not indexed" (never crawled: crawl budget of a 2-week-old domain; crawl rate fell from ~2K/day to ~400/day after 10-18), 20 crawled-not-indexed, 4 x 404.
+- Fixed: 404s (tool-only platforms Ethereum/UEFI/TI-84 linked to platform pages that are never built -> no link + 301 to /tools/; /p/skate3-cleanroom -> /game/skate-3/), sitemap lastmod on /p/, BreadcrumbList + WebSite schema, global header search (/search.json, "/" shortcut, search + search_select events).
+- Cloudflare (owner logged in, done in dashboard): Always Use HTTPS ON (http served 200 before = GSC "non-HTTPS"), Redirect Rule www -> apex 301 with query string (www served full duplicates).
+- GSC: sitemap resubmitted, 404 "Validate fix" started, Request indexing for /decompiled-games-list/, /game/super-mario-64/, /game/goldeneye-007/, /p/2ship2harkinian/, /p/dk64-recompiled/, /history/ (quota ~10/day; do more of the not-indexed /game/ hubs next time).
+- Re-check ~11-02: discovered-not-indexed count, crawl rate, Breadcrumbs enhancement report, header search usage (search event item=header).
