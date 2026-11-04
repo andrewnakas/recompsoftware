@@ -23375,5 +23375,52 @@
       "https://github.com/exoteric33/ps2-native-recomp/releases"
     ],
     "checked": "2026-11-04"
+  },
+  {
+    "slug": "project-nativ",
+    "name": "Project Nativ",
+    "category": "tools",
+    "subject": "PS Vita games (ARMv7/Thumb-2 executables)",
+    "originalPlatform": "PlayStation Vita",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README's AI disclaimer says much of the code and documentation was written with AI assistance (github.com/TheLostPantheon/nativ).",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/TheLostPantheon/nativ",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TheLostPantheon"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.5",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompiler for PS Vita games that also recompiles the system libraries from the user's own firmware file and runs them on a custom kernel/GPU runtime. Per-game packs currently cover Killzone: Mercenary, Uncharted: Golden Abyss, Unit 13 and Shovel Knight (US releases).",
+    "tags": [
+      "vita",
+      "recompiler",
+      "arm",
+      "killzone"
+    ],
+    "sources": [
+      "https://github.com/TheLostPantheon/nativ",
+      "https://github.com/TheLostPantheon/nativ/releases"
+    ],
+    "checked": "2026-11-04"
   }
 ]

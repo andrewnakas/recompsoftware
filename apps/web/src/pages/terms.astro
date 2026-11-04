@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import { LEGAL_EMAIL, POLICY_DATE } from '../lib/legal';
+---
+<Base title="Terms of use" description="Terms for using Recomp: a directory of third-party projects, each responsible for its own work, with no warranty and a simple takedown process.">
+  <PageHead kicker="Legal" title="Terms of use" lede={`Last updated ${POLICY_DATE}.`} />
+  <section class="wrap prose">
+    <h2 id="directory">Recomp is a directory</h2>
+    <p>Recomp lists and describes projects made by other people: decompilations, recompilations, reimplementations, tools and preservation work. Each entry links to the project's own repository, website or releases. Recomp does not host any project's source code or builds, and it hosts no ROMs, disc images, retail executables or game assets.</p>
+    <h2 id="responsibility">Projects are responsible for their own work</h2>
+    <p>Every listed project is made, published and maintained by its own authors, who are solely responsible for its contents, its licensing and its compliance with the law. A listing is not an endorsement, a guarantee that a project is safe, complete or lawful where you live, or a statement that we have audited its code.</p>
+    <p>Before an entry goes live we check, at that moment, that its repository and releases do not appear to host the original software or its assets (see <a href="/about/#hosting">what we list</a>). Projects change after we check them. The date of our last check is on each project page.</p>
+    <h2 id="your-use">Your use of listed projects</h2>
+    <p>Downloading, building or running a listed project is between you and that project. Use projects only with copies of software you own, follow the laws of your country, and read each project's own licence and instructions. Downloads are at your own risk.</p>
+    <h2 id="accuracy">Accuracy</h2>
+    <p>Facts on Recomp come from public sources that we link. Statistics such as stars, releases and progress are fetched automatically and can be out of date or wrong. If something is wrong, please <a href="/submit/">send a correction</a>.</p>
+    <h2 id="trademarks">Trademarks</h2>
+    <p>Game, product and company names and logos belong to their owners and are used only to identify the software a project rebuilds. Recomp is not affiliated with any publisher, platform holder or listed project.</p>
+    <h2 id="takedowns">Removal requests</h2>
+    <p>Rights holders and project maintainers can ask us to remove or change an entry. See <a href="/takedown/">takedown and removal requests</a>. We remove listings that infringe, and we do not relist projects that repeatedly do.</p>
+    <h2 id="warranty">No warranty</h2>
+    <p>Recomp is provided as is, without warranties of any kind. To the extent the law allows, we are not liable for any loss or damage from using this site or any project linked from it.</p>
+    <h2 id="changes">Changes</h2>
+    <p>We may update these terms; the date above shows the latest version. The site's full history is public on <a href="https://github.com/andrewnakas/recompsoftware">GitHub</a>. See also the <a href="/privacy/">privacy policy</a>.</p>
+    {LEGAL_EMAIL && <p>Contact: <a href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>.</p>}
+  </section>
+</Base>

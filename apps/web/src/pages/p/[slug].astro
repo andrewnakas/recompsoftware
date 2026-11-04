@@ -96,7 +96,7 @@ const schema = {
       </div>
       <figure class="shot">
         <Cover p={p} eager large />
-        {media?.thumb && <figcaption class="meta">Image: the project's own {media.kind === 'social' ? 'GitHub preview' : 'README'}{p.repo && <> · <a href={p.repo} rel="noopener">source</a></>}</figcaption>}
+        {media?.thumb && <figcaption class="meta">Image: {media.kind === 'chosen' ? 'chosen by the project' : <>the project's own {media.kind === 'social' ? 'GitHub preview' : 'README'}</>}{p.repo && <> · <a href={p.repo} rel="noopener">source</a></>}</figcaption>}
       </figure>
     </div>
 

@@ -64476,5 +64476,50 @@
       "https://github.com/chrisaacson69/UW-decompile"
     ],
     "checked": "2026-11-04"
+  },
+  {
+    "slug": "zoe-recompiled",
+    "name": "ZOE-Recompiled",
+    "category": "games",
+    "subject": "Zone of the Enders",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2001,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Yaz-Myst/ZOE-Recompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Yaz-Myst"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "1.0.1",
+      "date": "2026-10-31"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "PS2Recomp-based Windows port of the US Zone of the Enders with an OpenGL renderer, compiled VU programs and software IOP/sound. It reads the player's own ISO; the whole game is playable with widescreen, save states and two-player Versus, though it needs a fast single-core CPU.",
+    "tags": [
+      "ps2",
+      "ps2recomp",
+      "konami",
+      "mecha"
+    ],
+    "sources": [
+      "https://github.com/Yaz-Myst/ZOE-Recompiled",
+      "https://github.com/Yaz-Myst/ZOE-Recompiled/releases"
+    ],
+    "checked": "2026-11-04"
   }
 ]

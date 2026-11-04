@@ -1,0 +1,38 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import { LEGAL_EMAIL, TAKEDOWN_FORM, POLICY_DATE } from '../lib/legal';
+---
+<Base title="Takedown & removal requests (DMCA)" description="How rights holders and project maintainers can have a Recomp listing removed or changed, what to include in a DMCA notice, and what happens next.">
+  <PageHead kicker="Legal" title="Takedown & removal requests" lede="Recomp is a directory. We remove listings quickly when asked, and we never host the projects themselves." />
+  <section class="wrap section">
+    <div class="btns">
+      <a class="btn primary" href={TAKEDOWN_FORM} data-track="takedown_click">Send a removal request →</a>
+      {LEGAL_EMAIL && <a class="btn" href={`mailto:${LEGAL_EMAIL}?subject=Takedown%20request`}>Email instead</a>}
+    </div>
+    <p class="meta">{LEGAL_EMAIL ? 'The form opens a public GitHub issue. Email if you would rather keep your request private.' : 'The form opens a public GitHub issue (free account needed).'}</p>
+  </section>
+  <section class="wrap prose">
+    <h2 id="what">What we can remove</h2>
+    <p>Our own page about a project: its listing, summary, picture and links. We do not host any project's code, builds or files, so removing our listing does not remove the project itself. For the files, contact the site that hosts them, for example through <a href="https://docs.github.com/en/site-policy/content-removal-policies/dmca-takedown-policy">GitHub's DMCA takedown policy</a>.</p>
+    <h2 id="maintainers">Project maintainers</h2>
+    <p>If you maintain a listed project, you can have its entry removed or changed at any time, for any reason. No notice is needed. Say in the request that you work on it.</p>
+    <h2 id="rights-holders">Rights holders: what to include</h2>
+    <p>A copyright notice should include:</p>
+    <ol>
+      <li>the copyrighted work you believe is infringed;</li>
+      <li>the Recomp page or pages concerned (for example <code>https://recompsoftware.com/p/…/</code>), and what on them infringes;</li>
+      <li>your name, organisation if any, and how we can contact you;</li>
+      <li>a statement that you believe in good faith that the use is not authorised by the owner, its agent or the law;</li>
+      <li>a statement that the notice is accurate and, under penalty of perjury, that you are the owner or authorised to act for the owner;</li>
+      <li>your physical or electronic signature (typing your full name is fine).</li>
+    </ol>
+    <h2 id="next">What happens next</h2>
+    <ul>
+      <li>We act on complete requests promptly, usually within a few days, and normally by removing the listing while we look into it.</li>
+      <li>Where we can, we tell the project. Its maintainers can send a counter-notice through the same form if they believe the removal was a mistake.</li>
+      <li>We do not relist projects that are removed repeatedly for infringement.</li>
+    </ul>
+    <p class="meta">Last updated {POLICY_DATE}. See also the <a href="/terms/">terms of use</a> and <a href="/privacy/">privacy policy</a>.</p>
+  </section>
+</Base>

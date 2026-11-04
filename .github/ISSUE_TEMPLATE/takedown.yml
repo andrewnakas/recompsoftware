@@ -1,0 +1,38 @@
+name: Takedown or removal request
+description: Remove or change a recompsoftware.com listing (rights holders, DMCA notices, project maintainers)
+title: "[takedown] "
+labels: [takedown]
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. Recomp only lists projects and hosts none of their files: removing a listing does not remove the project from GitHub or elsewhere. See https://recompsoftware.com/takedown/"
+  - type: dropdown
+    id: role
+    attributes:
+      label: Who are you?
+      options: ["I maintain the listed project", "Copyright owner or authorised agent", "Other"]
+    validations: { required: true }
+  - type: textarea
+    id: pages
+    attributes: { label: Recomp page or pages, placeholder: "https://recompsoftware.com/p/example/" }
+    validations: { required: true }
+  - type: textarea
+    id: request
+    attributes: { label: What should be removed or changed, and why }
+    validations: { required: true }
+  - type: textarea
+    id: work
+    attributes: { label: "Copyright notices only: the work you believe is infringed", description: "Leave empty if you maintain the project." }
+  - type: input
+    id: contact
+    attributes: { label: "Name, organisation and contact", description: "How we can reach you if we have questions." }
+  - type: checkboxes
+    id: statements
+    attributes:
+      label: "Copyright notices only"
+      options:
+        - label: "I believe in good faith that the use described is not authorised by the copyright owner, its agent or the law."
+        - label: "This notice is accurate, and under penalty of perjury I am the owner or authorised to act on the owner's behalf."
+  - type: input
+    id: signature
+    attributes: { label: "Signature (copyright notices only)", description: "Type your full name." }

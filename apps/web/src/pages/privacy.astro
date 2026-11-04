@@ -1,0 +1,34 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import { LEGAL_EMAIL, POLICY_DATE } from '../lib/legal';
+---
+<Base title="Privacy policy" description="What Recomp collects (anonymous Google Analytics usage data), what stays in your browser, and what we never collect.">
+  <PageHead kicker="Legal" title="Privacy policy" lede={`Last updated ${POLICY_DATE}. Short version: no accounts, no ads, no selling data, and basic analytics only.`} />
+  <section class="wrap prose">
+    <h2 id="collect">What we collect</h2>
+    <p>Recomp has no accounts, and nothing you type is sent to us. We use <strong>Google Analytics 4</strong> to see how the site is used:</p>
+    <ul>
+      <li>the pages you view and the site you came from</li>
+      <li>clicks on download, repository, play and feed links</li>
+      <li>what you type into the site's search box, once you stop typing</li>
+      <li>general device, browser and approximate location (country or city) information</li>
+    </ul>
+    <p>Google processes this data under <a href="https://policies.google.com/privacy">its privacy policy</a>. Google Analytics 4 does not log or store IP addresses. To opt out, use a content blocker or <a href="https://tools.google.com/dlpage/gaoptout">Google's opt-out add-on</a>; the site works the same without it.</p>
+    <h2 id="hosting">Hosting</h2>
+    <p>The site is served by <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>, which handles requests (including your IP address) to deliver pages and protect the site from abuse. Fonts and images are served from our own domain, not from third-party CDNs.</p>
+    <h2 id="browser">Stored in your browser</h2>
+    <p>Two values are kept in your browser's local storage and are never sent to us: your light/dark theme choice (<code>theme</code>) and the time of your last visit (<code>lastVisit</code>), used for "new since your last visit" on the home page. We set no cookies ourselves; Google Analytics sets its own.</p>
+    <h2 id="github">Submissions and corrections</h2>
+    <p>The submit and correction forms open a prefilled issue on GitHub. Anything you post there is public and handled by <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+    <h2 id="third-party">Other sites</h2>
+    <p>Project links lead to sites we do not control, such as GitHub and the projects' own pages. Builds on the <a href="/play/">Play</a> page are framed from other sites, which apply their own policies; when a build asks you to pick a file, the file is opened in your browser and is not uploaded to us.</p>
+    <h2 id="never">What we never do</h2>
+    <p>No advertising trackers, no selling or sharing of personal data, no email lists, no fingerprinting.</p>
+    <h2 id="contact">Questions and requests</h2>
+    {LEGAL_EMAIL
+      ? <p>Email <a href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>.</p>
+      : <p>Open an issue on <a href="https://github.com/andrewnakas/recompsoftware/issues">GitHub</a>.</p>}
+    <p>See also the <a href="/terms/">terms of use</a>.</p>
+  </section>
+</Base>
