@@ -18,7 +18,7 @@ export interface Project {
   licence: string; repo: string | null; website: string | null; discord: string | null;
   subreddit: string | null; team: string[]; started: string | null; firstRelease: string | null;
   latestRelease: { version: string; date: string } | null; targets: string[]; needsOriginal: boolean;
-  playable: Playable | null; summary: string; tags: string[]; sources: string[]; checked: string;
+  image?: string | null; playable: Playable | null; summary: string; tags: string[]; sources: string[]; checked: string;
 }
 export interface Stats {
   stars: number; starsWeek: number | null; starsMonth: number | null; commits30: number | null;
@@ -166,7 +166,7 @@ export function milestones(n = 30) {
 }
 
 /** Each project's own picture (social preview or README image), thumbnailed by scripts/fetch-media.mjs. */
-export interface Media { src: string; kind: 'social' | 'readme'; thumb?: string }
+export interface Media { src: string; kind: 'chosen' | 'social' | 'readme'; thumb?: string }
 let mediaCache: Record<string, Media> | null = null;
 export const mediaFor = (p: Project) => (mediaCache ??= read<Record<string, Media>>('media.json', {}))[p.slug];
 

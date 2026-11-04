@@ -28,6 +28,7 @@ One JSON array per section in `data/projects/<category>.json`. Facts and links o
   "latestRelease": { "version": "1.2.2", "date": "2026-08-27" }, // from GitHub releases, or null
   "targets": ["Windows", "Linux", "macOS"],// where the result runs
   "needsOriginal": true,                   // user must supply their own copy of the original
+  "image": null,                           // optional: picture URL the maintainer asked for; scripts/fetch-media.mjs uses it over the social preview / README image
   "playable": null,                        // or { "tier": "cleanroom|free|byo|software", "url": "...", "launch": "frame|tab", "note": "licence reason it may be hosted" }
   "summary": "Native PC port of Majora's Mask built with N64: Recompiled ...", // 1-2 sentences, our words
   "tags": ["n64", "zelda", "mods"],

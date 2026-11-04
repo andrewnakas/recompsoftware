@@ -1,4 +1,4 @@
-// Each repo's own picture -> data/media.json: its custom GitHub social preview, else the first image in its README.
+// Each repo's own picture -> data/media.json: the entry's `image` (a picture the maintainer chose), else its custom GitHub social preview, else the first image in its README.
 // Thumbnails (640x320 webp) go to apps/web/public/thumbs/<slug>.webp; only re-made when the source URL changes.
 // Usage: node scripts/fetch-media.mjs [--limit N] [--no-thumbs] [--force-thumbs]
 import fs from 'node:fs';
@@ -43,6 +43,7 @@ for (let i = 0; i < projects.length; i += 25) {
   chunk.forEach(({ p, m }, k) => {
     const r = j?.data?.[`r${k}`];
     if (!r) return;
+    if (p.image) { media[p.slug] = { src: p.image.replace(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\/(blob|raw)\//, 'https://raw.githubusercontent.com/$1/$2/'), kind: 'chosen' }; return; }
     const img = r.usesCustomOpenGraphImage ? r.openGraphImageUrl : readmeImage((r.a ?? r.b)?.text ?? '', m[1], m[2].replace(/\.git$/, ''), r.defaultBranchRef?.name ?? 'HEAD');
     if (img) media[p.slug] = { src: img, kind: r.usesCustomOpenGraphImage ? 'social' : 'readme' };
   });
@@ -84,4 +85,4 @@ if (!process.argv.includes('--no-thumbs')) {
 const sorted = Object.fromEntries(Object.entries(media).sort(([a], [b]) => a.localeCompare(b)));
 fs.writeFileSync(path.join(DATA, 'media.json'), JSON.stringify(sorted, null, 0) + '\n');
 const v = Object.values(media);
-console.log(`fetch-media: ${projects.length} repos, ${v.filter((x) => x.kind === 'social').length} social previews, ${v.filter((x) => x.kind === 'readme').length} README images; thumbs ${made} new, ${kept} kept, ${failed} failed`);
+console.log(`fetch-media: ${projects.length} repos, ${v.filter((x) => x.kind === 'chosen').length} chosen, ${v.filter((x) => x.kind === 'social').length} social previews, ${v.filter((x) => x.kind === 'readme').length} README images; thumbs ${made} new, ${kept} kept, ${failed} failed`);

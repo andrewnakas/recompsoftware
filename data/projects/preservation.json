@@ -5290,6 +5290,7 @@
     },
     "targets": [],
     "needsOriginal": true,
+    "image": "https://raw.githubusercontent.com/adamstark1/inFAMOUS-Reborn-PS3/main/Assets/base-after.png",
     "playable": null,
     "summary": "Custom server and launcher that restores user-generated content for inFAMOUS 2 and Festival of Blood.",
     "tags": [
@@ -8887,6 +8888,7 @@
       "version": "1.0.0",
       "date": "2026-10-20"
     },
+    "image": "https://raw.githubusercontent.com/adamstark1/Darksiders2-Reborn-PS3/main/Assets/ds2-after.png",
     "playable": null,
     "checked": "2026-10-26",
     "provenance": "unknown",
@@ -8913,5 +8915,188 @@
       "https://github.com/adamstark1/Darksiders2-Reborn-PS3",
       "https://github.com/andrewnakas/recompsoftware/issues/13"
     ]
+  },
+  {
+    "slug": "saints-row-reborn",
+    "name": "Saints Row Reborn",
+    "category": "preservation",
+    "subject": "Saints Row: The Third and Saints Row IV Character Sharing (PS3)",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2011,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/adamstark1/SaintsRow-Reborn-PS3",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "adamstark1"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "1.0.0",
+      "date": "2026-11-01"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "image": "https://raw.githubusercontent.com/adamstark1/SaintsRow-Reborn-PS3/main/Assets/sr3-after.png",
+    "playable": null,
+    "summary": "Local replacement server and launcher that brings back Character Sharing in the PS3 versions of Saints Row: The Third and Saints Row IV (console or RPCS3), so characters can be uploaded and downloaded again and the Jumped In trophy, and with it the Platinum, can be earned. It builds on the MySteelportEmulator protocol work for the PC version, and the console is pointed at it through a DNS setting.",
+    "tags": [
+      "ps3",
+      "saints-row",
+      "server-revival",
+      "trophies"
+    ],
+    "sources": [
+      "https://github.com/adamstark1/SaintsRow-Reborn-PS3",
+      "https://github.com/adamstark1/SaintsRow-Reborn-PS3/releases",
+      "https://github.com/andrewnakas/recompsoftware/issues/23"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "5th-echelon-enhanced",
+    "name": "5th Echelon Enhanced",
+    "category": "preservation",
+    "subject": "Tom Clancy's Splinter Cell: Blacklist (online multiplayer)",
+    "originalPlatform": "Windows",
+    "originalYear": 2013,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "unknown",
+    "repo": "https://github.com/JDevWebb/5th-echelon-enhanced",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "JDevWebb",
+      "unixoide"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.4.7",
+      "date": "2026-10-28"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Extended version of unixoide's 5th Echelon: replacement Quazal servers for Splinter Cell: Blacklist co-op and Spies vs Mercs, with a launcher that installs the client hook, public community servers, friends and internet play without a VPN. Its own code is MIT; inherited upstream code has no licence yet.",
+    "tags": [
+      "server-emulator",
+      "splinter-cell",
+      "ubisoft",
+      "multiplayer",
+      "quazal"
+    ],
+    "sources": [
+      "https://github.com/JDevWebb/5th-echelon-enhanced",
+      "https://github.com/JDevWebb/5th-echelon-enhanced/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "aaemu-10x",
+    "name": "AAEmu 10.x",
+    "category": "preservation",
+    "subject": "ArcheAge (10.x)",
+    "originalPlatform": "Windows",
+    "originalYear": 2013,
+    "method": "clean-room",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Cursor agent co-author trailers and a .cursorignore is in the tree.",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/AAEmu/AAEmu-10.x",
+    "website": null,
+    "discord": "https://discord.gg/vn8E8E6",
+    "subreddit": null,
+    "team": [
+      "AAEmu"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "C#/.NET server emulator from the AAEmu project aimed at the ArcheAge 10.x client (zone 10.0.2 r575), with login, world and game servers. No releases; users build it and supply their own client.",
+    "tags": [
+      "mmo",
+      "archeage",
+      "server-emulator",
+      "csharp"
+    ],
+    "sources": [
+      "https://github.com/AAEmu/AAEmu-10.x"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "openorbit",
+    "name": "OpenOrbit",
+    "category": "preservation",
+    "subject": "DarkOrbit (Unity client)",
+    "originalPlatform": "Windows",
+    "originalYear": 2006,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Most commits carry Claude Co-Authored-By trailers.",
+    "licence": "MIT",
+    "repo": "https://github.com/kaanumay/OpenOrbit",
+    "website": null,
+    "discord": "https://discord.com/invite/openorbit",
+    "subreddit": null,
+    "team": [
+      "kaanumay"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Python single-player/LAN server for the DarkOrbit Unity client 1.1.116 with a desktop control panel, save slots, character and world editors and a small BepInEx client-fix plugin. The unmodified client is fetched from the official download server, not shipped.",
+    "tags": [
+      "mmo",
+      "darkorbit",
+      "server-emulator",
+      "python",
+      "offline"
+    ],
+    "sources": [
+      "https://github.com/kaanumay/OpenOrbit"
+    ],
+    "checked": "2026-11-04"
   }
 ]

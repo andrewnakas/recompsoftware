@@ -23193,5 +23193,187 @@
       "https://github.com/Cor3Duo/kirikae"
     ],
     "checked": "2026-10-26"
+  },
+  {
+    "slug": "decomp-anything",
+    "name": "decomp.anything",
+    "category": "tools",
+    "subject": "Matching decompilation of N64, GameCube and Wii games and Windows PE programs",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AI-agent decomp tool with AGENTS.md; commits carry Claude and Codebuff co-author trailers (github.com/giveen/decomp.anything).",
+    "licence": "MIT",
+    "repo": "https://github.com/giveen/decomp.anything",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "giveen"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux",
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Continuation of the discontinued decomp.wtf: a local app where AI agents write C or C++ against a binary the user owns and the original compiler checks it byte for byte. Adds Windows PE matching with MinGW and clang-cl toolchains, an optional bridge to the REA analysis server, and forking of existing community decomps.",
+    "tags": [
+      "decompilation",
+      "tooling",
+      "ai-agents",
+      "objdiff",
+      "windows"
+    ],
+    "sources": [
+      "https://github.com/giveen/decomp.anything",
+      "https://github.com/giveen/decomp.anything/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "nakagawa-recomp",
+    "name": "Nakagawa Recomp",
+    "category": "tools",
+    "subject": "PSP games (Allegrex MIPS executables)",
+    "originalPlatform": "PlayStation Portable",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md, CLAUDE.md, copilot-instructions and Assisted-by: Claude Code commit trailers; docs/AI_USAGE.md sets its AI policy (github.com/Jstar269/Nakagawa-Recomp).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Jstar269/Nakagawa-Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Jstar269"
+    ],
+    "started": "2026-08",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.0.1",
+      "date": "2026-10-28"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "General PSP static recompiler with a player app: it decrypts the user's own ISO or EBOOT locally, translates the MIPS code to C and builds a Windows program with a bundled compiler. Early stage: Hot Shots Tennis: Get a Grip is playable, a few others reach menus or stages.",
+    "tags": [
+      "psp",
+      "recompiler",
+      "mips",
+      "launcher"
+    ],
+    "sources": [
+      "https://github.com/Jstar269/Nakagawa-Recomp",
+      "https://github.com/Jstar269/Nakagawa-Recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "superghidra",
+    "name": "SuperGhidra",
+    "category": "tools",
+    "subject": "Native binaries via Ghidra (PE, Mach-O, ELF, APK)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md and CLAUDE.md in the tree, some Claude co-author trailers (github.com/yuatemycat/SuperGhidra).",
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/yuatemycat/SuperGhidra",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "yuatemycat"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.0.8",
+      "date": "2026-11-01"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Python toolkit around Ghidra: a warm read-only Ghidra daemon with caching, a filter that turns decompiler output into compilable C, MSVC RTTI/MFC and Objective-C class recovery, Mach-O fixup decoding, binary diffing and an MCP server for agents.",
+    "tags": [
+      "ghidra",
+      "mcp",
+      "decompiler",
+      "python"
+    ],
+    "sources": [
+      "https://github.com/yuatemycat/SuperGhidra",
+      "https://github.com/yuatemycat/SuperGhidra/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "ps2-native-recomp",
+    "name": "ps2-native-recomp",
+    "category": "tools",
+    "subject": "PS2 games (Emotion Engine executables)",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says much of the code was written with Claude Code; codex/ branch merges in history (github.com/exoteric33/ps2-native-recomp).",
+    "licence": "MIT",
+    "repo": "https://github.com/exoteric33/ps2-native-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "exoteric33"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.0.1",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Generic PS2 static recompiler built on ps2-web-recomp: the EE code of a user's disc is translated to C++ and compiled, while the rest of the console is emulated, with no per-game code. About 19 titles reported working to some degree; God of War II has been finished.",
+    "tags": [
+      "ps2",
+      "recompiler",
+      "mips",
+      "pcsx2-patches"
+    ],
+    "sources": [
+      "https://github.com/exoteric33/ps2-native-recomp",
+      "https://github.com/exoteric33/ps2-native-recomp/releases"
+    ],
+    "checked": "2026-11-04"
   }
 ]

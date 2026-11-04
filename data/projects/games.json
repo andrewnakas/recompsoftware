@@ -60067,5 +60067,4414 @@
       "https://portedgames.com/gta-liberty-city-stories-pc/"
     ],
     "checked": "2026-10-26"
+  },
+  {
+    "slug": "gtav-recomp",
+    "name": "GTA V Recomp",
+    "category": "games",
+    "subject": "Grand Theft Auto V",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2013,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude Code session trailers (github.com/andrewnakas/gtav-recomp commits).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/andrewnakas/gtav-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "andrewnakas"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "0.3.0",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of the Xbox 360 release of GTA V (Title Update 27) built on ReXGlue, with a new Vulkan renderer. The game's PowerPC code is recompiled and compiled on the player's own machine from their discs, so releases carry only the launcher, runtime and toolchain; phone builds are produced from a PC or Mac.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "gta",
+      "rockstar",
+      "open-world"
+    ],
+    "sources": [
+      "https://github.com/andrewnakas/gtav-recomp",
+      "https://github.com/andrewnakas/gtav-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "fracture-recomp",
+    "name": "Fracture Recomp",
+    "category": "games",
+    "subject": "Fracture",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers (github.com/ASarafanov/fracturerecomp commits).",
+    "licence": "none",
+    "repo": "https://github.com/ASarafanov/fracturerecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ASarafanov"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.4.0",
+      "date": "2026-10-29"
+    },
+    "targets": [
+      "Windows",
+      "Steam Deck"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native Windows port of Day 1 Studios' terrain-deforming shooter, statically recompiled from the Xbox 360 executable with ReXGlue. It installs the game from your own disc image, supports two disc versions, and adds up to 4x resolution, 60 FPS and an in-game settings screen; early days, with the full campaign not yet played through.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "lucasarts",
+      "shooter"
+    ],
+    "sources": [
+      "https://github.com/ASarafanov/fracturerecomp",
+      "https://github.com/ASarafanov/fracturerecomp/releases",
+      "https://github.com/andrewnakas/recompsoftware/issues/22"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "clash-of-ninja-recomp",
+    "name": "Naruto: Clash of Ninja recomp",
+    "category": "games",
+    "subject": "Naruto: Clash of Ninja",
+    "originalPlatform": "GameCube",
+    "originalYear": 2003,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "The author says it was made with AI-assisted tools (Copilot) in issue #21; the repo also carries CLAUDE.md and Copilot instructions.",
+    "licence": "MIT",
+    "repo": "https://github.com/mapleleafjack/ClashOfNinja-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mapleleafjack"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "1.7.2",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "A launcher that statically recompiles five Clash of Ninja / Gekitou Ninja Taisen GameCube games into native executables from your own disc, built on gcn-recomp with decomp-toolkit for function splitting. The game projects are generated locally, never shipped, and the launcher also applies community mods, Gecko codes and disc patches such as SCON4.",
+    "tags": [
+      "gamecube",
+      "naruto",
+      "fighting",
+      "gcn-recomp",
+      "mods"
+    ],
+    "sources": [
+      "https://github.com/mapleleafjack/ClashOfNinja-recomp",
+      "https://github.com/mapleleafjack/ClashOfNinja-recomp/releases",
+      "https://github.com/andrewnakas/recompsoftware/issues/21"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "parasite-eve-hd-remaster",
+    "name": "Parasite Eve HD Remaster",
+    "category": "games",
+    "subject": "Parasite Eve",
+    "originalPlatform": "PlayStation",
+    "originalYear": 1998,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers; the README says backgrounds are upscaled with AI.",
+    "licence": "none",
+    "repo": "https://github.com/faligame/Parasite-Eve-HD-Remaster",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "faligame"
+    ],
+    "started": "2026-09",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Sister project to Parasite Eve II HD Remaster: the North American PS1 release statically recompiled into a Windows executable that boots on OpenBIOS, with PGXP precision and HD replacement backgrounds, textures and font. The repo is a public progress page only, with no source or builds yet; a planned installer will build the game from your own discs.",
+    "tags": [
+      "ps1",
+      "square",
+      "recompilation",
+      "hd"
+    ],
+    "sources": [
+      "https://github.com/faligame/Parasite-Eve-HD-Remaster",
+      "https://github.com/andrewnakas/recompsoftware/issues/20"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "horizon-rust",
+    "name": "Horizon",
+    "category": "games",
+    "subject": "Minecraft: Java Edition",
+    "originalPlatform": "Multi",
+    "originalYear": 2011,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md, CLAUDE.md and a .claude/skills folder in the repo; commits carry Claude Opus and Codex co-author trailers (github.com/horizon-rust/horizon).",
+    "licence": "MIT",
+    "repo": "https://github.com/horizon-rust/horizon",
+    "website": "https://playhorizon.dev",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "horizon-rust",
+      "ludovic111"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.2.97",
+      "date": "2026-10-28"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "A Rust rewrite of the Minecraft: Java Edition 26.3 client and server, with hundreds of differential test harnesses comparing its behaviour against the Java game. Its launcher builds the game's resources from the player's own Java Edition copy (a Microsoft account that owns the game is required); data and native Rust mods load, Java mod jars do not.",
+    "tags": [
+      "minecraft",
+      "rust",
+      "reimplementation",
+      "client",
+      "server"
+    ],
+    "sources": [
+      "https://github.com/horizon-rust/horizon",
+      "https://github.com/horizon-rust/horizon/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "totk-recomp",
+    "name": "TotK Recomp",
+    "category": "games",
+    "subject": "The Legend of Zelda: Tears of the Kingdom",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2023,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README states most of the code and documentation is written by AI coding agents (Claude Code) under the maintainer's direction; commits carry Claude co-author trailers.",
+    "licence": "MIT",
+    "repo": "https://github.com/valentderah/totk-pc-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "valentderah"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.3.7",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of Tears of the Kingdom's ARM64 code to native x86-64 with a Vulkan renderer, built locally by a setup tool from the player's own dump of the base game plus update 1.1.0, 1.2.1 or 1.4.3. Adds frame rates above 60, custom resolutions, DLSS and FSR, HDR and support for emulator-style mods.",
+    "tags": [
+      "switch",
+      "zelda",
+      "nintendo",
+      "open-world",
+      "vulkan"
+    ],
+    "sources": [
+      "https://github.com/valentderah/totk-pc-recomp",
+      "https://github.com/valentderah/totk-pc-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "skyboundtotk",
+    "name": "SkyboundTOTK",
+    "category": "games",
+    "subject": "The Legend of Zelda: Tears of the Kingdom",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2023,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude Opus co-author trailers (github.com/NotRexed/SkyboundTotk commits).",
+    "licence": "MIT",
+    "repo": "https://github.com/NotRexed/SkyboundTotk",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "NotRexed"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Experimental ahead-of-time translation of Tears of the Kingdom 1.0.0 (with 1.2.1 also building) from ARM64 to C, compiled locally against a runtime for the Switch services and a WebGPU renderer. No prebuilt downloads; the user builds it from their own extracted ExeFS and RomFS.",
+    "tags": [
+      "switch",
+      "zelda",
+      "nintendo",
+      "webgpu"
+    ],
+    "sources": [
+      "https://github.com/NotRexed/SkyboundTotk",
+      "https://github.com/NotRexed/SkyboundTotk/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "gta-vcs-recomp",
+    "name": "VCS Recomp",
+    "category": "games",
+    "subject": "Grand Theft Auto: Vice City Stories",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2007,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md and CLAUDE.md in the repo root; commits carry Claude Opus co-author trailers (github.com/gothamor/gta-vcs-recomp).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/gothamor/gta-vcs-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "gothamor"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.2.1",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native port of the US PS2 release of Vice City Stories, made by recompiling its MIPS executable to C++ with PS2Recomp; Direct3D 11 on Windows and Vulkan on Linux. A launcher compiles the game on the player's machine from their own disc image, which it also reads at run time.",
+    "tags": [
+      "ps2",
+      "ps2recomp",
+      "gta",
+      "rockstar",
+      "open-world"
+    ],
+    "sources": [
+      "https://github.com/gothamor/gta-vcs-recomp",
+      "https://github.com/gothamor/gta-vcs-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "cogbox",
+    "name": "COGBox",
+    "category": "games",
+    "subject": "Gears of War 2, Gears of War 3 and Gears of War: Judgment",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude Opus co-author and Claude-Session trailers (github.com/Shagg88/COGBox commits).",
+    "licence": "MIT",
+    "repo": "https://github.com/Shagg88/COGBox",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Shagg88"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.4.5",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Launcher plus static recompilations of the Xbox 360 Gears of War games to native Windows, with its own Direct3D 12 renderer (Vulkan experimental), higher resolutions and frame rates, and DLSS, FSR and XeSS options; the download also carries an early Gears of War 1 build. Each game is set up from the player's own copy on its latest title update.",
+    "tags": [
+      "xbox360",
+      "gears-of-war",
+      "epic-games",
+      "shooter",
+      "unreal"
+    ],
+    "sources": [
+      "https://github.com/Shagg88/COGBox",
+      "https://github.com/Shagg88/COGBox/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "pokopia-recomp",
+    "name": "Pokopia Recomp",
+    "category": "games",
+    "subject": "Pokémon Pokopia",
+    "originalPlatform": "Nintendo Switch 2",
+    "originalYear": 2026,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/drakolordx7/pokopia-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "drakolordx7"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.1.1",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows port of the Switch 2 game Pokopia (version 2.0.1a) built on the author's nxrecomp toolchain with a Vulkan renderer. The launcher compiles the game from the player's extracted dump and then builds a shader cache, which takes one to two hours.",
+    "tags": [
+      "switch2",
+      "pokemon",
+      "nintendo",
+      "nxrecomp",
+      "vulkan"
+    ],
+    "sources": [
+      "https://github.com/drakolordx7/pokopia-recomp",
+      "https://github.com/drakolordx7/pokopia-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "weeping-of-the-empire",
+    "name": "Weeping of the Empire",
+    "category": "games",
+    "subject": "The Legend of Zelda: Tears of the Kingdom",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2023,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README states most of the code was written by AI coding agents directed by one developer.",
+    "licence": "MIT",
+    "repo": "https://github.com/daniel-madrid-07/weeping-of-the-empire",
+    "website": null,
+    "discord": null,
+    "subreddit": "https://www.reddit.com/r/WeepingOfTheEmpire/",
+    "team": [
+      "daniel-madrid-07"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.9.1",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Ahead-of-time recompilation of Tears of the Kingdom 1.0.0 (1.4.3 in beta) to x86-64 with a Vulkan backend, installed by a small setup program that decrypts and builds the game from the player's own dump and keys. Offers frame caps up to 240, DLSS and FSR upscaling and frame generation, and keyboard and mouse controls; a Linux build is in testing.",
+    "tags": [
+      "switch",
+      "zelda",
+      "nintendo",
+      "vulkan"
+    ],
+    "sources": [
+      "https://github.com/daniel-madrid-07/weeping-of-the-empire",
+      "https://github.com/daniel-madrid-07/weeping-of-the-empire/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "nv-rs",
+    "name": "nv-rs",
+    "category": "games",
+    "subject": "Fallout: New Vegas",
+    "originalPlatform": "Windows",
+    "originalYear": 2010,
+    "method": "non-matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README states nv-rs is built almost entirely with AI coding agents (mainly Claude, some Codex); commits carry Claude co-author trailers.",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/slaterain/nv-rs",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "slaterain",
+      "chasmlol"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "experimental-2026-10-03.2",
+      "date": "2026-10-03"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "A new 64-bit engine for Fallout: New Vegas in Rust, produced by translating the original program function by function and checking each piece against it, then rebuilding memory, threading and rendering natively. It loads the game's plugins and assets from the player's own install; the only published build is an early experimental viewer.",
+    "tags": [
+      "fallout",
+      "bethesda",
+      "rust",
+      "rpg",
+      "gamebryo"
+    ],
+    "sources": [
+      "https://github.com/slaterain/nv-rs",
+      "https://github.com/slaterain/nv-rs/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "gow-native-pc",
+    "name": "God of War Native PC",
+    "category": "games",
+    "subject": "God of War",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md and CLAUDE.md in the repo; commits carry Claude Opus co-author and Claude-Session trailers (github.com/Vnnc1/gow-native-pc).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Vnnc1/gow-native-pc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Vnnc1"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.5.0",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows port of the PS2 God of War (NTSC-U, with European and Japanese region data) packaged with a Qt launcher and one-click build on top of the PS2Recomp runtime as extended by earlier God of War ports. Targets 60 fps and supports fan translations; a Linux build is experimental.",
+    "tags": [
+      "ps2",
+      "ps2recomp",
+      "god-of-war",
+      "santa-monica"
+    ],
+    "sources": [
+      "https://github.com/Vnnc1/gow-native-pc",
+      "https://github.com/Vnnc1/gow-native-pc/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "dkb-recomp",
+    "name": "DKB Recomp",
+    "category": "games",
+    "subject": "Donkey Kong Bananza",
+    "originalPlatform": "Nintendo Switch 2",
+    "originalYear": 2025,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README states most of the code and documentation is written by AI coding agents (Claude Code).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Lucas-blip-png/dkb-pc-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Lucas-blip-png",
+      "valentderah"
+    ],
+    "started": "2026-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of Donkey Kong Bananza's ARM64 code to C with a host NVN 2 implementation on Vulkan, built on TotK Recomp's runtime. It boots into the tutorial cave and renders 3D scenes but is not yet playable; there are no prebuilt downloads, only an installer that builds from the player's dump.",
+    "tags": [
+      "switch2",
+      "donkey-kong",
+      "nintendo",
+      "vulkan"
+    ],
+    "sources": [
+      "https://github.com/Lucas-blip-png/dkb-pc-recomp",
+      "https://github.com/Lucas-blip-png/dkb-pc-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "downhill-revived",
+    "name": "Downhill Revived",
+    "category": "games",
+    "subject": "Downhill Domination",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2003,
+    "method": "matching-decomp",
+    "status": "released",
+    "progress": 97,
+    "progressSource": "https://github.com/skuza-oss/downhill-revived#decompilation-progress",
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in the repo root; commits carry Claude Opus co-author trailers (github.com/skuza-oss/downhill-revived).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/skuza-oss/downhill-revived",
+    "website": "https://downhill-revived.pages.dev",
+    "discord": "https://discord.gg/XrSeTyzfr2",
+    "subreddit": null,
+    "team": [
+      "skuza-oss"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.7.9",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "PC port of Incognito's PS2 downhill racer built on a matching decompilation, with the PS2 hardware replaced by a native Direct3D 12, Vulkan or Metal renderer. Adds high frame rates, widescreen, online races and PCSX2 texture pack support; players supply their own disc, and the Mac, Linux and Android builds are experimental.",
+    "tags": [
+      "ps2",
+      "racing",
+      "decompilation",
+      "sony"
+    ],
+    "sources": [
+      "https://github.com/skuza-oss/downhill-revived",
+      "https://github.com/skuza-oss/downhill-revived/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "nfsu2recomp-mac",
+    "name": "NFSU2Recomp",
+    "category": "games",
+    "subject": "Need for Speed: Underground 2",
+    "originalPlatform": "Windows",
+    "originalYear": 2004,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says development was done with an AI coding assistant (Claude Code) under the owner's direction.",
+    "licence": "proprietary",
+    "repo": "https://github.com/TalhaMudo/NFSU2Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TalhaMudo"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v2.4-2026.11.04",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompiler and runtime that turn the 32-bit PC executable of NFS Underground 2 into a native Apple Silicon app, with Direct3D 9 translated to Metal and DirectSound to CoreAudio. Supports the European and North American executables; the prebuilt app holds only recompiled code and reads the game from the player's own install. Source is visible but all rights reserved.",
+    "tags": [
+      "pc",
+      "nfs",
+      "racing",
+      "macos",
+      "metal"
+    ],
+    "sources": [
+      "https://github.com/TalhaMudo/NFSU2Recomp",
+      "https://github.com/TalhaMudo/NFSU2Recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "openigi",
+    "name": "OpenIGI",
+    "category": "games",
+    "subject": "Project I.G.I.: I'm Going In and I.G.I. 2: Covert Strike",
+    "originalPlatform": "Windows",
+    "originalYear": 2000,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/OpenIGI/OpenIGI",
+    "website": "https://openigi.com",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ShahriyarB",
+      "heaven-hm"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.6.2",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Clean-room C#/.NET 10 engine for Innerloop's two I.G.I. games that runs the original missions and QVM scripts from a retail install. Adds a renderer with Direct3D 12, Vulkan and WebGPU backends, ray tracing, co-op, modding and a launcher, plus a browser build.",
+    "tags": [
+      "fps",
+      "stealth",
+      "csharp",
+      "engine",
+      "innerloop"
+    ],
+    "sources": [
+      "https://github.com/OpenIGI/OpenIGI",
+      "https://github.com/OpenIGI/OpenIGI/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "gears-of-war-3-recomp",
+    "name": "Gears of War 3 Recomp",
+    "category": "games",
+    "subject": "Gears of War 3",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2011,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude Opus co-author trailers (github.com/Flippage/gears-of-war-3-recomp commits).",
+    "licence": "BSD-3-Clause",
+    "repo": "https://github.com/Flippage/gears-of-war-3-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Flippage"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.3.1",
+      "date": "2026-10-30"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of the retail Xbox 360 Gears of War 3 executable to native x64 Windows with the ReXGlue SDK, using its Xenia-derived Direct3D 12 renderer. Supports the base game and title update 6 and loads the game from the player's own extracted disc.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "gears-of-war",
+      "epic-games",
+      "shooter"
+    ],
+    "sources": [
+      "https://github.com/Flippage/gears-of-war-3-recomp",
+      "https://github.com/Flippage/gears-of-war-3-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "redivivus",
+    "name": "Redivivus",
+    "category": "games",
+    "subject": "Diablo II: Lord of Destruction (1.14d)",
+    "originalPlatform": "Windows",
+    "originalYear": 2001,
+    "method": "non-matching-decomp",
+    "status": "wip",
+    "progress": 50,
+    "progressSource": "https://github.com/jaenster/redivivus#verification",
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/jaenster/redivivus",
+    "website": "https://redivivus.app",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jaenster"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "C++ reconstruction of the whole Diablo II 1.14d program, including its Storm and Fog libraries, generated from reverse-engineered Ghidra databases and hand-corrected so it builds and plays single player. About half of all functions compile to machine code identical to the retail build; it needs the player's own 1.14 install and still crashes.",
+    "tags": [
+      "diablo2",
+      "blizzard",
+      "decompilation",
+      "arpg"
+    ],
+    "sources": [
+      "https://github.com/jaenster/redivivus",
+      "https://github.com/jaenster/redivivus/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "mhforever",
+    "name": "MHForever",
+    "category": "games",
+    "subject": "Monster Hunter Freedom Unite",
+    "originalPlatform": "PSP",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README states it was developed with AI assistance; commits carry Claude Opus co-author trailers.",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Mango77x/MHForever",
+    "website": "https://mango77x.github.io/MHForever-site/",
+    "discord": "https://discord.gg/6xrxY2buDf",
+    "subreddit": null,
+    "team": [
+      "Mango77x"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.8.3",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native PC port of the PSP Monster Hunter Freedom Unite (European, North American and Japanese releases) by static recompilation, with a launcher that sets it up from the player's own disc image. Planned as the first module of a wider Monster Hunter recompilation project.",
+    "tags": [
+      "psp",
+      "monster-hunter",
+      "capcom",
+      "rpg"
+    ],
+    "sources": [
+      "https://github.com/Mango77x/MHForever",
+      "https://github.com/Mango77x/MHForever/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "d2gamma",
+    "name": "D2Gamma",
+    "category": "games",
+    "subject": "Diablo II: Lord of Destruction",
+    "originalPlatform": "Windows",
+    "originalYear": 2001,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/Nugwa628/d2gamma",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Nugwa628"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.1.2159",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Rust rewrite of Diablo II: Lord of Destruction that reads the original MPQ archives from the player's install, running the game logic at 60 Hz with widescreen, high resolutions and generated in-between animation frames. Ships a Windows game client plus node and realm servers for online play; early beta.",
+    "tags": [
+      "diablo2",
+      "blizzard",
+      "rust",
+      "arpg"
+    ],
+    "sources": [
+      "https://github.com/Nugwa628/d2gamma",
+      "https://github.com/Nugwa628/d2gamma/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "unbanished",
+    "name": "Un-Banished",
+    "category": "games",
+    "subject": "Banished",
+    "originalPlatform": "Windows",
+    "originalYear": 2014,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md and .claude/skills in the repo, README describes an AI agent writing up the reverse-engineered pseudocode; commits carry Claude Opus co-author trailers.",
+    "licence": "Apache-2.0",
+    "repo": "https://github.com/tanepiper/unbanished",
+    "website": "https://tanepiper.github.io/unbanished/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "tanepiper"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.5.0",
+      "date": "2026-10-23"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "From-scratch Rust engine for Shining Rock's city builder Banished that runs natively and in a web browser, using the game data from the player's own copy.",
+    "tags": [
+      "city-builder",
+      "strategy",
+      "rust",
+      "webassembly"
+    ],
+    "sources": [
+      "https://github.com/tanepiper/unbanished",
+      "https://github.com/tanepiper/unbanished/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "demons-souls-recomp",
+    "name": "Demon's Souls Recomp",
+    "category": "games",
+    "subject": "Demon's Souls",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2009,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude Opus co-author trailers (github.com/timboat/demons-souls-recomp commits).",
+    "licence": "MIT",
+    "repo": "https://github.com/timboat/demons-souls-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "timboat"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v2026.11.03.10",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native Windows build of the US PS3 Demon's Souls, made by recompiling its PPU and SPU code with ps3recomp against a PS3 runtime and a Direct3D 12 renderer. The release is a launcher and build kit that recompiles the game from the player's own disc image.",
+    "tags": [
+      "ps3",
+      "ps3recomp",
+      "fromsoftware",
+      "souls",
+      "rpg"
+    ],
+    "sources": [
+      "https://github.com/timboat/demons-souls-recomp",
+      "https://github.com/timboat/demons-souls-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "bo2-mac",
+    "name": "bo2-mac",
+    "category": "games",
+    "subject": "Call of Duty: Black Ops II",
+    "originalPlatform": "Windows",
+    "originalYear": 2012,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says AI agents write the shims and do bisection while the human directs and corrects.",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/adrbn/bo2-mac",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "adrbn"
+    ],
+    "started": "2026-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of Black Ops II's three 32-bit Windows executables (campaign, Zombies and multiplayer) to native ARM64 macOS, lifting x86 through Remill to LLVM IR and linking a hand-written Win32 runtime that draws Direct3D 11 through Metal. Each player builds the app on their Mac from their own Steam copy; beta, multiplayer is against bots.",
+    "tags": [
+      "pc",
+      "call-of-duty",
+      "activision",
+      "macos",
+      "remill"
+    ],
+    "sources": [
+      "https://github.com/adrbn/bo2-mac",
+      "https://github.com/adrbn/bo2-mac/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "izunarecomp",
+    "name": "IzunaRecomp — The Izuna Project",
+    "category": "games",
+    "subject": "Ninja Gaiden II",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README's AI disclosure says the code, docs and tooling were written by Claude Code under the maintainer's direction (github.com/YaibaKamikaze/IzunaRecomp).",
+    "licence": "MIT",
+    "repo": "https://github.com/YaibaKamikaze/IzunaRecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "YaibaKamikaze"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.2.0",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows port of the Xbox 360 Ninja Gaiden II built on ReXGlue, which grew out of the Ninja's Dawn recompilation and swaps its emulated GPU for a native Vulkan renderer. Reads default.xex and data from the player's extracted copy, compiles the game's shaders on first start, and adds a hub, mod folder and Lua script mods.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "ninja-gaiden",
+      "action"
+    ],
+    "sources": [
+      "https://github.com/YaibaKamikaze/IzunaRecomp",
+      "https://github.com/YaibaKamikaze/IzunaRecomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "tlou-remastered-pc",
+    "name": "The Last of Us Remastered PC port",
+    "category": "games",
+    "subject": "The Last of Us Remastered",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2014,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers (github.com/ravencaio/tlou-remastered-pc commits).",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/ravencaio/tlou-remastered-pc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ravencaio"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.1.6",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Runs the PS4 release (CUSA00552, update 1.11) on Windows by executing its x86-64 code directly on top of reimplemented PS4 system libraries, with a shadPS4-derived Vulkan renderer and a launcher. Reported playable to the end with one known crash and rough frame pacing.",
+    "tags": [
+      "ps4",
+      "shadps4",
+      "naughty-dog",
+      "port"
+    ],
+    "sources": [
+      "https://github.com/ravencaio/tlou-remastered-pc",
+      "https://github.com/ravencaio/tlou-remastered-pc/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "pgr1-recomp",
+    "name": "Project Gotham Racing - XBE Recomp",
+    "category": "games",
+    "subject": "Project Gotham Racing",
+    "originalPlatform": "Xbox",
+    "originalYear": 2001,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in the tree and Claude co-author commit trailers (github.com/hk21x/pgr1-recomp).",
+    "licence": "MIT",
+    "repo": "https://github.com/hk21x/pgr1-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "hk21x"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.5",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows port of the original Xbox Project Gotham Racing made with TGP482's Xbox XBE Recomp, with Direct3D 12/11, XAudio2 and SDL replacing the console libraries. A launcher checks the user's disc (USA, Europe 1.0 or 1.1), downloads a runtime-and-compiler package and recompiles the game code locally.",
+    "tags": [
+      "xbox",
+      "xbe-recomp",
+      "racing",
+      "bizarre-creations"
+    ],
+    "sources": [
+      "https://github.com/hk21x/pgr1-recomp",
+      "https://github.com/hk21x/pgr1-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "concrete-jungle-pc",
+    "name": "Predator: Concrete Jungle, PC port",
+    "category": "games",
+    "subject": "Predator: Concrete Jungle",
+    "originalPlatform": "Xbox",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers (github.com/Adolini1715/Concrete-Jungle-PC commits).",
+    "licence": "MIT",
+    "repo": "https://github.com/Adolini1715/Concrete-Jungle-PC",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Adolini1715"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.1",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native PC build of Eurocom's Predator: Concrete Jungle, made by recompiling the USA Xbox executable with a patched xboxrecomp and swapping parts for decompiled C++. An Install.bat fetches the toolchain and builds from the user's own disc; adds up to 5x resolution, 60 fps, modern controls, mouse support and save slots.",
+    "tags": [
+      "xbox",
+      "xboxrecomp",
+      "eurocom",
+      "action"
+    ],
+    "sources": [
+      "https://github.com/Adolini1715/Concrete-Jungle-PC",
+      "https://github.com/Adolini1715/Concrete-Jungle-PC/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "perfect-dark-xbla-pc-recomp",
+    "name": "Perfect Dark XBLA PC Recomp",
+    "category": "games",
+    "subject": "Perfect Dark (2010 XBLA remaster)",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2010,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers (github.com/CaiusCodes/Perfect-Dark-XBLA-PC-Recomp commits).",
+    "licence": "Unlicense",
+    "repo": "https://github.com/CaiusCodes/Perfect-Dark-XBLA-PC-Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "CaiusCodes"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.9.0",
+      "date": "2026-10-28"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "ReXGlue recompilation of the 4J Studios Xbox Live Arcade remaster of Perfect Dark for Windows. On first start it imports data from the player's own XBLA package; adds render scaling up to 4K, FSR/CAS, mouse and keyboard, and LAN multiplayer for up to eight.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "perfect-dark",
+      "rare",
+      "fps"
+    ],
+    "sources": [
+      "https://github.com/CaiusCodes/Perfect-Dark-XBLA-PC-Recomp",
+      "https://github.com/CaiusCodes/Perfect-Dark-XBLA-PC-Recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "rogue-galaxy-recompiled",
+    "name": "Rogue Galaxy Recompiled",
+    "category": "games",
+    "subject": "Rogue Galaxy",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude Code session trailers (github.com/victor-takai/rogue-galaxy-recomp commits).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/victor-takai/rogue-galaxy-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "victor-takai"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-10-27"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "PS2Recomp-based Windows port of Level-5's Rogue Galaxy (USA, SCUS-97490), built locally from the user's disc image by an install script. Early pre-release with 60 fps, widescreen, higher internal resolution and an in-game options menu; only the early game has been tested.",
+    "tags": [
+      "ps2",
+      "ps2recomp",
+      "level-5",
+      "rpg"
+    ],
+    "sources": [
+      "https://github.com/victor-takai/rogue-galaxy-recomp",
+      "https://github.com/victor-takai/rogue-galaxy-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "speedbreaker-carbon",
+    "name": "SpeedBreaker: Carbon",
+    "category": "games",
+    "subject": "Need for Speed: Carbon",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers (github.com/SpeedBreakerProject/speedbreaker-carbon commits).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/SpeedBreakerProject/speedbreaker-carbon",
+    "website": "https://projectugarte.com/speedbreaker/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "SpeedBreakerProject"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.1",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "SteamOS",
+      "Linux",
+      "macOS",
+      "Windows",
+      "iOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Carbon counterpart to the SpeedBreaker Most Wanted port: a static recompilation of the Xbox 360 game whose installer verifies and unpacks the user's USA Collector's Edition disc image. Main builds target SteamOS (x86-64 and arm64), Linux and Mac, with a Windows beta and an experimental iOS IPA.",
+    "tags": [
+      "xbox360",
+      "need-for-speed",
+      "racing",
+      "steam-deck"
+    ],
+    "sources": [
+      "https://github.com/SpeedBreakerProject/speedbreaker-carbon",
+      "https://github.com/SpeedBreakerProject/speedbreaker-carbon/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "sonic-adventure-decomp",
+    "name": "sonic-adventure",
+    "category": "games",
+    "subject": "Sonic Adventure",
+    "originalPlatform": "Dreamcast",
+    "originalYear": 1998,
+    "method": "matching-decomp",
+    "status": "complete",
+    "progress": 100,
+    "progressSource": "https://github.com/reshaped/sonic-adventure",
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/reshaped/sonic-adventure",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "reshaped"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Dreamcast"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Byte-matching decompilation of the original Japanese Dreamcast release (HDR-0001, v1.007): the main executable, its Katana SDK libraries and all 246 overlays rebuild from source with Hitachi SHC and are checked against the user's disc files. A GCC build of the same sources is also provided.",
+    "tags": [
+      "dreamcast",
+      "sonic",
+      "sega",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/reshaped/sonic-adventure"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "ratchet-tod-recomp",
+    "name": "Ratchet & Clank: Tools of Destruction Recompiled",
+    "category": "games",
+    "subject": "Ratchet & Clank Future: Tools of Destruction",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2007,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/Re-TeRo17/ratchet-tod-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Re-TeRo17"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v1.1",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows port of the European PS3 release (BCES00052) built on the ps3recomp toolkit, with PPU and SPU code translated ahead of time and RSX graphics redirected to Direct3D 12. Playable from the first planet on, with 4K rendering, a 60 fps target and DualSense support; an installer takes the game from the user's disc.",
+    "tags": [
+      "ps3",
+      "ps3recomp",
+      "ratchet-and-clank",
+      "insomniac"
+    ],
+    "sources": [
+      "https://github.com/Re-TeRo17/ratchet-tod-recomp",
+      "https://github.com/Re-TeRo17/ratchet-tod-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "regh2-native",
+    "name": "reGH2",
+    "category": "games",
+    "subject": "Guitar Hero II",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2007,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers (github.com/jillsandwich1998/reGH2 commits).",
+    "licence": "MIT",
+    "repo": "https://github.com/jillsandwich1998/reGH2",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jillsandwich1998"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.2.0",
+      "date": "2026-10-27"
+    },
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Linux AppImage that recompiles the USA Xbox 360 Guitar Hero II from the user's default.xex using ReXGlue's code generator, then runs it on the project's own kernel layer and Vulkan renderer instead of the ReXGlue runtime. Pre-release, tested on one AMD machine with a real guitar controller.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "guitar-hero",
+      "rhythm"
+    ],
+    "sources": [
+      "https://github.com/jillsandwich1998/reGH2",
+      "https://github.com/jillsandwich1998/reGH2/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "tmb-recomp",
+    "name": "TMB_Recomp",
+    "category": "games",
+    "subject": "Twisted Metal: Black",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2001,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers (github.com/TheBozos/TMB_Recomp commits).",
+    "licence": "MIT",
+    "repo": "https://github.com/TheBozos/TMB_Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "boubou666",
+      "Arzaroth"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.3.2",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "PS2Recomp-based port of the USA Twisted Metal: Black in which EE and IOP code run natively, VU1 programs are hand-converted to C++, and a PC renderer replaces GS emulation. A launcher checks the user's disc image and builds the game with a bundled compiler kit.",
+    "tags": [
+      "ps2",
+      "ps2recomp",
+      "twisted-metal",
+      "vehicular-combat"
+    ],
+    "sources": [
+      "https://github.com/TheBozos/TMB_Recomp",
+      "https://github.com/TheBozos/TMB_Recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "project-tandem",
+    "name": "Project Tandem",
+    "category": "games",
+    "subject": "Mario Kart: Double Dash!!",
+    "originalPlatform": "GameCube",
+    "originalYear": 2003,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/badcompany94-rcmp/project-tandem",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "badcompany94-rcmp"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.0-beta.14",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Builds on Ethan Nicholas's mariokartdd-recomp and gcn-recomp to add 2-16 player online play (solo or shared karts, room codes, lobby browser, online time trials), widescreen and mouse/keyboard menus. The launcher verifies the user's USA GM4E01 disc and recompiles it locally.",
+    "tags": [
+      "gamecube",
+      "gcn-recomp",
+      "mario-kart",
+      "online"
+    ],
+    "sources": [
+      "https://github.com/badcompany94-rcmp/project-tandem",
+      "https://github.com/badcompany94-rcmp/project-tandem/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "project-helghast",
+    "name": "Project Helghast",
+    "category": "games",
+    "subject": "Killzone 3",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2011,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says it is developed by one person with AI coding agents; AGENTS.md and docs/AI.md (github.com/undecuple/project-helghast).",
+    "licence": "MIT",
+    "repo": "https://github.com/undecuple/project-helghast",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "undecuple"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.8",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows",
+      "Linux (Proton)"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Unofficial Killzone 3 port built on ps3recomp: the installer lifts and compiles the game's code on the user's PC from their own US disc dump, 1.14 update and decrypted EBOOT. Partly playable at roughly 16-22 fps with known bugs; includes split-screen co-op and an MP lobby in progress.",
+    "tags": [
+      "ps3",
+      "ps3recomp",
+      "killzone",
+      "guerrilla",
+      "fps"
+    ],
+    "sources": [
+      "https://github.com/undecuple/project-helghast",
+      "https://github.com/undecuple/project-helghast/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "project-pyrrhus",
+    "name": "Project Pyrrhus",
+    "category": "games",
+    "subject": "Killzone 2",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2009,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says it is developed by one person with AI coding agents; AGENTS.md and docs/AI.md (github.com/undecuple/project-pyrrhus).",
+    "licence": "MIT",
+    "repo": "https://github.com/undecuple/project-pyrrhus",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "undecuple"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.9",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux (Proton)"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Sister project to Project Helghast for Killzone 2, statically recompiled with ps3recomp and built on the user's PC from their own US disc (BCUS98116), 1.29 update and decrypted EBOOT. Partly playable: menus and the first level run, with FOV and FSR 1 options.",
+    "tags": [
+      "ps3",
+      "ps3recomp",
+      "killzone",
+      "guerrilla",
+      "fps"
+    ],
+    "sources": [
+      "https://github.com/undecuple/project-pyrrhus",
+      "https://github.com/undecuple/project-pyrrhus/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "mcrae05-xbe-recomp",
+    "name": "Colin McRae Rally 2005 - XBE Recomp",
+    "category": "games",
+    "subject": "Colin McRae Rally 2005",
+    "originalPlatform": "Xbox",
+    "originalYear": 2004,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in the tree and Claude co-author commit trailers (github.com/projectedan/McRae05-XBE-Recomp).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/projectedan/McRae05-XBE-Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "projectedan"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.0-beta",
+      "date": "2026-10-28"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows port of the USA Xbox Colin McRae Rally 2005 made with Xbox XBE Recomp; the bundled compiler recompiles the user's default.xbe on first run. Adds a settings overlay, high render resolution, FXAA/SMAA, frame pacing and rendering fixes, with the console audio DSP emulated.",
+    "tags": [
+      "xbox",
+      "xbe-recomp",
+      "rally",
+      "codemasters"
+    ],
+    "sources": [
+      "https://github.com/projectedan/McRae05-XBE-Recomp",
+      "https://github.com/projectedan/McRae05-XBE-Recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "live-and-recompiled",
+    "name": "Live & Recompiled",
+    "category": "games",
+    "subject": "Conker: Live & Reloaded",
+    "originalPlatform": "Xbox",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README's AI disclaimer says all first-party code is LLM-generated and not reviewed line by line (github.com/giacomozama/live-and-recompiled).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/giacomozama/live-and-recompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "giacomozama"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v2.0.0",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native Conker: Live & Reloaded for Windows and Linux on a heavily modified Xbox XBE Recomp with a Vulkan renderer. Setup extracts and recompiles the user's USA disc or Xbox Store copy locally; single player is playable to the end, with up to 240 fps, widescreen and mouse look.",
+    "tags": [
+      "xbox",
+      "xbe-recomp",
+      "conker",
+      "rare"
+    ],
+    "sources": [
+      "https://github.com/giacomozama/live-and-recompiled",
+      "https://github.com/giacomozama/live-and-recompiled/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "xmen2-pc",
+    "name": "xmen2-pc",
+    "category": "games",
+    "subject": "X-Men 2: Clone Wars",
+    "originalPlatform": "Mega Drive / Genesis",
+    "originalYear": 1995,
+    "method": "source-port",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README says almost all of it was written by AI coding agents (Claude Code) in nine days (github.com/crabsmack/xmen2-pc).",
+    "licence": "MIT",
+    "repo": "https://github.com/crabsmack/xmen2-pc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "crabsmack"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.2.0",
+      "date": "2026-10-31"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "PC port built from a full C decompilation (most functions byte-matching with Apple MPW C 3.3) by way of a segagenesisrecomp pass, with no 68000 emulation left. Loads graphics and sound from the user's ROM and adds widescreen, high frame rate and up to four players locally or over rollback netplay.",
+    "tags": [
+      "genesis",
+      "mega-drive",
+      "decomp",
+      "netplay"
+    ],
+    "sources": [
+      "https://github.com/crabsmack/xmen2-pc",
+      "https://github.com/crabsmack/xmen2-pc/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "gagarin",
+    "name": "gagarin",
+    "category": "games",
+    "subject": "Command & Conquer: Red Alert 2 - Yuri's Revenge",
+    "originalPlatform": "Windows",
+    "originalYear": 2001,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": 52,
+    "progressSource": "https://bytematch.dev/r-melvin/gagarin",
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md, CLAUDE.md and Claude co-author commit trailers (github.com/r-melvin/gagarin).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/r-melvin/gagarin",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "r-melvin"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Function-matching decompilation of the Yuri's Revenge engine (gamemd.exe 1.001) to C++ built with MSVC 6.0 and checked with reccmp; just over half the functions match. A hybrid link fills unmatched parts from the user's own binary and starts under Wine.",
+    "tags": [
+      "windows",
+      "command-and-conquer",
+      "westwood",
+      "decomp",
+      "msvc6"
+    ],
+    "sources": [
+      "https://github.com/r-melvin/gagarin"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "ps5-mario-galaxy",
+    "name": "Super Mario Galaxy for the PlayStation 5",
+    "category": "games",
+    "subject": "Super Mario Galaxy",
+    "originalPlatform": "Wii",
+    "originalYear": 2007,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude Code session trailers; the title art is credited to ChatGPT (github.com/griches/PS5_MarioGalaxy).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/griches/PS5_MarioGalaxy",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "griches"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.1.0",
+      "date": "2026-10-21"
+    },
+    "targets": [
+      "PS5 (homebrew)"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "PS5 homebrew build of Nebula's Super Mario Galaxy recompilation, running on a Win32 compatibility layer with Direct3D 12 via vkd3d and RADV. A Mac or Windows builder app turns the user's USA rev 0 disc image into a title to copy to a jailbroken console; links the community HD texture pack as an optional extra.",
+    "tags": [
+      "wii",
+      "nebula",
+      "mario",
+      "ps5",
+      "homebrew"
+    ],
+    "sources": [
+      "https://github.com/griches/PS5_MarioGalaxy",
+      "https://github.com/griches/PS5_MarioGalaxy/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "conker-lr-recomp",
+    "name": "Conker: Live & Reloaded recomp (Switch/Linux/Windows)",
+    "category": "games",
+    "subject": "Conker: Live & Reloaded",
+    "originalPlatform": "Xbox",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author and session trailers (github.com/rashevskyv/conker-lr-recomp commits).",
+    "licence": "MIT",
+    "repo": "https://github.com/rashevskyv/conker-lr-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "rashevskyv"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.56.0",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Nintendo Switch",
+      "Linux",
+      "Windows",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Lifts the NTSC Xbox Conker: Live & Reloaded x86 code to C and runs it on hacked Switch consoles (Vulkan via NVK or OpenGL), Linux and Windows, with an experimental Android build. Prebuilt test builds contain recompiled code but no game data; the player supplies the unpacked game.",
+    "tags": [
+      "xbox",
+      "switch-homebrew",
+      "conker",
+      "rare"
+    ],
+    "sources": [
+      "https://github.com/rashevskyv/conker-lr-recomp",
+      "https://github.com/rashevskyv/conker-lr-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "botw-recomp-android",
+    "name": "BOTWRecompAndroid",
+    "category": "games",
+    "subject": "The Legend of Zelda: Breath of the Wild",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2017,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README says the project is made almost entirely with AI (Claude Code) (github.com/mamcjr/BOTWRecompAndroid).",
+    "licence": "MIT",
+    "repo": "https://github.com/mamcjr/BOTWRecompAndroid",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mamcjr"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.3.1-beta",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Android app built on the LAS Recomp engine that recompiles the user's own Switch Breath of the Wild (1.0.0, 1.6.0, 1.8.2, 1.9.0) to C on the phone, or runs it directly in an experimental native mode, with NVN translated to Vulkan. Beta tested mainly on one Adreno phone; supports DLC, mods, touch controls and 60 fps options.",
+    "tags": [
+      "switch",
+      "las-recomp",
+      "zelda",
+      "android"
+    ],
+    "sources": [
+      "https://github.com/mamcjr/BOTWRecompAndroid",
+      "https://github.com/mamcjr/BOTWRecompAndroid/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "echoes-unbound",
+    "name": "Echoes Unbound",
+    "category": "games",
+    "subject": "Metroid Prime 2: Echoes",
+    "originalPlatform": "GameCube",
+    "originalYear": 2004,
+    "method": "source-port",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README's AI assistance section says parts were written with AI coding assistants (github.com/Odrannnn/MetroidPrime2Port).",
+    "licence": "MIT",
+    "repo": "https://github.com/Odrannnn/MetroidPrime2Port",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Odrannnn"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.10.0",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Linux",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native port of Metroid Prime 2 built from the PrimeDecomp decompilation and rendered through Aurora (SDL3/WebGPU), reading assets from the user's GameCube or Trilogy disc image. Adds widescreen, high frame rates, mouse/gyro aim, save states, suit colours and mod folders; same author as Metroid Prime Unbound.",
+    "tags": [
+      "gamecube",
+      "metroid",
+      "decomp",
+      "aurora"
+    ],
+    "sources": [
+      "https://github.com/Odrannnn/MetroidPrime2Port",
+      "https://github.com/Odrannnn/MetroidPrime2Port/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "skyrim-android",
+    "name": "Skyrim (2011) for Android",
+    "category": "games",
+    "subject": "The Elder Scrolls V: Skyrim",
+    "originalPlatform": "Windows",
+    "originalYear": 2011,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/ttom795/Skyrim_Android",
+    "website": null,
+    "discord": "http://discord.gg/df3cK2JCqs",
+    "subreddit": null,
+    "team": [
+      "ttom795"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.27.6",
+      "date": "2026-11-01"
+    },
+    "targets": [
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Recompiles the 32-bit x86 code of the 2011 PC Skyrim (final Steam patch, DRM stripped) plus its d3dx9, Bink and X3DAudio DLLs into C for arm64 Android, with D3D9 translated by a patched dxvk-native. Released APKs hold the recompiled code; players copy their own executable, DLLs and Data folder to the phone.",
+    "tags": [
+      "windows",
+      "bethesda",
+      "skyrim",
+      "android"
+    ],
+    "sources": [
+      "https://github.com/ttom795/Skyrim_Android",
+      "https://github.com/ttom795/Skyrim_Android/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "witch-time",
+    "name": "Witch Time",
+    "category": "games",
+    "subject": "Bayonetta 3",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2022,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Claude skills under .claude/ and Claude co-author/session commit trailers (github.com/Zexyen/Witch-Time).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Zexyen/Witch-Time",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Zexyen"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.7.0",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Linux",
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Bayonetta 3 recompilation modelled on B2recomp: the user's own exefs/romfs dump is translated from AArch64 to C and compiled locally against a reimplemented system layer with NVN on Vulkan. Boots and plays at 60 fps in tested chapters, with resolution scaling, rebindable controls and a PC settings panel.",
+    "tags": [
+      "switch",
+      "bayonetta",
+      "platinum",
+      "action"
+    ],
+    "sources": [
+      "https://github.com/Zexyen/Witch-Time",
+      "https://github.com/Zexyen/Witch-Time/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "xcx-recomp",
+    "name": "XCX Recomp",
+    "category": "games",
+    "subject": "Xenoblade Chronicles X: Definitive Edition",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2025,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README says most code and documentation is written by AI coding agents (Claude Code); AGENTS.md (github.com/jmars125/xcx-recomp).",
+    "licence": "MIT",
+    "repo": "https://github.com/jmars125/xcx-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jmars125"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.14-menu-test",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Fork of valentderah's TotK PC recomp retargeted at Xenoblade Chronicles X: Definitive Edition, with an XCX-Setup tool that builds the game from the user's NSP files, 2.0.0 update and keys into a Windows x86-64 program with a Vulkan renderer. Early: new game, cutscenes and gameplay run.",
+    "tags": [
+      "switch",
+      "xenoblade",
+      "monolith",
+      "rpg"
+    ],
+    "sources": [
+      "https://github.com/jmars125/xcx-recomp",
+      "https://github.com/jmars125/xcx-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "conker-recomped-reloaded",
+    "name": "Conker: Recomped & Reloaded",
+    "category": "games",
+    "subject": "Conker: Live & Reloaded",
+    "originalPlatform": "Xbox",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers (github.com/Mabec-games/Conker-Recomped-and-Reloaded commits).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Mabec-games/Conker-Recomped-and-Reloaded",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Mabec-games"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.4",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Launcher plus modified build of Live & Recompiled that extracts the user's USA or European disc and compiles it offline with a bundled Zig toolchain. Moves all settings into the launcher and adds online play with room codes, interpolated high frame rates and mod support.",
+    "tags": [
+      "xbox",
+      "xbe-recomp",
+      "conker",
+      "online"
+    ],
+    "sources": [
+      "https://github.com/Mabec-games/Conker-Recomped-and-Reloaded",
+      "https://github.com/Mabec-games/Conker-Recomped-and-Reloaded/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "totk-recomp-linux",
+    "name": "totk-recomp",
+    "category": "games",
+    "subject": "The Legend of Zelda: Tears of the Kingdom",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2023,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers (github.com/Muhammad1259-sigma/totk-recomp commits).",
+    "licence": "MIT",
+    "repo": "https://github.com/Muhammad1259-sigma/totk-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Muhammad1259-sigma"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux",
+      "Steam Deck"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Recompiler, HLE runtime and NVN-on-Vulkan layer that turn a user's own TotK 1.0.0 cartridge dump and keys into a Linux x86-64 build aimed at the Steam Deck. No release; the build script takes around 17 minutes of compile time and building from the launcher is not wired up yet.",
+    "tags": [
+      "switch",
+      "zelda",
+      "steam-deck",
+      "linux"
+    ],
+    "sources": [
+      "https://github.com/Muhammad1259-sigma/totk-recomp"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "tomodachi-life-pc",
+    "name": "Tomodachi Life PC",
+    "category": "games",
+    "subject": "Tomodachi Life: Living the Dream",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2026,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Nearly every commit carries a Claude co-author trailer (github.com/josiahg2502-glitch/TomodachiLife-recomp commits).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/josiahg2502-glitch/TomodachiLife-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "josiahg2502-glitch"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.0.0",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows port of the Switch life sim made by translating its ARM code to C; an installer lifts and compiles the game on the player's PC from their own dump and keys, and the port adds a PC settings menu, widescreen, resolution scaling and save import. Version 1.0 supports game versions 1.0.0 and 1.0.4.",
+    "tags": [
+      "switch",
+      "tomodachi",
+      "nintendo"
+    ],
+    "sources": [
+      "https://github.com/josiahg2502-glitch/TomodachiLife-recomp",
+      "https://github.com/josiahg2502-glitch/TomodachiLife-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "xc2-recomp",
+    "name": "XC2 Recomp",
+    "category": "games",
+    "subject": "Xenoblade Chronicles 2",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2017,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README states most of the code and docs are written by AI coding agents (Claude Code) under the maintainer's direction; commits carry Claude and Codex trailers.",
+    "licence": "MIT",
+    "repo": "https://github.com/jmars125/xc2-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "jmars125",
+      "wharlewts"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "0.1.4",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of Xenoblade Chronicles 2 (update 3.0.1 plus the expansion content) to x86-64 with a Vulkan renderer, forked from the same author's XCX Recomp. A setup tool builds the game from the player's own NSP files and keys; early, but new game, cutscenes and combat run at 60 fps.",
+    "tags": [
+      "switch",
+      "xenoblade",
+      "monolith-soft",
+      "jrpg"
+    ],
+    "sources": [
+      "https://github.com/jmars125/xc2-recomp",
+      "https://github.com/jmars125/xc2-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "xc2-recomp-akshardp",
+    "name": "XC2 Recomp (AksharDP)",
+    "category": "games",
+    "subject": "Xenoblade Chronicles 2",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2017,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README states most of the code and docs are written by AI coding agents (Claude Code); commits carry Claude trailers (github.com/AksharDP/xc2-recomp).",
+    "licence": "MIT",
+    "repo": "https://github.com/AksharDP/xc2-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "AksharDP"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "0.1.7",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "A separate Xenoblade Chronicles 2 recompilation, also started from XCX Recomp, targeting Windows and Linux with a Vulkan renderer, FSR scaling and emulator-style mod folders. Its installer builds the game from your own dump; at this stage it plays from the opening through the first town.",
+    "tags": [
+      "switch",
+      "xenoblade",
+      "monolith-soft",
+      "jrpg"
+    ],
+    "sources": [
+      "https://github.com/AksharDP/xc2-recomp",
+      "https://github.com/AksharDP/xc2-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "glassline",
+    "name": "Glassline",
+    "category": "games",
+    "subject": "Mirror's Edge (iPad)",
+    "originalPlatform": "iOS",
+    "originalYear": 2010,
+    "method": "non-matching-decomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README credits Claude Code as having helped with development (github.com/MoonCellar-Team/Glassline).",
+    "licence": "unknown",
+    "repo": "https://github.com/MoonCellar-Team/Glassline",
+    "website": "https://play.mooncellar.space/glassline/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "alexgrist14",
+      "sergeyhist",
+      "MoonCellar Team"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "1.4.2",
+      "date": "2026-10-30"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "Steam Deck",
+      "Android",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": {
+      "tier": "byo",
+      "url": "https://play.mooncellar.space/glassline/",
+      "launch": "tab",
+      "note": "Browser build holds no game data; the player picks their own iPad .ipa, which stays in the browser."
+    },
+    "summary": "Port of the 2010 iPad Mirror's Edge whose code was reconstructed from the iOS executable and runs on a new SDL2/OpenGL ES layer. Game data is read from the player's own .ipa; it adds high frame rates, widescreen, gamepad controls, online races and replacement online services. Released under a custom source-available licence.",
+    "tags": [
+      "ios",
+      "mirrors-edge",
+      "ea",
+      "dice",
+      "web"
+    ],
+    "sources": [
+      "https://github.com/MoonCellar-Team/Glassline",
+      "https://github.com/MoonCellar-Team/Glassline/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "twine-pc",
+    "name": "TWINE PC",
+    "category": "games",
+    "subject": "007: The World Is Not Enough",
+    "originalPlatform": "PlayStation",
+    "originalYear": 2000,
+    "method": "matching-decomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README AI disclosure: much of the code, tooling and docs were written with Claude; commits carry Claude trailers.",
+    "licence": "MPL-2.0",
+    "repo": "https://github.com/CipherNovaa/twine-pc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "CipherNovaa"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.1.3",
+      "date": "2026-10-31"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Byte-matching decompilation of the PlayStation Bond shooter, rebuilt as a native PC program with a Vulkan renderer, frame interpolation, higher resolutions, mouse and twin-stick controls and a new endless mode. It loads the player's own disc image on first run.",
+    "tags": [
+      "ps1",
+      "james-bond",
+      "007",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/CipherNovaa/twine-pc",
+      "https://github.com/CipherNovaa/twine-pc/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "mario-party-recompiled",
+    "name": "Mario Party: Recompiled",
+    "category": "games",
+    "subject": "Mario Party",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1998,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README: almost all code, docs and tests were written by AI agents (Claude), directed and play-tested by a person.",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/n64hub/mario-party-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "n64hub",
+      "amazingalek"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.2.7",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "N64Recomp-based PC port of the first Mario Party (USA) using RT64 for rendering, with widescreen boards and frame interpolation; symbols come from the mariopartyrd decomp. Releases contain no ROM, which the player loads at start, and a browser build can be made from the ROM.",
+    "tags": [
+      "n64",
+      "n64recomp",
+      "mario-party",
+      "nintendo"
+    ],
+    "sources": [
+      "https://github.com/n64hub/mario-party-recomp",
+      "https://github.com/n64hub/mario-party-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "mario-party-2-recompiled",
+    "name": "Mario Party 2: Recompiled",
+    "category": "games",
+    "subject": "Mario Party 2",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1999,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README: almost all code, docs and tests were written by AI agents (Claude), directed and play-tested by a person.",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/n64hub/mario-party-2-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "n64hub",
+      "amazingalek"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.2.9",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Sister project to the n64hub Mario Party port: Mario Party 2 (USA) recompiled with N64Recomp and drawn by RT64, sharing an engine layer for the game's process scheduler. Builds ship without the ROM, which you supply.",
+    "tags": [
+      "n64",
+      "n64recomp",
+      "mario-party",
+      "nintendo"
+    ],
+    "sources": [
+      "https://github.com/n64hub/mario-party-2-recomp",
+      "https://github.com/n64hub/mario-party-2-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "lego-marvel-android",
+    "name": "LEGO Marvel Super Heroes for Android",
+    "category": "games",
+    "subject": "LEGO Marvel Super Heroes (PC)",
+    "originalPlatform": "Windows",
+    "originalYear": 2013,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/ttom795/LMS_Android",
+    "website": null,
+    "discord": "http://discord.gg/df3cK2JCqs",
+    "subreddit": null,
+    "team": [
+      "ttom795"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.3.4",
+      "date": "2026-10-27"
+    },
+    "targets": [
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Lifts the 32-bit PC executable of LEGO Marvel Super Heroes (and the DirectX shader compiler it uses) to C for arm64 Android, with a patched dxvk-native for D3D9-to-Vulkan and SDL2 for input and audio. The player copies their own PC install to the phone.",
+    "tags": [
+      "windows",
+      "android",
+      "lego",
+      "tt-games",
+      "dxvk"
+    ],
+    "sources": [
+      "https://github.com/ttom795/LMS_Android",
+      "https://github.com/ttom795/LMS_Android/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "darksouls-ps2",
+    "name": "DarkSoulsPS2",
+    "category": "games",
+    "subject": "Dark Souls Remastered",
+    "originalPlatform": "Windows",
+    "originalYear": 2018,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers and the repo has AGENTS.md/CLAUDE.md (github.com/nekomancer01/DarkSoulsPS2).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/nekomancer01/DarkSoulsPS2",
+    "website": "https://nekomancer01.github.io/DarkSoulsPS2/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "nekomancer01"
+    ],
+    "started": "2026-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "PlayStation 2"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Homebrew demake that runs Dark Souls on PS2 hardware: a new C engine with hand-written VU1 microcode, plus Python converters that turn the player's own PC copy into PS2-sized maps, models, animations and scripts. An early prototype covering Firelink Shrine and the Undead Burg, tested in PCSX2.",
+    "tags": [
+      "ps2",
+      "homebrew",
+      "dark-souls",
+      "fromsoftware",
+      "demake"
+    ],
+    "sources": [
+      "https://github.com/nekomancer01/DarkSoulsPS2"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "enchantedarmspc",
+    "name": "EnchantedArmsPC",
+    "category": "games",
+    "subject": "Enchanted Arms",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/IAndrewJJ/EnchantedArmsRecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "IAndrewJJ"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.5.8",
+      "date": "2026-10-23"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "ReXGlue-based recompilation of FromSoftware's Xbox 360 RPG with a launcher that builds the game locally from the player's ISO. Adds 60 fps, higher resolutions, rebindable controls and optional cheats; the Linux build is a preview.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "fromsoftware",
+      "rpg"
+    ],
+    "sources": [
+      "https://github.com/IAndrewJJ/EnchantedArmsRecomp",
+      "https://github.com/IAndrewJJ/EnchantedArmsRecomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "fabledroid",
+    "name": "FableDroid",
+    "category": "games",
+    "subject": "Fable II",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README credits AI coding agents (Claude Opus as lead developer, plus GPT/Codex) with doing the coding (github.com/hardsilinder/FableDroid).",
+    "licence": "MIT",
+    "repo": "https://github.com/hardsilinder/FableDroid",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "hardsilinder",
+      "himdo"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.6.3-beta",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Android arm64 build of himdo's Fable II ReXGlue recompilation, with the Xbox 360 GPU translated to Vulkan and tuning for Adreno 7xx handhelds. The launcher installs the game on the device from the player's own ISO; beta, holding 30 fps on a Snapdragon 8 Gen 2.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "fable",
+      "lionhead",
+      "android"
+    ],
+    "sources": [
+      "https://github.com/hardsilinder/FableDroid",
+      "https://github.com/hardsilinder/FableDroid/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "p5r-android",
+    "name": "Persona 5 Royal for Android",
+    "category": "games",
+    "subject": "Persona 5 Royal (Switch)",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2022,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README: written with a lot of AI assistance (Anthropic's Claude), directed and tested by a human.",
+    "licence": "MIT",
+    "repo": "https://github.com/Brandon04Gonzalez/p5r-android",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Brandon04Gonzalez"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.5.5",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Android app that runs the Switch release of Persona 5 Royal's AArch64 code directly on the phone CPU, with Switch OS services, audio and NVN graphics reimplemented over Vulkan. The 3.5 MB APK holds no game data; it reads the player's own NSP/XCI and keys.",
+    "tags": [
+      "switch",
+      "android",
+      "persona",
+      "atlus",
+      "nvn"
+    ],
+    "sources": [
+      "https://github.com/Brandon04Gonzalez/p5r-android",
+      "https://github.com/Brandon04Gonzalez/p5r-android/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "infamous-first-light-pc",
+    "name": "inFAMOUS First Light PC",
+    "category": "games",
+    "subject": "inFAMOUS First Light",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2014,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Most commits carry Claude co-author trailers (github.com/VantageEX/infamous-first-light-pc commits).",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/VantageEX/infamous-first-light-pc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "VantageEX",
+      "HayatoG"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.3.8",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Fork of HayatoG's iss_pc adapted to the standalone First Light expansion: the PS4 game's x86-64 code runs on the PC under a reimplemented system runtime with GPU commands translated to Vulkan. Needs the player's own PS4 dump; early but playable through the first missions.",
+    "tags": [
+      "ps4",
+      "infamous",
+      "sucker-punch",
+      "vulkan"
+    ],
+    "sources": [
+      "https://github.com/VantageEX/infamous-first-light-pc",
+      "https://github.com/VantageEX/infamous-first-light-pc/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "gow-pc-port",
+    "name": "God of War: native PC port",
+    "category": "games",
+    "subject": "God of War",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers and the repo has AGENTS.md/CLAUDE.md (github.com/danielalves96/gow-pc-port).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/danielalves96/gow-pc-port",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "danielalves96"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "launcher-v0.3.1",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of the US PS2 God of War, built on Waffle565's God-Of-War-Native-Port with a Rust recompiler that matches PS2Recomp's output, ahead-of-time VU1 code and an OpenGL renderer. A launcher builds it from the player's own disc and adds widescreen, 60 fps, cheats and RetroAchievements.",
+    "tags": [
+      "ps2",
+      "ps2recomp",
+      "god-of-war",
+      "santa-monica"
+    ],
+    "sources": [
+      "https://github.com/danielalves96/gow-pc-port",
+      "https://github.com/danielalves96/gow-pc-port/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "soulcalibur2-recomp",
+    "name": "Soulcalibur II Recomp",
+    "category": "games",
+    "subject": "Soulcalibur II (Xbox)",
+    "originalPlatform": "Xbox",
+    "originalYear": 2003,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author and session trailers (github.com/tmcleroy/soulcalibur2-recomp commits).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/tmcleroy/soulcalibur2-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "tmcleroy"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "0.2.2-beta.1",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Steam Deck",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native port of the Xbox Soulcalibur II made by translating the game's x86 code to C. It can import Link and Heihachi from the player's own GameCube and PS2 discs so all three guest fighters share one roster, and adds a training mode, rollback netplay, widescreen and higher resolutions.",
+    "tags": [
+      "xbox",
+      "soulcalibur",
+      "namco",
+      "fighting",
+      "netplay"
+    ],
+    "sources": [
+      "https://github.com/tmcleroy/soulcalibur2-recomp",
+      "https://github.com/tmcleroy/soulcalibur2-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "liberty-pro-max",
+    "name": "Liberty Pro Max",
+    "category": "games",
+    "subject": "Grand Theft Auto IV (PC 1.0.8.0)",
+    "originalPlatform": "Windows",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers (github.com/Awis13/liberty-pro-max commits).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Awis13/liberty-pro-max",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Awis13"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "0.3.3-beta",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "macOS",
+      "iPadOS",
+      "tvOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Recompiles the PC executable of GTA IV with x86recomp for Apple silicon, pairing it with a new Metal renderer, a launcher and around a hundred community fixes from FusionFix and ZolikaPatch. The builder app compiles it from the player's own copy for Mac, iPad and (experimentally) Apple TV.",
+    "tags": [
+      "windows",
+      "gta",
+      "rockstar",
+      "macos",
+      "metal"
+    ],
+    "sources": [
+      "https://github.com/Awis13/liberty-pro-max",
+      "https://github.com/Awis13/liberty-pro-max/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "wariorecomp",
+    "name": "WarioRecomp",
+    "category": "games",
+    "subject": "Wario Land: Shake It!",
+    "originalPlatform": "Wii",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "One commit carries a Claude co-author/session trailer (github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "santiagovalencia109"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.3.1",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Testing build of a WiiCompiled recompilation of Wario Land: Shake It! (US) that runs natively on Windows and Linux via Aurora/Dawn, with up to 1440p, true 16:9 in levels, frame interpolation and Wii Remote shake/tilt mapped to a gamepad. The launcher builds it from the player's disc image.",
+    "tags": [
+      "wii",
+      "wiicompiled",
+      "wario",
+      "nintendo"
+    ],
+    "sources": [
+      "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC",
+      "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "astral-chain-pc",
+    "name": "Astral Chain PC",
+    "category": "games",
+    "subject": "Astral Chain",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2019,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README states the project was built entirely with AI (Claude Code and Codex), directed and tested by the owner.",
+    "licence": "MIT",
+    "repo": "https://github.com/Puddz/AstralChain-PC",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Puddz"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "2026-11-04.1",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Experimental Windows port of PlatinumGames' Astral Chain made by translating its ARM64 code to C, with NVN graphics on Vulkan and a 60 fps patch. Releases are source plus a launcher that builds it from the player's own dump and keys; tested up to the first case's boss.",
+    "tags": [
+      "switch",
+      "platinumgames",
+      "las-recomp",
+      "vulkan"
+    ],
+    "sources": [
+      "https://github.com/Puddz/AstralChain-PC",
+      "https://github.com/Puddz/AstralChain-PC/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "egg-of-time",
+    "name": "Egg of Time",
+    "category": "games",
+    "subject": "Chrono Trigger (DS)",
+    "originalPlatform": "Nintendo DS",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README: Claude did the reverse-engineering analysis and wrote the recompiler, runtime and documentation under the owner's direction.",
+    "licence": "MIT",
+    "repo": "https://github.com/power-pudu/egg-of-time",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "power-pudu"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.8.0",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native PC port of the DS Chrono Trigger: every function is translated to C on the player's machine from their own ROM, using a bundled toolchain, and runs on a small DS runtime. Adds widescreen, high resolutions and frame rates, gamepad remapping, mods and RetroAchievements.",
+    "tags": [
+      "nds",
+      "chrono-trigger",
+      "square-enix",
+      "jrpg"
+    ],
+    "sources": [
+      "https://github.com/power-pudu/egg-of-time",
+      "https://github.com/power-pudu/egg-of-time/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "portal2-recomp",
+    "name": "Portal 2 Recompiled",
+    "category": "games",
+    "subject": "Portal 2 (Linux)",
+    "originalPlatform": "Linux",
+    "originalYear": 2011,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README: AI coding agents (Claude Code and Codex) wrote most of the code under the author's direction.",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/kanapitsas/portal2-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "kanapitsas"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "macOS",
+      "iOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Translates the Linux x86 binaries of Portal 2 into C and compiles them for ARM64, with a small runtime standing in for libc, SDL2, graphics and Steam. A setup script builds a Mac app (and optionally an iPhone app) from the player's Steam copy; no prebuilt releases.",
+    "tags": [
+      "linux",
+      "source-engine",
+      "valve",
+      "portal",
+      "ios"
+    ],
+    "sources": [
+      "https://github.com/kanapitsas/portal2-recomp"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "gow-ascension-pc",
+    "name": "God of War: Ascension PC port",
+    "category": "games",
+    "subject": "God of War: Ascension",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2013,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "99 of the last 100 commits carry Claude Co-Authored-By trailers (github.com/otavix010/gow-ascension-pc commits).",
+    "licence": "MIT",
+    "repo": "https://github.com/otavix010/gow-ascension-pc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "otavix010"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.2",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native Windows port of the PS3 God of War: Ascension (BCUS98232) built on sp00nznet's ps3recomp; the game code is translated to C/C++ and compiled on the player's PC from their own copy, normally through the separate Otavix Launcher. The repo's only release asset is a prebuilt shader cache.",
+    "tags": [
+      "ps3",
+      "ps3recomp",
+      "god-of-war",
+      "sony"
+    ],
+    "sources": [
+      "https://github.com/otavix010/gow-ascension-pc",
+      "https://github.com/otavix010/gow-ascension-pc/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "warriors-xbe-recomp",
+    "name": "The Warriors - XBERecomp",
+    "category": "games",
+    "subject": "The Warriors",
+    "originalPlatform": "Xbox",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/Antriksh1984/TheWarriors-XBERecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Antriksh1984",
+      "GectorNathan"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.2.0-alpha",
+      "date": "2026-10-24"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Alpha PC port of the original Xbox The Warriors made with TGP482's Xbox XBE Recomp: the x86 game code is translated to C++ ahead of time and Xbox kernel, Direct3D and DirectSound calls are reimplemented on Direct3D 12 and XAudio2. The release ships the recompiler and a clang toolchain so the game is built from the player's own files.",
+    "tags": [
+      "xbox",
+      "xbe-recomp",
+      "rockstar",
+      "beat-em-up"
+    ],
+    "sources": [
+      "https://github.com/Antriksh1984/TheWarriors-XBERecomp",
+      "https://github.com/Antriksh1984/TheWarriors-XBERecomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "outrunners-port",
+    "name": "OutRunners port",
+    "category": "games",
+    "subject": "OutRunners",
+    "originalPlatform": "Arcade",
+    "originalYear": 1992,
+    "method": "source-port",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "BSD-3-Clause",
+    "repo": "https://github.com/cheviman/outrunners-port",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "cheviman"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.1.2",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Nintendo Switch",
+      "Android",
+      "Anbernic handhelds"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native builds of Sega's 1992 System Multi 32 arcade racer, built from the author's C decompilation (outrunners-decomp) that is checked frame by frame against MAME. It produces both an arcade-faithful build and a home 'console' variant, and extracts graphics and sound from the player's own MAME ROM set.",
+    "tags": [
+      "arcade",
+      "sega",
+      "racing",
+      "decomp",
+      "multi-platform"
+    ],
+    "sources": [
+      "https://github.com/cheviman/outrunners-port",
+      "https://github.com/cheviman/outrunners-port/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "fear360-recomp",
+    "name": "F.E.A.R. 360 Recompiled",
+    "category": "games",
+    "subject": "F.E.A.R. (Xbox 360)",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README credits Claude Code and the tree has a CLAUDE.md; most commits carry Claude trailers.",
+    "licence": "MIT",
+    "repo": "https://github.com/Juansolo457/fear360-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Juansolo457"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.6.0",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "Steam Deck"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "ReXGlue static recompilation of the Xbox 360 F.E.A.R. with a native Vulkan renderer adapted from the author's GRAW 360 port, adding high frame rates, 4K and keyboard/mouse. Players unpack their own disc into the release folder; F.E.A.R. Files is planned.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "fps",
+      "monolith"
+    ],
+    "sources": [
+      "https://github.com/Juansolo457/fear360-recomp",
+      "https://github.com/Juansolo457/fear360-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "until-dawn-pc",
+    "name": "Until Dawn PC",
+    "category": "games",
+    "subject": "Until Dawn (2015)",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2015,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Some commits carry Claude Co-Authored-By and Claude-Session trailers (github.com/SuperCatElvis/UntilDawn_PC commits).",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/SuperCatElvis/UntilDawn_PC",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "SuperCatElvis"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.3.1",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Runs the original PS4 Until Dawn (CUSA02636, update 1.03) natively on Windows: the game's x86-64 code executes on the PC under a custom runtime with its own GCN-to-SPIR-V Vulkan renderer. Ships a recorded pipeline list for shader preparation; needs a decrypted dump of the player's copy.",
+    "tags": [
+      "ps4",
+      "vulkan",
+      "horror",
+      "supermassive"
+    ],
+    "sources": [
+      "https://github.com/SuperCatElvis/UntilDawn_PC",
+      "https://github.com/SuperCatElvis/UntilDawn_PC/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "opensmash-ultimate",
+    "name": "OpenSmash-Ultimate",
+    "category": "games",
+    "subject": "Super Smash Bros. Ultimate",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2018,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "39 of the last 100 commits carry Claude Co-Authored-By trailers.",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/OpenSmash-Ultimate/OpenSmash-Ultimate",
+    "website": "https://denkishi.github.io/opensmash-site/",
+    "discord": "https://discord.gg/pkgyYGf3YB",
+    "subreddit": null,
+    "team": [
+      "OpenSmash-Ultimate",
+      "Denkishi",
+      "SNO2207"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.3.0-alpha.2",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Merged successor of WindowSmash and ssbu-recomp: one ARM64-to-C static recompilation of Smash Ultimate 13.0.5 with a shared runtime, built locally from the player's own dump, keys and firmware. Releases are a .NET launcher/installer; Linux and macOS are experimental.",
+    "tags": [
+      "switch",
+      "smash",
+      "nintendo",
+      "aarch64"
+    ],
+    "sources": [
+      "https://github.com/OpenSmash-Ultimate/OpenSmash-Ultimate",
+      "https://github.com/OpenSmash-Ultimate/OpenSmash-Ultimate/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "knack-pc",
+    "name": "Knack for PC",
+    "category": "games",
+    "subject": "Knack",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2013,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/AbdelmoumenDeghbouche/knack_pc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "AbdelmoumenDeghbouche"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.10",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "PC port of the PS4 Knack that executes the game's x86-64 code directly with a replacement PS4 system layer and shadPS4's Vulkan video core, derived from the same author's WipEout Omega Collection port. Early chapters are playable; needs a dump of the player's own copy.",
+    "tags": [
+      "ps4",
+      "shadps4",
+      "platformer",
+      "sony"
+    ],
+    "sources": [
+      "https://github.com/AbdelmoumenDeghbouche/knack_pc",
+      "https://github.com/AbdelmoumenDeghbouche/knack_pc/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "mgr-nx-deko",
+    "name": "mgr-nx-deko",
+    "category": "games",
+    "subject": "Metal Gear Rising: Revengeance",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2013,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "5 of 6 commits carry Claude Co-Authored-By trailers.",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/tuancapoo/mgr-nx-deko",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "tuancapoo"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.2.2",
+      "date": "2026-10-23"
+    },
+    "targets": [
+      "Nintendo Switch (homebrew)"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Experimental Switch homebrew port of the Xbox 360 Metal Gear Rising: the default.xex is recompiled with ReXGlue and drawn with Renut's renderer on plume's deko3d back end, following sa2-nx. Shaders are compiled from the player's own game files on first start.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "switch",
+      "deko3d",
+      "platinum"
+    ],
+    "sources": [
+      "https://github.com/tuancapoo/mgr-nx-deko",
+      "https://github.com/tuancapoo/mgr-nx-deko/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "openmerc",
+    "name": "openMERC",
+    "category": "games",
+    "subject": "Soldier of Fortune",
+    "originalPlatform": "Windows",
+    "originalYear": 2000,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/sidreshot/openMERC",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sidreshot"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.2.2",
+      "date": "2026-10-27"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Open-source engine for Raven's Soldier of Fortune written on top of Yamagi Quake II, with an OpenGL 3.2 renderer, OpenAL sound and widescreen menus. Loads the original .pak data from a GOG or patched retail install; its own game logic runs all campaign maps but is unfinished.",
+    "tags": [
+      "quake2",
+      "raven",
+      "fps",
+      "engine"
+    ],
+    "sources": [
+      "https://github.com/sidreshot/openMERC",
+      "https://github.com/sidreshot/openMERC/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "mushroom-maker-recomp",
+    "name": "Mushroom Maker Recomp",
+    "category": "games",
+    "subject": "Super Mario Maker 2 (v3.0.3)",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2019,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/Apolinario-coder/MushroomMakerRecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Apolinario-coder"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.0.0",
+      "date": "2026-10-26"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Experimental Windows port of Super Mario Maker 2 3.0.3 by AArch64-to-C static recompilation; the release carries a launcher, translation tools, toolchain and runtime, and the game library is generated locally from the player's own files.",
+    "tags": [
+      "switch",
+      "mario-maker",
+      "nintendo",
+      "aarch64"
+    ],
+    "sources": [
+      "https://github.com/Apolinario-coder/MushroomMakerRecomp",
+      "https://github.com/Apolinario-coder/MushroomMakerRecomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "mugen-unleashed",
+    "name": "mugen-unleashed",
+    "category": "games",
+    "subject": "M.U.G.E.N 1.1 Beta 1",
+    "originalPlatform": "Windows",
+    "originalYear": 2013,
+    "method": "non-matching-decomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "All commits carry Claude Co-Authored-By trailers.",
+    "licence": "none",
+    "repo": "https://github.com/zxmarcos/mugen-unleashed",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "zxmarcos"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.2",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "C reconstruction of Elecbyte's M.U.G.E.N 1.1 Beta 1 engine executable, with each function checked against the original by differential tests and statically linked libraries rebuilt from their original versions. Builds a drop-in mugen.exe that needs the user's own M.U.G.E.N install.",
+    "tags": [
+      "mugen",
+      "fighting",
+      "engine",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/zxmarcos/mugen-unleashed",
+      "https://github.com/zxmarcos/mugen-unleashed/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "desktop-melee",
+    "name": "Desktop Melee",
+    "category": "games",
+    "subject": "Super Smash Bros. Melee",
+    "originalPlatform": "GameCube",
+    "originalYear": 2001,
+    "method": "source-port",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repository contains CLAUDE.md and AGENTS.md.",
+    "licence": "unknown",
+    "repo": "https://github.com/Mwrnk/desktop-melee",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Mwrnk"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.2",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Novelty build of Melee from the community decompilation (via melee-pc) that runs as a transparent desktop overlay: fighters stand on the Dock and the screen edges act as blast zones. Needs the player's own NTSC 1.02 disc image.",
+    "tags": [
+      "gamecube",
+      "melee",
+      "decomp",
+      "macos",
+      "overlay"
+    ],
+    "sources": [
+      "https://github.com/Mwrnk/desktop-melee",
+      "https://github.com/Mwrnk/desktop-melee/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "mc-la-recompiled",
+    "name": "Midnight Club: Los Angeles Recompiled (PT-BR)",
+    "category": "games",
+    "subject": "Midnight Club: Los Angeles - Complete Edition",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2009,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Some commits carry Claude Sonnet Co-Authored-By trailers.",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/robertoaraujo77/MC_LA_Recompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "robertoaraujo77"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.0.2",
+      "date": "2026-10-28"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Community build on top of mcla-recomp (via RenanQueiroz's fork) adding a Brazilian Portuguese translation, automatic ultrawide, FSR and a Windows installer that prepares the game from the player's own Xbox 360 ISO.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "rockstar",
+      "racing",
+      "translation"
+    ],
+    "sources": [
+      "https://github.com/robertoaraujo77/MC_LA_Recompiled",
+      "https://github.com/robertoaraujo77/MC_LA_Recompiled/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "ssbu-ps4",
+    "name": "SSBU (WindowSmash for PS4)",
+    "category": "games",
+    "subject": "Super Smash Bros. Ultimate",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2018,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/iHaiDeeZ/SSBU",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "iHaiDeeZ",
+      "ShiroKlein"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "PS4 (GoldHEN homebrew)"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Port of the WindowSmash Smash Ultimate recompilation to jailbroken PS4 consoles, drawing through DXVK on a patched RADV driver with FSR 1 and four-player support. Source and build tooling only; the player builds it from their own dump.",
+    "tags": [
+      "switch",
+      "smash",
+      "ps4-homebrew",
+      "dxvk"
+    ],
+    "sources": [
+      "https://github.com/iHaiDeeZ/SSBU"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "tourline-prologue",
+    "name": "Tourline Prologue",
+    "category": "games",
+    "subject": "Gran Turismo 5 Prologue",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2007,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README and docs/AI.md state it is developed with AI coding agents reviewed by the maintainer; AGENTS.md in tree.",
+    "licence": "MIT",
+    "repo": "https://github.com/mathewdouglas/Tourline-Prologue",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "mathewdouglas",
+      "sp00nznet"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.2.3",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Fork of sp00nznet's GT5P recompilation that turns the US Gran Turismo 5 Prologue (BCUS98158 v03.00) into a native Windows build with a Direct3D 12 renderer. Early state: menus, dealerships and races load; uses the player's extracted disc folder.",
+    "tags": [
+      "ps3",
+      "ps3recomp",
+      "gran-turismo",
+      "racing"
+    ],
+    "sources": [
+      "https://github.com/mathewdouglas/Tourline-Prologue",
+      "https://github.com/mathewdouglas/Tourline-Prologue/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "precursor-android",
+    "name": "Precursor",
+    "category": "games",
+    "subject": "Jak and Daxter trilogy",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2001,
+    "method": "source-port",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README states Claude Code writes much of the code; commits marked (AI-assisted) with Claude trailers.",
+    "licence": "ISC",
+    "repo": "https://github.com/thebardockgames/Precursor",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "thebardockgames"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.2.1-beta",
+      "date": "2026-10-25"
+    },
+    "targets": [
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Unofficial, unendorsed fork of OpenGOAL that targets Android ARM64 phones for Jak 1, 2 and 3; all three boot but none is verified end to end. The APK bundles OpenGOAL's toolchain and extracts game data from the player's own copy.",
+    "tags": [
+      "ps2",
+      "opengoal",
+      "jak-and-daxter",
+      "android"
+    ],
+    "sources": [
+      "https://github.com/thebardockgames/Precursor",
+      "https://github.com/thebardockgames/Precursor/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "ghostrecon2-recomp",
+    "name": "Ghost Recon 2 recomp",
+    "category": "games",
+    "subject": "Tom Clancy's Ghost Recon 2",
+    "originalPlatform": "Xbox",
+    "originalYear": 2004,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Nearly all commits carry Claude Co-Authored-By trailers.",
+    "licence": "none",
+    "repo": "https://github.com/ElKev118/ghostrecon2-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ElKev118"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.3",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows port of the original Xbox Ghost Recon 2, statically recompiled from default.xbe with a fork of sp00nznet's xboxrecomp; adds a Vulkan renderer with resolution scaling, SMAA and FSR 1. Uses the player's own game files.",
+    "tags": [
+      "xbox",
+      "xboxrecomp",
+      "ubisoft",
+      "tactical-shooter"
+    ],
+    "sources": [
+      "https://github.com/ElKev118/ghostrecon2-recomp",
+      "https://github.com/ElKev118/ghostrecon2-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "angry-birds-re-hatched",
+    "name": "Angry Birds Re-Hatched Collection",
+    "category": "games",
+    "subject": "Angry Birds Trilogy / Angry Birds Star Wars",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2012,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README: 'made almost entirely with Claude Code'; owner directed and tested.",
+    "licence": "none",
+    "repo": "https://github.com/TekRantGaming/angry-birds-re-hatched-collection",
+    "website": null,
+    "discord": "https://discord.gg/8eakYSvBZS",
+    "subreddit": null,
+    "team": [
+      "TekRantGaming"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-10-29"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "ReXGlue recompilations of the Xbox 360 Angry Birds Trilogy (Classic, Seasons, Rio) and Angry Birds Star Wars bundled behind a couch-oriented launcher. Needs the player's own game files.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "angry-birds",
+      "rovio"
+    ],
+    "sources": [
+      "https://github.com/TekRantGaming/angry-birds-re-hatched-collection",
+      "https://github.com/TekRantGaming/angry-birds-re-hatched-collection/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "openng2",
+    "name": "openNG2",
+    "category": "games",
+    "subject": "Ninja Gaiden II",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in tree; all commits carry Claude Co-Authored-By trailers.",
+    "licence": "BSD-3-Clause",
+    "repo": "https://github.com/KamiTK2/openNG2",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "KamiTK2"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v1.0.5",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "ReXGlue recompilation of the Xbox 360 Ninja Gaiden II (World release with Title Update 2) with PC upgrades; the launcher validates the player's disc, GoD package or folder and builds the game locally with the bundled SDK.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "ninja-gaiden",
+      "action"
+    ],
+    "sources": [
+      "https://github.com/KamiTK2/openNG2",
+      "https://github.com/KamiTK2/openNG2/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "harvest-moon-snes-c",
+    "name": "HarvestMoonSnesDecomp",
+    "category": "games",
+    "subject": "Harvest Moon",
+    "originalPlatform": "SNES",
+    "originalYear": 1996,
+    "method": "non-matching-decomp",
+    "status": "released",
+    "progress": 100,
+    "progressSource": "https://github.com/RodoLy/HarvestMoonSnesDecomp",
+    "provenance": "ai-assisted",
+    "provenanceNote": "README: 'This project was made with the help of AI.'",
+    "licence": "PolyForm-Noncommercial-1.0.0",
+    "repo": "https://github.com/RodoLy/HarvestMoonSnesDecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "RodoLy",
+      "ElisaS-Codes",
+      "DasK"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.2.0-beta",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Routine-by-routine C rewrite of the SNES Harvest Moon, built on the HM-Decomp disassembly and checked against the original state after every routine, which also runs natively with a launcher, widescreen and an HM64-style pause menu. The ROM is supplied by the player.",
+    "tags": [
+      "snes",
+      "harvest-moon",
+      "decomp",
+      "natsume"
+    ],
+    "sources": [
+      "https://github.com/RodoLy/HarvestMoonSnesDecomp",
+      "https://github.com/RodoLy/HarvestMoonSnesDecomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "gears2-nx",
+    "name": "gears2-nx",
+    "category": "games",
+    "subject": "Gears of War 2",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/VasilkovND/gears2-nx",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "VasilkovND"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Nintendo Switch (homebrew)"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Build tools for a Switch homebrew NRO of the Xbox 360 Gears of War 2, recompiled with ReXGlue using the PC port's codegen data and drawn by a native deko3d renderer. No prebuilt release; code, shaders and the NRO are produced from the player's own retail disc.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "switch",
+      "deko3d",
+      "epic"
+    ],
+    "sources": [
+      "https://github.com/VasilkovND/gears2-nx"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "dmc3-android-recomp",
+    "name": "Devil May Cry 3 Android recomp",
+    "category": "games",
+    "subject": "Devil May Cry 3: Special Edition (PC)",
+    "originalPlatform": "Windows",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/sindufha/Devil-may-cry-3-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sindufha"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.30",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Experimental Android ARM64 APK that runs the PC Devil May Cry 3: Special Edition by translating its Windows and Direct3D 9 calls, rendering through DXVK Native on Vulkan. Requires the player's own dmc3se.exe and full game folder.",
+    "tags": [
+      "pc",
+      "android",
+      "capcom",
+      "dxvk"
+    ],
+    "sources": [
+      "https://github.com/sindufha/Devil-may-cry-3-recomp",
+      "https://github.com/sindufha/Devil-may-cry-3-recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "uncharted-tndc-pc-port",
+    "name": "Uncharted: The Nathan Drake Collection PC port",
+    "category": "games",
+    "subject": "Uncharted: The Nathan Drake Collection",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2015,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Most commits carry Co-Authored-By: Claude trailers (GitHub commit history)",
+    "licence": "GPL-2.0-or-later",
+    "repo": "https://github.com/bc160201983/Uncharted-The-Nathan-Drake-Collection-PC-port",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "bc160201983"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.8.1",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows port of the PS4 Nathan Drake Collection (all three games) that runs the game executables' x86-64 code directly under a replacement PS4 system-library runtime, with a shadPS4-derived Vulkan renderer and a per-game launcher; built on the gow3_pc/SpartanPort runtime and requires the player's own dumped CUSA02344 game folder.",
+    "tags": [
+      "ps4",
+      "uncharted",
+      "naughty-dog",
+      "shadps4"
+    ],
+    "sources": [
+      "https://github.com/bc160201983/Uncharted-The-Nathan-Drake-Collection-PC-port",
+      "https://github.com/bc160201983/Uncharted-The-Nathan-Drake-Collection-PC-port/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "uncharted-waters-new-horizons-recomp",
+    "name": "Uncharted Waters: New Horizons SNES Static Recomp",
+    "category": "games",
+    "subject": "Uncharted Waters: New Horizons",
+    "originalPlatform": "SNES",
+    "originalYear": 1994,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "Zlib",
+    "repo": "https://github.com/Junior-Jones/Uncharted-Waters-New-Horizons-SNES-Static-Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Junior-Jones"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v1.0.0",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of the SNES game Uncharted Waters: New Horizons into native C for Windows, with its own S-CPU/SPC700 core, PPU and audio code, a Win32 frontend, snapshots and experimental widescreen; the player supplies the USA ROM.",
+    "tags": [
+      "snes",
+      "koei",
+      "uncharted-waters"
+    ],
+    "sources": [
+      "https://github.com/Junior-Jones/Uncharted-Waters-New-Horizons-SNES-Static-Recomp",
+      "https://github.com/Junior-Jones/Uncharted-Waters-New-Horizons-SNES-Static-Recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "uncharted-waters-nes-decompile",
+    "name": "UW-decompile",
+    "category": "games",
+    "subject": "Uncharted Waters",
+    "originalPlatform": "NES",
+    "originalYear": 1991,
+    "method": "non-matching-decomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Co-Authored-By: Claude trailers (GitHub commit history)",
+    "licence": "none",
+    "repo": "https://github.com/chrisaacson69/UW-decompile",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "chrisaacson69"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Reverse-engineering project for KOEI's NES Uncharted Waters: disassembly of its native 6502 banks and bytecode VM banks, machine-decompiled C for the bytecode functions, labels and chapter-by-chapter write-ups of the game's systems; it does not produce a buildable game.",
+    "tags": [
+      "nes",
+      "koei",
+      "disassembly",
+      "uncharted-waters"
+    ],
+    "sources": [
+      "https://github.com/chrisaacson69/UW-decompile"
+    ],
+    "checked": "2026-11-04"
   }
 ]
