@@ -23422,5 +23422,46 @@
       "https://github.com/TheLostPantheon/nativ/releases"
     ],
     "checked": "2026-11-04"
+  },
+  {
+    "slug": "regpu",
+    "name": "ReGPU",
+    "category": "tools",
+    "subject": "Xbox 360 Xenos GPU (XenonRecomp ports)",
+    "originalPlatform": "Xbox 360",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in tree and Claude co-author trailers (github.com/zer0ducksgiven/ReGPU).",
+    "licence": "MIT",
+    "repo": "https://github.com/zer0ducksgiven/ReGPU",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "zer0ducksgiven"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Static library that stands in for the Xbox 360 GPU in XenonRecomp ports: it handles the command ring and Vd* video exports, translates Xenos shader microcode to HLSL and emulates EDRAM, resolves and texture formats on Direct3D 12. It was split out of the author's Forza Motorsport 2 port and is also used by PGR4 ReGPU.",
+    "tags": [
+      "xbox360",
+      "xenonrecomp",
+      "gpu",
+      "d3d12"
+    ],
+    "sources": [
+      "https://github.com/zer0ducksgiven/ReGPU"
+    ],
+    "checked": "2026-11-04"
   }
 ]

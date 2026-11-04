@@ -64521,5 +64521,1566 @@
       "https://github.com/Yaz-Myst/ZOE-Recompiled/releases"
     ],
     "checked": "2026-11-04"
+  },
+  {
+    "slug": "bloodborne-pc-supermedo",
+    "name": "Bloodborne for Windows (Supermedo)",
+    "category": "games",
+    "subject": "Bloodborne",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2015,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Recent commits carry Claude Opus co-author trailers (github.com/Supermedo/bloodborne_pc commits).",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/Supermedo/bloodborne_pc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Supermedo",
+      "deadinside28"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "windows-v1.9.7",
+      "date": "2026-10-30"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows-focused fork of deadinside28's bbport, in which Bloodborne's own x86-64 code runs directly on a replacement PS4 system-library runtime with a shadPS4-derived Vulkan renderer. This fork adds a multilingual launcher with setup checks and updates, DLSS and FSR upscaling, cheats and mods, save import and online play through community servers; it needs the player's own decrypted 1.09 dump.",
+    "tags": [
+      "ps4",
+      "bbport",
+      "shadps4",
+      "fromsoftware"
+    ],
+    "sources": [
+      "https://github.com/Supermedo/bloodborne_pc",
+      "https://github.com/Supermedo/bloodborne_pc/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "hp1-recompiled",
+    "name": "HP1 Recompiled (Philosopher's Stone)",
+    "category": "games",
+    "subject": "Harry Potter and the Philosopher's Stone",
+    "originalPlatform": "Xbox",
+    "originalYear": 2003,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says it was aided by Claude Code; CLAUDE.md in tree and Claude co-author trailers (github.com/Barthes-Recompiled/HP1-Recompiled).",
+    "licence": "MIT",
+    "repo": "https://github.com/Barthes-Recompiled/HP1-Recompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Barthes-Recompiled",
+      "MiddleDucky",
+      "Unowa001"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.0.2",
+      "date": "2026-11-01"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Fork of MiddleDucky's xboxrecomp-based static recompilation of the original Xbox Philosopher's Stone, with a D3D12 renderer derived from SCDA-XBERecomp. It adds support for the North American disc, settings pages inside the game's menus, cutscene and logo skips, and an Archipelago randomizer; the player supplies the disc files.",
+    "tags": [
+      "xbox",
+      "xboxrecomp",
+      "harry-potter",
+      "archipelago"
+    ],
+    "sources": [
+      "https://github.com/Barthes-Recompiled/HP1-Recompiled",
+      "https://github.com/Barthes-Recompiled/HP1-Recompiled/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "hp2-recompiled",
+    "name": "HP2 Recompiled (Chamber of Secrets)",
+    "category": "games",
+    "subject": "Harry Potter and the Chamber of Secrets",
+    "originalPlatform": "Xbox",
+    "originalYear": 2002,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README and commits acknowledge Claude Code; Claude co-author trailers (github.com/Barthes-Recompiled/HP2-Recompiled).",
+    "licence": "MIT",
+    "repo": "https://github.com/Barthes-Recompiled/HP2-Recompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Barthes-Recompiled",
+      "MiddleDucky",
+      "Unowa001"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.0.2",
+      "date": "2026-11-01"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Barthes Recompiled's fork of MiddleDucky's Xbox-to-Windows static recompilation of Chamber of Secrets. On top of upstream it adds PAL disc support, in-menu settings and button mapping, 5.1 output and cutscene and logo skips. Players provide their own disc.",
+    "tags": [
+      "xbox",
+      "xboxrecomp",
+      "harry-potter"
+    ],
+    "sources": [
+      "https://github.com/Barthes-Recompiled/HP2-Recompiled",
+      "https://github.com/Barthes-Recompiled/HP2-Recompiled/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "hp3-recompiled",
+    "name": "HP3 Recompiled (Prisoner of Azkaban)",
+    "category": "games",
+    "subject": "Harry Potter and the Prisoner of Azkaban",
+    "originalPlatform": "Xbox",
+    "originalYear": 2004,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in tree and Claude/Codex co-author trailers (github.com/Barthes-Recompiled/HP3-Recompiled).",
+    "licence": "MIT",
+    "repo": "https://github.com/Barthes-Recompiled/HP3-Recompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Barthes-Recompiled",
+      "MiddleDucky",
+      "Unowa001"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.5.2-beta",
+      "date": "2026-11-01"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Beta static recompilation of the original Xbox Prisoner of Azkaban, built from the toolkit and port layer of MiddleDucky's two earlier Harry Potter Xbox ports. Per the README a new game is playable through the first level with saving; later levels are unchecked. Needs the player's USA or PAL disc.",
+    "tags": [
+      "xbox",
+      "xboxrecomp",
+      "harry-potter",
+      "beta"
+    ],
+    "sources": [
+      "https://github.com/Barthes-Recompiled/HP3-Recompiled",
+      "https://github.com/Barthes-Recompiled/HP3-Recompiled/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "castlevania-cod-pc",
+    "name": "Castlevania: Curse of Darkness - XBE Recomp",
+    "category": "games",
+    "subject": "Castlevania: Curse of Darkness",
+    "originalPlatform": "Xbox",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/Pazzi7054/CastlevaniaCOD-PC",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Pazzi7054"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.1.1",
+      "date": "2026-10-20"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows port of the USA Xbox release built with TGP482's Xbox XBE Recomp. The download holds only the runtime, launcher and a bundled recompiler with Clang/LLD, which generate the game DLL from the player's own default.xbe on first start. It adds any resolution, Hor+ widescreen and support for PCSX2-format texture packs.",
+    "tags": [
+      "xbox",
+      "xbe-recomp",
+      "castlevania",
+      "konami"
+    ],
+    "sources": [
+      "https://github.com/Pazzi7054/CastlevaniaCOD-PC",
+      "https://github.com/Pazzi7054/CastlevaniaCOD-PC/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "forza-motorsport-2-regpu",
+    "name": "Forza Motorsport 2 ReGPU",
+    "category": "games",
+    "subject": "Forza Motorsport 2",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2007,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers (github.com/zer0ducksgiven/Forza-Motorsport-2-ReGPU commits).",
+    "licence": "MIT",
+    "repo": "https://github.com/zer0ducksgiven/Forza-Motorsport-2-ReGPU",
+    "website": null,
+    "discord": "https://discord.gg/pVEpmSk2G3",
+    "subreddit": null,
+    "team": [
+      "zer0ducksgiven"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.10.9",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "XenonRecomp recompilation of Forza Motorsport 2's PowerPC code on the author's own 360 kernel layer, with the ReGPU Direct3D 12 renderer and precompiled pipelines to avoid shader stutter. An installer builds the game from the player's European disc image and title update; a Linux bundle runs the same build under Proton, and a mod kit adds things like an engine swap pack and a roguelike career.",
+    "tags": [
+      "xbox360",
+      "xenonrecomp",
+      "regpu",
+      "racing"
+    ],
+    "sources": [
+      "https://github.com/zer0ducksgiven/Forza-Motorsport-2-ReGPU",
+      "https://github.com/zer0ducksgiven/Forza-Motorsport-2-ReGPU/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "table-tennis-rockstar-pc",
+    "name": "Rockstar Games presents Table Tennis - Windows PC Recompilation",
+    "category": "games",
+    "subject": "Rockstar Games Presents Table Tennis",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/davidptrssvea/Table-Tennis-Rockstar-PC",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "davidptrssvea"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.5.0",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "ReXGlue SDK recompilation of the Xbox 360 Table Tennis for Windows, and the base of ThisIsAkill's Linux fork. A small installer fetches a patched ReXGlue engine and generates and compiles the game code from the player's ISO locally. It adds up to 4K output, image filters, photo mode, local achievements, PlayStation prompts and experimental online play.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "rockstar",
+      "sports"
+    ],
+    "sources": [
+      "https://github.com/davidptrssvea/Table-Tennis-Rockstar-PC",
+      "https://github.com/davidptrssvea/Table-Tennis-Rockstar-PC/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "incredible-hulk-recompiled",
+    "name": "The Incredible Hulk Recompiled",
+    "category": "games",
+    "subject": "The Incredible Hulk",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2008,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Co-Authored-By: Claude trailers (github.com/TekRantGaming/incredible-hulk-recompiled commits).",
+    "licence": "MIT",
+    "repo": "https://github.com/TekRantGaming/incredible-hulk-recompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "TekRantGaming"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "0.0.1",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "ReXGlue-based recompilation of the Xbox 360 Incredible Hulk game, published as an untested starting point for others to fork rather than a finished port. It boots to the first story mission; the bundled launcher installs the game files from the player's own disc image.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "marvel",
+      "action"
+    ],
+    "sources": [
+      "https://github.com/TekRantGaming/incredible-hulk-recompiled",
+      "https://github.com/TekRantGaming/incredible-hulk-recompiled/releases",
+      "https://www.reddit.com/r/recomps/comments/1xnsggg/community_head_start_a_rexglue_pc_recompilation/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "mgs-portable-ops-pc-port",
+    "name": "Metal Gear Solid: Portable Ops unofficial PC port",
+    "category": "games",
+    "subject": "Metal Gear Solid: Portable Ops",
+    "originalPlatform": "PSP",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in the repo holds the technical approach and is referenced from the README (github.com/Alvaro8317/mgs-portable-ops-pc-port).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Alvaro8317/mgs-portable-ops-pc-port",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Alvaro8317"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "Steam Deck"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of the US PSP release of MGS: Portable Ops to C++ with an HLE runtime and Vulkan renderer. The port is compiled locally from the player's ISO (and optionally their PSP firmware fonts); no release yet, with early missions playing on Linux.",
+    "tags": [
+      "psp",
+      "metal-gear",
+      "konami",
+      "stealth"
+    ],
+    "sources": [
+      "https://github.com/Alvaro8317/mgs-portable-ops-pc-port",
+      "https://www.reddit.com/r/recomps/comments/1xns1w8/mgs_portable_ops_static_recompilation_project/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "macross30-recomp",
+    "name": "Macross 30 Recompiled",
+    "category": "games",
+    "subject": "Macross 30: Voices across the Galaxy",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2013,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/saintiron82/macross30-releases",
+    "website": null,
+    "discord": "https://discord.gg/WqaaJ6hTmY",
+    "subreddit": null,
+    "team": [
+      "saintiron82"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.3.8",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows build of the Japanese PS3 Macross 30 made with the ps3recomp runtime and a D3D12 renderer, installed through a launcher that prepares the EBOOT and data from the player's own ISO. Optional Korean and English fan-translation packs ship as delta patches; a companion repo documents the SPU and rendering work.",
+    "tags": [
+      "ps3",
+      "ps3recomp",
+      "macross",
+      "translation"
+    ],
+    "sources": [
+      "https://github.com/saintiron82/macross30-releases",
+      "https://github.com/saintiron82/macross30-releases/releases",
+      "https://github.com/saintiron82/macross30-recomp",
+      "https://www.reddit.com/r/recomps/comments/1xnoe2z/macross_30_ps3towindows_recomp_spu_and_rendering/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "soleanna-sonic06-recomp",
+    "name": "Soleanna (sonic06-recomp)",
+    "category": "games",
+    "subject": "Sonic the Hedgehog (2006)",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README FAQ says it was made with a lot of help from Claude; commits carry Claude trailers (github.com/DrummingBird1/sonic06-recomp).",
+    "licence": "MIT",
+    "repo": "https://github.com/DrummingBird1/sonic06-recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "DrummingBird1"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "0.1.0",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Early static recompilation of the European PS3 version of Sonic '06 on a patched ps3recomp. The released launcher copies and decrypts the player's disc, fetches the toolchain and builds the game locally; all stages boot but none has been confirmed completable.",
+    "tags": [
+      "ps3",
+      "ps3recomp",
+      "sonic",
+      "sega"
+    ],
+    "sources": [
+      "https://github.com/DrummingBird1/sonic06-recomp",
+      "https://github.com/DrummingBird1/sonic06-recomp/releases",
+      "https://www.reddit.com/r/recomps/comments/1xnkmg6/sonic_06_now_has_an_unofficial_native_pc_port_ps3/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "pokepark-wiicompiled",
+    "name": "PokePark Wiicompiled",
+    "category": "games",
+    "subject": "PokePark Wii: Pikachu's Adventure",
+    "originalPlatform": "Wii",
+    "originalYear": 2009,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Co-Authored-By: Claude trailers (github.com/MildRain479/PokePark-Wiicompiled commits).",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/MildRain479/PokePark-Wiicompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "MildRain479"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "0.1.1-beta",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows",
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of the US PokePark Wii into C with a replacement Wii hardware layer and Vulkan/OpenGL renderers. Open-beta builds for Windows and Android read the player's own disc image and add widescreen, higher resolutions and frame rates, and touch controls.",
+    "tags": [
+      "wii",
+      "pokemon",
+      "nintendo",
+      "android"
+    ],
+    "sources": [
+      "https://github.com/MildRain479/PokePark-Wiicompiled",
+      "https://github.com/MildRain479/PokePark-Wiicompiled/releases",
+      "https://www.reddit.com/r/recomps/comments/1xn5dki/pokepark_wiicompiled_a_native_pc_and_android_port/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "sparkpark",
+    "name": "SparkPark",
+    "category": "games",
+    "subject": "PokePark Wii: Pikachu's Adventure",
+    "originalPlatform": "Wii",
+    "originalYear": 2009,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in the repo and commits that maintain it (github.com/Dvrkie13/SparkPark).",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/Dvrkie13/SparkPark",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Dvrkie13",
+      "MildRain479"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "0.2.0-alpha",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Fork of PokePark Wiicompiled that adds a one-click builder: it checks the player's disc against the Redump hash and recompiles and compiles the game on their PC with a bundled llvm-mingw and Python toolchain, so no compiled game code is distributed.",
+    "tags": [
+      "wii",
+      "pokemon",
+      "nintendo",
+      "fork"
+    ],
+    "sources": [
+      "https://github.com/Dvrkie13/SparkPark",
+      "https://github.com/Dvrkie13/SparkPark/releases",
+      "https://www.reddit.com/r/recomps/comments/1xnfxso/pokepark_wii_recomp_sparkpark_fork_in_alpha/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "sfa3max-decomp",
+    "name": "Street Fighter Alpha 3 MAX: Decomp",
+    "category": "games",
+    "subject": "Street Fighter Alpha 3 MAX",
+    "originalPlatform": "PSP",
+    "originalYear": 2006,
+    "method": "non-matching-decomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in the tree and Claude co-author/session trailers on commits (github.com/theweathervane/sfa3max-decomp).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/theweathervane/sfa3max-decomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "theweathervane"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "0.34.2",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Function-by-function C rewrite of the US PSP Street Fighter Alpha 3 MAX, grown out of the author's earlier static recompilation: untranslated functions are still recompiled at build time and a parity test compares frames. Adds local three-player, widescreen and an editable extracted-asset folder built from the player's ISO.",
+    "tags": [
+      "psp",
+      "capcom",
+      "fighting",
+      "street-fighter"
+    ],
+    "sources": [
+      "https://github.com/theweathervane/sfa3max-decomp",
+      "https://github.com/theweathervane/sfa3max-decomp/releases",
+      "https://www.reddit.com/r/recomps/comments/1xn7vlr/street_fighter_alpha_3_max/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "reuc-recomp",
+    "name": "Resident Evil: The Umbrella Chronicles PC native port",
+    "category": "games",
+    "subject": "Resident Evil: The Umbrella Chronicles",
+    "originalPlatform": "Wii",
+    "originalYear": 2007,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md and .claude/skills in the repo (github.com/solleo95/reuc-recomp).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/solleo95/reuc-recomp",
+    "website": null,
+    "discord": "https://discord.gg/njy2CqecyY",
+    "subreddit": null,
+    "team": [
+      "solleo95"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.1.1",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "Steam Deck"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Recompilation of the NTSC-U Wii release of The Umbrella Chronicles into a native Windows and Linux program, unpacked from the player's own image with the bundled Wit tool. Adds unlocked frame rate, mouse and light-gun aiming, DLSS/FSR upscaling, ray-traced shadows, Lua/JS/DLL modding and experimental online co-op.",
+    "tags": [
+      "wii",
+      "resident-evil",
+      "capcom",
+      "steam-deck",
+      "mods"
+    ],
+    "sources": [
+      "https://github.com/solleo95/reuc-recomp",
+      "https://github.com/solleo95/reuc-recomp/releases",
+      "https://www.reddit.com/r/recomps/comments/1xn0j7i/my_umbrella_chronicles_recomp_now_runs_natively/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "skylanderspc",
+    "name": "SkylandersPC",
+    "category": "games",
+    "subject": "Skylanders: Trap Team",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2014,
+    "method": "emulation-hosted",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in the repo and Claude co-author trailers on commits (github.com/The-Crow-Den/SkylandersPC).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/The-Crow-Den/SkylandersPC",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "The-Crow-Den"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Compatibility host for the PS4 Skylanders games that loads the original x86-64 executable from the player's own package files and supplies PS4 system services and a Vulkan renderer itself. Trap Team (US/EU) works with a virtual portal and PC settings; the other entries are planned and there is no binary release yet.",
+    "tags": [
+      "ps4",
+      "skylanders",
+      "activision",
+      "compat-layer"
+    ],
+    "sources": [
+      "https://github.com/The-Crow-Den/SkylandersPC",
+      "https://www.reddit.com/r/recomps/comments/1xmz2m5/the_skylanderspc_project_recompiled_ps4_games_on/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "winback-recompiled",
+    "name": "WinBack Recompiled",
+    "category": "games",
+    "subject": "WinBack: Covert Operations",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1999,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README says the author let Claude Code do the port mostly by itself with minimal input; CLAUDE.md in tree and Claude co-author trailers (github.com/RetroPulse03/WinBackRecomp).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/RetroPulse03/WinBackRecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "RetroPulse03"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.2.2",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows build of the N64 stealth shooter made with N64Recomp and the RT64 renderer, running from the player's own USA ROM at 60 fps. Early release: the first mission is play-tested, and it adds a level and checkpoint select menu and mod loading.",
+    "tags": [
+      "n64",
+      "n64recomp",
+      "rt64",
+      "shooter"
+    ],
+    "sources": [
+      "https://github.com/RetroPulse03/WinBackRecomp",
+      "https://github.com/RetroPulse03/WinBackRecomp/releases",
+      "https://www.reddit.com/r/recomps/comments/1xmf5uh/winback_covert_operations_n64/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "agent-under-fire-xbe-recomp",
+    "name": "007: Agent Under Fire - XBE Recomp",
+    "category": "games",
+    "subject": "007: Agent Under Fire",
+    "originalPlatform": "Xbox",
+    "originalYear": 2002,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md in tree and Claude co-author trailers on commits (github.com/hk21x/007-agentunderfire-recomp).",
+    "licence": "MIT",
+    "repo": "https://github.com/hk21x/007-agentunderfire-recomp",
+    "website": null,
+    "discord": "https://discord.gg/PQjkKsdtc",
+    "subreddit": null,
+    "team": [
+      "hk21x"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v1.0.1",
+      "date": "2026-11-03"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "PC port of the original Xbox version built with TGP482's XBE recompiler, supporting both the USA and PAL discs. A small launcher fetches the runtime and a bundled Clang, then compiles the game's code from the player's own disc on first setup; it adds a PC settings page, keyboard and mouse play and post-processing options.",
+    "tags": [
+      "xbox",
+      "xbe-recomp",
+      "007",
+      "shooter"
+    ],
+    "sources": [
+      "https://github.com/hk21x/007-agentunderfire-recomp",
+      "https://github.com/hk21x/007-agentunderfire-recomp/releases",
+      "https://www.reddit.com/r/recomps/comments/1xmae07/007_agent_under_fire_native_pc_port_ultrawide_60/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "battle-stadium-don-recomp",
+    "name": "Battle Stadium D.O.N PC port",
+    "category": "games",
+    "subject": "Battle Stadium D.O.N",
+    "originalPlatform": "PlayStation 2",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md and CLAUDE.md in the repository tree (github.com/dvilelaf/battlestadium-don).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/dvilelaf/battlestadium-don",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "dvilelaf"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v1.0",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Linux",
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native Linux and Windows port of the PS2 crossover fighter, translated with PS2Recomp and drawn through PCSX2's GS renderer. Releases carry the runtime and a Clang toolchain; the game code is generated and compiled on the player's machine from their own disc image.",
+    "tags": [
+      "ps2",
+      "ps2recomp",
+      "fighting",
+      "pcsx2"
+    ],
+    "sources": [
+      "https://github.com/dvilelaf/battlestadium-don",
+      "https://github.com/dvilelaf/battlestadium-don/releases",
+      "https://www.reddit.com/r/recomps/comments/1xm32j3/battle_stadium_don_ps2_static_recomp_native_linux/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "superman-returns-recomp",
+    "name": "Superman Returns Recomp",
+    "category": "games",
+    "subject": "Superman Returns: The Video Game",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Claude co-author trailers on commits, plus .gemini-tasks and docs/superpowers agent folders in tree (github.com/MrPowerUp82/superman_returns_recomp).",
+    "licence": "none",
+    "repo": "https://github.com/MrPowerUp82/superman_returns_recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "MrPowerUp82"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v2026.11.04-0e4e359",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Experimental Windows port of the Xbox 360 game on ReXGlue, with a native D3D12 renderer as well as a Vulkan path, plus extras such as costume unlocks and texture dump and replace. A browser installer page checks the player's own ISO or default.xex before setting up the prebuilt build; documentation is in Portuguese.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "superman",
+      "action"
+    ],
+    "sources": [
+      "https://github.com/MrPowerUp82/superman_returns_recomp",
+      "https://github.com/MrPowerUp82/superman_returns_recomp/releases",
+      "https://www.reddit.com/r/recomps/comments/1xm1h6r/superman_returns_xbox_360_native_pc_recomp/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "table-tennis-linux",
+    "name": "Table Tennis for Linux",
+    "category": "games",
+    "subject": "Rockstar Games Presents Table Tennis",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2006,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MIT",
+    "repo": "https://github.com/ThisIsAkill/Table-Tennis-Linux",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ThisIsAkill",
+      "davidptrssvea"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "linux-v1.5.0",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Linux",
+      "Steam Deck"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Linux and Vulkan fork of davidptrssvea's ReXGlue recompilation of Rockstar's Table Tennis. A graphical installer for desktop Linux and Steam Deck builds the game from the player's own ISO. It adds motion-swing aiming, haptics, PlayStation button prompts, online and ranked play, a photo mode and texture packs.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "linux",
+      "steam-deck",
+      "sports"
+    ],
+    "sources": [
+      "https://github.com/ThisIsAkill/Table-Tennis-Linux",
+      "https://github.com/ThisIsAkill/Table-Tennis-Linux/releases",
+      "https://www.reddit.com/r/recomps/comments/1xlpp6g/thisisakilltabletennislinux_linuxvulkan_static/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "woohoo-flight-school",
+    "name": "Woohoo! Flight School",
+    "category": "games",
+    "subject": "Pilotwings Resort",
+    "originalPlatform": "Nintendo 3DS",
+    "originalYear": 2011,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Some commits carry Claude co-author trailers (github.com/thefixinhixon/woohoo-flight-school commits).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/thefixinhixon/woohoo-flight-school",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "thefixinhixon"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.1.1",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Linux",
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Translates the ARM code of a decrypted USA Pilotwings Resort dump into C and builds it on the player's machine against a custom 3DS runtime with a Vulkan PICA renderer. Adds higher 3D resolution, anisotropic filtering, screen layouts and longer draw distance. The Windows release is a build kit with an MSYS2 toolchain and contains no game code.",
+    "tags": [
+      "3ds",
+      "pilotwings",
+      "arm",
+      "flight"
+    ],
+    "sources": [
+      "https://github.com/thefixinhixon/woohoo-flight-school",
+      "https://github.com/thefixinhixon/woohoo-flight-school/releases",
+      "https://www.reddit.com/r/recomps/comments/1xlnrw3/woohoo_flight_school_a_native_pc_port_of/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "pgr4-regpu",
+    "name": "PGR4 ReGPU",
+    "category": "games",
+    "subject": "Project Gotham Racing 4",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2007,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Commits carry Claude co-author trailers and the bundled ReGPU has a CLAUDE.md (github.com/zer0ducksgiven/PGR4-ReGPU).",
+    "licence": "MIT",
+    "repo": "https://github.com/zer0ducksgiven/PGR4-ReGPU",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "zer0ducksgiven"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.1.8",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "A separate PGR4 port from the other PGR4 recomps: XenonRecomp CPU code plus ReGPU, the author's Direct3D 12 reimplementation of the Xenos GPU, and a launcher that extracts the player's disc and Title Update 2. It supports any resolution and high frame rates, wheel input and 360 DLC packages.",
+    "tags": [
+      "xbox360",
+      "xenonrecomp",
+      "regpu",
+      "racing"
+    ],
+    "sources": [
+      "https://github.com/zer0ducksgiven/PGR4-ReGPU",
+      "https://github.com/zer0ducksgiven/PGR4-ReGPU/releases",
+      "https://www.reddit.com/r/recomps/comments/1xli945/project_gotham_racing_4_regpu_native_pgr4_recomp/"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "uncharted-pc-supermedo",
+    "name": "Uncharted: The Nathan Drake Collection for Windows",
+    "category": "games",
+    "subject": "Uncharted: The Nathan Drake Collection",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2015,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Recent commits carry Claude co-author trailers (github.com/Supermedo/uncharted_pc commits).",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/Supermedo/uncharted_pc",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Supermedo",
+      "deadinside28",
+      "Mevlock",
+      "drakolordx7",
+      "Umar-Qayyum-dev"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.3.13",
+      "date": "2026-11-04"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Adapts deadinside28's bbport Bloodborne runtime to the three PS4 Uncharted remasters. The games' own x86-64 code runs natively on reimplemented PS4 libraries, with a shadPS4-derived Vulkan renderer and one launcher for the trilogy. Adds higher resolutions and ultrawide, FSR and DLSS upscaling and frame generation, and remappable keyboard and mouse controls. A separate port from bc160201983's.",
+    "tags": [
+      "ps4",
+      "bbport",
+      "shadps4",
+      "naughty-dog"
+    ],
+    "sources": [
+      "https://github.com/Supermedo/uncharted_pc",
+      "https://github.com/Supermedo/uncharted_pc/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "ac-recomp",
+    "name": "AC-Recomp",
+    "category": "games",
+    "subject": "Astral Chain",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2019,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README states most of the code, tooling, RE and docs were written by Claude via Claude Code; AGENTS.md in tree (github.com/swaymun/AC-Recomp).",
+    "licence": "MIT",
+    "repo": "https://github.com/swaymun/AC-Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "swaymun"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-10-19"
+    },
+    "targets": [
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "A set of patches and build tooling on top of the SuperMarioWonderRecomp runtime that recompiles the Switch game from the player's own 1.0.0 NSP and keys into an Apple-silicon Mac app. The preview release is a build kit and setup app only; Linux and Windows builds boot in early headless tests.",
+    "tags": [
+      "switch",
+      "platinumgames",
+      "vulkan",
+      "moltenvk"
+    ],
+    "sources": [
+      "https://github.com/swaymun/AC-Recomp",
+      "https://github.com/swaymun/AC-Recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "nfsmw-nx",
+    "name": "NFSMW-NX",
+    "category": "games",
+    "subject": "Need for Speed: Most Wanted (Xbox 360 version)",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/StevensND/nfsmw-nx",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "StevensND",
+      "madelrandel-blip"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-09",
+    "latestRelease": {
+      "version": "v1.0.0",
+      "date": "2026-09-27"
+    },
+    "targets": [
+      "Nintendo Switch"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Homebrew Switch port that takes the ReXGlue recompilation of the Xbox 360 executable from NFSMW Recompiled and runs it with a Vulkan renderer on Mesa's NVK driver, aiming for 30 FPS at stock clocks. One NRO per regional edition; the game's files and shaders come from the player's own disc via a browser-side installer page.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "nfs",
+      "switch-homebrew",
+      "racing"
+    ],
+    "sources": [
+      "https://github.com/StevensND/nfsmw-nx",
+      "https://github.com/StevensND/nfsmw-nx/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "nfsmwpc-recompiled",
+    "name": "Most Wanted Android Evolved (nfsmwpc-recompiled)",
+    "category": "games",
+    "subject": "Need for Speed: Most Wanted (2005, PC)",
+    "originalPlatform": "Windows",
+    "originalYear": 2005,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/codepdbh/nfsmwpc-recompiled",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "codepdbh"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.12",
+      "date": "2026-10-30"
+    },
+    "targets": [
+      "Android",
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Translates the x86 speed.exe of the PC release to C with a patched pcrecomp and builds it for Android (ARM64 and ARMv7) with a D3D9-to-Vulkan bridge, touch controls and a launcher, plus a Windows validation host. The player copies their own PC install to the phone; LAN and replacement-server online play are reported working.",
+    "tags": [
+      "pc",
+      "nfs",
+      "racing",
+      "pcrecomp",
+      "android"
+    ],
+    "sources": [
+      "https://github.com/codepdbh/nfsmwpc-recompiled",
+      "https://github.com/codepdbh/nfsmwpc-recompiled/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "mission-impossible-recomp",
+    "name": "Mission: Impossible Recompiled",
+    "category": "games",
+    "subject": "Mission: Impossible",
+    "originalPlatform": "Nintendo 64",
+    "originalYear": 1998,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-generated",
+    "provenanceNote": "README section 'Yes, AI wrote this' says Claude did the RE, runtime work and README; commits carry Claude co-author trailers (github.com/nickallevato/mi_n64_exe).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/nickallevato/mi_n64_exe",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "nickallevato"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-10-22"
+    },
+    "targets": [
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "N64Recomp-based native port of the USA cartridge running on N64ModernRuntime and RT64, with the BanjoRecomp-style frontend, 60 FPS, widescreen and mouse aiming. Linux builds only so far; the player picks their own ROM in the launcher.",
+    "tags": [
+      "n64",
+      "n64recomp",
+      "rt64",
+      "stealth"
+    ],
+    "sources": [
+      "https://github.com/nickallevato/mi_n64_exe",
+      "https://github.com/nickallevato/mi_n64_exe/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "vs-nativeport",
+    "name": "Vagrant Story Native",
+    "category": "games",
+    "subject": "Vagrant Story",
+    "originalPlatform": "PlayStation",
+    "originalYear": 2000,
+    "method": "source-port",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Tree has .github/copilot-instructions.md and an AGENTS.md in the vendored decomp (github.com/JEschete/VS-NativePort).",
+    "licence": "CC0-1.0",
+    "repo": "https://github.com/JEschete/VS-NativePort",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "JEschete"
+    ],
+    "started": "2026-07",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.0.11",
+      "date": "2026-11-01"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Windows x64 C++ source port of the US release that moves game logic from the rood-reverse decompilation into native systems instead of emulating the PlayStation. Alpha tester builds read the player's own checksum-verified SLUS-01040 BIN, CUE or CHD; no BIOS is needed.",
+    "tags": [
+      "ps1",
+      "vagrant-story",
+      "square",
+      "rood-reverse"
+    ],
+    "sources": [
+      "https://github.com/JEschete/VS-NativePort",
+      "https://github.com/JEschete/VS-NativePort/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "psx-vagrant-story",
+    "name": "Vagrant Story native/dynarec port",
+    "category": "games",
+    "subject": "Vagrant Story",
+    "originalPlatform": "PlayStation",
+    "originalYear": 2000,
+    "method": "emulation-hosted",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md in tree; commits carry Claude co-author trailers (github.com/SomeoneIsWorking/psx-vagrant-story).",
+    "licence": "MIT",
+    "repo": "https://github.com/SomeoneIsWorking/psx-vagrant-story",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "SomeoneIsWorking"
+    ],
+    "started": "2026-08",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Hybrid port built on the author's psxport framework: original code runs through a Lightrec dynarec while CD, saves, input, timing and rendering are handled natively, using the rood-reverse decomp as a reference. It boots the player's own disc through the title and into the opening battle with 16:9 margins, but is not playable end to end and has no release.",
+    "tags": [
+      "ps1",
+      "vagrant-story",
+      "dynarec",
+      "widescreen"
+    ],
+    "sources": [
+      "https://github.com/SomeoneIsWorking/psx-vagrant-story"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "mm3-recomp-mac",
+    "name": "mm3-recomp-mac",
+    "category": "games",
+    "subject": "Midtown Madness 3",
+    "originalPlatform": "Xbox",
+    "originalYear": 2003,
+    "method": "static-recomp",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says most of the port was written with AI assistance (Claude Code); commits carry Claude co-author trailers (github.com/alokdhir/mm3-recomp-mac).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/alokdhir/mm3-recomp-mac",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "alokdhir"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Apple-silicon macOS port of MattSG's mm3-recomp: a Metal port of its NV2A renderer, Core Audio output, GameController input and an app bundle, applied as patches over pinned upstream submodules. Built from source against the player's own disc image; no binary release.",
+    "tags": [
+      "xbox",
+      "xboxrecomp",
+      "metal",
+      "racing"
+    ],
+    "sources": [
+      "https://github.com/alokdhir/mm3-recomp-mac"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "bbport",
+    "name": "bbport",
+    "category": "games",
+    "subject": "Bloodborne",
+    "originalPlatform": "PlayStation 4",
+    "originalYear": 2015,
+    "method": "emulation-hosted",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Many commits carry Claude Opus co-author trailers (github.com/deadinside28/bloodborne_pc commits).",
+    "licence": "GPL-2.0",
+    "repo": "https://github.com/deadinside28/bloodborne_pc",
+    "website": null,
+    "discord": "https://discord.gg/KYZRKk9CB",
+    "subreddit": null,
+    "team": [
+      "deadinside28"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "0.7",
+      "date": "2026-10-28"
+    },
+    "targets": [
+      "Linux",
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Runs Bloodborne 1.09's own x86-64 code directly on a PC, replacing the PS4 system libraries with a purpose-built runtime and translating the GPU work to Vulkan through a renderer and shader translator that began as shadPS4's. It adds FSR and DLSS upscaling, unlocked frame rates, wide aspect ratios, keyboard and mouse, and online play with seamless co-op; the player supplies a decrypted 1.09 dump. Forks include Supermedo's Windows build and an Uncharted adaptation.",
+    "tags": [
+      "ps4",
+      "bbport",
+      "shadps4",
+      "fromsoftware",
+      "steam-deck"
+    ],
+    "sources": [
+      "https://github.com/deadinside28/bloodborne_pc",
+      "https://github.com/deadinside28/bloodborne_pc/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "hp-ps-xbox-recomp",
+    "name": "Harry Potter and the Philosopher's Stone Xbox PC Port",
+    "category": "games",
+    "subject": "Harry Potter and the Philosopher's Stone",
+    "originalPlatform": "Xbox",
+    "originalYear": 2003,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says it was aided by Claude Code; CLAUDE.md in tree and a Claude co-author trailer (github.com/MiddleDucky/HP-PS-Xbox-Recomp).",
+    "licence": "MIT",
+    "repo": "https://github.com/MiddleDucky/HP-PS-Xbox-Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "MiddleDucky"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.4.1",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "MiddleDucky's static recompilation of the PAL Xbox release of Philosopher's Stone into a native Windows program, built on sp00nz's xboxrecomp toolkit with a Direct3D 12 renderer adapted from SCDA-XBERecomp. It adds 4K, 16:9, rebindable keyboard and mouse and an unlocked frame rate, and reads the game from the player's own disc files. Barthes Recompiled's HP1 Recompiled is a fork of it.",
+    "tags": [
+      "xbox",
+      "xboxrecomp",
+      "harry-potter"
+    ],
+    "sources": [
+      "https://github.com/MiddleDucky/HP-PS-Xbox-Recomp",
+      "https://github.com/MiddleDucky/HP-PS-Xbox-Recomp/releases"
+    ],
+    "checked": "2026-11-04"
+  },
+  {
+    "slug": "hp-cos-xbox-recomp",
+    "name": "Harry Potter and the Chamber of Secrets Xbox PC Port",
+    "category": "games",
+    "subject": "Harry Potter and the Chamber of Secrets",
+    "originalPlatform": "Xbox",
+    "originalYear": 2002,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says it was aided by Claude Code; Claude co-author trailers in commits (github.com/MiddleDucky/HP-COS-Xbox-Recomp).",
+    "licence": "MIT",
+    "repo": "https://github.com/MiddleDucky/HP-COS-Xbox-Recomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "MiddleDucky"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.3.1",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompilation of the North American Xbox Chamber of Secrets into a native Windows executable, using the xboxrecomp toolkit and a D3D8-to-Direct3D 12 renderer by TGP482 and Joshhhuaaa. Extras include 4K with MSAA/SMAA, widescreen, 5.1 sound and remappable keyboard, mouse and controller input; only the NTSC-U disc works and the player provides it. Barthes Recompiled's HP2 Recompiled forks it.",
+    "tags": [
+      "xbox",
+      "xboxrecomp",
+      "harry-potter"
+    ],
+    "sources": [
+      "https://github.com/MiddleDucky/HP-COS-Xbox-Recomp",
+      "https://github.com/MiddleDucky/HP-COS-Xbox-Recomp/releases"
+    ],
+    "checked": "2026-11-04"
   }
 ]
