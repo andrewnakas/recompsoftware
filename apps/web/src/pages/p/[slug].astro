@@ -177,6 +177,7 @@ const schema = {
       <h2>Sources</h2>
       <ul class="src">{p.sources.map((u) => <li><a href={u} rel="noopener">{u}</a></li>)}</ul>
       <p class="meta">Something wrong or out of date? <a href={`https://github.com/andrewnakas/recompsoftware/issues/new?template=correction.yml&title=${encodeURIComponent("Correction: " + p.name)}&page=${encodeURIComponent(`https://recompsoftware.com/p/${p.slug}/`)}`}>Send a correction</a>.</p>
+      <p class="meta">Recomp is free and ad-free. <a href="/store/" data-track="store_cta" data-item="project">Support it with a shirt or stickers</a>.</p>
     </section>
 
     {related.length > 0 && (

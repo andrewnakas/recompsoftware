@@ -1,0 +1,32 @@
+---
+// Quiet "support the site" strip: a line of copy and three merch photos linking to /store/. No prices, no urgency.
+import { store } from '../lib/data';
+interface Props { place: string }
+const { place } = Astro.props;
+const picks = ['tee-battlestation', 'tee-crtwall', 'stickers-10'].map((s) => store().products.find((p) => p.slug === s)).filter((p) => p?.image);
+---
+{picks.length > 0 && (
+  <section class="section wrap">
+    <div class="rule-head"><h2>Keep Recomp running</h2><a href="/store/" data-track="store_cta" data-item={place}>Visit the store →</a></div>
+    <div class="support">
+      <p class="lede">Recomp is free, has no ads, and is updated every day. If it's useful to you, a shirt or a sticker sheet helps cover hosting and the time it takes to check every project by hand.</p>
+      <div class="picks">
+        {picks.map((p) => (
+          <a href="/store/" data-track="store_cta" data-item={`${place}:${p!.slug}`}>
+            <img src={p!.image} alt={p!.name} width="200" height="200" loading="lazy" decoding="async" />
+            <span class="meta">{p!.name}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+<style>
+  .support { display: grid; gap: 1.2rem; align-items: center; }
+  @media (min-width: 900px) { .support { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); } }
+  .support .lede { margin: 0; }
+  .picks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+  .picks a { display: grid; gap: 0.35rem; color: inherit; text-decoration: none; }
+  .picks img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 6px; background: var(--bg-sunk); transition: transform 0.15s; }
+  .picks a:hover img { transform: translateY(-2px); }
+</style>

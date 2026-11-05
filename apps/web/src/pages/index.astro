@@ -1,4 +1,5 @@
 ---
+import SupportStrip from '../components/SupportStrip.astro';
 import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import ConsoleStrip from '../components/ConsoleStrip.astro';
@@ -109,6 +110,8 @@ const ago = (d: string) => { const n = Math.floor((Date.parse(statsDate() ?? d) 
       <div class="grid">{playable.map((p) => <ProjectCard p={p} note={`${TIER_LABEL[p.playable!.tier]}. ${p.summary}`} />)}</div>
     </section>
   )}
+
+  <SupportStrip place="home" />
 
   <section class="section wrap">
     <div class="callout">
