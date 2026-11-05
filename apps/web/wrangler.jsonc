@@ -12,7 +12,7 @@
     "not_found_handling": "404-page",
     "html_handling": "force-trailing-slash"
   },
-  "vars": { "PRINTIFY_SHOP_ID": "29613567" },
+  "vars": { "PRINTIFY_SHOP_ID": "29613567", "STRIPE_TAX": "off" },
   "workers_dev": true,
   "routes": [
     { "pattern": "recompsoftware.com", "custom_domain": true },

@@ -1,8 +1,10 @@
 // Store API for recompsoftware.com. Everything else is static assets (run_worker_first only covers /api/*).
 // POST /api/store/checkout  {items:[{product, variant, qty}], region}  -> {url} of a Stripe Checkout session
 // Items are keyed by product slug + variant id: products made from the same blank share Printify variant ids.
-// POST /api/store/webhook   Stripe checkout.session.completed -> Printify order (live mode: sent to production; test mode: left as a draft)
-// Secrets (npx wrangler@4 secret put NAME): STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, PRINTIFY_TOKEN. Var: PRINTIFY_SHOP_ID.
+// POST /api/store/webhook   Stripe checkout.session.completed (paid) or .async_payment_succeeded (bank, Klarna, ...) -> Printify order
+//                            (live mode: sent to production; test mode: left as a draft)
+// Secrets (npx wrangler@4 secret put NAME): STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, PRINTIFY_TOKEN. Vars: PRINTIFY_SHOP_ID,
+// STRIPE_TAX ("on" = Stripe Tax automatic_tax; turn on only once Tax is activated with registrations, or Checkout errors).
 // Prices, variants and shipping come only from data/store.json (bundled at deploy), never from the browser.
 import store from '../../data/store.json';
 
@@ -10,6 +12,8 @@ const SITE = 'https://recompsoftware.com';
 const json = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json' } });
 
 const key = (slug, id) => `${slug}:${id}`;
+// Stripe Tax product codes: apparel vs general tangible goods; shipping has its own code.
+const TAX_CODE = (slug) => (/^(tee|hoodie)/.test(slug) ? 'txcd_30011000' : 'txcd_99999999');
 const variants = new Map(store.products.flatMap((p) => p.variants.map((v) => [key(p.slug, v.id), { product: p, variant: v }])));
 
 async function stripe(env, path, form) {
@@ -53,16 +57,26 @@ async function checkout(req, env) {
     'shipping_options[0][shipping_rate_data][fixed_amount][amount]': String(region.cents),
     'shipping_options[0][shipping_rate_data][fixed_amount][currency]': store.currency,
     'phone_number_collection[enabled]': 'true',
+    'payment_intent_data[description]': 'recompsoftware.com store order',
     // compact cart for the webhook: "slug:variantId:qty,..." (metadata values max 500 chars)
     'metadata[cart]': items.map((i) => `${key(i.hit.product.slug, i.hit.variant.id)}:${i.qty}`).join(','),
     'metadata[region]': body.region,
   };
+  if (env.STRIPE_TAX === 'on') {
+    form['automatic_tax[enabled]'] = 'true';
+    form['shipping_options[0][shipping_rate_data][tax_behavior]'] = 'exclusive';
+    form['shipping_options[0][shipping_rate_data][tax_code]'] = 'txcd_92010001';
+  }
   region.countries.forEach((c, k) => { form[`shipping_address_collection[allowed_countries][${k}]`] = c; });
   items.forEach((i, k) => {
     form[`line_items[${k}][quantity]`] = String(i.qty);
     form[`line_items[${k}][price_data][currency]`] = store.currency;
     form[`line_items[${k}][price_data][unit_amount]`] = String(i.hit.product.cents);
     form[`line_items[${k}][price_data][product_data][name]`] = `${i.hit.product.name} (${i.hit.variant.title})`;
+    if (env.STRIPE_TAX === 'on') {
+      form[`line_items[${k}][price_data][tax_behavior]`] = 'exclusive';
+      form[`line_items[${k}][price_data][product_data][tax_code]`] = TAX_CODE(i.hit.product.slug);
+    }
     if (i.hit.product.image) form[`line_items[${k}][price_data][product_data][images][0]`] = SITE + i.hit.product.image;
   });
   try {
@@ -89,9 +103,10 @@ async function webhook(req, env) {
   const payload = await req.text();
   if (!(await verify(payload, req.headers.get('stripe-signature'), env.STRIPE_WEBHOOK_SECRET))) return json({ error: 'bad signature' }, 400);
   const event = JSON.parse(payload);
-  if (event.type !== 'checkout.session.completed') return json({ ignored: event.type });
+  // Card payments arrive paid in .completed; delayed methods (bank debit, Klarna, ...) arrive unpaid there and paid in .async_payment_succeeded.
+  if (!['checkout.session.completed', 'checkout.session.async_payment_succeeded'].includes(event.type)) return json({ ignored: event.type });
   const s = event.data.object;
-  if (s.payment_status !== 'paid') return json({ ignored: 'unpaid' });
+  if (s.payment_status !== 'paid') return json({ ignored: 'not paid yet' });
 
   const ship = s.collected_information?.shipping_details ?? s.shipping_details;
   const a = ship?.address ?? {};
@@ -101,7 +116,8 @@ async function webhook(req, env) {
     const hit = variants.get(key(slug, id));
     return hit && { product_id: hit.product.printifyId, variant_id: hit.variant.id, quantity: Number(qty) };
   }).filter(Boolean);
-  if (!line_items.length) return json({ error: 'no items' }, 422);
+  // not one of ours (another integration on the same Stripe account): acknowledge so Stripe stops retrying
+  if (!line_items.length) return json({ ignored: 'no recompsoftware cart' });
 
   const order = {
     external_id: s.id,
