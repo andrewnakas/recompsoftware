@@ -1,13 +1,18 @@
-// Static site served as Workers static assets (no server code). Deploy: npm run build && npx wrangler@4 deploy
+// Static site served as Workers static assets; worker.js only answers /api/* (the store: Stripe checkout + Printify orders).
+// Deploy: npm run build && npx wrangler@4 deploy. Store secrets: STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, PRINTIFY_TOKEN (wrangler secret put).
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "recompsoftware",
+  "main": "worker.js",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"],
     "not_found_handling": "404-page",
     "html_handling": "force-trailing-slash"
   },
+  "vars": { "PRINTIFY_SHOP_ID": "29613567" },
   "workers_dev": true,
   "routes": [
     { "pattern": "recompsoftware.com", "custom_domain": true },

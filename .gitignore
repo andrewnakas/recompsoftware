@@ -6,3 +6,4 @@ data/inbox/*
 !data/inbox/.keep
 .dev.vars
 .wrangler/
+scripts/store/scene/render-*.png

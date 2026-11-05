@@ -1,0 +1,12 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+---
+<Base title="Thanks for your order" description="Your Recomp store order is confirmed." noindex>
+  <PageHead kicker="Store" title="Thank you!" lede="Your order is paid and on its way to the printer. Stripe has emailed your receipt, and you'll get a tracking email when it ships." />
+  <section class="wrap prose">
+    <p>Orders are printed on demand and usually ship in 5-10 business days. If something arrives damaged or misprinted, reply to your receipt email within 30 days and we will replace it.</p>
+    <p><a href="/">Back to the tracker</a> · <a href="/store/">Store</a></p>
+  </section>
+</Base>
+<script>try { localStorage.removeItem('cart'); } catch {} (window as any).gtag?.('event', 'purchase_return');</script>

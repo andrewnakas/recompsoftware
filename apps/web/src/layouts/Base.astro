@@ -10,9 +10,11 @@ interface Props {
   schema?: Record<string, unknown>;
   /** trail above this page (without the page itself), emitted as BreadcrumbList */
   crumbs?: { href: string; label: string }[];
+  /** keep the page out of search results (order confirmations and the like) */
+  noindex?: boolean;
 }
 const SITE = 'https://recompsoftware.com';
-const { title, description = 'Recomp tracks every decompilation, static recompilation and clean-room rebuild of games and software: live GitHub trends, history, and builds you can play in the browser.', image = '/og/default.jpg', type = 'website', schema, crumbs } = Astro.props;
+const { title, description = 'Recomp tracks every decompilation, static recompilation and clean-room rebuild of games and software: live GitHub trends, history, and builds you can play in the browser.', image = '/og/default.jpg', type = 'website', schema, crumbs, noindex } = Astro.props;
 const fullTitle = title === 'Recomp' ? 'Recomp: decompiled & recompiled games and software, tracked live' : `${title} · Recomp`;
 const path = Astro.url.pathname;
 const nav = [
@@ -41,6 +43,7 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content={type} />
@@ -106,7 +109,7 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
           </nav>
           <nav aria-label="Network">
             <p class="h">Network</p>
-            <a href="https://decompgames.com">decompgames</a><a href="https://skatemods.com">skatemods</a><a href="https://aigamemashups.com">aigamemashups</a><a href="/submit/">Submit a project</a><a href="https://github.com/andrewnakas/recompsoftware">Source &amp; corrections</a>
+            <a href="https://decompgames.com">decompgames</a><a href="https://skatemods.com">skatemods</a><a href="https://aigamemashups.com">aigamemashups</a><a href="/store/">Store: support the site</a><a href="/submit/">Submit a project</a><a href="https://github.com/andrewnakas/recompsoftware">Source &amp; corrections</a>
           </nav>
         </div>
       </div>

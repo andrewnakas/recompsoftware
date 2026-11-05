@@ -1,6 +1,6 @@
 import { projects, platforms, gameHubs, statsFor, CATEGORIES, type Project } from '../lib/data';
 
-const pages = ['/', '/projects/', '/trending/', '/progress/', '/play/', '/history/', '/lineage/', '/news/', '/this-week/', '/platforms/', '/game/', '/recompiled-games-list/', '/decompiled-games-list/', '/what-is-a-recomp/', '/about/', '/terms/', '/privacy/', '/takedown/'];
+const pages = ['/', '/projects/', '/trending/', '/progress/', '/play/', '/history/', '/lineage/', '/news/', '/this-week/', '/platforms/', '/game/', '/recompiled-games-list/', '/decompiled-games-list/', '/what-is-a-recomp/', '/about/', '/terms/', '/privacy/', '/takedown/', '/store/'];
 
 // lastmod for a project page = newest of: entry checked, latest release, last push (all dates the page shows)
 const lastmod = (p: Project) => {

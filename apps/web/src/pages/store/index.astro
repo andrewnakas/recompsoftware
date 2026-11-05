@@ -1,0 +1,117 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import { store } from '../../lib/data';
+const s = store();
+const money = (c: number) => `$${(c / 100).toFixed(c % 100 ? 2 : 0)}`;
+// keyed by product + variant: products made from the same blank share Printify variant ids
+const cart = Object.fromEntries(s.products.flatMap((p) => p.variants.map((v) => [`${p.slug}:${v.id}`, { name: p.name, variant: v.title, cents: p.cents, image: p.image }])));
+---
+<Base title="Store: recomp software merch" description="Shirts, hoodies, mugs and stickers that support Recomp. Printed on demand and shipped worldwide; every purchase keeps the tracker running.">
+  <PageHead kicker="Store" title="Support the site" lede="Merch printed on demand. Every sale helps keep Recomp free, ad-free and updated daily." />
+  {s.products.length === 0 ? (
+    <section class="wrap section"><p class="lede">The store opens soon.</p></section>
+  ) : (
+    <section class="wrap section">
+      <div class="shop">
+        <div class="grid">
+          {s.products.map((p) => (
+            <article class="card prod">
+              {p.image && <img src={p.image} alt={`${p.name}: "recomp software" in green terminal type`} width="600" height="600" loading="lazy" decoding="async" />}
+              <h2>{p.name}</h2>
+              <p class="meta">{p.blurb}</p>
+              <form class="add" data-slug={p.slug}>
+                <p class="price">{money(p.cents)}</p>
+                {p.variants.length > 1 ? (
+                  <label class="meta">Option
+                    <select name="variant">{p.variants.filter((v) => v.available !== false).map((v) => <option value={v.id}>{v.title}</option>)}</select>
+                  </label>
+                ) : <input type="hidden" name="variant" value={p.variants[0]?.id} />}
+                <button class="btn primary" type="submit" data-track="store_add" data-item={p.slug}>Add to cart</button>
+              </form>
+            </article>
+          ))}
+        </div>
+        <aside class="card cart" aria-label="Cart" aria-live="polite">
+          <h2>Cart</h2>
+          <ul class="lines"></ul>
+          <p class="meta empty">Nothing in your cart yet.</p>
+          <label class="meta">Ship to
+            <select name="region">{Object.entries(s.shipping).map(([k, r]) => <option value={k}>{r.label} (+{money(r.cents)})</option>)}</select>
+          </label>
+          <p class="total"></p>
+          <button class="btn primary go" type="button" disabled>Checkout</button>
+          <p class="meta err" hidden></p>
+          <p class="meta">Secure payment by Stripe. Printed and shipped by Printify, usually in 5-10 business days. Damaged or misprinted? Reply to your receipt email within 30 days for a free replacement.</p>
+        </aside>
+      </div>
+    </section>
+  )}
+</Base>
+<script define:vars={{ cart, shipping: s.shipping }}>
+  // Cart lives in localStorage ('cart'); the server re-checks every price and variant against data/store.json.
+  const load = () => { try { return JSON.parse(localStorage.getItem('cart') || '[]'); } catch { return []; } };
+  const save = (c) => { try { localStorage.setItem('cart', JSON.stringify(c)); } catch {} };
+  const keyOf = (i) => `${i.product}:${i.variant}`;
+  let items = load().filter((i) => cart[keyOf(i)]);
+  const box = document.querySelector('.cart');
+  const money = (c) => `$${(c / 100).toFixed(2)}`;
+  const render = () => {
+    if (!box) return;
+    const region = box.querySelector('[name=region]');
+    box.querySelector('.lines').innerHTML = items.map((i, k) => `<li><span>${cart[keyOf(i)].name}<br><small>${cart[keyOf(i)].variant}</small></span><span><input type="number" min="1" max="10" value="${i.qty}" data-k="${k}" aria-label="Quantity"> <button type="button" class="btn small" data-rm="${k}" aria-label="Remove">×</button></span></li>`).join('');
+    box.querySelector('.empty').hidden = items.length > 0;
+    const sub = items.reduce((t, i) => t + cart[keyOf(i)].cents * i.qty, 0);
+    box.querySelector('.total').textContent = items.length ? `Total ${money(sub + shipping[region.value].cents)} incl. shipping` : '';
+    box.querySelector('.go').disabled = !items.length;
+    save(items);
+  };
+  document.querySelectorAll('form.add').forEach((f) => f.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const item = { product: f.dataset.slug, variant: Number(new FormData(f).get('variant')) };
+    const hit = items.find((i) => keyOf(i) === keyOf(item));
+    if (hit) hit.qty = Math.min(10, hit.qty + 1); else items.push({ ...item, qty: 1 });
+    render();
+  }));
+  box?.addEventListener('input', (e) => {
+    const k = e.target.dataset?.k;
+    if (k !== undefined) items[k].qty = Math.min(10, Math.max(1, Number(e.target.value) || 1));
+    render();
+  });
+  box?.addEventListener('click', async (e) => {
+    const rm = e.target.dataset?.rm;
+    if (rm !== undefined) { items.splice(Number(rm), 1); render(); return; }
+    if (!e.target.classList.contains('go')) return;
+    const btn = e.target, err = box.querySelector('.err');
+    btn.disabled = true; err.hidden = true; btn.textContent = 'Opening checkout…';
+    try {
+      const r = await fetch('/api/store/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ items, region: box.querySelector('[name=region]').value }) });
+      const j = await r.json();
+      if (!r.ok || !j.url) throw new Error(j.error || 'Checkout failed');
+      window.gtag?.('event', 'begin_checkout', { items: items.length });
+      location.href = j.url;
+    } catch (x) {
+      err.textContent = x.message; err.hidden = false; btn.disabled = false; btn.textContent = 'Checkout';
+    }
+  });
+  render();
+</script>
+<style>
+  .shop { display: grid; gap: 1.5rem; }
+  @media (min-width: 960px) { .shop { grid-template-columns: minmax(0, 1fr) 20rem; align-items: start; } .cart { position: sticky; top: 1rem; } }
+  .prod img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 6px; background: var(--bg-sunk); }
+  .prod h2, .cart h2 { font-size: 1.1rem; margin: 0.75rem 0 0.25rem; }
+  .add { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-top: 0.75rem; }
+  .price { font-family: var(--mono, monospace); font-size: 1.15rem; margin: 0; flex-basis: 100%; }
+  select, input[type=number] { font: inherit; padding: 0.35rem; border: 1px solid var(--line-strong); border-radius: 4px; background: var(--bg); color: var(--ink); }
+  input[type=number] { width: 3.5rem; }
+  .cart label { display: grid; gap: 0.25rem; margin: 0.75rem 0; }
+  .lines { list-style: none; padding: 0; margin: 0; }
+  .lines li { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; padding: 0.5rem 0; border-bottom: 1px solid var(--line); }
+  .lines li > span:first-child { flex: 1; min-width: 0; }
+  .lines li > span:last-child { white-space: nowrap; }
+  .total { font-weight: 600; }
+  .go { width: 100%; }
+  .go:disabled { opacity: 0.45; cursor: not-allowed; }
+  .err { color: var(--bad); }
+</style>

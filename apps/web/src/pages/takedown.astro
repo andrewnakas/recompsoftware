@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import PageHead from '../components/PageHead.astro';
-import { LEGAL_EMAIL, TAKEDOWN_FORM, POLICY_DATE } from '../lib/legal';
+import { LEGAL_EMAIL, DESIGNATED_AGENT, TAKEDOWN_FORM, POLICY_DATE } from '../lib/legal';
 ---
 <Base title="Takedown & removal requests (DMCA)" description="How rights holders and project maintainers can have a Recomp listing removed or changed, what to include in a DMCA notice, and what happens next.">
   <PageHead kicker="Legal" title="Takedown & removal requests" lede="Recomp is a directory. We remove listings quickly when asked, and we never host the projects themselves." />
@@ -27,6 +27,11 @@ import { LEGAL_EMAIL, TAKEDOWN_FORM, POLICY_DATE } from '../lib/legal';
       <li>a statement that the notice is accurate and, under penalty of perjury, that you are the owner or authorised to act for the owner;</li>
       <li>your physical or electronic signature (typing your full name is fine).</li>
     </ol>
+    {DESIGNATED_AGENT && <>
+      <h2 id="agent">Designated agent</h2>
+      <p>Copyright notices can also be sent to our DMCA designated agent, registered with the <a href={DESIGNATED_AGENT.directory}>US Copyright Office</a>:</p>
+      <p>{DESIGNATED_AGENT.name}<br />{DESIGNATED_AGENT.address}<br />{DESIGNATED_AGENT.phone && <>{DESIGNATED_AGENT.phone}<br /></>}<a href={`mailto:${DESIGNATED_AGENT.email}`}>{DESIGNATED_AGENT.email}</a></p>
+    </>}
     <h2 id="next">What happens next</h2>
     <ul>
       <li>We act on complete requests promptly, usually within a few days, and normally by removing the listing while we look into it.</li>

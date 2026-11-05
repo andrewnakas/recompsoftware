@@ -1,0 +1,304 @@
+{
+  "currency": "usd",
+  "note": "Products are written by scripts/store/setup.mjs from the Printify API; shipping is a flat rate per order and region (edit by hand). worker.js trusts only this file for prices.",
+  "shipping": {
+    "us": {
+      "label": "United States",
+      "cents": 600,
+      "countries": [
+        "US"
+      ]
+    },
+    "ca": {
+      "label": "Canada",
+      "cents": 1000,
+      "countries": [
+        "CA"
+      ]
+    },
+    "uk": {
+      "label": "United Kingdom",
+      "cents": 1000,
+      "countries": [
+        "GB"
+      ]
+    },
+    "eu": {
+      "label": "European Union",
+      "cents": 1200,
+      "countries": [
+        "AT",
+        "BE",
+        "BG",
+        "HR",
+        "CY",
+        "CZ",
+        "DK",
+        "EE",
+        "FI",
+        "FR",
+        "DE",
+        "GR",
+        "HU",
+        "IE",
+        "IT",
+        "LV",
+        "LT",
+        "LU",
+        "MT",
+        "NL",
+        "PL",
+        "PT",
+        "RO",
+        "SK",
+        "SI",
+        "ES",
+        "SE"
+      ]
+    },
+    "intl": {
+      "label": "Rest of the world",
+      "cents": 1500,
+      "countries": [
+        "AU",
+        "NZ",
+        "JP",
+        "KR",
+        "SG",
+        "NO",
+        "CH",
+        "IS",
+        "IL",
+        "MX",
+        "BR",
+        "AR",
+        "CL",
+        "ZA",
+        "AE",
+        "IN"
+      ]
+    }
+  },
+  "products": [
+    {
+      "slug": "tee-battlestation",
+      "name": "battle station tee",
+      "blurb": "A rendered retro battle station (beige CRTs, tower, floppies) over the lockup. Bella+Canvas 3001, black.",
+      "cents": 3000,
+      "printifyId": "6aec19889fa62d349c0e16de",
+      "image": "/store/tee-battlestation-1.jpg",
+      "images": [
+        "/store/tee-battlestation-1.jpg",
+        "/store/tee-battlestation-2.jpg",
+        "/store/tee-battlestation-3.jpg",
+        "/store/tee-battlestation-4.jpg"
+      ],
+      "variants": [
+        {
+          "id": 18100,
+          "title": "Black / S"
+        },
+        {
+          "id": 18101,
+          "title": "Black / M"
+        },
+        {
+          "id": 18102,
+          "title": "Black / L"
+        },
+        {
+          "id": 18103,
+          "title": "Black / XL"
+        },
+        {
+          "id": 18104,
+          "title": "Black / 2XL"
+        },
+        {
+          "id": 18105,
+          "title": "Black / 3XL"
+        }
+      ]
+    },
+    {
+      "slug": "tee-crtwall",
+      "name": "CRT wall tee",
+      "blurb": "A rendered stack of CRTs, each running a different screen, over the lockup. Bella+Canvas 3001, black.",
+      "cents": 3000,
+      "printifyId": "6aec199190129726a308007e",
+      "image": "/store/tee-crtwall-1.jpg",
+      "images": [
+        "/store/tee-crtwall-1.jpg",
+        "/store/tee-crtwall-2.jpg",
+        "/store/tee-crtwall-3.jpg",
+        "/store/tee-crtwall-4.jpg"
+      ],
+      "variants": [
+        {
+          "id": 18100,
+          "title": "Black / S"
+        },
+        {
+          "id": 18101,
+          "title": "Black / M"
+        },
+        {
+          "id": 18102,
+          "title": "Black / L"
+        },
+        {
+          "id": 18103,
+          "title": "Black / XL"
+        },
+        {
+          "id": 18104,
+          "title": "Black / 2XL"
+        },
+        {
+          "id": 18105,
+          "title": "Black / 3XL"
+        }
+      ]
+    },
+    {
+      "slug": "tee",
+      "name": "recomp software tee",
+      "blurb": "Soft Bella+Canvas 3001 cotton tee, green terminal type on black.",
+      "cents": 3000,
+      "printifyId": "6aec11c48e1391cfaa0cedb8",
+      "image": "/store/tee-1.jpg",
+      "images": [
+        "/store/tee-1.jpg",
+        "/store/tee-2.jpg",
+        "/store/tee-3.jpg",
+        "/store/tee-4.jpg"
+      ],
+      "variants": [
+        {
+          "id": 18100,
+          "title": "Black / S"
+        },
+        {
+          "id": 18101,
+          "title": "Black / M"
+        },
+        {
+          "id": 18102,
+          "title": "Black / L"
+        },
+        {
+          "id": 18103,
+          "title": "Black / XL"
+        },
+        {
+          "id": 18104,
+          "title": "Black / 2XL"
+        },
+        {
+          "id": 18105,
+          "title": "Black / 3XL"
+        }
+      ]
+    },
+    {
+      "slug": "hoodie",
+      "name": "recomp software hoodie",
+      "blurb": "Gildan 18500 heavy blend hoodie, green terminal type on black.",
+      "cents": 5000,
+      "printifyId": "6aec11c65c1b6abf5a0f5b10",
+      "image": "/store/hoodie-1.jpg",
+      "images": [
+        "/store/hoodie-1.jpg",
+        "/store/hoodie-2.jpg",
+        "/store/hoodie-3.jpg",
+        "/store/hoodie-4.jpg"
+      ],
+      "variants": [
+        {
+          "id": 32918,
+          "title": "Black / S"
+        },
+        {
+          "id": 32919,
+          "title": "Black / M"
+        },
+        {
+          "id": 32920,
+          "title": "Black / L"
+        },
+        {
+          "id": 32921,
+          "title": "Black / XL"
+        },
+        {
+          "id": 32922,
+          "title": "Black / 2XL"
+        },
+        {
+          "id": 32923,
+          "title": "Black / 3XL"
+        }
+      ]
+    },
+    {
+      "slug": "stickers-10",
+      "name": "recomp sticker 10-pack",
+      "blurb": "11\" × 8.5\" die-cut sheet of 10: CRT, floppy, terminal, chip, assembly, disc, 100% matching, NO ROMs and more.",
+      "cents": 1500,
+      "printifyId": "6aec19841d45ff2f6e009a5d",
+      "image": "/store/stickers-10-1.jpg",
+      "images": [
+        "/store/stickers-10-1.jpg",
+        "/store/stickers-10-2.jpg",
+        "/store/stickers-10-3.jpg",
+        "/store/stickers-10-4.jpg"
+      ],
+      "variants": [
+        {
+          "id": 72841,
+          "title": "11\" × 8.5\" / White / Die-Cut"
+        }
+      ]
+    },
+    {
+      "slug": "stickers-4",
+      "name": "recomp sticker 4-pack",
+      "blurb": "6\" × 4\" die-cut sheet of 4: CRT monitor, floppy disk, terminal and the lockup.",
+      "cents": 800,
+      "printifyId": "6aec11cfdb6b9666d705f319",
+      "image": "/store/stickers-4-1.jpg",
+      "images": [
+        "/store/stickers-4-1.jpg",
+        "/store/stickers-4-2.jpg",
+        "/store/stickers-4-3.jpg",
+        "/store/stickers-4-4.jpg"
+      ],
+      "variants": [
+        {
+          "id": 72840,
+          "title": "6\" × 4\" / White / Die-Cut"
+        }
+      ]
+    },
+    {
+      "slug": "mug",
+      "name": "recomp software mug",
+      "blurb": "11oz black ceramic mug with the lockup on the front.",
+      "cents": 2000,
+      "printifyId": "6aec11c9bd826058c607e8a1",
+      "image": "/store/mug-1.jpg",
+      "images": [
+        "/store/mug-1.jpg",
+        "/store/mug-2.jpg",
+        "/store/mug-3.jpg",
+        "/store/mug-4.jpg"
+      ],
+      "variants": [
+        {
+          "id": 65217,
+          "title": "11oz"
+        }
+      ]
+    }
+  ]
+}

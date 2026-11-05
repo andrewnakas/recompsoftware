@@ -7,7 +7,7 @@ import { LEGAL_EMAIL, POLICY_DATE } from '../lib/legal';
   <PageHead kicker="Legal" title="Privacy policy" lede={`Last updated ${POLICY_DATE}. Short version: no accounts, no ads, no selling data, and basic analytics only.`} />
   <section class="wrap prose">
     <h2 id="collect">What we collect</h2>
-    <p>Recomp has no accounts, and nothing you type is sent to us. We use <strong>Google Analytics 4</strong> to see how the site is used:</p>
+    <p>Recomp has no accounts, and apart from store orders (below) nothing you type is sent to us. We use <strong>Google Analytics 4</strong> to see how the site is used:</p>
     <ul>
       <li>the pages you view and the site you came from</li>
       <li>clicks on download, repository, play and feed links</li>
@@ -18,7 +18,9 @@ import { LEGAL_EMAIL, POLICY_DATE } from '../lib/legal';
     <h2 id="hosting">Hosting</h2>
     <p>The site is served by <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>, which handles requests (including your IP address) to deliver pages and protect the site from abuse. Fonts and images are served from our own domain, not from third-party CDNs.</p>
     <h2 id="browser">Stored in your browser</h2>
-    <p>Two values are kept in your browser's local storage and are never sent to us: your light/dark theme choice (<code>theme</code>) and the time of your last visit (<code>lastVisit</code>), used for "new since your last visit" on the home page. We set no cookies ourselves; Google Analytics sets its own.</p>
+    <p>These values are kept in your browser's local storage: your light/dark theme choice (<code>theme</code>), the time of your last visit (<code>lastVisit</code>, for "new since your last visit" on the home page) and your store cart (<code>cart</code>, product options and quantities only). Only the cart is ever sent to us, when you press Checkout. We set no cookies ourselves; Google Analytics sets its own.</p>
+    <h2 id="store">Store orders</h2>
+    <p>Payment happens on <a href="https://stripe.com/privacy">Stripe</a>'s checkout page; we never see your card details. To make and deliver your order, your name, email, phone number and shipping address go from Stripe to our print partner <a href="https://printify.com/privacy-policy/">Printify</a> and the print provider it assigns, who use them only to produce, ship and track it. We do not keep a separate customer database or use order details for marketing.</p>
     <h2 id="github">Submissions and corrections</h2>
     <p>The submit and correction forms open a prefilled issue on GitHub. Anything you post there is public and handled by <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
     <h2 id="third-party">Other sites</h2>

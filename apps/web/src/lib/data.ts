@@ -165,6 +165,12 @@ export function milestones(n = 30) {
   return out.sort((a, b) => b.date.localeCompare(a.date) || b.mark - a.mark).slice(0, n);
 }
 
+export interface StoreVariant { id: number; title: string; available?: boolean }
+export interface StoreProduct { slug: string; name: string; blurb: string; cents: number; printifyId: string; image: string | null; images: string[]; variants: StoreVariant[] }
+export interface Store { currency: string; shipping: Record<string, { label: string; cents: number; countries: string[] }>; products: StoreProduct[] }
+/** Merch sold on /store/ (data/store.json, written by scripts/store/setup.mjs). */
+export const store = () => read<Store>('store.json', { currency: 'usd', shipping: {}, products: [] });
+
 /** Each project's own picture (social preview or README image), thumbnailed by scripts/fetch-media.mjs. */
 export interface Media { src: string; kind: 'chosen' | 'social' | 'readme'; thumb?: string }
 let mediaCache: Record<string, Media> | null = null;
