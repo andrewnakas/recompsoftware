@@ -78,6 +78,7 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
           {nav.map((n) => <a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a>)}
         </nav>
         <div class="actions">
+          <a class="store" href="/store/" data-track="store_cta" data-item="header" aria-label="Store" aria-current={path.startsWith('/store/') ? 'page' : undefined}><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M3 5.5h10l-.8 8.5H3.8z M5.5 5.5V4a2.5 2.5 0 0 1 5 0v1.5"/></svg><span>Store</span></a>
           <a class="play" href="/play/" aria-current={path.startsWith('/play/') ? 'page' : undefined}>▶ Play</a>
                     <button class="theme" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
             <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 1.5v11a5.5 5.5 0 0 1 0-11z"/></svg>
@@ -189,6 +190,12 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
   .actions a:hover { color: var(--accent); }
   .actions .play { background: var(--accent); color: var(--accent-ink); padding: 0.3rem 0.75rem; border-radius: var(--radius); font-weight: 700; }
   .actions .play:hover { background: var(--ink); color: var(--bg); }
+  .actions .play, .actions .store { white-space: nowrap; }
+  .actions .store { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--ink-soft); }
+  .actions .store:hover, .actions .store[aria-current='page'] { color: var(--accent); }
+  /* the inline nav is tightest at 1080-1279px and on small phones: icon only there */
+  @media (min-width: 1080px) and (max-width: 1159px), (max-width: 520px) { .actions .store span { display: none; } }
+  @media (min-width: 1080px) and (max-width: 1279px) { .site-header .gsearch { flex: 0 1 180px; } .site-header nav[aria-label='Main'] { gap: 0.8rem; } .site-header .actions { gap: 0.8rem; } }
   .find { font-family: var(--font-mono); font-size: 0.85rem; }
   .gsearch { position: relative; flex: 1 1 200px; max-width: 340px; min-width: 0; }
   @media (max-width: 639px) { .gsearch { order: 2; flex-basis: 100%; max-width: none; } .actions { margin-left: auto; } }
