@@ -6601,8 +6601,8 @@
     "status": "released",
     "progress": null,
     "progressSource": null,
-    "provenance": "unknown",
-    "provenanceNote": null,
+    "provenance": "human-led",
+    "provenanceNote": "README states the project does not use AI and does not accept AI-generated code; started 2023 (maintainer request, issue #29)",
     "licence": "MIT",
     "repo": "https://github.com/JDrocks450/nio2so",
     "website": "https://tcrf.net/Proto:The_Sims_Online",
@@ -6632,7 +6632,8 @@
       "https://github.com/JDrocks450/nio2so",
       "https://github.com/JDrocks450/nio2so/releases"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-11-11",
+    "image": "https://raw.githubusercontent.com/JDrocks450/nio2so/HEAD/projectlogods.png"
   },
   {
     "slug": "wild-ones-emu",
@@ -9098,5 +9099,100 @@
       "https://github.com/kaanumay/OpenOrbit"
     ],
     "checked": "2026-11-04"
+  },
+  {
+    "slug": "nfs13-server",
+    "name": "nfs13",
+    "category": "preservation",
+    "subject": "Need for Speed: Most Wanted (2012)",
+    "originalPlatform": "Windows",
+    "originalYear": 2012,
+    "method": "rewrite",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/178lavash178-create/nfs13",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sn0wd0wn",
+      "gregel",
+      "Dantiox",
+      "Alexes"
+    ],
+    "started": "2026-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Self-hosted replacement for the shut-down online services of Criterion's 2012 Most Wanted on PC: a single-file Python Blaze and Autolog server plus a patcher that writes a redirected copy of the player's own executable. Login, free roam and speedlists work in tested three-player sessions, while results screens and friends features are still incomplete.",
+    "tags": [
+      "server-emulator",
+      "need-for-speed",
+      "ea",
+      "blaze"
+    ],
+    "sources": [
+      "https://github.com/178lavash178-create/nfs13",
+      "https://github.com/178lavash178-create/nfs13/releases"
+    ],
+    "checked": "2026-11-11"
+  },
+  {
+    "slug": "shaun-white-reborn",
+    "name": "Shaun White Reborn",
+    "category": "preservation",
+    "subject": "Shaun White Snowboarding replay uploads (PS3)",
+    "originalPlatform": "PlayStation 3",
+    "originalYear": 2008,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "none",
+    "repo": "https://github.com/adamstark1/ShaunWhite-Reborn-PS3",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "adamstark1"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "1.0.0",
+      "date": "2026-11-09"
+    },
+    "targets": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "image": "https://raw.githubusercontent.com/adamstark1/ShaunWhite-Reborn-PS3/HEAD/Assets/sws-after.png",
+    "playable": null,
+    "summary": "Local replacement server, DNS redirector and launcher for the PS3 version of Shaun White Snowboarding (console or RPCS3), reimplementing the Demonware and Gator upload services so replay uploads work again and the Generation 2.0 trophy and Platinum can be earned. The launcher has a start-up wait that can be skipped by starring the repo.",
+    "tags": [
+      "ps3",
+      "ubisoft",
+      "server-revival",
+      "trophies"
+    ],
+    "sources": [
+      "https://github.com/adamstark1/ShaunWhite-Reborn-PS3",
+      "https://github.com/adamstark1/ShaunWhite-Reborn-PS3/releases",
+      "https://github.com/andrewnakas/recompsoftware/issues/34"
+    ],
+    "checked": "2026-11-11"
   }
 ]

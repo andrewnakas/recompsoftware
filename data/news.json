@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-11-11",
+    "kind": "milestone",
+    "title": "Switch 2 games are being recompiled into native PC programs",
+    "body": "In the week after Ocarina of Time's Switch 2 remake shipped, at least six separate static recompilations of it went public, alongside projects for Mario Kart World, Pokémon Pokopia, Fire Emblem: Fortune's Weave, Hyrule Warriors: Age of Imprisonment and Mario Tennis Fever. Most are early and AI-assisted, and all of them build the game on the player's PC from their own dump. Several general-purpose recompilers (ScarletNX, Switch2RECOMP, switch2mac, DroidPlay) now target Switch and Switch 2 games on Windows, Linux, Mac and Android.",
+    "source": "https://recompsoftware.com/platforms/nintendo-switch-2/",
+    "projects": [
+      "hookshot",
+      "nx2navi",
+      "ocarina-recomp",
+      "ocarina-of-time-pc-recomp",
+      "echora",
+      "oot-pc-recomp",
+      "mkw-recomp",
+      "mkw-thwomp",
+      "recompia",
+      "fefw-recomp",
+      "hwaoi-recomp",
+      "mtf-recomp",
+      "dkb-recomp",
+      "pokopia-recomp",
+      "scarletnx",
+      "switch2recomp",
+      "switch2mac",
+      "droidplay-core"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "kind": "release",
+    "title": "Hookshot 2.1 brings the Switch 2 Ocarina of Time to Windows and Linux",
+    "body": "The most-starred of the Ocarina of Time recomps ships a builder app that compiles the game from the player's own dump in 10 to 45 minutes, with frame generation, upscaling and an in-game menu. The game is playable from Kokiri Forest onward; it needs a GPU with mesh shaders, and the project lists open crash and shadow bugs in later areas.",
+    "source": "https://github.com/NotRexed/Hookshot/releases/tag/v2.1.0",
+    "projects": [
+      "hookshot"
+    ]
+  },
+  {
+    "date": "2026-11-10",
+    "kind": "release",
+    "title": "NX2navi 0.7 adds a Linux AppImage for its Ocarina of Time recomp",
+    "body": "A second Switch 2 Ocarina of Time recompilation, with its own Vulkan renderer, now ships a Windows installer and a Linux AppImage. Kokiri Forest, Kakariko, Death Mountain and the Temple of Time are playable; the project calls itself early development.",
+    "source": "https://github.com/tangerineturtle1/NX2navi/releases/tag/v0.7.1",
+    "projects": [
+      "nx2navi"
+    ]
+  },
+  {
     "date": "2026-10-18",
     "kind": "release",
     "title": "Crackdown Recomp reaches 1.0",

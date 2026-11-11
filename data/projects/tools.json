@@ -23463,5 +23463,382 @@
       "https://github.com/zer0ducksgiven/ReGPU"
     ],
     "checked": "2026-11-04"
+  },
+  {
+    "slug": "scarletnx",
+    "name": "ScarletNX",
+    "category": "tools",
+    "subject": "Nintendo Switch ARM64 games (plus experimental 3DS, PS Vita homebrew and GBA)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships .claude/agents definitions and most recent commits carry Claude co-author trailers (github.com/scarletnx/ScarletNX).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/scarletnx/ScarletNX",
+    "website": "https://scarletnx.github.io/",
+    "discord": "https://discord.gg/tRTRXXbyjp",
+    "subreddit": null,
+    "team": [
+      "Aogo-AO55",
+      "fuddlesworth",
+      "DraChimeraVee",
+      "odntht",
+      "xinitrcn1"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "nightly-2026-11-11-fa431b5",
+      "date": "2026-11-11"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "GPL static recompiler that converts Switch games from the player's dump into native modules ahead of time and runs them on a runtime that answers Horizon system calls and services and renders with Vulkan. It also has experimental 3DS, PS Vita homebrew and GBA drivers; nightly builds are published in a separate repository.",
+    "tags": [
+      "switch",
+      "recompiler",
+      "arm64",
+      "vulkan",
+      "tool"
+    ],
+    "sources": [
+      "https://github.com/scarletnx/ScarletNX",
+      "https://github.com/scarletnx/nightly/releases"
+    ],
+    "checked": "2026-11-11"
+  },
+  {
+    "slug": "switch2recomp",
+    "name": "Switch2Recomp",
+    "category": "tools",
+    "subject": "Nintendo Switch and Switch 2 ARM64 games",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/SwitchRECOMP-Dev/Switch2RECOMP",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "MZ Labs"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.4.1",
+      "date": "2026-11-10"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "MZ Labs' successor to SwitchRecomp that adds Switch 2 support: it translates a game's ExeFS to C once, compiles it natively and runs it on a C runtime emulating Horizon services. It offers OpenGL, NVN-on-Vulkan and Eden-derived Vulkan renderers.",
+    "tags": [
+      "switch",
+      "switch2",
+      "recompiler",
+      "tool"
+    ],
+    "sources": [
+      "https://github.com/SwitchRECOMP-Dev/Switch2RECOMP",
+      "https://github.com/SwitchRECOMP-Dev/Switch2RECOMP/releases"
+    ],
+    "checked": "2026-11-11"
+  },
+  {
+    "slug": "switchrecomp",
+    "name": "SwitchRecomp",
+    "category": "tools",
+    "subject": "Nintendo Switch ARM64 games",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "AGPL-3.0",
+    "repo": "https://github.com/SwitchRECOMP-Dev/SwitchRECOMP",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "MZ Labs"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v190",
+      "date": "2026-11-08"
+    },
+    "targets": [
+      "Windows",
+      "Linux"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "MZ Labs' static recompiler for Switch games: a Python tool translates the ExeFS from ARM64 to C and builds a native module, and a C runtime emulates Horizon OS services and the Maxwell GPU with an OpenGL renderer and optional Vulkan one. It is the runtime that the Metroid Dread and Metroid Prime 4 ports are built on.",
+    "tags": [
+      "switch",
+      "recompiler",
+      "tool"
+    ],
+    "sources": [
+      "https://github.com/SwitchRECOMP-Dev/SwitchRECOMP",
+      "https://github.com/SwitchRECOMP-Dev/SwitchRECOMP/releases"
+    ],
+    "checked": "2026-11-11"
+  },
+  {
+    "slug": "switch2mac",
+    "name": "switch2mac",
+    "category": "tools",
+    "subject": "Nintendo Switch and Switch 2 games (Apple silicon builds)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in tree and commits carry Claude co-author trailers (github.com/azmasm/switch2mac).",
+    "licence": "MIT",
+    "repo": "https://github.com/azmasm/switch2mac",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "azmasm"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.4.5",
+      "date": "2026-11-11"
+    },
+    "targets": [
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Mac app that takes the player's own Switch or Switch 2 dump and builds it into a native Apple silicon app, picking between nxnative, its own engine, MacNativeGames and other community ports per game and Mac. It keeps a per-game list of shader keys and a library view; box art is fetched at runtime rather than stored in the repo.",
+    "tags": [
+      "switch",
+      "switch2",
+      "macos",
+      "apple-silicon",
+      "nxnative",
+      "tool"
+    ],
+    "sources": [
+      "https://github.com/azmasm/switch2mac",
+      "https://github.com/azmasm/switch2mac/releases"
+    ],
+    "checked": "2026-11-11"
+  },
+  {
+    "slug": "droidplay-core",
+    "name": "DroidPlay Core",
+    "category": "tools",
+    "subject": "Nintendo Switch and Switch 2 games (Android builds)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md in tree and most commits carry Claude co-author trailers (github.com/enjoyerofslop/droidplay-core).",
+    "licence": "MIT",
+    "repo": "https://github.com/enjoyerofslop/droidplay-core",
+    "website": null,
+    "discord": "https://discord.gg/4wNHX3uqSU",
+    "subreddit": null,
+    "team": [
+      "enjoyerofslop",
+      "DeathKhan",
+      "rynnyr-maomao"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.7.6",
+      "date": "2026-11-11"
+    },
+    "targets": [
+      "Android",
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Engine behind DroidPlay, an Android port of nxnative that packs the player's own Switch or Switch 2 game into an Android app whose code runs natively on the phone's CPU with Vulkan graphics. A Windows setup builds and installs each game; per-title shader key maps and a device compatibility table are kept in the repo.",
+    "tags": [
+      "switch",
+      "switch2",
+      "android",
+      "nxnative",
+      "tool"
+    ],
+    "sources": [
+      "https://github.com/enjoyerofslop/droidplay-core",
+      "https://github.com/enjoyerofslop/droidplay-core/releases"
+    ],
+    "checked": "2026-11-11"
+  },
+  {
+    "slug": "nxrecomp",
+    "name": "NX (nxrecomp)",
+    "category": "tools",
+    "subject": "Nintendo Switch ARM64 games (Metroid Prime Remastered)",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/drakolordx7/nxrecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "drakolordx7",
+      "w2c"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.5",
+      "date": "2026-11-02"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Shared recompiler, runtime and setup tools that turn Switch games into native x64 Windows programs, grown out of smo-recomp, with Metroid Prime Remastered 1.0.0 as the first released game (downloads still in the older MetroidPrimeRemasteredRecomp repo). The author's Pokopia port uses the same toolchain.",
+    "tags": [
+      "switch",
+      "recompiler",
+      "metroid",
+      "nintendo",
+      "tool"
+    ],
+    "sources": [
+      "https://github.com/drakolordx7/nxrecomp",
+      "https://github.com/drakolordx7/MetroidPrimeRemasteredRecomp/releases"
+    ],
+    "checked": "2026-11-11"
+  },
+  {
+    "slug": "glue2gpu",
+    "name": "Glue2GPU",
+    "category": "tools",
+    "subject": "ReXGlue Xbox 360 ports (ReGPU renderer plugin)",
+    "originalPlatform": "Xbox 360",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Claude co-author trailers on commits (github.com/zer0ducksgiven/Glue2GPU).",
+    "licence": "MIT",
+    "repo": "https://github.com/zer0ducksgiven/Glue2GPU",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "zer0ducksgiven"
+    ],
+    "started": "2026-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "GPU plugin DLL that lets an unchanged ReXGlue port render through ReGPU's Direct3D 12 Xbox 360 GPU instead of ReXGlue's Xenia-derived renderer. The included plugin targets Forza Horizon 1, with game-specific fixes kept in hooks; no releases.",
+    "tags": [
+      "xbox360",
+      "rexglue",
+      "regpu",
+      "d3d12"
+    ],
+    "sources": [
+      "https://github.com/zer0ducksgiven/Glue2GPU"
+    ],
+    "checked": "2026-11-11"
+  },
+  {
+    "slug": "segarecomp",
+    "name": "segarecomp",
+    "category": "tools",
+    "subject": "Sega Genesis, Master System and Sega CD software",
+    "originalPlatform": "Sega consoles",
+    "originalYear": null,
+    "method": "tool",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "MPL-2.0",
+    "repo": "https://github.com/marinocg/segarecomp",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "marinocg"
+    ],
+    "started": "2026-09",
+    "firstRelease": "2026-09",
+    "latestRelease": {
+      "version": "v0.8.0",
+      "date": "2026-11-08"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Static recompiler that turns 68000 and Z80 code from Genesis, Master System and (experimentally) Sega CD games into C11 and links it with native hardware runtimes, with a launcher that builds from the player's own ROMs, BIOS and discs. Several Sonic and Streets of Rage titles are reported playable; it adds save states, rewind and widescreen modes.",
+    "tags": [
+      "genesis",
+      "mega-drive",
+      "master-system",
+      "sega-cd",
+      "recompiler"
+    ],
+    "sources": [
+      "https://github.com/marinocg/segarecomp",
+      "https://github.com/marinocg/segarecomp/releases"
+    ],
+    "checked": "2026-11-11"
   }
 ]

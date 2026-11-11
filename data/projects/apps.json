@@ -3397,5 +3397,56 @@
       "https://github.com/prototux/AARE"
     ],
     "checked": "2026-10-26"
+  },
+  {
+    "slug": "honeydew",
+    "name": "Honeydew",
+    "category": "apps",
+    "subject": "FL Studio Mobile",
+    "originalPlatform": "iOS/Android",
+    "originalYear": 2011,
+    "method": "clean-room",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Many commits carry Claude Co-Authored-By trailers (github.com/daijro/honeydew commits).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/daijro/honeydew",
+    "website": "https://playground.daijro.dev/honeydew",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "daijro"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.5.3",
+      "date": "2026-11-10"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "FreeBSD",
+      "Android",
+      "iOS",
+      "Web"
+    ],
+    "needsOriginal": false,
+    "playable": null,
+    "summary": "Rust music studio rebuilt from a written spec of FL Studio Mobile's behaviour and formats, opening and saving .flm songs and FL Studio .flp projects and hosting VST3/VST2/CLAP plugins. It ships its own library of CC0 and similarly free samples; owners of the original app can import its sounds from their own APK.",
+    "tags": [
+      "daw",
+      "music",
+      "fl-studio",
+      "rust"
+    ],
+    "sources": [
+      "https://github.com/daijro/honeydew",
+      "https://github.com/daijro/honeydew/releases"
+    ],
+    "checked": "2026-11-11"
   }
 ]
