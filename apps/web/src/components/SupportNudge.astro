@@ -1,0 +1,55 @@
+---
+// After a Download click (which opens GitHub in a new tab), a small dismissible card thanks the reader and points to the store.
+// At most once every 14 days per browser; nothing shows if storage is blocked. Events: store_nudge (shown/dismissed), store_cta item "download-nudge:<product>".
+import { store } from '../lib/data';
+const picks = ['stickers-10', 'tee-battlestation', 'tee-crtwall', 'mug'].map((s) => store().products.find((p) => p.slug === s)).filter((p) => p?.image);
+const data = picks.map((p) => ({ slug: p!.slug, name: p!.name, image: p!.image, price: `$${Math.round(p!.cents / 100)}` }));
+---
+{data.length > 0 && (
+  <aside class="nudge" hidden aria-live="polite" aria-label="Support Recomp" data-picks={JSON.stringify(data)}>
+    <button class="x" type="button" aria-label="Dismiss">×</button>
+    <a class="pic" href="/store/"><img alt="" width="64" height="64" decoding="async" /></a>
+    <div class="txt">
+      <p class="h">Enjoy <span class="proj"></span>!</p>
+      <p>Recomp is free, ad-free and checked by hand. A <a class="prod" href="/store/"></a> helps keep it that way.</p>
+      <a class="go" href="/store/">See the store →</a>
+    </div>
+  </aside>
+)}
+<script>
+  const box = document.querySelector<HTMLElement>('.nudge');
+  const KEY = 'nudge-at', GAP = 14 * 864e5;
+  const g = (...a: unknown[]) => (window as any).gtag?.(...a);
+  const due = () => { try { return Date.now() - Number(localStorage.getItem(KEY) || 0) > GAP; } catch { return false; } };
+  if (box) {
+    const picks = JSON.parse(box.dataset.picks || '[]');
+    let shown = false;
+    document.addEventListener('click', (e) => {
+      const a = (e.target as HTMLElement).closest<HTMLElement>('[data-track="download_click"]');
+      if (!a || shown || !due()) return;
+      shown = true;
+      try { localStorage.setItem(KEY, String(Date.now())); } catch {}
+      const p = picks[Math.floor(Math.random() * picks.length)];
+      box.querySelector('.proj')!.textContent = document.querySelector('h1')?.textContent?.trim() || 'the download';
+      const img = box.querySelector('img')!; img.src = p.image;
+      const prod = box.querySelector<HTMLAnchorElement>('.prod')!; prod.textContent = `${p.name} (${p.price})`;
+      box.querySelectorAll<HTMLAnchorElement>('a').forEach((l) => { l.dataset.track = 'store_cta'; l.dataset.item = `download-nudge:${p.slug}`; });
+      setTimeout(() => { box.hidden = false; g('event', 'store_nudge', { item: 'shown' }); }, 900);
+    });
+    box.querySelector('.x')!.addEventListener('click', () => { box.hidden = true; g('event', 'store_nudge', { item: 'dismissed' }); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !box.hidden) box.hidden = true; });
+  }
+</script>
+<style>
+  .nudge { position: fixed; right: 16px; bottom: 16px; z-index: 20; width: min(360px, calc(100vw - 32px)); display: grid; grid-template-columns: 64px 1fr; gap: 0.8rem; align-items: start; padding: 0.9rem 2.2rem 0.9rem 0.9rem; background: var(--bg-raised); color: var(--ink); border: 1px solid var(--ink); border-radius: var(--radius); box-shadow: 4px 4px 0 var(--ink); font-size: 0.88rem; line-height: 1.4; animation: nudge-in 0.25s ease-out; }
+  .nudge[hidden] { display: none; }
+  .nudge p { margin: 0 0 0.35rem; }
+  .nudge .h { font: 600 0.95rem/1.3 var(--font-display); }
+  .nudge img { width: 64px; height: 64px; object-fit: cover; border-radius: var(--radius-sm); background: var(--bg-sunk); display: block; }
+  .nudge .go { font: 600 0.82rem var(--font-mono); color: var(--accent); text-decoration: none; }
+  .nudge .go:hover { text-decoration: underline; }
+  .nudge .x { position: absolute; top: 0.35rem; right: 0.45rem; background: none; border: 0; color: var(--ink-faint); font-size: 1.2rem; line-height: 1; cursor: pointer; padding: 0.2rem 0.35rem; }
+  .nudge .x:hover { color: var(--ink); }
+  @keyframes nudge-in { from { transform: translateY(12px); opacity: 0; } to { transform: none; opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .nudge { animation: none; } }
+</style>

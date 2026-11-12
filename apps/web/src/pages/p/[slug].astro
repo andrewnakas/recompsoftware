@@ -78,7 +78,7 @@ const schema = {
           {p.playable && (p.playable.launch === 'tab'
             ? <a class="btn primary" href={p.playable.url} target="_blank" rel="noopener" data-track="play_click" data-item={p.slug}>▶ Play in browser</a>
             : <a class="btn primary" href={`/play/${p.slug}/`} data-track="play_click" data-item={p.slug}>▶ Play in browser</a>)}
-          {dl && <a class={`btn${p.playable ? '' : ' primary'}`} href={dl} rel="noopener" data-track="download_click" data-item={p.slug}>⬇ Download {release!.version}</a>}
+          {dl && <a class={`btn${p.playable ? '' : ' primary'}`} href={dl} target="_blank" rel="noopener" data-track="download_click" data-item={p.slug}>⬇ Download {release!.version}</a>}
           {p.repo && <a class="btn" href={p.repo} rel="noopener" data-track="repo_click" data-item={p.slug}>Source code</a>}
           {p.website && <a class="btn" href={p.website} rel="noopener">Website</a>}
           {p.discord && <a class="btn" href={p.discord} rel="noopener">Discord</a>}

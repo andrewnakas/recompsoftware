@@ -1,6 +1,7 @@
 ---
 import '../styles/fonts.css';
 import '../styles/global.css';
+import SupportNudge from '../components/SupportNudge.astro';
 
 interface Props {
   title: string;
@@ -113,8 +114,10 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
             <a href="https://decompgames.com">decompgames</a><a href="https://skatemods.com">skatemods</a><a href="https://aigamemashups.com">aigamemashups</a><a href="/store/">Store: support the site</a><a href="/submit/">Submit a project</a><a href="https://github.com/andrewnakas/recompsoftware">Source &amp; corrections</a>
           </nav>
         </div>
+        <p class="support-line">Recomp is free, ad-free and checked by hand. <a href="/store/" data-track="store_cta" data-item="footer">Support it with a tee or stickers →</a></p>
       </div>
     </footer>
+    <SupportNudge />
     <script>
       document.querySelector('.theme')?.addEventListener('click', () => {
         const root = document.documentElement;
@@ -214,6 +217,8 @@ const GA = import.meta.env.PUBLIC_GA_ID || 'G-VB7864XCBM';
   @media (max-width: 520px) { .find { display: none; } .bar { column-gap: 0.75rem; } }
   @media (min-width: 1080px) { nav[aria-label='Main'] { order: 0; width: auto; padding: 0; } }
   .skip:focus { position: fixed; left: 1rem; top: 1rem; width: auto; height: auto; clip: auto; z-index: 99; background: var(--ink); color: var(--bg); padding: 0.5rem 1rem; }
+  .support-line { margin: 2rem 0 0; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--ink-faint); font-size: 0.85rem; }
+  .support-line a { color: var(--ink-soft); }
   .site-footer { border-top: 1px solid var(--ink); margin-top: 5rem; padding: 2rem 0 3rem; font-size: 0.9rem; }
   .cols { display: grid; gap: 1.5rem 2rem; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
   .about { grid-column: 1 / -1; max-width: 56ch; }
