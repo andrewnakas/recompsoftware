@@ -151,3 +151,12 @@ Build the most comprehensive public decomp/recomp progress tracker (bytematch/de
 - Download button now opens GitHub in a new tab (target=_blank) so the card is there when people come back.
 - Footer: one-line "free, ad-free and checked by hand. Support it with a tee or stickers" (store_cta item footer).
 - Check in ~2 weeks: store_nudge shown vs store_cta download-nudge:* clicks vs begin_checkout.
+
+## 2026-11-13: SEO recovery pass (commit 0fc8e34)
+- Search Console: clicks ~1,300/day Oct 19-23 -> ~300/day from Oct 25. Week Oct 18-24 vs Nov 4-10: clicks 7.86K -> 2.08K, impressions 117K -> 9.75K. Homepage grew (635 -> 2,073); /p/ pages lost almost everything. Index: 286 indexed, 1,730 "Crawled - currently not indexed", 709 "Discovered - not indexed". No manual action. Diagnosis: thin templated pages (median summary 124 chars) after the catalogue grew fast.
+- New optional `about` field (300-2600 chars, plain text, no links/markdown, ROM-extension check) + `aboutChecked` date; rendered as "About <name>" on /p/. Written for 94 of the top 100 pages by 90-day clicks (.cache/seo/top-pages.txt; brief .cache/seo/BRIEF.md; merge with scripts/intel/merge-about.mjs).
+- `indexable(p)` in lib/data.ts (release, stats release, playable, progress, >=100 stars, or about). Others get noindex and are left out of sitemap.xml: 1,858 indexable, 775 noindex. They stay on the site and in search/listings.
+- Hookshot: NotRexed account 404 since ~12:30 GMT 2026-11-13 (SkyboundTotk too); summary notes it, news card added. Cause unconfirmed (no DMCA repo entry yet).
+- Also gone, NOT yet marked: sky-recomp, super-mario-wonder-recomp, infamous-2-recomp; lego-batman-mac-decomp repo empty.
+- Stale data reported by writers, NOT applied: ngbrecomp (64 releases, still wip), unicorn-overlord-pc method, recompia parent = pokopia-native, mlss-decomp ~matching, sm2-recomp no code, nfsug/reach-re target prototype/debug builds, pokebw2-decomp 100%.
+- Next: request indexing for top pages in Search Console (~10/day), add Bing Webmaster Tools (Bing ~2.6K sessions/week), write more `about` texts down the click list, re-check index coverage in ~2 weeks.
