@@ -48,6 +48,7 @@ for (const cat of CATS) {
       if (!p.playable.note) err(w, 'playable.note must say why it may be hosted');
     }
     if (p.summary && p.summary.length > 400) warn.push(`${w}: summary over 400 chars`);
+    if (p.about != null && (typeof p.about !== 'string' || p.about.length < 300 || p.about.length > 2600 || /(^|\s)#|[*\[\]]|https?:/.test(p.about))) err(w, 'about must be 300-2600 chars of plain text (no markdown or links)');
     if (/\.(z64|n64|v64|iso|xiso|wbfs|rvz|nds|gba|sfc|smc)\b/i.test(JSON.stringify(p))) err(w, 'mentions a ROM/disc file: never link game data');
     if (p.repo) { const k = p.repo.toLowerCase(); if (repos.has(k)) warn.push(`${w}: same repo as ${repos.get(k)}`); repos.set(k, w); }
   }

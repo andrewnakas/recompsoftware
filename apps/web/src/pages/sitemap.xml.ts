@@ -1,4 +1,4 @@
-import { projects, platforms, gameHubs, statsFor, CATEGORIES, type Project } from '../lib/data';
+import { projects, platforms, gameHubs, statsFor, indexable, CATEGORIES, type Project } from '../lib/data';
 
 const pages = ['/', '/projects/', '/trending/', '/progress/', '/play/', '/history/', '/lineage/', '/news/', '/this-week/', '/platforms/', '/game/', '/recompiled-games-list/', '/decompiled-games-list/', '/what-is-a-recomp/', '/about/', '/terms/', '/privacy/', '/takedown/', '/store/'];
 
@@ -14,7 +14,7 @@ export function GET() {
   const urls = [
     ...pages,
     ...CATEGORIES.map((c) => `/${c.id}/`),
-    ...all.map((p) => [`/p/${p.slug}/`, lastmod(p)] as const),
+    ...all.filter(indexable).map((p) => [`/p/${p.slug}/`, lastmod(p)] as const),
     ...all.filter((p) => p.playable?.launch === 'frame').map((p) => `/play/${p.slug}/`),
     ...platforms().map((p) => `/platforms/${p.slug}/`),
     ...gameHubs().map((h) => `/game/${h.slug}/`),

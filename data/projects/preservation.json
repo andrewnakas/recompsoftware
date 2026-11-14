@@ -1341,7 +1341,9 @@
     "sources": [
       "https://github.com/ymgve/desse"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "DeSSE is a small server emulator for Demon's Souls on the PlayStation 3, written by ymgve in Python. It is not a port or recompilation of the game: it stands in for the online service the PS3 game talks to, so that the game's network features can work against a server you run yourself. Its author describes it as quick and dirty and supporting only the most basic features.\n\nAccording to its README it handles matchmaking, the messages players leave on the ground, ghosts and bloodstains, with messages and bloodstains pre-seeded from old European data and newer entries given priority. Matchmaking only works within each region, so players from the EU, US and Japan do not see each other's summon signs, and it depends on Sony's own matchmaking servers still being online, which the author could not promise would last.\n\nRunning it needs Python 2.6 or 2.7 with the pycrypto library, a DNS proxy that sends the game's server requests to your machine, and players' PS3 network settings pointed at that proxy. You need your own PS3 and copy of the game. The last code change dates from April 2018, there are no releases, and the only open issue asks about the project's licence, so it is best treated as a historical preservation reference rather than active software.\n\nThe site also lists two native PC versions of Demon's Souls, Demon's Souls Recomp and Soulbrandt, both built on the ps3recomp toolchain. Soulbrandt includes online play through its own server, which is a different approach from this standalone PS3 server emulator.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "maries-wonderland",
@@ -2330,7 +2332,9 @@
     "sources": [
       "https://github.com/LBPUnion/ProjectLighthouse"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Project Lighthouse is an open-source custom server for the LittleBigPlanet games, run by the LBP Union's technology team. It is a clean-room reimplementation: the team rebuilt the online service the games talk to without using Sony's server code, so community-run instances can bring back online features; its tracker covers user levels, comments, reviews, scores and moderation. It is a server program, licensed under the AGPLv3, not a change to the games themselves, and it is not affiliated with Sony.\n\nPlayers connect with their own copies of the games. According to the project's compatibility table, LittleBigPlanet 1, 2 and 3 work on PS3 hardware and in the RPCS3 emulator, LittleBigPlanet Vita works on a real Vita but not in Vita3K, the PSP game is only potentially compatible, and the PS4 version of LittleBigPlanet 3 is not supported.\n\nThe team describes the software as beta, mostly working but neither stable nor secure, and asks that it not be run as a public production server yet, warning that instances do get attacked. Building instructions are deliberately withheld until the beta ends, there are no releases, and anyone hosting an instance is on their own for support. The most recent commits, from late summer 2026, changed matchmaking room creation and level republishing. Open items include unsupported Hong Kong game IDs, level publishing failures in LittleBigPlanet 1, scoreboard and moderation bugs, account self-deletion and a reported security finding in the build workflow. It is the only LittleBigPlanet server project on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "brainwine",
@@ -3017,7 +3021,9 @@
     "sources": [
       "https://github.com/Yurzs/L2py"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "L2py is a server emulator for Lineage II, the online role-playing game, aimed at the Interlude chronicle and later. Instead of reimplementing the game client, it rebuilds the server side from scratch in Python 3, so a Lineage II client can connect to a privately run server. The project describes itself as alpha stage.\n\nThe emulator is split into two services: a login server and a game server, each with a basic HTTP API next to the game protocol. Both run on Python's asyncio, and protocol encryption is handled in middleware. Data is stored in MongoDB. Developers can start everything with Docker Compose or run it directly with Poetry, then register the game server in the database before connecting. Players still need their own compatible Lineage II client; the repository provides only the server.\n\nThe project says the login server and game server work, but beyond that the feature set is thin. Open issues are mostly planning items, such as implementing items, splitting the world into a separate runtime and analysing bot tests. There are no tagged releases.\n\nDevelopment has been quiet for a long time. The last code changes landed in May 2023, when the Python version was raised to 3.11, and the repository has not been updated since July 2023. Anyone looking for a usable Lineage II server today should treat L2py as an unfinished codebase rather than a ready server.\n\nThe site lists two other Lineage II server emulators: L2dotNET, a C# server for Interlude last updated in 2018, and the archived lineage2js, a Node.js server for Chronicle 1. L2py differs mainly in its choice of Python and its target of Interlude and later.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "openpayload",
@@ -4686,7 +4692,9 @@
       "https://github.com/HarpyWar/nfsuserver",
       "https://github.com/HarpyWar/nfsuserver/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "NFS Underground Server is a server emulator for the online mode of the original 2003 Need for Speed: Underground. It supports only the first Underground, not Underground 2. It is not a port or a decompilation of the game: it reimplements the online service the game talks to, so you keep playing the normal PC game and point it at a community server instead. The code was first written by the 3 PriedeZ community and is maintained in this repository by HarpyWar.\n\nRunning a server works on Linux, using a prebuilt static binary or a build from source, and on Windows, either as a normal program or installed as a Windows service. Several TCP and UDP ports have to be forwarded, and settings, the message of the day and news are edited in plain text files. Players use a small Windows client program to pick a server from a public list or add one by address, then choose Play Online in the game, create a profile and join a room. Hosting a lobby needs one more UDP port open.\n\nThe latest release, 1.0.5 from August 2022, added tracking of player reputation and two server options, one to stop players creating their own rooms and one to keep players using cheats out of rooms; it requires deleting the old user database. Version 1.0.4 in January 2021 restored the public server list and made configuration loading work on Linux. Development is slow, with the last code push in December 2025. Open issues include a request for PS2 cross-play, disconnects for modified cars, Dynamic DNS connection errors and antivirus warnings about the client.\n\nThis is the only Need for Speed: Underground online service project listed on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "quantum-core-x",
@@ -5302,7 +5310,9 @@
       "https://github.com/adamstark1/inFAMOUS-Reborn-PS3",
       "https://github.com/adamstark1/inFAMOUS-Reborn-PS3/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "inFAMOUS Reborn is not a port or decompilation of the game itself. It is a replacement for the online service that inFAMOUS 2 and its standalone spin-off Festival of Blood used for user-generated missions, which stopped working when the official servers went away. The project is a desktop launcher with a built-in local server, written in C# on .NET 8, that runs on Windows, macOS and Linux. It answers DNS requests from the game and redirects the old PlayStation Network addresses to your own computer, where it serves an archive of player-made missions. The project says the archive covers more than 205,000 missions across both games.\n\nYou still play on a PlayStation 3 or in the RPCS3 emulator with your own copy of either game. The launcher fetches the mission archive for you on first run, needs ports 53 and 80 free on the host computer, and the console or emulator has to be pointed at the computer's IP address as its DNS server. A stated goal is making the online-related trophies, and with them the Platinum, earnable again.\n\nVersion 1.0.3 (September 2026) added Linux support and download progress bars, fixed a UI freeze while unpacking mission archives and sped up downloads. Earlier September releases added RPCS3 support, sorting missions by relevance, rating, plays and favourites, search pagination and a fix for consoles running custom firmware. There were no open issues when checked. The same author runs similar server revivals for Darksiders 2, the Saints Row series and Shaun White Snowboarding. It is the only inFAMOUS project listed on this site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "saga-revised",
@@ -7698,7 +7708,9 @@
     "sources": [
       "https://github.com/pinfake/pes6j"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-10-17",
+    "about": "pes6j is a server emulator for the online mode of Pro Evolution Soccer 6 on PC, written in Java. Its author reverse-engineered the game's network protocol and wrote replacement servers after the publisher shut down the official online service, so that the unmodified game could connect to a server run by players. It is not a port or a decompilation: the game itself stays as it is, and the project only stands in for the vanished servers.\n\nThe source contains an account server and a game server, about 80 classes for the data blocks exchanged with the game, a small database layer, a web handler and lobby messages in English, German, Spanish, French, Italian and Polish. Players need their own PC copy of the game, and someone has to build and host the server; the README gives no installation instructions and says there probably never will be any.\n\nThe author is candid about its state, describing the code as untested, undocumented and hard to maintain, written in a hurry, and dropped for lack of interest, resources and time. The repository was created in April 2014 and last updated in June 2017, when a default settings file and newer code were added after a user pointed out the published version was outdated. The two open issues ask about the ranking pages and report that the database schema and configuration properties are missing from the repository, which makes running it harder. The code is under the MIT licence.\n\nThe only other Pro Evolution Soccer 6 project on the site is the PES6 decompilation, a separate matching decompilation of the PAL PlayStation 2 executable rather than an online server.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "mozart-encore",

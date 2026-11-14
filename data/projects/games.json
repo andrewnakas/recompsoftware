@@ -1404,7 +1404,9 @@
     "sources": [
       "https://github.com/pret/pokeheartgold"
     ],
-    "checked": "2026-10-13"
+    "checked": "2026-10-13",
+    "about": "pokeheartgold is the pret community's decompilation of Pokémon HeartGold and SoulSilver for the Nintendo DS. Like pret's other projects, it rebuilds the games from C source and assembly that the team has worked out from the original code, and the build is checked against the known checksums of the US HeartGold and US SoulSilver ROMs. It is a research and modding base, not a playable release, so there are no downloads and no PC port.\n\nBuilding it requires a Linux-like environment (WSL2 on Windows, MSYS2, macOS or a Linux distribution) with an ARM toolchain and the usual build tools, as set out in the project's install guide. The README is blunt that the repository is unstable: symbol names and code layout can change without notice, and because parts of the game are still not decompiled, edits that change the size or layout of a function or data structure can crash the resulting ROM. Anyone building mods on it is told they accept that risk.\n\nWork is active, with commits as recent as November 2026. The open issues and pull requests show what remains: decompiling specific functions and overlays, porting matching code from pret's Pokémon Platinum project, cleaning up and syncing shared files such as menus, graphics loading and the real-time clock, documenting sound aliases and dumping move data to JSON, and simplifying the build by removing Wine and other downloads from the development container.\n\nThe site also lists pokeheartgold-slop, an unofficial fork of this repository that uses LLM agents to match the remaining functions with the aim of a byte-identical US ROM. pokeheartgold itself is the human-led original maintained by pret.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "pmd-red-decomp",
@@ -2562,7 +2564,9 @@
       "https://github.com/zeldaret/botw",
       "https://botw.link/progress"
     ],
-    "checked": "2026-10-13"
+    "checked": "2026-10-13",
+    "about": "This is the Zelda Reverse Engineering Team's decompilation of The Legend of Zelda: Breath of the Wild, targeting version 1.5.0 of the Nintendo Switch release. Contributors rewrite the game's compiled code as C++ that matches the original functions, one function at a time. The project describes itself as experimental and a work in progress.\n\nIt is important to know what this is not. The repository holds no game assets or RomFS content, and the project states plainly that it cannot be used to play the game. Its aims are to understand how the game works internally, to help glitch hunters, and to record existing research in a permanent and precise form that supports further reverse engineering. Overall and per-function progress is published on the project's own progress page rather than in the repository.\n\nThe project dates from 2020 and is still active. In November 2026 contributors were merging route point functions, ksys mechanical code and tooling updates, and the open pull requests show the shape of current work: matching physics system handlers, query functions, damage and shield management, climate-based weather selection, ragdoll state and moving the tools to a uv-based Python setup. There are no releases, as there is nothing to distribute.\n\nSeveral other Breath of the Wild projects are listed on this site, and they serve different needs. BotW (snrubrm fork) is a personal fork of this decompilation used to try AI-assisted decompilation. Savage Wind Recomp and BOTWRecompAndroid statically recompile Switch versions into playable native programs for PC or Android, and BotW-Native does the same for the Wii U release on Windows. If you want to play, those are the relevant pages; this one is for research.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "prime-decomp",
@@ -3216,7 +3220,9 @@
       "https://github.com/punpckhdq/halo",
       "https://decomp.dev/punpckhdq/halo"
     ],
-    "checked": "2026-10-13"
+    "checked": "2026-10-13",
+    "about": "This is a work-in-progress matching decompilation of Halo: Combat Evolved for the original Xbox. Rather than the retail game, it targets build 2342, a PAL debug build whose executable is named cachebeta.exe, and a recent change added a second target for NTSC build 2276. The aim is C source that compiles back into the same machine code as the original, which is measured function by function. The decomp.dev progress tracker showed about 58 percent of code and data matched when checked.\n\nThis is a source project, not a ready-to-play port, and there are no releases. To build it you have to supply the matching Halo debug build yourself, along with the August 2001 Xbox SDK, and use the ninja build tool or the included Visual Studio project. Type information such as structures, enums and function signatures is mapped with the help of debug symbols from later Halo releases; the README notes those come from a PC-based version with its own changes, so they are not fully accurate to the Xbox original.\n\nWork is active, with commits in November 2026, and open pull requests cover parts of the AI code, the Xbox rasterizer and the units subsystem. Its main importance for players is indirect: OpenCE, also listed on this site, started from a fork of this decompilation and ports it to Linux, Windows, Android and browsers. Other entries for the same game build on that line of work, including ChupathingyCE, a community build of OpenCE, a port to the Anbernic RG35XX H handheld, and a clean-room WebAssembly version that replaces all of the original art and sound.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "isle-decomp",
@@ -4586,7 +4592,9 @@
     "sources": [
       "https://github.com/arcanite24/pinyon-shift"
     ],
-    "checked": "2026-10-13"
+    "checked": "2026-10-13",
+    "about": "Pinyon Shift brings the Xbox 360 release of Forza Horizon to PC as native code. It is not an emulator: the game's PowerPC code is translated ahead of time into C++ with ShiftGlue, the project's fork of the ReXGlue SDK, and compiled on your own computer, while a renderer written for this game runs its graphics commands on Vulkan. The repository holds only the launcher, build tools and host code, never the game or a prebuilt executable.\n\nYou need your own USA retail disc (serial MS-2505) as an ISO or unmodified extracted folder. The launcher verifies it, downloads build tools and builds the game, which takes 20 to 60 minutes and around 30 GB of free space the first time. It runs on 64-bit Windows 10 or 11, x86-64 Linux including the Steam Deck without Proton, and Apple silicon Macs, with Intel Macs experimental and an Android alpha for Snapdragon 8 Gen 2 class handhelds. A Vulkan 1.3 GPU is required; NVIDIA is tested, AMD and Intel are not yet qualified. Owned DLC can be imported, with the Rally and 1000 Club add-ons needing the title update 4 build.\n\nOver the console it adds 60 and 120 fps at correct game speed, up to 4x internal resolution, HDR, ultrawide, custom music and a trainer menu. The project calls it a playable preview with rendering bugs and slowdowns. Version 0.8.2 in November 2026 repaired setup that 0.8.0 and 0.8.1 had broken on Windows, Linux and the Android build, fixed a Rally crash with mods and added a mod manager. Open issues are dominated by automatic crash reports and build failures.\n\nThe site also lists Forza Horizon 1 ReImagined, another native PC version of the same game that focuses on online free roam, leaderboards and a self-hostable server.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "goldeneye-xbla-recomp",
@@ -8122,7 +8130,9 @@
     "sources": [
       "https://github.com/kirklandsig/halo2-decompiled"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Halo 2 Decompilation is a community project to recreate the program logic of the original Xbox Halo 2 as readable C and C++. It is a matching decompilation: each rewritten function is compiled with the same Visual C++ compiler the game shipped with and must produce exactly the same bytes as the retail executable, which gives every function an automatic pass or fail. Besides the game's own code it also decompiles the Havok physics library linked into the game, so that vehicles, ragdolls and projectiles can behave as they did on the Xbox. Other libraries, such as the Xbox SDK and Bink video, are left for a future port to replace.\n\nThere is nothing to play yet. Building or checking the code needs the default.xbe from your own retail disc, and byte-for-byte checking currently also needs the original Xbox development compiler, which the project does not supply or help obtain; analysis, documentation and review can be done without it. The repository holds no game assets, executable, SDK files or leaked source.\n\nThe project says 10,609 of 11,326 game functions now match, about 73 percent of the game code by size, along with 1,345 of 1,436 Havok functions, covering areas such as the script engine, AI, damage and shields, networking, UI, sound and maths. It notes that matching is harder than for Halo: Combat Evolved because the retail build used link-time code generation, which inlines code across files and gives functions non-standard calling conventions. A native PC, Linux and handheld port is the final planned stage, and an open issue tracks an Apple Silicon macOS port. Contributors claim address ranges, and many, the maintainer included, work with AI coding agents.\n\nOn the site, the Halo: Combat Evolved decompilation and the OpenCE port are the closest relatives, covering the first game.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "speedbreaker",
@@ -8474,7 +8484,9 @@
       "https://github.com/pablocpas/OpenCMR2",
       "https://github.com/pablocpas/OpenCMR2/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "OpenCMR2 is a native port of the 2000 PC version of Colin McRae Rally 2.0 to Linux, Windows, macOS and Android. It is built on CMR2Decomp, a decompilation of the original game by the same author, also listed on this site: the decompiled game code is kept as close to the original as possible, and OpenCMR2 supplies the platform layer around it. DirectDraw, Direct3D 7, DirectSound, DirectInput, DirectPlay and Bink video are all replaced with SDL3, a renderer on the SDL GPU API or OpenGL 3.3, and the port's own code, with no emulation or Wine involved. The physics are checked against the original executable, and the project says recorded runs match bit for bit at frame rates from 30 to 240 fps.\n\nYou need your own installed copy of the original PC version; if you have the CD, it must be installed or extracted first, and the port reads the installed game folders. No game data is included. The fixes of the SilentPatch mod, such as proper widescreen, adjustable field of view and high frame rates without changing game speed, are built in, along with keyboard, gamepad and wheel support, force feedback, rebindable controls, LAN and internet multiplayer over UDP and on-screen controls on Android.\n\nThe project says everything tested so far works, including videos, menus, stages and network races, although Linux ARM64 and macOS builds have not been tested in actual play. Releases are frequent: v1.9.0 (November 2026) reworked joystick handling so separate pedals and resting axes no longer steer, and adapted force feedback for modern wheels. Open issues are mainly about touch-control layout, multiple input devices and controls in Steam Deck game mode. A separate fork runs it on the Nintendo 3DS.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "rhf",
@@ -10335,7 +10347,9 @@
     "sources": [
       "https://github.com/XorTroll/mkds-re"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "mkds-re is a personal reverse-engineering project for the European release of Mario Kart DS, game code AMCP. It is not a full decompilation that rebuilds the game, and it does not produce a playable port. Instead it collects what its author has worked out about the game's code and its partly documented file formats, and turns that into tools and material for modders. It is written mostly in C and C++.\n\nThe repository has three main parts. The first is a save editor that runs in the browser, built on the author's work decoding the save format and its encryption; the project describes it as almost fully featured. The second is a set of ASM-hacking examples with generated headers and a symbol file, so modders can inject their own code into the game; a demonstration video shows a custom scene with custom dialogue injected this way. The third is mkdsutil, a small command-line tool that can decrypt and encrypt save data and print its fields, built with CMake and no outside dependencies. Because the symbols and offsets are for the European version, hacks built with them target that version only.\n\nThe project credits earlier community work, including existing Mario Kart DS decompilation headers, older assembly notes and the Pokemon Diamond decompilation as a reference for the DS SDK. There are no releases and no open issues, and the last change to the repository was in January 2025, so it is best seen as a reference resource rather than an actively developed project. It is the only Mario Kart DS project on this site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "earthworm-jim-hd-recompiled",
@@ -10457,7 +10471,9 @@
     "sources": [
       "https://github.com/portingpete/Black-2006-Recomp"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Black 2006 Recomp is an experimental Windows recompilation of the original Xbox version of BLACK, the Criterion shooter. It is built with the XboxRecomp toolchain: the game's code is translated from your own disc and compiled into a native program, with a Direct3D 11 renderer, keyboard and mouse, XInput controllers and native audio. The Windows build can also be run on x86-64 Linux through Wine or Proton.\n\nYou need your own original Xbox disc of BLACK, as an ISO or XISO image or a folder containing default.xbe; the launcher checks for one specific supported release and rejects other Xbox revisions and the PS2 version. The starter download contains a C++ launcher and the build sources, but no game code or assets. The launcher copies your files, offers to install missing build tools (Visual Studio C++ tools, CMake, Python and Rust) and then compiles the game, which takes several minutes and several gigabytes of space. An AVX2 CPU is required.\n\nThe most recent release, v0.1.0-alpha.5 from October 2026, introduced that launcher together with an Add to Steam option, extended LOD distance up to 10x, combat sliders for bullet damage and enemy health, optional secondary objectives, persistent checkpoints, support for the separately downloaded BLACK HD Reimagined texture pack, ambient occlusion, DLSS and experimental ray tracing and split screen. The project says full campaign playthroughs have not been verified. Open reports cover stuttering, build failures, a disc error on 4K-sector drives, very low frame rates on the base Xbox Ally, checkpoints not saving and missing cutscene audio.\n\nThe site also lists BLACK XBE Recomp, a separate port of the same game made with the Xbox XBE Recomp tool, which compiles the game from a single executable on first start; this project instead works through its own launcher and adds more gameplay options.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "stardust-48k",
@@ -11055,7 +11071,9 @@
     "sources": [
       "https://github.com/dbalatoni13/nfsug"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This is a work-in-progress decompilation of the GameCube version of Need for Speed: Underground, the 2003 street-racing game. A decompilation rewrites a game's machine code as C or C++ source that a compiler turns back into the same code, giving a readable base that could later support ports or mods. This project follows the standard GameCube decompilation setup, using the dtk toolkit, a Python configure script, ninja for builds and objdiff for comparing each compiled function with the original, and its code and data progress are reported on decomp.dev.\n\nThe supported target is notable: it is not the retail release but a GameCube prototype labelled GNDP8P and dated 10 September 2003, whose game executable is an ELF file. Anyone building the project needs their own copy of that prototype; the executable is converted into the GameCube's DOL format as part of setup. The repository contains no game assets or assembly.\n\nThere is nothing to play. The project has no releases and produces no PC version. The repository was created in May 2025, most of its setup work and some decompilation progress date from late May and early June 2025, and the latest commit, in February 2026, only updated the build tools. There are no open issues. The same author also runs the Need for Speed: Most Wanted decompilation listed on the site.\n\nThe other Underground entries on the site are for Need for Speed: Underground 2, a different game: NFSU2 Recompiled, NFSU2Recomp, nfsu2-web and NFSU2 for Switch recompile its PC or Xbox code, and OpenUG2 is a from-scratch engine rewrite. This is the only project for the first Underground.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "mksc",
@@ -11376,7 +11394,9 @@
       "https://github.com/psxrestore/Condemned2Recomp",
       "https://github.com/psxrestore/Condemned2Recomp/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Condemned2Recomp is a static recompilation of the Xbox 360 version of Condemned 2: Bloodshot into a native Windows program. The console's PowerPC code is translated to C++ with the ReXGlue SDK, whose runtime stands in for the Xbox 360 hardware. The project says the game is in a playable state but warns that bugs and crashes should be expected. Linux build presets exist but are marked untested and work in progress.\n\nNo game assets are included. You need your own copy of the game and extract the required files from it; the launcher can take an ISO or an asset path. The game is played with mouse and keyboard, with a full key layout covering combat, forensic tools and the camera, or with a gamepad. The release notes advise turning off mouse look when using a pad, so the antenna-tuning puzzles work.\n\nUpdates have been frequent through the autumn of 2026, and the latest release is 0.6.0 (November 2026). It revamped the launcher and in-game menu, added quick save, quick load and return to the main menu, fixed crashes when reloading a checkpoint or restarting after death and when the internet connection drops, and added game language selection, toggleable slow motion, a god mode and other cheats. The 0.5.0 release in October fixed broken cutscenes by changing how the asset manager allocates memory, and turned on V-Sync by default. Open issues include crashes on 0.6.0, missing pickup prompts and interaction failures, bugs in specific missions such as the hotel level and chapter 9, black screens at the start, mouse-look problems, the shader cache not being reused and an antivirus warning about a bundled profiling library. It is the only Condemned 2 project on this site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "vandal-hearts-pcport",
@@ -13420,7 +13440,9 @@
     "sources": [
       "https://github.com/pret/pmd-sky"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This is pret's disassembly and decompilation of Pokémon Mystery Dungeon: Explorers of Sky for the Nintendo DS. Like pret's other projects, the repository contains assembly and C source that, when built, produce ROMs identical byte for byte to the retail North American, European and Japanese releases. Each build ends with a checksum step that confirms the match. Most of the code is still assembly, and the result is a DS ROM, not a port to another platform.\n\nBuilding needs the Metrowerks C compiler and the Nitro SDK tools, which the project can fetch with one make command, along with the usual development packages, the ARM binutils, and Wine or the lighter WiBo wrapper to run the Windows-only compiler. Linux users can use a Nix flake, and Windows users work through MSYS2 or Cygwin with devkitARM. The North American ROM is the default target, with separate targets for the European and Japanese versions and for individual components.\n\nWork is steady. The repository has well over a thousand commits, and recent ones in November 2026 synced symbol names from the companion pmdsky-debug project and added more aliases. The install guide warns that files may still move around, so pulls from upstream can break a local build. Only two issues are open: a tidy step that does not work for the Japanese build and the fact that Wine is required even on Windows. There are no releases.\n\nNo other Explorers of Sky project is listed on this site; pret's related pmd-red decompilation covers the earlier Red Rescue Team.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "unity-arcanum",
@@ -13852,7 +13874,9 @@
       "https://github.com/elforeign/nfs-most-wanted-mac",
       "https://github.com/elforeign/nfs-most-wanted-mac/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This project makes a native Apple Silicon version of the 2005 PC game Need for Speed: Most Wanted. It works by static recompilation: the game's own x86 code is translated into C ahead of time and compiled for the Mac, with a Metal renderer, CoreAudio sound and native controller support, with no emulator or Wine involved. A Setup app does the translation and compilation on your own Mac and installs the finished game as an app; nothing it builds is meant to be shared.\n\nYou need your own PC copy at version 1.3, either an installed game folder, a zip of one, or disc images plus the official 1.3 update; because the disc and patch executables are copy-protected, Setup also needs an executable containing the 1.3 code. It needs an M1 or later Mac on macOS 14.5 or newer, Apple's free command line tools and about 12 GB of free space during the build. Optionally, your own US or European Xbox 360 copy unlocks that version's world, audio, music, police, cutscenes and textures, chosen detail by detail.\n\nAn F10 menu holds more than 70 settings, including presets that mimic the original PC or Xbox 360 look. Version 4.5.0, released in November 2026, lets players add selected cars from their own copy of Need for Speed: Carbon, adds a stock BMW M3 GTR, underglow, adaptive trigger support, a replay buffer and YouTube streaming, and reduces free-roam stutter by preparing shaders at load time. The online free roam beta from 4.3 has been withdrawn while it moves to a shared server, and the one open issue asks about LAN multiplayer.\n\nThe site also lists NFSMW Recompiled, which takes the Xbox 360 version instead and builds it with the ReXGlue SDK.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "chrono-cross-decomp",
@@ -14852,7 +14876,9 @@
       "https://github.com/vyanhursky/DefJamFFNY-recomp",
       "https://github.com/vyanhursky/DefJamFFNY-recomp/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Def Jam: Fight for NY Recompiled is an unofficial native port of the original Xbox version of the 2004 wrestling and fighting game. It statically recompiles the Xbox code into a program for Windows (Direct3D 11) and for Apple Silicon Macs and x86-64 Linux, including the Steam Deck (Vulkan). A single app handles setup, play, settings, controls, mods, updates and repair. It ships no game files: it checks your copy against a list of supported dumps and builds the game on your own computer.\n\nYou need your own USA Xbox dump, as a disc image or extracted files. PlayStation 2 and GameCube copies cannot be used, and PAL support is an open request.\n\nThe project says all game functionality works. It targets 60 fps with up to 4x internal resolution and widescreen up to 32:9, supports modern controllers with remapping and rumble, and allows up to four local players; network play is not supported. Extras include texture and language mods from an in-app catalogue, locally generated upscaled textures, custom music, a cheat menu, and EA's restored developer menu for setting up any match or story scene. The current stable release is v1.1.1 (November 2026), which fixed Windows updates being blocked by an older launcher. A v1.2.0 beta released days later adds experimental custom fighter packs, which the project says are tested mainly on Windows and not yet played on macOS. Open issues include crashes and silence with larger numbers of custom songs, slowdowns on high-refresh variable-refresh-rate displays, memory growth under investigation, and requests to cut disk usage.\n\nThis is the only Def Jam: Fight for NY project listed on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "sm64ds-decomp",
@@ -15571,7 +15597,9 @@
       "https://github.com/TGP482/SCDA-XBERecomp",
       "https://github.com/TGP482/SCDA-XBERecomp/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This is an unofficial native PC port of the original Xbox version of Tom Clancy's Splinter Cell: Double Agent, which is a different game from the better-known Xbox 360 and PC release of the same name. It works by static recompilation: the game's x86 code is translated to C++ ahead of time and built into a 64-bit Windows program, while the Xbox kernel, Direct3D and DirectSound calls are reimplemented on Windows, with Direct3D 12 for graphics and XAudio2 for sound. It was made with Xbox XBE Recomp, a tool the same author originally wrote for this game.\n\nNo game assets are included. You place your own copy, as an ISO or extracted files, in the assets folder; the first launch compiles the game code for your PC once. Settings are available in the game's own options menu or in an overlay on F10.\n\nThe port goes well beyond the original 640x480, 30 fps console game: native resolutions, render scaling, wider field of view, uncapped frame rate, HDR output, MSAA and SMAA, much higher shadow resolution, ambient occlusion, an optional Shader Model 3 mode modelled on Chaos Theory's PC version, texture dumping and replacement, full mouse and keyboard support and co-op online, over LAN or split-screen. V1 came out in October 2026; V2 the same month added HDR, 5.1 surround and many fixes, and V3 (late October 2026) added texture replacement, split sensitivity and gyro aiming and fixed water physics and ragdolls at high frame rates. Open issues include sky banding with tone mapping, co-op disconnects, a startup crash report, a missing-dialogue bug in one mission and requests for PlayStation button prompts and upscalers. It is the only Splinter Cell: Double Agent project on this site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "katam-decomp",
@@ -15860,7 +15888,9 @@
       "https://github.com/nikolaygorb/ArmyOfTwoRecomp",
       "https://github.com/nikolaygorb/ArmyOfTwoRecomp/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Army of Two Recomp is a static recompilation of the 2008 Xbox 360 shooter Army of Two. The game's PowerPC code from its main executable is translated into C++ and compiled as a native program for Windows, Linux and macOS on x86-64 or ARM64. There is no emulator in the loop; file access, GPU commands, audio and threading are handled by the ReXGlue SDK runtime, with Direct3D 12 and Vulkan backends and an experimental Direct3D 11 backend on Windows.\n\nYou need your own copy of the retail Xbox 360 game, extracted from the disc, matching title ID 4541084C. The project gives checksums to verify against. Building requires CMake, Ninja, Clang and Git; the code generation step runs automatically during the build.\n\nThe author says the game boots to full rendering and runs smoothly. On top of the plain recompilation, the project adds raw mouse look on foot, a frame rate unlock and 16x anisotropic filtering ported from xenia-canary patches, an MSAA fix, a choice of game language, and local split-screen co-op for two or more players. Version 1.5 (November 2026) brought CPU and GPU optimisations and the experimental Direct3D 11 backend, following 1.4 in October, which added split-screen and frame rate improvements. Open issues mention Direct3D 11 bugs and a blue-green tint with a broken weapon shop.\n\nThe site lists two other Army of Two recompilations, both also built with ReXGlue. The README itself points users who want online multiplayer and a GPU-native renderer to OpenPortroid's Army of Two Recompilation, which it says has moved ahead of this project. Genesis5500's Army of Two Recompilation is an experimental Windows port rendering through Direct3D 12.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "mk8-recomp",
@@ -15901,7 +15931,9 @@
     "sources": [
       "https://github.com/dougchansan/mk8-recomp"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "mk8-recomp is a research project that statically recompiles the AArch64 machine code of the Switch game Mario Kart 8 Deluxe into native x86-64 code. It began on top of a fork of the suyu emulator, whose ahead-of-time recompiler and high-level system emulation let a pre-compiled game run without the usual just-in-time CPU translation. The current goal goes further: a standalone native program where the recompiled code is wired to its own Vulkan graphics, audio, input, storage and system services instead of running inside an emulator.\n\nThere are no downloads for players. The project's release policy rules out publishing any binary linked to the game and allows only reviewed source code and tools that contain no game material, so anyone trying it needs their own copy of the game and the technical ability to build it. Older measurements in the README refer to version 4.0.0 of the game.\n\nProgress is reported as numbered internal runs rather than releases. According to the project, the native runtime can now complete full races, including the four courses of the Mushroom Cup with results screens, and October 2026 work fixed dark characters and overly bright bloom, added support for wired Switch-style USB pads and translated shaders for every course. Later runs pushed four-course averages close to 60 fps in the author's tests, but steady 60 fps, stutter on first visits to courses and full gameplay checks are listed as still open. The last numbered release, v0.0.11 in September 2026, belongs to the earlier emulator-hosted phase.\n\nOpen issues include a failed build report and very slow startup on Windows. The site also lists MK8-online, a separate recompilation of version 4.0.1 with a launcher that prepares the build from your own dump and is working on LAN multiplayer.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "kameo-repowered",
@@ -15987,7 +16019,9 @@
     "sources": [
       "https://github.com/LucasPicoli/god-hand-decomp"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This project is a matching decompilation of God Hand, the 2006 PlayStation 2 brawler from Clover Studio and Capcom. Contributors rewrite the game's machine code as C and C++ that, compiled with the original PS2 toolchain (an old GCC-based compiler with the SN linker), rebuilds the North American retail executable byte for byte. It targets the NTSC-U disc, serial SLUS-21503, version 1.00. The README is explicit that decompiling the game is the only aim and that no port is planned, so there is nothing to play here.\n\nTo build it you need your own dump of that US disc; no game data is included, and the setup scripts check the extracted files against known hashes. The build stays byte-identical to retail at every commit: functions start as included assembly and are swapped for C one at a time once they match exactly, with objdiff scoring each unit and the progress figure only allowed to rise.\n\nProgress is published on decomp.dev. When checked in November 2026 it reported about 57 percent of the code matched, close to 90 percent of the roughly 10,500 functions matched, and about 83 percent of the data. Work is active, with commits in mid-November naming newly matched functions, and the single open issue tracks another batch of a dozen matched functions. There are no releases. It is the only God Hand project on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "nfs-carbon-360-recomp",
@@ -17004,7 +17038,9 @@
       "https://github.com/MiniBandit/MKW-3DS",
       "https://github.com/MiniBandit/MKW-3DS/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Mario Kart Wii 3DS is a native Nintendo 3DS version of Mario Kart Wii rather than an emulator. It began as dudewhat's port, is continued by MiniBandit, and since v0.7.0 uses Epic's Redux as the game itself. Kart physics come from Kinoko, an independent recreation of Mario Kart Wii's physics, while rendering, audio and menus are written for the 3DS hardware. The repository holds no Nintendo files; a builder for Windows, macOS, Linux or Docker converts your own disc into an installable CIA plus a folder of game data for the SD card.\n\nYou need the USA release of Mario Kart Wii (game ID RMCE01) as an ISO or WBFS image, roughly 30 GB of free space for the first build, which takes a few hours, and a 3DS running custom firmware. Sound requires dumping the console's DSP firmware once. The project says New 3DS models aim for 60 fps and land between 40 and 60 depending on the course.\n\nVersion 0.7.0 (November 2026) merged Redux in with its two-screen menus and race overhaul, bringing Grand Prix in every class, Time Trials, solo and team VS, both battle modes on all ten arenas, every character and vehicle, and 3DS Miis as drivers. It also made Old 3DS consoles drop opponents to low-detail models when memory runs short, so several heavy courses load again. Everyone had to rebuild from scratch for this version; later code changes arrive as small update CIAs. Online play is not included, and open issues mostly concern failed builds, crashes on certain courses and Old 3DS audio.\n\nOther Mario Kart Wii entries on the site are different in kind: mkw-decomp, the Mario Kart Wii Decompilation and DisMKW reconstruct the original source, and KartPad is a static recompilation for phones and Apple devices.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "war1gus",
@@ -17971,7 +18007,9 @@
     "sources": [
       "https://github.com/SDmodding/TheoryEngine"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "TheoryEngine is a reverse-engineered reimplementation of the engine behind Sleeping Dogs: Definitive Edition. The work was guided by the debug symbols that were shipped with the Steam release, so classes and functions use the original names and are placed in the files the symbols point to. The code is header-only, which the authors chose so it can be dropped into other projects, and the stated aim is a working codebase that resembles the original engine for educational, documentation and modding use.\n\nIt is not a playable port or a full game. It is a reference library for people who mod or study Sleeping Dogs, and it is meant to be read and reused alongside the Definitive Edition rather than run on its own. The repository carries no licence, because the authors say parts of it may be identical or close to the original code; they ask that derivative work stays open source with credit.\n\nThe repository is now archived and read-only. The project says public development has stopped and that further work is being done privately, with the existing source left up for reference. The final public commits, in September 2026, added small file utility functions such as file renaming and file time lookups and tidied the string code. There were never any releases, and the repository has no open issues.\n\nNo other Sleeping Dogs project is currently listed on this site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "einstein-puzzle",
@@ -18053,7 +18091,9 @@
     "sources": [
       "https://github.com/ssxdecomp/ssx3"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "The SSX 3 decompilation is an early-stage project to rebuild the source code of EA's 2003 snowboarding game for the PlayStation 2. Its goal is matching source: C and C++ that, when compiled, reproduces the original executable byte for byte. It targets only the NTSC-U release (SLUS_207.72); the README says other regions and versions might be considered once that one is fully matched. It is not a PC port and produces nothing playable on its own.\n\nThe repository contains no game assets or original code. To build it you need your own NTSC-U disc, a Linux system able to run 32-bit programs (WSL2 on Windows also works), MIPS binutils, Wine, Ninja and Python. The game files from your disc go into a folder in the repository, and the setup scripts split the executable using splat.\n\nProgress is at the very beginning. The project's own matching report, dated 1 October 2026, counts 7 functions matching and 9 partly done out of about 52,000, with everything else still raw assembly. The matched code so far is in small utility areas such as hashing, random numbers and a 2D crowd renderer. The repository also holds written notes contributed in September 2026 from a contributor's work on an SSX 3 port, covering asset formats and their loaders, rendering and lighting, audio and the in-game DJ, characters and menus, cutscenes and rider effects. Recent commits are mostly setup script and README changes, there are no releases, and the issue tracker is empty.\n\nThis is the only SSX 3 project listed on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "castle-master-2-disassembly",
@@ -19138,7 +19178,9 @@
     "sources": [
       "https://github.com/xbret/xenoblade"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This is a work-in-progress matching decompilation of Xenoblade Chronicles for the Wii. The goal is to rewrite the game's code as C and C++ source that compiles back into executables identical, byte for byte, to the originals. The main target is the Japanese release, and the build can also produce the European and US executables, each checked against a known hash. Code and data progress are tracked separately for the Japanese and the EU/US versions on decomp.dev.\n\nIt is a development project, not a port: there is nothing to download and play, and it does not produce a PC version. Anyone building it needs their own copy of the game, from which the main executable and its relocatable modules are extracted into the project folder; the repository itself holds no game assets or assembly. The build uses Python and ninja, runs the original Windows compiler tools through wibo or Wine on Linux and macOS, and relies on objdiff to compare each compiled function with the original.\n\nThe repository dates from 2022, has no releases, and its most recent push was in June 2026. Contributions are welcome, but the maintainers state that LLM-assisted contributions will not be accepted and ask contributors to follow their style guidelines. The single open issue tracks one source file, makecrystal/CMCCrystalInfo.\n\nThe other Xenoblade entries on the site cover different games and use a different method: XCX Recomp targets Xenoblade Chronicles X: Definitive Edition, and two XC2 Recomp projects target Xenoblade Chronicles 2, all as static recompilations of Switch releases rather than decompilations of the Wii original.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "xenogears-decomp",
@@ -19382,7 +19424,9 @@
     "sources": [
       "https://github.com/Skate-2-Team/sk82-recomp"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "The Skate 2 Recompilation Project was a community attempt to turn the 2009 Xbox 360 game Skate 2 into a native PC executable. It used XenonRecomp, the toolchain behind Unleashed Recompiled, to translate the game's PowerPC code into C++ ahead of time, with the team writing its own runtime and renderer to replace the console's hardware. It was a static recompilation, not an emulator and not a decompilation.\n\nThe project never shipped a release. Its README described it as being in its early stages, and the commit history shows work through spring 2025 on the graphics side, such as handling the game's vertex declarations, shader constants, render states, texture format conversion and an FPS counter, followed in May 2025 by an implementation of the XMA audio functions using FFmpeg. In July 2026 the team added a note that the project is no longer being worked on, and the repository has since been archived. No licence file is included.\n\nLike other recompilation projects, it contained no game code or assets and expected users to supply their own copy of the Xbox 360 game. Because there was never a playable build, there is nothing for players to install, and the repository is mainly of interest as a record of the work or for developers studying the approach.\n\nPlayers looking for Skate 2 on PC should look at Skate 2 PC, the other project for this game listed on the site. It is a separate, released Windows port built with the ReXGlue SDK rather than XenonRecomp, offering controller support, adjustable rendering quality and an unlocked frame rate, and it also requires your own game files.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "xenogears-recomp",
@@ -19627,7 +19671,9 @@
       "https://github.com/christianortel/skate2-recompile-pc",
       "https://github.com/christianortel/skate2-recompile-pc/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Skate 2 PC is a community Windows port of the Xbox 360 version of Skate 2. It is built with the ReXGlue SDK, which recompiles the console's PowerPC game code into native x86-64 code ahead of time and translates the Xbox 360 graphics to Direct3D 12. Unlike source-only recompilation projects, it offers a ready-built player package, so no compiler or development tools are needed to play.\n\nYou need your own extracted Xbox 360 game files, the folder containing default.xex and the data directory, from the one supported revision (title ID 4541087F, executable version 0.0.0.2). Disc images or archives must be extracted first. An import script copies and verifies the files once. The port requires 64-bit Windows 10 or 11, a Direct3D 12 graphics card and a controller; a USB DualSense works directly without extra software, while other controllers are still being tested.\n\nFree Skate, the campaign and instant replay work, along with local saves, selectable audio output, unlimited or paced frame rates, and 1x or 2x rendering with an experimental 4x option. The project is careful to say its testing comes from a single Windows PC and about an hour of campaign play, so full completion and wider hardware support are unconfirmed. Known limitations include a black screen before the title, pauses while shaders are prepared, and no true ultrawide support. Version 0.1.1 (October 2026) added a Launch Skate 2.exe launcher for desktop shortcuts and Armoury Crate on handhelds; the game itself was unchanged from 0.1.0, released the same day.\n\nThe site also lists the Skate 2 Recompilation Project, an earlier XenonRecomp-based effort whose team says it is no longer being worked on.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "mhp2g-decomp",
@@ -20855,7 +20901,9 @@
       "https://github.com/Sirhalo23/RidgeRacer6-Recompilation",
       "https://github.com/Sirhalo23/RidgeRacer6-Recompilation/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Ridge Racer 6 Recomp is an unofficial native Windows version of the 2005 Xbox 360 launch racer. The game's PowerPC code is translated to C++ ahead of time and compiled into a Windows program that runs on top of the ReXGlue SDK runtime, which stands in for the console; since v0.1.3 the project uses its own fork of that SDK. It is not affiliated with Bandai Namco.\n\nYou need your own disc image of the US release, title ID 4E4D07D3. The launcher checks the image and copies about 6 GB of game files out of it once, after which the image is no longer needed. Downloadable content you own can be dropped into a folder and is picked up at start. The README spends some time on antivirus warnings: some scanners flag the unsigned runtime library, and the project explains which file is affected and how to check its checksum.\n\nThe project calls it an early test release. v0.1.5 (October 2026) made all six disc languages selectable, added the DLC folder, made the F3 overlay show the frame rate, stopped the launcher overwriting settings changed elsewhere and made the content installer and disc copy safer. A separate Linux test build is also published. Known limitations listed with the release include the game running below full speed on some PCs, stretched videos and mirror on ultrawide screens, no online play and little testing on AMD and Intel graphics or PlayStation controllers. Open issues mention stutter and tearing, music volume and menu music bugs, a startup crash on CPUs without SSE4.1 and Linux display problems. It is the only Ridge Racer 6 project on this site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "dkc2-disassembly",
@@ -22898,7 +22946,9 @@
       "https://github.com/codepdbh/nfsu2-recompiled",
       "https://github.com/codepdbh/nfsu2-recompiled/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This project statically recompiles SPEED2.EXE, the 32-bit Windows executable of Need for Speed: Underground 2, into portable C using an extended fork of the pcrecomp toolkit. The project reports about 27,700 functions lifted with no failures. The generated code is built either as a Windows program that still draws through Direct3D 9, or as an Android app for ARM64 and 32-bit ARM phones, where Direct3D 9 is translated to Vulkan by an embedded DXVK and sound goes through Android's AAudio. In practice the Android version, published as Underground 2 Android Evolved, is where most of the work now goes: it adds a launcher, editable touch controls, tilt steering, Bluetooth pad support, render scaling and frame caps.\n\nNo game code or data is included; you supply the files from your own PC copy of the game. The README documents the specific executable build it was made against and notes that the widescreen hooks are tied to that exact build. Android 10 or later with Vulkan 1.1 is required.\n\nThe project describes itself as a playable race prototype: intros, menus, car customisation, quick races and the free-roam loop work, with AI traffic. Releases come every few days. v0.14.13 (November 2026) fixed half-read game files that caused repeated crashes on some phones, added a fallback for MediaTek PowerVR GPU drivers and a game log for bug reports, and v0.14.14 fixed a crash when returning to the game from another app. Most open issues are automatic crash reports from specific Android phones. Other NFSU2 projects on this site take different routes: NFSU2Recomp targets Apple Silicon Macs, nfsu2-web runs in a browser, NFSU2 for Switch recompiles the original Xbox executable, and OpenUG2 is an early engine rewrite.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "wwe-svr2011-pc",
@@ -22943,7 +22993,9 @@
       "https://github.com/KaikoClanworth1/wwe-svr2011-pc",
       "https://github.com/KaikoClanworth1/wwe-svr2011-pc/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This is an unofficial native port of the Xbox 360 wrestling game WWE SmackDown vs. Raw 2011. It is not an emulator: the game's PowerPC code has been statically recompiled to C++ with the ReXGlue SDK and built into a normal Windows program running on a Xenia-derived runtime. The author states the port was written largely with an AI coding assistant under their direction and testing.\n\nYou need a disc image of your own Xbox 360 copy; the PS3, Wii, PS2 and PSP versions will not work. A launcher installs the game from that image (about 5.3 GB) without changing it, then handles settings, saves, DLC, updates and mods. The PC build targets 64-bit Windows with a Direct3D 12 graphics card and an SSE4.2 CPU, and the project reports 55 to 60 fps on a Steam Deck through Proton. There is also an Android app, and from November 2026 a Switch build for modded consoles.\n\nOn top of the original game it adds resolutions up to 4K at 60 fps, ultrawide support, entrance music and movies from your PC, more logos per created superstar, image import into the Paint Tool, keyboard text entry, and an experimental Vulkan renderer. Releases come frequently: v2.2.2 in November 2026 added mouse menus, arena and entrance porting improvements and the first Switch build, and v2.2.3 days later fixed a Switch black screen, oversized rope shadows and several Android slowdowns. Recent notes also cover peer-to-peer online matches, and many fixes are labelled potential because the author could not fully confirm them.\n\nThe site also lists SVR2011 Recomp, a separate ReXGlue-based Windows version of the same game with its own launcher; this one stands out for its Android and Switch builds and its mod tools.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "persona3-fes-decomp",
@@ -22981,7 +23033,9 @@
     "sources": [
       "https://github.com/snaku/Persona3-FES-Decompilation"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This is a matching decompilation of Shin Megami Tensei: Persona 3 FES for the PlayStation 2, based on the US release (serial SLUS-216.21). In a matching decompilation, contributors rewrite the game's machine code as C source that, when compiled with the right original-era compiler, produces exactly the same bytes as the retail executable. The stated goal is to decompile the whole game. It is not a PC port, and there is nothing to download and play.\n\nAnyone wanting to build or contribute needs their own copy of the US game, since no game data is included. In July 2026 a contributor added a build system based on splat, objdiff and ninja, along with editor support, and the source tree is organised around the game's own subsystems such as battle, the camp menu, events, models and the kernel. Matched functions so far include battle and file-setup routines as well as parts of the RenderWare engine library.\n\nThe project is at an early stage. The README is only a short statement of intent, there are no releases, and the most recent commit dates from early September 2026. Open items include a proposed change to fix the build by switching the game code to a different Metrowerks PS2 compiler version, and an offer of symbols and reverse engineering scripts. It is the only Persona 3 project listed on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "mikompilation",
@@ -23189,7 +23243,9 @@
       "https://github.com/holdmysocks/mcla-recomp",
       "https://github.com/holdmysocks/mcla-recomp/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Midnight Club: Los Angeles Recomp is a static recompilation of the Xbox 360 Complete Edition of the 2008 racing game. Its PowerPC code is translated to C++ ahead of time with the ReXGlue SDK, which also provides reimplementations of the Xbox 360 kernel, GPU and audio. This repository holds the project manifest, function hints, a small host program, SDK patches and build scripts, and produces native builds for Windows, Linux and jailbroken PS5 consoles.\n\nOnly the USA/Europe Complete Edition disc image (title ID 545407F8) is supported, because the fixes are addresses in that exact executable. No game code or assets are shipped: a script extracts what it needs from your own ISO, and the game is recompiled and built on your machine, which takes about 20 GB on Windows.\n\nThe project says the Windows Direct3D 12 build plays career mode, races, the garage and upgrades with sound and a controller at 30 FPS by default, with higher frame-rate targets available; the Windows Vulkan build only reaches the title screen; Linux plays natively for one tester; and the PS5 build holds 30 FPS on a PS5 Pro. The latest release, v1.0.14 from late October 2026, fixes DualSense rumble on PS5 and adds optional haptics and adaptive triggers there.\n\nThe author now says the PC version is no longer maintained, that only PS5 improvements will follow, and points PC players to RenanQueiroz's fork. On the site, Midnight Club: Los Angeles Recompiled (PT-BR) is a community build derived from this project through that fork, adding a Brazilian Portuguese translation, ultrawide support and an installer, while MCLA 4iOS is a separate iPhone and iPad adaptation with its own Metal renderer.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "lombyte",
@@ -25592,7 +25648,9 @@
     "sources": [
       "https://github.com/jellees/mlss"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This is a decompilation of the US Game Boy Advance release of Mario & Luigi: Superstar Saga, the 2003 role-playing game. The project turns the cartridge's machine code back into C source and assembly that build a ROM checked against the original by its SHA-1 hash, so the output is meant to be identical to the retail game. Code that has not been decompiled yet stays as assembly in the repository until it is rewritten.\n\nThe progress figure covers only the Mario & Luigi part of the cartridge; the bundled Mario Bros. game is not part of the work for now. The project's progress badge stood at about 5.7 percent decompiled in November 2026, so most of the game is still assembly. There is nothing to play: no releases and no PC port. Anyone building it needs their own copy of the US cartridge, plus the devkitARM toolchain and a build of the agbcc compiler; the setup has only been tested under WSL2. The repository includes no licence file.\n\nThe repository was created in March 2023 and is active again: about a hundred commits in November 2026 alone match individual functions and decompile sprite code, alongside a merged contribution for save memory handling. There are no open issues, and the README links a Discord server for contributors.\n\nThe site lists one other project for this game, a separate Mario & Luigi: Superstar Saga decompilation that targets the European release and aims for a byte-identical ROM with agbcc; its README states that most of its C code was written with help from AI models.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "ico-decomp-2",
@@ -25674,7 +25732,9 @@
     "sources": [
       "https://github.com/SirSymo/SM2-Recomp"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "SM2-Recomp is an experimental project to run the original Xbox version of Spider-Man 2, the 2004 open-world game, natively on modern Windows. It uses static recompilation: the code in a user-supplied Xbox executable is analysed and translated into native code locally, and a compatibility runtime provides the Xbox kernel services and hardware behaviour the game expects. Graphics go through a native Direct3D 11 renderer, with a software renderer kept for development, and sound now goes to XAudio2 by default instead of an emulated Xbox sound chip.\n\nYou need your own copy of the original Xbox release. The project ships neither the executable nor any game data, and it now reads game data straight from an Xbox disc image by default; the older method using extracted files remains as a fallback but the project says it causes gameplay problems.\n\nThe GitHub repository currently contains only the README, licence and third-party notices, with a link to the project website; no source code or builds have been published there and there are no releases. According to the README, current internal builds play in-game and have been stable through the chapters tested so far (it mentions chapters 1 to 3 in one place and 1 to 4 in another), with save and load fixed but still being validated. Recent work lists widescreen and native UI rendering, internal resolutions up to 4K, frame-rate caps from 30 to 144 FPS or unlocked, Xbox and PlayStation controller support including DualSense adaptive triggers, mouse-look and experimental mod loading. Render distance settings do not work yet, and later parts of the game have not been tested. The project describes itself as not yet release-ready.\n\nIt is the only project for the Xbox Spider-Man 2 on the site; OpenSpideyPS1 covers Neversoft's earlier PlayStation Spider-Man games.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "golden-sun-disassembly",
@@ -26520,7 +26580,9 @@
     "sources": [
       "https://github.com/doldecomp/ttyd"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This is a matching decompilation of Paper Mario: The Thousand-Year Door for the GameCube, hosted under the doldecomp organisation. Contributors rewrite the game's machine code as C and C++ that, compiled with the original Metrowerks compiler, rebuilds the original game code exactly. It is a research and preservation project: there is no PC port and nothing to download and play. It concerns the 2004 GameCube game, not the 2024 Switch remake.\n\nThe only supported version is the original Japanese release, revision 0 (game ID G8MJ01). To build it you need your own disc image of that version, Python and ninja; on macOS a Wine build is needed to run the compiler, and on x86 Linux a small wrapper is fetched automatically. No game assets or assembly are included in the repository. The README is mostly the standard GameCube decompilation template and still carries placeholder progress badges from another project.\n\nProgress is reported on decomp.dev. When checked in November 2026 it showed about 12 percent of the code and roughly 2,000 of 9,770 functions matched, with about 100 of more than 1,200 source files complete. The project dates back to 2021 and work comes in bursts: a run of commits in June and July 2026 rewrote the project's disassembly helper in Rust and matched code for NPCs, events and walking motion, and the most recent commit, in late September 2026, decompiled the Glitz Pit rankings. There are no releases and no open issues. It is the only Thousand-Year Door project on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "sotc-decomp",
@@ -26558,7 +26620,9 @@
     "sources": [
       "https://github.com/Fantaskink/SOTC"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This project is a decompilation of Shadow of the Colossus for the PlayStation 2, rebuilding the game's machine code as C source. It does not target the retail release: it works on the preview version of the game, specifically its main executable SCPS_150.97 and the KERNEL.XFF module, each of which can be built separately. The aim is source that compiles back into the original program; it does not produce a PC port or a playable build.\n\nTo build it you need your own copy of the Shadow of the Colossus preview disc, from which those two files are taken. The build only runs on Linux or WSL2 and uses a MIPS cross-compiler, Ninja and a set of Python tools, plus a script that fetches the original compiler. The project publishes progress for both modules on decomp.dev rather than in the repository.\n\nThere are no releases, which is normal for a decompilation still in progress. Activity is occasional: recent work in late 2025 and February 2026 included build changes and progress on the XFF module. The two open issues ask for a revision of the build system and a script to spot duplicated or inlined code sections. Contributors coordinate through a contribution guide and a Discord server.\n\nTwo other Shadow of the Colossus projects are listed on this site. Shadow of the Colossus (Decompilation) is an archived matching decompilation of the NTSC-U retail release, while the Native Linux Port is a static recompilation of the PAL release that is playable through the first colossus. This project is the one working on the preview build.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "wave-race-64",
@@ -26971,7 +27035,9 @@
       "https://github.com/Sampreeth004/nfs-carbon-recomp",
       "https://github.com/Sampreeth004/nfs-carbon-recomp/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "NFS Carbon Recomp is a static recompilation of the Xbox 360 version of Need for Speed: Carbon. The game's PowerPC code is converted ahead of time into native C++ with the ReXGlue SDK, and the project has written its own Vulkan renderer for the game in place of the SDK's Xenos graphics backend. Its published builds are Android packages, and much of the recent work is aimed at running the game on phones, though the changelog also records PC testing on an NVIDIA RTX 5070.\n\nThere is no README, so details for players come from the release notes and changelog. Each release is a debug-signed APK for arm64 and x86_64 Android devices, and you must supply your own game data; the launcher sends you to a game data setup page if none is found. The sources do not say which region or disc version is expected.\n\nThe latest release, v0.3.12 from October 2026, brought a redesigned launcher with one-tap settings, an on-screen touch controls editor and several renderer optimisations that the author notes were not yet measured. Earlier 0.3.x builds added phone widescreen, faster texture decoding, a threaded GPU command path and turned off an unused car reflection pass. On PC the changelog reports the boot movies, menus, prologue drive and pause menu rendering correctly at 60 fps, while the Android build was still awaiting profiling on real devices. Open issues report crashes on Mali GPUs and some Snapdragon phones and lagging headlights on Exynos chips. The repository has had no new commits since that release.\n\nThe site lists three other Carbon projects: NFS Carbon for Apple Silicon, which recompiles the 2006 PC release for Macs; ReCarbon, an Apple Silicon build from the Xbox 360 disc; and SpeedBreaker: Carbon, which targets SteamOS, Linux and Mac with Windows and iOS builds.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "rage-racer-decomp",
@@ -28152,7 +28218,9 @@
       "https://github.com/PaulCombal/mw2-recompiled",
       "https://github.com/PaulCombal/mw2-recompiled/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Modern Warfare 2 Recompiled runs the Xbox 360 version of Call of Duty: Modern Warfare 2 (2009) natively on 64-bit Windows and Linux. Rather than emulating the console, it recompiles the game's executables ahead of time into native code, backed by a runtime that draws through Vulkan. Both the campaign and multiplayer work, with split screen for up to four controllers.\n\nYou need an ISO of your own Xbox 360 disc, version 1.0.557 (USA or Europe). The launcher checks the image, copies the game into its own folder and fetches title update 6 by itself. The project lists a 64-bit CPU with SSE4.2, a Vulkan 1.2 GPU, about 8 GB of disk space and a controller; the keyboard only covers menus.\n\nBeyond the console version it offers resolutions up to 4K in 16:9, 16:10 or 4:3, frame rate limits above 60, wider field of view, up to 8x antialiasing, 16x texture filtering and sharper shadows, plus profile editing to set rank and prestige or unlock missions, and a beta converter for custom maps made for the PC game. Online play works through private matches and system link over Steam invites, a LAN or a community server; ranked playlists are not supported, and the project says the known security holes in the 2009 network code are patched but advises playing only with people you trust.\n\nThe latest release, v0.8.3 at the end of October 2026, added relay-based live matchmaking and an in-game guide for inviting friends, following late-October releases that added higher anisotropic filtering and shadow quality and shared Steam system link. Open issues include campaign audio clipping, blur with antialiasing on integrated Intel graphics, slowdowns on low-end PCs and requests for bots and a macOS build. It is the only Modern Warfare 2 project on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "openfnaf",
@@ -28557,7 +28625,9 @@
     "sources": [
       "https://github.com/doldecomp/sadx"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This repository, hosted by the doldecomp group, is a decompilation of Sonic Adventure DX for the Nintendo GameCube. Its tooling rebuilds the game's main executable (the DOL) and disassembles the game's REL modules, the first step towards turning the machine code back into readable source. It does not produce a PC port or anything playable on its own.\n\nA notable feature is how many versions it covers: the NTSC-J Preview and NTSC-U Review prototypes, the demos for all three regions, and the Japanese, North American and PAL retail releases. You choose one when configuring the build, with North American retail as the default. Each needs your own copy of that version, from which only the main executable and the REL files are required; for all but the Preview build, some RELs must first be decompressed with the Sonic Adventure Toolset. Building uses Python and Ninja on Windows, macOS or Linux, with Wine or the WiBo wrapper on non-Windows systems, and objdiff for comparing compiled code against the original.\n\nProgress has stopped for now. The last merged work, in July and August 2024, split and labelled the SDK's DVD and EXI code and matched an errno routine, and the repository has had no changes since. There are no releases and no open issues, so the site lists it as stalled.\n\nThe site also lists SADX Cutscene Decompilation, a separate and also stalled effort that decompiles the 206 event scripts of Sonic Adventure DX as a base for mods, rather than the game executable.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "rocket-robot-on-wheels",
@@ -29142,7 +29212,9 @@
     "sources": [
       "https://github.com/PauloUbirajara/asuras-wrath-recomp"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Asura's Wrath Recompiled is a work-in-progress PC port of the Xbox 360 game Asura's Wrath. It statically recompiles the game's PowerPC executable into C++23 using the ReXGlue SDK, so the result runs as a native program on Windows and Linux, with Vulkan or Direct3D 12 rendering. An Android build also exists, but the author labels it experimental and use at your own risk.\n\nYou need your own Xbox 360 disc image of the game, with its contents extracted into a folder next to the executable. Building from source needs CMake 3.25 or newer and a Clang and Ninja toolchain. Prebuilt packages have been posted as releases; the author recommends v0.3.1 from September 2026 for Windows and Linux, while the later v0.3.1.1 and v0.3.1.2 builds were Android experiments that added touch controls.\n\nThe project is open about its limits. It runs, but performance is weak, and the author had to switch to a slower render path to avoid red overlay artefacts on NVIDIA cards, which causes stutter while shaders compile. DLC is not supported. On Android the author reports heavy heat and battery drain and flashing textures. Open issues describe heavy stuttering and black textures, lag on Steam Deck, a heap corruption crash when starting a new game on Windows, and Android crashes.\n\nIn a November 2026 update, the author said work continues slowly in spare time and pointed readers to a separate PC port by another developer that reportedly performs better. No other project for Asura's Wrath is currently listed on this site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "spyro-3",
@@ -29396,7 +29468,9 @@
       "https://github.com/iExplosiveRage/DBZ-Burst-Limit-Recompiled",
       "https://github.com/iExplosiveRage/DBZ-Burst-Limit-Recompiled/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Dragon Ball Z: Burst Limit Recompiled is a native PC version of the Xbox 360 fighting game, made by static recompilation with the ReXGlue recompiler and runtime. The game's PowerPC code is translated into C++ ahead of time and compiled with Clang, so it runs as an ordinary Windows x64 program rather than inside an emulator. A Linux and Steam Deck package is also offered with each release. Since version 0.7.0 a native renderer, which sends the game's draw calls straight to the PC graphics API, is the default, with the older emulated Xbox 360 GPU path kept as a fallback.\n\nThe repository holds no game data. Only the US (NTSC-U) release works, because the code was translated from the US executable; European and Japanese copies are not supported. On first launch you pick your own US disc image, which is checked and copied into place, taking about 3.3 GB.\n\nThe project labels every build alpha. Features include resolutions up to 8K, ultrawide support, frame rates above the original 30, DLSS and FSR, a free camera, an in-game settings menu, a mod folder that can also convert PlayStation 3 models, and online matches through a small lobby server with direct connections between players, no VPN needed. Version 0.7.3 (October 2026) added keyboard controls, achievement popups styled as trophies, an Exit Game option and a switch to turn off Drama Piece cut-scenes, and fixed the window hanging under Linux and Wine. Online rooms are locked to matching versions. Open issues report crashes, lobby trouble, display freezes on Linux, judder at 60 fps, and requests for Android and older macOS builds.\n\nThis is the only Dragon Ball Z: Burst Limit project listed on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "wwf-no-mercy-recomp",
@@ -30524,7 +30598,9 @@
       "https://github.com/Nycolazs/WindWakerHD-Android-Plus",
       "https://github.com/Nycolazs/WindWakerHD-Android-Plus/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Wind Waker HD Recompiled for Android - Plus runs the Wii U version of The Legend of Zelda: The Wind Waker HD natively on Android phones and tablets. It is a static recompilation, not an emulator: the game's PowerPC code is turned into native ARM64 code on your device during a one-time setup, and the graphics run directly on Vulkan. Plus is a fork of the Enhanced fork of an existing Android port, and adds a built-in Brazilian Portuguese translation and Portuguese app, a HUD layout editor, support for Cemu .wua archives, gyro aiming with controllers, menus that fit any screen and crash fixes for Adreno 650 GPUs and 6 GB phones.\n\nYou need your own copy of the game for Wii U from the US, Europe or Japan, as a disc dump with its keys or a Cemu archive. The app contains no game code, files or keys. It requires Android 11 or newer on 64-bit ARM, a Vulkan 1.1 GPU, about 2 GB of storage and 2 GB of free RAM for setup.\n\nVersion 1.13 in October 2026 roughly halved the first-start compile time and added save states that load from anywhere, Cemu content packs that replace game files, and fixes for PowerVR and Huawei GPUs. The latest, v1.14 from late October 2026, brings in code-generation improvements from the upstream Android port that cut CPU use, keeps Link visible while playing the baton, and makes 3x and 4x fast forward run at full speed. Open issues include an assert crash in one interior, disappearing touch buttons and a crash in the on-device recompiler when it uses several jobs.\n\nThe site also lists SwitchWakerHD, which brings the same Wii U game to Nintendo Switch homebrew, and BlueWake among several projects based on the original GameCube Wind Waker.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "samp-source",
@@ -30823,7 +30899,9 @@
     "sources": [
       "https://github.com/NerunSmarts/ForzaRecomp"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "ForzaRecomp is an experimental static recompilation of Forza Horizon, the 2012 Xbox 360 game, aimed at Apple Silicon Macs. It uses the ReXGlue SDK to translate the game's PowerPC code into native C++, which is then compiled into an ARM64 macOS program; this does not recover the original source code. The Xbox 360 GPU is handled through Vulkan running on MoltenVK. The project carries a set of its own patches to the ReXGlue runtime, and a title-specific Vulkan renderer is being developed, with the standard Xenos renderer kept as a fallback.\n\nThere are no prebuilt downloads. You build it yourself on a Mac with Xcode, CMake, Ninja and Python, and you need extracted files from your own disc. Only one disc revision is supported, and the build checks the hashes of the game's three executable modules before applying anything.\n\nThe author is careful to say that building and booting do not mean the game is playable. According to the status notes from early October 2026, the startup logos, title screen, video and audio work, the world loads, textured terrain, trees and cars appear, and the driving HUD responds to throttle input. Rendering faults on car edges remain, steady frame rates and full gameplay have not been confirmed, fullscreen needs more testing, and thermal throttling during play is still being investigated. An iOS build is mentioned but unverified. The repository was last updated in October 2026 and has no open issues. It is the only Forza Horizon project on this site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "cnc-generals-zero-hour-source",
@@ -30950,7 +31028,9 @@
     "sources": [
       "https://github.com/FoxdieTeam/mgs_reversing"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "mgs_reversing, from the FoxdieTeam group, is a matching decompilation of Metal Gear Solid Integral, the expanded Japanese PlayStation release. The aim is C source that, built with Sony's original PsyQ toolchain, produces exactly the same machine code as the game. It is a reverse-engineering project, not a PC port: what it builds is a PlayStation executable, which you then run in an emulator to test changes.\n\nTo use it you need your own copy of Metal Gear Solid Integral; the build compares its output against the hashes of the original executables, and testing requires the original disc image. The tools run on Windows, Linux and macOS, with Python and, outside Windows, Wine. A dev build variant embeds some stage code into the main executable and comes with a helper that relaunches the PCSX-Redux emulator after each rebuild. The README notes that if the main executable changes size the original stage code stops working, and a tool to repack it is only planned.\n\nBoth main executables are fully decompiled: the main game executable (SLPM-86247 and SLPM-86248) and SLPM-86249, a variant with changes centred on the VR version of Snake. The remaining work is in the overlays, the per-stage code the game loads for each area, menu and cutscene. Many of those, from the Loading Dock and Heliport through the Tank Hangar and Holding Cell, are marked complete, while others such as the briefing, ranking and photo screens are still in progress, and the overlays for SLPM-86249 are further behind. Open pull requests continue matching the VR and remaining stage overlays. There are no releases.\n\nThis is the only Metal Gear Solid Integral project listed on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "exult",
@@ -31420,7 +31500,9 @@
       "https://github.com/SansNope/UnleashedRecomp-Android",
       "https://github.com/SansNope/UnleashedRecomp-Android/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Unleashed Recompiled for Android is an unofficial Android port of Unleashed Recompiled, the static recompilation of the Xbox 360 version of Sonic Unleashed. The game's code has already been translated ahead of time into native code, so no Xbox 360 emulation is involved; this fork packages it as an Android app with touch controls, gamepad support, a mod manager for HMM and UMM-style mods, signed in-app updates and a bundled Turnip Vulkan driver for many Qualcomm Adreno GPUs. The repository says it was built with an AI model under human direction, with testing and debugging on real devices.\n\nYou need a 64-bit Android 10 or newer device, several gigabytes of free space and your own Xbox 360 copy of Sonic Unleashed, including its title update and optionally DLC. The app installs these from a ZIP or folder and builds the patched executable itself, so no PC is required. Adreno 710, 725, 732 and 750 are the main targets and Adreno 830 has its own driver; recent Mali GPUs work experimentally, while older Mali generations cannot run it.\n\nThe project says the full game is playable, but warns that performance and stability vary by phone, driver and Android version, and that freezes, graphical artefacts and audio problems are possible. The latest release, v0.6.1 from October 2026, adds a driver for Snapdragon 8 Elite, lifts the 60 FPS cap on high-refresh screens, restores the audio presets missing from 0.6.0, fixes DLC imports and some GPU hangs, and redesigns the launcher. Open issues report crashes or black screens on several older Snapdragon and Mali chips and texture flickering on some Adreno GPUs.\n\nThe desktop project it is based on, Unleashed Recompiled, is listed separately on the site and covers Windows and Linux.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "bfbb",
@@ -31636,7 +31718,9 @@
       "https://github.com/madelrandel-blip/NFSMW-Recompiled",
       "https://github.com/madelrandel-blip/NFSMW-Recompiled/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "NFSMW Recompiled is a native port of the Xbox 360 version of Need for Speed: Most Wanted (2005). It works by static recompilation: the game's PowerPC code is translated into C++ ahead of time and compiled into a Windows program, built on the ReXGlue SDK. Instead of emulating the Xbox 360 graphics chip, it uses a Vulkan 1.1 renderer written for the project that draws the game directly, which the developers say is much faster than GPU emulation. An Android version has been announced but delayed.\n\nYou need your own Xbox 360 copy of the game, as a disc image or an extracted folder; no game data or generated code is included. Supported editions are the USA release and the Spanish, French, German, Italian and English PAL releases, and a single executable detects which one you have. On first launch for each edition, the launcher builds a shader library from your disc,.\n\nThe latest release, 1.0.2 from late October 2026, added the extra PAL editions, playing directly from the ISO without extraction, returning to the launcher with F1, more launcher languages, controller navigation and vibration, and lower CPU use with fewer stutters. The launcher also offers quality presets, higher resolutions, experimental high frame rates, remapping and steering wheel support. Open issues report black screens, a freeze on dedicated NVIDIA GPUs, graphics errors, a crash on the Spanish PAL main menu and antivirus warnings.\n\nThis site lists many other Most Wanted projects. SpeedBreaker, NFSMW Recompiled for iOS and NFSMW-NX also start from the Xbox 360 version, targeting Steam Deck and Mac, iPhone and Switch. Others, such as Need for Speed: Most Wanted for Apple Silicon, NFS Most Wanted Recomp and Most Wanted Android Evolved, work from the PC release instead, and Need for Speed: Most Wanted Decompilation rebuilds the source.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "lba2-classic-community",
@@ -32420,7 +32504,9 @@
     "sources": [
       "https://github.com/2Tie/mh1j"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This is a decompilation of the original Japanese release of Monster Hunter for the PlayStation 2, the first game in the series (serial SLPM-65495). The aim is to rewrite the game's machine code as C that, built with the Metrowerks PS2 compiler and linker the game was made with, reproduces the original executable and its overlays byte for byte. It covers the main program, menus, quest logic, the town, a driver loader and the DNAS online authentication code, whose overlays have to be deobfuscated first. It is a research project with nothing to play.\n\nContributors need the executable and main data archive from their own Japanese disc, Python 3.9 or later, and either WSL2 or the WIBO wrapper on Linux to run the Windows-only compiler tools. The project states that it does not accept code produced by AI tools and forbids AI agents from indexing or modifying the repository.\n\nWork is at an early stage. In November 2026 decomp.dev showed about 225 of roughly 16,000 functions, around 1 percent of the code, as matched, and the README warns that its reporting script currently counts any present function as matched. Recent commits finished every function in the camera code. Known problems include a few mismatches in the main executable caused by Sony libraries that were built with a different compiler, many mismatches in the overlays, whose byte comparison is switched off for now, and a script that breaks with newer versions of one dependency. File formats and game mechanics are to be documented on the project wiki. It is the only Monster Hunter project on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "puzzleleague64",
@@ -33070,7 +33156,9 @@
     "sources": [
       "https://github.com/KIexster/god-of-war-recomp"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "God of War Recomp is an experimental native PC port of the 2005 PlayStation 2 God of War. Rather than emulating the PS2, it uses PS2Recomp to translate the game's MIPS R5900 executable into C++ and compiles the result into a Windows program. Since October 2026 it builds on the runtime from Waffle565's port, which replaces each piece of PS2 hardware with native code: the vector unit microprograms and the game's IOP modules are compiled ahead of time, graphics go through an OpenGL renderer at twice the internal resolution, and sound, controllers and memory cards are native services. This repository supplies the God of War parts: a map of 6,414 functions, recompiler configuration, game overrides, a patch stack and build scripts.\n\nYou need your own copy of the US disc (SCUS-97399). There is no ready-made download: the disc is extracted to files and the whole pipeline is built locally with Visual Studio 2022 Build Tools, Git and Python, using roughly 20 GB of disk space. No game files or generated code are included.\n\nThere are no releases yet. The project says the game boots, shows its menus, starts a new game and plays the opening ship fight with HUD at correct speed. Heavy scenes do not reach 60 fps on its test machine, an intermittent hang of the window thread is being investigated, save/load and movies still need to be verified in this tree, and no full playthrough has been done.\n\nSeveral other ports of the PS2 God of War are listed on the site. God of War Native Port is the base this one follows; God of War Native PC and God of War: native PC port are released builds with launchers; and God of War Tobiichi Port is another work-in-progress recompilation of the same US disc.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "gt4-decomp",
@@ -33108,7 +33196,9 @@
     "sources": [
       "https://github.com/gustavocanepa/gt4-decomp"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "GT4 Decomp is a matching decompilation of the Gran Turismo 4 engine for the PlayStation 2. The goal is C++ source that, built with the original Sony ee-gcc 2.96 compiler, produces exactly the same instructions as the game's main executable, CORE.GT4. Most of Gran Turismo 4's game logic sits in Adhoc scripts, which the separate OpenAdhoc project already recreates; this project covers the executable that runs those scripts. The maintainer is open about the method: AI agents (Claude) driving the project's tools did most of the matching, with each function checked by the compiler and a comparison step rather than by eye.\n\nIt is not something you can play. You need your own copy of the NTSC-U release (SCUS-97328, version 1.01) to extract the executable, plus Linux or WSL and Python to run the build, which then checks that it reproduces your executable byte for byte. No game data is included.\n\nBy the README's November 2026 figures, 30,245 of 30,875 functions match (98 percent), covering about 89.6 percent of the code bytes, and the full build reproduces the original executable, with unmatched parts assembled from a disassembly of your own copy. Around 29 percent of the initialised data is also rebuilt from source. The repository includes written notes on the engine's subsystems, its 509 classes and how C++ hooks into the script engine. There are no releases, and the few open issues are individual functions still to match or rename.\n\nA long-term native port exists as a separate project, GT4 Native, which the README describes as experimental and not playable. A sister Tourist Trophy decompilation shares matched functions with this one. No other Gran Turismo 4 projects are listed on this site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "xoreos",
@@ -35656,7 +35746,9 @@
     "sources": [
       "https://github.com/ChimpsAtSea/Reach"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Halo: Reach Reverse Engineering is a work-in-progress decompilation of the 2010 Xbox 360 game Halo: Reach. It aims to recreate the game's code as C and C++ source, with code and data progress tracked on decomp.dev and an automated build on GitHub. The current target is not the retail release but one internal build: a tag debug Xenon build dated 11 July 2011. Its open issues are written as tasks to match specific engine systems, such as tag resource management and tag group streams.\n\nIt is a research and development project, not a playable port. There are no releases and nothing in it runs the game. The repository contains no game assets or assembly, so anyone building it needs their own copy of that specific build. The code is licensed under GPL-3.0, and the README points contributors to a Discord server for PC and Xbox decompilation.\n\nRecent commits from July 2026 map out the simulation event and entity types and add maths work, merged from outside contributors, and the last push to the repository was at the start of October 2026. The README says little about overall progress beyond the decomp.dev badges, so how much of the game is covered cannot be judged from the repository page alone.\n\nIt is the only Halo: Reach project on the site. The other Halo decompilations listed, Halo 2 Decompilation for the original Xbox and several Halo: Combat Evolved projects, cover different games and platforms.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "nebula-smg-recomp",
@@ -35700,7 +35792,9 @@
       "https://github.com/keepvaibin/nebula",
       "https://github.com/keepvaibin/nebula/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Nebula is a native Windows version of Super Mario Galaxy that needs your own copy of the game. The released version, 1.0.2, works by static recompilation: its setup program reads your disc image, translates the game's PowerPC code into C++ and compiles it on your PC, which requires an internet connection and about 16 GB of free space during installation. The development branch, Nebula 2, takes a different route and builds the game natively from SMGCommunity's Petari decompilation, so nothing has to be compiled at install time. The author says the host, renderer, installer and documentation were written with AI coding agents (Claude) under their direction and testing.\n\nVersion 1.0.2 supports only the North American revision 0 disc (RMGE01) and plays in English, French or Spanish. It needs 64-bit Windows 10 or 11 and a Direct3D 12 GPU. Features include keyboard and mouse, Xbox and Switch Pro controllers with gyro pointing, aspect ratios up to 32:9, high internal resolution, SMAA and FXAA, and FSR 1 upscaling.\n\nThe 1.0.2 release (October 2026) added frame rates above 60 by drawing in-between frames, optional NVIDIA DLSS, and a fix for the game closing after saving. An updated installer later that month replaced the .NET launcher after some antivirus programs flagged it. The project lists crashes when Mario enters or leaves water in several galaxies as a known, unfixed problem. Nebula 2, not yet released, adds the European and Japanese discs, a Vulkan renderer, more controllers, achievements and a mod format.\n\nRelated projects on the site include Petari, the decompilation Nebula 2 builds on, and GalaxyQuest, a VR port also based on Petari. Super Mario Galaxy for the PlayStation 5 is a homebrew build of Nebula's recompilation. SMG Decompilation is a separate decompilation effort.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "bmhero-decomp",
@@ -35984,7 +36078,9 @@
     "sources": [
       "https://github.com/FishB0nes98/Tekken3Recompiled"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "Tekken 3 Recompiled is a preview project for the US PlayStation release of Tekken 3, SLUS-00402, built on the psxrecomp toolkit and its recomp-ui launcher. The repository holds two things. The main download is a hybrid recompilation that turns the PlayStation code into a Windows program and is kept as a reference for how the game behaves and renders. Alongside it the author is building a separate host-native port that draws the game directly at the window's real aspect ratio; the project calls that an early playable slice, not yet content-complete.\n\nYou need your own CUE/BIN image of the US disc. The easy-setup package downloads pinned build tools on first run, generates the game code locally and needs at least 4 GB of working space. The headline addition, Jun Kazama as a playable character, also requires two specific arcade sets from Tekken Tag Tournament and Tekken 3 that you supply yourself. Other additions include a true 16:9 widescreen mode, extra costumes, separate music and effects volume, a mods manager and tools for extracting and re-importing the game's textures.\n\nAll releases so far are pre-releases from September 2026. v0.1.4 fixed Jun's first-time arcade import; v0.1.3 the same day fixed most Jun bugs, gave her three costumes and her own stage, and added a new launcher with key mapping and a disc library. Remaining problems the author lists include broken Jun portraits in some screens, Jin's music on her stage and Jin's moves in her move list. Open issues report audio lagging behind video, the launcher not saving master volume, conversion errors and discs that are not accepted. It is the only Tekken 3 project on this site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "flatout-2-decomp",
@@ -36022,7 +36118,9 @@
     "sources": [
       "https://github.com/ZackWilde27/FlatOut-2-decomp"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "This is a personal, early-stage attempt at decompiling the PC racing game FlatOut 2 into C++ source. The author is open about the scope: they say they are working on it in their spare time and cannot promise to finish a project of this size. It is not a matching decompilation, it does not aim to rebuild the original executable exactly, and it does not yet produce anything you can play.\n\nMost of the value in the repository today is for people who want to help with the reverse engineering. Alongside the author's partial C++ recreation of the game code, it includes the working Ghidra project for FlatOut2.exe, made with Ghidra 11.0.3, an untouched copy of the original Ghidra analysis for comparison, a small Steam-related source file and a Python script for extracting files from the game's internal archives. Because these are analysis files rather than a port, there is nothing here for a player to install; anyone using the project would need their own copy of the PC game to examine.\n\nThe repository has no releases and no open issues. Its last updates were in October 2025, when the author cleaned up the repository, moved code around and fixed the Ghidra file. The same author also runs a decompilation of FlatOut: Ultimate Carnage. It is the only FlatOut 2 project on this site, so for now there is no playable native port of the game listed here.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "nfs3recompiled-android",
@@ -36584,7 +36682,9 @@
       "https://github.com/raulzrrs/letsgo-recomp",
       "https://gbatemp.net/threads/lets-go-recomp-a-native-pc-port-of-pokemon-lets-go-eevee-via-static-recompilation.685419/"
     ],
-    "checked": "2026-10-16"
+    "checked": "2026-10-16",
+    "about": "Let's Go Recomp is a native Windows port of Pokémon: Let's Go, Eevee! and Let's Go, Pikachu! for the Nintendo Switch. It is not an emulator: the game's ARM64 code is translated into C and compiled for your PC, while a runtime based on LAS Recomp stands in for the Switch's system services, audio, controllers and NVN graphics, which run on Vulkan.\n\nYou need your own copy of either game, from cartridge or eShop and from any region, extracted into its exefs and romfs folders; XCI and NSP files must be unpacked first. Version 1.0.0 of either game and Eevee 1.0.2 get every option, other updates are accepted with fewer features, and Eevee 1.0.0 is the most tested. The launcher copies your files and recompiles the game once, which the project measured at about 22 minutes on a 20-thread CPU. It needs 64-bit Windows 10 or 11, a Vulkan 1.3 GPU and about 6 GB of disk.\n\nAdditions include up to 4K internal resolution, SMAA, TAA or FSR 3.1, ambient occlusion and indirect lighting, experimental 60 or 120 fps in the overworld with frame generation, sharper interface images, keyboard and mouse, and LayeredFS mods such as fan translations. The project says the game has not yet been played from start to finish on the port. The latest release, v0.7.6 from November 2026, fixed a freeze after long sessions, blank text on drivers that refuse to share enough memory, a battle hang on NVIDIA and lost wild battles, and gave Eevee 1.0.2 every option. Open issues still report crashes, missing text on some Intel GPUs and requests for Linux and Android builds.\n\nOnline play, the Poké Ball Plus and a second player are not supported. No other Let's Go project is currently listed on this site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "halo-64",
@@ -37124,7 +37224,9 @@
     "sources": [
       "https://github.com/HaydnTrigg/Castaway"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-10-17",
+    "about": "This is a matching decompilation of The Sims 2: Castaway, aimed at its Wii release. The goal is C and C++ source that compiles back into exactly the original game code. Progress for both code and data is tracked on decomp.dev, and a Discord server is linked for contributors.\n\nOnly one version is supported: the PAL release, revision 1, with the game ID R42P69. The repository contains no game assets or assembly, so you need your own disc image of that version, which the build accepts in common formats such as ISO, RVZ, WIA or WBFS and which can be deleted after the first build. The setup follows the standard GameCube and Wii decompilation template: Python and Ninja on Windows, macOS or Linux, Wine or the wibo wrapper where needed, and objdiff to compare compiled functions with the originals. The result is a rebuilt copy of the Wii game, not a PC port.\n\nThe project is at an early stage. It was created in August 2025, and the work visible in the repository so far is mostly setup and cleanup: build configuration, type fixes and an updated DWARF debug dump, with one outside pull request merged in January 2026. There have been no code changes since then, no releases and no open issues.\n\nNo other project for Castaway is listed on this site; related entries such as Sims2DECOMP and The Urbz GameCube decompilation target different games.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "wotw-decomp",
@@ -37579,7 +37681,9 @@
     "sources": [
       "https://github.com/veritr1x/nfsmw-recomp"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-10-17",
+    "about": "This is a work-in-progress recompilation of the 2005 PC Black Edition of Need for Speed: Most Wanted. Instead of emulating, it translates the instructions in the game's speed.exe into C ahead of time and compiles them with a native host. The runtime, translator, hosts and mod support come from the author's recomp-kit, pulled in as a submodule; this repository holds only the Most Wanted configuration, symbols, tests, an analysis script and documentation. Direct3D 9 is translated through a single shader generator to Metal on macOS and iPad, Vulkan on Linux and Windows, and WebGPU in the browser.\n\nYou need your own installed copy of the PC Black Edition, and only one exact speed.exe build, pinned by checksum, is accepted. Building also needs Python and Ghidra, which analyses the executable locally; nothing from the game is included. Online play is stubbed out, and the Windows-only extras shipped in the game folder, such as the ASI loader, are not used because the widescreen fix and a 120 Hz simulation are built into the port's own core mod.\n\nThere are no releases. The project says macOS reaches the menus and races, but only one or two in five scripted race runs finish; an intermittent hang while a race loads is the main blocker. Windows checks on 1 November 2026 drove two races and exited cleanly, and browser play in Chromium was checked on 5 November. The iPad and Linux results date from an older kit version. Open issues report poor frame rates in the browser.\n\nThe site lists many other Most Wanted projects. Need for Speed: Most Wanted for Apple Silicon and Most Wanted Android Evolved also recompile the PC speed.exe, while NFSMW Recompiled, SpeedBreaker and NFSMW Recompiled for iOS start from the Xbox 360 release.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "puyodisasm",
@@ -38116,7 +38220,9 @@
       "https://github.com/shaneomac1337/SVR2011-Recomp",
       "https://github.com/shaneomac1337/SVR2011-Recomp/releases"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-10-17",
+    "about": "SVR2011 Recomp is an unofficial Windows version of the Xbox 360 wrestling game WWE SmackDown vs. Raw 2011. The game's PowerPC code is recompiled ahead of time to native x86-64 with the ReXGlue SDK, whose runtime supplies the Xbox 360 kernel, audio, input and a Vulkan graphics backend derived from Xenia. The project carries its own patches to that runtime, for example removing a music-player delay that held menus to about 45 fps and presenting frames on an even 60 Hz beat. A launcher copies the game files from your disc image once, after which the game runs as an ordinary Windows program.\n\nYou need your own Xbox 360 disc image of the USA/Europe release; the launcher checks all 366 files against it and refuses anything else. The release zip needs 64-bit Windows 10 or 11, a Vulkan-capable graphics card and about 6 GB of space.\n\nThe project lists exhibition matches with entrances, finishers and cutscenes, backstage brawls, menus, Create a Superstar, Superstar Threads and the Paint Tool as tested and playable, usually at 60 fps. Road to WrestleMania, Universe, the other create modes and online are untested, and the README warns that Road to WrestleMania can crash at any time. Testing so far has been on one Windows 11 PC with an AMD Radeon RX 7900 XT. Version 0.5.0 (October 2026) added a beta Native renderer that draws directly in Vulkan instead of emulating the Xbox 360 graphics chip, giving sharper distant textures and lower GPU use; the earlier Classic renderer stays the default. Open issues include a failed first launch, the wrong GPU picked on a laptop, and requests for Linux and online play.\n\nThe site also lists the WWE SmackDown vs. Raw 2011 PC Port, a separate ReXGlue-based Windows port of the same game.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "wet-recomp",
@@ -39322,7 +39428,9 @@
       "https://github.com/bep1s69/nfsmw-ios",
       "https://github.com/bep1s69/nfsmw-ios/releases"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-10-17",
+    "about": "NFSMW Recompiled for iOS runs the Xbox 360 version of Need for Speed: Most Wanted (2005) natively on iPhone and iPad. The console's PowerPC code is recompiled ahead of time for Apple's arm64 chips using the ReXGlue SDK, and the game is drawn by a native Metal renderer rather than an emulated Xbox 360 graphics chip; version 0.6.0 removed the old emulated renderer settings entirely. The maintainer says much of the code was written with Claude Code and tested on real devices.\n\nThe app contains no game files or translated game code. You need an ISO of the USA Xbox 360 edition (title ID 454107D9) from your own disc; other editions are not supported yet, and the game is English only. It requires iOS or iPadOS 18 or later and is installed through SideStore and LiveContainer, without a paid developer account. Building it yourself needs a Mac with Xcode.\n\nThe project says the whole game is playable: career, quick races, challenge series, pursuits and free roam, with Black Edition content switched on. Additions include phone-friendly touch controls, controller support, frame rate caps up to 120 fps on suitable displays, external display output, a save manager that imports Xbox 360 and PC saves and syncs through iCloud Drive, and Extra Options ported from a PC mod. Version 0.6.0 (November 2026) added local Wi-Fi racing with compatible Android builds and experimental cross-play with the PC game, redesigned menus with first-launch setup, and lower memory use. Known problems include memory limits on low-RAM devices, some misaligned iPad HUD elements and an MSAA bug at 16:9.\n\nOther entries for this game on the site are SpeedBreaker, a recompilation for Steam Deck, Linux and Mac with its own experimental iOS package, and NFSMW-NX, a homebrew Switch port.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "skyroads-port",
@@ -40760,7 +40868,9 @@
       "https://github.com/Nilbong/COD4-Rewrite",
       "https://github.com/Nilbong/COD4-Rewrite/releases"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-10-17",
+    "about": "CoD4 Rewrite is a reimplementation of Call of Duty 4: Modern Warfare multiplayer, written in Rust on the Bevy game engine. It is neither a decompilation nor a recompilation of the original executable: the game logic is written anew, and the original game is used as a data source, with maps, models, textures and sounds read at runtime from an existing installation, in the same spirit as OpenMW for Morrowind.\n\nTo play you need Windows, a graphics card with Vulkan or DirectX 12, and your own installed copy of CoD4, Steam or retail, at patch 1.7. Installations of Black Ops, Modern Warfare 2 multiplayer and World at War are optional and, when found, add their guns, maps and characters. A small launcher fetches and updates the prebuilt game from the project's releases, so no compilers are needed unless you want to build from source. Matches can be played against bots, in splitscreen, or in online private matches, and there are options such as a Bodycam gunplay mode and bots trained on your own recorded play.\n\nThe latest release, v0.4.5 from October 2026, focused on bots that imitate real players' habits and aim, added text chat, opened the full Headquarters training base with timed runs, gave guns weighted recoil and movement, made the new menus the default, and added a final killcam, post-match summary, TAA and lighting changes, along with crash fixes. Earlier October releases brought a server browser, game folder selection, kill streaks and MW2 content. The only open issue is a request for Quantum of Solace support.\n\nThe site also lists KisakCOD, a buildable source reconstruction of Call of Duty 4 aimed at modders. KisakCOD rebuilds the original game code, whereas CoD4 Rewrite is a new engine that only borrows the game's assets and covers multiplayer.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "wkbre",
@@ -41704,7 +41814,9 @@
     "sources": [
       "https://github.com/fuddlesworth/pokebw2"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-10-17",
+    "about": "This is a decompilation of the Nintendo DS games Pokémon Black 2 and White 2: the original machine code has been rewritten as C source that, built with the original Metrowerks compiler, reproduces the US/European retail ROMs of both games byte for byte from a single source tree. It follows the layout and conventions of the pret Pokémon decompilations and borrows symbol names from the swan reverse engineering project. A native PC port is the long-term aim, and the documentation already collects notes on platform assumptions and open porting questions, but no port exists yet.\n\nBuilding needs Linux, WSL or macOS with Python 3.11 or later, ninja and LLVM, plus your own dumps of the US/Europe Black 2 and White 2 ROMs (the DSi-enhanced releases), which the build checks against known hashes. No ROMs are included, and there are no releases since the output is a rebuilt copy of the game.\n\nProgress is tracked automatically on ByteMatch, which in November 2026 showed all of the roughly 43,000 functions and all code and data matched for the default Black 2 version. Work has since moved to naming and documentation: nearly all open issues are tasks to give readable names to particular overlays, shared headers and libraries, and commits were still landing in mid-November. The repository also documents the game's data formats, trainer AI and battle and field scripts, converts sprite cells and animations to JSON, and supports modified builds. It is the only Black 2 and White 2 project on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "fe7-us-decomp",
@@ -43100,7 +43212,9 @@
       "https://github.com/R-drg/the-simpsons-game-nx",
       "https://github.com/R-drg/the-simpsons-game-nx/releases"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-10-17",
+    "about": "This is a native Nintendo Switch port of the Xbox 360 version of The Simpsons Game from 2007. It does not emulate the Xbox: the PowerPC code in the game's executable is statically recompiled to C++ with the ReXGlue SDK and compiled for the Switch, and the graphics are redrawn by the port's own Vulkan renderer running on the open-source NVK driver from Mesa. It is built from TheSimpsonsGameRecomp, a PC recompilation of the game, and reuses the Switch layer and renderer from a Switch port of Tony Hawk's Project 8.\n\nIt runs as homebrew, so it needs a Switch that can run unsigned software, plus your own USA retail Xbox 360 disc, either as a disc image or as an extracted folder. Other releases will not work, because the program is compiled from that exact executable; an open issue asks for European support. A browser-based installer checks your copy and combines it with the build locally. The game must be started in title takeover mode rather than from the Album, and the target of a locked 30 fps relies on overclocking with sys-clk to the tested handheld settings; at stock clocks the project measured about 19 fps.\n\nVersion 1.0.0 arrived in early October 2026, followed days later by 1.0.1, which moved cutscene decoding to FFmpeg so movies no longer fall behind their audio, and reduced frame drops in the Springfield hub. Known issues are short hitches the first time an effect appears and dips to 26 to 28 fps in heavy particle scenes. Docked mode was not measured.\n\nThe site also lists a separate matching decompilation of the US Nintendo DS version of The Simpsons Game, which is an entirely different game and a research project rather than a playable port.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "silly-reencounter",
@@ -43881,7 +43995,9 @@
       "https://github.com/Wyrelade/DW2-PC",
       "https://github.com/Wyrelade/DW2-PC/releases"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-10-17",
+    "about": "Digimon World 2 PC Port runs the 2000 PlayStation game natively on Windows and Linux. It is a source port, not an emulator or a remake: the same author's Digimon World 2 decompilation turned all 1,088 of the game's functions into C that rebuilds the retail disc byte for byte, and this project compiles that C for the PC, replacing the PlayStation's libraries and hardware with a layer built on SDL3. Battles, damage, digivolution, DNA, the domains, text and music run on the original game logic, while drawing uses the graphics card through Vulkan, with a software renderer as a fallback.\n\nYou need your own disc image of the US release (SLUS-01193). On first start the program checks the image file by file against a list of hashes, rejects anything that does not match, and builds a data pack from it; the downloads themselves contain no game data. A Spanish fan-translated image is also accepted.\n\nOn top of the original game the port offers 3D rendering at up to 8x the PS1 resolution, a 16:9 view made by widening the camera, removal of the PS1's polygon wobble, optional sharpening, frame blending for high-refresh monitors, a 2x to 8x speed-up, gamepad and keyboard remapping, two-player VS mode, movies and streamed CD audio. The latest release, v1.0.0-beta from 15 October 2026, adds Spanish through Alemito's fan translation; v0.2.2 the same day fixed dungeon floor tiles turning black. The project says every scene has been tested on its own, but nobody has yet reported a full playthrough to the ending on the port. Open issues mention fullscreen not working for one user.\n\nOn the site, the Digimon World 2 Decompilation is the matching decompilation this port is built from; it rebuilds the PS1 executable and is not playable on PC by itself.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "pokepark-wii-decomp",
@@ -46504,7 +46620,9 @@
     "sources": [
       "https://github.com/OZORDI/tt-decomp"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-10-17",
+    "about": "The Rockstar Table Tennis Decompilation is an attempt to turn the Xbox 360 executable of Rockstar Games Presents Table Tennis (2006) back into readable C++ source. It is a non-matching decompilation: the aim is clean, idiomatic code with meaningful names and proper types rather than a byte-identical rebuild of the original. The intended end result is a cross-platform build for Windows, macOS and Linux using SDL2 and OpenGL 3.3, which does not exist in playable form yet.\n\nThe project is built around AI assistance. It ships a Model Context Protocol server that gives Claude, or another MCP-capable tool, access to function metadata, class layouts, call graphs, pseudocode and scaffold code from a static recompilation, and contributors ask the model to lift individual functions into C++ which they then review. To take part you need your own copy of the Xbox 360 game, Node.js for the server and CMake and Ninja to build. No game assets are included.\n\nAccording to the README, 3,413 of the binary's 13,545 functions have been decompiled, about 25 percent, and 8,263 are documented with addresses. The last commits, in April 2026, moved more than 160 placeholder functions out of a single stub file into their proper source files and replaced Xbox 360 kernel and system library stubs with working platform code. There are no releases or open issues, and no activity since April.\n\nThe site lists two playable alternatives for the same game that work differently: Rockstar Games presents Table Tennis - Windows PC Recompilation, a ReXGlue static recompilation built locally from your ISO, and Table Tennis for Linux, a Linux and Vulkan fork of that recompilation.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "mafia-re",
@@ -46544,7 +46662,9 @@
     "sources": [
       "https://github.com/Marvisak/mafia-re"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-10-17",
+    "about": "Mafia-RE is a byte-exact decompilation of the 2002 PC game Mafia: The City of Lost Heaven. The aim is C++ source that, when built with the same Microsoft compilers and linkers the original developers used, produces files identical to the shipped game. The repository bundles those old toolchains, mainly Visual C++ 6.0 plus the DirectX 8 SDKs, and uses reccmp, a comparison tool from the Lego Island decompilation community, to score how closely each rebuilt function matches the original. Progress is reported per binary and per function.\n\nThe main target is version 1.2, the last official patch and the version sold on Steam. Patch 1.1, version 1.0 and Steam's 2010 rebuild of the setup program are covered where they differ, with the differences switched by build flags. You do not need the game to build the source, but you need your own copy of version 1.2 to compare the result with the original. A modern Visual Studio build is also possible; it runs but does not match byte for byte.\n\nThe game is split across several files, and they are at different stages. The project reports the data and joystick libraries and the setup program as done and identical to the originals, and every source file of the LS3DF engine library as written, with most functions compiling to the original instructions. The main Game.exe is about half written; the rebuilt executable reaches the main menu, plays the intro cutscene and enters the game. Because no unprotected copy of the 1.2 executable survives, it is compared against a copy reconstructed from the retail files. There are no releases, since the output is source code rather than a ready-made port, and no open issues. It is the only Mafia project on this site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "doshin-gc-decomp",
@@ -48198,7 +48318,9 @@
       "https://github.com/drakolordx7/KillzoneRecomp",
       "https://github.com/Tzeentchnet/KillzoneRecomp-Extended"
     ],
-    "checked": "2026-11-11"
+    "checked": "2026-11-11",
+    "about": "KillzoneRecomp is a native Windows port of Killzone, Guerrilla Games' 2004 PlayStation 2 shooter. The game's code is statically recompiled to C++ with the PS2Recomp toolkit, so it runs as an ordinary PC program, while the PS2's graphics, vector unit, video decoder and sound hardware are handled by components from the PCSX2 emulator linked in as libraries. It added mouse and keyboard aiming, frame rates above 60, higher resolutions, ultrawide support, field of view sliders and a settings launcher with Direct3D 11, Direct3D 12 and Vulkan renderers.\n\nNo game files are included. You need your own disc image of the US release, SCUS-97402, or, from v0.1.6, the European release, SCES-52893; the program detects which one you have. It runs on 64-bit Windows 10 or 11 and, since v0.1.5, any CPU with SSE4.1 rather than requiring AVX2.\n\nThe author declared the project abandoned, and the repository was archived in November 2026, so issues and pull requests are closed. The last build, v0.1.7-alpha (November 2026), fixed sound effects gradually dropping out after level changes and cutscene stutter above 60 fps, and added mouse-wheel weapon switching. Problems still listed at that point include crashes or broken rendering on some missions with threaded graphics turned on, a lock-up in level 2, getting stuck in the floor at the start of mission 4, and stutter in big fights. Work continues in a fork listed separately on this site, Killzone Recomp Extended, which combines US and PAL support in one executable and adds more renderer and display options, but does not offer prebuilt downloads.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "burnout-crash-recomp",
@@ -49948,7 +50070,9 @@
       "https://github.com/whylurking/IsaacRecomp",
       "https://github.com/whylurking/IsaacRecomp/releases"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-10-17",
+    "about": "IsaacRecomp is a native rebuild of the original 2011 Flash version of The Binding of Isaac. The project translates all of the game's ActionScript code into C++ and runs it on a new engine written from scratch, so it needs neither Flash Player nor an emulator. The author says AI helped make it. Builds are offered for 64-bit Windows and Linux, Android 7.0 and later, and the Nintendo Switch as homebrew.\n\nThe game itself is not included. You need your own Steam copy of The Binding of Isaac, plus Wrath of the Lamb if you want the expansion, and you copy the game's Isaac.exe next to the recomp; graphics, sound and music are read from that file at startup. The original, Wrath of the Lamb and Eternal Edition versions are recognised automatically and keep separate saves, and a converter brings over Flash saves. On PC it needs OpenGL 3.3, with an OpenGL ES fallback for handhelds since the latest release.\n\nGame logic still runs at the original 30 ticks per second, checked against the Flash game, while drawing is interpolated to 60 fps or higher at native resolution. Controllers, rebinding, analog movement and touch controls work without extra tools, and optional mods, all off by default, add extras such as stat displays, widescreen and a new character. The latest release, v1.6.0 from November 2026, added four mods: Good Saac with 22 fixes for bugs in the Flash games, Continuum for resuming runs, Challenge Lab for custom challenges and Marksman for completion marks, plus OpenGL ES support and fixes. Open issues are mostly feature requests, plus a windowed-mode black line and mod conflicts.\n\nThe site also lists repentogxm, a PS Vita port of the later Repentance, which is a different game.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "project-1944",
@@ -50108,7 +50232,9 @@
     "sources": [
       "https://github.com/Megami-Decomps/dds-decomp"
     ],
-    "checked": "2026-10-17"
+    "checked": "2026-10-17",
+    "about": "This is a matching decompilation of both Shin Megami Tensei: Digital Devil Saga games for the PlayStation 2, worked on in one repository because the second game reuses much of the first's engine. The project reconstructs readable C from the retail executables and checks every build against the originals, so the output only counts if it is identical to the shipped program. It states clearly that this is a research and documentation project, not a port, and cannot be used to play either game.\n\nTwo versions are supported, both from North America: Digital Devil Saga (SLUS_209.74) and Digital Devil Saga 2 (SLUS_211.52). You need your own disc image of whichever game you want to build, from which the required files are extracted locally; scripts and data stay out of the repository because they are retail content. Building runs on Linux x86-64 or WSL2 with Python, Ninja and the original-era compiler that the setup script downloads. Functions that are not yet decompiled still come from assembly, so the project warns that a matching build does not mean the work is finished. Progress for each game, counting only code that has been turned into source, is published on decomp.dev.\n\nThe repository was created in September 2026 and is very active. Commits in November 2026 were working through menu, field and script functions, including notes on original bugs that are fixed only behind an optional FIX_BUGS switch. Its documentation already covers script formats, field resources, battle data and experimental development builds. The only open issue asks for Japanese version support.\n\nNo other Digital Devil Saga project is listed on this site. The project credits the Persona 3 and Persona 4 decompilations, both also listed here, for SDK layout and naming conventions.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "incredibles-decomp",
@@ -50986,7 +51112,9 @@
     "sources": [
       "https://github.com/gamboozino/ngbrecomp"
     ],
-    "checked": "2026-10-18"
+    "checked": "2026-10-18",
+    "about": "Ninja Gaiden Black Recompiled is a PC port of the 2005 original Xbox game Ninja Gaiden Black, with native builds for Linux (as an AppImage, suited to the Steam Deck) and 64-bit Windows, plus an experimental Android version. It is a static recompilation rather than an emulator: the game's own code is translated ahead of time with a modified version of sp00nznet's xboxrecomp, and a dedicated Vulkan renderer takes over the game's Direct3D calls instead of emulating the Xbox GPU. Some parts, such as the GPU model and the audio voice processor, are adapted from xemu.\n\nYou need your own copy of the retail US release (title ID 5443000D), which the program checks for. On first start it asks for your disc image or extracted game folder and installs the game, about 6 GB. A GPU with Vulkan 1.3 support is required; Android needs version 10 or newer and has only been tested on a Pixel 9a. A macOS build exists as an unsupported community contribution.\n\nThe project says the game plays at a steady 60 fps on modest hardware and adds render resolutions up to 10x, widescreen and ultrawide with the HUD moved to the corners, keyboard and mouse with rebindable controls, mods loaded from a folder, skippable cutscenes and 5.1 surround. Releases have come rapidly since v0.9.0 in mid-October 2026; the latest, v0.9.63 from 13 November 2026, adds a HUD aspect option and fixes cave-wall specks at higher resolutions and rebound buttons misfiring after message boxes. Known issues include a faint line on the pause-menu dagger at higher resolutions, and the Windows build has mostly been tested under Proton and a virtual machine.\n\nThe site's other Ninja Gaiden entries, Ninja Gaiden II Recompiled, openNG2 and IzunaRecomp, cover the Xbox 360 sequel rather than this game.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "gr2-pc",
@@ -51031,7 +51159,9 @@
       "https://github.com/HayatoG/gr2_pc",
       "https://github.com/HayatoG/gr2_pc/releases"
     ],
-    "checked": "2026-10-18"
+    "checked": "2026-10-18",
+    "about": "This is a native PC port of the PlayStation 4 version of Gravity Rush 2. The original game code is run directly on the PC's x86-64 processor rather than through a CPU emulator, while the PS4's system libraries are reimplemented and the console's GPU commands and shaders are translated to Vulkan. It shares its core with the same author's port of The Last Guardian, and recent builds pull in fixes from their inFAMOUS work. A bilingual English and Portuguese launcher lets you pick the game folder and language.\n\nNo game files are included. The port expects the US release, CUSA03694, with update 1.11 merged over the base game, roughly 28 GB, taken from your own console. Sound currently needs one audio library from your own PS4 firmware; a software replacement is planned. The project lists stable 30 fps at 1080p, working menus, gameplay and cutscenes on Linux, and support for DualSense, DualShock 4, Xbox and other pads, including real or simulated motion and touchpad input, plus mouse camera control. Intel CPUs, which lack an AMD instruction set the game uses, are handled by rewriting those instructions.\n\nBuilds are produced automatically on every change; the newest at the time of writing is from 24 October 2026. It fixes a Windows cutscene freeze caused by a deadlock between shader capture and the GPU thread and lets dumps that include the DLC loader boot. Windows builds are still marked as not yet tested in game, saves and the open world are still being tested, and macOS is planned. Open issues include per-GPU problem reports, freezes on some AMD cards, flickering foliage, a mission that will not progress, and requests for other regions, more languages, higher resolutions and 60 fps. It is the only Gravity Rush 2 project on this site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "tlg-pc",
@@ -51076,7 +51206,9 @@
       "https://github.com/HayatoG/tlg_pc",
       "https://github.com/HayatoG/tlg_pc/releases"
     ],
-    "checked": "2026-10-18"
+    "checked": "2026-10-18",
+    "about": "This project is a native PC port of The Last Guardian for PS4. Instead of emulating the console's processor, it loads the game's own executable and runs that code directly on a PC CPU, while a rewritten runtime stands in for the PS4 system libraries (threads, files, controller input, audio and saves) and the graphics commands and shaders are translated to Vulkan using the video code from the shadPS4 emulator. It builds on earlier PS4 ports of God of War III and Bloodborne.\n\nYou need your own dump of the game: the US release CUSA03627 or the European CUSA03745, with update 1.03. No game or firmware files are included. Sound depends on one audio library copied from your own console's firmware; without it the game runs silent. The EU version offers 15 languages against four in the US one.\n\nReleases are automatic builds rather than numbered versions. The late October 2026 build merged a batch of community changes: configurable resolution from 720p to 5120x1440 with ultrawide support, NVIDIA DLAA and FSR 3.1 anti-aliasing, a Japanese text option, a choice of confirm button and several crash fixes. The game runs at a 30 fps default like the PS4, with 60 fps and unlocked modes marked experimental, and adds mouse camera, remappable keys, SMAA and sharpening filters and simulated motion controls for pads without a gyro.\n\nLinux is the tested platform; the Windows build is produced automatically but, per the project, not yet tested in game, and macOS is only planned. Open issues include crashes on a range of NVIDIA and AMD cards, a reported freeze on Windows, problems climbing Trico, and reports that the ultrawide option or the frame rate setting has no effect. It is the only Last Guardian project on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "skies-of-arcadia-legends-recomp",
@@ -51118,7 +51250,9 @@
     "sources": [
       "https://github.com/ogdanimal/SkiesOfArcadiaLegends-Recomp"
     ],
-    "checked": "2026-10-18"
+    "checked": "2026-10-18",
+    "about": "Skies of Arcadia Legends: Recompiled is a native port of the GameCube RPG to Windows, Linux, macOS on Apple Silicon and 64-bit Android. It works by static recompilation: the game's PowerPC code is translated to native code ahead of time, while graphics, sound and input are handled by hardware code taken from the Dolphin emulator. On top of the original it adds 16:9 and ultrawide output with repositioned HUD, 60 fps through frame interpolation, higher internal resolution, a controllable camera, save states, adjustable battle and field speed, and remappable keyboard and controller input.\n\nNo download contains the game. The launcher imports and patches your own disc image once, and accepts the original USA, European or Japanese release (game IDs GEAE8P, GEAP8P and GEAJ8P) in common formats such as ISO, RVZ or GCZ. The European disc offers four languages, and the Japanese disc keeps its Japanese text and voices.\n\nThe project calls itself a beta. Version 0.83.0 (October 2026) fixed a large slowdown on older processors without FMA support, made Android switch to whichever controller is pressed so Bluetooth pads work beside a handheld's own, enabled camera control on the European and Japanese discs, and stopped auto-save from deleting an older save before a new one is written. A Windows-only test build published the same month aims for further CPU speed gains. Open reports include poor performance on laptops and older hardware, scattered graphical glitches and missing background elements, distorted Dreamcast music in a cutscene, and requests for more save slots and cheat codes.\n\nThis is the only Skies of Arcadia Legends project listed on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "black-xbe-recomp",
@@ -51162,7 +51296,9 @@
       "https://github.com/TGP482/BLACK-XBERecomp",
       "https://github.com/TGP482/BLACK-XBERecomp/releases"
     ],
-    "checked": "2026-10-18"
+    "checked": "2026-10-18",
+    "about": "BLACK XBE Recomp is an unofficial PC port of the original Xbox version of Black, made with the Xbox XBE Recomp tool. Rather than emulating the console, it translates the game's Xbox executable into native code for Windows, and adds graphics options and full keyboard and mouse support.\n\nNo game data is included. You place an ISO or the extracted files of the USA or European release in the assets folder and start BLACK.exe; the first launch compiles the game code for your machine, which only happens once. The project lists Windows 10 64-bit, a CPU with SSE4.2 and POPCNT, a Direct3D 12 capable GPU, 4 GB of RAM and about 3 GB of disk space as the minimum. Building from source with Visual Studio 2022 is also documented and can take 30 to 90 minutes on slower machines.\n\nOptions include any resolution in place of the original 640x480, render scaling, field of view from 45 to 140 degrees, an uncapped frame rate, HDR10, MSAA and SMAA, longer draw distance, SSAO or GTAO, and gyro aiming. The latest release, V3 from late October 2026, added texture dumping and replacement, split horizontal and vertical sensitivity, invert options, a controller deadzone, colour-blind modes and profiles that work across languages, and fixed effects vanishing at high FOV and a missing Xbox voice filter. Open issues mention V3 failing to compile or launch for some users, key bindings not persisting, a folder path with accented characters breaking setup, and requests for persistent checkpoints and subtitles.\n\nThe site also lists Black 2006 Recomp, another native port of the same Xbox game built with the separate XboxRecomp toolchain. It uses a launcher that installs build tools, supports Linux through Wine or Proton and adds gameplay sliders, whereas this one focuses on display, graphics and input options.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "fci-recomp",
@@ -51250,7 +51386,9 @@
       "https://github.com/OAleex/OpenShao",
       "https://github.com/OAleex/OpenShao/releases"
     ],
-    "checked": "2026-11-11"
+    "checked": "2026-11-11",
+    "about": "OpenShao is an unofficial PC version of Mortal Kombat: Shaolin Monks made by statically recompiling the original Xbox executable into native code, rather than emulating the console. The recompiled game runs on Windows 10 or later with Direct3D 12 or Vulkan, and on Linux with Vulkan. A launcher handles setup, updates, mods and settings, and it reads the game in place from an image, a folder or the default.xbe file.\n\nYou need your own copy of the original USA or Europe Xbox release; the launcher checks the executable, archives and movies, and converted or renamed images from other releases are rejected. The project also lists an x64 CPU with SSE4.2 and POPCNT as a requirement. It plays with a controller or with keyboard and mouse, including a mouse-driven camera, and supports two-player local co-op.\n\nVersion 0.5.0, released in November 2026, added a Survival Mode that is unlocked through a secret in the story, an optional harder Monk difficulty alongside a new Easy setting, optional restoration of unused original dialogue, Vulkan on Windows, frame rate caps up to 240 fps while the game logic stays at 60 Hz, 5.1 audio and ten pages of save slots. A follow-up 0.5.1 fixed a crash in Goro's Lair on Monk difficulty. Widescreen, ultrawide and render scaling are available, with 4:3 as the default.\n\nThe project says some graphical problems remain, that the bundled Mortal Kombat II and The Suffering demo do not run, and that some effects stutter briefly the first time their shaders compile. Open reports include frame rates well under the high refresh targets on some machines and requests for HD texture packs and cheat menus. It is the only Shaolin Monks project listed on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "army-of-two-recompilation-openportroid",
@@ -51294,7 +51432,9 @@
       "https://github.com/OpenPortroid/ArmyOfTwoRecompilation",
       "https://github.com/OpenPortroid/ArmyOfTwoRecompilation/releases"
     ],
-    "checked": "2026-10-18"
+    "checked": "2026-10-18",
+    "about": "This is an unofficial PC port of the 2008 Xbox 360 version of Army of Two, made by static recompilation. The console's PowerPC code is translated to C++ with the ReXGlue SDK and compiled as a native 64-bit Windows program. Instead of emulating the Xbox 360 GPU, the port has its own Direct3D 12 renderer that translates the game's draw calls, and it precompiles shaders during loading screens to reduce stutter.\n\nNo game files are included. You need the European Xbox 360 release, either as a disc image or extracted files, plus Title Update 2; the DLC packages are optional. The launcher installs everything from those files into about 6 GB of space. It needs Windows 10 or 11 and a Direct3D 12 GPU; a separate build covers CPUs without AVX2.\n\nThe campaign can be played solo, in split-screen or in online co-op, and versus works online against players and bots, all without EA's servers. Graphics options go well past the console's 720p, with anti-aliasing, ambient occlusion, ultrawide support and field of view sliders, and there is full keyboard and mouse support with rebinding. Version 1.5.0 (November 2026) moved online play onto Steam's relays so no VPN or open ports are needed, and added a public server browser, join codes, a split-screen guest in versus and more versus settings. Open issues include connection drops since 1.5.0, a crash in the Extras menu after the campaign, a slight delay when shooting and a request for Linux and Steam Deck support. The site lists two other Army of Two recompilations, both also built on ReXGlue: Army of Two Recomp and a separate, experimental Army of Two Recompilation by another author. This one is the project with its own renderer and server-free online play.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "super-mario-wonder-recomp",
@@ -51562,7 +51702,9 @@
       "https://github.com/xenophobentx/takedawn",
       "https://github.com/xenophobentx/takedawn/releases"
     ],
-    "checked": "2026-10-18"
+    "checked": "2026-10-18",
+    "about": "Takedawn is an unofficial static recompilation of the original Xbox version of Burnout 3: Takedown. The game's x86 code is translated to C ahead of time with the author's xboxrecomp toolkit and built into a native program for Windows, Linux, the Steam Deck, Apple Silicon Macs and, experimentally, Android 13 handhelds with Snapdragon chips. It runs the original 2004 game with its own cars, tracks and physics; the project stresses that it is a port, not a remaster, and that the graphical and audio extras are options on top.\n\nYou need your own disc image of one of the three supported retail releases: North America, or either of the two European discs. On first start the program checks the image and installs the game data from it. No game data is distributed. For full speed the project says you need roughly the power of a Steam Deck.\n\nAdditions over the console include up to four times the original resolution, widescreen and ultrawide with a corrected HUD, 60 fps crash cameras, music and 60 fps in split screen, custom soundtracks from your own MP3 or FLAC files, texture upscaling options and a mods folder. Version 0.3.0 (November 2026) added online play with quick play, private games by code and a game browser, and 0.3.1 a day later added a relay server for players whose ports are closed and fixed lobby settings getting out of sync. Known issues include online games ending when the host leaves, the accelerator sometimes stopping on Macs after Crash events, and some wrong button prompts; open issues mention stretched or warped HUD elements, blur missing at uncapped frame rates and split-screen tyre tracks. The site also lists Reburn 3, a separate project that recreates Burnout 3 through reverse engineering rather than recompiling the original code.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "thebigs2-recomp",
@@ -51967,7 +52109,9 @@
       "https://github.com/VibinToast/JetForceGemini-Recomp",
       "https://github.com/VibinToast/JetForceGemini-Recomp/releases"
     ],
-    "checked": "2026-10-18"
+    "checked": "2026-10-18",
+    "about": "Jet Force Gemini: Recompiled, by VibinToast, is a PC port of the Nintendo 64 shooter for Windows, Linux and the Steam Deck. It is a static recompilation built with the N64Recomp tooling: the game's code is translated from your ROM and compiled as a native program, so no emulator runs during play. Rendering goes through Direct3D 12 on Windows and Vulkan on Linux. The repository has since been renamed JetForceGemini-Recompiled.\n\nNo game code or assets are included. You need your own US ROM in big-endian format, matching the SHA-1 hash given in the README. Prebuilt releases are offered, or you can build from source with Visual Studio on Windows or Clang on Linux.\n\nThe project describes the game as fully playable. It adds dual-stick and mouse-and-keyboard controls with over-the-shoulder aiming, display frame rates up to 240 Hz, widescreen, ambient occlusion, auto save, unlimited continues, skippable cutscenes, cheats and level warp tools, and an optional official 4K texture pack installed from the launcher. Version 1.3.1 (October 2026) introduced a Get Mods page with more than 20 official mods, such as a minimap, new weapons and a dodge, expanded the mod API for new weapons and enemy types, and shipped over ten languages; 1.3.2 fixed a save-selection crash on Linux the same day. The roadmap names 1.4 as the next release, with real-time lighting. Open issues include multi-controller mapping, glitchy door transitions, a corrupted sign texture and crashes after installing mods, alongside proposals for an Android build and RetroAchievements.\n\nThe site lists several other Jet Force Gemini projects: a human-made matching decompilation, tk22's separate Jet Force Gemini Recomp for Windows, and Jet Force Capricorn, a recompilation using the revision 0 ROM with its own UI and gameplay tweaks.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "fh2-recompiled",
@@ -52009,7 +52153,9 @@
     "sources": [
       "https://github.com/Gabrick75/fh2-recompiled"
     ],
-    "checked": "2026-10-18"
+    "checked": "2026-10-18",
+    "about": "FH2 Recompiled is an unofficial static recompilation of the Xbox 360 version of Forza Horizon 2. Instead of emulating the console's processor, it converts the game's PowerPC executable into C++ ahead of time and compiles that into a native program for ARM64 Android phones and x86-64 Linux. It is built on the ReXGlue SDK, which supplies a reimplemented Xbox 360 kernel and emulates the Xenos GPU on Vulkan. An experimental native renderer, adapted from the nfsmw-nx project, draws the game's GPU commands directly in Vulkan using shaders translated from your own files; it is much faster but still has some image errors.\n\nThe release APKs contain no game data. You need your own copy of the USA edition of Forza Horizon 2 for Xbox 360 (title ID 4D530AA4), dumped from your disc. The Android launcher can read the disc image directly. The project lists Android 8.0 or later, a Vulkan 1.1 GPU, at least 4 GB of RAM and around 8 GB of free storage.\n\nThe game boots and races, but the project says frame rates on phones are far below the original console because GPU emulation is the bottleneck. Collision is imperfect on Android, some menu options are missing, and the open issue list is dominated by black screens and freezes on particular Mali and Adreno devices. Version 0.4.5 (November 2026) made the stretch-to-fill option render the world at the phone's own aspect ratio instead of distorting a 16:9 image, and undid a v0.4.4 floating-point change that made car wheels and trim flicker. The release before it added beta frame generation.\n\nThe site also lists FH2MP, which is unrelated: it is a replacement online server for the Xbox One build of Forza Horizon 2 running on PC, not a port.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "lp-engine",
@@ -52315,7 +52461,9 @@
       "https://github.com/ondrejeder/Driveclub-pc-wrapper",
       "https://github.com/ondrejeder/Driveclub-pc-wrapper/releases"
     ],
-    "checked": "2026-10-18"
+    "checked": "2026-10-18",
+    "about": "Driveclub-PC is a hobby fork of the shadPS4 PlayStation 4 emulator, set up specifically to run the 2014 racing game Driveclub on Windows. It is not a recompilation or a source port: the game still runs inside an emulator. The fork starts from GR2fork and adds a Driveclub launcher with settings, extra frame-rate modes, anti-aliasing and filtering options, stability fixes and speed-ups to the emulated GPU command processing. Almost all of the underlying code comes from shadPS4.\n\nNothing from the game or the console is included. You need your own dump of the CUSA00093 base game together with the 1.28 update, plus the PS4 system modules from your own console. Only CUSA00093 with update 1.28 has been tested; other regions are accepted but treated as experimental. Before booting, the launcher checks the game folder, title ID, update version and firmware and explains what is wrong. Gamepads work through SDL.\n\nThe latest release, 0.2.5 from October 2026, offers 30 FPS, 60 FPS, 60 FPS with frame generation and an experimental 120 FPS mode, and adds a custom save location, clearer firmware and region checks, graphics fixes at higher render resolutions and audio fixes. Earlier October releases added render resolutions up to 2160p, background shader compilation and native ultrawide output with a wider field of view. The project says 60 FPS holds steady on its test laptop, where GR2fork averaged about 51.\n\nOpen issues include reports that it does not start on Linux or a ROG Ally, missing rain drops on the windshield, overly bright tunnels, camera shake in replays, and requests for DLC and wider regional support. No other Driveclub project is listed on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "athelas",
@@ -52844,7 +52992,9 @@
       "https://github.com/griches/EternalDarknessRecomp",
       "https://github.com/griches/EternalDarknessRecomp/releases"
     ],
-    "checked": "2026-10-19"
+    "checked": "2026-10-19",
+    "about": "Eternal Darkness Recomp turns the 2002 GameCube game Eternal Darkness: Sanity's Requiem into a native program for Apple silicon Macs, 64-bit Windows, and Linux including the Steam Deck. It is a static recompilation: DolRecomp translates the game's PowerPC code into C, which is compiled for your machine and runs on GXRuntime, a layer that supplies the GameCube's CPU state, devices and SDK services and draws the GX graphics through Metal, Direct3D 12 or Vulkan. A PlayStation 5 version is kept in a separate repository by the same author.\n\nOnly the European disc (GEDP01) is supported, as a disc image of your own copy; the US disc is refused by the launcher and installers. Nothing from the game is in the repository. On Mac and Linux the first start translates the disc and builds the game, which takes a few minutes on a Steam Deck; the Windows download comes with the program ready-made and reads the graphics, sound and music from your disc. HD texture packs in Dolphin's format are supported.\n\nThe port adds native resolution up to 4K, widescreen and ultrawide, in-between frames for high-refresh screens, optional third- and first-person cameras in beta, pause-menu save slots and a debug menu. Version 0.9.4 in October 2026 added HDR, a photo mode and ambient occlusion, and the latest release, v0.9.6 from late October 2026, fixed heavy slowdown on Linux and the Steam Deck by building all of the game's code optimised. Open issues report high CPU temperatures, slow motion when the frame rate drops, a hang on a Poe quote screen, models briefly vanishing and audio problems.\n\nThe site also lists the Eternal Darkness decompilation, a separate matching decompilation of the US GameCube release aimed at becoming a source-level modding base rather than a ready-to-play port.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "tekken-tag-2-recomp",
@@ -53026,7 +53176,9 @@
       "https://github.com/santiquiroz/gears-of-war-2-pc-port",
       "https://github.com/santiquiroz/gears-of-war-2-pc-port/releases"
     ],
-    "checked": "2026-10-19"
+    "checked": "2026-10-19",
+    "about": "This is an unofficial native port of Gears of War 2 from the Xbox 360. The retail game's executable is statically recompiled into x64 code with the ReXGlue SDK, so it runs as a normal program rather than under emulation. The project points out that an earlier fan port was based on a leaked 2008 development build, whereas this one uses the complete retail game. Windows is the main target; Linux and SteamOS builds and an Android APK are offered as experimental.\n\nNothing from the game is included. You need your own retail Xbox 360 copy, either as a disc image or an extracted folder containing default.xex and the GearGame data. The port was built from the US disc, and the project says other releases such as the European one are untested and may crash.\n\nThe project marks Act 1 as playable but a full campaign playthrough as unfinished, though one user reports finishing every act. Features include 1440p and 4K internal rendering, FSR 1, FSR 3.1 and FSR 4 upscaling, frame generation, HDR10, ultrawide, texture packs, an optional native renderer, and System Link, split-screen and experimental internet co-op. The latest release, v0.4.3 from November 2026, stopped Android crashing when you leave and return to the app, cut CPU use on phones, shrank the game binary by keeping Xbox 360 registers in host registers. Open issues include AMD driver crashes and smearing, audio loss, Mali GPU crashes and requests for Title Update 6.\n\nTwo related projects are listed on this site. gears2-nx builds a Switch homebrew version from this port's code generation data, and COGBox packages its own recompilations of Gears of War 2, 3 and Judgment behind one launcher with a separate Direct3D 12 renderer.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "dragon-age-origins-recomp-2",
@@ -53111,7 +53263,9 @@
       "https://github.com/Masterllgod/naruto-storm-2-port-nativo",
       "https://github.com/Masterllgod/naruto-storm-2-port-nativo/releases"
     ],
-    "checked": "2026-10-19"
+    "checked": "2026-10-19",
+    "about": "Naruto Storm 2 Native Port runs the Xbox 360 version of Naruto Shippuden: Ultimate Ninja Storm 2 natively on Android phones and Windows PCs. It is not an Xbox 360 emulator: the game's executable is statically recompiled from PowerPC into ARM64 and x86-64 code, and graphics go through an adapted Vulkan 1.1 backend tuned for phone GPUs. The repository itself holds documentation, screenshots and release downloads only, not the port's source code or any game files. Its documentation is in Portuguese.\n\nYou need your own Xbox 360 copy of the game, and the executable must match the one the port was built from exactly. The project publishes the expected hash and says North American and Japanese discs work, while the European PAL release does not. On Android you install the APK, point it at the game folder and allow file access; on Windows you run the executable and choose the same folder. Minimums are Android 11 on ARM64 with Vulkan 1.1 and 4 GB of RAM, or 64-bit Windows 10 with an AVX CPU. Expect brief stutters the first time each scene appears, while shaders compile.\n\nThe latest, v0.5.43 from November 2026, stopped the app crashing at launch on Android 11 and 12 when online and made frame generation lighter in performance mode. The previous release added AMD-based frame generation up to 4x and fixed freezes on ARM devices caused by the GPU command ring. Recent releases ship only the Android APK; the last Windows package was v0.3.1 in October 2026. Open issues report crashes in story mode, graphical problems on PowerVR and some Mali GPUs and aspect ratio bugs.\n\nThe same author has similar ports listed on this site for Storm Generations, Storm 3 Full Burst, Storm Revolution and Rise of a Ninja; this page covers Storm 2 only.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "naruto-rise-of-a-ninja-port",
@@ -53246,7 +53400,9 @@
       "https://github.com/hachi23/unicorn_overlord_pc",
       "https://github.com/hachi23/unicorn_overlord_pc/releases"
     ],
-    "checked": "2026-10-19"
+    "checked": "2026-10-19",
+    "about": "Unicorn Overlord PC is a native Linux and Windows port of the PlayStation 4 version of Vanillaware's Unicorn Overlord. The project describes itself as neither an emulator nor a decompilation. Because the PS4 and a PC both use x86-64 processors, it takes the game's own executable from your dump, links in the bundled system modules, applies a few small patches and runs the code directly on the PC's processor. A runtime of about 700 PS4 system functions stands in for the console's operating system, covering memory, threads, files, audio, video, controllers, saves and offline replacements for PSN features, and graphics are drawn with Vulkan. A launcher installs the dump on first start.\n\nOnly one dump is supported: the Asian release CUSA36381 with the 1.04 update merged in, or the Hong Kong 1.05 package, about 7 GB. Other regions are refused because their executables differ. That release has Japanese and Chinese text; English needs a fan patch, and other languages can be added from the text files of a Switch copy you dumped yourself. A Vulkan 1.3 graphics card is required, and owned DLC packages can be dropped into a folder.\n\nThe project says the prologue, chapter 1 and its first battle have been played, with saving and loading working, but the game has not been finished and the developer tests on a single AMD laptop. The latest stable release, v1.5.2 from November 2026, speeds up the title screen and world map on AMD graphics under Windows and fixes a crash at very wide resolutions; v1.5.1 added the Russian Switch fan translation. Test builds carry an experimental native renderer that the project says is faster on weak GPUs. Open issues include start-up errors on some GPUs and trouble exiting the game. No other Unicorn Overlord project is listed on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "scooby-doo-mystery-mayhem-pc",
@@ -53574,7 +53730,9 @@
     "sources": [
       "https://github.com/Nycolazs/EoWRecomp"
     ],
-    "checked": "2026-10-19"
+    "checked": "2026-10-19",
+    "about": "EoWRecomp is a static recompilation of The Legend of Zelda: Echoes of Wisdom for the Nintendo Switch. The game's ARM64 machine code is translated into C ahead of time and compiled for the target machine, while a runtime stands in for the Switch's Horizon operating system and its NVN graphics API, drawing with Vulkan (through MoltenVK on Macs). It is built on LAS Recomp, a similar project for Link's Awakening, another Zelda game by the same studio, Grezzo, and on an Android port of that work. Targets are Linux, Windows, Apple Silicon Macs and Android.\n\nYou need your own copy of version 1.0.0 of the game with no update applied, as an NSP or XCI package, plus the keys from your own console. The app recompiles the game code on your own device; only around 40 MB of code is extracted, and the rest of the data is read directly from your package rather than copied.\n\nThe project is in early development and not playable through. On Linux the recompiled game boots, plays its opening and reaches the first controllable scene with working input. All of the game's code, around 296,000 functions, recompiles, but title screen, audio, saves and full playthroughs are still listed as goals. The only release, alpha 1 from October 2026, is explicitly a preview of the app rather than the game: macOS and Android builds that open a start screen and set the game up, tested on an M1 MacBook Air and an Android emulator but not yet running the game itself. The Windows build is untested. An open pull request reports the game running on an Android handheld, which had not been merged when checked. It is the only Echoes of Wisdom project on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "the-order-1886-pc-port",
@@ -53614,7 +53772,9 @@
     "sources": [
       "https://github.com/IgorAugustoHH/The-Order-1886-PC-Port"
     ],
-    "checked": "2026-10-19"
+    "checked": "2026-10-19",
+    "about": "TOport is a native Windows 10 and 11 port of The Order: 1886, the 2015 PlayStation 4 exclusive. Rather than emulating the console's processor, it runs the game's original x86-64 code directly on the PC and translates only what differs between the platforms: Sony's system functions are reimplemented and the GPU commands and shaders are converted to Vulkan. A launcher handles setup, so you point it at the game folder and press play. Added on top are NVIDIA DLSS in place of the game's own temporal upscaling, frame caps up to 120 fps, an in-game settings menu, 23 languages and keyboard and mouse controls mapped onto the pad buttons.\n\nNo game files are included. You need your own dump of the US release, CUSA00785, with the 1.02 update merged in; the launcher checks the version and refuses others. The European release and several other 1.02 editions are accepted on an experimental basis. The project asks for a Vulkan 1.3 GPU with 6 GB of video memory, 16 GB of RAM and a page file on an SSD; GTX 10-series cards currently render the scene as black silhouettes.\n\nThe latest pre-release, v0.1.7 (November 2026), fixes the flickering global illumination that was the port's best-known visual bug, starts preparing each area's shaders before you reach it, adds a stereo downmix of the 7.1 audio and a shooter-style mouse. Known problems listed by the project include remaining lighting flicker in places, black spots on some faces and experimental output above 1080p and on 21:9 screens; open issues report crashes, flicker and low frame rates on various AMD, Intel Arc and older NVIDIA cards. The site also lists The Order: 1886 PC Native Port, a separate project that takes a similar native-code approach but builds on the SpartanPort code base and shadPS4's video core.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "shiloh-x-files",
@@ -54414,7 +54574,9 @@
     "sources": [
       "https://github.com/Subarasheese/pes6decomp"
     ],
-    "checked": "2026-10-23"
+    "checked": "2026-10-23",
+    "about": "The PES6 decompilation reconstructs C source for Pro Evolution Soccer 6 on the PlayStation 2, working from the PAL executable SLES-542.03. It is a matching decompilation, so each function counts as done only when it compiles with the original compilers to exactly the same machine code. Besides the main executable, it covers the 26 code overlays the game loads from its archive and an auxiliary program. It produces no PC port and nothing playable; it is a research base.\n\nTo build it you need your own PAL disc to extract the executable, which must match the published size and SHA-1, plus Linux or WSL, Python and MIPS binutils. The original Sony ee-gcc and Metrowerks compilers are not supplied and have to be obtained separately. Parts of the game that have not been recovered yet are taken from your own executable when linking, so a complete local build reproduces the original code and data.\n\nBy the README's current figures, 10,991 of 34,901 functions match exactly (31.5 percent), but they cover only about 5.8 percent of the code bytes. The project also accepts non-matching C reconstructions, kept separately and labelled with how closely they resemble the original; counting those, C exists for about 63 percent of functions and 27 percent of the code, with their types and layouts described as provisional. Most game code turned out to come from a Metrowerks compiler, and the repository includes research notes on systems such as ball physics. Sony SDK and runtime library sources are shared with the GT4 decompilation. Work is active as of November 2026; there are no releases and no open issues.\n\nThis is the only Pro Evolution Soccer 6 project listed on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "heroes-of-mana-decomp",
@@ -66117,7 +66279,7 @@
     ],
     "needsOriginal": true,
     "playable": null,
-    "summary": "Static recompilation of the Switch 2 Ocarina of Time remake to C, with a reimplemented system layer and the console's NVN2 graphics calls replayed on Vulkan. A builder app compiles the game on the player's PC from their own dump; it plays from Kokiri Forest onward with open rendering and crash bugs, and needs a GPU with mesh shaders.",
+    "summary": "Static recompilation of the Switch 2 Ocarina of Time remake to C, with a reimplemented system layer and NVN2 graphics replayed on Vulkan; a builder app compiles it on the player's PC from their own dump. The repository and the developer's GitHub account went offline on 13 November 2026; the developer has said it will return elsewhere.",
     "tags": [
       "switch2",
       "zelda",
@@ -66128,7 +66290,7 @@
       "https://github.com/NotRexed/Hookshot",
       "https://github.com/NotRexed/Hookshot/releases"
     ],
-    "checked": "2026-11-11"
+    "checked": "2026-11-13"
   },
   {
     "slug": "nx2navi",
@@ -66174,7 +66336,9 @@
       "https://github.com/tangerineturtle1/NX2navi",
       "https://github.com/tangerineturtle1/NX2navi/releases"
     ],
-    "checked": "2026-11-11"
+    "checked": "2026-11-11",
+    "about": "NX2navi is a static recompilation of the Nintendo Switch 2 release of The Legend of Zelda: Ocarina of Time, game version 1.1.1, into a native x86-64 program for Windows with a Vulkan renderer. Nothing is emulated. The launcher is Windows only, though a build script also works on Linux.\n\nNo game files are included; you need a .nup dump of the game from your own console. You place the setup program next to that dump, and the launcher it installs checks the files, downloads the build tools, compiles the game once (the latest notes say 10 to 25 minutes) and prepares shaders, then keeps the port updated and rebuilds only what changed. The project asks for Windows 10 or 11, an SSE4.2 CPU, 16 GB of RAM, about 30 GB of free space and a Vulkan 1.3 GPU; cards without mesh shader support get a fallback.\n\nThe project calls itself early but playable, with areas such as Kokiri Forest, Kakariko Village and Death Mountain running at 60 fps or more on current GPUs. Options include ultrawide, resolutions up to 5K, DLSS, FSR 3.1 and FSR 4, frame generation and HDR. Version 0.10.0 in November 2026 fixed physics, water and sound bugs above 60 fps and let the next frame start earlier on AMD cards, and 0.10.1 the same day stopped video memory filling up while moving. Known problems include memory exhaustion in Hyrule Field on 16 GB machines, failures on integrated AMD GPUs and a rare particle crash.\n\nSeveral other Switch 2 Ocarina of Time recompilations are listed on this site: Hookshot, Ocarina Recomp, Ocarina of Time PC Recomp, OoT PC Recomp and the Rust-based Echora. NX2navi is a separate codebase with its own installer and launcher,; its added code is readable but all rights reserved.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "recompia",
@@ -66222,7 +66386,9 @@
       "https://github.com/Dittobyte/Recompia",
       "https://github.com/Dittobyte/Recompia/releases"
     ],
-    "checked": "2026-11-11"
+    "checked": "2026-11-11",
+    "about": "Recompia runs the Nintendo Switch 2 game Pokémon Pokopia natively on Windows and Linux, including the Steam Deck. It is a static recompilation: rather than emulating the console, a launcher translates the game's code and compiles a PC program on your machine, then translates the game's shaders. The README names pokopia-native as its parent project and says Recompia is developed primarily with AI under the supervision of its maintainers, with every commit reviewed and tested.\n\nYou need your own extracted copy of the game at version 2.0.1a, as folders with the base game and update or as a single .nup or .nx package; the project supplies no game files or keys. The first setup compiles the game in minutes and then builds the shader cache, which the README says can take one to two hours and can be paused.\n\nOn top of the game it adds Link Play, which lets players visit each other's islands over a local network or the internet and also works with pokopia-native players, save import from the Eden and Ryujinx emulators, remappable controller, keyboard and mouse controls, high resolutions and HDR. FSR 3 and DLSS options exist, but the project says they do not look good yet. Releases arrive several times a day; the latest, v0.13.0 from 13 November 2026, roughly halves game build time, cuts shader translation time sharply, lists public Link Play rooms in the game's own Visit a Friend menu, and adds an experimental seamless co-op mode in which each visitor keeps their own story progress. Open issues include an endless loading screen on some PCs, a GPU reset on the Legion Go S and texture corruption at non-integer render scales.\n\nThe site also lists Pokopia Recomp, a separate Windows port of the same 2.0.1a version built on its author's nxrecomp toolchain.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "fefw-recomp",
@@ -66268,7 +66434,9 @@
       "https://github.com/Goldoire/fefw-recomp",
       "https://github.com/Goldoire/fefw-recomp/releases"
     ],
-    "checked": "2026-11-11"
+    "checked": "2026-11-11",
+    "about": "fefw-recomp is a native PC port of Fire Emblem: Fortune's Weave for the Nintendo Switch 2, made by static recompilation. The game's code is translated to C++ and compiled into a regular Windows program that runs on a small runtime standing in for the console's system software, drawing through Vulkan. It is built on drakolordx7's nxrecomp recompiler and began from the runtime, tools and launcher of the Pokopia recomp projects. Linux and Steam Deck players get a native launcher that builds the same Windows program and runs it through Proton or Wine.\n\nNothing from the game is included. You need your own decrypted dump at update 131072 exactly, as an exefs and romfs folder, a base-plus-updates folder or a .nup package; the base game alone is rejected. The launcher checks the files, compiles the game on your PC with bundled tools and translates shaders, which takes a while on first setup. The project asks for 64-bit Windows 10 or 11, a Vulkan 1.3 GPU, 16 GB of RAM and about 30 GB of disk space.\n\nOptions include 60 or 120 fps, any resolution, ultrawide with a centred HUD, keyboard, mouse and controller support, ten game languages and file-replacement mods. DLSS and FSR 3, including frame generation, work only if you add the vendors' own files. Code patches made for emulators do not work. Version 0.1.7 (November 2026) fixed battle maps slowing down over time, sped up crowded towns, ended loading screens that never finished, restored torch lighting, brought back support for older Intel CPUs and added the Linux launcher and DualSense haptics. Open issues still report crashes and freezes in particular areas or after long sessions, and high CPU use.\n\nThis is the only Fire Emblem: Fortune's Weave project listed on the site.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "ocarina-of-time-pc-recomp",
@@ -66404,7 +66572,9 @@
       "https://github.com/adriadam10/mkw-recomp",
       "https://github.com/adriadam10/mkw-recomp/releases"
     ],
-    "checked": "2026-11-11"
+    "checked": "2026-11-11",
+    "about": "mkw-recomp is a static recompilation of Mario Kart World for the Nintendo Switch 2 into a native program for Windows and Linux, including Linux on ARM. The game's AArch64 code is translated to C ahead of time and compiled for the PC's processor, so there is no CPU emulator or JIT. The graphics side is not emulated either: NVN 2, the Switch 2 graphics API, is reimplemented on top of Vulkan, and the game's shaders are translated to SPIR-V in advance. It grew out of the runtime of TotK Recomp.\n\nNothing from the game is included. You need your own decrypted dump of version 1.0.0 or 1.8.0, as folders or a single packed file. The launcher builds the game from it on your machine, which takes a while the first time and needs about 30 GB free, an AVX2 CPU or an ARMv8.2 CPU on Linux, a Vulkan 1.3 GPU and ideally 16 GB of RAM.\n\nThe project calls itself early and fast-moving. As of mid-November 2026 it boots, plays the intro movies, goes through the menus and runs races; the project's own measurements show 60 fps on high-end GPUs and around 30 on mid-range ones. Known problems include unfinished mode, character and vehicle select menus, occasional missing kart shadows, audio cuts in movies, GPU hangs on some AMD drivers and no online play. Optional extras include higher resolutions, ultrawide, HDR and frame generation. Version 0.1.10 (13 November 2026) added a mods page with GameBanana browsing, Switch 2 controller pairing over Bluetooth, a fix for slowdowns on 8 GB graphics cards and lower memory use on Windows. Many open issues report crashes, graphical corruption and slow tracks on particular GPUs. MKW-THWOMP, also on this site, is a separate recompilation of the same game on a similar runtime, without prebuilt downloads.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "mkw-thwomp",
@@ -66860,7 +67030,9 @@
       "https://github.com/JonathanDC64/Soulbrandt",
       "https://github.com/JonathanDC64/Soulbrandt/releases"
     ],
-    "checked": "2026-11-11"
+    "checked": "2026-11-11",
+    "about": "Soulbrandt is a PC port of the 2009 PS3 game Demon's Souls for 64-bit Windows and Linux. The game's original PPU and SPU code is converted to native code with the ps3recomp toolchain rather than emulated, and a setup program builds the game on your own PC from your copy, with an Original preset that plays as on the PS3 or an Enhanced one. It renders with DirectX 12 or Vulkan; macOS is not supported.\n\nYou need your own copy: the US (BLUS30443) or European (BLES00932) release at version 1.00, from disc or the PlayStation Store, or the Japanese or Asian disc with its 1.04 update. Setup has the RPCS3 emulator unlock the game's encrypted files, or accepts files you decrypted yourself, and it cannot read ISO files. The project also lists a DirectX 12 graphics card on Windows, an SSE4.1 processor, about 4 GB of free space and an internet connection during setup.\n\nThe project calls it an alpha but says a tester has played it start to finish. It adds frame rates up to 240 fps or unlocked with the game's timing fixed, resolutions up to 4K, ultrawide, HDR, rebindable keyboard and mouse controls, rolling in any direction while locked on, an optional stat respec, mod loading and online play, including co-op, invasions and the Pantheon, on the project's own server. Version 0.1.2 in November 2026 added the Japanese and Asian versions and the Store releases, extra languages, faster SPU code, smoother play on two- to four-core processors, and fixes for T-posing enemies and crashes at high frame rates. Open issues include texture flicker, audio stutter and Vulkan rendering problems.\n\nThe site also lists Demon's Souls Recomp, another ps3recomp-based Windows build limited to the US release, and DeSSE, an old server emulator for the PS3 game.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "split2-recomp",
@@ -66909,7 +67081,9 @@
       "https://github.com/phobos665/split2-recomp",
       "https://github.com/phobos665/split2-recomp/releases"
     ],
-    "checked": "2026-11-11"
+    "checked": "2026-11-11",
+    "about": "split2-recomp turns the original Xbox version of TimeSplitters 2 into a native program for Windows, Apple Silicon Macs and x86-64 Linux, including SteamOS and the Steam Deck, with an Android build added in the latest release. It is a recompilation rather than an emulator, built on the author's own xboxrecomp toolkit, DirectXbox-Recomp. Neither the repository nor the downloads contain any game code or data.\n\nYou need your own copy of the PAL or USA release, as an ISO or XISO disc image or a folder of the disc's files; other releases are refused. On first start the program asks for your copy and builds the game from it using the compiler it ships with, which the project says takes a minute or two, longer on a Steam Deck. Beyond about 450 MB of space and Vulkan drivers on Linux, nothing else needs installing.\n\nThe project says the front end, story mode and System Link deathmatch have been played, while Challenge and MapMaker have had little testing. Additions include 60 fps paced like the console, true widescreen with menus laid out for 16:9, rendering at up to 8x the original 640x480, frame interpolation and rebindable controls. System Link works on Windows over a LAN or the internet with up to 16 copies, but not yet on macOS or Linux. The latest release, v0.5.2 from late October 2026, fixed Windows problems and improved Android performance. Open issues mention a broken checkpoint and passive enemies in the Siberia mission, resolution scaling and texture flicker on Linux, and widescreen misaligning a map screen.\n\nThe site also lists TimeSplitters 2 Native PC Port, which recompiles the US PlayStation 2 release instead and currently targets Linux and Steam Deck, with split-screen and online play through a relay server.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "ts2-ps2-linux-recomp",

@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-11-13",
+    "kind": "industry",
+    "title": "Hookshot goes offline on GitHub",
+    "body": "The Switch 2 Ocarina of Time recomp and its developer's GitHub account returned 404 from around midday GMT on 13 November, two days after the 2.1 release. No notice had appeared in GitHub's public DMCA archive at the time of writing, and the developer has said the project will come back on another host. Other recomps of the same game, such as NX2navi, are still up.",
+    "source": "https://x.com/PixelCNinja/status/2121235841162870807",
+    "projects": [
+      "hookshot",
+      "nx2navi",
+      "ocarina-recomp"
+    ]
+  },
+  {
     "date": "2026-11-11",
     "kind": "milestone",
     "title": "Switch 2 games are being recompiled into native PC programs",

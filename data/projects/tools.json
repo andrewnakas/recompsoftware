@@ -14212,7 +14212,9 @@
     "sources": [
       "https://github.com/snuri00/psp-web-recomp"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-10-14",
+    "about": "PSP Web Recomp is a toolchain that turns a PSP game you own into a web page. It translates the game's MIPS machine code ahead of time into C++ using PSPRecomp, compiles that to WebAssembly, and links it with a small stand-in for the PSP's operating system and a reimplementation of its graphics chip that draws through WebGL2. Graphics run on a separate worker thread, mirroring how the PSP's CPU and graphics chip overlap, and the rest of the disc is streamed to the page on demand.\n\nIt is a tool, not a ready-made game. You need a disc image of your own game, a separate tool that can decrypt the game's executable, and a build setup with git, CMake, Ninja, a C++20 compiler, Python 3 and about 2 GB of space. Building has only been tested on Linux. The result must be served with special cross-origin headers, which the included local server provides, and the project asks that generated output stays on your own machine because it is derived from the game.\n\nTwo games have been brought up so far, both from the same studio and engine. God of War: Chains of Olympus plays from boot through menus, cutscenes and combat, at 60 fps in the scenes measured by the author in Chrome and Firefox, at up to four times the original resolution and with touch controls on phones. God of War: Ghost of Sparta followed with a few extra fixes and runs at 55 to 60 fps at three times native resolution. The project warns that games from other studios will probably stop at unimplemented system calls.\n\nSaves are kept in browser storage and can be exported and imported in the PSP's own folder layout. There are no releases yet and no open issues.",
+    "aboutChecked": "2026-11-13"
   },
   {
     "slug": "wcdatool",

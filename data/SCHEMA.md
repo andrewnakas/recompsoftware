@@ -31,6 +31,8 @@ One JSON array per section in `data/projects/<category>.json`. Facts and links o
   "image": null,                           // optional: picture URL the maintainer asked for; scripts/fetch-media.mjs uses it over the social preview / README image
   "playable": null,                        // or { "tier": "cleanroom|free|byo|software", "url": "...", "launch": "frame|tab", "note": "licence reason it may be hosted" }
   "summary": "Native PC port of Majora's Mask built with N64: Recompiled ...", // 1-2 sentences, our words
+  "about": "…",                           // optional: 150-300 word plain-text write-up, paragraphs split by a blank line, for pages with search demand (.cache/seo/BRIEF.md). Makes the page indexable.
+  "aboutChecked": "2026-11-13",             // optional: date the write-up was last checked
   "tags": ["n64", "zelda", "mods"],
   "sources": ["https://github.com/Zelda64Recomp/Zelda64Recomp"], // where each fact was checked
   "checked": "2026-10-13"

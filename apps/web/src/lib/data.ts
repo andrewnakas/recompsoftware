@@ -12,6 +12,7 @@ export type Provenance = 'human-led' | 'ai-assisted' | 'ai-generated' | 'unknown
 
 export interface Playable { tier: 'cleanroom' | 'free' | 'byo' | 'software'; url: string; launch: 'frame' | 'tab'; note: string }
 export interface Project {
+  about?: string; aboutChecked?: string; // optional 2-4 paragraph write-up (plain text, blank-line separated) for search-demand pages
   slug: string; name: string; category: Category; subject: string; originalPlatform: string;
   originalYear: number | null; method: Method; status: string; progress: number | null;
   progressSource: string | null; provenance: Provenance; provenanceNote: string | null;
@@ -247,3 +248,9 @@ export function formatDate(d: string) {
   return day ? `${mon} ${day}, ${y}` : `${mon} ${y}`;
 }
 export const fmtNum = (n: number) => (n >= 10000 ? `${Math.round(n / 1000)}k` : n >= 1000 ? `${(n / 1000).toFixed(1)}k` : String(n));
+
+/** Project pages offered to search engines. Google stopped indexing most of the catalogue after it grew to 2,000+
+ * template pages (2026-10-24), so thin entries (no release, no tracked progress, not playable, under 100 stars, no
+ * write-up) get noindex and stay out of the sitemap; they remain on the site and in every list. */
+export const indexable = (p: Project) =>
+  !!(p.latestRelease || statsFor(p)?.release || p.playable || progressFor(p) || (statsFor(p)?.stars ?? 0) >= 100 || p.about);
