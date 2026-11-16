@@ -68825,5 +68825,153 @@
       "https://github.com/andrewnakas/recompsoftware/issues/39"
     ],
     "checked": "2026-11-11"
+  },
+  {
+    "slug": "inkypaint",
+    "name": "Inkypaint",
+    "category": "games",
+    "subject": "Splatoon 3",
+    "originalPlatform": "Nintendo Switch",
+    "originalYear": 2022,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Repo ships CLAUDE.md and a .claude/ agents and skills folder, and a recent commit carries a Claude co-author trailer (git.doughston.dev/GRID0-net/Inkypaint).",
+    "licence": "GPL-3.0",
+    "repo": "https://git.doughston.dev/GRID0-net/Inkypaint",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "GRID0-net",
+      "Doughston",
+      "Doloro1978"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.2.6",
+      "date": "2026-11-13"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "ScarletNX fork that compiles Splatoon 3 v11.3.0 ahead of time from the player's own NSP dump and keys, with a launcher for setup, mods and online play over LAN/ZeroTier or the GRID0+ replacement servers. Playable with performance and high-framerate issues; Splatoon Raiders (Switch 2) support is experimental and compiles but does not yet render gameplay.",
+    "tags": [
+      "switch",
+      "switch2",
+      "splatoon",
+      "nintendo",
+      "scarletnx",
+      "vulkan",
+      "online"
+    ],
+    "sources": [
+      "https://git.doughston.dev/GRID0-net/Inkypaint",
+      "https://git.doughston.dev/GRID0-net/Inkypaint/releases",
+      "https://git.doughston.dev/GRID0-net/Inkypaint/src/branch/main/docs/RAIDERS.md",
+      "https://github.com/andrewnakas/recompsoftware/issues/44"
+    ],
+    "checked": "2026-11-15"
+  },
+  {
+    "slug": "pdt-recompile",
+    "name": "Panzer Dragoon Trilogy Recompiled",
+    "category": "games",
+    "subject": "Panzer Dragoon, Panzer Dragoon II Zwei and Panzer Dragoon Saga",
+    "originalPlatform": "Sega Saturn",
+    "originalYear": 1995,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "proprietary",
+    "repo": null,
+    "website": "https://www.yabasanshiro.com/pds-recompile",
+    "discord": "https://discord.gg/aRJhTBH",
+    "subreddit": null,
+    "team": [
+      "devMiyax"
+    ],
+    "started": null,
+    "firstRelease": null,
+    "latestRelease": {
+      "version": "2.0.0",
+      "date": "2026-11-06"
+    },
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Free, closed-source Windows builder from the Yaba Sanshiro emulator author that translates the SH-2 code on the player's own Saturn discs to C and compiles it locally with a bundled Zig toolchain, producing separate executables for the three Panzer Dragoon games. Adds high resolution, widescreen, 60 fps interpolation, CRT shaders and save states; the download contains no game code or data.",
+    "tags": [
+      "saturn",
+      "panzer-dragoon",
+      "sega",
+      "closed-source",
+      "freeware"
+    ],
+    "sources": [
+      "https://www.yabasanshiro.com/pds-recompile",
+      "https://github.com/andrewnakas/recompsoftware/issues/46"
+    ],
+    "checked": "2026-11-15"
+  },
+  {
+    "slug": "road-sdl2-rash",
+    "name": "road-sdl2-rash",
+    "category": "games",
+    "subject": "Road Rash",
+    "originalPlatform": "Windows",
+    "originalYear": 1996,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "README says the release was made possible \"thanks to LLMs\" (github.com/speedydevil007/road-sdl2-rash).",
+    "licence": "none",
+    "repo": "https://github.com/speedydevil007/road-sdl2-rash",
+    "website": "https://speedydevil007.github.io/road-sdl2-rash/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "speedydevil007"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v1.2.1",
+      "date": "2026-11-13"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "Web"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Native 64-bit port of the 1996 Windows Road Rash with its x86 code translated to C over SDL2, for Windows, Linux and the web; it uses game files from the player's 1996 CD or the Steam re-release. An optional Plus mode adds 1280x960, 16:9 and 60 FPS; only binaries are out so far, with source promised later.",
+    "tags": [
+      "windows",
+      "road-rash",
+      "sdl2",
+      "webassembly",
+      "ea"
+    ],
+    "sources": [
+      "https://github.com/speedydevil007/road-sdl2-rash",
+      "https://github.com/speedydevil007/road-sdl2-rash/releases"
+    ],
+    "checked": "2026-11-15"
   }
 ]

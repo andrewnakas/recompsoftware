@@ -241,5 +241,12 @@
       "opence"
     ],
     "relation": "built-on"
+  },
+  {
+    "slug": "nakagawa-recomp",
+    "parents": [
+      "psp-recompilation-project"
+    ],
+    "relation": "fork-of"
   }
 ]

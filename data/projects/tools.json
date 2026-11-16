@@ -23842,5 +23842,47 @@
       "https://github.com/marinocg/segarecomp/releases"
     ],
     "checked": "2026-11-11"
+  },
+  {
+    "slug": "psp-recompilation-project",
+    "name": "PSP Recompilation Project",
+    "category": "tools",
+    "subject": "PSP games (Allegrex MIPS executables)",
+    "originalPlatform": "PlayStation Portable",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "unknown",
+    "provenanceNote": null,
+    "licence": "GPL-2.0-or-later",
+    "repo": "https://github.com/sal063/PSP-recompilation-project",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "sal063"
+    ],
+    "started": "2026-06",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Standalone PSP static recompiler toolkit: Python scripts rebase a decrypted game ELF and turn its MIPS code into C, which is linked against a runtime with HLE kernel, scheduler, video decoding and an SDL3/Vulkan renderer to build a Windows executable that reads the player's ISO. Much of the HLE side is ported from PPSSPP; source only, no releases, untouched since June 2026.",
+    "tags": [
+      "psp",
+      "recompiler",
+      "mips",
+      "ppsspp"
+    ],
+    "sources": [
+      "https://github.com/sal063/PSP-recompilation-project",
+      "https://github.com/Jstar269/Nakagawa-Recomp"
+    ],
+    "checked": "2026-11-15"
   }
 ]
