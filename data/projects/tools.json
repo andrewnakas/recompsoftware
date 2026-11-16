@@ -23252,10 +23252,10 @@
     "progress": null,
     "progressSource": null,
     "provenance": "ai-assisted",
-    "provenanceNote": "AGENTS.md, CLAUDE.md, copilot-instructions and Assisted-by: Claude Code commit trailers; docs/AI_USAGE.md sets its AI policy (github.com/Jstar269/Nakagawa-Recomp).",
+    "provenanceNote": "AGENTS.md, CLAUDE.md, copilot-instructions and Assisted-by: Claude Code commit trailers; docs/AI_USAGE.md sets its AI policy (github.com/Jstar269/Nakagawa-Recomp). Began as a fork of sal063's PSP Recompilation Project (README).",
     "licence": "GPL-3.0",
     "repo": "https://github.com/Jstar269/Nakagawa-Recomp",
-    "website": null,
+    "website": "https://jstar269.github.io/Nakagawa-Recomp/",
     "discord": null,
     "subreddit": null,
     "team": [
@@ -23264,8 +23264,8 @@
     "started": "2026-08",
     "firstRelease": "2026-10",
     "latestRelease": {
-      "version": "v0.0.1",
-      "date": "2026-10-28"
+      "version": "v0.0.3",
+      "date": "2026-11-15"
     },
     "targets": [
       "Windows"
@@ -23283,7 +23283,7 @@
       "https://github.com/Jstar269/Nakagawa-Recomp",
       "https://github.com/Jstar269/Nakagawa-Recomp/releases"
     ],
-    "checked": "2026-11-04"
+    "checked": "2026-11-15"
   },
   {
     "slug": "superghidra",

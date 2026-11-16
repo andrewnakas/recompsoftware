@@ -33537,10 +33537,10 @@
     "name": "OpenTricky",
     "category": "games",
     "subject": "SSX Tricky",
-    "originalPlatform": "PlayStation 2",
+    "originalPlatform": "Xbox",
     "originalYear": 2001,
     "method": "static-recomp",
-    "status": "wip",
+    "status": "released",
     "progress": null,
     "progressSource": null,
     "provenance": "unknown",
@@ -33554,23 +33554,27 @@
       "GiZcesi"
     ],
     "started": "2026-10",
-    "firstRelease": null,
-    "latestRelease": null,
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.6",
+      "date": "2026-11-13"
+    },
     "targets": [
       "Windows"
     ],
     "needsOriginal": true,
     "playable": null,
-    "summary": "Unofficial PC port of SSX Tricky made by static recompilation; the user supplies their own disc image.",
+    "summary": "Unofficial PC port of the original Xbox SSX Tricky, made by static recompilation with xboxrecomp; continues MatiasRiveraC's SSX Tricky PC. You supply your own USA Xbox disc image.",
     "tags": [
-      "ps2",
+      "xbox",
       "ssx",
       "recompilation"
     ],
     "sources": [
-      "https://github.com/GiZcesi/OpenTricky"
+      "https://github.com/GiZcesi/OpenTricky",
+      "https://github.com/GiZcesi/OpenTricky/releases"
     ],
-    "checked": "2026-10-14"
+    "checked": "2026-11-15"
   },
   {
     "slug": "jpdasm",
