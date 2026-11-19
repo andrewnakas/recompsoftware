@@ -56,7 +56,11 @@ const kind = p.method.includes('decomp') ? 'decompilation' : p.method === 'clean
 const saysKind = /decomp|disasm|disassembl|recomp|port|reimpl|rebuild|remake/.test(norm(p.name));
 const sub = p.subject && !norm(p.name).includes(norm(p.subject).slice(0, 8)) && (p.name + p.subject).length <= 44 ? p.subject : '';
 const wants = p.playable ? 'play in browser' : dl ? 'download & source' : 'source & status';
-const title = sub ? `${p.name}: ${sub} ${kind}, ${wants}` : saysKind ? `${p.name}: ${wants}` : `${p.name}: ${kind}, ${wants}`;
+// forks and rival repos share a name: the owner keeps their titles apart, or Google folds them into one page
+const owner = gh?.split('/')[3];
+const twin = owner && all.some((o) => o.slug !== p.slug && norm(o.name) === norm(p.name));
+const name = twin ? `${p.name} by ${owner}` : p.name;
+const title = sub ? `${name}: ${sub} ${kind}, ${wants}` : saysKind ? `${name}: ${wants}` : `${name}: ${kind}, ${wants}`;
 const description = `${p.name}: ${p.summary} Status, ${PROVENANCE_LABEL[p.provenance].toLowerCase()} provenance, licence, latest release and live GitHub activity.`.slice(0, 300);
 const schema = {
   '@type': 'SoftwareSourceCode', name: p.name, description: p.summary, codeRepository: p.repo ?? undefined,
