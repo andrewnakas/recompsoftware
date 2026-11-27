@@ -31,7 +31,7 @@ const out = {};
 let failed = 0;
 for (let i = 0; i < list.length; i += 25) {
   const chunk = list.slice(i, i + 25);
-  const q = `{ ${chunk.map(([, [o, n]], k) => `r${k}: repository(owner: ${JSON.stringify(o)}, name: ${JSON.stringify(n)}) { stargazerCount pushedAt isArchived latestRelease { tagName publishedAt } defaultBranchRef { target { ... on Commit { history(since: ${JSON.stringify(since)}) { totalCount } } } } }`).join('\n')} }`;
+  const q = `{ ${chunk.map(([, [o, n]], k) => `r${k}: repository(owner: ${JSON.stringify(o)}, name: ${JSON.stringify(n)}) { stargazerCount pushedAt isArchived latestRelease { tagName publishedAt } releases(first: 1, orderBy: { field: CREATED_AT, direction: DESC }) { nodes { tagName publishedAt isPrerelease } } defaultBranchRef { target { ... on Commit { history(since: ${JSON.stringify(since)}) { totalCount } } } } }`).join('\n')} }`;
   let j = await gql(q);
   for (let t = 0; t < 2 && !j.data; t++) { await new Promise((r) => setTimeout(r, 5000)); j = await gql(q); } // big histories sometimes time out
   chunk.forEach(([key], k) => {
@@ -39,7 +39,10 @@ for (let i = 0; i < list.length; i += 25) {
     if (!r) { failed++; return; }
     out[key] = {
       stars: r.stargazerCount, pushedAt: r.pushedAt, archived: r.isArchived,
-      release: r.latestRelease ? { version: r.latestRelease.tagName, date: r.latestRelease.publishedAt } : null,
+      // latestRelease skips pre-releases, so alpha-only projects (ReCarbon, #58) looked stuck on old versions: fall back
+      // to the newest release and flag it `pre` (pre-releases don't flip status or indexing, see lib/data.ts).
+      release: r.latestRelease ? { version: r.latestRelease.tagName, date: r.latestRelease.publishedAt }
+        : r.releases?.nodes?.[0]?.publishedAt ? { version: r.releases.nodes[0].tagName, date: r.releases.nodes[0].publishedAt, pre: true } : null,
       commits30: r.defaultBranchRef?.target?.history?.totalCount ?? null,
     };
   });

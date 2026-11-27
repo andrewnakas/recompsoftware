@@ -4401,8 +4401,8 @@
     "started": "2026-09",
     "firstRelease": "2026-09",
     "latestRelease": {
-      "version": "v0.9.52",
-      "date": "2026-10-14"
+      "version": "v1.2.0",
+      "date": "2026-11-25"
     },
     "targets": [
       "Windows",
@@ -58650,11 +58650,11 @@
     "status": "wip",
     "progress": null,
     "progressSource": null,
-    "provenance": "unknown",
-    "provenanceNote": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "CLAUDE.md and AGENTS.md are in the repository (github.com/retronative/recarbon).",
     "licence": "GPL-3.0",
     "repo": "https://github.com/retronative/recarbon",
-    "website": null,
+    "website": "https://retronative.github.io/recarbon/",
     "discord": null,
     "subreddit": null,
     "team": [
@@ -58663,15 +58663,15 @@
     "started": "2026-10",
     "firstRelease": "2026-10",
     "latestRelease": {
-      "version": "v0.1.1",
-      "date": "2026-10-26"
+      "version": "v0.1.6",
+      "date": "2026-11-12"
     },
     "targets": [
       "macOS"
     ],
     "needsOriginal": true,
     "playable": null,
-    "summary": "Apple Silicon recompilation of the Xbox 360 Need for Speed: Carbon; the recompiled code is generated on the player's Mac from their own disc image.",
+    "summary": "Apple Silicon recompilation of the Xbox 360 Need for Speed: Carbon (not the PC version), built on a patched XenonRecomp; the recompiled code is generated on the player's Mac from their own disc image. Releases are alpha pre-releases and the game is playable in parts.",
     "tags": [
       "xbox360",
       "macos",
@@ -58680,9 +58680,10 @@
     ],
     "sources": [
       "https://github.com/retronative/recarbon",
-      "https://www.reddit.com/r/recomps/comments/1xfqosp/recarbon_v010_need_for_speed_carbon_xbox_360/"
+      "https://github.com/retronative/recarbon/releases/tag/v0.1.6",
+      "https://github.com/andrewnakas/recompsoftware/issues/58"
     ],
-    "checked": "2026-10-26"
+    "checked": "2026-11-27"
   },
   {
     "slug": "whopping-recompilation-collection",
@@ -60753,33 +60754,34 @@
     "subject": "Fallout: New Vegas",
     "originalPlatform": "Windows",
     "originalYear": 2010,
-    "method": "non-matching-decomp",
-    "status": "wip",
+    "method": "rewrite",
+    "status": "released",
     "progress": null,
     "progressSource": null,
     "provenance": "ai-generated",
-    "provenanceNote": "README states nv-rs is built almost entirely with AI coding agents (mainly Claude, some Codex); commits carry Claude co-author trailers.",
+    "provenanceNote": "README says nv-rs is built almost entirely with AI coding agents (mainly Claude), with the maintainer directing the plan, playtesting and merges (github.com/slaterain/nv-rs).",
     "licence": "GPL-3.0",
     "repo": "https://github.com/slaterain/nv-rs",
     "website": null,
-    "discord": null,
+    "discord": "https://discord.gg/pn5kjZJJxx",
     "subreddit": null,
     "team": [
-      "slaterain",
-      "chasmlol"
+      "slaterain"
     ],
     "started": "2026-10",
     "firstRelease": "2026-10",
     "latestRelease": {
-      "version": "experimental-2026-10-03.2",
-      "date": "2026-10-03"
+      "version": "v1.0.1",
+      "date": "2026-11-26"
     },
     "targets": [
-      "Windows"
+      "Windows",
+      "Linux",
+      "macOS"
     ],
     "needsOriginal": true,
     "playable": null,
-    "summary": "A new 64-bit engine for Fallout: New Vegas in Rust, produced by translating the original program function by function and checking each piece against it, then rebuilding memory, threading and rendering natively. It loads the game's plugins and assets from the player's own install; the only published build is an early experimental viewer.",
+    "summary": "A one-developer Rust rewrite of Fallout: New Vegas that translates the original program's logic piece by piece and checks each part against the real game, rather than a decompilation. Version 1.0 (November 2026) plays the whole game, its DLCs and Mod Organizer 2 or Vortex setups from the player's own 1.4.0.525 install on Windows, Linux and Apple Silicon Macs.",
     "tags": [
       "fallout",
       "bethesda",
@@ -60789,9 +60791,10 @@
     ],
     "sources": [
       "https://github.com/slaterain/nv-rs",
-      "https://github.com/slaterain/nv-rs/releases"
+      "https://github.com/slaterain/nv-rs/releases/tag/v1.0.1",
+      "https://github.com/andrewnakas/recompsoftware/issues/50"
     ],
-    "checked": "2026-11-04"
+    "checked": "2026-11-27"
   },
   {
     "slug": "gow-native-pc",
@@ -68973,5 +68976,242 @@
       "https://github.com/speedydevil007/road-sdl2-rash/releases"
     ],
     "checked": "2026-11-15"
+  },
+  {
+    "slug": "lostodyssey-steprant-android",
+    "name": "Lost Odyssey Steprant Android",
+    "category": "games",
+    "subject": "Lost Odyssey",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2007,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "Most of the fork's own commits are authored as \"Claude\" (218 of the 250 ahead of upstream that were checked), and the submitter says AI tools helped with development and log analysis (github.com/Steprant/LostOdysseyRecomp-Android; recompsoftware issue #47).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/Steprant/LostOdysseyRecomp-Android",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "Steprant",
+      "freefrank"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "2.5",
+      "date": "2026-11-18"
+    },
+    "targets": [
+      "Android"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Android-only fork of Lost Odyssey Recomp for 64-bit ARM devices with Vulkan. It adds Qualcomm SGSR2 upscaling with SMAA, a reworked Vulkan frame graph, ARM64 profile-guided builds, XMA audio fixes and separate HDMI TV output. It installs alongside the official app and uses data from the player's own four discs.",
+    "tags": [
+      "xbox360",
+      "rpg",
+      "android",
+      "vulkan",
+      "fork"
+    ],
+    "sources": [
+      "https://github.com/Steprant/LostOdysseyRecomp-Android",
+      "https://github.com/Steprant/LostOdysseyRecomp-Android/releases",
+      "https://github.com/freefrank/LostOdysseyRecomp",
+      "https://github.com/andrewnakas/recompsoftware/issues/47"
+    ],
+    "checked": "2026-11-27"
+  },
+  {
+    "slug": "albw-decomp-ai",
+    "name": "albw-decomp-ai",
+    "category": "games",
+    "subject": "The Legend of Zelda: A Link Between Worlds",
+    "originalPlatform": "Nintendo 3DS",
+    "originalYear": 2013,
+    "method": "matching-decomp",
+    "status": "wip",
+    "progress": 64.1,
+    "progressSource": "https://github.com/7akeem0/albw-decomp-ai#status",
+    "provenance": "ai-generated",
+    "provenanceNote": "README (\"How it was made\") says most sources were written by automated tools, chiefly many LLM agents; AGENTS.md and agent skills in the repo (github.com/7akeem0/albw-decomp-ai).",
+    "licence": "none",
+    "repo": "https://github.com/7akeem0/albw-decomp-ai",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "7akeem0",
+      "mmaupas"
+    ],
+    "started": "2026-10",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Matching decompilation of the US 3DS release in which every published function rebuilds byte-for-byte with ARM Compiler 4.1; about 64% of roughly 26,000 functions are matched so far. Players need their own code binary and a licensed armcc, and the authors flag that the sources were largely machine-written.",
+    "tags": [
+      "3ds",
+      "zelda",
+      "nintendo",
+      "decomp"
+    ],
+    "sources": [
+      "https://github.com/7akeem0/albw-decomp-ai",
+      "https://github.com/spacestate1/albw-native",
+      "https://github.com/andrewnakas/recompsoftware/issues/54"
+    ],
+    "checked": "2026-11-27"
+  },
+  {
+    "slug": "refrozen",
+    "name": "reFrozen",
+    "category": "games",
+    "subject": "Warcraft III: The Frozen Throne",
+    "originalPlatform": "Windows",
+    "originalYear": 2003,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "AGENTS.md and CLAUDE.md in the repo; the maintainer (thixpin) marked it AI-assisted in submission issue andrewnakas/recompsoftware#56.",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/retronative/refrozen",
+    "website": "https://retronative.github.io/refrozen/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "retronative"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.2.1",
+      "date": "2026-10-30"
+    },
+    "targets": [
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Apple Silicon recompilation of Warcraft III: The Frozen Throne patch 1.26a, aimed at DotA Allstars; the Mac app installs the game from the player's own installers and translates its x86 code locally, with a runtime standing in for Win32, Direct3D and DirectSound. Offline custom games and LAN play between Macs work; Battle.net and private servers are out of scope.",
+    "tags": [
+      "windows",
+      "warcraft-3",
+      "macos",
+      "apple-silicon",
+      "dota",
+      "rts"
+    ],
+    "sources": [
+      "https://github.com/retronative/refrozen",
+      "https://github.com/retronative/refrozen/releases",
+      "https://github.com/andrewnakas/recompsoftware/issues/56"
+    ],
+    "checked": "2026-11-27"
+  },
+  {
+    "slug": "fm4-recomp-retronative",
+    "name": "FM4 Recomp",
+    "category": "games",
+    "subject": "Forza Motorsport 4",
+    "originalPlatform": "Xbox 360",
+    "originalYear": 2011,
+    "method": "static-recomp",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "The maintainer (thixpin) marked it AI-assisted in submission issue andrewnakas/recompsoftware#57; the repo itself does not say.",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/retronative/fm4-recomp",
+    "website": "https://retronative.github.io/fm4-recomp/",
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "retronative"
+    ],
+    "started": "2026-11",
+    "firstRelease": "2026-11",
+    "latestRelease": {
+      "version": "v0.3.1",
+      "date": "2026-11-25"
+    },
+    "targets": [
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "RetroNative's Apple Silicon build of the US Xbox 360 Forza Motorsport 4, drawing through Vulkan on Metal; since 0.3.0 the Mac app pairs i2kiselev's FM4 Static Recomp host and ShiftGlue SDK with the group's own launcher, graphics menu and renderer changes. The DMG carries the translated program but no game data, which setup reads from the player's own disc image.",
+    "tags": [
+      "xbox360",
+      "forza",
+      "macos",
+      "apple-silicon",
+      "racing"
+    ],
+    "sources": [
+      "https://github.com/retronative/fm4-recomp",
+      "https://github.com/retronative/fm4-recomp/releases",
+      "https://github.com/andrewnakas/recompsoftware/issues/57"
+    ],
+    "checked": "2026-11-27"
+  },
+  {
+    "slug": "drig-race-driver",
+    "name": "DRIG",
+    "category": "games",
+    "subject": "Race Driver: GRID",
+    "originalPlatform": "Windows",
+    "originalYear": 2008,
+    "method": "rewrite",
+    "status": "released",
+    "progress": null,
+    "progressSource": null,
+    "progressOptOut": true,
+    "provenance": "ai-generated",
+    "provenanceNote": "README says most of the code is written by AI coding agents (Contributing) and its Disclaimer calls it entirely AI-made; AGENTS.md in the repo (github.com/PipeKnight/drig-race-driver).",
+    "licence": "GPL-3.0",
+    "repo": "https://github.com/PipeKnight/drig-race-driver",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "PipeKnight"
+    ],
+    "started": "2026-10",
+    "firstRelease": "2026-10",
+    "latestRelease": {
+      "version": "v0.1.0",
+      "date": "2026-11-24"
+    },
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Rust and Bevy reimplementation of the 2008 PC racer, written from study of the original executable and loading tracks, cars, textures and sounds from the player's own installation. Early builds already cover driving physics, AI opponents, damage, most event types, replays and the career, with crashes and visual differences still expected.",
+    "tags": [
+      "windows",
+      "grid",
+      "codemasters",
+      "racing",
+      "rust",
+      "bevy"
+    ],
+    "sources": [
+      "https://github.com/PipeKnight/drig-race-driver",
+      "https://github.com/PipeKnight/drig-race-driver/releases",
+      "https://github.com/andrewnakas/recompsoftware/issues/59"
+    ],
+    "checked": "2026-11-27"
   }
 ]

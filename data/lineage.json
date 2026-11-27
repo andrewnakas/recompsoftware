@@ -248,5 +248,26 @@
       "psp-recompilation-project"
     ],
     "relation": "fork-of"
+  },
+  {
+    "slug": "lostodyssey-steprant-android",
+    "parents": [
+      "lostodyssey-recomp"
+    ],
+    "relation": "fork-of"
+  },
+  {
+    "slug": "refrozen",
+    "parents": [
+      "recarbon"
+    ],
+    "relation": "inspired-by"
+  },
+  {
+    "slug": "fm4-recomp-retronative",
+    "parents": [
+      "rexglue"
+    ],
+    "relation": "uses-tool"
   }
 ]

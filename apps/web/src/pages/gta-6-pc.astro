@@ -1,0 +1,174 @@
+---
+// GTA 6 on PC: the official PC status, ways to play on a PC today, emulation / recomp / reverse-engineering work,
+// the fakes, and the GTA games the scene already runs natively. Facts live in data/gta6.json (update them there,
+// each with a source); the GTA project cards come from the catalogue.
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { projects, gta6, formatDate, statsFor, type Project } from '../lib/data';
+
+const g = gta6()!;
+const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
+const srcs = (x: { source?: string; sources?: string[] }) => [...(x.source ? [x.source] : []), ...(x.sources ?? [])];
+const day = (d: string) => (/^\d{4}-\d{2}-\d{2}$/.test(d) ? formatDate(d) : d);
+
+// The scene's GTA work, newest game first: every catalogue entry whose subject is a Grand Theft Auto game.
+const stars = (p: Project) => statsFor(p)?.stars ?? 0;
+const gta = projects().filter((p) => /grand theft auto|\bgta\b/i.test(p.subject) || /\bgta\b/i.test(p.name));
+const GROUPS: [string, RegExp][] = [
+  ['Grand Theft Auto V', /Grand Theft Auto V\b(?!ice)/i],
+  ['Grand Theft Auto IV', /Grand Theft Auto IV/i],
+  ['Liberty City & Vice City Stories', /Stories/i],
+  ['San Andreas', /San Andreas/i],
+  ['GTA III & Vice City', /Grand Theft Auto III|Vice City/i],
+  ['The 2D games', /Grand Theft Auto 2|Grand Theft Auto \(1997\)|Grand Theft Auto$/i],
+];
+const used = new Set<string>();
+const groups = GROUPS.map(([label, re]) => {
+  const list = gta.filter((p) => !used.has(p.slug) && re.test(p.subject)).sort((a, b) => stars(b) - stars(a));
+  list.forEach((p) => used.add(p.slug));
+  return { label, list };
+}).filter((x) => x.list.length);
+const rest = gta.filter((p) => !used.has(p.slug));
+if (rest.length) groups.push({ label: 'Other GTA work', list: rest });
+
+const VERDICT = { works: ['ok', 'Works today'], partial: ['warn', 'With limits'], no: ['bad', 'Not possible'] } as const;
+const title = 'GTA 6 on PC: release status, emulators, recomps & fakes';
+const description = `Is GTA 6 on PC? Not yet. Rockstar's PC plans, the legit ways to play it on a PC today, PS5 and Xbox emulators, the leak-based ports and the fake downloads. Updated ${formatDate(g.updated)}.`;
+const schema = { '@type': 'FAQPage', mainEntity: g.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
+const allSources = [...new Set([g.timeline, g.ways, g.efforts, g.fakes].flat().flatMap(srcs))];
+---
+<Base title={title} description={description} schema={schema} type="article" crumbs={[{ href: '/games/', label: 'Games' }]}>
+  <PageHead crumbs={[{ href: '/games/', label: 'Games' }, { href: '/game/', label: 'By game' }]} kicker={`GTA VI tracker · updated ${formatDate(g.updated)}`} title="GTA 6 on PC"
+    lede="Where Grand Theft Auto VI stands on PC: what Rockstar has said, the ways to play it on a computer today, how far PS5 and Xbox emulation really are, and the fakes going around. Checked by hand, with a source for every fact.">
+    <div class="answer callout">
+      <p><strong>Short answer:</strong> {g.answer}</p>
+    </div>
+    <dl class="status">
+      {g.status.map((s) => <div><dt class="meta">{s.label}</dt><dd><span class={`chip ${s.tone ?? ''}`}>{s.value}</span></dd></div>)}
+    </dl>
+    <details class="gaps">
+      <summary class="meta">How long Rockstar's PC versions took</summary>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Game</th><th>Consoles</th><th>PC</th><th>Gap</th></tr></thead>
+        <tbody>{g.gaps.map((x) => <tr><td>{x.source ? <a href={x.source} rel="noopener">{x.game}</a> : x.game}</td><td>{day(x.console)}</td><td>{day(x.pc)}</td><td>{x.gap}</td></tr>)}</tbody>
+      </table></div>
+    </details>
+    <nav class="toc meta" aria-label="On this page">
+      <a href="#timeline">Timeline</a><a href="#play-today">Play on PC today</a><a href="#emulation">Emulation &amp; recomps</a><a href="#why">Why it takes time</a><a href="#fakes">Fakes</a><a href="#gta-on-pc">GTA already on PC</a><a href="#faq">FAQ</a>
+    </nav>
+  </PageHead>
+
+  <section class="wrap section" id="timeline">
+    <div class="rule-head"><h2>Timeline</h2></div>
+    <ol class="tl">
+      {g.timeline.map((e) => (
+        <li class={e.pc ? 'pc' : ''}>
+          <p class="meta when">{day(e.date)}{e.pc && <span class="chip accent"> PC</span>}</p>
+          <h3>{e.title}</h3>
+          <p>{e.body}{srcs(e).map((u) => <> <a class="src" href={u} rel="noopener">{host(u)}</a></>)}</p>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="wrap section" id="play-today">
+    <div class="rule-head"><h2>Ways to play GTA 6 on a PC today</h2></div>
+    <div class="grid">
+      {g.ways.map((w) => (
+        <article class="card way">
+          <p class="meta"><span class={`chip ${VERDICT[w.verdict][0]}`}>{VERDICT[w.verdict][1]}</span></p>
+          <h3>{w.name}</h3>
+          <p>{w.body}</p>
+          {w.needs && <p class="meta needs">Needs: {w.needs}</p>}
+          {srcs(w).length > 0 && <p class="meta">{srcs(w).map((u, i) => <>{i > 0 && ' · '}<a href={u} rel="noopener">{host(u)}</a></>)}</p>}
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap section" id="emulation">
+    <div class="rule-head"><h2>Emulation, recompilation and reverse engineering</h2></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Project or effort</th><th>Kind</th><th>GTA 6 status</th><th>What it is</th></tr></thead>
+      <tbody>{g.efforts.map((e) => (
+        <tr>
+          <td>{e.url ? <a href={e.url} rel="noopener">{e.name}</a> : e.name}</td>
+          <td>{e.kind}</td>
+          <td>{e.status}</td>
+          <td>{e.body}{srcs(e).filter((u) => u !== e.url).map((u) => <> <a class="src" href={u} rel="noopener">{host(u)}</a></>)}</td>
+        </tr>
+      ))}</tbody>
+    </table></div>
+  </section>
+
+  <section class="wrap section prose" id="why">
+    <h2>Why there's no GTA 6 recomp or emulator build yet</h2>
+    {g.why.map((w) => <><h3>{w.title}</h3><p>{w.body}</p></>)}
+    <p>For how recomps work and how they differ from emulators, see <a href="/what-is-a-recomp/">What is a recomp?</a>.</p>
+  </section>
+
+  <section class="wrap section" id="fakes">
+    <div class="rule-head"><h2>Fake “GTA 6 PC” downloads and emulators</h2></div>
+    <div class="callout warn-box">
+      <p>No PC build of GTA 6 exists outside Rockstar, and no emulator runs it. Any site, video or GitHub repo offering a GTA 6 PC download, a “PS5 emulator” for it, or a crack is a scam, and most of them carry malware. Recomp lists projects only after checking their code and releases by hand.</p>
+    </div>
+    <ul class="fakes">
+      {g.fakes.map((f) => <li><strong>{f.title}.</strong> {f.body}{srcs(f).map((u) => <> <a class="src" href={u} rel="noopener">{host(u)}</a></>)}</li>)}
+    </ul>
+  </section>
+
+  <section class="wrap section" id="gta-on-pc">
+    <div class="rule-head"><h2>The GTA games the scene already runs natively</h2><a href="/recompiled-games-list/">All recompiled games →</a></div>
+    <p class="lede small">While GTA 6 waits for a PC release, community decompilations, static recompilations and rewrites already bring {gta.length} versions of older GTA games to PC, Mac, phones and the browser. Each one needs your own copy of the game.</p>
+    {groups.map((grp) => (
+      <>
+        <h3 class="grp">{grp.label}</h3>
+        <div class="grid">{grp.list.map((p) => <ProjectCard p={p} />)}</div>
+      </>
+    ))}
+  </section>
+
+  <section class="wrap section prose faq" id="faq">
+    <h2>GTA 6 on PC: questions</h2>
+    {g.faq.map((f) => <><h3>{f.q}</h3><p>{f.a}</p></>)}
+    {g.rumours && g.rumours.length > 0 && (
+      <>
+        <h3>Not confirmed</h3>
+        <p>These claims are going around but have no official source. We list them so you can spot them, not because we believe them.</p>
+        <ul>{g.rumours.map((r) => <li>{r}</li>)}</ul>
+      </>
+    )}
+    <h3>Sources</h3>
+    <ul class="srcs meta">{allSources.map((u) => <li><a href={u} rel="noopener">{u}</a></li>)}</ul>
+    <p class="meta">Something out of date? <a href="https://github.com/andrewnakas/recompsoftware/issues/new?template=correction.yml&title=%5Bfix%5D%20GTA%206%20on%20PC&page=https%3A%2F%2Frecompsoftware.com%2Fgta-6-pc%2F" rel="noopener" data-track="correction_click" data-item="gta-6-pc">Send a correction</a> or <a href="/news/">read the news</a>.</p>
+  </section>
+</Base>
+<style>
+  .answer { font-size: 1.1rem; max-width: 70ch; }
+  .status { display: flex; flex-wrap: wrap; gap: 0.6rem 1.6rem; margin: 1.2rem 0 0; }
+  .status dt { margin: 0 0 0.25rem; }
+  .status dd { margin: 0; }
+  .gaps { margin-top: 1.2rem; max-width: 40rem; }
+  .gaps summary { cursor: pointer; }
+  .toc { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; margin-top: 1.4rem; }
+  .tl { list-style: none; padding: 0; margin: 1rem 0 0; border-left: 2px solid var(--line-strong); max-width: 75ch; }
+  .tl li { position: relative; padding: 0 0 1.4rem 1.2rem; }
+  .tl li::before { content: ''; position: absolute; left: -7px; top: 0.35rem; width: 12px; height: 12px; border-radius: 50%; background: var(--bg, #fff); border: 2px solid var(--line-strong); }
+  .tl li.pc::before { border-color: var(--accent); background: var(--accent); }
+  .tl h3 { margin: 0.1rem 0 0.3rem; font-size: 1.05rem; }
+  .tl p { margin: 0; }
+  .when { margin: 0 !important; }
+  .src { font: 0.78rem var(--font-mono); white-space: nowrap; }
+  .way h3 { margin-top: 0.4rem; }
+  .way p + p { margin-top: 0.5rem; }
+  .needs { font-size: 0.85rem; }
+  .warn-box { border-left-color: var(--warn); }
+  .fakes { max-width: 75ch; padding-left: 1.2rem; }
+  .fakes li + li { margin-top: 0.5rem; }
+  .grp { margin: 2rem 0 0.8rem; font-size: 1.15rem; }
+  .lede.small { font-size: 1rem; margin-bottom: 0; }
+  .faq h3 { font-size: 1.1rem; margin: 1.3rem 0 0.3rem; }
+  .srcs { padding-left: 1.2rem; overflow-wrap: anywhere; }
+  td { vertical-align: top; }
+</style>

@@ -23,7 +23,7 @@ export interface Project {
 }
 export interface Stats {
   stars: number; starsWeek: number | null; starsMonth: number | null; commits30: number | null;
-  pushedAt: string | null; release: { version: string; date: string } | null; archived: boolean;
+  pushedAt: string | null; release: { version: string; date: string; pre?: boolean } | null; archived: boolean;
 }
 export interface HistoryEvent { date: string; title: string; body: string; who?: string; source: string; projects?: string[] }
 export interface HistoryEra { id: string; label: string; blurb?: string; events: HistoryEvent[] }
@@ -72,7 +72,7 @@ function liveStatus(p: Project): string {
   if (s?.archived) return p.status === 'complete' || p.status === 'released' ? p.status : 'archived';
   const pr = p.repo ? prog().repos[repoKey(p.repo)] : undefined;
   if (pr && pr.pct >= 100 && (p.status === 'wip' || p.status === 'stalled')) return 'complete';
-  if (s?.release && BUILDS.has(p.method) && p.status === 'wip') return 'released';
+  if (s?.release && !s.release.pre && BUILDS.has(p.method) && p.status === 'wip') return 'released';
   if (p.status === 'stalled' && s?.pushedAt && Date.now() - Date.parse(s.pushedAt) < 60 * 864e5) return 'wip';
   return p.status;
 }
@@ -186,6 +186,23 @@ type Edge = { slug: string; parents: string[]; relation: string };
 export const lineage = () => [...read<Edge[]>('lineage.json', []), ...read<Edge[]>('lineage-derived.json', [])];
 export const news = () => read<NewsItem[]>('news.json', []).sort((a, b) => b.date.localeCompare(a.date));
 
+/** The /gta-6-pc/ tracker (data/gta6.json): hand-checked facts, each with its source. */
+type Sourced = { source?: string; sources?: string[] };
+export interface Gta6 {
+  updated: string;
+  answer: string;
+  status: { label: string; value: string; tone?: 'ok' | 'warn' | 'bad' }[];
+  gaps: ({ game: string; console: string; pc: string; gap: string } & Sourced)[];
+  timeline: ({ date: string; title: string; body: string; pc?: boolean } & Sourced)[];
+  ways: ({ name: string; verdict: 'works' | 'partial' | 'no'; body: string; needs?: string } & Sourced)[];
+  efforts: ({ name: string; kind: string; status: string; body: string; url?: string } & Sourced)[];
+  why: { title: string; body: string }[];
+  fakes: ({ title: string; body: string } & Sourced)[];
+  rumours?: string[];
+  faq: { q: string; a: string }[];
+}
+export const gta6 = () => read<Gta6 | null>('gta6.json', null);
+
 export const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 export const platforms = () => {
   const m = new Map<string, Project[]>();
@@ -253,4 +270,4 @@ export const fmtNum = (n: number) => (n >= 10000 ? `${Math.round(n / 1000)}k` : 
  * template pages (2026-10-24), so thin entries (no release, no tracked progress, not playable, under 100 stars, no
  * write-up) get noindex and stay out of the sitemap; they remain on the site and in every list. */
 export const indexable = (p: Project) =>
-  !!(p.latestRelease || statsFor(p)?.release || p.playable || progressFor(p) || (statsFor(p)?.stars ?? 0) >= 100 || p.about);
+  !!(p.latestRelease || (statsFor(p)?.release && !statsFor(p)?.release?.pre) || p.playable || progressFor(p) || (statsFor(p)?.stars ?? 0) >= 100 || p.about);
