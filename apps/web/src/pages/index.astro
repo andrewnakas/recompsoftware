@@ -61,6 +61,15 @@ const ago = (d: string) => { const n = Math.floor((Date.parse(statsDate() ?? d) 
     </section>
   )}
 
+  <section class="wrap">
+    <a class="feature" href="/gta-6-pc/" data-track="feature_click" data-item="gta-6-pc">
+      <span class="meta fk">GTA VI tracker</span>
+      <span class="ft">GTA 6 on PC: what's real</span>
+      <span class="fb">Rockstar's PC plans, every way to play it on a computer today, how far PS5 and Xbox emulation really are, and the fake downloads to avoid. Plus the {all.filter((p) => /grand theft auto|\bgta\b/i.test(p.subject) || /\bgta\b/i.test(p.name)).length} community projects that already run older GTA games natively.</span>
+      <span class="fa meta">Read the tracker →</span>
+    </a>
+  </section>
+
   <section class="section wrap">
     <div class="sections">
       {CATEGORIES.map((c) => (
@@ -130,6 +139,12 @@ const ago = (d: string) => { const n = Math.floor((Date.parse(statsDate() ?? d) 
   }
 </script>
 <style>
+  .feature { display: grid; gap: 0.3rem; margin-top: 2rem; padding: 1.1rem 1.2rem; border: 1px solid var(--line-strong); border-left: 4px solid var(--accent); border-radius: var(--radius); background: var(--bg-raised); text-decoration: none; color: var(--ink); }
+  .feature:hover { border-color: var(--accent); }
+  .feature .fk { text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); }
+  .feature .ft { font: 600 clamp(1.25rem, 2.6vw, 1.6rem)/1.2 var(--font-display); }
+  .feature .fb { color: var(--ink-soft); max-width: 75ch; }
+  .feature .fa { color: var(--accent); }
   .tk-since { flex: none; align-self: center; font: 600 0.78rem/1 var(--font-mono); color: var(--accent); padding: 0 0.9rem; white-space: nowrap; position: relative; z-index: 1; background: var(--bg); }
   .pm :global(.pboard) { columns: 2 22rem; column-gap: 3rem; }
   .pm :global(.pboard li) { break-inside: avoid; }

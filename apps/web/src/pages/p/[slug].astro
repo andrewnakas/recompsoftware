@@ -50,8 +50,14 @@ const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./,
 const verb = p.method === 'static-recomp' ? 'recompiled' : p.method.includes('decomp') ? 'decompiled' : p.method === 'clean-room' ? 'rebuilt clean-room' : 'rebuilt';
 // Searchers type "<game> recomp", "<game> pc", "<game> github": put the game, the method and what's here in the title.
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+// A recomp that only runs on a Mac, phone, console or browser must not say "PC" (#58: ReCarbon is Mac-only).
+const tg = p.targets ?? [];
+const onPC = tg.length === 0 || tg.some((t) => /^(Windows|Linux|Multi)/.test(t));
+const where = onPC ? 'PC' : tg.includes('macOS') ? 'Mac' : tg.some((t) => /^(iOS|iPadOS)/.test(t)) ? 'iOS'
+  : tg.includes('Android') ? 'Android' : tg.some((t) => /Switch/.test(t)) ? 'Switch' : tg.includes('Web') ? 'browser' : '';
 const kind = p.method.includes('decomp') ? 'decompilation' : p.method === 'clean-room' ? 'clean-room rebuild'
-  : p.method === 'static-recomp' ? 'PC recomp' : p.category === 'apps' || p.category === 'os' || p.category === 'tools' ? 'source port' : 'PC port';
+  : p.method === 'static-recomp' ? `${where || 'native'} recomp` : p.category === 'apps' || p.category === 'os' || p.category === 'tools' ? 'source port'
+  : where && where !== 'browser' ? `${where} port` : 'PC port'; // other ports keep their titles (no sitewide title churn during the SEO recovery)
 // skip what the name already says, and the game when the title would run long
 const saysKind = /decomp|disasm|disassembl|recomp|port|reimpl|rebuild|remake/.test(norm(p.name));
 const sub = p.subject && !norm(p.name).includes(norm(p.subject).slice(0, 8)) && (p.name + p.subject).length <= 44 ? p.subject : '';

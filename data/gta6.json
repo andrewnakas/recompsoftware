@@ -1,0 +1,286 @@
+{
+  "updated": "2026-11-27",
+  "answer": "No. Grand Theft Auto VI came out on 19 November 2026 for PS5 and Xbox Series X|S only, and Rockstar has not announced a PC version. The one legitimate way to play it on a PC screen is streaming from a console you own with Remote Play. No emulator runs it, and the fan \"PC ports\" in the news all run a leaked Xbox build.",
+  "status": [
+    { "label": "Console release", "value": "Out 19 Nov 2026 · PS5, Xbox Series X|S", "tone": "ok" },
+    { "label": "Official PC version", "value": "Not announced", "tone": "bad" },
+    { "label": "Cloud streaming to a PC", "value": "No, consoles and PS Portal only", "tone": "bad" },
+    { "label": "Remote Play from your own PS5", "value": "Yes", "tone": "ok" },
+    { "label": "PS5 / Xbox emulators", "value": "None run it", "tone": "bad" },
+    { "label": "Fan PC projects", "value": "Leaked build, 1-30 fps, DMCA'd", "tone": "warn" }
+  ],
+  "gaps": [
+    { "game": "GTA IV", "console": "2008-04-29", "pc": "2008-12-02", "gap": "7 months", "source": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_IV" },
+    { "game": "GTA V", "console": "2013-09-17", "pc": "2015-04-14", "gap": "19 months", "source": "https://www.videogameschronicle.com/guide/gta-6-pc-version/" },
+    { "game": "Red Dead Redemption 2", "console": "2018-10-26", "pc": "2019-11-05", "gap": "12 months", "source": "https://www.pcgamer.com/red-dead-redemption-2-pc-announced" },
+    { "game": "GTA VI", "console": "2026-11-19", "pc": "Not announced", "gap": "?", "source": "https://www.rockstargames.com/VI/out-now" }
+  ],
+  "timeline": [
+    {
+      "date": "2026-11-24",
+      "title": "Take-Two has GitHub remove Leonida and 3,007 repositories",
+      "body": "GitHub processed a Take-Two DMCA notice against Leonida, the best-known GTA VI \"PC recompilation\", and every fork of it. The notice says the project exists to run stolen files from an Xbox Series build, that its \"bring your own files\" framing is \"intentionally misleading\", and that it breaks section 2.3 of Rockstar's terms, which forbid reverse engineering. The project's Discord also went offline. Rival projects such as VIctory and XCL were still up on 27 November.",
+      "sources": ["https://github.com/github/dmca/blob/master/2026/11/2026-11-24-take-two.md", "https://www.tweaktown.com/news/114877/gta-6-pc-port-takedown-confirmed-take-two-cites-rockstars-ban-on-reverse-engineering/index.html"]
+    },
+    {
+      "date": "2026-11-23",
+      "title": "First patch notes, and PS Plus cloud streaming for PS5 and Portal only",
+      "body": "Update 01.002.002 (PS5) / 1.0.2.2 (Xbox) fixed crashes, an autosave bug and a wanted level that could not be cleared. The same week Sony let owners stream the game with PS Plus Premium, but only to a PS5 or PlayStation Portal; PCs were left out, and Sony's PS Plus PC app closes on 10 December.",
+      "sources": ["https://www.vice.com/en/article/gta-6-update-01-002-002-patch-notes/", "https://www.notebookcheck.net/PlayStation-Portal-can-cloud-stream-GTA-6-without-PS5-console-but-Sony-blocks-PCs.1458173.0.html"]
+    },
+    {
+      "date": "2026-11-20",
+      "title": "A leaked Xbox Series build starts the PC \"port race\"",
+      "body": "Files from an Xbox Series build (version 1.0.2.1, one patch behind retail) were posted publicly by the leaker known as Cyberleek on 20 November, and the main executable followed on 23 November. Within days several GitHub projects (Leonida, XCL, VIctory and their forks) were trying to run that build on Windows. Rockstar has not commented on the files; Take-Two's DMCA notice calls them stolen.",
+      "sources": ["https://kotaku.com/gta-6-leaker-cyberleek-claims-to-have-to-released-exe-file-that-could-lead-to-unofficial-pc-port-2000759529", "https://github.com/github/dmca/blob/master/2026/11/2026-11-24-take-two.md"]
+    },
+    {
+      "date": "2026-11-19",
+      "title": "GTA VI launches on PS5 and Xbox Series X|S",
+      "body": "Rockstar released the game worldwide on the two consoles only, at $79.99 (Standard) and $99.99 (Ultimate); the boxed edition holds a download code rather than a disc. Take-Two reported $3.79 billion in retail sales on day one, its own figure.",
+      "sources": ["https://www.rockstargames.com/VI/out-now", "https://deadline.com/2026/11/gta6-first-day-sales-4-billion-1237230465/"]
+    },
+    {
+      "date": "2026-11-18",
+      "title": "Take-Two takes down GTA V browser and mobile ports",
+      "body": "A day before launch GitHub published four Take-Two notices against projects wrapping a viral WebAssembly build of GTA V for iOS, Android, Mac and Windows, hundreds of forks in all. Together with the Leonida notice, they show Take-Two treating \"bring your own files\" disclaimers as no defence when the files come from somewhere unofficial.",
+      "source": "https://torrentfreak.com/take-two-targets-hundreds-of-gta-v-mobile-ports-on-github-ahead-of-gta-vi-launch/"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Xbox Cloud Gaming gets GTA VI, but only on Xbox consoles",
+      "body": "Microsoft said GTA VI would stream from launch day to Xbox One and Xbox Series consoles. Windows PCs, browsers, phones and TVs were not supported.",
+      "sources": ["https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/", "https://www.notebookcheck.net/GTA-6-comes-to-Xbox-One-via-cloud-gaming-but-PC-players-are-left-out.1447209.0.html"]
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Take-Two: \"available on 2 consoles\"",
+      "body": "On its earnings call ten days before launch, Take-Two CEO Strauss Zelnick said GTA VI would be available on two consoles, and that any news of other versions, PC included, will come from Rockstar. The earnings release lists no PC version.",
+      "sources": ["https://www.fool.com/earnings/call-transcripts/2026/11/10/take-two-ttwo-q2-2027-earnings-call-transcript/", "https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm"]
+    },
+    {
+      "date": "2026-05",
+      "title": "Consoles first because they are the \"core\" audience",
+      "body": "Zelnick told Bloomberg that GTA VI launches on consoles first to serve its core players, while noting PC can make up a large share of a big game's sales, and denied that a platform holder deal drove the decision.",
+      "source": "https://www.pcgamer.com/gaming-industry/pc-players-arent-grand-theft-auto-6s-core-audience-take-two-ceo-says-and-thats-why-we-have-to-wait-for-it/"
+    },
+    {
+      "date": "2025-11-06",
+      "title": "Second delay, to 19 November 2026",
+      "body": "After slipping from 2025 to 26 May 2026, Rockstar moved the release to 19 November 2026 to finish polishing the game. It then shipped on that date.",
+      "source": "https://www.tomshardware.com/video-games/gta-6-delayed-again-this-time-to-november-2026-rockstar-says-extra-time-needed-to-deliver-quality-that-players-have-come-to-expect-and-deserve"
+    },
+    {
+      "date": "2023-12-04",
+      "title": "Trailer 1: consoles only from the start",
+      "body": "Rockstar's first trailer named PS5 and Xbox Series X|S. GTA V (2013) reached PC 19 months after its console launch and Red Dead Redemption 2 about a year after, so a console-first launch was expected.",
+      "source": "https://www.rockstargames.com/VI/out-now"
+    },
+    {
+      "date": "2022-09-19",
+      "title": "The 2022 breach",
+      "body": "Rockstar confirmed that an intruder from the Lapsus$ group had taken and published about 90 early development clips of GTA VI. That leak was video only; it did not give anyone a playable game.",
+      "source": "https://variety.com/2022/digital/news/grand-theft-auto-6-leak-rockstar-games-hack-1235376727"
+    }
+  ],
+  "ways": [
+    {
+      "name": "PS Remote Play from your own PS5",
+      "verdict": "works",
+      "body": "Sony's free PS Remote Play app streams your PS5 to a Windows PC or Mac on your home network or over the internet. The console does the work, so the picture depends on your connection. Not affected by the PS Plus PC app closing.",
+      "needs": "a PS5 with the game, the free Remote Play app, good upload speed at home",
+      "sources": ["https://www.playstation.com/en-us/remote-play/", "https://maketecheasier.com/playstation-plus-pc-app-retiring/"]
+    },
+    {
+      "name": "Remote play from your own Xbox",
+      "verdict": "partial",
+      "body": "The Xbox app on Windows can stream games from an Xbox Series console you own. It is the same idea as PS Remote Play; we have not yet seen it confirmed for GTA VI in particular.",
+      "needs": "an Xbox Series X|S with the game, the Xbox app on Windows"
+    },
+    {
+      "name": "Xbox Cloud Gaming (xCloud)",
+      "verdict": "no",
+      "body": "GTA VI streams from the cloud only to Xbox One and Xbox Series consoles. The Windows app, browsers, phones and TVs are not supported for it.",
+      "sources": ["https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"]
+    },
+    {
+      "name": "PS Plus Premium cloud streaming",
+      "verdict": "no",
+      "body": "If you own the game you can stream it with PS Plus Premium, but only to a PS5 or a PlayStation Portal. The PS Plus app for PC is being shut down on 10 December 2026.",
+      "sources": ["https://www.notebookcheck.net/PlayStation-Portal-can-cloud-stream-GTA-6-without-PS5-console-but-Sony-blocks-PCs.1458173.0.html", "https://www.vice.com/en/article/sony-announces-the-end-of-the-playstation-plus-app-on-pc/"]
+    },
+    {
+      "name": "Steam, Epic, GeForce Now",
+      "verdict": "no",
+      "body": "There is no PC copy of GTA VI to buy or to stream, so no PC store or PC cloud service has it. A store page or \"pre-order\" for a PC version is a scam until Rockstar announces one.",
+      "sources": ["https://www.rockstargames.com/VI/out-now"]
+    }
+  ],
+  "efforts": [
+    {
+      "name": "KytyPS5",
+      "url": "https://github.com/KytyPS5/KytyPS5",
+      "kind": "PS5 translation layer",
+      "status": "Does not run GTA VI",
+      "body": "A heavily reworked fork of the Kyty emulator. In September 2026 it ran the PS5 version of GTA V's prologue at 40-60 fps before crashing; community forks report Demon's Souls playable.",
+      "source": "https://www.notebookcheck.net/PS5-emulator-can-now-run-the-console-version-of-GTA-V-at-up-to-60-FPS-on-PC.1391217.0.html"
+    },
+    {
+      "name": "SharpEmu",
+      "url": "https://github.com/sharpemu/sharpemu",
+      "kind": "PS5 emulator",
+      "status": "Does not run GTA VI",
+      "body": "Experimental PS5 emulator written in C#; its tested list covers first-party games such as Demon's Souls and Astro Bot.",
+      "source": "https://www.dsogaming.com/videotrailer-news/ps5-emulator-sharpemu-can-run-demons-souls-remake-all-the-way-to-character-creation/"
+    },
+    {
+      "name": "AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "kind": "PS5 relinker",
+      "status": "Does not run GTA VI",
+      "body": "Rewrites a PS5 program into a native Windows or Linux one with reimplemented system libraries. Its own contributors say a working GTA VI path is years away. GitHub's official account praised it during launch week, then deleted the post.",
+      "sources": ["https://github.com/boykopovar/AnyPS5/discussions/1451", "https://www.pcgamer.com/games/microsofts-github-posts-message-celebrating-efforts-to-port-playstation-5-version-of-grand-theft-auto-6-to-pc-then-quickly-deletes-it/"]
+    },
+    {
+      "name": "shadPS4",
+      "url": "https://github.com/shadps4-emu/shadPS4",
+      "kind": "PS4 emulator",
+      "status": "Not applicable",
+      "body": "A PlayStation 4 emulator; GTA VI is a PS5 game and shadPS4 makes no PS5 claim. Videos of \"shadPS4 running GTA 6\" are fake."
+    },
+    {
+      "name": "Leonida",
+      "kind": "\"Static recompilation\" of the leaked Xbox build",
+      "status": "Removed by DMCA, 24 Nov",
+      "body": "The project that made the PC race famous, with a Discord of about 180,000 members. Taken down with all 3,007 forks; continuations under other accounts report nothing playable yet.",
+      "sources": ["https://github.com/github/dmca/blob/master/2026/11/2026-11-24-take-two.md", "https://www.pcgamer.com/games/grand-theft-auto/gta-6-recomp-leaders-bail-out-as-take-two-cracks-down-on-illicit-efforts-to-get-the-game-running-on-pc/"]
+    },
+    {
+      "name": "VIctory",
+      "kind": "Xbox Series compatibility layer (leaked build)",
+      "status": "Reaches the prologue, about 1 fps",
+      "body": "Runs the Xbox program's x86-64 code directly and reimplements the console runtime, translating its shaders to Direct3D 12. Its own status page (25 November) reports roughly 1 fps in the open world with ray-traced effects missing; publishes source only, no builds.",
+      "sources": ["https://www.pcgamer.com/games/grand-theft-auto/gta-6-recomp-explained/", "https://www.windowscentral.com/gaming/pc-gaming/gta-6-windows-pc-recompilation-explained"]
+    },
+    {
+      "name": "XCL",
+      "kind": "General Xbox Series compatibility layer",
+      "status": "GTA VI early",
+      "body": "Aims to run Xbox Series games on Windows in the spirit of Wine or Proton, and lists a couple of smaller titles as playable. Its GTA VI work depends on the leaked build.",
+      "source": "https://www.windowscentral.com/gaming/pc-gaming/gta-6-windows-pc-recompilation-explained"
+    },
+    {
+      "name": "Forks claiming 20-30 fps",
+      "kind": "Tuned forks of the above",
+      "status": "Unverified, high risk",
+      "body": "Forks from week-old accounts claim 20-30 fps with lighting and shadows broken, and some ship unsigned .exe files. No independent benchmark exists; treat any prebuilt download as possible malware.",
+      "source": "https://www.techpowerup.com/355251/gta-6-fan-ports-climb-to-20-fps-on-pc-still-rough-around-the-edges"
+    },
+    {
+      "name": "FiveM / Cfx.re",
+      "kind": "Rockstar-owned modding platform",
+      "status": "No GTA VI plans announced",
+      "body": "Cfx.re, behind the FiveM and RedM roleplay platforms, joined Rockstar in August 2023 and has asked people not to ask about the next GTA. Rockstar job listings point to a creator platform and dedicated servers for GTA VI, not a PC version.",
+      "sources": ["https://kotaku.com/grand-theft-auto-5-gta-6-red-dead-redemption-fivem-mod-1850728525", "https://www.techpowerup.com/339439/rockstar-job-listings-point-to-gta-vi-user-generated-content-platform"]
+    },
+    {
+      "name": "Fan map recreations",
+      "kind": "Mods for other games",
+      "status": "Mixed",
+      "body": "A project bringing the fan-mapped GTA VI world into GTA V was removed without warning in March 2025; a 1:1 rebuild of the map in Cities: Skylines II has stayed up.",
+      "sources": ["https://www.thegamer.com/grand-theft-auto-6-vice-city-map-gta-5-mod-taken-down-rockstar/", "https://www.gtaboom.com/a-fan-rebuilt-the-entire-gta-6-map-in-another-game-185f"]
+    }
+  ],
+  "why": [
+    {
+      "title": "The new consoles are nearly PCs. The hard part is everything around the CPU",
+      "body": "The PS5 and Xbox Series both use x86-64 AMD Zen 2 processors and RDNA 2 graphics. That is very different from the Xbox 360, whose PowerPC code projects like GTA V Recomp translate into C++ instruction by instruction. For GTA VI the processor code can mostly run as it is. What has to be rebuilt is the console's operating system libraries, its graphics interface and tens of thousands of GPU shaders, which must be translated to Direct3D 12 or Vulkan. That is why most of these projects describe themselves as compatibility layers, closer to Wine or Proton than to a classic recomp."
+    },
+    {
+      "title": "Every GTA VI PC project starts from a leaked build",
+      "body": "Each GTA VI project on PC so far runs files from the leaked Xbox Series build (1.0.2.1), not copies that players dumped from their own consoles. Take-Two's notice calls those files stolen and argues that \"bring your own files\" notes are misleading when the only source is a leak. PS5 emulators would need a decrypted dump from a jailbroken console, and none has booted GTA VI."
+    },
+    {
+      "title": "Take-Two is taking projects down quickly",
+      "body": "In one week of November 2026 Take-Two filed five GitHub notices covering thousands of repositories: four against GTA V browser and mobile ports, then Leonida and its 3,007 forks. Earlier it blocked re3 (April 2025) and the browser Vice City (December 2025). The notices cite Rockstar's ban on reverse engineering as well as copyright."
+    },
+    {
+      "title": "Why Recomp reports on these projects but doesn't list them",
+      "body": "Recomp lists projects that build from a copy players own and never host game files. The current GTA VI PC projects only work with a leaked build, so we cover them here, with sources, but don't link to them or add them to the catalogue. If Rockstar releases a PC version, or a project appears that works from files people can legally get, it will be listed like any other."
+    }
+  ],
+  "fakes": [
+    {
+      "title": "Fake demos and \"Extended Look\" sites",
+      "body": "Sites with a \"Play Now\" button served a gta6_installer.exe carrying the Vidar password stealer (Malwarebytes, 24 August 2026).",
+      "source": "https://www.malwarebytes.com/blog/threat-intel/2026/08/fake-gta-6-extended-look-and-demo-sites-deliver-an-infostealer"
+    },
+    {
+      "title": "Fake leaked ISOs and installers",
+      "body": "A \"leaked GTA 6\" installer with a GTA V icon installed remote-access trojans and ransomware used to wipe files (Huntress, 10 September 2026).",
+      "source": "https://www.helpnetsecurity.com/2026/09/10/fake-gta-6-downloads-malware-ransomware/"
+    },
+    {
+      "title": "\"GTA 6 EXE download\" hubs",
+      "body": "Pages reached through shared Google Colab notebooks, with fake \"virus free\" badges, told visitors to add antivirus exclusions and installed the WARDEN password and crypto stealer (Cynet, 13 November 2026).",
+      "source": "https://www.helpnetsecurity.com/2026/11/13/fake-gta-6-download-scam/"
+    },
+    {
+      "title": "Lookalike \"Cyberleek\" domains and paid launchers",
+      "body": "More than 120 newly registered domains sold fake complete builds, a $100 \"launcher\", $250 \"early access\" and fake Android APKs (ESET, 13 November 2026).",
+      "source": "https://www.eset.com/blog/en/home-topics/cybersecurity-protection/gta-vi-isnt-out-yet-scams-full-swing"
+    },
+    {
+      "title": "Fake \"GTA VI PC cloud player\"",
+      "body": "A site asked visitors to paste a PowerShell command into the Windows Run box, which installed a stealer for browser logins, Discord, Steam, crypto wallets and developer API keys (Bitdefender, 20 November 2026).",
+      "source": "https://www.bitdefender.com/en-us/blog/labs/fake-gta-vi-pc-client-malware-clickfix"
+    },
+    {
+      "title": "$200 \"PC port kits\"",
+      "body": "Kits sold on dark-web markets contained a keygen that stole tokens, drained wallets and mined cryptocurrency (NordVPN Threat Intelligence, 21 November 2026).",
+      "source": "https://maketecheasier.com/gta-6-pc-port-scam-kit/"
+    },
+    {
+      "title": "GitHub repos with \"installer\" zips",
+      "body": "Dozens of new GitHub repos offer a password-protected installer zip (the password printed in the README), a \"KytyPS5 GTA 6\" build or a \"Cyberleek full build\", and tell you to add a Windows Defender exclusion or run as administrator. They contain no source code. The real open-source projects publish code, and the main one ships no builds at all.",
+      "source": "https://www.windowscentral.com/gaming/pc-gaming/gta-6-windows-pc-recompilation-explained"
+    }
+  ],
+  "rumours": [
+    "A PC release in the first quarter of 2027 (GamesBeat, citing four anonymous sources, 13 October 2026, updated 18 November). Rockstar has not confirmed it.",
+    "KytyPS5 or another PS5 emulator \"already boots\" GTA VI. One headline said so; nothing shown since supports it.",
+    "Fan builds running at 20-30 fps. These figures come from the projects' own READMEs on single machines; the best-known project reports about 1 fps in the open world.",
+    "A FiveM-style multiplayer platform for GTA VI. Neither Rockstar nor Cfx.re has announced one.",
+    "Rockstar removed Leonida's Discord server. Claimed by people involved; Rockstar has not commented."
+  ],
+  "faq": [
+    {
+      "q": "Is GTA 6 on PC?",
+      "a": "No. GTA VI came out on 19 November 2026 for PS5 and Xbox Series X|S only, and Rockstar has not announced a PC version, a date or system requirements."
+    },
+    {
+      "q": "When will GTA 6 come out on PC?",
+      "a": "Nobody outside Rockstar knows. Take-Two says news of other versions will come from Rockstar. Rockstar's last three big games reached PC 7 to 19 months after their console launch (GTA IV, Red Dead Redemption 2, GTA V), which would put GTA VI on PC somewhere between mid-2027 and mid-2028 if it follows the pattern. A report of early 2027 is unconfirmed."
+    },
+    {
+      "q": "Can I play GTA 6 on PC with Xbox Cloud Gaming, PS Plus or GeForce Now?",
+      "a": "No. Xbox Cloud Gaming streams GTA VI only to Xbox consoles, PS Plus Premium streams it only to a PS5 or PlayStation Portal, and GeForce Now has nothing to stream because there is no PC version. The legitimate option is Remote Play from a PS5 (or Xbox) you own to your PC."
+    },
+    {
+      "q": "Is there a GTA 6 emulator for PC?",
+      "a": "No. PS5 emulators such as KytyPS5, SharpEmu and AnyPS5 run some other PS5 games but none boots GTA VI, and shadPS4 is a PS4 emulator. Any \"GTA 6 PS5 emulator\" download is fake."
+    },
+    {
+      "q": "What are Leonida, VIctory and XCL?",
+      "a": "Open-source projects that try to run the leaked Xbox Series build of GTA VI on Windows by reimplementing the console's system software and translating its graphics. They are early (the best-known reports about 1 fps in the open world), they depend on stolen files, and Take-Two has already had Leonida and its 3,007 forks removed from GitHub."
+    },
+    {
+      "q": "Is the \"GTA 6 PC download\" real?",
+      "a": "No. There is no official PC build, demo, beta, launcher or cloud PC client. Security firms have tied fake GTA 6 downloads to password stealers, remote-access trojans, ransomware and crypto miners throughout 2026."
+    },
+    {
+      "q": "Which GTA games run natively on PC, Mac or phones thanks to the recomp scene?",
+      "a": "Many. Static recompilations bring the Xbox 360 GTA V and GTA IV and the PS2 and PSP Stories games to modern systems, and decompilations and rewrites cover GTA III, Vice City and San Andreas. They are listed under \"The GTA games the scene already runs natively\" on this page, and each one needs your own copy of the game."
+    }
+  ]
+}

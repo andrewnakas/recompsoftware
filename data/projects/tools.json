@@ -23356,8 +23356,8 @@
     "started": "2026-10",
     "firstRelease": "2026-11",
     "latestRelease": {
-      "version": "v0.0.1",
-      "date": "2026-11-03"
+      "version": "v0.0.5",
+      "date": "2026-11-09"
     },
     "targets": [
       "Windows",
@@ -23884,5 +23884,48 @@
       "https://github.com/Jstar269/Nakagawa-Recomp"
     ],
     "checked": "2026-11-15"
+  },
+  {
+    "slug": "xrc",
+    "name": "xrc",
+    "category": "tools",
+    "subject": "32-bit x86 executables (Windows PE, Linux ELF, macOS Mach-O, raw images)",
+    "originalPlatform": "Multi",
+    "originalYear": null,
+    "method": "tool",
+    "status": "wip",
+    "progress": null,
+    "progressSource": null,
+    "provenance": "ai-assisted",
+    "provenanceNote": "All 26 commits carry \"Co-Authored-By: Claude\" trailers (github.com/ps4star/XRC).",
+    "licence": "Unlicense",
+    "repo": "https://github.com/ps4star/XRC",
+    "website": null,
+    "discord": null,
+    "subreddit": null,
+    "team": [
+      "ps4star"
+    ],
+    "started": "2026-11",
+    "firstRelease": null,
+    "latestRelease": null,
+    "targets": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "needsOriginal": true,
+    "playable": null,
+    "summary": "Ahead-of-time recompiler, written in Odin, that turns 32-bit x86 programs into portable C with one C function per original function. The output is compiled together with a host runtime for x86-64 or ARM64. It was built for the WhiteRecomp port of Final Fantasy XIII, whose per-game override folder serves as the worked example. Only a minimal example runtime is included.",
+    "tags": [
+      "x86",
+      "recompiler",
+      "odin",
+      "c"
+    ],
+    "sources": [
+      "https://github.com/ps4star/XRC"
+    ],
+    "checked": "2026-11-27"
   }
 ]

@@ -12,6 +12,7 @@ export function GET() {
     '- [Project tracker](https://recompsoftware.com/progress/): searchable matched-code % for every decomp, with movers and milestones',
     '- [Platforms](https://recompsoftware.com/platforms/): full lists of decomps, recomps and PC ports per console',
     '- [Play in browser](https://recompsoftware.com/play/): builds that run in a web page',
+    '- [GTA 6 on PC](https://recompsoftware.com/gta-6-pc/): official PC status of Grand Theft Auto VI, ways to play it on a PC today, PS5/Xbox emulation and recomp reality, and fake downloads to avoid (sourced, updated by hand)',
     '- [New releases (RSS)](https://recompsoftware.com/releases.xml)',
     '',
     ...CATEGORIES.flatMap((c) => [
